@@ -1248,7 +1248,7 @@ int ov66_0222E8E8(const UnkStruct_ov66_0222E71C *param0, u32 param1)
 {
     GF_ASSERT(param1 < 2);
 
-    if (param0->unk_88[param1] >= 18) {
+    if (param0->unk_88[param1] >= 19) {
         return 0;
     }
 

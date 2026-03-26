@@ -14,6 +14,7 @@ void sub_0203AABC(FieldSystem *fieldSystem);
 void StartMenu_Open(FieldSystem *fieldSystem);
 void sub_0203B674(StartMenu *param0, void *param1);
 BOOL sub_0203B7C0(FieldTask *param0);
+BOOL CleanupMobileBox(FieldTask *taskMan);
 BOOL sub_0203C3F4(FieldTask *param0);
 BOOL sub_0203C434(FieldTask *param0);
 BOOL sub_0203C50C(FieldTask *param0);

@@ -1347,7 +1347,7 @@ static void ov91_021D22A0(UnkStruct_ov91_021D0ED8 *param0, u16 param1, u16 param
     if (param0->unk_00->unk_14 == 0) {
         v0 = MoveTable_LoadParam(param1, MOVEATTRIBUTE_TYPE);
     } else {
-        v0 = MoveTable_LoadParam(param1, MOVEATTRIBUTE_CONTEST_TYPE) + 18;
+        v0 = MoveTable_LoadParam(param1, MOVEATTRIBUTE_CONTEST_TYPE) + 19;
     }
 
     SpriteSystem_ReplaceCharResObj(param0->unk_110, param0->unk_114, TypeIcon_GetNARC(), TypeIcon_GetChar(v0), 1, 47276 + param2);

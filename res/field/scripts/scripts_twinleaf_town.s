@@ -408,12 +408,6 @@ _04D0:
     ApplyMovement LOCALID_PLAYER, _0570
     ApplyMovement 2, _05B0
     WaitMovement
-    WaitTime 15, VAR_RESULT
-    BufferRivalName 0
-    Message 2
-    CloseMessage
-    ApplyMovement 2, _05C8
-    WaitMovement
     ScrCmd_16C 77
     ScrCmd_169 77
     ScrCmd_16A 77
@@ -421,6 +415,9 @@ _04D0:
     CallCommonScript 0x7FB
     SetVar VAR_UNK_0x4070, 1
     SetVar VAR_UNK_0x40E6, 1
+    SetFlag FLAG_UNK_0x00EA
+    SetVar VAR_UNK_0x40A3, 1
+    SetVar VAR_UNK_0x4070, 2
     ReleaseAll
     End
 
@@ -454,16 +451,14 @@ _05A4:
 
     .balign 4, 0
 _05B0:
-    WalkFastEast 4
+    WalkFastEast 7
     EmoteExclamationMark
     Delay8
-    WalkFastWest 4
     WalkOnSpotFastSouth
-    EndMovement
-
-    .balign 4, 0
-_05C8:
-    WalkNormalNorth
+    WalkOnSpotFastEast
+    WalkOnSpotFastWest
+    Delay8
+    WalkFastNorth 10
     SetInvisible
     EndMovement
 

@@ -1253,8 +1253,8 @@ void BattleSystem_SwitchSlots(BattleSystem *battleSys, BattleContext *battleCtx,
  * @param inType            Input type for variable type moves (e.g. Hidden Power)
  * @param attacker
  * @param defender
- * @param criticalMul       Critical multiplier; must always be >= 1, 1 == no crit,
- *                          2+ signifies a crit
+ * @param criticalMulPct       Critical multiplier in percent; must always be >= 100, 100 == no crit,
+ *                          150+ signifies a crit
  * @return The computed base damage for the move
  */
 int BattleSystem_CalcMoveDamage(BattleSystem *battleSys,
@@ -1266,7 +1266,7 @@ int BattleSystem_CalcMoveDamage(BattleSystem *battleSys,
     u8 inType,
     u8 attacker,
     u8 defender,
-    u8 criticalMul);
+    int criticalMulPct);
 
 /**
  * @brief Incorporate random variance in the given damage value.
@@ -1295,7 +1295,7 @@ int BattleSystem_CalcDamageVariance(BattleSystem *battleSys, BattleContext *batt
  * @param defender
  * @param criticalStage     The existing critical hit stage for the attacker
  * @param sideConditions    State of the side conditions mask at the time of calculation
- * @return 1 if no critical occurs, 2 if a critical occurs, 3 if a critical
+ * @return 100 if no critical occurs, 150 if a critical occurs, 225 if a critical
  * occurs and the attacker also has the ability Sniper
  */
 int BattleSystem_CalcCriticalMulti(BattleSystem *battleSys, BattleContext *battleCtx, int attacker, int defender, int criticalStage, u32 sideConditions);

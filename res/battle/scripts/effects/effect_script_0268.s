@@ -82,6 +82,10 @@ _165:
 
 _171:
     UpdateVar OPCODE_SET, BTLVAR_MOVE_TYPE, TYPE_DARK
+    GoTo _175
+
+_172:
+    UpdateVar OPCODE_SET, BTLVAR_MOVE_TYPE, TYPE_FAIRY
 
 _175:
     CalcCrit 

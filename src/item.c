@@ -492,6 +492,8 @@ const ItemArchiveIDs sItemArchiveIDs[] = {
     [ITEM_VS_RECORDER]  = { .dataID = 0x1BB, .iconID = 0x2BD, .paletteID = 0x2BE, .gen3ID = GBA_ITEM_NONE,          },
     [ITEM_GRACIDEA]     = { .dataID = 0x1BC, .iconID = 0x2BF, .paletteID = 0x2C0, .gen3ID = GBA_ITEM_NONE,          },
     [ITEM_SECRET_KEY]   = { .dataID = 0x1BD, .iconID = 0x2C1, .paletteID = 0x2C2, .gen3ID = GBA_ITEM_SECRET_KEY,    },
+    [ITEM_MOBILE_BOX]   = { .dataID = 0x1BE, .iconID = 0x2B9, .paletteID = 0x2BA, .gen3ID = GBA_ITEM_NONE,          },
+    [ITEM_CAP_CANDY]    = { .dataID = 0x1BF, .iconID = 0x5A,  .paletteID = 0x245, .gen3ID = GBA_ITEM_NONE,        },
 };
 
 static const u16 sTMHMMoves[] = {

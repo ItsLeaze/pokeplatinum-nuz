@@ -1,4 +1,3 @@
-#ifdef LOGGING_ENABLED
 #include "debug.h"
 
 #include "charcode.h"
@@ -52,4 +51,3 @@ void EmulatorLog(const char *text, ...)
     va_end(args);
     EmulatorPrintf("\n");
 }
-#endif

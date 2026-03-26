@@ -24,8 +24,6 @@ FieldMoves_CutTree:
     PlayFanfare SEQ_SE_CONFIRM
     LockAll
     FacePlayer
-    FindPartySlotWithMove VAR_RESULT, MOVE_CUT
-    GoToIfEq VAR_RESULT, 6, _008E
     CheckBadgeAcquired BADGE_ID_FOREST, VAR_RESULT
     GoToIfEq VAR_RESULT, 0, _008E
     Message FieldMoves_Text_WouldYouLikeToUseCut
@@ -45,7 +43,7 @@ _008E:
     End
 
 _00AE:
-    FindPartySlotWithMove VAR_RESULT, MOVE_CUT
+    FindFirstPartySlotWithMon VAR_RESULT
     SetVar VAR_0x8004, VAR_RESULT
     BufferPartyMonNickname 0, VAR_RESULT
     Message FieldMoves_Text_PokemonUsedCut
@@ -128,9 +126,8 @@ FieldMoves_Rock:
     PlayFanfare SEQ_SE_CONFIRM
     LockAll
     FacePlayer
-    FindPartySlotWithMove VAR_RESULT, MOVE_ROCK_SMASH
+    FindFirstPartySlotWithMon VAR_RESULT
     SetVar VAR_0x8004, VAR_RESULT
-    GoToIfEq VAR_RESULT, 6, _0275
     CheckBadgeAcquired BADGE_ID_COAL, VAR_RESULT
     GoToIfEq VAR_RESULT, 0, _0275
     Message FieldMoves_Text_WouldYouLikeToUseRockSmash
@@ -186,8 +183,6 @@ FieldMoves_Boulder:
     FacePlayer
     Strength 2, VAR_RESULT
     GoToIfEq VAR_RESULT, 1, _03BD
-    FindPartySlotWithMove VAR_RESULT, MOVE_STRENGTH
-    GoToIfEq VAR_RESULT, 6, _0372
     CheckBadgeAcquired BADGE_ID_MINE, VAR_RESULT
     GoToIfEq VAR_RESULT, 0, _0372
     Message FieldMoves_Text_WouldYouLikeToUseStrength
@@ -206,7 +201,7 @@ _0372:
 
 _0381:
     Strength 1
-    FindPartySlotWithMove VAR_RESULT, MOVE_STRENGTH
+    FindFirstPartySlotWithMon VAR_RESULT
     SetVar VAR_0x8004, VAR_RESULT
     BufferPartyMonNickname 0, VAR_RESULT
     Message FieldMoves_Text_PokemonUsedStrength
@@ -246,8 +241,6 @@ FieldMoves_UseStrengthFromMenu:
 FieldMoves_RockyWall:
     PlayFanfare SEQ_SE_CONFIRM
     LockAll
-    FindPartySlotWithMove VAR_RESULT, MOVE_ROCK_CLIMB
-    GoToIfEq VAR_RESULT, 6, _0469
     CheckBadgeAcquired BADGE_ID_ICICLE, VAR_RESULT
     GoToIfEq VAR_RESULT, 0, _0469
     CheckHasPartner VAR_RESULT
@@ -274,7 +267,7 @@ _0478:
     End
 
 _0487:
-    FindPartySlotWithMove VAR_RESULT, MOVE_ROCK_CLIMB
+    FindFirstPartySlotWithMon VAR_RESULT
     SetVar VAR_0x8004, VAR_RESULT
     BufferPartyMonNickname 0, VAR_RESULT
     Message FieldMoves_Text_PokemonUsedRockClimb
@@ -315,7 +308,7 @@ _0512:
     GoTo _0671
 
 _051F:
-    FindPartySlotWithMove VAR_RESULT, MOVE_SURF
+    FindFirstPartySlotWithMon VAR_RESULT
     SetVar VAR_0x8004, VAR_RESULT
     BufferPartyMonNickname 0, VAR_RESULT
     Message FieldMoves_Text_PokemonUsedSurf
@@ -342,7 +335,7 @@ FieldMoves_UseSurfFromMenu:
 FieldMoves_Fog_Unused:
     PlayFanfare SEQ_SE_CONFIRM
     LockAll
-    FindPartySlotWithMove VAR_RESULT, MOVE_DEFOG
+    FindFirstPartySlotWithMon VAR_RESULT
     GoToIfEq VAR_RESULT, 6, _05B4
     Message FieldMoves_Text_WouldYouLikeToUseDefog_Unused
     ShowYesNoMenu VAR_RESULT
@@ -359,7 +352,7 @@ _05B4:
     End
 
 _05C3:
-    FindPartySlotWithMove VAR_RESULT, MOVE_DEFOG
+    FindFirstPartySlotWithMon VAR_RESULT
     SetVar VAR_0x8004, VAR_RESULT
     BufferPartyMonNickname 0, VAR_RESULT
     Message FieldMoves_Text_PokemonUsedDefog
@@ -417,8 +410,6 @@ _0675:
 FieldMoves_Waterfall:
     PlayFanfare SEQ_SE_CONFIRM
     LockAll
-    FindPartySlotWithMove VAR_RESULT, MOVE_WATERFALL
-    GoToIfEq VAR_RESULT, 6, _06C3
     CheckBadgeAcquired BADGE_ID_BEACON, VAR_RESULT
     GoToIfEq VAR_RESULT, 0, _06C3
     Message FieldMoves_Text_WouldYouLikeToUseWaterfall
@@ -436,7 +427,7 @@ _06C3:
     End
 
 _06D2:
-    FindPartySlotWithMove VAR_RESULT, MOVE_WATERFALL
+    FindFirstPartySlotWithMon VAR_RESULT
     SetVar VAR_0x8004, VAR_RESULT
     BufferPartyMonNickname 0, VAR_RESULT
     Message FieldMoves_Text_PokemonUsedWaterfall

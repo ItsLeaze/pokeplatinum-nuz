@@ -1973,7 +1973,7 @@ BOOL BattleSystem_CheckTrainerMessage(BattleSystem *battleSys, BattleContext *ba
 void BattleContext_Init(BattleContext *battleCtx)
 {
     battleCtx->damage = 0;
-    battleCtx->criticalMul = 1;
+    battleCtx->criticalMulPct = CRIT_MULT_PCT_NO_CRIT;
     battleCtx->criticalBoosts = 0;
     battleCtx->movePower = 0;
     battleCtx->powerMul = 10;
@@ -2445,12 +2445,14 @@ static const u8 sTypeMatchupMultipliers[][3] = {
     { TYPE_FIGHTING, TYPE_ROCK, TYPE_MULTI_SUPER_EFF },
     { TYPE_FIGHTING, TYPE_DARK, TYPE_MULTI_SUPER_EFF },
     { TYPE_FIGHTING, TYPE_STEEL, TYPE_MULTI_SUPER_EFF },
+    { TYPE_FIGHTING, TYPE_FAIRY, TYPE_MULTI_NOT_VERY_EFF },
     { TYPE_POISON, TYPE_GRASS, TYPE_MULTI_SUPER_EFF },
     { TYPE_POISON, TYPE_POISON, TYPE_MULTI_NOT_VERY_EFF },
     { TYPE_POISON, TYPE_GROUND, TYPE_MULTI_NOT_VERY_EFF },
     { TYPE_POISON, TYPE_ROCK, TYPE_MULTI_NOT_VERY_EFF },
     { TYPE_POISON, TYPE_GHOST, TYPE_MULTI_NOT_VERY_EFF },
     { TYPE_POISON, TYPE_STEEL, TYPE_MULTI_IMMUNE },
+    { TYPE_POISON, TYPE_FAIRY, TYPE_MULTI_SUPER_EFF },
     { TYPE_GROUND, TYPE_FIRE, TYPE_MULTI_SUPER_EFF },
     { TYPE_GROUND, TYPE_ELECTRIC, TYPE_MULTI_SUPER_EFF },
     { TYPE_GROUND, TYPE_GRASS, TYPE_MULTI_NOT_VERY_EFF },
@@ -2479,6 +2481,7 @@ static const u8 sTypeMatchupMultipliers[][3] = {
     { TYPE_BUG, TYPE_GHOST, TYPE_MULTI_NOT_VERY_EFF },
     { TYPE_BUG, TYPE_DARK, TYPE_MULTI_SUPER_EFF },
     { TYPE_BUG, TYPE_STEEL, TYPE_MULTI_NOT_VERY_EFF },
+    { TYPE_BUG, TYPE_FAIRY, TYPE_MULTI_NOT_VERY_EFF },
     { TYPE_ROCK, TYPE_FIRE, TYPE_MULTI_SUPER_EFF },
     { TYPE_ROCK, TYPE_ICE, TYPE_MULTI_SUPER_EFF },
     { TYPE_ROCK, TYPE_FIGHTING, TYPE_MULTI_NOT_VERY_EFF },
@@ -2489,21 +2492,28 @@ static const u8 sTypeMatchupMultipliers[][3] = {
     { TYPE_GHOST, TYPE_NORMAL, TYPE_MULTI_IMMUNE },
     { TYPE_GHOST, TYPE_PSYCHIC, TYPE_MULTI_SUPER_EFF },
     { TYPE_GHOST, TYPE_DARK, TYPE_MULTI_NOT_VERY_EFF },
-    { TYPE_GHOST, TYPE_STEEL, TYPE_MULTI_NOT_VERY_EFF },
     { TYPE_GHOST, TYPE_GHOST, TYPE_MULTI_SUPER_EFF },
     { TYPE_DRAGON, TYPE_DRAGON, TYPE_MULTI_SUPER_EFF },
     { TYPE_DRAGON, TYPE_STEEL, TYPE_MULTI_NOT_VERY_EFF },
+    { TYPE_DRAGON, TYPE_FAIRY, TYPE_MULTI_IMMUNE },
     { TYPE_DARK, TYPE_FIGHTING, TYPE_MULTI_NOT_VERY_EFF },
     { TYPE_DARK, TYPE_PSYCHIC, TYPE_MULTI_SUPER_EFF },
     { TYPE_DARK, TYPE_GHOST, TYPE_MULTI_SUPER_EFF },
     { TYPE_DARK, TYPE_DARK, TYPE_MULTI_NOT_VERY_EFF },
-    { TYPE_DARK, TYPE_STEEL, TYPE_MULTI_NOT_VERY_EFF },
+    { TYPE_DARK, TYPE_FAIRY, TYPE_MULTI_NOT_VERY_EFF },
     { TYPE_STEEL, TYPE_FIRE, TYPE_MULTI_NOT_VERY_EFF },
     { TYPE_STEEL, TYPE_WATER, TYPE_MULTI_NOT_VERY_EFF },
     { TYPE_STEEL, TYPE_ELECTRIC, TYPE_MULTI_NOT_VERY_EFF },
     { TYPE_STEEL, TYPE_ICE, TYPE_MULTI_SUPER_EFF },
     { TYPE_STEEL, TYPE_ROCK, TYPE_MULTI_SUPER_EFF },
     { TYPE_STEEL, TYPE_STEEL, TYPE_MULTI_NOT_VERY_EFF },
+    { TYPE_STEEL, TYPE_FAIRY, TYPE_MULTI_SUPER_EFF },
+    { TYPE_FAIRY, TYPE_FIRE, TYPE_MULTI_NOT_VERY_EFF },
+    { TYPE_FAIRY, TYPE_FIGHTING, TYPE_MULTI_SUPER_EFF },
+    { TYPE_FAIRY, TYPE_POISON, TYPE_MULTI_NOT_VERY_EFF },
+    { TYPE_FAIRY, TYPE_DRAGON, TYPE_MULTI_SUPER_EFF },
+    { TYPE_FAIRY, TYPE_DARK, TYPE_MULTI_SUPER_EFF },
+    { TYPE_FAIRY, TYPE_STEEL, TYPE_MULTI_NOT_VERY_EFF },
 
     { 0xFE, 0xFE, TYPE_MULTI_IMMUNE },
 
@@ -3356,7 +3366,7 @@ BOOL BattleSystem_AnyBattlersWithMoveEffect(BattleSystem *battleSys, BattleConte
 void BattleSystem_SetupLoop(BattleSystem *battleSys, BattleContext *battleCtx)
 {
     battleCtx->moveStatusFlags = 0;
-    battleCtx->criticalMul = 1;
+    battleCtx->criticalMulPct = CRIT_MULT_PCT_NO_CRIT;
     battleCtx->battleStatusMask &= ~SYSCTL_REUSE_LAST_MOVE;
 }
 
@@ -6603,7 +6613,7 @@ int BattleSystem_CalcMoveDamage(BattleSystem *battleSys,
     u8 inType,
     u8 attacker,
     u8 defender,
-    u8 criticalMul)
+    int criticalMulPct)
 {
     // vars have to all be declared C89-style to match
     int i;
@@ -6626,7 +6636,7 @@ int BattleSystem_CalcMoveDamage(BattleSystem *battleSys,
     DamageCalcParams attackerParams;
     DamageCalcParams defenderParams;
 
-    GF_ASSERT(criticalMul == 1 || criticalMul > 1);
+    GF_ASSERT(criticalMulPct >= CRIT_MULT_PCT_NO_CRIT);
 
     attackStat = BattleMon_Get(battleCtx, attacker, BATTLEMON_ATTACK, NULL);
     defenseStat = BattleMon_Get(battleCtx, defender, BATTLEMON_DEFENSE, NULL);
@@ -6941,7 +6951,7 @@ int BattleSystem_CalcMoveDamage(BattleSystem *battleSys,
     }
 
     if (moveClass == CLASS_PHYSICAL) {
-        if (criticalMul > 1) {
+        if (criticalMulPct > CRIT_MULT_PCT_NO_CRIT) {
             if (attackStage > 6) {
                 damage = attackStat * sStatStageBoosts[attackStage].numerator;
                 damage /= sStatStageBoosts[attackStage].denominator;
@@ -6956,7 +6966,7 @@ int BattleSystem_CalcMoveDamage(BattleSystem *battleSys,
         damage *= movePower;
         damage *= (attackerLevel * 2 / 5 + 2);
 
-        if (criticalMul > 1) {
+        if (criticalMulPct > CRIT_MULT_PCT_NO_CRIT) {
             if (defenseStage < 6) {
                 stageDivisor = defenseStat * sStatStageBoosts[defenseStage].numerator;
                 stageDivisor /= sStatStageBoosts[defenseStage].denominator;
@@ -6976,7 +6986,7 @@ int BattleSystem_CalcMoveDamage(BattleSystem *battleSys,
         }
 
         if ((sideConditions & SIDE_CONDITION_REFLECT) != FALSE
-            && criticalMul == 1
+            && criticalMulPct == CRIT_MULT_PCT_NO_CRIT
             && MOVE_DATA(move).effect != BATTLE_EFFECT_REMOVE_SCREENS) {
             if ((battleType & BATTLE_TYPE_DOUBLES)
                 && BattleSystem_CountAliveBattlers(battleSys, battleCtx, TRUE, defender) == 2) {
@@ -6986,7 +6996,7 @@ int BattleSystem_CalcMoveDamage(BattleSystem *battleSys,
             }
         }
     } else if (moveClass == CLASS_SPECIAL) {
-        if (criticalMul > 1) {
+        if (criticalMulPct > CRIT_MULT_PCT_NO_CRIT) {
             if (spAttackStage > 6) {
                 damage = spAttackStat * sStatStageBoosts[spAttackStage].numerator;
                 damage /= sStatStageBoosts[spAttackStage].denominator;
@@ -7001,7 +7011,7 @@ int BattleSystem_CalcMoveDamage(BattleSystem *battleSys,
         damage *= movePower;
         damage *= (attackerLevel * 2 / 5 + 2);
 
-        if (criticalMul > 1) {
+        if (criticalMulPct > CRIT_MULT_PCT_NO_CRIT) {
             if (spDefenseStage < 6) {
                 stageDivisor = spDefenseStat * sStatStageBoosts[spDefenseStage].numerator;
                 stageDivisor /= sStatStageBoosts[spDefenseStage].denominator;
@@ -7017,7 +7027,7 @@ int BattleSystem_CalcMoveDamage(BattleSystem *battleSys,
         damage /= 50;
 
         if ((sideConditions & SIDE_CONDITION_LIGHT_SCREEN) != FALSE
-            && criticalMul == 1
+            && criticalMulPct == CRIT_MULT_PCT_NO_CRIT
             && MOVE_DATA(move).effect != BATTLE_EFFECT_REMOVE_SCREENS) {
             if ((battleType & BATTLE_TYPE_DOUBLES)
                 && BattleSystem_CountAliveBattlers(battleSys, battleCtx, TRUE, defender) == 2) {
@@ -7107,7 +7117,7 @@ int BattleSystem_CalcCriticalMulti(BattleSystem *battleSys, BattleContext *battl
     u16 attackerSpecies;
     u32 attackerVolStatus;
     u32 defenderMoveEffects;
-    int criticalMul = 1;
+    int criticalMulPct = CRIT_MULT_PCT_NO_CRIT;
     int attackerAbility;
 
     item = Battler_HeldItem(battleCtx, attacker);
@@ -7127,19 +7137,20 @@ int BattleSystem_CalcCriticalMulti(BattleSystem *battleSys, BattleContext *battl
         effectiveCritStage = 4;
     }
 
-    if (BattleSystem_RandNext(battleSys) % sCriticalStageRates[effectiveCritStage] == 0
+    BOOL isCrit = (BattleSystem_RandNext(battleSys) % sCriticalStageRates[effectiveCritStage] == 0
         && Battler_IgnorableAbility(battleCtx, attacker, defender, ABILITY_BATTLE_ARMOR) == FALSE
         && Battler_IgnorableAbility(battleCtx, attacker, defender, ABILITY_SHELL_ARMOR) == FALSE
         && (sideConditions & SIDE_CONDITION_LUCKY_CHANT) == FALSE
-        && (defenderMoveEffects & MOVE_EFFECT_NO_CRITICAL) == FALSE) {
-        criticalMul = 2;
+        && (defenderMoveEffects & MOVE_EFFECT_NO_CRITICAL) == FALSE);
+    if (isCrit) {
+        criticalMulPct = CRIT_MULT_PCT_CRIT;
     }
 
-    if (criticalMul == 2 && Battler_Ability(battleCtx, attacker) == ABILITY_SNIPER) {
-        criticalMul = 3;
+    if (isCrit && Battler_Ability(battleCtx, attacker) == ABILITY_SNIPER) {
+        criticalMulPct = CRIT_MULT_PCT_SNIPER_CRIT;
     }
 
-    return criticalMul;
+    return criticalMulPct;
 }
 
 #define FORBIDDEN_BY_MIMIC_DELIM     0xFFFE

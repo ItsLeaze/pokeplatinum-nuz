@@ -29,15 +29,31 @@ BOOL Pokemon_CanBattle(Pokemon *mon)
     return !Pokemon_GetValue(mon, MON_DATA_IS_EGG, NULL);
 }
 
+static BOOL TryMoveGiftPokemonToBox(SaveData *saveData, Pokemon *pokemon)
+{
+    PCBoxes *pcBoxes = SaveData_GetPCBoxes(saveData);
+    u32 targetBoxId = PCBoxes_FirstEmptyBox(pcBoxes);
+
+    return PCBoxes_TryStoreBoxMonInBox(pcBoxes, targetBoxId, Pokemon_GetBoxPokemon(pokemon));
+}
+
+BOOL TryAddPokemonToPartyOrBox(SaveData *saveData, Pokemon *pokemon)
+{
+    Party *party = SaveData_GetParty(saveData);
+    BOOL result = Party_AddPokemon(party, pokemon);
+    if (!result) {
+        result = TryMoveGiftPokemonToBox(saveData, pokemon);
+    }
+    return result;
+}
+
 BOOL Pokemon_GiveMonFromScript(enum HeapId heapID, SaveData *saveData, u16 species, u8 level, u16 heldItem, int metLocation, int metTerrain)
 {
     BOOL result;
     Pokemon *mon;
     u32 item;
-    Party *party;
     TrainerInfo *trainerInfo = SaveData_GetTrainerInfo(saveData);
 
-    party = SaveData_GetParty(saveData);
     mon = Pokemon_New(heapID);
 
     Pokemon_Init(mon);
@@ -46,7 +62,7 @@ BOOL Pokemon_GiveMonFromScript(enum HeapId heapID, SaveData *saveData, u16 speci
 
     item = heldItem;
     Pokemon_SetValue(mon, MON_DATA_HELD_ITEM, &item);
-    result = Party_AddPokemon(party, mon);
+    result = TryAddPokemonToPartyOrBox(saveData, mon);
 
     if (result) {
         SaveData_UpdateCatchRecords(saveData, mon);
@@ -70,7 +86,7 @@ BOOL sub_02054930(int unused, SaveData *saveData, u16 param2, u8 param3, int par
     v0 = SpecialMetLoc_GetId(param4, param5);
     Egg_CreateEgg(mon, param2, param3, trainerInfo, 4, v0);
 
-    result = Party_AddPokemon(party, mon);
+    result = TryAddPokemonToPartyOrBox(saveData, mon);
     Heap_Free(mon);
 
     return result;

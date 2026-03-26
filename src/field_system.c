@@ -22,6 +22,7 @@
 #include "bg_window.h"
 #include "comm_player_manager.h"
 #include "communication_system.h"
+#include "evolution_lines.h"
 #include "field_map_change.h"
 #include "field_overworld_state.h"
 #include "field_system.h"
@@ -171,6 +172,8 @@ static FieldSystem *InitFieldSystem(ApplicationManager *appMan)
     RadarChain_Clear(fieldSystem->chain);
 
     fieldSystem->pokedexMemory = PokedexMemory_New(HEAP_ID_FIELDMAP);
+    fieldSystem->evolutionGraph = EvolutionGraph_New(HEAP_ID_FIELDMAP);
+    BuildEvolutionGraph(fieldSystem->evolutionGraph, HEAP_ID_FIELDMAP);
     fieldSystem->battleSubscreenCursorOn = sub_0209C370(HEAP_ID_FIELDMAP);
 
     return fieldSystem;
@@ -185,6 +188,7 @@ static void TeardownFieldSystem(ApplicationManager *appMan)
     Heap_Free(fieldSystem->bagCursor);
     RadarChain_Free(fieldSystem->chain);
     PokedexMemory_Free(fieldSystem->pokedexMemory);
+    EvolutionGraph_Free(fieldSystem->evolutionGraph);
     sub_0209C388(fieldSystem->battleSubscreenCursorOn);
 
     Heap_Free(fieldSystem->processManager);

@@ -8,7 +8,7 @@
 typedef struct Options {
     u16 textSpeed : 4;
     u16 soundMode : 2;
-    u16 battleStyle : 1;
+    u16 useNuzlockeFeatures : 1;
     u16 battleScene : 1;
     u16 buttonMode : 2;
     u16 frame : 5;
@@ -27,7 +27,8 @@ void Options_SetSoundMode(Options *options, enum OptionsSoundMode mode);
 int Options_BattleScene(const Options *options);
 void Options_SetBattleScene(Options *options, enum OptionsBattleScene scene);
 int Options_BattleStyle(const Options *options);
-void Options_SetBattleStyle(Options *options, enum OptionsBattleStyle style);
+int Options_NuzlockeFeatures(const Options *options);
+void Options_SetNuzlockeFeatures(Options *options, enum OptionsNuzlockeFeatures nuzlockeFeatures);
 int Options_ButtonMode(const Options *options);
 void Options_SetButtonMode(Options *options, enum OptionsButtonMode mode);
 int Options_Frame(const Options *options);

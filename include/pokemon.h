@@ -41,6 +41,8 @@ enum EvolutionClass {
     EVO_CLASS_BY_ITEM,
 };
 
+u8 GetLevelCap(TrainerInfo *info);
+
 /**
  * @brief Zeros out a Pokemon data structure, then encrypts the result
  *
@@ -106,6 +108,7 @@ BOOL BoxPokemon_ExitDecryptionContext(BoxPokemon *boxMon, BOOL encrypt);
 
 void Pokemon_InitWith(Pokemon *mon, int monSpecies, int monLevel, int monIVs, BOOL useMonPersonalityParam, u32 monPersonality, int monOTIDSource, u32 monOTID);
 void sub_02074044(Pokemon *mon, u16 monSpecies, u8 monLevel, u8 monIVs, u8 monNature);
+u32 getPersonalityForNatureAndAbility(u8 monNature, s8 ability);
 void sub_02074088(Pokemon *mon, u16 monSpecies, u8 monLevel, u8 monIVs, u8 param4, u8 param5, u8 param6);
 u32 sub_02074128(u16 monSpecies, u8 param1, u8 param2);
 void Pokemon_InitAndCalcStats(Pokemon *mon, u16 monSpecies, u8 monLevel, u32 monCombinedIVs, u32 monPersonality);
@@ -524,7 +527,7 @@ u8 BoxPokemon_GetForm(BoxPokemon *boxMon);
  */
 BoxPokemon *Pokemon_GetBoxPokemon(Pokemon *mon);
 
-BOOL Pokemon_ShouldLevelUp(Pokemon *mon);
+BOOL Pokemon_ShouldLevelUp(Pokemon *mon, TrainerInfo *info);
 u16 Pokemon_GetEvolutionTargetSpecies(Party *party, Pokemon *mon, u8 evoClass, u16 evoParam, int *evoTypeResult);
 u16 sub_02076F84(const u16 monSpecies);
 u16 sub_02076FD4(const u16 monSpecies);
@@ -563,6 +566,8 @@ void Pokemon_ResetMoveSlot(Pokemon *mon, u16 moveID, u8 moveSlot);
  * @param moveSlot
  */
 void Pokemon_SetMoveSlot(Pokemon *mon, u16 moveID, u8 moveSlot);
+
+u8 Pokemon_GetLevelOfNextMoveLearnOrEvolution(Pokemon *mon);
 
 u16 Pokemon_LevelUpMove(Pokemon *mon, int *index, u16 *moveID);
 

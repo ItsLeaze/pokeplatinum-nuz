@@ -4,6 +4,7 @@
 #include <nnsys.h>
 #include <string.h>
 
+#include "constants/charcode.h"
 #include "constants/graphics.h"
 #include "constants/heap.h"
 #include "constants/narc.h"
@@ -32,6 +33,7 @@
 #include "heap.h"
 #include "menu.h"
 #include "message.h"
+#include "message_util.h"
 #include "overlay_manager.h"
 #include "pltt_transfer.h"
 #include "pokemon.h"
@@ -57,9 +59,6 @@
 #include "vram_transfer.h"
 
 #define NUM_STARTER_OPTIONS 3
-#define STARTER_OPTION_0    SPECIES_TURTWIG
-#define STARTER_OPTION_1    SPECIES_CHIMCHAR
-#define STARTER_OPTION_2    SPECIES_PIPLUP
 
 #define OAM_MAIN_START 0
 #define OAM_MAIN_END   128
@@ -217,13 +216,14 @@ typedef struct ChooseStarterApp {
     u32 unk_704;
     u8 unk_708;
     u8 unk_709[3];
+    ChooseStarterData *data;
 } ChooseStarterApp;
 
 static void ChooseStarterAppMainCallback(void *data);
 static void StartFadeIn(ChooseStarterApp *param0);
 static void StartFadeOut(ChooseStarterApp *param0);
 static BOOL IsFadeDone(ChooseStarterApp *param0);
-static u16 GetSelectedSpecies(u16 cursorPosition);
+static u16 GetSelectedSpecies(ChooseStarterApp *param0);
 static BOOL IsSelectionMade(ChooseStarterApp *param0, int param1);
 static void UpdateGraphics(ChooseStarterApp *param0, int heapID);
 static void DrawScene(ChooseStarterApp *param0);
@@ -237,6 +237,7 @@ static void SetupBGL(BgConfig *bgl, enum HeapId heapID);
 static void ov78_021D12EC(BgConfig *param0);
 static void MakeMessageWindow(ChooseStarterApp *app, enum HeapId heapID);
 static void ov78_021D13A0(ChooseStarterApp *param0);
+static u8 PrintSpeciesName(Window *param0, int heapID, int param2, int species, TextColor param4, u32 param5);
 static u8 ov78_021D1FB4(Window *param0, int heapID, int param2, int param3, TextColor param4, u32 param5);
 static u8 ov78_021D201C(Window *param0, int heapID, int param2, int param3, u32 param4, u32 param5, Strbuf **param6);
 static void ov78_021D2090(ChooseStarterApp *param0);
@@ -321,6 +322,7 @@ BOOL ChooseStarter_Init(ApplicationManager *appMan, int *param1)
     ChooseStarterData *data = ApplicationManager_Args(appMan);
     app->messageFrame = Options_Frame(data->options);
     app->unk_704 = Options_TextFrameDelay(data->options);
+    app->data = data;
 
     VramTransfer_New(8, HEAP_ID_CHOOSE_STARTER_APP);
     SetVBlankCallback(ChooseStarterAppMainCallback, app);
@@ -433,7 +435,7 @@ BOOL ChooseStarter_Exit(ApplicationManager *appMan, int *param1)
 
     SetVBlankCallback(NULL, NULL);
 
-    v1->species = GetSelectedSpecies(v0->cursorPosition);
+    v1->species = GetSelectedSpecies(v0);
 
     v2 = DisableTouchPad();
     GF_ASSERT(v2 == 1);
@@ -675,9 +677,9 @@ static void MakeSprite(ChooseStarterApp *app, enum HeapId heapID)
     PokemonSpriteManager_SetCharBaseAddrAndSize(app->spriteManager, NNS_GfdGetTexKeyAddr(texture), NNS_GfdGetTexKeySize(texture));
     PokemonSpriteManager_SetPlttBaseAddrAndSize(app->spriteManager, NNS_GfdGetPlttKeyAddr(palette), NNS_GfdGetPlttKeySize(palette));
 
-    MakePokemonSprite(&app->sprites[0], app, STARTER_OPTION_0);
-    MakePokemonSprite(&app->sprites[1], app, STARTER_OPTION_1);
-    MakePokemonSprite(&app->sprites[2], app, STARTER_OPTION_2);
+    MakePokemonSprite(&app->sprites[0], app, app->data->pokemon1);
+    MakePokemonSprite(&app->sprites[1], app, app->data->pokemon2);
+    MakePokemonSprite(&app->sprites[2], app, app->data->pokemon3);
 
     for (int i = 0; i < NUM_STARTER_OPTIONS; i++) {
         PokemonSprite_SetAttribute(app->sprites[i], MON_SPRITE_HIDE, TRUE);
@@ -1235,13 +1237,13 @@ static void ov78_021D1E44(ChooseStarterApp *param0, int heapID)
         PokemonSprite_SetAttribute(param0->sprites[param0->cursorPosition], MON_SPRITE_HIDE, FALSE);
 
         if (ov78_021D26A4(param0)) {
-            Sound_PlayPokemonCry(GetSelectedSpecies(param0->cursorPosition), 0);
+            Sound_PlayPokemonCry(GetSelectedSpecies(param0), 0);
 
             param0->unk_04++;
         }
         break;
     case 2:
-        ov78_021D1FB4(param0->messageWindow, heapID, 360, 1 + param0->cursorPosition, TEXT_COLOR(1, 2, 15), TEXT_SPEED_NO_TRANSFER);
+        PrintSpeciesName(param0->messageWindow, heapID, 360, GetSelectedSpecies(param0), TEXT_COLOR(1, 2, 15), TEXT_SPEED_NO_TRANSFER);
         param0->unk_B8 = Menu_MakeYesNoChoice(param0->bgl, &param0->unk_B0, 512 + (18 + 12) + 128, 1, heapID);
         param0->unk_08 = 0;
         param0->unk_04++;
@@ -1289,6 +1291,52 @@ static u8 ov78_021D1FB4(Window *param0, int heapID, int param2, int param3, Text
 
     Strbuf_Free(v1);
     MessageLoader_Free(v0);
+
+    return v2;
+}
+
+static u8 PrintSpeciesName(Window *param0, int heapID, int param2, int species, TextColor param4, u32 param5)
+{
+    Strbuf *speciesNameStrbuf;
+    Strbuf *finalStrbuf;
+    Strbuf *questionStrbuf;
+    u8 v2;
+
+    speciesNameStrbuf = MessageUtil_SpeciesName(species, heapID);
+    if (speciesNameStrbuf == NULL) {
+        return 0xFF;
+    }
+
+    finalStrbuf = Strbuf_Init(64, heapID);
+    if (finalStrbuf == NULL) {
+        Strbuf_Free(speciesNameStrbuf);
+        return 0xFF;
+    }
+
+    questionStrbuf = Strbuf_Init(32, heapID);
+    if (questionStrbuf == NULL) {
+        Strbuf_Free(speciesNameStrbuf);
+        Strbuf_Free(finalStrbuf);
+        return 0xFF;
+    }
+
+    const charcode_t question[] = { CHAR_C, CHAR_h, CHAR_o, CHAR_o, CHAR_s, CHAR_e, CHAR_SPACE, CHAR_EOS };
+    Strbuf_CopyChars(questionStrbuf, question);
+
+    Strbuf_Concat(finalStrbuf, questionStrbuf);
+    Strbuf_Concat(finalStrbuf, speciesNameStrbuf);
+
+    const charcode_t questionMark[] = { CHAR_QUESTION, CHAR_EOS };
+    Strbuf_CopyChars(questionStrbuf, questionMark);
+    Strbuf_Concat(finalStrbuf, questionStrbuf);
+
+    Window_FillTilemap(param0, 15);
+    v2 = Text_AddPrinterWithParamsAndColor(param0, FONT_MESSAGE, finalStrbuf, 0, 0, param5, param4, NULL);
+    Window_DrawMessageBoxWithScrollCursor(param0, 0, 512, 0);
+
+    Strbuf_Free(speciesNameStrbuf);
+    Strbuf_Free(finalStrbuf);
+    Strbuf_Free(questionStrbuf);
 
     return v2;
 }
@@ -1772,17 +1820,17 @@ static void ov78_021D2904(ChooseStarterApp *param0)
     Window_ClearAndCopyToVRAM(param0->unk_9C[param0->unk_A8]);
 }
 
-static u16 GetSelectedSpecies(u16 cursorPosition)
+static u16 GetSelectedSpecies(ChooseStarterApp *param0)
 {
-    switch (cursorPosition) {
+    switch (param0->cursorPosition) {
     case CURSOR_POSITION_LEFT:
-        return STARTER_OPTION_0;
+        return param0->data->pokemon1;
 
     case CURSOR_POSITION_CENTER:
-        return STARTER_OPTION_1;
+        return param0->data->pokemon2;
 
     case CURSOR_POSITION_RIGHT:
-        return STARTER_OPTION_2;
+        return param0->data->pokemon3;
 
     default:
         GF_ASSERT(FALSE);

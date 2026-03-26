@@ -6,11 +6,17 @@
 #include "constants/forms.h"
 #include "constants/species.h"
 #include "generated/gender_ratios.h"
+#include "generated/map_headers.h"
 
+#include "data/map_headers.h"
+
+#include "debug.h"
 #include "inlines.h"
 #include "pokedex_language.h"
 #include "pokemon.h"
 #include "savedata.h"
+
+#include "res/text/bank/location_names.h"
 
 static const u16 sExcludedMonsNational[] = {
     SPECIES_MEW,
@@ -27,6 +33,8 @@ static const u16 sExcludedMonsNational[] = {
 };
 static const u16 sExcludedMonsLocal[] = {};
 
+#define MAX_LOCATION_LABEL_ID LocationNames_Text_RockPeakRuins
+
 #define DEX_SIZE_U32          ((int)((NATIONAL_DEX_COUNT - 1) / 32) + 1) // default 16
 #define MAGIC_NUMBER          0xBEEFCAFE
 #define NUM_EXCLUDED_NATIONAL ((int)(sizeof(sExcludedMonsNational) / sizeof(u16)))
@@ -38,13 +46,13 @@ typedef struct Pokedex {
     u32 magic;
     u32 caughtPokemon[DEX_SIZE_U32];
     u32 seenPokemon[DEX_SIZE_U32];
-    u32 recordedGenders[2][DEX_SIZE_U32];
+    u32 recordedGenders[2][DEX_SIZE_U32]; // maybe replace this?
     u32 spindaForm;
     u8 shellosFormsSeen;
     u8 gastrodonFormsSeen;
     u8 burmyFormsSeen;
     u8 wormadamFormsSeen;
-    u8 unownFormsSeen[UNOWN_FORM_COUNT];
+    u32 locationEncountersUsed[UNOWN_FORM_COUNT / 4]; // unown forms tracking exchanged for encounter tracking
     u8 recordedLanguages[MAX_SPECIES + 1];
     u8 canDetectForms;
     u8 canDetectLanguages;
@@ -178,39 +186,20 @@ static inline void SetForm_Spinda(Pokedex *pokedexData, u16 species, u32 persona
 
 static int NumFormsSeen_Unown(const Pokedex *pokedexData)
 {
-    int formIndex;
-
-    for (formIndex = 0; formIndex < UNOWN_FORM_COUNT; formIndex++) {
-        if (pokedexData->unownFormsSeen[formIndex] == 0xFF) {
-            break;
-        }
-    }
-
-    return formIndex;
+    return 0;
 }
 
 static BOOL UnownFormSeen(const Pokedex *pokedexData, u8 form)
 {
-    for (int formIndex = 0; formIndex < UNOWN_FORM_COUNT; formIndex++) {
-        if (pokedexData->unownFormsSeen[formIndex] == form) {
-            return TRUE;
-        }
-    }
-
     return FALSE;
 }
 
+/**
+ * DISABLED SINCE UNOWN MEMORY WAS NEEDED FOR STH ELSE
+ */
 static void SetUnownForm(Pokedex *pokedexData, int form)
 {
-    if (UnownFormSeen(pokedexData, form)) {
-        return;
-    }
-
-    int numUnownSeen = NumFormsSeen_Unown(pokedexData);
-
-    if (numUnownSeen < UNOWN_FORM_COUNT) {
-        pokedexData->unownFormsSeen[numUnownSeen] = form;
-    }
+    return;
 }
 
 static int NumFormsSeen_TwoForms(const Pokedex *pokedexData, u32 species)
@@ -646,7 +635,7 @@ static u32 GetDisplayGender(const Pokedex *pokedexData, u16 species, int display
 
 static inline int GetForm_Unown(const Pokedex *pokedexData, int formIndex)
 {
-    return pokedexData->unownFormsSeen[formIndex];
+    return -1;
 }
 
 static int GetForm_TwoForms(const Pokedex *pokedexData, u32 species, int formIndex)
@@ -731,8 +720,6 @@ void Pokedex_Init(Pokedex *pokedexData)
 
     pokedexData->magic = MAGIC_NUMBER;
     pokedexData->nationalDexObtained = FALSE;
-
-    memset(pokedexData->unownFormsSeen, 0xFF, sizeof(u8) * UNOWN_FORM_COUNT);
 
     pokedexData->shellosFormsSeen = 0xFF;
     pokedexData->gastrodonFormsSeen = 0xFF;
@@ -932,12 +919,7 @@ u32 Pokedex_DisplayedGender(const Pokedex *pokedexData, u16 species, int display
 u32 Pokedex_GetForm_Unown(const Pokedex *pokedexData, int formIndex)
 {
     CheckPokedexIntegrity(pokedexData);
-
-    if (NumFormsSeen_Unown(pokedexData) <= formIndex) {
-        return -1;
-    }
-
-    return GetForm_Unown(pokedexData, formIndex);
+    return -1;
 }
 
 u32 Pokedex_NumFormsSeen_Unown(const Pokedex *pokedexData)
@@ -1234,4 +1216,48 @@ u32 Pokedex_NumFormsSeen(const Pokedex *pokedex, int species)
     }
 
     return 1;
+}
+
+static inline BOOL Pokedex_LocationEncountered(const Pokedex *pokedex, u16 locationLabelId)
+{
+    return ReadBit_2Forms((const u8 *)pokedex->locationEncountersUsed, locationLabelId);
+}
+
+static inline void Pokedex_WriteLocationEncountered(Pokedex *pokedex, u16 locationLabelId)
+{
+    ActivateBit_2Forms((u8 *)pokedex->locationEncountersUsed, locationLabelId);
+}
+
+static BOOL Pokedex_NormalizeLocation(u16 locationLabelId)
+{
+    if (locationLabelId > MAX_LOCATION_LABEL_ID) {
+        return LocationNames_Text_MysteryZone;
+    }
+    return locationLabelId;
+}
+
+BOOL Pokedex_HasEncounteredLocation(const Pokedex *pokedex, u16 locationLabelId)
+{
+    CheckPokedexIntegrity(pokedex);
+    locationLabelId = Pokedex_NormalizeLocation(locationLabelId);
+
+    return Pokedex_LocationEncountered(pokedex, locationLabelId);
+}
+
+void Pokedex_EncounterLocation(Pokedex *pokedex, u16 locationLabelId)
+{
+    CheckPokedexIntegrity(pokedex);
+    locationLabelId = Pokedex_NormalizeLocation(locationLabelId);
+
+    Pokedex_WriteLocationEncountered(pokedex, (u16)locationLabelId);
+}
+
+BOOL Pokedex_HasEncounteredMap(const Pokedex *pokedex, u16 locationId)
+{
+    return Pokedex_HasEncounteredLocation(pokedex, sMapHeaders[locationId].mapLabelTextID);
+}
+
+void Pokedex_EncounterMap(Pokedex *pokedex, u16 locationId)
+{
+    Pokedex_EncounterLocation(pokedex, sMapHeaders[locationId].mapLabelTextID);
 }

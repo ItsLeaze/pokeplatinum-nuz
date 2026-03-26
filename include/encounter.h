@@ -1,12 +1,19 @@
 #ifndef POKEPLATINUM_ENCOUNTER_H
 #define POKEPLATINUM_ENCOUNTER_H
 
+#include <nitro/types.h>
+
 #include "field/field_system_decl.h"
 
+#include "evolution_lines.h"
 #include "field_battle_data_transfer.h"
 #include "field_task.h"
 #include "party.h"
+#include "pokedex.h"
 
+BOOL IsEncounterLimitingEnabled(SaveData *saveData);
+BOOL IsDupeEnabled(Options *options);
+BOOL Species_IsDupe(Pokedex *pokedex, EvolutionGraph *evolutionGraph, u16 species);
 void Encounter_NewVsWild(FieldSystem *fieldSystem, FieldBattleDTO *dto);
 void Encounter_StartVsWild(FieldSystem *fieldSystem, FieldTask *task, FieldBattleDTO *dto);
 void Encounter_NewVsHoneyTree(FieldTask *task, int *resultMaskPtr);

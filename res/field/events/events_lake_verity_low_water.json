@@ -58,34 +58,6 @@
             "y": 0
         },
         {
-            "graphics_id": "OBJ_EVENT_GFX_CYRUS",
-            "movement_type": "MOVEMENT_TYPE_LOOK_NORTH",
-            "trainer_type": "TRAINER_TYPE_NONE",
-            "flag": "FLAG_UNK_0x0176",
-            "script": 0,
-            "initial_dir": 0,
-            "data": [],
-            "movement_range_x": 0,
-            "movement_range_z": 0,
-            "x": 48,
-            "z": 43,
-            "y": 0
-        },
-        {
-            "graphics_id": "OBJ_EVENT_GFX_BARRY",
-            "movement_type": "MOVEMENT_TYPE_LOOK_NORTH",
-            "trainer_type": "TRAINER_TYPE_NONE",
-            "flag": "FLAG_UNK_0x0196",
-            "script": 0,
-            "initial_dir": 0,
-            "data": [],
-            "movement_range_x": 0,
-            "movement_range_z": 0,
-            "x": 47,
-            "z": 54,
-            "y": 0
-        },
-        {
             "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",

@@ -176,9 +176,6 @@ _0261:
     SetVar VAR_0x8002, VAR_RESULT
     FadeScreen 6, 1, 1, 0
     WaitFadeScreen
-    Message 5
-    ShowYesNoMenu VAR_RESULT
-    GoToIfEq VAR_RESULT, MENU_NO, _0261
     CallIfNe VAR_0x8002, 1, _02B6
     GoTo _02BC
     End
@@ -229,17 +226,6 @@ _0330:
     SetFlag FLAG_ALT_MUSIC_ROWANS_LAB
     PlayMusic SEQ_OPENING2
     Message 9
-    Message 10
-    ShowYesNoMenu VAR_RESULT
-    GoToIfEq VAR_RESULT, MENU_NO, _0375
-    GoTo _0394
-    End
-
-_0375:
-    BufferPlayerName 0
-    Message 11
-    ShowYesNoMenu VAR_RESULT
-    GoToIfEq VAR_RESULT, MENU_NO, _0375
     GoTo _0394
     End
 

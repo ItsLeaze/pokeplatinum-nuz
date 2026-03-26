@@ -700,7 +700,7 @@ _09BC:
     FacePlayer
     CheckItem ITEM_HM04, 1, VAR_RESULT
     GoToIfEq VAR_RESULT, 1, _09FA
-    FindPartySlotWithMove VAR_RESULT, MOVE_STRENGTH
+    FindFirstPartySlotWithMon VAR_RESULT
     GoToIfNe VAR_RESULT, 6, _09FA
     BufferRivalName 0
     Message 3

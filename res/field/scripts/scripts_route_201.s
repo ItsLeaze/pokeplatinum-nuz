@@ -18,6 +18,9 @@
     ScriptEntry _08E8
     ScriptEntry _0EA1
     ScriptEntry _0EB4
+    ScriptEntry KantoStarterSelection
+    ScriptEntry JohtoStarterSelection
+    ScriptEntry HoennStarterSelection
     ScriptEntryEnd
 
 _0042:
@@ -97,11 +100,6 @@ _0143:
 
 _016F:
     BufferRivalName 0
-    Message 2
-    CloseMessage
-    ApplyMovement 2, _0708
-    ApplyMovement LOCALID_PLAYER, _0860
-    WaitMovement
     Message 3
     CloseMessage
     ApplyMovement 2, _071C
@@ -124,80 +122,14 @@ _016F:
     LockObject 5
     ApplyMovement 5, _07C0
     WaitMovement
+    ApplyMovement LOCALID_PLAYER, _0740
+    WaitMovement
     Message 6
-    BufferRivalName 0
-    Message 7
-    Message 8
-    ApplyMovement 2, _0740
-    WaitMovement
-    BufferRivalName 0
-    BufferPlayerName 1
-    Message 9
-    CloseMessage
-    ApplyMovement 2, _0748
-    ApplyMovement 5, _07C8
-    WaitMovement
-    Message 10
-    CloseMessage
-    WaitTime 20, VAR_RESULT
-    ApplyMovement 5, _07D0
-    WaitMovement
-    Message 11
-    ShowYesNoMenu VAR_RESULT
-    GoToIfEq VAR_RESULT, MENU_YES, _0298
-    GoToIfEq VAR_RESULT, MENU_NO, _0259
-    End
-
-_0259:
-    ApplyMovement 2, _0750
-    WaitMovement
-    BufferRivalName 0
-    Message 12
-    CloseMessage
-    ApplyMovement 2, _0758
-    WaitMovement
-    Message 13
-    ShowYesNoMenu VAR_RESULT
-    GoToIfEq VAR_RESULT, MENU_YES, _0298
-    GoToIfEq VAR_RESULT, MENU_NO, _0259
-    End
-
-_0298:
-    ApplyMovement 2, _0758
-    WaitMovement
-    BufferRivalName 0
-    Message 14
-    Message 15
-    GoTo _02B3
-    End
-
-_02B3:
-    ApplyMovement 2, _0768
-    WaitMovement
-    BufferRivalName 0
-    Message 16
-    ApplyMovement 2, _0770
-    WaitMovement
-    ApplyMovement LOCALID_PLAYER, _088C
-    WaitMovement
-    BufferPlayerName 1
-    Message 17
-    ShowYesNoMenu VAR_RESULT
-    GoToIfEq VAR_RESULT, MENU_YES, _030B
-    GoToIfEq VAR_RESULT, MENU_NO, _02FD
-    End
-
-_02FD:
-    BufferRivalName 0
-    Message 18
-    GoTo _02B3
+    GoTo _030B
     End
 
 _030B:
     Message 19
-    ApplyMovement 2, _0768
-    ApplyMovement LOCALID_PLAYER, _0894
-    WaitMovement
     BufferRivalName 0
     Message 20
     Message 21
@@ -219,8 +151,6 @@ _030B:
 _036E:
     Message 22
     CloseMessage
-    ApplyMovement 5, _07E8
-    WaitMovement
     ClearFlag FLAG_UNK_0x017D
     AddObject 12
     WaitTime 15, VAR_RESULT
@@ -235,8 +165,6 @@ _036E:
 _03A6:
     Message 24
     CloseMessage
-    ApplyMovement 5, _07E8
-    WaitMovement
     ClearFlag FLAG_UNK_0x017D
     AddObject 12
     WaitTime 15, VAR_RESULT
@@ -255,12 +183,6 @@ _03DE:
     WaitMovement
     WaitTime 15, VAR_RESULT
     Message 31
-    ApplyMovement 2, _0778
-    WaitMovement
-    BufferRivalName 0
-    Message 33
-    ApplyMovement 2, _0780
-    WaitMovement
     BufferPlayerName 1
     Message 34
     WaitABXPadPress
@@ -277,7 +199,7 @@ _042E:
     WaitFadeScreen
     SetFlag FLAG_UNK_0x017D
     RemoveObject 12
-    StartChooseStarterScene
+    StartChooseStarterScene SPECIES_TURTWIG, SPECIES_CHIMCHAR, SPECIES_PIPLUP
     SaveChosenStarter
     ReturnToField
     FadeScreen 6, 1, 1, 0
@@ -293,46 +215,89 @@ _042E:
     Message 36
     Message 37
     Message 38
+    # give Mobile Box and Add appropriate message
+    SetVar VAR_0x8004, 0x1D4
+    SetVar VAR_0x8005, 1
+    CallCommonScript 0x7FC
+    # give Cap Candy and Add appropriate message
+    SetVar VAR_0x8004, 0x1D5
+    SetVar VAR_0x8005, 1
+    CallCommonScript 0x7FC
+    # give Pokeballs and Add appropriate message
+    SetVar VAR_0x8004, 0x4
+    SetVar VAR_0x8005, 100
+    CallCommonScript 0x7FC
     CloseMessage
+    ApplyMovement 6, _08E0
     ApplyMovement 5, _0800
     ApplyMovement 2, _0788
     ApplyMovement LOCALID_PLAYER, _089C
     WaitMovement
     SetFlag FLAG_UNK_0x0178
+    SetFlag FLAG_UNK_0x0179
     RemoveObject 5
-    GetPlayerGender VAR_RESULT
-    GoToIfEq VAR_RESULT, GENDER_MALE, _04CA
-    GoTo _04EE
-    End
-
-_04CA:
-    Message 39
-    CloseMessage
-    ApplyMovement 6, _08D8
-    ApplyMovement LOCALID_PLAYER, _08A8
-    WaitMovement
-    Message 40
-    CloseMessage
+    RemoveObject 6
     GoTo _0512
     End
 
-_04EE:
-    Message 41
-    CloseMessage
-    ApplyMovement 6, _08D8
-    ApplyMovement LOCALID_PLAYER, _08A8
-    WaitMovement
-    Message 42
-    CloseMessage
-    GoTo _0512
+KantoStarterSelection:
+    LockAll
+    FadeScreen 6, 1, 0, 0
+    WaitFadeScreen
+    RemoveObject 13
+    StartChooseStarterScene SPECIES_BULBASAUR, SPECIES_CHARMANDER, SPECIES_SQUIRTLE
+    SaveChosenStarter
+    ReturnToField
+    FadeScreen 6, 1, 1, 0
+    WaitFadeScreen
+    GetPlayerStarterSpecies VAR_0x8000
+    GivePokemon VAR_0x8000, 5, ITEM_NONE, VAR_RESULT
+    GoToIfEq VAR_RESULT TRUE SetKantoStarterAcquired
+    End
+
+SetKantoStarterAcquired:
+    SetFlag VAR_KANTO_STARTER_ACQUIRED
+    End
+
+JohtoStarterSelection:
+    LockAll
+    FadeScreen 6, 1, 0, 0
+    WaitFadeScreen
+    RemoveObject 14
+    StartChooseStarterScene SPECIES_CHIKORITA, SPECIES_CYNDAQUIL, SPECIES_TOTODILE
+    SaveChosenStarter
+    ReturnToField
+    FadeScreen 6, 1, 1, 0
+    WaitFadeScreen
+    GetPlayerStarterSpecies VAR_0x8000
+    GivePokemon VAR_0x8000, 5, ITEM_NONE, VAR_RESULT
+    GoToIfEq VAR_RESULT TRUE SetJohtoStarterAcquired
+    End
+
+SetJohtoStarterAcquired:
+    SetFlag VAR_JOHTO_STARTER_ACQUIRED
+    End
+
+HoennStarterSelection:
+    LockAll
+    FadeScreen 6, 1, 0, 0
+    WaitFadeScreen
+    RemoveObject 15
+    StartChooseStarterScene SPECIES_TREECKO, SPECIES_TORCHIC, SPECIES_MUDKIP
+    SaveChosenStarter
+    ReturnToField
+    FadeScreen 6, 1, 1, 0
+    WaitFadeScreen
+    GetPlayerStarterSpecies VAR_0x8000
+    GivePokemon VAR_0x8000, 5, ITEM_NONE, VAR_RESULT
+    GoToIfEq VAR_RESULT TRUE SetHoennStarterAcquired
+    End
+
+SetHoennStarterAcquired:
+    SetFlag VAR_HOENN_STARTER_ACQUIRED
     End
 
 _0512:
-    ApplyMovement LOCALID_PLAYER, _08B0
-    ApplyMovement 6, _08E0
-    WaitMovement
-    SetFlag FLAG_UNK_0x0179
-    RemoveObject 6
     BufferRivalName 0
     Message 43
     CloseMessage
@@ -340,15 +305,7 @@ _0512:
     ApplyMovement 2, _07A8
     ApplyMovement LOCALID_PLAYER, _08BC
     WaitMovement
-    GoTo _0554
-    End
-
-_0554:
-    BufferPlayerName 1
-    Message 44
-    ShowYesNoMenu VAR_RESULT
-    GoToIfEq VAR_RESULT, MENU_YES, _057A
-    GoToIfEq VAR_RESULT, MENU_NO, _0656
+    GoTo _057A
     End
 
 _057A:
@@ -401,19 +358,11 @@ _0618:
     SetVar VAR_FOLLOWER_RIVAL_STATE, 2
     SetVar VAR_UNK_0x40A4, 3
     WaitTime 30, VAR_RESULT
-    FadeScreen 6, 3, 0, 0
-    WaitFadeScreen
     HealParty
-    Warp MAP_HEADER_TWINLEAF_TOWN_PLAYER_HOUSE_1F, 0, 2, 6, 0
-    FadeScreen 6, 3, 1, 0
-    WaitFadeScreen
+    ApplyMovement 2, _0708
+    WaitMovement
+    RemoveObject 2
     ReleaseAll
-    End
-
-_0656:
-    BufferRivalName 0
-    Message 45
-    GoTo _0554
     End
 
     .balign 4, 0
@@ -486,8 +435,7 @@ _06F0:
 
     .balign 4, 0
 _0708:
-    WalkNormalWest
-    WalkOnSpotNormalSouth
+    WalkNormalEast 10
     EndMovement
 
 Route201_UnusedMovement:
@@ -496,13 +444,13 @@ Route201_UnusedMovement:
 
     .balign 4, 0
 _071C:
-    WalkNormalWest 3
+    WalkNormalWest 4
     WalkOnSpotNormalEast
     EndMovement
 
     .balign 4, 0
 _0728:
-    WalkFastEast 3
+    WalkFastEast 4
     EndMovement
 
     .balign 4, 0
@@ -514,7 +462,7 @@ _0730:
 
     .balign 4, 0
 _0740:
-    WalkOnSpotNormalSouth
+    WalkOnSpotNormalNorth
     EndMovement
 
     .balign 4, 0
@@ -559,8 +507,6 @@ _0780:
 
     .balign 4, 0
 _0788:
-    WalkNormalNorth
-    WalkOnSpotNormalSouth
     Delay8 2
     WalkOnSpotNormalEast
     EndMovement
@@ -576,7 +522,7 @@ _07A8:
     Delay8 3
     WalkOnSpotFastSouth 8
     WalkFastWest
-    WalkFastSouth
+    WalkOnSpotFastSouth
     EndMovement
 
     .balign 4, 0
@@ -613,13 +559,14 @@ _07F0:
 
     .balign 4, 0
 _07F8:
-    WalkOnSpotNormalSouth
+    WalkOnSpotNormalEast
     EndMovement
 
     .balign 4, 0
 _0800:
     Delay8 2
     Delay4
+    WalkNormalNorth
     WalkNormalEast 9
     EndMovement
 
@@ -713,12 +660,14 @@ _08BC:
 
     .balign 4, 0
 _08C8:
-    WalkNormalEast 7
+    WalkNormalNorth
+    WalkNormalEast 9
+    WalkOnSpotNormalSouth
     EndMovement
 
     .balign 4, 0
 _08D0:
-    WalkOnSpotNormalEast
+    WalkOnSpotNormalSouth
     EndMovement
 
     .balign 4, 0
@@ -880,18 +829,25 @@ _0A8C:
     Message 35
     CloseMessage
     GetPlayerDir VAR_RESULT
-    GoToIfEq VAR_RESULT, 3, _0AB9
-    GoTo _0ACB
+    GoToIfEq VAR_RESULT, 1, Route201_MovePlayerUpTowardsCase
+    GoToIfEq VAR_RESULT, 3, Route201_MovePlayerLeftTowardsCase
+    GoTo Route201_MovePlayerRightTowardsCase
     End
 
-_0AB9:
+Route201_MovePlayerLeftTowardsCase:
     ApplyMovement LOCALID_PLAYER, _0AEC
     WaitMovement
     GoTo _0ADD
     End
 
-_0ACB:
+Route201_MovePlayerUpTowardsCase:
     ApplyMovement LOCALID_PLAYER, _0AF4
+    WaitMovement
+    GoTo _0ADD
+    End
+
+Route201_MovePlayerRightTowardsCase:
+    ApplyMovement LOCALID_PLAYER, Route201_MovePlayerRightTowardsCaseMovement
     WaitMovement
     GoTo _0ADD
     End
@@ -913,6 +869,11 @@ _0AEC:
     .balign 4, 0
 _0AF4:
     WalkNormalNorth
+    EndMovement
+
+    .balign 4, 0
+Route201_MovePlayerRightTowardsCaseMovement:
+    WalkNormalEast
     EndMovement
 
 Route201_UnusedMovement3:
@@ -1048,9 +1009,9 @@ _0CF1:
     WaitTime 30, VAR_RESULT
     FadeScreen 6, 3, 0, 0
     WaitFadeScreen
-    Warp MAP_HEADER_TWINLEAF_TOWN_PLAYER_HOUSE_1F, 0, 2, 6, 0
-    FadeScreen 6, 3, 1, 0
-    WaitFadeScreen
+    ApplyMovement 2, _0708
+    WaitMovement
+    RemoveObject 2
     ReleaseAll
     End
 
@@ -1096,7 +1057,7 @@ Route201_UnusedMovement8:
     .balign 4, 0
 _0D94:
     Delay8 3
-    WalkOnSpotNormalEast
+    WalkOnSpotNormalSouth
     EndMovement
 
     .balign 4, 0
@@ -1104,7 +1065,6 @@ _0DA0:
     Delay4
     WalkNormalNorth
     WalkOnSpotNormalSouth
-    WalkOnSpotNormalEast
     EndMovement
 
     .balign 4, 0

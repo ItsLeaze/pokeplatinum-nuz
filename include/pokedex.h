@@ -51,4 +51,9 @@ Pokedex *SaveData_GetPokedex(SaveData *saveData);
 u32 Pokedex_GetDisplayForm(const Pokedex *pokedex, int species, int formIndex);
 u32 Pokedex_NumFormsSeen(const Pokedex *pokedex, int species);
 
+BOOL Pokedex_HasEncounteredLocation(const Pokedex *pokedex, u16 locationLabelId);
+void Pokedex_EncounterLocation(Pokedex *pokedex, u16 locationLabelId);
+BOOL Pokedex_HasEncounteredMap(const Pokedex *pokedex, u16 locationId);
+void Pokedex_EncounterMap(Pokedex *pokedex, u16 locationId);
+
 #endif // POKEPLATINUM_POKEDEX_H

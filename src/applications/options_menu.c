@@ -62,7 +62,7 @@ enum OptionsMenuEntryID {
     ENTRY_TEXT_SPEED = 0,
     ENTRY_SOUND_MODE,
     ENTRY_BATTLE_SCENE,
-    ENTRY_BATTLE_STYLE,
+    ENTRY_NUZLOCKE_FEATURES,
     ENTRY_BUTTON_MODE,
     ENTRY_MESSAGE_BOX_FRAME,
     ENTRY_CLOSE,
@@ -108,7 +108,7 @@ typedef struct OptionsMenuData {
             OptionsMenuEntry textSpeed;
             OptionsMenuEntry soundMode;
             OptionsMenuEntry battleScene;
-            OptionsMenuEntry battleStyle;
+            OptionsMenuEntry nuzlockeFeatures;
             OptionsMenuEntry buttonMode;
             OptionsMenuEntry messageBoxStyle;
             OptionsMenuEntry close;
@@ -160,7 +160,7 @@ BOOL OptionsMenu_Init(ApplicationManager *appMan, int *state)
 
     menuData->options.textSpeed = Options_TextSpeed(options);
     menuData->options.battleScene = Options_BattleScene(options);
-    menuData->options.battleStyle = Options_BattleStyle(options);
+    menuData->options.nuzlockeFeatures = Options_NuzlockeFeatures(options);
     menuData->options.soundMode = Options_SoundMode(options);
     menuData->options.buttonMode = Options_ButtonMode(options);
     menuData->options.messageBoxStyle = Options_Frame(options);
@@ -179,7 +179,7 @@ BOOL OptionsMenu_Exit(ApplicationManager *appMan, int *state)
     if (menuData->saveSelections == 1) {
         menuData->options.textSpeed = menuData->entries.textSpeed.selected;
         menuData->options.battleScene = menuData->entries.battleScene.selected;
-        menuData->options.battleStyle = menuData->entries.battleStyle.selected;
+        menuData->options.nuzlockeFeatures = menuData->entries.nuzlockeFeatures.selected;
         menuData->options.soundMode = menuData->entries.soundMode.selected;
         menuData->options.buttonMode = menuData->entries.buttonMode.selected;
         menuData->options.messageBoxStyle = menuData->entries.messageBoxStyle.selected;
@@ -187,7 +187,7 @@ BOOL OptionsMenu_Exit(ApplicationManager *appMan, int *state)
 
     Options_SetTextSpeed(menuData->saveOptions, menuData->options.textSpeed);
     Options_SetBattleScene(menuData->saveOptions, menuData->options.battleScene);
-    Options_SetBattleStyle(menuData->saveOptions, menuData->options.battleStyle);
+    Options_SetNuzlockeFeatures(menuData->saveOptions, menuData->options.nuzlockeFeatures);
     Options_SetSoundMode(menuData->saveOptions, menuData->options.soundMode);
     Options_SetButtonMode(menuData->saveOptions, menuData->options.buttonMode);
     Options_SetFrame(menuData->saveOptions, menuData->options.messageBoxStyle);
@@ -682,7 +682,7 @@ static const u8 sEntryLabels[MAX_ENTRIES] = {
     OptionsMenu_Text_TextSpeedLabel,
     OptionsMenu_Text_SoundModeLabel,
     OptionsMenu_Text_BattleSceneLabel,
-    OptionsMenu_Text_BattleStyleLabel,
+    OptionsMenu_Text_NozlockeFeaturesLabel,
     OptionsMenu_Text_ButtonModeLabel,
     OptionsMenu_Text_MessageBoxStyleLabel,
     OptionsMenu_Text_CloseLabel,
@@ -742,7 +742,7 @@ static const u8 sFirstChoicePerEntry[MAX_ENTRIES] = {
     OptionsMenu_Text_TextSpeedSlow,
     OptionsMenu_Text_SoundModeStereo,
     OptionsMenu_Text_BattleSceneOn,
-    OptionsMenu_Text_BattleStyleShift,
+    OptionsMenu_Text_NuzlockeFeaturesOff,
     OptionsMenu_Text_ButtonModeNormal,
     OptionsMenu_Text_MessageBoxStyle_01,
     NULL,
@@ -760,7 +760,7 @@ static void LoadAllEntryChoices(OptionsMenuData *menuData)
 
     menuData->entries.textSpeed.selected = menuData->options.textSpeed;
     menuData->entries.battleScene.selected = menuData->options.battleScene;
-    menuData->entries.battleStyle.selected = menuData->options.battleStyle;
+    menuData->entries.nuzlockeFeatures.selected = menuData->options.nuzlockeFeatures;
     menuData->entries.soundMode.selected = menuData->options.soundMode;
     menuData->entries.buttonMode.selected = menuData->options.buttonMode;
     menuData->entries.messageBoxStyle.selected = menuData->options.messageBoxStyle;
@@ -926,7 +926,7 @@ static BOOL ChangesWereMade(OptionsMenuData *menuData)
 {
     return menuData->options.textSpeed != menuData->entries.textSpeed.selected
         || menuData->options.battleScene != menuData->entries.battleScene.selected
-        || menuData->options.battleStyle != menuData->entries.battleStyle.selected
+        || menuData->options.nuzlockeFeatures != menuData->entries.nuzlockeFeatures.selected
         || menuData->options.soundMode != menuData->entries.soundMode.selected
         || menuData->options.buttonMode != menuData->entries.buttonMode.selected
         || menuData->options.messageBoxStyle != menuData->entries.messageBoxStyle.selected;
@@ -960,7 +960,7 @@ static const u8 sEntryDescriptions[MAX_ENTRIES] = {
     OptionsMenu_Text_TextSpeedDescription,
     OptionsMenu_Text_SoundModeDescription,
     OptionsMenu_Text_BattleSceneDescription,
-    OptionsMenu_Text_BattleStyleDescription,
+    OptionsMenu_Text_NozlockeFeaturesDescription,
     OptionsMenu_Text_ButtonModeDescription,
     OptionsMenu_Text_MessageBoxStyleDescription,
     OptionsMenu_Text_CloseDescription,

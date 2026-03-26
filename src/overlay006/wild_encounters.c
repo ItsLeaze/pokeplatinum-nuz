@@ -98,9 +98,9 @@ static BOOL TryGenerateGrassEncounter_WithRadar(FieldSystem *fieldSystem, Pokemo
 static BOOL TryGenerateGrassEncounter_DoubleBattle(FieldSystem *fieldSystem, Pokemon *firstMon, FieldBattleDTO *battleParams, EncounterSlot *encounterTable, const WildEncounters_FieldParams *fieldParams);
 static BOOL TryGenerateSurfEncounter(FieldSystem *fieldSystem, Pokemon *param1, FieldBattleDTO *param2, EncounterSlot *param3, const WildEncounters_FieldParams *param4);
 static BOOL TryGenerateFishingEncounter(FieldSystem *fieldSystem, Pokemon *param1, FieldBattleDTO *param2, EncounterSlot *param3, const WildEncounters_FieldParams *param4, const int param5);
-static BOOL TryGenerateWildMon(Pokemon *firstPartyMon, const int fishingRodType, const WildEncounters_FieldParams *fieldParams, const EncounterSlot *encounterTable, const u8 encounterType, const int param5, FieldBattleDTO *param6);
+static BOOL TryGenerateWildMon(Pokemon *firstPartyMon, const int fishingRodType, const WildEncounters_FieldParams *fieldParams, const EncounterSlot *encounterTable, const u8 encounterType, const int param5, FieldBattleDTO *param6, FieldSystem *fieldSystem);
 static BOOL CreateWildMon_FromRadarNoChain(FieldSystem *fieldSystem, Pokemon *param1, const WildEncounters_FieldParams *param2, const EncounterSlot *param3, const int param4, FieldBattleDTO *param5, const int param6, const int param7);
-static BOOL CreateWildMon_FromRadarKeepChain(const int species, const int level, const int partyDest, const BOOL isShiny, const u32 trainerId, const WildEncounters_FieldParams *fieldParams, Pokemon *mon, FieldBattleDTO *battleParams);
+static BOOL CreateWildMon_FromRadarKeepChain(const int species, const int level, const int partyDest, const BOOL isShiny, const u32 trainerId, const WildEncounters_FieldParams *fieldParams, Pokemon *mon, FieldBattleDTO *battleParams, FieldSystem *fieldSystem);
 static u8 ModifyEncounterRateWithFieldParams(const BOOL isFishingEncounter, const u8 encounterRate, const WildEncounters_FieldParams *fieldParams, const u32 weatherEffect, Pokemon *unused);
 static void CreateWildSingleBattle(FieldSystem *fieldSystem, const BOOL param1, FieldBattleDTO **param2);
 static void WildEncounters_ReplaceGreatMarshDailyEncounters(FieldSystem *fieldSystem, const BOOL safariGameActive, const BOOL param2, EncounterSlot *encTable);
@@ -258,6 +258,10 @@ BOOL WildEncounters_TryWildEncounter(FieldSystem *fieldSystem)
 
     InitEncounterFieldParams(fieldSystem, firstPartyMon, encounterData, &encounterFieldParams);
 
+    if (IsEncounterLimitingEnabled(fieldSystem->saveData) && RouteAlreadyEncountered(fieldSystem)) {
+        return FALSE;
+    }
+
     if (!SpecialEncounter_RepelStepsEmpty(SaveData_GetSpecialEncounters(fieldSystem->saveData))) {
         Pokemon *firstLiveMon = Party_FindFirstEligibleBattler(party);
         encounterFieldParams.repelActive = TRUE;
@@ -381,6 +385,10 @@ BOOL WildEncounters_TryFishingEncounter(FieldSystem *fieldSystem, enum Encounter
 {
     EncounterSlot encounterTable[MAX_GRASS_ENCOUNTERS];
 
+    if (IsEncounterLimitingEnabled(fieldSystem->saveData) && RouteAlreadyEncountered(fieldSystem)) {
+        return FALSE;
+    }
+
     u8 encounterRate = GetFishingEncounterRate(fieldSystem, fishingRodType);
 
     if (encounterRate == 0) {
@@ -458,6 +466,10 @@ BOOL WildEncounters_TrySweetScentEncounter(FieldSystem *fieldSystem, FieldTask *
     RadarEncounterData radarData;
     EncounterSlot encounterTable[MAX_GRASS_ENCOUNTERS];
     WildEncounters_FieldParams encounterFieldParams;
+
+    if (IsEncounterLimitingEnabled(fieldSystem->saveData) && RouteAlreadyEncountered(fieldSystem)) {
+        return FALSE;
+    }
 
     int playerX = Player_GetXPos(fieldSystem->playerAvatar);
     int playerZ = Player_GetZPos(fieldSystem->playerAvatar);
@@ -569,6 +581,10 @@ BOOL WildEncounters_TryMudEncounter(FieldSystem *fieldSystem, FieldBattleDTO **b
     WildEncounters_FieldParams encounterFieldParams;
 
     *battleParams = NULL;
+
+    if (IsEncounterLimitingEnabled(fieldSystem->saveData) && (fieldSystem)) {
+        return FALSE;
+    }
 
     int playerX = Player_GetXPos(fieldSystem->playerAvatar);
     int playerZ = Player_GetZPos(fieldSystem->playerAvatar);
@@ -703,7 +719,7 @@ static BOOL TryGenerateGrassEncounter_WithRadar(FieldSystem *fieldSystem, Pokemo
 
         if (radarData->preserveChain == 1) {
             TrainerInfo *v3 = SaveData_GetTrainerInfo(FieldSystem_GetSaveData(fieldSystem));
-            encounterSuccess = CreateWildMon_FromRadarKeepChain(species, level, 1, radarData->isShiny, TrainerInfo_ID(v3), encounterFieldParams, firstPartyMon, battleParams);
+            encounterSuccess = CreateWildMon_FromRadarKeepChain(species, level, 1, radarData->isShiny, TrainerInfo_ID(v3), encounterFieldParams, firstPartyMon, battleParams, fieldSystem);
         } else {
             encounterSuccess = CreateWildMon_FromRadarNoChain(fieldSystem, firstPartyMon, encounterFieldParams, encounterTable, 1, battleParams, species, level);
         }
@@ -717,7 +733,7 @@ static BOOL TryGenerateGrassEncounter_WithRadar(FieldSystem *fieldSystem, Pokemo
             }
         }
     } else {
-        encounterSuccess = TryGenerateWildMon(firstPartyMon, 0xff, encounterFieldParams, encounterTable, ENCOUNTER_TYPE_GRASS, 1, battleParams);
+        encounterSuccess = TryGenerateWildMon(firstPartyMon, 0xff, encounterFieldParams, encounterTable, ENCOUNTER_TYPE_GRASS, 1, battleParams, fieldSystem);
 
         if (encounterSuccess) {
             RadarChain_Clear(fieldSystem->chain);
@@ -729,22 +745,22 @@ static BOOL TryGenerateGrassEncounter_WithRadar(FieldSystem *fieldSystem, Pokemo
 
 static BOOL TryGenerateGrassEncounter_DoubleBattle(FieldSystem *fieldSystem, Pokemon *firstPartyMon, FieldBattleDTO *battleParams, EncounterSlot *encounterTable, const WildEncounters_FieldParams *fieldParams)
 {
-    if (!TryGenerateWildMon(firstPartyMon, 0xff, fieldParams, encounterTable, ENCOUNTER_TYPE_GRASS, 1, battleParams)) {
+    if (!TryGenerateWildMon(firstPartyMon, 0xff, fieldParams, encounterTable, ENCOUNTER_TYPE_GRASS, 1, battleParams, fieldSystem)) {
         return FALSE;
     }
 
-    BOOL encounterSuccess = TryGenerateWildMon(firstPartyMon, 0xff, fieldParams, encounterTable, ENCOUNTER_TYPE_GRASS, 3, battleParams);
+    BOOL encounterSuccess = TryGenerateWildMon(firstPartyMon, 0xff, fieldParams, encounterTable, ENCOUNTER_TYPE_GRASS, 3, battleParams, fieldSystem);
     return encounterSuccess;
 }
 
 static BOOL TryGenerateSurfEncounter(FieldSystem *fieldSystem, Pokemon *param1, FieldBattleDTO *param2, EncounterSlot *param3, const WildEncounters_FieldParams *param4)
 {
-    return TryGenerateWildMon(param1, 0xff, param4, param3, ENCOUNTER_TYPE_SURF, 1, param2);
+    return TryGenerateWildMon(param1, 0xff, param4, param3, ENCOUNTER_TYPE_SURF, 1, param2, fieldSystem);
 }
 
 static BOOL TryGenerateFishingEncounter(FieldSystem *fieldSystem, Pokemon *param1, FieldBattleDTO *param2, EncounterSlot *param3, const WildEncounters_FieldParams *param4, const int fishingRodType)
 {
-    return TryGenerateWildMon(param1, fishingRodType, param4, param3, ENCOUNTER_TYPE_FISHING, 1, param2);
+    return TryGenerateWildMon(param1, fishingRodType, param4, param3, ENCOUNTER_TYPE_FISHING, 1, param2, fieldSystem);
 }
 
 static BOOL ShouldGetRandomEncounter(FieldSystem *fieldSystem, const u32 encounterRate, const u8 tileBehavior)
@@ -1086,7 +1102,7 @@ static void CreateWildMon(u16 species, u8 level, const int partyDest, const Wild
     Heap_Free(newEncounter);
 }
 
-static BOOL TryGenerateWildMon(Pokemon *firstPartyMon, const int fishingRodType, const WildEncounters_FieldParams *encounterFieldParams, const EncounterSlot *encounterTable, const u8 encounterType, const int partyDest, FieldBattleDTO *battleParams)
+static BOOL TryGenerateWildMon(Pokemon *firstPartyMon, const int fishingRodType, const WildEncounters_FieldParams *encounterFieldParams, const EncounterSlot *encounterTable, const u8 encounterType, const int partyDest, FieldBattleDTO *battleParams, FieldSystem *fieldSystem)
 {
     BOOL forcedSlot;
     u8 encounterSlot = 0;
@@ -1132,6 +1148,9 @@ static BOOL TryGenerateWildMon(Pokemon *firstPartyMon, const int fishingRodType,
     default:
         GF_ASSERT(FALSE);
     }
+    if (IsDupeEnabled(battleParams->options) && Species_IsDupe(battleParams->pokedex, fieldSystem->evolutionGraph, encounterTable[encounterSlot].species)) {
+        return FALSE;
+    }
 
     if (FirstMonAbilityPreventsEncounter(encounterFieldParams, firstPartyMon, level)) {
         return FALSE;
@@ -1146,10 +1165,14 @@ static BOOL TryGenerateWildMon(Pokemon *firstPartyMon, const int fishingRodType,
 }
 
 // Forced to be the species of the chain.
-static BOOL CreateWildMon_FromRadarKeepChain(const int species, const int level, const int partyDest, const BOOL isShiny, const u32 trainerId, const WildEncounters_FieldParams *encounterFieldParams, Pokemon *mon, FieldBattleDTO *battleParams)
+static BOOL CreateWildMon_FromRadarKeepChain(const int species, const int level, const int partyDest, const BOOL isShiny, const u32 trainerId, const WildEncounters_FieldParams *encounterFieldParams, Pokemon *mon, FieldBattleDTO *battleParams, FieldSystem *fieldSystem)
 {
     GF_ASSERT(species != 0);
     u8 lvl = level;
+
+    if (IsDupeEnabled(battleParams->options) && Species_IsDupe(battleParams->pokedex, fieldSystem->evolutionGraph, species)) {
+        return FALSE;
+    }
 
     if (isShiny) {
         CreateWildMonShinyWithGenderOrNature(species, lvl, partyDest, trainerId, encounterFieldParams, mon, battleParams);
@@ -1189,11 +1212,15 @@ static BOOL CreateWildMon_FromRadarNoChain(FieldSystem *fieldSystem, Pokemon *mo
         RadarChain_Clear(fieldSystem->chain);
     }
 
+    if (IsDupeEnabled(battleParams->options) && Species_IsDupe(battleParams->pokedex, fieldSystem->evolutionGraph, newSpecies)) {
+        return FALSE;
+    }
+
     CreateWildMon(newSpecies, newLevel, partyDest, encounterFieldParams, mon, battleParams);
     return TRUE;
 }
 
-void CreateWildMon_HoneyTree(FieldSystem *fieldSystem, FieldBattleDTO *battleParams)
+BOOL CreateWildMon_HoneyTree(FieldSystem *fieldSystem, FieldBattleDTO *battleParams)
 {
     Pokemon *firstPartyMon;
 
@@ -1217,11 +1244,15 @@ void CreateWildMon_HoneyTree(FieldSystem *fieldSystem, FieldBattleDTO *battlePar
         }
     }
 
+    if (IsDupeEnabled(battleParams->options) && Species_IsDupe(battleParams->pokedex, fieldSystem->evolutionGraph, species)) {
+        return FALSE;
+    }
+
     HoneyTree_Unslather(fieldSystem);
     battleParams->battleStatusMask |= BATTLE_STATUS_HONEY_TREE;
     CreateWildMon(species, level, 1, &encounterFieldParams, firstPartyMon, battleParams);
 
-    return;
+    return TRUE;
 }
 
 void CreateWildMon_Scripted(FieldSystem *fieldSystem, u16 species, u8 level, FieldBattleDTO *battleParams)
@@ -1380,7 +1411,7 @@ static BOOL FirstMonAbilityPreventsEncounter(const WildEncounters_FieldParams *e
 static void CreateWildSingleBattle(FieldSystem *fieldSystem, const BOOL safariGameActive, FieldBattleDTO **battleParams)
 {
     if (!safariGameActive) {
-        *battleParams = FieldBattleDTO_New(HEAP_ID_FIELDMAP, (0x0 | 0x0));
+        *battleParams = FieldBattleDTO_New(HEAP_ID_FIELDMAP, 0x0 | 0x0);
     } else {
         u16 *safariBallsCount = FieldOverworldState_GetSafariBallCount(SaveData_GetFieldOverworldState(fieldSystem->saveData));
         *battleParams = FieldBattleDTO_NewSafari(HEAP_ID_FIELDMAP, *safariBallsCount);
@@ -1392,6 +1423,12 @@ static void WildEncounters_ReplaceGreatMarshDailyEncounters(FieldSystem *fieldSy
     if (safariGameActive) {
         ReplaceGreatMarshDailyEncounters(SpecialEncounter_GetDailyMon(SaveData_GetSpecialEncounters(fieldSystem->saveData), DAILY_MARSH), nationalDexObtained, fieldSystem->location->mapId, &encTable[6].species, &encTable[7].species);
     }
+}
+
+static BOOL RouteAlreadyEncountered(FieldSystem *fieldSystem)
+{
+    Pokedex *pokedex = SaveData_GetPokedex(fieldSystem->saveData);
+    return Pokedex_HasEncounteredMap(pokedex, fieldSystem->location->mapId);
 }
 
 static BOOL RepelPreventsEncounter(const u8 wildLevel, const WildEncounters_FieldParams *encounterFieldParams)

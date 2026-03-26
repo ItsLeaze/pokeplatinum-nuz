@@ -3646,6 +3646,21 @@
         "a specific location. It emits a special\n",
         "electric signal to open a door."
       ]
+    },
+    {
+      "id": "pl_msg_00000391_00468",
+      "en_US": [
+        "A high-tech item allowing you to access\n",
+        "your PC Box from anywhere."
+      ]
+    },
+    {
+      "id": "pl_msg_00000391_00469",
+      "en_US": [
+        "A special candy. Give a pokemon just\n",
+        "one bite of it to level it up to the\n",
+        "next relevant level."
+      ]
     }
   ]
 }

@@ -26,9 +26,9 @@ void Options_Init(Options *options)
 {
     MI_CpuFill8(options, 0, sizeof(Options));
 
-    options->textSpeed = OPTIONS_TEXT_SPEED_NORMAL;
+    options->textSpeed = OPTIONS_TEXT_SPEED_FAST;
     options->soundMode = OPTIONS_SOUND_MODE_STEREO;
-    options->battleStyle = OPTIONS_BATTLE_STYLE_SHIFT;
+    options->useNuzlockeFeatures = OPTIONS_NUZLOCKE_FEATURES_OFF;
     options->battleScene = OPTIONS_BATTLE_SCENE_ON;
     options->buttonMode = OPTIONS_BUTTON_MODE_NORMAL;
     options->frame = OPTIONS_FRAME_1;
@@ -99,12 +99,17 @@ void Options_SetBattleScene(Options *options, enum OptionsBattleScene scene)
 
 int Options_BattleStyle(const Options *options)
 {
-    return options->battleStyle;
+    return OPTIONS_BATTLE_STYLE_SET;
 }
 
-void Options_SetBattleStyle(Options *options, enum OptionsBattleStyle style)
+int Options_NuzlockeFeatures(const Options *options)
 {
-    options->battleStyle = style;
+    return options->useNuzlockeFeatures;
+}
+
+void Options_SetNuzlockeFeatures(Options *options, enum OptionsNuzlockeFeatures nuzlockeFeatures)
+{
+    options->useNuzlockeFeatures = nuzlockeFeatures;
 }
 
 int Options_ButtonMode(const Options *options)

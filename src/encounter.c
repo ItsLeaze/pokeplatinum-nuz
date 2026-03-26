@@ -8,6 +8,7 @@
 #include "constants/pokemon.h"
 #include "generated/game_records.h"
 #include "generated/map_headers.h"
+#include "generated/pokemon_data_params.h"
 #include "generated/trainer_score_events.h"
 
 #include "struct_decls/pc_boxes_decl.h"
@@ -21,9 +22,11 @@
 
 #include "catching_show.h"
 #include "communication_information.h"
+#include "debug.h"
 #include "dexmode_checker.h"
 #include "enc_effects.h"
 #include "enums.h"
+#include "evolution_lines.h"
 #include "field_battle_data_transfer.h"
 #include "field_comm_manager.h"
 #include "field_map_change.h"
@@ -38,6 +41,7 @@
 #include "map_object.h"
 #include "party.h"
 #include "pc_boxes.h"
+#include "pokedex.h"
 #include "pokemon.h"
 #include "pokeradar.h"
 #include "save_player.h"
@@ -225,6 +229,10 @@ static BOOL FieldTask_Encounter(FieldTask *task)
 
 static void StartEncounter(FieldTask *task, FieldBattleDTO *dto, int introEffectID, int battleBGM, int *resultMaskPtr)
 {
+    for (int i = 0; i < MAX_BATTLERS; i++) {
+        Party_HealAllMembers(dto->parties[i]);
+    }
+
     Encounter *encounter = NewEncounter(dto, introEffectID, battleBGM, resultMaskPtr);
     FieldTask_InitCall(task, FieldTask_Encounter, encounter);
 }
@@ -342,8 +350,52 @@ static void FreeWildEncounter(WildEncounter *encounter)
     Heap_Free(encounter);
 }
 
+BOOL Species_IsDupe(Pokedex *pokedex, EvolutionGraph *evolutionGraph, u16 species)
+{
+    u16 relatedSpecies[MAX_EVOLUTION_TREE_SIZE];
+    u8 relatedSpeciesCount;
+    GetEvolutionTree(evolutionGraph, species, relatedSpecies, &relatedSpeciesCount);
+    for (int i = 0; i < relatedSpeciesCount; i++) {
+        if (Pokedex_HasCaughtSpecies(pokedex, relatedSpecies[i])) {
+            return TRUE;
+        }
+    }
+    return FALSE;
+}
+
+BOOL IsEncounterLimitingEnabled(SaveData *saveData)
+{
+    Options *options = SaveData_GetOptions(saveData);
+    return Options_NuzlockeFeatures(options) == OPTIONS_NUZLOCKE_FEATURES_ON;
+}
+
+BOOL IsDupeEnabled(Options *options)
+{
+    return Options_NuzlockeFeatures(options) == OPTIONS_NUZLOCKE_FEATURES_ON;
+}
+
+static BOOL Battle_IsDupe(FieldBattleDTO *dto, EvolutionGraph *evolutionGraph)
+{
+    u16 species;
+    if (dto->parties[BATTLER_ENEMY_1]->currentCount != 1) {
+        return FALSE;
+    }
+    species = Pokemon_GetValue(&(dto->parties[BATTLER_ENEMY_1]->pokemon[0]), MON_DATA_SPECIES, NULL);
+    if (!Species_IsDupe(dto->pokedex, evolutionGraph, species)) {
+        return FALSE;
+    }
+    if (dto->parties[BATTLER_ENEMY_2]->currentCount != 1) {
+        return TRUE;
+    }
+    species = Pokemon_GetValue(&(dto->parties[BATTLER_ENEMY_2]->pokemon[0]), MON_DATA_SPECIES, NULL);
+    return Species_IsDupe(dto->pokedex, evolutionGraph, species);
+}
+
 void Encounter_NewVsWild(FieldSystem *fieldSystem, FieldBattleDTO *dto)
 {
+    if (IsDupeEnabled(dto->options) && !Battle_IsDupe(dto, fieldSystem->evolutionGraph)) {
+        Pokedex_EncounterMap(dto->pokedex, fieldSystem->location->mapId);
+    }
     if (SystemFlag_CheckSafariGameActive(SaveData_GetVarsFlags(fieldSystem->saveData)) != FALSE) {
         Encounter *encounter = NewEncounter(dto, EncEffects_CutInEffect(dto), EncEffects_BGM(dto), NULL);
         FieldSystem_CreateTask(fieldSystem, FieldTask_SafariEncounter, encounter);
@@ -355,6 +407,9 @@ void Encounter_NewVsWild(FieldSystem *fieldSystem, FieldBattleDTO *dto)
 
 void Encounter_StartVsWild(FieldSystem *fieldSystem, FieldTask *task, FieldBattleDTO *dto)
 {
+    if (IsDupeEnabled(dto->options) && !Battle_IsDupe(dto, fieldSystem->evolutionGraph)) {
+        Pokedex_EncounterMap(dto->pokedex, fieldSystem->location->mapId);
+    }
     if (SystemFlag_CheckSafariGameActive(SaveData_GetVarsFlags(fieldSystem->saveData)) != FALSE) {
         Encounter *encounter = NewEncounter(dto, EncEffects_CutInEffect(dto), EncEffects_BGM(dto), NULL);
         FieldTask_InitJump(task, FieldTask_SafariEncounter, encounter);
@@ -368,6 +423,7 @@ static BOOL FieldTask_WildEncounter(FieldTask *task)
 {
     FieldSystem *fieldSystem = FieldTask_GetFieldSystem(task);
     WildEncounter *encounter = FieldTask_GetEnv(task);
+    Party_HealAllMembers(SaveData_GetParty(fieldSystem->saveData));
 
     switch (encounter->state) {
     case 0:
@@ -543,10 +599,12 @@ void Encounter_NewVsHoneyTree(FieldTask *task, int *resultMaskPtr)
     dto->background = BACKGROUND_PLAIN;
     dto->terrain = TERRAIN_PLAIN;
 
-    CreateWildMon_HoneyTree(fieldSystem, dto);
+    BOOL encounterSuccessful = CreateWildMon_HoneyTree(fieldSystem, dto);
 
-    GameRecords_IncrementRecordValue(SaveData_GetGameRecords(fieldSystem->saveData), RECORD_WILD_BATTLES_FOUGHT);
-    StartEncounter(task, dto, EncEffects_CutInEffect(dto), EncEffects_BGM(dto), resultMaskPtr);
+    if (encounterSuccessful) {
+        GameRecords_IncrementRecordValue(SaveData_GetGameRecords(fieldSystem->saveData), RECORD_WILD_BATTLES_FOUGHT);
+        StartEncounter(task, dto, EncEffects_CutInEffect(dto), EncEffects_BGM(dto), resultMaskPtr);
+    }
 }
 
 void Encounter_NewVsSpeciesAtLevel(FieldTask *task, u16 species, u8 level, int *resultMaskPtr, BOOL isLegendary)

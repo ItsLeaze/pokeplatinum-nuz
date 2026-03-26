@@ -5,7 +5,7 @@
     ScriptEntry _002E
     ScriptEntry _0064
     ScriptEntry _017C
-    ScriptEntry _0214
+    ScriptEntry MomBehavior
     ScriptEntry _08E0
     ScriptEntry _0948
     ScriptEntry _095E
@@ -32,44 +32,24 @@ _005E:
 
 _0064:
     LockAll
-    ApplyMovement LOCALID_PLAYER, _00A4
-    ApplyMovement 0, _00B0
-    WaitMovement
     SetFlag FLAG_UNK_0x0087
+    ApplyMovement 0, StartOfGame_MoveMomToPlayer
+    WaitMovement
     BufferPlayerName 0
     BufferRivalName 1
     Message 0
+    # give Journal and Add appropriate message
+    SetVar VAR_0x8004, 0x1B1
+    SetVar VAR_0x8005, 1
+    CallCommonScript 0x7FC
+    GiveJournal
     CloseMessage
     WaitTime 15, VAR_RESULT
-    ApplyMovement 0, _00CC
-    WaitMovement
     SetVar VAR_UNK_0x40A4, 1
+    ApplyMovement 0, StartOfGame_MoveMomBackToSeat
+    WaitMovement
     ReleaseAll
     End
-
-    .balign 4, 0
-_00A4:
-    Delay4
-    WalkOnSpotNormalSouth
-    EndMovement
-
-    .balign 4, 0
-_00B0:
-    WalkOnSpotNormalNorth
-    EmoteExclamationMark
-    Delay8
-    WalkNormalNorth
-    WalkNormalEast 3
-    WalkNormalNorth 3
-    EndMovement
-
-    .balign 4, 0
-_00CC:
-    WalkNormalSouth 2
-    WalkNormalWest 3
-    WalkNormalSouth 2
-    WalkOnSpotNormalNorth
-    EndMovement
 
 _00E0:
     LockAll
@@ -117,60 +97,18 @@ _0170:
 
 _017C:
     LockAll
-    WaitTime 30, VAR_RESULT
-    ApplyMovement 0, _01D4
-    ApplyMovement LOCALID_PLAYER, _01F8
-    WaitMovement
-    WaitTime 30, VAR_RESULT
-    BufferRivalName 0
-    BufferPlayerName 1
-    Message 6
-    CloseMessage
-    WaitTime 30, VAR_RESULT
-    BufferPlayerName 0
-    Message 7
-    GiveRunningShoes
-    BufferPlayerName 0
-    Message 8
-    PlaySound SEQ_FANFA4
-    WaitSound
-    Message 9
-    WaitABXPadPress
-    CloseMessage
     SetVar VAR_UNK_0x40A4, 4
     ReleaseAll
     End
 
-    .balign 4, 0
-_01D4:
-    WalkNormalWest
-    FaceNorth
-    Delay8 2
-    WalkNormalEast 3
-    WalkNormalSouth 2
-    WalkNormalEast 3
-    WalkNormalSouth 2
-    WalkOnSpotNormalWest
-    EndMovement
-
-    .balign 4, 0
-_01F8:
-    Delay8 4
-    WalkOnSpotNormalEast
-    Delay8 4
-    WalkNormalEast 3
-    WalkNormalSouth 2
-    WalkNormalEast
-    EndMovement
-
-_0214:
+MomBehavior:
     PlayFanfare SEQ_SE_CONFIRM
     LockAll
     FacePlayer
     GoToIfSet FLAG_UNK_0x0002, _02AF
     GoToIfGe VAR_UNK_0x40A4, 7, _0792
     GoToIfEq VAR_UNK_0x40A4, 6, _035E
-    GoToIfSet FLAG_UNK_0x0090, _036C
+    # GoToIfSet FLAG_UNK_0x0090, _036C
     GoToIfGe VAR_UNK_0x40A4, 5, _0788
     GoToIfGe VAR_UNK_0x40A4, 4, _0711
     GoToIfSet FLAG_UNK_0x00F8, _075A
@@ -184,6 +122,21 @@ _0214:
     CloseMessage
     ReleaseAll
     End
+
+    .balign 4, 0
+StartOfGame_MoveMomToPlayer:
+    WalkNormalNorth
+    WalkNormalEast 3
+    WalkNormalNorth 3
+    EndMovement
+
+    .balign 4, 0
+StartOfGame_MoveMomBackToSeat:
+    WalkNormalSouth 3
+    WalkNormalWest 3
+    WalkNormalSouth 1
+    WalkOnSpotNormalNorth
+    EndMovement
 
 TwinleafTownPlayerHouse1F_Unused:
     BufferPlayerName 0

@@ -31,7 +31,7 @@
         },
         {
             "graphics_id": "OBJ_EVENT_GFX_BARRY",
-            "movement_type": "MOVEMENT_TYPE_LOOK_SOUTH_AND_WEST",
+            "movement_type": "MOVEMENT_TYPE_LOOK_LEFT",
             "trainer_type": "TRAINER_TYPE_NONE",
             "flag": "FLAG_UNK_0x0172",
             "script": 9700,
@@ -91,7 +91,7 @@
         },
         {
             "graphics_id": "OBJ_EVENT_GFX_UNK_101",
-            "movement_type": "MOVEMENT_TYPE_LOOK_RIGHT",
+            "movement_type": "MOVEMENT_TYPE_LOOK_SOUTH",
             "trainer_type": "TRAINER_TYPE_NONE",
             "flag": "FLAG_UNK_0x0179",
             "script": 0,
@@ -185,8 +185,50 @@
             "data": [],
             "movement_range_x": 0,
             "movement_range_z": 0,
-            "x": 112,
-            "z": 854,
+            "x": 114,
+            "z": 853,
+            "y": 0
+        },
+        {
+            "graphics_id": "OBJ_EVENT_GFX_BRIEFCASE",
+            "movement_type": "MOVEMENT_TYPE_LOOK_NORTH",
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "flag": "VAR_KANTO_STARTER_ACQUIRED",
+            "script": 17,
+            "initial_dir": 1,
+            "data": [],
+            "movement_range_x": 0,
+            "movement_range_z": 0,
+            "x": 106,
+            "z": 855,
+            "y": 0
+        },
+        {
+            "graphics_id": "OBJ_EVENT_GFX_BRIEFCASE",
+            "movement_type": "MOVEMENT_TYPE_LOOK_NORTH",
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "flag": "VAR_JOHTO_STARTER_ACQUIRED",
+            "script": 18,
+            "initial_dir": 1,
+            "data": [],
+            "movement_range_x": 0,
+            "movement_range_z": 0,
+            "x": 107,
+            "z": 855,
+            "y": 0
+        },
+        {
+            "graphics_id": "OBJ_EVENT_GFX_BRIEFCASE",
+            "movement_type": "MOVEMENT_TYPE_LOOK_NORTH",
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "flag": "VAR_HOENN_STARTER_ACQUIRED",
+            "script": 19,
+            "initial_dir": 1,
+            "data": [],
+            "movement_range_x": 0,
+            "movement_range_z": 0,
+            "x": 108,
+            "z": 855,
             "y": 0
         }
     ],
@@ -205,9 +247,9 @@
         {
             "script": 4,
             "x": 113,
-            "z": 855,
+            "z": 854,
             "y": 0,
-            "width": 2,
+            "width": 1,
             "length": 1,
             "var": 16518,
             "value": 1
@@ -243,14 +285,14 @@
             "value": 3
         },
         {
-            "script": 16,
-            "x": 109,
-            "z": 857,
+            "script": 4,
+            "x": 114,
+            "z": 855,
             "y": 0,
-            "width": 5,
+            "width": 1,
             "length": 1,
             "var": 16518,
-            "value": 2
+            "value": 1
         }
     ]
 }

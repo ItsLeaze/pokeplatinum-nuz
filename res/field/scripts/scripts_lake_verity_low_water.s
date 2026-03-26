@@ -39,76 +39,7 @@ _005B:
 
 _006F:
     LockAll
-    ClearHasPartner
-    ApplyMovement 5, _0298
-    ApplyMovement LOCALID_PLAYER, _0368
-    WaitMovement
-    BufferRivalName 0
-    Message 0
-    CloseMessage
-    AddFreeCamera 46, 53
-    ApplyFreeCameraMovement _01B4
-    WaitMovement
-    WaitTime 15, VAR_RESULT
-    Message 1
-    CloseMessage
-    WaitTime 30, VAR_RESULT
-    ApplyMovement 4, _01E0
-    ApplyFreeCameraMovement _01C0
-    WaitMovement
-    RestoreCamera
-    Message 2
-    CloseMessage
-    ApplyMovement 5, _02A0
-    ApplyMovement LOCALID_PLAYER, _0370
-    WaitMovement
-    ApplyMovement 4, _01F0
-    WaitMovement
-    PlayFanfare SEQ_SE_DP_KAIDAN2
-    RemoveObject 4
-    WaitTime 50, VAR_RESULT
-    ApplyMovement LOCALID_PLAYER, _0378
-    ApplyMovement 5, _02AC
-    WaitMovement
-    BufferRivalName 0
-    Message 3
-    CloseMessage
-    ApplyMovement 5, _02B8
-    ApplyMovement LOCALID_PLAYER, _0380
-    WaitMovement
-    WaitTime 30, VAR_RESULT
-    BufferPlayerName 1
-    Message 4
-    PlayCry SPECIES_MESPRIT
-    Message 5
-    WaitCry
-    CloseMessage
-    ApplyMovement 5, _02C0
-    ApplyMovement LOCALID_PLAYER, _0388
-    WaitMovement
-    WaitTime 15, VAR_RESULT
-    ApplyMovement 5, _02F0
-    WaitMovement
-    BufferRivalName 0
-    BufferPlayerName 1
-    Message 6
-    CloseMessage
-    ApplyMovement 5, _02E8
-    WaitMovement
-    WaitTime 15, VAR_RESULT
-    BufferPlayerName 1
-    Message 7
-    CloseMessage
-    ApplyMovement 5, _02F8
-    ApplyMovement LOCALID_PLAYER, _039C
-    WaitMovement
     SetFlag FLAG_UNK_0x0196
-    RemoveObject 5
-    PlayFanfare SEQ_SE_DP_KAIDAN2
-    GoTo _01A1
-    End
-
-_01A1:
     SetVar VAR_FOLLOWER_RIVAL_STATE, 4
     SetVar VAR_UNK_0x4095, 1
     ReleaseAll

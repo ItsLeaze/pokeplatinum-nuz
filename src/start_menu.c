@@ -1644,6 +1644,22 @@ static BOOL sub_0203C390(FieldTask *taskMan)
     return 0;
 }
 
+BOOL CleanupMobileBox(FieldTask *taskMan)
+{
+    FieldSystem *fieldSystem = FieldTask_GetFieldSystem(taskMan);
+    StartMenu *menu = FieldTask_GetEnv(taskMan);
+    void **partyManagementData = FieldSystem_GetScriptMemberPtr(fieldSystem, SCRIPT_MANAGER_PARTY_MANAGEMENT_DATA);
+    PokemonStorageSession *pokemonStorageSession = *partyManagementData;
+
+    Heap_Free(*partyManagementData);
+    *partyManagementData = NULL;
+
+    menu->taskData = sub_0203D20C(fieldSystem, &menu->unk_230);
+    sub_0203B674(menu, sub_0203BC5C);
+
+    return 0;
+}
+
 BOOL sub_0203C3F4(FieldTask *taskMan)
 {
     FieldSystem *fieldSystem = FieldTask_GetFieldSystem(taskMan);

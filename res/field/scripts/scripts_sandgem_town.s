@@ -434,36 +434,65 @@ _056C:
 
 _057C:
     LockAll
-    ScrCmd_168 5, 26, 8, 10, 77
-    ScrCmd_16B 77
-    ScrCmd_169 77
+    # ScrCmd_168 5, 26, 8, 10, 77
+    # ScrCmd_16B 77
+    # ScrCmd_169 77
     ClearFlag FLAG_UNK_0x02C4
-    AddObject 14
-    ApplyMovement 14, _0798
+    # AddObject 14
+    # ApplyMovement 14, _0798
+    # WaitMovement
+    # BufferPlayerName 0
+    # Message 8
+    # CloseMessage
+    # ApplyMovement LOCALID_PLAYER, _07AC
+    # ApplyMovement 4, _07F8
+    # WaitMovement
+    # Message 9
+    # SetVar VAR_0x8004, 0x162
+    # SetVar VAR_0x8005, 1
+    # CallCommonScript 0x7FC
+    # Message 10
+    # CloseMessage
+    # ApplyMovement 14, _07A0
+    # WaitMovement
+    # ScrCmd_16C 77
+    # ScrCmd_169 77
+    # ScrCmd_16A 77
+    # RemoveObject 14
+    # WaitTime 30, VAR_RESULT
+    # GetPlayerGender VAR_RESULT
+    # GoToIfEq VAR_RESULT, GENDER_MALE, _0610
+    # GoToIfEq VAR_RESULT, GENDER_FEMALE, _061D
+    ApplyMovement LOCALID_PLAYER, PlayerWalkOneStepSouth
     WaitMovement
-    BufferPlayerName 0
-    Message 8
-    CloseMessage
-    ApplyMovement LOCALID_PLAYER, _07AC
-    ApplyMovement 4, _07F8
-    WaitMovement
-    Message 9
-    SetVar VAR_0x8004, 0x162
-    SetVar VAR_0x8005, 1
-    CallCommonScript 0x7FC
+    GoTo DawnTalkAndWalkAway
+
+DawnTalkAndWalkAway:
+    # GetPlayerGender VAR_RESULT
+    # GoToIfEq VAR_RESULT, GENDER_MALE, _0610
+    # GoToIfEq VAR_RESULT, GENDER_FEMALE, _061D
     Message 10
     CloseMessage
-    ApplyMovement 14, _07A0
+    GoTo DawnWalkToRoute202
+
+DawnWalkToRoute202:
+    ApplyMovement 4, DawnWalkToRoute202Movement
     WaitMovement
-    ScrCmd_16C 77
-    ScrCmd_169 77
-    ScrCmd_16A 77
-    RemoveObject 14
-    WaitTime 30, VAR_RESULT
-    GetPlayerGender VAR_RESULT
-    GoToIfEq VAR_RESULT, GENDER_MALE, _0610
-    GoToIfEq VAR_RESULT, GENDER_FEMALE, _061D
+    CallCommonScript 0x801
+    RemoveObject 4
+    SetVar VAR_UNK_0x4071, 2
+    ReleaseAll
     End
+
+    .balign 4, 0
+DawnWalkToRoute202Movement:
+    WalkFastEast 10
+    EndMovement
+
+    .balign 4, 0
+PlayerWalkOneStepSouth:
+    WalkNormalSouth
+    EndMovement
 
 _0610:
     Message 11

@@ -12,25 +12,26 @@
 #include "sprite_system.h"
 
 ALIGN_4 static const u32 sMoveTypeIconIndex[] = {
-    0xEA, // 0 to 17 are pokemon types
-    0xE1,
-    0xE3,
-    0xEB,
-    0xE5,
-    0xED,
-    0xE7,
-    0xE4,
-    0xEE,
-    0xEC,
-    0xE2,
-    0xF1,
-    0xE9,
-    0xDE,
-    0xDF,
-    0xE6,
-    0xDD,
-    0xE0,
-    0xF0, // 18 to 22 are contest types
+    0xEA, // NORMAL (0 to 18 are pokemon types)
+    0xE1, // FIGHT
+    0xE3, // FLYING
+    0xEB, // POISON
+    0xE5, // GROUND
+    0xED, // ROCK
+    0xE7, // BUG
+    0xE4, // GHOST
+    0xEE, // STEEL
+    0xEC, // MYSTERY
+    0xE2, // FIRE
+    0xF1, // WATER
+    0xE9, // GRASS
+    0xDE, // ELECTRIC
+    0xDF, // PSYCHIC
+    0xE6, // ICE
+    0xDD, // DRAGON
+    0xE0, // DARK
+    0x157, // FAIRY
+    0xF0, // 19 to 22 are contest types
     0xDB,
     0xDC,
     0xE8,
@@ -38,25 +39,26 @@ ALIGN_4 static const u32 sMoveTypeIconIndex[] = {
 };
 
 ALIGN_4 static const u8 sMoveTypeIconPaletteIndex[] = {
-    0x0, // 0 to 17 are pokemon types
-    0x0,
-    0x1,
-    0x1,
-    0x0,
-    0x0,
-    0x2,
-    0x1,
-    0x0,
-    0x2,
-    0x0,
-    0x1,
-    0x2,
-    0x0,
-    0x1,
-    0x1,
-    0x2,
-    0x0,
-    0x0, // 18 to 22 are contest types
+    0x0, // NORMAL // 0 to 18 are pokemon types
+    0x0, // FIGHT
+    0x1, // FLYING
+    0x1, // POISON
+    0x0, // GROUND
+    0x0, // ROCK
+    0x2, // BUG
+    0x1, // GHOST
+    0x0, // STEEL
+    0x2, // MYSTERY
+    0x0, // FIRE
+    0x1, // WATER
+    0x2, // GRASS
+    0x0, // ELECTRIC
+    0x1, // PSYCHIC
+    0x1, // ICE
+    0x2, // DRAGON
+    0x0, // DARK
+    0x1, // FAIRY
+    0x0, // 19 to 22 are contest types
     0x1,
     0x1,
     0x2,

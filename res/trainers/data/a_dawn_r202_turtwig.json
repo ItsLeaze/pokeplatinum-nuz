@@ -1,0 +1,46 @@
+{
+    "name": "Dawn",
+    "class": "TRAINER_CLASS_DP_PLAYER_FEMALE",
+    "items": [],
+    "ai_flags": [
+        "AI_FLAG_BASIC",
+        "AI_FLAG_EVAL_ATTACK",
+        "AI_FLAG_EXPERT"
+    ],
+    "double_battle": false,
+    "party": [
+        {
+            "species": "SPECIES_PIPLUP",
+            "form": 0,
+            "level": 3,
+            "item": null,
+            "moves": [
+                "MOVE_BUBBLE",
+                "MOVE_POUND"
+            ],
+            "power": 30,
+            "ball_seal": 0
+        }
+    ],
+    "messages": [
+        {
+			"type": "TRMSG_PRE_BATTLE",
+			"en_US": [
+				"Hi! Let us Battle!\n"
+			]
+		},
+        {
+			"type": "TRMSG_DEFEAT",
+			"en_US": [
+				"You’re not a Trainer that can be\n",
+				"taken lightly!\n"
+			]
+		},
+        {
+			"type": "TRMSG_POST_BATTLE",
+			"en_US": [
+				"You got me.\n"
+			]
+		}
+    ]
+}

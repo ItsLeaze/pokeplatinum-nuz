@@ -486,13 +486,19 @@ static void sub_02073E18(BoxPokemon *boxMon, int monSpecies, int monLevel, int m
 
 void sub_02074044(Pokemon *mon, u16 monSpecies, u8 monLevel, u8 monIVs, u8 monNature)
 {
+    u32 monPersonality = getPersonalityForNatureAndAbility(monNature, -1);
+    Pokemon_InitWith(mon, monSpecies, monLevel, monIVs, TRUE, monPersonality, OTID_NOT_SET, 0);
+}
+
+u32 getPersonalityForNatureAndAbility(u8 monNature, s8 ability)
+{
     u32 monPersonality;
 
     do {
         monPersonality = (LCRNG_Next() | (LCRNG_Next() << 16));
-    } while (monNature != Pokemon_GetNatureOf(monPersonality));
+    } while (monNature != Pokemon_GetNatureOf(monPersonality) || (ability >= 0 && (monPersonality & 1 == ability)));
 
-    Pokemon_InitWith(mon, monSpecies, monLevel, monIVs, TRUE, monPersonality, OTID_NOT_SET, 0);
+    return monPersonality;
 }
 
 void sub_02074088(Pokemon *mon, u16 monSpecies, u8 monLevel, u8 monIVs, u8 gender, u8 param5, u8 param6)
@@ -3496,20 +3502,52 @@ BoxPokemon *Pokemon_GetBoxPokemon(Pokemon *mon)
     return &mon->box;
 }
 
-BOOL Pokemon_ShouldLevelUp(Pokemon *mon)
+u8 GetLevelCap(TrainerInfo *info)
+{
+    int badgeCount = TrainerInfo_BadgeCount(info);
+    switch (badgeCount) {
+    case 0:
+        return 16;
+    case 1:
+        return 22;
+    case 2:
+        return 28;
+    case 3:
+        return 36;
+    case 4:
+        return 42;
+    case 5:
+        return 50;
+    case 6:
+        return 56;
+    case 7:
+        return 64;
+    case 8:
+        return 70;
+    default:
+        return 100;
+    }
+}
+
+BOOL Pokemon_ShouldLevelUp(Pokemon *mon, TrainerInfo *info)
 {
     u16 monSpecies = Pokemon_GetValue(mon, MON_DATA_SPECIES, NULL);
     u8 monNextLevel = Pokemon_GetValue(mon, MON_DATA_LEVEL, NULL) + 1;
+    u8 levelCap = GetLevelCap(info);
     u32 monExp = Pokemon_GetValue(mon, MON_DATA_EXP, NULL);
     int monExpRate = SpeciesData_GetSpeciesValue(monSpecies, SPECIES_DATA_EXP_RATE);
-    u32 maxExp = Pokemon_GetExpRateBaseExpAt(monExpRate, MAX_POKEMON_LEVEL);
+    u32 maxExp = Pokemon_GetExpRateBaseExpAt(monExpRate, levelCap + 1) - 1;
+    u32 maxExpWithoutLevelUp = Pokemon_GetExpRateBaseExpAt(monExpRate, monNextLevel) - 1;
 
+    if (maxExp < maxExpWithoutLevelUp) {
+        maxExp = maxExpWithoutLevelUp; // safeguard in case the level cap is below current level
+    }
     if (monExp > maxExp) {
         monExp = maxExp;
         Pokemon_SetValue(mon, MON_DATA_EXP, &monExp);
     }
 
-    if (monNextLevel > MAX_POKEMON_LEVEL) {
+    if (monNextLevel > levelCap) {
         return FALSE;
     }
 
@@ -3928,6 +3966,46 @@ static void BoxPokemon_SetMoveSlot(BoxPokemon *boxMon, u16 moveID, u8 moveSlot)
     u8 moveMaxPP = MoveTable_CalcMaxPP(moveID, movePPUps);
 
     BoxPokemon_SetValue(boxMon, MON_DATA_MOVE1_CUR_PP + moveSlot, &moveMaxPP);
+}
+
+static u8 Pokemon_GetNextEvolutionLevel(Pokemon *mon)
+{
+    SpeciesEvolution *speciesEvolutions = Heap_AllocFromHeap(HEAP_ID_SYSTEM, sizeof(SpeciesEvolution) * MAX_EVOLUTIONS);
+    u16 monSpecies = Pokemon_GetValue(mon, MON_DATA_SPECIES, NULL);
+    u8 monLevel = Pokemon_GetValue(mon, MON_DATA_LEVEL, NULL);
+
+    LoadSpeciesEvolutions(monSpecies, speciesEvolutions);
+
+    u8 nextEvoLevel = MAX_POKEMON_LEVEL;
+    for (int i = 0; i < MAX_EVOLUTIONS; i++) {
+        if (speciesEvolutions[i].method == EVO_LEVEL && speciesEvolutions[i].param > monLevel && speciesEvolutions[i].param < nextEvoLevel) {
+            nextEvoLevel = speciesEvolutions[i].param;
+        }
+    }
+
+    Heap_Free(speciesEvolutions);
+    return nextEvoLevel;
+}
+
+u8 Pokemon_GetLevelOfNextMoveLearnOrEvolution(Pokemon *mon)
+{
+    u16 *monLevelUpMoves = Heap_AllocFromHeap(HEAP_ID_SYSTEM, sizeof(SpeciesLearnset));
+    u16 monSpecies = Pokemon_GetValue(mon, MON_DATA_SPECIES, NULL);
+    int monForm = Pokemon_GetValue(mon, MON_DATA_FORM, NULL);
+    u8 monLevel = Pokemon_GetValue(mon, MON_DATA_LEVEL, NULL);
+
+    Pokemon_LoadLevelUpMovesOf(monSpecies, monForm, monLevelUpMoves);
+
+    u16 monLevelShifted = monLevel << 9;
+    u16 nextMoveLevelShifted = Pokemon_GetNextEvolutionLevel(mon) << 9;
+    for (int i = 0; i < MAX_LEARNSET_ENTRIES + 1; i++) {
+        u16 comparison = monLevelUpMoves[i] & 0xFE00;
+        if (comparison > monLevelShifted && comparison < nextMoveLevelShifted) {
+            nextMoveLevelShifted = comparison;
+        }
+    }
+    Heap_Free(monLevelUpMoves);
+    return nextMoveLevelShifted >> 9;
 }
 
 u16 Pokemon_LevelUpMove(Pokemon *mon, int *index, u16 *moveID)

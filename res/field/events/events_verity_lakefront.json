@@ -54,15 +54,5 @@
         }
     ],
     "coord_events": [
-        {
-            "script": 3,
-            "x": 80,
-            "z": 844,
-            "y": 0,
-            "width": 2,
-            "length": 1,
-            "var": 16514,
-            "value": 0
-        }
     ]
 }

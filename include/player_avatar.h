@@ -69,7 +69,7 @@ int sub_0205EC1C(PlayerAvatar *playerAvatar);
 void sub_0205EC20(PlayerAvatar *playerAvatar, u32 param1, int param2);
 void PlayerData_Init(PlayerData *param0);
 int PlayerData_HasRunningShoes(PlayerData *param0);
-void PlayerData_SetRunningShoes(PlayerData *param0, int param1);
+void PlayerData_SetRunningShoes(PlayerData *param0, int param1); //
 int PlayerData_CyclingGear(PlayerData *param0);
 void PlayerData_SetCyclingGear(PlayerData *param0, int param1);
 void PlayerAvatar_SetCyclingGear(PlayerAvatar *playerAvatar, int param1);

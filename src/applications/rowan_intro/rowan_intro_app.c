@@ -2088,7 +2088,7 @@ static BOOL RowanIntro_Run(RowanIntro *manager)
         break;
     case RI_STATE_MOVE_ROWAN_RIGHT_FOR_INFO:
         if (RowanIntro_MoveBgLayer(manager, BG_LAYER_MAIN_1, MBL_CASE_MOVE_RIGHT) == TRUE) {
-            manager->state = RI_STATE_INFO_CHOICE_BOX;
+            manager->state = RI_STATE_LEFT_ROWAN_AFTER_INFO;
         }
         break;
     case RI_STATE_INFO_CHOICE_BOX:
@@ -2432,7 +2432,7 @@ static BOOL RowanIntro_Run(RowanIntro *manager)
         }
         break;
     case RI_STATE_PKBL_WAIT_INPUT:
-        if (RowanIntro_WasPokeballOpened() == TRUE) {
+        if (TRUE || RowanIntro_WasPokeballOpened() == TRUE) {
             manager->animData.progressCounter = 0;
             manager->animDelayUpdateCounter = 0;
             {
@@ -2610,7 +2610,7 @@ static BOOL RowanIntro_Run(RowanIntro *manager)
         }
         break;
     case RI_STATE_GENDR_CHOICE:
-        if ((gSystem.pressedKeys & PAD_BUTTON_A) == PAD_BUTTON_A) {
+        if (TRUE || (gSystem.pressedKeys & PAD_BUTTON_A) == PAD_BUTTON_A) {
             manager->fadeBgLayerCurAlpha = 6;
             manager->fadeBgLayerCurAlphaInv = 10;
             manager->fadeBgLayerState = FBL_STATE_FADE_OUT;
@@ -2671,6 +2671,8 @@ static BOOL RowanIntro_Run(RowanIntro *manager)
         }
     } break;
     case RI_STATE_GENDR_CONFIRM_CHOICE_BOX:
+        manager->state = RI_STATE_NAME_DIALOGUE;
+        break;
         if (RowanIntro_ChoiceBox(manager, CC_YESNO, FALSE) == TRUE) {
             switch (manager->playerChoice) {
             case 1:

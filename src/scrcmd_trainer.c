@@ -292,7 +292,7 @@ BOOL ScrCmd_StartDummyTrainerBattle(ScriptContext *ctx)
 {
     FieldSystem *fieldSystem = ctx->fieldSystem;
     int *battleResultMaskPtr = FieldSystem_GetScriptMemberPtr(fieldSystem, SCRIPT_MANAGER_BATTLE_RESULT);
-    Encounter_NewVsTrainer(ctx->task, TRAINER_YOUNGSTER_TRISTAN, TRAINER_NONE, TRAINER_NONE, HEAP_ID_FIELDMAP, battleResultMaskPtr);
+    Encounter_NewVsTrainer(ctx->task, TRAINER_A_001_YOUNGSTER_TRISTAN, TRAINER_NONE, TRAINER_NONE, HEAP_ID_FIELDMAP, battleResultMaskPtr);
     return TRUE;
 }
 

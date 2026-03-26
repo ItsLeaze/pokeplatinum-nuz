@@ -1088,8 +1088,11 @@
     .short \arg0
     .endm
 
-    .macro StartChooseStarterScene
+    .macro StartChooseStarterScene one, two, three
     .short 180
+    .short \one
+    .short \two
+    .short \three
     .endm
 
     .macro SaveChosenStarter
@@ -4804,6 +4807,11 @@
     .short 839
     .byte \arg0
     .byte \arg1
+    .endm
+
+    .macro FindFirstPartySlotWithMon destVar
+    .short 840
+    .short \destVar
     .endm
 
 

@@ -93,7 +93,7 @@ _0164:
     GoTo _0174
 
 _0174:
-    GoToIfUnset FLAG_UNK_0x008F, _027C
+    # GoToIfUnset FLAG_UNK_0x008F, _027C
     GetPlayerGender VAR_RESULT
     GoToIfEq VAR_RESULT, GENDER_MALE, _019F
     GoToIfEq VAR_RESULT, GENDER_FEMALE, _01B2
@@ -115,15 +115,51 @@ _01B2:
 
 _01C5:
     CloseMessage
-    ApplyMovement 3, _0488
-    ApplyMovement LOCALID_PLAYER, _04BC
-    WaitMovement
-    StartCatchingTutorial
+    # ApplyMovement 3, _0488
+    # ApplyMovement LOCALID_PLAYER, _04BC
+    # WaitMovement
+    # StartCatchingTutorial
+    Call R202_SetCounterpartPartnerTeamToVar
+    StartTrainerBattle VAR_0x8004
+    CheckWonBattle VAR_RESULT
+    GoToIfEq VAR_RESULT, FALSE, R202_DawnBattle_BlackOut
     ApplyMovement 3, _0490
     WaitMovement
     GetPlayerGender VAR_RESULT
     GoToIfEq VAR_RESULT, GENDER_MALE, _0205
     GoToIfEq VAR_RESULT, GENDER_FEMALE, _0211
+    End
+
+R202_SetCounterpartPartnerTeamToVar:
+    GetPlayerGender VAR_RESULT
+    GoToIfEq VAR_RESULT, GENDER_MALE, R202_SetDawnTeamToVar
+    GoToIfEq VAR_RESULT, GENDER_FEMALE, R202_SetLucasTeamToVar
+    End
+
+R202_SetDawnTeamToVar:
+    GetPlayerStarterSpecies VAR_RESULT
+    SetVar VAR_0x8004, TRAINER_A_DAWN_R202_CHIMCHAR
+    GoToIfEq VAR_RESULT, SPECIES_CHIMCHAR, R202_Return
+    SetVar VAR_0x8004, TRAINER_A_DAWN_R202_PIPLUP
+    GoToIfEq VAR_RESULT, SPECIES_PIPLUP, R202_Return
+    SetVar VAR_0x8004, TRAINER_A_DAWN_R202_TURTWIG
+    Return
+
+R202_SetLucasTeamToVar:
+    GetPlayerStarterSpecies VAR_RESULT
+    SetVar VAR_0x8004, TRAINER_A_LUCAS_R202_CHIMCHAR
+    GoToIfEq VAR_RESULT, SPECIES_CHIMCHAR, R202_Return
+    SetVar VAR_0x8004, TRAINER_A_LUCAS_R202_PIPLUP
+    GoToIfEq VAR_RESULT, SPECIES_PIPLUP, R202_Return
+    SetVar VAR_0x8004, TRAINER_A_LUCAS_R202_TURTWIG
+    Return
+
+R202_Return:
+    Return
+
+R202_DawnBattle_BlackOut:
+    BlackOutFromBattle
+    ReleaseAll
     End
 
 _0205:
@@ -139,6 +175,9 @@ _0211:
 _021D:
     SetVar VAR_0x8004, 4
     SetVar VAR_0x8005, 5
+    # give Rare Candy for testing purposes and Add appropriate message
+    SetVar VAR_0x8004, 0x32
+    SetVar VAR_0x8005, 100
     CallCommonScript 0x7FC
     GetPlayerGender VAR_RESULT
     GoToIfEq VAR_RESULT, GENDER_MALE, _024D
@@ -155,6 +194,7 @@ _0259:
     GoTo _0262
 
 _0262:
+    # Dawn Walks Away
     CloseMessage
     ApplyMovement 3, _0498
     WaitMovement

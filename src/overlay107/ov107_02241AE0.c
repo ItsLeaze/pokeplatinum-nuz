@@ -372,7 +372,7 @@ void ov107_022453F8(UnkStruct_ov107_02241D6C *param0, u16 param1);
 void ov107_02245408(int param0, int param1, void *param2, void *param3);
 void ov107_0224542C(UnkStruct_ov107_02241D6C *param0);
 void ov107_02245438(int param0, int param1, void *param2, void *param3);
-static void ov107_02245454(Pokemon *param0, u16 param1);
+static void ov107_02245454(Pokemon *param0, u16 param1, TrainerInfo *trainerInfo);
 static void ov107_02245464(UnkStruct_ov107_02241D6C *param0, Window *param1);
 static void ov107_022454F8(UnkStruct_ov107_02241D6C *param0, u8 param1, u8 param2);
 static void ov107_022455A0(UnkStruct_ov107_02241D6C *param0, u8 param1, u16 param2);
@@ -3328,9 +3328,9 @@ void ov107_02245438(int param0, int param1, void *param2, void *param3)
     return;
 }
 
-static void ov107_02245454(Pokemon *param0, u16 param1)
+static void ov107_02245454(Pokemon *param0, u16 param1, TrainerInfo *trainerInfo)
 {
-    Pokemon_ApplyItemEffects(param0, param1, 0, 0, 100);
+    Pokemon_ApplyItemEffects(param0, param1, 0, 0, 100, trainerInfo);
     return;
 }
 
@@ -3385,16 +3385,18 @@ static void ov107_022454F8(UnkStruct_ov107_02241D6C *param0, u8 param1, u8 param
 
     param0->unk_0A = ov107_02243918(param0, Unk_ov107_02249E00[param2 - 1], FONT_MESSAGE);
 
+    TrainerInfo *trainerInfo = SaveData_GetTrainerInfo(param0->saveData);
+
     switch (param2) {
     case 1:
-        ov107_02245454(v1, 24);
+        ov107_02245454(v1, 24, trainerInfo);
         break;
     case 2:
-        ov107_02245454(v1, 41);
+        ov107_02245454(v1, 41, trainerInfo);
         break;
     case 3:
-        ov107_02245454(v1, 24);
-        ov107_02245454(v1, 41);
+        ov107_02245454(v1, 24, trainerInfo);
+        ov107_02245454(v1, 41, trainerInfo);
         break;
 
     default:

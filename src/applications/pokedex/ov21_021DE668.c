@@ -710,6 +710,9 @@ int PokedexGraphics_GetAnimIDfromType(int monType)
     case TYPE_DARK:
         animID = 0xc;
         break;
+    case TYPE_FAIRY:
+        animID = 0x12;
+        break;
     }
 
     return animID;
