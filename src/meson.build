@@ -272,6 +272,7 @@ pokeplatinum_c = files(
     'unk_02073700.c',
     'simple3d.c',
     'pokemon.c',
+    'evolution_lines.c',
     'trainer_data.c',
     'pc_boxes.c',
     'pokemon_icon.c',

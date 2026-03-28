@@ -435,36 +435,34 @@ SandgemTown_Movement_RivalLeave:
 
 SandgemTown_OnFrameExitLab:
     LockAll
-    LoadDoorAnimation 5, 26, 8, 10, ANIMATION_TAG_DOOR_1
-    PlayDoorOpenAnimation ANIMATION_TAG_DOOR_1
-    WaitForAnimation ANIMATION_TAG_DOOR_1
     ClearFlag FLAG_HIDE_SANDGEM_TOWN_PROF_ROWAN
-    AddObject LOCALID_PROF_ROWAN
-    ApplyMovement LOCALID_PROF_ROWAN, SandgemTown_Movement_ProfRowanExitLab
+    ApplyMovement LOCALID_PLAYER, PlayerWalkOneStepSouth
     WaitMovement
-    BufferPlayerName 0
-    Message SandgemTown_Text_BigPlayer
+    GoTo DawnTalkAndWalkAway
+
+DawnTalkAndWalkAway:
+    Message 10
     CloseMessage
-    ApplyMovement LOCALID_PLAYER, SandgemTown_Movement_PlayerNoticeProfRowan
-    ApplyMovement LOCALID_COUNTERPART, SandgemTown_Movement_CounterpartNoticeProfRowan
+    GoTo DawnWalkToRoute202
+
+DawnWalkToRoute202:
+    ApplyMovement LOCALID_COUNTERPART, DawnWalkToRoute202Movement
     WaitMovement
-    Message SandgemTown_Text_YouShouldTakeThisAsWell
-    SetVar VAR_0x8004, ITEM_TM27
-    SetVar VAR_0x8005, 1
-    Common_GiveItemQuantity
-    Message SandgemTown_Text_ThatContainsTheMoveReturn
-    CloseMessage
-    ApplyMovement LOCALID_PROF_ROWAN, SandgemTown_Movement_ProfRowanEnterLab
-    WaitMovement
-    PlayDoorCloseAnimation ANIMATION_TAG_DOOR_1
-    WaitForAnimation ANIMATION_TAG_DOOR_1
-    UnloadAnimation ANIMATION_TAG_DOOR_1
-    RemoveObject LOCALID_PROF_ROWAN
-    WaitTime 30, VAR_RESULT
-    GetPlayerGender VAR_RESULT
-    GoToIfEq VAR_RESULT, GENDER_MALE, SandgemTown_DawnIDidntKnowTheProfessorHadTMs
-    GoToIfEq VAR_RESULT, GENDER_FEMALE, SandgemTown_LucasWellIllBeTheProfessorHadTMs
+    Common_FadeToDefaultMusic3
+    RemoveObject LOCALID_COUNTERPART
+    SetVar VAR_SANDGEM_TOWN_STATE, 2
+    ReleaseAll
     End
+
+    .balign 4, 0
+DawnWalkToRoute202Movement:
+    WalkFastEast 10
+    EndMovement
+
+    .balign 4, 0
+PlayerWalkOneStepSouth:
+    WalkNormalSouth
+    EndMovement
 
 SandgemTown_DawnIDidntKnowTheProfessorHadTMs:
     Message SandgemTown_Text_DawnIDidntKnowTheProfessorHadTMs

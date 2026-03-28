@@ -56,7 +56,7 @@ BOOL WildEncounters_TryWildEncounter(FieldSystem *fieldSystem);
 BOOL WildEncounters_TryFishingEncounter(FieldSystem *fieldSystem, enum EncounterFishingRodType fishingRodType, FieldBattleDTO **param2);
 BOOL WildEncounters_TrySweetScentEncounter(FieldSystem *fieldSystem, FieldTask *param1);
 BOOL WildEncounters_TryMudEncounter(FieldSystem *fieldSystem, FieldBattleDTO **param1);
-void CreateWildMon_HoneyTree(FieldSystem *fieldSystem, FieldBattleDTO *param1);
+BOOL CreateWildMon_HoneyTree(FieldSystem *fieldSystem, FieldBattleDTO *param1);
 void CreateWildMon_Scripted(FieldSystem *fieldSystem, u16 param1, u8 param2, FieldBattleDTO *param3);
 BOOL WildEncounters_TileHasEncounterRate(FieldSystem *fieldSystem, u8 param1);
 

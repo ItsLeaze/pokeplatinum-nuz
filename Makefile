@@ -110,7 +110,7 @@ check: rom
 # generate data-targets first (archives and generated headers), then proceed
 # with compiling the ROM code.
 rom: $(BUILD)/build.ninja data
-	$(NINJA) -C $(BUILD) pokeplatinum.us.nds
+	$(NINJA) -C $(BUILD) custom-plat.us.nds
 
 data: $(BUILD)/build.ninja
 	$(NINJA) -C $(BUILD) data

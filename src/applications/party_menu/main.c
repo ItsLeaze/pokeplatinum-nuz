@@ -2700,8 +2700,10 @@ static int ApplyItemEffectOnPokemon(PartyMenuApplication *app)
         return 6;
     }
 
-    if (Party_CheckItemEffectsOnMember(app->partyMenu->party, app->partyMenu->usedItemID, app->currPartySlot, 0, HEAP_ID_PARTY_MENU) == 1) {
-        Bag_TryRemoveItem(app->partyMenu->bag, app->partyMenu->usedItemID, 1, HEAP_ID_PARTY_MENU);
+    if (Party_CheckItemEffectsOnMember(app->partyMenu->party, app->partyMenu->usedItemID, app->currPartySlot, 0, 12, SaveData_GetTrainerInfo(app->partyMenu->fieldSystem->saveData)) == 1) {
+        if (app->partyMenu->usedItemID != ITEM_CAP_CANDY) {
+            Bag_TryRemoveItem(app->partyMenu->bag, app->partyMenu->usedItemID, 1, HEAP_ID_PARTY_MENU);
+        }
 
         if (Item_Get(itemData, ITEM_PARAM_EVOLVE) != 0) {
             Pokemon *mon = Party_GetPokemonBySlotIndex(app->partyMenu->party, app->currPartySlot);

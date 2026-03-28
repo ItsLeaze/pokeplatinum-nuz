@@ -2833,6 +2833,18 @@ const ItemArchiveIDs sItemArchiveIDs[] = {
         .paletteID = secret_key_NCLR,
         .gen3ID = GBA_ITEM_SECRET_KEY,
     },
+    [ITEM_MOBILE_BOX] = {
+        .dataID = 0x1BE,
+        .iconID = poke_radar_NCGR,
+        .paletteID = poke_radar_NCLR,
+        .gen3ID = GBA_ITEM_NONE,
+    },
+    [ITEM_CAP_CANDY] = {
+        .dataID = 0x1BF,
+        .iconID = rare_candy_NCGR,
+        .paletteID = haban_berry_NCLR,
+        .gen3ID = GBA_ITEM_NONE,
+    },
 };
 
 static const u16 sTMHMMoves[] = {

@@ -11,13 +11,13 @@ typedef struct Pokedex {
     u32 magic;
     u32 caughtPokemon[DEX_SIZE_U32];
     u32 seenPokemon[DEX_SIZE_U32];
-    u32 recordedGenders[2][DEX_SIZE_U32];
+    u32 recordedGenders[2][DEX_SIZE_U32]; // TODO: maybe replace this?
     u32 spindaForm;
     u8 shellosFormsSeen;
     u8 gastrodonFormsSeen;
     u8 burmyFormsSeen;
     u8 wormadamFormsSeen;
-    u8 unownFormsSeen[UNOWN_FORM_COUNT];
+    u32 locationEncountersUsed[UNOWN_FORM_COUNT / 4]; // unown forms tracking exchanged for encounter tracking
     u8 recordedLanguages[MAX_SPECIES + 1];
     u8 canDetectForms;
     u8 canDetectLanguages;
@@ -72,5 +72,9 @@ void Pokedex_ObtainPokedex(Pokedex *pokedex);
 Pokedex *SaveData_GetPokedex(SaveData *saveData);
 u32 Pokedex_GetDisplayForm(const Pokedex *pokedex, int species, int formIndex);
 u32 Pokedex_NumFormsSeen(const Pokedex *pokedex, int species);
+BOOL Pokedex_HasEncounteredLocation(const Pokedex *pokedex, u16 locationLabelId);
+void Pokedex_EncounterLocation(Pokedex *pokedex, u16 locationLabelId);
+BOOL Pokedex_HasEncounteredMap(const Pokedex *pokedex, u16 locationId);
+void Pokedex_EncounterMap(Pokedex *pokedex, u16 locationId);
 
 #endif // POKEPLATINUM_POKEDEX_H

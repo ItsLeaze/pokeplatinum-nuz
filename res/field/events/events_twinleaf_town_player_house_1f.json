@@ -112,15 +112,5 @@
         }
     ],
     "coord_events": [
-        {
-            "script": 5,
-            "x": 6,
-            "z": 10,
-            "y": 0,
-            "width": 1,
-            "length": 1,
-            "var": "VAR_PLAYER_HOUSE_STATE",
-            "value": 1
-        }
     ]
 }

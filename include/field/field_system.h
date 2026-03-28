@@ -29,6 +29,7 @@
 #include "battle_regulation.h"
 #include "bg_window.h"
 #include "camera.h"
+#include "evolution_lines.h"
 #include "field_task.h"
 #include "journal.h"
 #include "location.h"
@@ -117,6 +118,7 @@ typedef struct FieldSystem_t {
     u8 *battleSubscreenCursorOn;
     u32 unk_C0;
     UnkStruct_ov66_0222DCE0_sub1 unk_C4;
+    EvolutionGraph *evolutionGraph;
 } FieldSystem;
 
 #endif // POKEPLATINUM_FIELD_SYSTEM_H

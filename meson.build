@@ -241,8 +241,8 @@ ichneumon_sub_defs = subproject('NitroSDK'
 ############################################################
 ###                        DS ROM                        ###
 ############################################################
-pokeplatinum_nds = custom_target('pokeplatinum.us.nds',
-    output: 'pokeplatinum.us.nds',
+pokeplatinum_nds = custom_target('custom-plat.us.nds',
+    output: 'custom-plat.us.nds',
     input: [
         main,
         rom_header_template,
@@ -258,7 +258,7 @@ pokeplatinum_nds = custom_target('pokeplatinum.us.nds',
         '-DICON_PNG=@INPUT2@',        # icon_png
         '-DARM7_STATIC=@INPUT3@',     # ichneumon_sub
         '-DARM7_DEFINE=@INPUT4@',     # ichneumon_sub_defs
-        '--output=@OUTPUT0@',         # pokeplatinum.us.nds
+        '--output=@OUTPUT0@',         # custom-plat.us.nds
         rom_ini,
         filesys_csv,
     ],
@@ -296,27 +296,27 @@ ovly_mapper = custom_target('overlay.map',
 ############################################################
 ###                        TESTS                         ###
 ############################################################
-sha1sum = find_program(['sha1sum', 'shasum'], native: true)
+# sha1sum = find_program(['sha1sum', 'shasum'], native: true)
 
-test('SBIN Checksums - Shared',
-    sha1sum,
-    args: ['-c', '--quiet', sbins_sha1]
-)
+# test('SBIN Checksums - Shared',
+#     sha1sum,
+#     args: ['-c', '--quiet', sbins_sha1]
+# )
 
-test('SBIN Checksums - For Revision',
-    sha1sum,
-    args: ['-c', '--quiet', sbins_for_rev_sha1]
-)
+# test('SBIN Checksums - For Revision',
+#     sha1sum,
+#     args: ['-c', '--quiet', sbins_for_rev_sha1]
+# )
 
-test('Filesystem Checksums',
-    sha1sum,
-    args: ['-c', '--quiet', filesys_sha1]
-)
+# test('Filesystem Checksums',
+#     sha1sum,
+#     args: ['-c', '--quiet', filesys_sha1]
+# )
 
-test('ROM Checksum',
-    sha1sum,
-    args: ['-c', '--quiet', rom_sha1]
-)
+# test('ROM Checksum',
+#     sha1sum,
+#     args: ['-c', '--quiet', rom_sha1]
+# )
 
 
 ############################################################

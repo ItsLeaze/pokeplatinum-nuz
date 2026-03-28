@@ -222,21 +222,6 @@
             "x": 185,
             "z": 842,
             "y": 0
-        },
-        {
-            "id": "LOCALID_PROF_ROWAN",
-            "graphics_id": "OBJ_EVENT_GFX_PROF_ROWAN",
-            "movement_type": "MOVEMENT_TYPE_LOOK_SOUTH",
-            "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_HIDE_SANDGEM_TOWN_PROF_ROWAN",
-            "script": 0,
-            "initial_dir": 1,
-            "data": [],
-            "movement_range_x": 0,
-            "movement_range_z": 0,
-            "x": 168,
-            "z": 842,
-            "y": 0
         }
     ],
     "warp_events": [

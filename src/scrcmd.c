@@ -3392,11 +3392,17 @@ static BOOL ScrCmd_0B3(ScriptContext *ctx)
 static BOOL ScrCmd_StartChooseStarterScene(ScriptContext *ctx)
 {
     void **fieldSysDataPtr = FieldSystem_GetScriptMemberPtr(ctx->fieldSystem, SCRIPT_MANAGER_DATA_PTR);
+    u16 one = ScriptContext_GetVar(ctx);
+    u16 two = ScriptContext_GetVar(ctx);
+    u16 three = ScriptContext_GetVar(ctx);
 
     *fieldSysDataPtr = Heap_Alloc(HEAP_ID_FIELD2, sizeof(ChooseStarterData));
     ChooseStarterData *chooseStarterData = *fieldSysDataPtr;
 
     chooseStarterData->options = SaveData_GetOptions(ctx->fieldSystem->saveData);
+    chooseStarterData->pokemon1 = one;
+    chooseStarterData->pokemon2 = two;
+    chooseStarterData->pokemon3 = three;
 
     FieldSystem_LaunchChooseStarterApp(ctx->fieldSystem, *fieldSysDataPtr);
     ScriptContext_Pause(ctx, ScriptContext_WaitForApplicationExit);

@@ -441,12 +441,7 @@ CommonScript_QuickSave_CheckMiscFlag:
 _05EA:
     PlaySE SEQ_SE_CONFIRM
     LockAll
-    CheckItem ITEM_HONEY, 1, VAR_RESULT
-    GoToIfNe VAR_RESULT, 0, _0632
-    GetHoneyTreeStatus VAR_RESULT
-    GoToIfEq VAR_RESULT, TREE_STATUS_BARE, _065F
-    GoToIfEq VAR_RESULT, TREE_STATUS_SLATHERED, _066A
-    GoToIfEq VAR_RESULT, TREE_STATUS_ENCOUNTER, _06F4
+    GoTo _06F4
     End
 
 _0632:
@@ -516,7 +511,8 @@ _06F4:
     CheckWonBattle VAR_RESULT
     GoToIfEq VAR_RESULT, FALSE, _0713
     ScrCmd_12A
-    GoTo _06A2
+    ReleaseAll
+    End
 
 _0713:
     BlackOutFromBattle

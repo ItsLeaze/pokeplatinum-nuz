@@ -33,44 +33,24 @@ TwinleafTownPlayerHouse1F_HideRivalsMom:
 
 TwinleafTownPlayerHouse1F_OnFrame_RivalAlreadyLeft:
     LockAll
-    ApplyMovement LOCALID_PLAYER, TwinleafTownPlayerHouse1F_Movement_PlayerFaceMom
-    ApplyMovement LOCALID_MOM, TwinleafTownPlayerHouse1F_Movement_MomWalkFromCouchToPlayer
-    WaitMovement
     SetFlag FLAG_TALKED_TO_MOM
+    ApplyMovement 0, StartOfGame_MoveMomToPlayer
+    WaitMovement
     BufferPlayerName 0
     BufferRivalName 1
     Message TwinleafTownPlayerHouse1F_Text_RivalAlreadyLeft
+    # give Journal and Add appropriate message
+    SetVar VAR_0x8004, 0x1B1
+    SetVar VAR_0x8005, 1
+    CallCommonScript 0x7FC
+    GiveJournal
     CloseMessage
     WaitTime 15, VAR_RESULT
-    ApplyMovement LOCALID_MOM, TwinleafTownPlayerHouse1F_Movement_MomWalkFromPlayerToCouch
-    WaitMovement
     SetVar VAR_PLAYER_HOUSE_STATE, 1
+    ApplyMovement 0, StartOfGame_MoveMomBackToSeat
+    WaitMovement
     ReleaseAll
     End
-
-    .balign 4, 0
-TwinleafTownPlayerHouse1F_Movement_PlayerFaceMom:
-    Delay4
-    WalkOnSpotNormalSouth
-    EndMovement
-
-    .balign 4, 0
-TwinleafTownPlayerHouse1F_Movement_MomWalkFromCouchToPlayer:
-    WalkOnSpotNormalNorth
-    EmoteExclamationMark
-    Delay8
-    WalkNormalNorth
-    WalkNormalEast 3
-    WalkNormalNorth 3
-    EndMovement
-
-    .balign 4, 0
-TwinleafTownPlayerHouse1F_Movement_MomWalkFromPlayerToCouch:
-    WalkNormalSouth 2
-    WalkNormalWest 3
-    WalkNormalSouth 2
-    WalkOnSpotNormalNorth
-    EndMovement
 
 TwinleafTownPlayerHouse1F_OnFrame_Postgame:
     LockAll
@@ -118,51 +98,9 @@ TwinleafTownPlayerHouse1F_Movement_MomNoticePlayer:
 
 TwinleafTownPlayerHouse1F_OnFrame_CutsceneAfterRivalBattle:
     LockAll
-    WaitTime 30, VAR_RESULT
-    ApplyMovement LOCALID_MOM, TwinleafTownPlayerHouse1F_Movement_MomWalkFromKitchenToCouch
-    ApplyMovement LOCALID_PLAYER, TwinleafTownPlayerHouse1F_Movement_PlayerFollowMomToCouch
-    WaitMovement
-    WaitTime 30, VAR_RESULT
-    BufferRivalName 0
-    BufferPlayerName 1
-    Message TwinleafTownPlayerHouse1F_Text_WowThatsWhatHappenedToYou
-    CloseMessage
-    WaitTime 30, VAR_RESULT
-    BufferPlayerName 0
-    Message TwinleafTownPlayerHouse1F_Text_PutTheseOn
-    GiveRunningShoes
-    BufferPlayerName 0
-    Message TwinleafTownPlayerHouse1F_Text_PlayerReceivedRunningShoes
-    PlayFanfare SEQ_FANFA4
-    WaitFanfare
-    Message TwinleafTownPlayerHouse1F_Text_LetMeReadTheInstructions
-    WaitButton
-    CloseMessage
     SetVar VAR_PLAYER_HOUSE_STATE, 4
     ReleaseAll
     End
-
-    .balign 4, 0
-TwinleafTownPlayerHouse1F_Movement_MomWalkFromKitchenToCouch:
-    WalkNormalWest
-    FaceNorth
-    Delay8 2
-    WalkNormalEast 3
-    WalkNormalSouth 2
-    WalkNormalEast 3
-    WalkNormalSouth 2
-    WalkOnSpotNormalWest
-    EndMovement
-
-    .balign 4, 0
-TwinleafTownPlayerHouse1F_Movement_PlayerFollowMomToCouch:
-    Delay8 4
-    WalkOnSpotNormalEast
-    Delay8 4
-    WalkNormalEast 3
-    WalkNormalSouth 2
-    WalkNormalEast
-    EndMovement
 
 TwinleafTownPlayerHouse1F_Mom:
     PlaySE SEQ_SE_CONFIRM
@@ -171,7 +109,6 @@ TwinleafTownPlayerHouse1F_Mom:
     GoToIfSet FLAG_UNK_0x0002, TwinleafTownPlayerHouse1F_DoMomMessage
     GoToIfGe VAR_PLAYER_HOUSE_STATE, 7, TwinleafTownPlayerHouse1F_CallTakeAQuickRest2
     GoToIfEq VAR_PLAYER_HOUSE_STATE, 6, TwinleafTownPlayerHouse1F_EnjoyYourAdventure
-    GoToIfSet FLAG_HAS_POKEDEX, TwinleafTownPlayerHouse1F_MomGiveJournal
     GoToIfGe VAR_PLAYER_HOUSE_STATE, 5, TwinleafTownPlayerHouse1F_CallTakeAQuickRest
     GoToIfGe VAR_PLAYER_HOUSE_STATE, 4, TwinleafTownPlayerHouse1F_IllReadTheInstructions
     GoToIfSet FLAG_UNK_0x00F8, TwinleafTownPlayerHouse1F_IsntRivalWaitingForYou
@@ -185,6 +122,21 @@ TwinleafTownPlayerHouse1F_Mom:
     CloseMessage
     ReleaseAll
     End
+
+    .balign 4, 0
+StartOfGame_MoveMomToPlayer:
+    WalkNormalNorth
+    WalkNormalEast 3
+    WalkNormalNorth 3
+    EndMovement
+
+    .balign 4, 0
+StartOfGame_MoveMomBackToSeat:
+    WalkNormalSouth 3
+    WalkNormalWest 3
+    WalkNormalSouth 1
+    WalkOnSpotNormalNorth
+    EndMovement
 
 TwinleafTownPlayerHouse1F_Unused:
     BufferPlayerName 0

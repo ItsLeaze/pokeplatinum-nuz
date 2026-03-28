@@ -177,9 +177,6 @@ SandgemTownLab_NicknameStarter:
     SetVar VAR_0x8002, VAR_RESULT
     FadeScreenIn
     WaitFadeScreen
-    Message SandgemTownLab_Text_AskAndYoureHappyWithThatNickName
-    ShowYesNoMenu VAR_RESULT
-    GoToIfEq VAR_RESULT, MENU_NO, SandgemTownLab_NicknameStarter
     CallIfNe VAR_0x8002, 1, SandgemTownLab_IncrementRecordPokemonNicknamed
     GoTo SandgemTownLab_CherishThatStarterOfYours
     End
@@ -230,17 +227,6 @@ SandgemTownLab_WillYouRecordDataOnAllPokemonInSinnoh:
     SetFlag FLAG_ALT_MUSIC_ROWANS_LAB
     PlayMusic SEQ_OPENING2
     Message SandgemTownLab_Text_ThereIsSomethingIWantYouToDo
-    Message SandgemTownLab_Text_WillYouRecordDataOnAllPokemonInSinnoh
-    ShowYesNoMenu VAR_RESULT
-    GoToIfEq VAR_RESULT, MENU_NO, SandgemTownLab_LetMeAskYouAgain
-    GoTo SandgemTownLab_ObtainPokedex
-    End
-
-SandgemTownLab_LetMeAskYouAgain:
-    BufferPlayerName 0
-    Message SandgemTownLab_Text_LetMeAskYouAgain
-    ShowYesNoMenu VAR_RESULT
-    GoToIfEq VAR_RESULT, MENU_NO, SandgemTownLab_LetMeAskYouAgain
     GoTo SandgemTownLab_ObtainPokedex
     End
 

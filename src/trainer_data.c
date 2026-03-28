@@ -178,7 +178,7 @@ static void TrainerData_BuildParty(FieldBattleDTO *dto, int battler, enum HeapID
     // must make declarations C89-style to match
     void *buf;
     int i, j;
-    u32 genderMod, rnd, oldSeed;
+    u32 monPersonality, oldSeed;
     u8 ivs;
     Pokemon *mon;
 
@@ -186,15 +186,10 @@ static void TrainerData_BuildParty(FieldBattleDTO *dto, int battler, enum HeapID
 
     // alloc enough space to support the maximum possible data size
     Party_InitWithCapacity(dto->parties[battler], MAX_PARTY_SIZE);
-    buf = Heap_Alloc(heapID, sizeof(TrainerMonWithMovesAndItem) * MAX_PARTY_SIZE);
+    buf = Heap_Alloc(heapID, sizeof(TrainerMonWithMoves) * MAX_PARTY_SIZE);
     mon = Pokemon_New(heapID);
 
     Trainer_LoadParty(dto->trainerIDs[battler], buf);
-
-    // determine which magic gender-specific modifier to use for the RNG function
-    genderMod = TrainerClass_Gender(dto->trainer[battler].header.trainerType) == GENDER_FEMALE
-        ? 120
-        : 136;
 
     switch (dto->trainer[battler].header.monDataType) {
     case TRDATATYPE_BASE: {
@@ -203,17 +198,12 @@ static void TrainerData_BuildParty(FieldBattleDTO *dto, int battler, enum HeapID
             u16 species = trmon[i].species & 0x3FF;
             u8 form = (trmon[i].species & 0xFC00) >> TRAINER_MON_FORM_SHIFT;
 
-            rnd = trmon[i].ivScale + trmon[i].level + species + dto->trainerIDs[battler];
-            LCRNG_SetSeed(rnd);
-
-            for (j = 0; j < dto->trainer[battler].header.trainerType; j++) {
-                rnd = LCRNG_Next();
-            }
-
-            rnd = (rnd << 8) + genderMod;
+            monPersonality = getPersonalityForNatureAndAbility(trmon[i].nature, trmon[i].ability);
             ivs = trmon[i].ivScale * MAX_IVS_SINGLE_STAT / MAX_IV_SCALE;
 
-            Pokemon_InitWith(mon, species, trmon[i].level, ivs, TRUE, rnd, OTID_NOT_SHINY, 0);
+            Pokemon_InitWith(mon, species, trmon[i].level, ivs, TRUE, monPersonality, OTID_NOT_SHINY, 0);
+            Pokemon_SetValue(mon, MON_DATA_HELD_ITEM, &trmon[i].item);
+
             Pokemon_SetBallSeal(trmon[i].cbSeal, mon, heapID);
             Pokemon_SetValue(mon, MON_DATA_FORM, &form);
             Party_AddPokemon(dto->parties[battler], mon);
@@ -228,73 +218,10 @@ static void TrainerData_BuildParty(FieldBattleDTO *dto, int battler, enum HeapID
             u16 species = trmon[i].species & 0x3FF;
             u8 form = (trmon[i].species & 0xFC00) >> TRAINER_MON_FORM_SHIFT;
 
-            rnd = trmon[i].ivScale + trmon[i].level + species + dto->trainerIDs[battler];
-            LCRNG_SetSeed(rnd);
-
-            for (j = 0; j < dto->trainer[battler].header.trainerType; j++) {
-                rnd = LCRNG_Next();
-            }
-
-            rnd = (rnd << 8) + genderMod;
+            monPersonality = getPersonalityForNatureAndAbility(trmon[i].nature, trmon[i].ability);
             ivs = trmon[i].ivScale * MAX_IVS_SINGLE_STAT / MAX_IV_SCALE;
 
-            Pokemon_InitWith(mon, species, trmon[i].level, ivs, TRUE, rnd, OTID_NOT_SHINY, 0);
-
-            for (j = 0; j < 4; j++) {
-                Pokemon_SetMoveSlot(mon, trmon[i].moves[j], j);
-            }
-
-            Pokemon_SetBallSeal(trmon[i].cbSeal, mon, heapID);
-            Pokemon_SetValue(mon, MON_DATA_FORM, &form);
-            Party_AddPokemon(dto->parties[battler], mon);
-        }
-
-        break;
-    }
-
-    case TRDATATYPE_WITH_ITEM: {
-        TrainerMonWithItem *trmon = (TrainerMonWithItem *)buf;
-        for (i = 0; i < dto->trainer[battler].header.partySize; i++) {
-            u16 species = trmon[i].species & 0x3FF;
-            u8 form = (trmon[i].species & 0xFC00) >> TRAINER_MON_FORM_SHIFT;
-
-            rnd = trmon[i].ivScale + trmon[i].level + species + dto->trainerIDs[battler];
-            LCRNG_SetSeed(rnd);
-
-            for (j = 0; j < dto->trainer[battler].header.trainerType; j++) {
-                rnd = LCRNG_Next();
-            }
-
-            rnd = (rnd << 8) + genderMod;
-            ivs = trmon[i].ivScale * MAX_IVS_SINGLE_STAT / MAX_IV_SCALE;
-
-            Pokemon_InitWith(mon, species, trmon[i].level, ivs, TRUE, rnd, OTID_NOT_SHINY, 0);
-            Pokemon_SetValue(mon, MON_DATA_HELD_ITEM, &trmon[i].item);
-            Pokemon_SetBallSeal(trmon[i].cbSeal, mon, heapID);
-            Pokemon_SetValue(mon, MON_DATA_FORM, &form);
-            Party_AddPokemon(dto->parties[battler], mon);
-        }
-
-        break;
-    }
-
-    case TRDATATYPE_WITH_MOVES_AND_ITEM: {
-        TrainerMonWithMovesAndItem *trmon = (TrainerMonWithMovesAndItem *)buf;
-        for (i = 0; i < dto->trainer[battler].header.partySize; i++) {
-            u16 species = trmon[i].species & 0x3FF;
-            u8 form = (trmon[i].species & 0xFC00) >> TRAINER_MON_FORM_SHIFT;
-
-            rnd = trmon[i].ivScale + trmon[i].level + species + dto->trainerIDs[battler];
-            LCRNG_SetSeed(rnd);
-
-            for (j = 0; j < dto->trainer[battler].header.trainerType; j++) {
-                rnd = LCRNG_Next();
-            }
-
-            rnd = (rnd << 8) + genderMod;
-            ivs = trmon[i].ivScale * MAX_IVS_SINGLE_STAT / MAX_IV_SCALE;
-
-            Pokemon_InitWith(mon, species, trmon[i].level, ivs, TRUE, rnd, OTID_NOT_SHINY, 0);
+            Pokemon_InitWith(mon, species, trmon[i].level, ivs, TRUE, monPersonality, OTID_NOT_SHINY, 0);
             Pokemon_SetValue(mon, MON_DATA_HELD_ITEM, &trmon[i].item);
 
             for (j = 0; j < 4; j++) {

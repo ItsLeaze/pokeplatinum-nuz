@@ -383,6 +383,13 @@ typedef struct PokemonSummaryMonData {
     u8 ability;
     u8 nature;
 
+    u16 HPIVs;
+    u16 attackIVs;
+    u16 defenseIVs;
+    u16 spAttackIVs;
+    u16 spDefenseIVs;
+    u16 speedIVs;
+
     u16 moves[LEARNED_MOVES_MAX];
     u8 curPP[LEARNED_MOVES_MAX];
     u8 maxPP[LEARNED_MOVES_MAX];
@@ -449,6 +456,7 @@ typedef struct PokemonSummaryScreen {
     u8 cursor : 4;
     u8 cursorTmp : 4;
     u8 pageState;
+    BOOL showIVs;
 
     u8 subscreenType : 4;
     u8 subscreenExit : 4;

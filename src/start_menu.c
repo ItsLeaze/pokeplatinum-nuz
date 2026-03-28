@@ -1563,6 +1563,22 @@ static BOOL StartMenu_ExitBerryTag(FieldTask *fieldTask)
     return FALSE;
 }
 
+BOOL CleanupMobileBox(FieldTask *taskMan)
+{
+    FieldSystem *fieldSystem = FieldTask_GetFieldSystem(taskMan);
+    StartMenu *menu = FieldTask_GetEnv(taskMan);
+    void **partyManagementData = FieldSystem_GetScriptMemberPtr(fieldSystem, SCRIPT_MANAGER_PARTY_MANAGEMENT_DATA);
+    PokemonStorageSession *pokemonStorageSession = *partyManagementData;
+
+    Heap_Free(*partyManagementData);
+    *partyManagementData = NULL;
+
+    menu->taskData = FieldSystem_OpenBag(fieldSystem, &menu->itemUseCtx);
+    StartMenu_SetCallback(menu, StartMenu_ExitBag);
+
+    return 0;
+}
+
 BOOL StartMenu_ExitTownMap(FieldTask *fieldTask)
 {
     FieldSystem *fieldSystem = FieldTask_GetFieldSystem(fieldTask);

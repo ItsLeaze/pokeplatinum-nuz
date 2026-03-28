@@ -224,6 +224,25 @@
     {
       "id": "OptionsMenu_Text_CloseDescription",
       "en_US": "Return to the game."
+    },
+    {
+      "id": "OptionsMenu_Text_NozlockeFeaturesLabel",
+      "en_US": "NUZLOCKE HELPER"
+    },
+    {
+      "id": "OptionsMenu_Text_NozlockeFeaturesDescription",
+      "en_US": [
+        "Choose if you want special\n",
+        "Nuzlocke Features enabled."
+      ]
+    },
+    {
+      "id": "OptionsMenu_Text_NuzlockeFeaturesOff",
+      "en_US": "OFF"
+    },
+    {
+      "id": "OptionsMenu_Text_NuzlockeFeaturesOn",
+      "en_US": "ON"
     }
   ]
 }
