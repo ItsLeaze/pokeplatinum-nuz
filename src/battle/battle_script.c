@@ -1563,8 +1563,8 @@ static void BattleScript_CalcMoveDamage(BattleSystem *battleSys, BattleContext *
         moveType,
         battleCtx->attacker,
         battleCtx->defender,
-        battleCtx->criticalMul);
-    battleCtx->damage *= battleCtx->criticalMul;
+        battleCtx->criticalMulPct);
+    battleCtx->damage = (battleCtx->damage * battleCtx->criticalMulPct) / 100;
 
     if (Battler_HeldItemEffect(battleCtx, battleCtx->attacker) == HOLD_EFFECT_HP_DRAIN_ON_ATK) {
         battleCtx->damage = battleCtx->damage * (100 + Battler_HeldItemPower(battleCtx, battleCtx->attacker, 0)) / 100;
@@ -2363,7 +2363,7 @@ static BOOL BtlCmd_GoToMoveScript(BattleSystem *battleSys, BattleContext *battle
  * then this will always flag no critical hits.
  *
  * Side effects:
- * - battleCtx->criticalMul is set to the multiplier to be applied to the total
+ * - battleCtx->criticalMulPct is set to the percentage to be applied to the total
  * move damage for a critical hit.
  *
  * @param battleSys
@@ -2376,9 +2376,9 @@ static BOOL BtlCmd_CalcCrit(BattleSystem *battleSys, BattleContext *battleCtx)
 
     if ((BattleSystem_GetBattleType(battleSys) & BATTLE_TYPE_CATCH_TUTORIAL)
         || (BattleSystem_GetBattleStatusMask(battleSys) & BATTLE_STATUS_FIRST_BATTLE)) {
-        battleCtx->criticalMul = 1;
+        battleCtx->criticalMulPct = CRIT_MULT_PCT_NO_CRIT;
     } else {
-        battleCtx->criticalMul = BattleSystem_CalcCriticalMulti(battleSys,
+        battleCtx->criticalMulPct = BattleSystem_CalcCriticalMulti(battleSys,
             battleCtx,
             battleCtx->attacker,
             battleCtx->defender,
@@ -3869,7 +3869,7 @@ static BOOL BtlCmd_PrintTrainerMessage(BattleSystem *battleSys, BattleContext *b
 static u32 BattleScript_CalcPrizeMoney(BattleSystem *battleSys, BattleContext *battleCtx, int battler)
 {
     u8 lastLevel = 0;
-    void *rawParty = Heap_Alloc(HEAP_ID_BATTLE, sizeof(TrainerMonWithMovesAndItem) * MAX_PARTY_SIZE);
+    void *rawParty = Heap_Alloc(HEAP_ID_BATTLE, sizeof(TrainerMonWithMoves) * MAX_PARTY_SIZE);
 
     Trainer trainer;
     Trainer_Load(battleSys->trainerIDs[battler], &trainer);
@@ -3885,18 +3885,6 @@ static u32 BattleScript_CalcPrizeMoney(BattleSystem *battleSys, BattleContext *b
 
     case TRDATATYPE_WITH_MOVES: {
         TrainerMonWithMoves *party = (TrainerMonWithMoves *)rawParty;
-        lastLevel = party[trainer.header.partySize - 1].level;
-        break;
-    }
-
-    case TRDATATYPE_WITH_ITEM: {
-        TrainerMonWithItem *party = (TrainerMonWithItem *)rawParty;
-        lastLevel = party[trainer.header.partySize - 1].level;
-        break;
-    }
-
-    case TRDATATYPE_WITH_MOVES_AND_ITEM: {
-        TrainerMonWithMovesAndItem *party = (TrainerMonWithMovesAndItem *)rawParty;
         lastLevel = party[trainer.header.partySize - 1].level;
         break;
     }
@@ -6432,7 +6420,7 @@ static BOOL BtlCmd_BeatUp(BattleSystem *battleSys, BattleContext *battleCtx)
     battleCtx->damage /= SpeciesData_GetFormValue(DEFENDING_MON.species, DEFENDING_MON.formNum, SPECIES_DATA_BASE_DEF);
     battleCtx->damage /= 50;
     battleCtx->damage += 2;
-    battleCtx->damage *= battleCtx->criticalMul;
+    battleCtx->damage = (battleCtx->damage * battleCtx->criticalMulPct) / 100;
 
     if (battleCtx->turnFlags[battleCtx->attacker].helpingHand) {
         battleCtx->damage = battleCtx->damage * 15 / 10;
@@ -9838,7 +9826,7 @@ static void *BattleScript_VarAddress(BattleSystem *battleSys, BattleContext *bat
     case BTLVAR_SCRIPT_TEMP:
         return &battleCtx->scriptTemp;
     case BTLVAR_CRITICAL_MUL:
-        return &battleCtx->criticalMul;
+        return &battleCtx->criticalMulPct;
     case BTLVAR_ATTACKER_LAST_DAMAGE_TAKEN:
         return &battleCtx->turnFlags[battleCtx->attacker].lastDamageTaken;
     case BTLVAR_DEFENDER_LAST_DAMAGE_TAKEN:
@@ -10045,7 +10033,7 @@ static void BattleScript_GetExpTask(SysTask *task, void *inData)
         break;
 
     case SEQ_GET_EXP_CHECK_LEVEL_UP:
-        if (Pokemon_ShouldLevelUp(mon)) {
+        if (Pokemon_ShouldLevelUp(mon, data->battleSys->trainerInfo[BATTLER_PLAYER_1])) {
             // Only play the special level-up animation for an active battler
             if (data->battleCtx->selectedPartySlot[expBattler] == slot) {
                 BattleController_EmitPlayStatusEffect(data->battleSys, data->battleCtx, expBattler, BATTLE_ANIMATION_LEVEL_UP);
@@ -10436,6 +10424,7 @@ static void BattleScript_GetExpTask(SysTask *task, void *inData)
  */
 static void BattleScript_CalcEffortValues(Party *party, int slot, int species, int form)
 {
+    return;
     // must declare C89-style to match
     int stat;
     s16 tmp = 0;

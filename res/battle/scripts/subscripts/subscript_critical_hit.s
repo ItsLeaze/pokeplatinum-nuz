@@ -2,7 +2,7 @@
 
 
 _000:
-    CompareVarToValue OPCODE_EQU, BTLVAR_CRITICAL_MUL, 1, _049
+    CompareVarToValue OPCODE_EQU, BTLVAR_CRITICAL_MUL, 100, _049
     // A critical hit!
     PrintMessage BattleStrings_Text_ACriticalHit, TAG_NONE
     Wait 

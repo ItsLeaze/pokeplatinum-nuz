@@ -62,6 +62,7 @@ void StartMenu_OpenColosseum(FieldSystem *fieldSystem);
 void StartMenu_OpenFromScript(FieldSystem *fieldSystem);
 void StartMenu_SetCallback(StartMenu *menu, void *callback);
 BOOL StartMenu_ExitPartyMenu(FieldTask *fieldTask);
+BOOL CleanupMobileBox(FieldTask *taskMan);
 BOOL StartMenu_ExitTownMap(FieldTask *fieldTask);
 BOOL StartMenu_FlyDestinationSelected(FieldTask *fieldTask);
 BOOL StartMenu_ExitJournal(FieldTask *fieldTask);

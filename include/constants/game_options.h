@@ -17,6 +17,11 @@ enum OptionsBattleStyle {
     OPTIONS_BATTLE_STYLE_SET
 };
 
+enum OptionsNuzlockeFeatures {
+    OPTIONS_NUZLOCKE_FEATURES_OFF = 0,
+    OPTIONS_NUZLOCKE_FEATURES_ON
+};
+
 enum OptionsBattleScene {
     OPTIONS_BATTLE_SCENE_ON = 0,
     OPTIONS_BATTLE_SCENE_OFF

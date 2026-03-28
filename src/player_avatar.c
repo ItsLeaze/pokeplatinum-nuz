@@ -436,7 +436,7 @@ void sub_0205EC20(PlayerAvatar *playerAvatar, u32 param1, int param2)
 void PlayerData_Init(PlayerData *playerData)
 {
     playerData->cyclingGear = 0;
-    playerData->runningShoes = FALSE;
+    playerData->runningShoes = TRUE;
     playerData->form = 0x0;
 }
 

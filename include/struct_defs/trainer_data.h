@@ -16,9 +16,7 @@
 
 enum TrainerDataType {
     TRDATATYPE_BASE = 0,
-    TRDATATYPE_WITH_MOVES,
-    TRDATATYPE_WITH_ITEM,
-    TRDATATYPE_WITH_MOVES_AND_ITEM,
+    TRDATATYPE_WITH_MOVES
 };
 
 typedef struct TrainerHeader {
@@ -36,6 +34,9 @@ typedef struct TrainerMonBase {
     u16 level;
     u16 species;
     u16 cbSeal;
+    u16 item;
+    u16 nature;
+    s8 ability; // -1 for random; 0 for ability 1; 1 for ability 2
 } TrainerMonBase;
 
 typedef struct TrainerMonWithMoves {
@@ -44,23 +45,9 @@ typedef struct TrainerMonWithMoves {
     u16 species;
     u16 moves[LEARNED_MOVES_MAX];
     u16 cbSeal;
+    u16 item;
+    u16 nature;
+    u8 ability; // -1 for random; 0 for ability 1; 1 for ability 2
 } TrainerMonWithMoves;
-
-typedef struct TrainerMonWithItem {
-    u16 ivScale;
-    u16 level;
-    u16 species;
-    u16 item;
-    u16 cbSeal;
-} TrainerMonWithItem;
-
-typedef struct TrainerMonWithMovesAndItem {
-    u16 ivScale;
-    u16 level;
-    u16 species;
-    u16 item;
-    u16 moves[LEARNED_MOVES_MAX];
-    u16 cbSeal;
-} TrainerMonWithMovesAndItem;
 
 #endif // POKEPLATINUM_STRUCT_TRAINER_DATA_H

@@ -76,6 +76,7 @@ static void UseHealingItemFromMenu(ItemMenuUseContext *usageContext, const ItemU
 static void UseTownMapFromMenu(ItemMenuUseContext *usageContext, const ItemUseContext *additionalContext);
 static void UseExplorerKitFromMenu(ItemMenuUseContext *usageContext, const ItemUseContext *additionalContext);
 static void UseBicycleFromMenu(ItemMenuUseContext *usageContext, const ItemUseContext *additionalContext);
+static void UseMobileBoxFromMenu(ItemMenuUseContext *usageContext, const ItemUseContext *additionalContext);
 static void UseJournalFromMenu(ItemMenuUseContext *usageContext, const ItemUseContext *additionalContext);
 static void UseTMHMFromMenu(ItemMenuUseContext *usageContext, const ItemUseContext *additionalContext);
 static void UseMailFromMenu(ItemMenuUseContext *usageContext, const ItemUseContext *additionalContext);
@@ -96,6 +97,7 @@ static void UseAzureFluteFromMenu(ItemMenuUseContext *usageContext, const ItemUs
 static void UseVsRecorderFromMenu(ItemMenuUseContext *usageContext, const ItemUseContext *additionalContext);
 static void UseGracideaFromMenu(ItemMenuUseContext *usageContext, const ItemUseContext *additionalContext);
 static BOOL UseBicycleInField(ItemFieldUseContext *usageContext);
+static BOOL UseMobileBoxInField(ItemFieldUseContext *usageContext);
 static BOOL UseJournalInField(ItemFieldUseContext *usageContext);
 static BOOL UseOldRodInField(ItemFieldUseContext *usageContext);
 static BOOL UseGoodRodInField(ItemFieldUseContext *usageContext);
@@ -118,6 +120,7 @@ static void *sub_02068A28(void *some_param);
 static void *sub_020691CC(void *some_param);
 static void *OpenPartyMenuForGracidea(void *fieldSystem);
 static enum ItemUseCheckResult CanUseBicycle(const ItemUseContext *usageContext);
+static enum ItemUseCheckResult CanUseMobileBox(const ItemUseContext *usageContext);
 static enum ItemUseCheckResult CanUseExplorerKit(const ItemUseContext *usageContext);
 static enum ItemUseCheckResult CanUseBerry(const ItemUseContext *usageContext);
 static enum ItemUseCheckResult CanUsePokeRadar(const ItemUseContext *usageContext);
@@ -128,6 +131,8 @@ static enum ItemUseCheckResult CanUseFishingRod(const ItemUseContext *usageConte
 static enum ItemUseCheckResult CanUseEscapeRope(const ItemUseContext *usageContext);
 static enum ItemUseCheckResult CanUseAzureFlute(const ItemUseContext *usageContext);
 static BOOL MountOrUnmountBicycle(FieldTask *task);
+static PokemonStorageSession *OpenMobileBox(FieldSystem *fieldSystem);
+static void UseCapCandyFromMenu(ItemMenuUseContext *usageContext, const ItemUseContext *additionalContext);
 static BOOL PrintRegisteredKeyItemUseMessage(FieldTask *task);
 static void RegisteredItem_CreateGoToAppTask(ItemFieldUseContext *usageContext, void *param1);
 static BOOL RegisteredItem_GoToApp(FieldTask *task);
@@ -162,6 +167,7 @@ static const ItemUseFuncDat sItemUseFuncs[] = {
     [ITEM_USE_FUNC_AZURE_FLUTE]  = { UseAzureFluteFromMenu,  UseAzureFluteInField,  CanUseAzureFlute  },
     [ITEM_USE_FUNC_VS_RECORDER]  = { UseVsRecorderFromMenu,  UseVsRecorderInField,  NULL              },
     [ITEM_USE_FUNC_GRACIDEA]     = { UseGracideaFromMenu,    UseGracideaInField,    NULL              },
+    [ITEM_USE_FUNC_MOBILE_BOX]   = { UseMobileBoxFromMenu,   UseMobileBoxInField,   CanUseMobileBox   },
 };
 // clang-format on
 
@@ -499,6 +505,56 @@ static enum ItemUseCheckResult CanUseBicycle(const ItemUseContext *usageContext)
     }
 
     return ITEM_USE_CAN_USE;
+}
+
+static void UseMobileBoxFromMenu(ItemMenuUseContext *usageContext, const ItemUseContext *additionalContext)
+{
+    FieldSystem *fieldSystem = FieldTask_GetFieldSystem(usageContext->fieldTask);
+    StartMenu *menu = FieldTask_GetEnv(usageContext->fieldTask);
+
+    menu->taskData = OpenMobileBox(fieldSystem);
+    menu->callback = CleanupMobileBox;
+    menu->state = START_MENU_STATE_APP_RUN;
+}
+
+static BOOL UseMobileBoxInField(ItemFieldUseContext *usageContext)
+{
+    RegisteredItem_CreateGoToAppTask(usageContext, OpenMobileBox);
+    return TRUE;
+}
+
+static PokemonStorageSession *OpenMobileBox(FieldSystem *fieldSystem)
+{
+    void **partyManagementData = FieldSystem_GetScriptMemberPtr(fieldSystem, SCRIPT_MANAGER_PARTY_MANAGEMENT_DATA);
+    PokemonStorageSession *pokemonStorageSession = Heap_Alloc(HEAP_ID_FIELD2, sizeof(PokemonStorageSession));
+
+    pokemonStorageSession->saveData = fieldSystem->saveData;
+    pokemonStorageSession->boxMode = PC_MODE_MOVE_MONS;
+    *partyManagementData = pokemonStorageSession;
+
+    FieldSystem_OpenPokemonStorage(fieldSystem, pokemonStorageSession);
+    return pokemonStorageSession;
+}
+
+static enum ItemUseCheckResult CanUseMobileBox(const ItemUseContext *usageContext)
+{
+    switch (usageContext->mapHeaderID) {
+    case MAP_HEADER_POKEMON_LEAGUE_ELEVATOR_TO_AARON_ROOM:
+    case MAP_HEADER_POKEMON_LEAGUE_AARON_ROOM:
+    case MAP_HEADER_POKEMON_LEAGUE_ELEVATOR_TO_BERTHA_ROOM:
+    case MAP_HEADER_POKEMON_LEAGUE_BERTHA_ROOM:
+    case MAP_HEADER_POKEMON_LEAGUE_ELEVATOR_TO_FLINT_ROOM:
+    case MAP_HEADER_POKEMON_LEAGUE_FLINT_ROOM:
+    case MAP_HEADER_POKEMON_LEAGUE_ELEVATOR_TO_LUCIAN_ROOM:
+    case MAP_HEADER_POKEMON_LEAGUE_LUCIAN_ROOM:
+    case MAP_HEADER_POKEMON_LEAGUE_ELEVATOR_TO_CHAMPION_ROOM:
+    case MAP_HEADER_POKEMON_LEAGUE_CHAMPION_ROOM:
+    case MAP_HEADER_POKEMON_LEAGUE_HALLWAY_TO_HALL_OF_FAME:
+    case MAP_HEADER_POKEMON_LEAGUE_HALL_OF_FAME:
+        return ITEM_USE_CANNOT_USE_GENERIC;
+    default:
+        return ITEM_USE_CAN_USE;
+    }
 }
 
 static void UseJournalFromMenu(ItemMenuUseContext *usageContext, const ItemUseContext *additionalContext)

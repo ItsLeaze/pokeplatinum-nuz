@@ -1,7 +1,7 @@
 {
     "bg_events": [
         {
-            "script": 2,
+            "script": 1,
             "type": 0,
             "x": 6,
             "z": 4,
@@ -9,7 +9,7 @@
             "player_facing_dir": "BG_EVENT_DIR_ALL"
         },
         {
-            "script": 3,
+            "script": 2,
             "type": 0,
             "x": 9,
             "z": 4,
@@ -18,21 +18,6 @@
         }
     ],
     "object_events": [
-        {
-            "id": "LOCALID_RIVAL",
-            "graphics_id": "OBJ_EVENT_GFX_BARRY",
-            "movement_type": "MOVEMENT_TYPE_LOOK_NORTH",
-            "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_HIDE_TWINLEAF_TOWN_RIVAL_HOUSE_2F_RIVAL",
-            "script": 0,
-            "initial_dir": 0,
-            "data": [],
-            "movement_range_x": 0,
-            "movement_range_z": 0,
-            "x": 9,
-            "z": 5,
-            "y": 0
-        }
     ],
     "warp_events": [
         {

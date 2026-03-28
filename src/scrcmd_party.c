@@ -96,7 +96,7 @@ BOOL ScrCmd_GiveEgg(ScriptContext *ctx)
         int specialMetLoc = SpecialMetLoc_GetId(1, eggGiver);
         Egg_CreateEgg(egg, species, 1, trainer, 3, specialMetLoc);
 
-        Party_AddPokemon(party, egg);
+        TryAddPokemonToPartyOrBox(fieldSystem->saveData, egg);
         Heap_Free(egg);
     }
 
@@ -132,6 +132,28 @@ BOOL ScrCmd_CheckPartyMonHasMove(ScriptContext *ctx)
         || (Pokemon_GetValue(mon, MON_DATA_MOVE3, NULL) == move)
         || (Pokemon_GetValue(mon, MON_DATA_MOVE4, NULL) == move)) {
         *destVar = TRUE;
+    }
+
+    return FALSE;
+}
+
+BOOL ScrCmd_FindFirstPartySlotWithMon(ScriptContext *ctx)
+{
+    FieldSystem *fieldSystem = ctx->fieldSystem;
+    Pokemon *mon;
+    u16 *destVar = ScriptContext_GetVarPointer(ctx);
+    u8 i, partyCount;
+
+    partyCount = Party_GetCurrentCount(SaveData_GetParty(fieldSystem->saveData));
+
+    for (i = 0, *destVar = MAX_PARTY_SIZE; i < partyCount; i++) {
+        mon = Party_GetPokemonBySlotIndex(SaveData_GetParty(fieldSystem->saveData), i);
+
+        if (Pokemon_GetValue(mon, MON_DATA_IS_EGG, NULL) != FALSE) {
+            continue;
+        }
+        *destVar = i;
+        break;
     }
 
     return FALSE;

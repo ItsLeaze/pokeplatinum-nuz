@@ -683,7 +683,7 @@ _09BC:
     FacePlayer
     CheckItem ITEM_HM04, 1, VAR_RESULT
     GoToIfEq VAR_RESULT, 1, CanalaveCity_RIVAL_EnterLibrary
-    FindPartySlotWithMove VAR_RESULT, MOVE_STRENGTH
+    FindFirstPartySlotWithMon VAR_RESULT
     GoToIfNe VAR_RESULT, 6, CanalaveCity_RIVAL_EnterLibrary
     BufferRivalName 0
     Message 3

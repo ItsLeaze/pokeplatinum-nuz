@@ -422,7 +422,7 @@ void CreateUpdateCursorPayload(BattleCastleSelfApp *app, u16 cmd);
 void BattleCastleSelfApp_HandleUpdateCursorCmd(int netID, int unused, void *data, void *context);
 void CreateExitAppPayload(BattleCastleSelfApp *app);
 void BattleCastleSelfApp_HandleExitAppCmd(int netID, int unused, void *data, void *context);
-static void ApplyItemEffect(Pokemon *mon, u16 itemID);
+static void ApplyItemEffect(Pokemon *mon, u16 itemID, TrainerInfo *trainerInfo);
 static void PrintPlayersAndPartnersNames(BattleCastleSelfApp *app, Window *window);
 static void HealPokemon(BattleCastleSelfApp *app, u8 slot, u8 menuOption);
 static void RentItem(BattleCastleSelfApp *app, u8 slot, u16 itemID);
@@ -3157,9 +3157,9 @@ void BattleCastleSelfApp_HandleExitAppCmd(int netID, int unused, void *data, voi
     app->partnerIsExiting = payload[0];
 }
 
-static void ApplyItemEffect(Pokemon *mon, u16 itemID)
+static void ApplyItemEffect(Pokemon *mon, u16 itemID, TrainerInfo *trainerInfo)
 {
-    Pokemon_ApplyItemEffects(mon, itemID, 0, 0, HEAP_ID_BATTLE_CASTLE_APP);
+    Pokemon_ApplyItemEffects(mon, itemID, 0, 0, HEAP_ID_BATTLE_CASTLE_APP, trainerInfo);
 }
 
 static void PrintPlayersAndPartnersNames(BattleCastleSelfApp *app, Window *window)
@@ -3205,16 +3205,18 @@ static void HealPokemon(BattleCastleSelfApp *app, u8 slot, u8 menuOption)
 
     app->printerID = PrintMessageAndCopyToVRAM(app, sHealingMessages[menuOption - 1], FONT_MESSAGE);
 
+    TrainerInfo *trainerInfo = SaveData_GetTrainerInfo(app->saveData);
+
     switch (menuOption) {
     case MENU_ENTRY_RESTORE_HP:
-        ApplyItemEffect(mon, ITEM_MAX_POTION);
+        ApplyItemEffect(mon, ITEM_MAX_POTION, trainerInfo);
         break;
     case MENU_ENTRY_RESTORE_PP:
-        ApplyItemEffect(mon, ITEM_MAX_ELIXIR);
+        ApplyItemEffect(mon, ITEM_MAX_ELIXIR, trainerInfo);
         break;
     case MENU_ENTRY_RESTORE_ALL:
-        ApplyItemEffect(mon, ITEM_MAX_POTION);
-        ApplyItemEffect(mon, ITEM_MAX_ELIXIR);
+        ApplyItemEffect(mon, ITEM_MAX_POTION, trainerInfo);
+        ApplyItemEffect(mon, ITEM_MAX_ELIXIR, trainerInfo);
         break;
 
     default:

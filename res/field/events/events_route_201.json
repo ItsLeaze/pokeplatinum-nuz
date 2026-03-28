@@ -98,7 +98,7 @@
         {
             "id": "LOCALID_COUNTERPART",
             "graphics_id": "OBJ_EVENT_GFX_COUNTERPART",
-            "movement_type": "MOVEMENT_TYPE_LOOK_EAST",
+            "movement_type": "MOVEMENT_TYPE_LOOK_SOUTH",
             "trainer_type": "TRAINER_TYPE_NONE",
             "hidden_flag": "FLAG_HIDE_ROUTE_201_COUNTERPART",
             "script": 0,
@@ -198,8 +198,53 @@
             "data": [],
             "movement_range_x": 0,
             "movement_range_z": 0,
-            "x": 112,
-            "z": 854,
+            "x": 114,
+            "z": 853,
+            "y": 0
+        },
+        {
+            "id": "LOCALID_BRIEFCASE_KANTO",
+            "graphics_id": "OBJ_EVENT_GFX_BRIEFCASE",
+            "movement_type": "MOVEMENT_TYPE_LOOK_NORTH",
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "hidden_flag": "VAR_KANTO_STARTER_ACQUIRED",
+            "script": 17,
+            "initial_dir": 1,
+            "data": [],
+            "movement_range_x": 0,
+            "movement_range_z": 0,
+            "x": 106,
+            "z": 855,
+            "y": 0
+        },
+        {
+            "id": "LOCALID_BRIEFCASE_JOHTO",
+            "graphics_id": "OBJ_EVENT_GFX_BRIEFCASE",
+            "movement_type": "MOVEMENT_TYPE_LOOK_NORTH",
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "hidden_flag": "VAR_JOHTO_STARTER_ACQUIRED",
+            "script": 18,
+            "initial_dir": 1,
+            "data": [],
+            "movement_range_x": 0,
+            "movement_range_z": 0,
+            "x": 107,
+            "z": 855,
+            "y": 0
+        },
+        {
+            "id": "LOCALID_BRIEFCASE_HOENN",
+            "graphics_id": "OBJ_EVENT_GFX_BRIEFCASE",
+            "movement_type": "MOVEMENT_TYPE_LOOK_NORTH",
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "hidden_flag": "VAR_HOENN_STARTER_ACQUIRED",
+            "script": 19,
+            "initial_dir": 1,
+            "data": [],
+            "movement_range_x": 0,
+            "movement_range_z": 0,
+            "x": 108,
+            "z": 855,
             "y": 0
         }
     ],
@@ -218,9 +263,9 @@
         {
             "script": 4,
             "x": 113,
-            "z": 855,
+            "z": 854,
             "y": 0,
-            "width": 2,
+            "width": 1,
             "length": 1,
             "var": "VAR_FOLLOWER_RIVAL_STATE",
             "value": 1
@@ -256,14 +301,14 @@
             "value": 3
         },
         {
-            "script": 16,
-            "x": 109,
-            "z": 857,
+            "script": 4,
+            "x": 114,
+            "z": 855,
             "y": 0,
-            "width": 5,
+            "width": 1,
             "length": 1,
             "var": "VAR_FOLLOWER_RIVAL_STATE",
-            "value": 2
+            "value": 1
         }
     ]
 }

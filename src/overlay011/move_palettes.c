@@ -345,6 +345,25 @@ ALIGN_4 static const u16 sMovePaletteDark[] = {
     RGB(0, 0, 0),
 };
 
+ALIGN_4 static const u16 sMovePaletteFairy[] = {
+    RGB(18, 18, 31),   // brighter highlight background tint
+    RGB(31, 31, 31),
+    RGB(31, 20, 28),   // main bright pink
+    RGB(29, 17, 25),   // mid tone
+    RGB(30, 18, 26),
+    RGB(31, 19, 27),
+    RGB(26, 10, 20),   // darker shade (still pink, less muddy)
+    RGB(23, 8, 18),
+    RGB(21, 6, 16),
+    RGB(31, 24, 29),   // highlight pink
+    RGB(8, 8, 8),
+    RGB(0, 0, 0),
+    RGB(14, 14, 14),
+    RGB(30, 27, 18),
+    RGB(31, 30, 23),
+    RGB(0, 0, 0),
+};
+
 ALIGN_4 static const u16 sMovePaletteNone[] = {
     RGB(13, 14, 29),
     RGB(25, 25, 29),
@@ -403,7 +422,8 @@ ALIGN_4 static const u16 *const sMovePaletteTable[] = {
     sMovePalettePsychic,
     sMovePaletteIce,
     sMovePaletteDragon,
-    sMovePaletteDark
+    sMovePaletteDark,
+    sMovePaletteFairy
 };
 
 void include_unk_ov11_0221FBAC();

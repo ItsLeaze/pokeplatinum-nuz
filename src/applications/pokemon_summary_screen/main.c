@@ -159,7 +159,7 @@ static void SetMonDataFromBoxMon(PokemonSummaryScreen *summaryScreen, BoxPokemon
 static void SetMonDataFromMon(PokemonSummaryScreen *summaryScreen, Pokemon *mon, PokemonSummaryMonData *monData);
 static void SetupInitialPageGfx(PokemonSummaryScreen *summaryScreen);
 static void PlayMonCry(PokemonSummaryScreen *summaryScreen);
-static void SetupPageFromSubscreenButton(PokemonSummaryScreen *summaryScreen, u8 page);
+static void SetupPageFromSubscreenButton(PokemonSummaryScreen *summaryScreen, u8 page, BOOL redrawOnSamePage);
 static void ChangePage(PokemonSummaryScreen *summaryScreen, s8 delta);
 static u8 CheckSubscreenPressAndSetButton(PokemonSummaryScreen *summaryScreen);
 static void TryHideContestPages(PokemonSummaryScreen *summaryScreen);
@@ -616,7 +616,12 @@ static int HandleInput_Main(PokemonSummaryScreen *summaryScreen)
             return TryFeedPoffin(summaryScreen);
         }
 
-        if (summaryScreen->page == SUMMARY_PAGE_BATTLE_MOVES) {
+        if (summaryScreen->page == SUMMARY_PAGE_SKILLS) {
+            Sound_PlayEffect(SEQ_SE_DP_SYU01);
+            summaryScreen->showIVs = !summaryScreen->showIVs;
+            ChangePage(summaryScreen, 0);
+            return SUMMARY_STATE_HANDLE_INPUT;
+        } else if (summaryScreen->page == SUMMARY_PAGE_BATTLE_MOVES) {
             Sound_PlayEffect(SEQ_SE_DP_SYU01);
             summaryScreen->pageState = PAGE_STATE_INITIAL;
             return SUMMARY_STATE_SETUP_BATTLE_MOVE_INFO;
@@ -810,16 +815,6 @@ static int HandleInput_SelectMove(PokemonSummaryScreen *summaryScreen)
 
     if (JOY_NEW(PAD_BUTTON_A)) {
         Sound_PlayEffect(SEQ_SE_DP_DECIDE);
-
-        if (summaryScreen->cursor != LEARNED_MOVES_MAX) {
-            if (Item_IsHMMove(summaryScreen->monData.moves[summaryScreen->cursor]) == TRUE && summaryScreen->data->move != MOVE_NONE) {
-                Sprite_SetDrawFlag2(summaryScreen->sprites[SUMMARY_SPRITE_MOVE_CATEGORY_ICON], FALSE);
-                DrawEmptyHearts(summaryScreen);
-                PokemonSummaryScreen_PrintHMMovesCantBeForgotten(summaryScreen);
-                return SUMMARY_STATE_WAIT_HM_MSG_INPUT;
-            }
-        }
-
         summaryScreen->data->selectedMoveSlot = summaryScreen->cursor;
         summaryScreen->data->returnMode = SUMMARY_RETURN_SELECT;
         return SUMMARY_STATE_TRANSITION_OUT;
@@ -909,10 +904,10 @@ static int HandleInput_Subscreen(PokemonSummaryScreen *summaryScreen)
 
         if (summaryScreen->monData.isEgg == TRUE) {
             if (page == SUMMARY_PAGE_MEMO || page == SUMMARY_PAGE_EXIT) {
-                SetupPageFromSubscreenButton(summaryScreen, page);
+                SetupPageFromSubscreenButton(summaryScreen, page, FALSE);
             }
         } else {
-            SetupPageFromSubscreenButton(summaryScreen, page);
+            SetupPageFromSubscreenButton(summaryScreen, page, FALSE);
         }
     }
 
@@ -1107,6 +1102,13 @@ static void SetMonDataFromMon(PokemonSummaryScreen *summaryScreen, Pokemon *mon,
     monData->ability = Pokemon_GetValue(mon, MON_DATA_ABILITY, NULL);
     monData->nature = Pokemon_GetNature(mon);
 
+    monData->HPIVs = Pokemon_GetValue(mon, MON_DATA_HP_IV, NULL);
+    monData->attackIVs = Pokemon_GetValue(mon, MON_DATA_ATK_IV, NULL);
+    monData->defenseIVs = Pokemon_GetValue(mon, MON_DATA_DEF_IV, NULL);
+    monData->spAttackIVs = Pokemon_GetValue(mon, MON_DATA_SPATK_IV, NULL);
+    monData->spDefenseIVs = Pokemon_GetValue(mon, MON_DATA_SPDEF_IV, NULL);
+    monData->speedIVs = Pokemon_GetValue(mon, MON_DATA_SPEED_IV, NULL);
+
     u16 i;
     u8 maxPP;
     for (i = 0; i < LEARNED_MOVES_MAX; i++) {
@@ -1277,9 +1279,9 @@ u8 PokemonSummaryScreen_CountVisiblePages(PokemonSummaryScreen *summaryScreen)
     return countVisible;
 }
 
-static void SetupPageFromSubscreenButton(PokemonSummaryScreen *summaryScreen, u8 page)
+static void SetupPageFromSubscreenButton(PokemonSummaryScreen *summaryScreen, u8 page, BOOL redrawOnSamePage)
 {
-    if (summaryScreen->page == page) {
+    if (!redrawOnSamePage && summaryScreen->page == page) {
         return;
     }
 
@@ -1338,14 +1340,10 @@ static void ChangePage(PokemonSummaryScreen *summaryScreen, s8 delta)
         }
     }
 
-    if (page == summaryScreen->page) {
-        return;
-    }
-
     Sound_PlayEffect(SEQ_SE_DP_SELECT5);
     PokemonSummaryScreen_UpdateSubscreenButtonGfx(summaryScreen);
     PokemonSummaryScreen_UpdateConditionFlashSprites(summaryScreen, FALSE);
-    SetupPageFromSubscreenButton(summaryScreen, page);
+    SetupPageFromSubscreenButton(summaryScreen, page, TRUE);
 }
 
 static u8 CheckSubscreenPressAndSetButton(PokemonSummaryScreen *summaryScreen)

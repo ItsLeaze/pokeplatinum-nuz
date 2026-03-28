@@ -15,6 +15,10 @@
 #include "char_transfer.h"
 #include "sprite_system.h"
 
+#define CRIT_MULT_PCT_NO_CRIT     100 // DISCLAIMER: these are not yet referenced from subscript_critical_hit.s
+#define CRIT_MULT_PCT_CRIT        150
+#define CRIT_MULT_PCT_SNIPER_CRIT 225
+
 typedef struct BattleContext BattleContext;
 
 typedef struct FieldConditions {
@@ -220,6 +224,7 @@ struct BattleContext {
     int hitDamage;
     int criticalBoosts;
     int criticalMul;
+    int criticalMulPct;
     int movePower;
     int powerMul;
     int hpCalcTemp;

@@ -409,12 +409,6 @@ TwinleafTown_RivalThudTrigger:
     ApplyMovement LOCALID_PLAYER, TwinleafTown_Movement_PlayerWatchRival
     ApplyMovement LOCALID_RIVAL, TwinleafTown_Movement_RivalWalkAwayAndWalkBack
     WaitMovement
-    WaitTime 15, VAR_RESULT
-    BufferRivalName 0
-    Message TwinleafTown_Text_OhJeezForgotSomething
-    CloseMessage
-    ApplyMovement LOCALID_RIVAL, TwinleafTown_Movement_RivalEnterHouse
-    WaitMovement
     PlayDoorCloseAnimation ANIMATION_TAG_DOOR_1
     WaitForAnimation ANIMATION_TAG_DOOR_1
     UnloadAnimation ANIMATION_TAG_DOOR_1
@@ -422,6 +416,9 @@ TwinleafTown_RivalThudTrigger:
     Common_FadeToDefaultMusic2
     SetVar VAR_TWINLEAF_TOWN_GUITARIST_TRIGGER_STATE, 1
     SetVar VAR_TWINLEAF_TOWN_RIVAL_TRIGGER_STATE, 1
+    SetFlag FLAG_RIVAL_LEFT_HOME
+    SetVar VAR_RIVAL_HOUSE_STATE, 1
+    SetVar VAR_TWINLEAF_TOWN_GUITARIST_TRIGGER_STATE, 2
     ReleaseAll
     End
 
@@ -455,16 +452,14 @@ TwinleafTown_Movement_RivalExitHouse:
 
     .balign 4, 0
 TwinleafTown_Movement_RivalWalkAwayAndWalkBack:
-    WalkFastEast 4
+    WalkFastEast 7
     EmoteExclamationMark
     Delay8
-    WalkFastWest 4
     WalkOnSpotFastSouth
-    EndMovement
-
-    .balign 4, 0
-TwinleafTown_Movement_RivalEnterHouse:
-    WalkNormalNorth
+    WalkOnSpotFastEast
+    WalkOnSpotFastWest
+    Delay8
+    WalkFastNorth 10
     SetInvisible
     EndMovement
 

@@ -5,6 +5,9 @@
 
 typedef struct ChooseStarterData {
     int species;
+    u16 pokemon1;
+    u16 pokemon2;
+    u16 pokemon3;
     const Options *options;
 } ChooseStarterData;
 

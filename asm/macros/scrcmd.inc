@@ -1139,8 +1139,11 @@
     .short \arg0
     .endm
 
-    .macro StartChooseStarterScene
+    .macro StartChooseStarterScene one, two, three
     .short SCRCMD_STARTCHOOSESTARTERSCENE
+    .short \one
+    .short \two
+    .short \three
     .endm
 
     .macro SaveChosenStarter
@@ -4987,7 +4990,10 @@
     .byte \floor
     .endm
 
-
+    .macro FindFirstPartySlotWithMon destVar
+    .short SCRCMD_FINDFIRSTPARTYSLOTWITHMON
+    .short \destVar
+    .endm
 
     .macro GoToIfLt varID, valueOrVarID, offset
     CompareVar \varID, \valueOrVarID

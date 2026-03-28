@@ -2403,6 +2403,7 @@ Expert_StatusSpAttackDown_PreSplitSpecialTypes:
     TableEntry TYPE_ICE
     TableEntry TYPE_DRAGON
     TableEntry TYPE_DARK
+    TableEntry TYPE_FAIRY
     TableEntry TABLE_END
 
 Expert_StatusSpDefenseDown:
@@ -2737,6 +2738,7 @@ Expert_LightScreen_PreSplitSpecialTypes:
     TableEntry TYPE_ICE
     TableEntry TYPE_DRAGON
     TableEntry TYPE_DARK
+    TableEntry TYPE_FAIRY
     TableEntry TABLE_END
 
 Expert_Rest:
@@ -3925,6 +3927,7 @@ Expert_MirrorCoat_SpecialTypes:
     TableEntry TYPE_ICE
     TableEntry TYPE_DRAGON
     TableEntry TYPE_DARK
+    TableEntry TYPE_FAIRY
     TableEntry TABLE_END
 
 Expert_ChargeTurnNoInvuln:

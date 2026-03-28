@@ -88,7 +88,6 @@ Route202_CounterpartWalkToPlayerZ829:
     GoTo Route202_CheckStartCatchingTutorial
 
 Route202_CheckStartCatchingTutorial:
-    GoToIfUnset FLAG_RECEIVED_PARCEL, Route202_TellYourFamily
     GetPlayerGender VAR_RESULT
     GoToIfEq VAR_RESULT, GENDER_MALE, Route202_DawnIHaventShownYouHowToCatchAPokemon
     GoToIfEq VAR_RESULT, GENDER_FEMALE, Route202_LucasDoYouKnowHowToCatchAPokemon
@@ -110,15 +109,47 @@ Route202_LucasDoYouKnowHowToCatchAPokemon:
 
 Route202_DoCatchingTutorial:
     CloseMessage
-    ApplyMovement LOCALID_COUNTERPART, Route202_Movement_CounterpartWalkWestIntoTallGrass
-    ApplyMovement LOCALID_PLAYER, Route202_Movement_PlayerWalkWestIntoTallGrass
-    WaitMovement
-    StartCatchingTutorial
+    Call R202_SetCounterpartPartnerTeamToVar
+    StartTrainerBattle VAR_0x8004
+    CheckWonBattle VAR_RESULT
+    GoToIfEq VAR_RESULT, FALSE, R202_DawnBattle_BlackOut
     ApplyMovement LOCALID_COUNTERPART, Route202_Movement_CounterpartWalkOnSpotEastAfterCatchingTutorial
     WaitMovement
     GetPlayerGender VAR_RESULT
     GoToIfEq VAR_RESULT, GENDER_MALE, Route202_DawnToGetYouStartedIllGiveYouFivePokeBalls
     GoToIfEq VAR_RESULT, GENDER_FEMALE, Route202_LucasHereIllGiveYouFivePokeballsToGetYouStarted
+    End
+
+R202_SetCounterpartPartnerTeamToVar:
+    GetPlayerGender VAR_RESULT
+    GoToIfEq VAR_RESULT, GENDER_MALE, R202_SetDawnTeamToVar
+    GoToIfEq VAR_RESULT, GENDER_FEMALE, R202_SetLucasTeamToVar
+    End
+
+R202_SetDawnTeamToVar:
+    GetPlayerStarterSpecies VAR_RESULT
+    SetVar VAR_0x8004, TRAINER_A_DAWN_R202_CHIMCHAR
+    GoToIfEq VAR_RESULT, SPECIES_CHIMCHAR, R202_Return
+    SetVar VAR_0x8004, TRAINER_A_DAWN_R202_PIPLUP
+    GoToIfEq VAR_RESULT, SPECIES_PIPLUP, R202_Return
+    SetVar VAR_0x8004, TRAINER_A_DAWN_R202_TURTWIG
+    Return
+
+R202_SetLucasTeamToVar:
+    GetPlayerStarterSpecies VAR_RESULT
+    SetVar VAR_0x8004, TRAINER_A_LUCAS_R202_CHIMCHAR
+    GoToIfEq VAR_RESULT, SPECIES_CHIMCHAR, R202_Return
+    SetVar VAR_0x8004, TRAINER_A_LUCAS_R202_PIPLUP
+    GoToIfEq VAR_RESULT, SPECIES_PIPLUP, R202_Return
+    SetVar VAR_0x8004, TRAINER_A_LUCAS_R202_TURTWIG
+    Return
+
+R202_Return:
+    Return
+
+R202_DawnBattle_BlackOut:
+    BlackOutFromBattle
+    ReleaseAll
     End
 
 Route202_DawnToGetYouStartedIllGiveYouFivePokeBalls:
@@ -134,6 +165,9 @@ Route202_LucasHereIllGiveYouFivePokeballsToGetYouStarted:
 Route202_GivePokeballs:
     SetVar VAR_0x8004, ITEM_POKE_BALL
     SetVar VAR_0x8005, 5
+    # TODO remove the following 2 lines again? give Rare Candy for testing purposes and Add appropriate message
+    SetVar VAR_0x8004, 0x32
+    SetVar VAR_0x8005, 100
     Common_GiveItemQuantity
     GetPlayerGender VAR_RESULT
     GoToIfEq VAR_RESULT, GENDER_MALE, Route202_DawnLeave
