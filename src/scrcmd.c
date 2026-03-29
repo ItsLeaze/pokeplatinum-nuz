@@ -394,6 +394,7 @@ static BOOL ScrCmd_336(ScriptContext *ctx);
 static BOOL ScrCmd_TryStartGTSApp(ScriptContext *ctx);
 static BOOL ScrCmd_0B3(ScriptContext *ctx);
 static BOOL ScrCmd_StartChooseStarterScene(ScriptContext *ctx);
+static BOOL ScrCmd_GetChosenBriefcaseSpecies(ScriptContext *ctx);
 static BOOL ScrCmd_SaveChosenStarter(ScriptContext *ctx);
 static BOOL ScrCmd_Unused_0BA(ScriptContext *ctx);
 static BOOL ScrCmd_OpenPokemonNamingScreen(ScriptContext *ctx);
@@ -3404,6 +3405,20 @@ static BOOL ScrCmd_StartChooseStarterScene(ScriptContext *ctx)
     ScriptContext_Pause(ctx, ScriptContext_WaitForApplicationExit);
 
     return TRUE;
+}
+
+static BOOL ScrCmd_GetChosenBriefcaseSpecies(ScriptContext *ctx)
+{
+    void **fieldSysDataPtr = FieldSystem_GetScriptMemberPtr(ctx->fieldSystem, SCRIPT_MANAGER_DATA_PTR);
+    u16 *species = ScriptContext_GetVarPointer(ctx);
+
+    ChooseStarterData *chooseStarterData = (*fieldSysDataPtr);
+
+    *species = chooseStarterData->species;
+
+    Heap_Free(*fieldSysDataPtr);
+
+    return FALSE;
 }
 
 static BOOL ScrCmd_SaveChosenStarter(ScriptContext *ctx)

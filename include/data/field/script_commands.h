@@ -865,6 +865,7 @@ const ScrCmdFunc gFieldScriptCommands[] = {
     ScriptCommandTableEntry(SCRCMD_CAPITALIZEFIRSTLETTER,                                ScrCmd_CapitalizeFirstLetter)
     ScriptCommandTableEntry(SCRCMD_BUFFERFLOORNUMBER,                                    ScrCmd_BufferFloorNumber)
     ScriptCommandTableEntry(SCRCMD_FINDFIRSTPARTYSLOTWITHMON,                            ScrCmd_FindFirstPartySlotWithMon)
+    ScriptCommandTableEntry(SCRCMD_GETCHOSENBRIEFCASESPECIES,                            ScrCmd_GetChosenBriefcaseSpecies)
 
 #ifndef INC_AS_ASM
 };

@@ -1146,6 +1146,11 @@
     .short \three
     .endm
 
+    .macro GetChosenBriefcaseSpecies destVar
+    .short SCRCMD_GETCHOSENBRIEFCASESPECIES
+    .short \destVar
+    .endm
+
     .macro SaveChosenStarter
     .short SCRCMD_SAVECHOSENSTARTER
     .endm
