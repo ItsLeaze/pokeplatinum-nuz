@@ -244,11 +244,10 @@ KantoStarterSelection:
     WaitFadeScreen
     RemoveObject LOCALID_BRIEFCASE_KANTO
     StartChooseStarterScene SPECIES_BULBASAUR, SPECIES_CHARMANDER, SPECIES_SQUIRTLE
-    SaveChosenStarter
     ReturnToField
     FadeScreen 6, 1, 1, 0
     WaitFadeScreen
-    GetPlayerStarterSpecies VAR_0x8000
+    GetChosenBriefcaseSpecies VAR_0x8000
     GivePokemon VAR_0x8000, 5, ITEM_NONE, VAR_RESULT
     GoToIfEq VAR_RESULT TRUE SetKantoStarterAcquired
     End
@@ -263,11 +262,10 @@ JohtoStarterSelection:
     WaitFadeScreen
     RemoveObject LOCALID_BRIEFCASE_JOHTO
     StartChooseStarterScene SPECIES_CHIKORITA, SPECIES_CYNDAQUIL, SPECIES_TOTODILE
-    SaveChosenStarter
     ReturnToField
     FadeScreen 6, 1, 1, 0
     WaitFadeScreen
-    GetPlayerStarterSpecies VAR_0x8000
+    GetChosenBriefcaseSpecies VAR_0x8000
     GivePokemon VAR_0x8000, 5, ITEM_NONE, VAR_RESULT
     GoToIfEq VAR_RESULT TRUE SetJohtoStarterAcquired
     End
@@ -282,11 +280,10 @@ HoennStarterSelection:
     WaitFadeScreen
     RemoveObject LOCALID_BRIEFCASE_HOENN
     StartChooseStarterScene SPECIES_TREECKO, SPECIES_TORCHIC, SPECIES_MUDKIP
-    SaveChosenStarter
     ReturnToField
     FadeScreen 6, 1, 1, 0
     WaitFadeScreen
-    GetPlayerStarterSpecies VAR_0x8000
+    GetChosenBriefcaseSpecies VAR_0x8000
     GivePokemon VAR_0x8000, 5, ITEM_NONE, VAR_RESULT
     GoToIfEq VAR_RESULT TRUE SetHoennStarterAcquired
     End
