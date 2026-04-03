@@ -93,3 +93,7 @@ The player is now given a cap candy item after the starter selection. The cap ca
 - reaches the level cap
 
 The player is also given the Mobile box item and Pokeballs after the starter selection.
+
+# 23 Add New-Gen Sturfy
+Add the effect of modern-gen Sturdy to the Sturdy ability. Pokemon with the ability endure the hit with 1 HP if their HP would have been reduced from 100% to 0.
+TO TEST: normal oh-ko; pokemon does not endure if it wasn't full HP; pokemon dies to multi-hit or poison; idk about Fissure/Sheer Cold; Future Sight; Pursuit
