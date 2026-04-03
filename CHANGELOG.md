@@ -102,3 +102,6 @@ TO TEST: normal oh-ko; pokemon does not endure if it wasn't full HP; pokemon die
 All the initial berries on patches have been replaced with ones that don't have an effect.
 Make the Floaroma Berry NPC always give Bluk Berry.
 Make the Berry Man at Route 208 always give 50 Sitrus Berries.
+
+# 25 Make max. sleep and confusion turns 4 instead of 5
+-"-
