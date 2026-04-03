@@ -9309,6 +9309,7 @@ static BOOL BtlCmd_PrintForfeitMessage(BattleSystem *battleSys, BattleContext *b
 static BOOL BtlCmd_CheckHoldOnWith1HP(BattleSystem *battleSys, BattleContext *battleCtx)
 {
     BOOL endure = FALSE;
+    BOOL endureWithSturdy = FALSE;
 
     BattleScript_Iter(battleCtx, 1);
     int inBattler = BattleScript_Read(battleCtx);
@@ -9316,6 +9317,11 @@ static BOOL BtlCmd_CheckHoldOnWith1HP(BattleSystem *battleSys, BattleContext *ba
     int battler = BattleScript_Battler(battleSys, battleCtx, inBattler);
     int itemEffect = Battler_HeldItemEffect(battleCtx, battler);
     int itemPower = Battler_HeldItemPower(battleCtx, battler, ITEM_POWER_CHECK_ALL);
+
+    if (battleCtx->battleMons[battler].ability == ABILITY_STURDY) {
+        endure = TRUE;
+        endureWithSturdy = TRUE;
+    }
 
     if (itemEffect == HOLD_EFFECT_MAYBE_ENDURE
         && BattleSystem_RandNext(battleSys) % 100 < itemPower) {
@@ -9329,7 +9335,11 @@ static BOOL BtlCmd_CheckHoldOnWith1HP(BattleSystem *battleSys, BattleContext *ba
 
     if (endure && battleCtx->battleMons[battler].curHP + battleCtx->hpCalcTemp <= 0) {
         battleCtx->hpCalcTemp = (battleCtx->battleMons[battler].curHP - 1) * -1;
-        battleCtx->moveStatusFlags |= MOVE_STATUS_ENDURED_ITEM;
+        if(endureWithSturdy) {
+            battleCtx->moveStatusFlags |= MOVE_STATUS_ENDURED;
+        } else {
+            battleCtx->moveStatusFlags |= MOVE_STATUS_ENDURED_ITEM;
+        }
     }
 
     return FALSE;

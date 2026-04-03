@@ -3385,6 +3385,10 @@ static void BattleControllerPlayer_UpdateHP(BattleSystem *battleSys, BattleConte
             battleCtx->damage = (DEFENDING_MON.curHP - 1) * -1;
         }
 
+        if (DEFENDING_MON.curHP == DEFENDING_MON.maxHP && battleCtx->battleMons[battleCtx->defender].ability == ABILITY_STURDY) {
+            DEFENDER_TURN_FLAGS.enduring = TRUE;
+        }
+
         if (DEFENDER_TURN_FLAGS.enduring == 0) {
             if (itemEffect == HOLD_EFFECT_MAYBE_ENDURE && (BattleSystem_RandNext(battleSys) % 100) < itemPower) {
                 DEFENDER_SELF_TURN_FLAGS.focusItemActivated = TRUE;
