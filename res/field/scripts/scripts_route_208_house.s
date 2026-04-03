@@ -20,9 +20,8 @@ Route208House_OldMan:
     FacePlayer
     GoToIfSet FLAG_RECEIVED_ROUTE_208_HOUSE_RANDOM_BERRY, Route208House_FeedBerriesToPokemon
     Message Route208House_Text_YoureDeservingOfABerry
-    GetRandom VAR_0x8004, 26
-    AddVar VAR_0x8004, ITEM_CHERI_BERRY /* Random berry from Cheri to Tamato */
-    SetVar VAR_0x8005, 1
+    SetVar VAR_0x8004, ITEM_SITRUS_BERRY /* Always give Sitrus Berry */
+    SetVar VAR_0x8005, 50
     GoToIfCannotFitItem VAR_0x8004, VAR_0x8005, VAR_RESULT, Route208House_BagIsFull
     SetFlag FLAG_RECEIVED_ROUTE_208_HOUSE_RANDOM_BERRY
     Common_GiveItemQuantityNoLineFeed
