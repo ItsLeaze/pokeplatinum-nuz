@@ -94,14 +94,19 @@ The player is now given a cap candy item after the starter selection. The cap ca
 
 The player is also given the Mobile box item and Pokeballs after the starter selection.
 
-# 23 Add New-Gen Sturfy
+# 25 Add New-Gen Sturfy
 Add the effect of modern-gen Sturdy to the Sturdy ability. Pokemon with the ability endure the hit with 1 HP if their HP would have been reduced from 100% to 0.
 TO TEST: normal oh-ko; pokemon does not endure if it wasn't full HP; pokemon dies to multi-hit or poison; idk about Fissure/Sheer Cold; Future Sight; Pursuit
 
-# 24 Make all default berries on patches useless
+# 26 Make all default berries on patches useless
 All the initial berries on patches have been replaced with ones that don't have an effect.
 Make the Floaroma Berry NPC always give Bluk Berry.
 Make the Berry Man at Route 208 always give 50 Sitrus Berries.
 
-# 25 Make max. sleep and confusion turns 4 instead of 5
+# 27 Make max. sleep and confusion turns 4 instead of 5
 -"-
+
+# 28 Update some items
+Make Quick Claw activation chance 30% instead of 20%.
+Make Metronome boost the power by 20% per turn instead of 10%.
+Make Light Clay increase the number of Light Screen and Reflect turns from 5 turns to 10 turns instead of 8 turns.
