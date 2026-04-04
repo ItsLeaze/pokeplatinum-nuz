@@ -1,7 +1,7 @@
 {
     "name": "Wrap",
     "class": "CLASS_PHYSICAL",
-    "type": "TYPE_NORMAL",
+    "type": "TYPE_GRASS",
     "power": 15,
     "accuracy": 85,
     "pp": 20,

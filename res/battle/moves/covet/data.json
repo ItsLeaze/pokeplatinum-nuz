@@ -1,7 +1,7 @@
 {
     "name": "Covet",
     "class": "CLASS_PHYSICAL",
-    "type": "TYPE_NORMAL",
+    "type": "TYPE_FAIRY",
     "power": 40,
     "accuracy": 100,
     "pp": 40,

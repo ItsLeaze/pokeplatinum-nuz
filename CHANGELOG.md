@@ -110,3 +110,17 @@ Make the Berry Man at Route 208 always give 50 Sitrus Berries.
 Make Quick Claw activation chance 30% instead of 20%.
 Make Metronome boost the power by 20% per turn instead of 10%.
 Make Light Clay increase the number of Light Screen and Reflect turns from 5 turns to 10 turns instead of 8 turns.
+
+# 29 Update some moves
+Make Constrict speed lowering chance 100% and Power 40.
+Make Wrap type Grass.
+Make Cut type Grass.
+Make Rock Climb type Rock.
+Make Double Slap hit twice instead of 2-5 times.
+Make Comet Punch type Steel.
+Make Spike Cannon type Ground.
+Make Covet type Fairy.
+Make Charm type Fairy.
+Make Moonlight type Fairy.
+Make Sweet Kiss type Fairy.
+Make Gravity last 7 turns instead of 5.

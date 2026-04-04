@@ -1,7 +1,7 @@
 {
     "name": "Comet Punch",
     "class": "CLASS_PHYSICAL",
-    "type": "TYPE_NORMAL",
+    "type": "TYPE_STEEL",
     "power": 18,
     "accuracy": 85,
     "pp": 15,
