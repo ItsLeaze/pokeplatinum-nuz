@@ -6092,12 +6092,14 @@ Expert_MagnetRise:
     //
     // If the opponent knows one of the following moves, additional score +1:
     // - Earthquake
+    // - Bulldoze
     // - Earth Power
     // - Fissure
     //
     // If the opponent has a Ground typing, score +1. Otherwise, 50% chance of score +1.
     IfHPPercentLessThan AI_BATTLER_ATTACKER, 50, Expert_MagnetRise_End
     IfMoveKnown AI_BATTLER_DEFENDER, MOVE_EARTHQUAKE, Expert_MagnetRise_InitialScorePlus1
+    IfMoveKnown AI_BATTLER_DEFENDER, MOVE_BULLDOZE, Expert_MagnetRise_InitialScorePlus1
     IfMoveKnown AI_BATTLER_DEFENDER, MOVE_EARTH_POWER, Expert_MagnetRise_InitialScorePlus1
     IfMoveKnown AI_BATTLER_DEFENDER, MOVE_FISSURE, Expert_MagnetRise_InitialScorePlus1
     GoTo Expert_MagnetRise_CheckOpponentTyping
@@ -6734,6 +6736,7 @@ TagStrategy_CheckSpecialScoring:
     IfMoveEqualTo MOVE_SKILL_SWAP, TagStrategy_SkillSwap
     LoadTypeFrom LOAD_MOVE_TYPE
     IfMoveEqualTo MOVE_EARTHQUAKE, TagStrategy_Earthquake
+    IfMoveEqualTo MOVE_BULLDOZE, TagStrategy_Earthquake
     IfMoveEqualTo MOVE_MAGNITUDE, TagStrategy_Earthquake
     IfMoveEqualTo MOVE_FUTURE_SIGHT, TagStrategy_FutureSight
     IfMoveEqualTo MOVE_DOOM_DESIRE, TagStrategy_FutureSight

@@ -3930,7 +3930,7 @@ static void BattleControllerPlayer_UpdateMoveBuffers(BattleSystem *battleSys, Ba
             || itemEffect == HOLD_EFFECT_CHOICE_SPEED
             || itemEffect == HOLD_EFFECT_CHOICE_SPATK) {
             if (battleCtx->moveTemp != MOVE_STRUGGLE
-                && (battleCtx->moveTemp != MOVE_U_TURN || (battleCtx->battleStatusMask2 & SYSCTL_UTURN_ACTIVE) == FALSE)
+                && (battleCtx->moveTemp != MOVE_U_TURN || battleCtx->moveTemp != MOVE_VOLT_SWITCH || (battleCtx->battleStatusMask2 & SYSCTL_UTURN_ACTIVE) == FALSE)
                 && (battleCtx->moveTemp != MOVE_BATON_PASS || (battleCtx->battleStatusMask2 & SYSCTL_MOVE_SUCCEEDED) == FALSE)) {
                 ATTACKING_MON.moveEffectsData.choiceLockedMove = battleCtx->moveTemp;
             }

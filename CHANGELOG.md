@@ -130,3 +130,8 @@ Add Moonblast.
 Add Disarming Voice.
 Add Draining Kiss.
 Add Play Rough.
+
+# 31 Add more Moves
+Add Bulldoze.
+Add Volt Switch.
+Note: There is some Pursuit-specific trainer AI `Expert_Pursuit_CheckUturn` that I haven't dared to adjust to volt switch yet.

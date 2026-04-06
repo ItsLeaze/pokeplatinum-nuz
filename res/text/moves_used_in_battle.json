@@ -9903,6 +9903,48 @@
         "The foe’s {STRVAR_1 1, 0, 0} used\n",
         "Play Rough!"
       ]
+    },
+    {
+      "id": "pl_msg_00000000_01416",
+      "en_US": [
+        "{STRVAR_1 1, 0, 0} used\n",
+        "Bulldoze!"
+      ]
+    },
+    {
+      "id": "pl_msg_00000000_01417",
+      "en_US": [
+        "The wild {STRVAR_1 1, 0, 0} used\n",
+        "Bulldoze!"
+      ]
+    },
+    {
+      "id": "pl_msg_00000000_01418",
+      "en_US": [
+        "The foe’s {STRVAR_1 1, 0, 0} used\n",
+        "Bulldoze!"
+      ]
+    },
+    {
+      "id": "pl_msg_00000000_01419",
+      "en_US": [
+        "{STRVAR_1 1, 0, 0} used\n",
+        "Volt Switch!"
+      ]
+    },
+    {
+      "id": "pl_msg_00000000_01420",
+      "en_US": [
+        "The wild {STRVAR_1 1, 0, 0} used\n",
+        "Volt Switch!"
+      ]
+    },
+    {
+      "id": "pl_msg_00000000_01421",
+      "en_US": [
+        "The foe’s {STRVAR_1 1, 0, 0} used\n",
+        "Volt Switch!"
+      ]
     }
   ]
 }

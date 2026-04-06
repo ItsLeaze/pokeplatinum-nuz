@@ -1888,6 +1888,14 @@
     {
       "id": "pl_msg_00000648_00471",
       "en_US": "PLAY ROUGH"
+    },
+    {
+      "id": "pl_msg_00000648_00472",
+      "en_US": "BULLDOZE"
+    },
+    {
+      "id": "pl_msg_00000648_00473",
+      "en_US": "VOLT SWITCH"
     }
   ]
 }

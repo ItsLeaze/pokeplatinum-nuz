@@ -4611,6 +4611,26 @@
         "also lower the \n",
         "target’s Attack stat."
       ]
+    },
+    {
+      "id": "pl_msg_00000646_00472",
+      "en_US": [
+        "The user stomps down\n",
+        "on the ground and\n",
+        "attacks everything in\n",
+        "the area. Hit target’s\n",
+        "Speed stat is reduced."
+      ]
+    },
+    {
+      "id": "pl_msg_00000646_00473",
+      "en_US": [
+        "The user attacks by\n",
+        "dishing out a quick\n",
+        "blow, then rushes back\n",
+        "to its Trainer with\n",
+        "incredible speed."
+      ]
     }
   ]
 }
