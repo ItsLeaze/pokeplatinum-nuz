@@ -2765,7 +2765,7 @@ static int sub_0206F160(FieldSystem *fieldSystem, StringTemplate *template, TVEp
         }
     }
 
-    StringTemplate_SetMoveName(template, 3, (LCRNG_Next() % 467 - 2) + 1);
+    StringTemplate_SetMoveName(template, 3, (LCRNG_Next() % MAX_MOVES - 1) + 1);
 
     return 17;
 }

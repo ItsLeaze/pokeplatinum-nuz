@@ -1,23 +1,24 @@
 {
-    "name": "",
+    "name": "Draining Kiss",
     "class": "CLASS_SPECIAL",
-    "type": "TYPE_NORMAL",
-    "power": 100,
+    "type": "TYPE_FAIRY",
+    "power": 70,
     "accuracy": 100,
     "pp": 10,
     "effect": {
-        "type": "BATTLE_EFFECT_HIT",
+        "type": "BATTLE_EFFECT_RECOVER_HALF_DAMAGE_DEALT",
         "chance": 0
     },
     "range": "RANGE_SINGLE_TARGET",
     "priority": 0,
     "flags": [
+        "MOVE_FLAG_MAKES_CONTACT",
         "MOVE_FLAG_CAN_PROTECT",
         "MOVE_FLAG_CAN_MIRROR_MOVE",
         "MOVE_FLAG_TRIGGERS_KINGS_ROCK"
     ],
     "contest": {
-        "effect": "CONTEST_EFFECT_FINAL_PERFORMANCE_ADVANTAGE",
-        "type": "CONTEST_TYPE_SMART"
+        "effect": "CONTEST_EFFECT_BASIC",
+        "type": "CONTEST_TYPE_CUTE"
     }
 }

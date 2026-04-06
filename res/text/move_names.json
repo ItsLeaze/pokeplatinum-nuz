@@ -1872,6 +1872,22 @@
     {
       "id": "pl_msg_00000647_00467",
       "en_US": "Shadow Force"
+    },
+    {
+      "id": "pl_msg_00000647_00468",
+      "en_US": "Moonblast"
+    },
+    {
+      "id": "pl_msg_00000647_00469",
+      "en_US": "Disarming Voice"
+    },
+    {
+      "id": "pl_msg_00000647_00470",
+      "en_US": "Draining Kiss"
+    },
+    {
+      "id": "pl_msg_00000647_00471",
+      "en_US": "Play Rough"
     }
   ]
 }

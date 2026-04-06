@@ -1,15 +1,15 @@
 {
-    "name": "",
+    "name": "Disarming Voice",
     "class": "CLASS_SPECIAL",
-    "type": "TYPE_NORMAL",
-    "power": 100,
-    "accuracy": 100,
+    "type": "TYPE_FAIRY",
+    "power": 40,
+    "accuracy": 0,
     "pp": 10,
     "effect": {
-        "type": "BATTLE_EFFECT_HIT",
+        "type": "BATTLE_EFFECT_BYPASS_ACCURACY",
         "chance": 0
     },
-    "range": "RANGE_SINGLE_TARGET",
+    "range": "RANGE_ADJACENT_OPPONENTS",
     "priority": 0,
     "flags": [
         "MOVE_FLAG_CAN_PROTECT",
@@ -17,7 +17,7 @@
         "MOVE_FLAG_TRIGGERS_KINGS_ROCK"
     ],
     "contest": {
-        "effect": "CONTEST_EFFECT_LOW_VOLTAGE_ADVANTAGE",
-        "type": "CONTEST_TYPE_BEAUTY"
+        "effect": "CONTEST_EFFECT_BASIC",
+        "type": "CONTEST_TYPE_COOL"
     }
 }

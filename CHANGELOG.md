@@ -124,3 +124,9 @@ Make Charm type Fairy.
 Make Moonlight type Fairy.
 Make Sweet Kiss type Fairy.
 Make Gravity last 7 turns instead of 5.
+
+# 30 Add Fairy Type moves
+Add Moonblast.
+Add Disarming Voice.
+Add Draining Kiss.
+Add Play Rough.
