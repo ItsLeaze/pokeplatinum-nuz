@@ -1821,7 +1821,7 @@ static void BattleControllerPlayer_CheckSideConditions(BattleSystem *battleSys, 
         // fall-through
 
     case SIDE_COND_CHECK_STATE_TRICK_ROOM:
-        if (battleCtx->fieldConditionsMask & FIELD_CONDITION_TRICK_ROOM) {
+        if ((battleCtx->fieldConditionsMask & FIELD_CONDITION_TRICK_ROOM) && !(battleCtx->fieldConditionsMask & FIELD_CONDITION_TRICK_ROOM_PERM)) {
             battleCtx->fieldConditionsMask -= (1 << FIELD_CONDITION_TRICK_ROOM_SHIFT);
             if ((battleCtx->fieldConditionsMask & FIELD_CONDITION_TRICK_ROOM) == FALSE) {
                 PrepareSubroutineSequence(battleCtx, subscript_trick_room_end);

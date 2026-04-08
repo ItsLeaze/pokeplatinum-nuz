@@ -2150,6 +2150,10 @@ static int TVSegment_LoadMessage_OnTheSpotWeather(FieldSystem *fieldSystem, Stri
         return TVProgramSinnohNow_Text_OnTheSpotWeather_Thunderstorm;
     case OVERWORLD_WEATHER_HAILING:
         return TVProgramSinnohNow_Text_OnTheSpotWeather_Hailing;
+    case OVERWORLD_WEATHER_HARSH_SUN:
+        return TVProgramSinnohNow_Text_OnTheSpotWeather_Clear1;
+    case OVERWORLD_WEATHER_TRICK_ROOM:
+        return TVProgramSinnohNow_Text_OnTheSpotWeather_Clear1;
     default:
         GF_ASSERT(FALSE);
     }

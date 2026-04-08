@@ -135,3 +135,9 @@ Add Play Rough.
 Add Bulldoze.
 Add Volt Switch.
 Note: There is some Pursuit-specific trainer AI `Expert_Pursuit_CheckUturn` that I haven't dared to adjust to volt switch yet.
+
+# 32 Weather changes
+Overworld weather conditions are set permanently and cannot be overwritten by moves or abilities.
+Weather setting abilities set weather for five turns instead of permanently.
+The overworld "weather" Trick Room sets a permanent trick room at the start of battle.
+Trainer AI only uses weather setting moves on turn 1 and if no weather is already set.

@@ -7986,11 +7986,8 @@ Weather_Main:
     LoadTurnCount 
     IfLoadedNotEqualTo 0, Weather_Terminate
 
-    // For each weather, don't try to set it if it's already active from the field.
-    IfCurrentMoveEffectEqualTo BATTLE_EFFECT_WEATHER_SUN, Weather_Sun
-    IfCurrentMoveEffectEqualTo BATTLE_EFFECT_WEATHER_RAIN, Weather_Rain
-    IfCurrentMoveEffectEqualTo BATTLE_EFFECT_WEATHER_SANDSTORM, Weather_Sand
-    IfCurrentMoveEffectEqualTo BATTLE_EFFECT_WEATHER_HAIL, Weather_Hail
+    LoadCurrentWeather 
+    IfLoadedNotEqualTo AI_WEATHER_CLEAR, Weather_Terminate
 
 Weather_Sun:
     LoadCurrentWeather 
