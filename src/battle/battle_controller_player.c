@@ -2479,7 +2479,7 @@ static BOOL BattleControllerPlayer_CheckStatusDisruption(BattleSystem *battleSys
 
         case CHECK_STATUS_STATE_FREEZE:
             if (ATTACKING_MON.status & MON_CONDITION_FREEZE) {
-                if (BattleSystem_RandNext(battleSys) % 5 != 0) {
+                if (BattleSystem_RandNext(battleSys) % 2 == 0) {
                     if (moveEffect != BATTLE_EFFECT_THAW_AND_BURN_HIT
                         && moveEffect != BATTLE_EFFECT_RECOIL_BURN_HIT) {
                         LOAD_SUBSEQ(subscript_frozen);
@@ -2654,7 +2654,7 @@ static BOOL BattleControllerPlayer_CheckStatusDisruption(BattleSystem *battleSys
         case CHECK_STATUS_STATE_PARALYSIS:
             if ((ATTACKING_MON.status & MON_CONDITION_PARALYSIS)
                 && Battler_Ability(battleCtx, battleCtx->attacker) != ABILITY_MAGIC_GUARD) {
-                if (BattleSystem_RandNext(battleSys) % 4 == 0) {
+                if (BattleSystem_RandNext(battleSys) % 8 == 0) {
                     battleCtx->moveFailFlags[battleCtx->attacker].paralyzed = TRUE;
 
                     LOAD_SUBSEQ(subscript_fully_paralyzed);
@@ -2673,7 +2673,7 @@ static BOOL BattleControllerPlayer_CheckStatusDisruption(BattleSystem *battleSys
                 battleCtx->msgBattlerTemp = LowestBit(
                     (ATTACKING_MON.statusVolatile & VOLATILE_CONDITION_ATTRACT) >> VOLATILE_CONDITION_ATTRACT_SHIFT);
 
-                if (BattleSystem_RandNext(battleSys) & 1) {
+                if (BattleSystem_RandNext(battleSys) % 3 != 0) {
                     LOAD_SUBSEQ(subscript_infatuated);
                     battleCtx->commandNext = battleCtx->command;
                     battleCtx->command = BATTLE_CONTROL_EXEC_SCRIPT;

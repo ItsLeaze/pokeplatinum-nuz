@@ -141,3 +141,9 @@ Overworld weather conditions are set permanently and cannot be overwritten by mo
 Weather setting abilities set weather for five turns instead of permanently.
 The overworld "weather" Trick Room sets a permanent trick room at the start of battle.
 Trainer AI only uses weather setting moves on turn 1 and if no weather is already set.
+
+# 33 Status condition changes
+Chance to lose a turn to being fully paralyzed changed from 1/4 to 1/8.
+Chance to thaw a frozen Pokemon changed from 1/5 to 1/2 per turn.
+Chance to lose a turn to being infatuated changed from 1/2 to 1/3.
+The Speed of a paralyzed Pokémon is decreased by 50% (as opposed to 75%).
