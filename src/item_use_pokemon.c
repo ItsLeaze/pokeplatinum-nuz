@@ -620,6 +620,10 @@ void Party_HealAllMembers(Party *party)
         }
 
         u32 tmp = Pokemon_GetValue(mon, MON_DATA_MAX_HP, NULL);
+        u32 curHp = Pokemon_GetValue(mon, MON_DATA_HP, NULL);
+        if(curHp == 0) {
+            continue;
+        }
         Pokemon_SetValue(mon, MON_DATA_HP, &tmp);
 
         tmp = MON_CONDITION_NONE;
