@@ -2,8 +2,7 @@
 
 
 _000:
-    UpdateVar OPCODE_SET, BTLVAR_CALC_TEMP, 0x00005000
-    UpdateVarFromVar OPCODE_FLAG_ON, BTLVAR_SIDE_CONDITIONS_ATTACKER, BTLVAR_CALC_TEMP
+    UpdateVar OPCODE_FLAG_ON, BTLVAR_SIDE_CONDITIONS_ATTACKER, SIDE_CONDITION_LUCKY_CHANT_INIT
     // The Lucky Chant shielded your team from critical hits!
     PrintMessage BattleStrings_Text_TheLuckyChantShieldedYourTeamFromCriticalHits, TAG_NONE_SIDE_CONSCIOUS, BTLSCR_ATTACKER
     Wait 

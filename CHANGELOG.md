@@ -147,3 +147,8 @@ Chance to lose a turn to being fully paralyzed changed from 1/4 to 1/8.
 Chance to thaw a frozen Pokemon changed from 1/5 to 1/2 per turn.
 Chance to lose a turn to being infatuated changed from 1/2 to 1/3.
 The Speed of a paralyzed Pokémon is decreased by 50% (as opposed to 75%).
+
+# Move changes
+Bide now unleashes after one turn instead of two.
+Safeguard lasts for 7 turns instead of 5.
+Lucky Chant lasts for 7 turns instead of 5.

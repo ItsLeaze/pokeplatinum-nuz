@@ -5751,7 +5751,7 @@ static BOOL BtlCmd_TrySafeguard(BattleSystem *battleSys, BattleContext *battleCt
         battleCtx->moveStatusFlags |= MOVE_STATUS_FAILED;
     } else {
         battleCtx->sideConditionsMask[side] |= SIDE_CONDITION_SAFEGUARD;
-        battleCtx->sideConditions[side].safeguardTurns = 5;
+        battleCtx->sideConditions[side].safeguardTurns = 7;
         battleCtx->sideConditions[side].safeguardUser = battleCtx->attacker;
         battleCtx->msgBuffer.tags = TAG_NONE_SIDE_CONSCIOUS;
         battleCtx->msgBuffer.params[0] = battleCtx->attacker;
