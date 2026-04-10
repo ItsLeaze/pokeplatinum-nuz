@@ -15,7 +15,7 @@
 #include "generated/game_records.h"
 #include "generated/genders.h"
 
-#include "struct_decls/battle_system.h"
+#include "struct_defs/battle_system.h"
 #include "struct_defs/battler_data.h"
 #include "struct_defs/fraction.h"
 
@@ -7125,6 +7125,20 @@ int BattleSystem_CalcCriticalMulti(BattleSystem *battleSys, BattleContext *battl
     u32 defenderMoveEffects;
     int criticalMulPct = CRIT_MULT_PCT_NO_CRIT;
     int attackerAbility;
+    int faintedCount;
+    int i;
+
+    if (BattleSystem_GetBattlerSide(battleSys, attacker) == BATTLER_US) {
+        Party *party = BattleSystem_GetParty(battleSys, BATTLER_PLAYER_1);
+
+        for (i = 0; i < Party_GetCurrentCount(party); i++) {
+            Pokemon *mon = Party_GetPokemonBySlotIndex(party, i);
+
+            if (Pokemon_GetValue(mon, MON_DATA_HP, NULL) == 0) {
+                faintedCount++;
+            }
+        }
+    }
 
     item = Battler_HeldItem(battleCtx, attacker);
     itemEffect = BattleSystem_GetItemData(battleCtx, item, ITEM_PARAM_HOLD_EFFECT);
@@ -7136,6 +7150,7 @@ int BattleSystem_CalcCriticalMulti(BattleSystem *battleSys, BattleContext *battl
         + (itemEffect == HOLD_EFFECT_CRITRATE_UP)
         + criticalStage
         + (attackerAbility == ABILITY_SUPER_LUCK)
+        + (faintedCount > 1)
         + (2 * (itemEffect == HOLD_EFFECT_CHANSEY_CRITRATE_UP && attackerSpecies == SPECIES_CHANSEY))
         + (2 * (itemEffect == HOLD_EFFECT_FARFETCHD_CRITRATE_UP && attackerSpecies == SPECIES_FARFETCHD));
 

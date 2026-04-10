@@ -155,3 +155,6 @@ Lucky Chant lasts for 7 turns instead of 5.
 
 # 35 Don't revive dead pokemon when healing party
 -"-
+
+# 36 Increase Crit Stages by +1 when having 2+ fainted Pokemon in the Party
+-"-
