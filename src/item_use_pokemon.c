@@ -612,7 +612,9 @@ void Party_HealAllMembers(Party *party)
 
     int monCount = Party_GetCurrentCount(party);
 
+    int faintedCount = 0;
     for (int i = 0; i < monCount; i++) {
+        faintedCount++;
         Pokemon *mon = Party_GetPokemonBySlotIndex(party, i);
 
         if (Pokemon_GetValue(mon, MON_DATA_SPECIES_EXISTS, NULL) == FALSE) {
@@ -621,7 +623,7 @@ void Party_HealAllMembers(Party *party)
 
         u32 tmp = Pokemon_GetValue(mon, MON_DATA_MAX_HP, NULL);
         u32 curHp = Pokemon_GetValue(mon, MON_DATA_HP, NULL);
-        if(curHp == 0) {
+        if(curHp == 0 && faintedCount != monCount) {
             continue;
         }
         Pokemon_SetValue(mon, MON_DATA_HP, &tmp);

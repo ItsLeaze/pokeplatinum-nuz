@@ -161,3 +161,6 @@ Lucky Chant lasts for 7 turns instead of 5.
 
 # 37 Implement flex-spots for tainers
 Trainers can have alternative Pokemon for the slots 2-5. When defined, there is a 50% chance for slots 2-5 being replaced by slots 7-10.
+
+# 38 Revive last Pokemon on party heal if all Pokemon fainted
+This avoids the game bugging out after wiping and going into a fight with 0 mons alive.
