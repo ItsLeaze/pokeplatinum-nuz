@@ -86,7 +86,7 @@ static void ZeroBerryPatch(BerryPatch *berryPatch)
 
 static int CalcBerryYield(BerryPatch *berryPatch, const BerryGrowthData *growthData)
 {
-    return growthData[berryPatch->berryID - 1].yieldCategory * berryPatch->yieldRating;
+    return growthData[berryPatch->berryID - 1].yieldCategory;
 }
 
 static int CalcMinutesRemainingInStage(const BerryGrowthData *growthData, int berryID, enum MulchType mulchType)
@@ -231,11 +231,8 @@ static void AdvancePatchGrowth(BerryPatch *berryPatch, const BerryGrowthData *gr
     case BERRY_GROWTH_STAGE_BLOOMING:
         berryPatch->yield = CalcBerryYield(berryPatch, growthData);
         if (berryPatch->yield < 2) {
-            berryPatch->yield = 2;
+            berryPatch->yield = 1;
         }
-
-        berryPatch->growthStage++;
-
         break;
 
     case BERRY_GROWTH_STAGE_FRUIT:
@@ -304,7 +301,7 @@ void BerryPatches_ElapseMinutes(BerryPatch *patches, const BerryGrowthData *grow
             continue;
         }
 
-        totalMinutes = minutesPassed;
+        totalMinutes = minutesPassed * 4;
         while (patch->growthStage != BERRY_GROWTH_STAGE_NONE && totalMinutes != 0) {
             if (patch->stageMinutesRemaining > totalMinutes) {
                 DrainPatchMoisture(patch, growthData, totalMinutes);
