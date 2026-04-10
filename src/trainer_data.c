@@ -178,6 +178,7 @@ static void TrainerData_BuildParty(FieldBattleDTO *dto, int battler, enum HeapID
     // must make declarations C89-style to match
     void *buf;
     int i, j;
+    int effIdx;
     u32 monPersonality, oldSeed;
     u8 ivs;
     Pokemon *mon;
@@ -186,7 +187,7 @@ static void TrainerData_BuildParty(FieldBattleDTO *dto, int battler, enum HeapID
 
     // alloc enough space to support the maximum possible data size
     Party_InitWithCapacity(dto->parties[battler], MAX_PARTY_SIZE);
-    buf = Heap_Alloc(heapID, sizeof(TrainerMonWithMoves) * MAX_PARTY_SIZE);
+    buf = Heap_Alloc(heapID, sizeof(TrainerMonWithMoves) * MAX_POOL_SIZE);
     mon = Pokemon_New(heapID);
 
     Trainer_LoadParty(dto->trainerIDs[battler], buf);
@@ -195,16 +196,17 @@ static void TrainerData_BuildParty(FieldBattleDTO *dto, int battler, enum HeapID
     case TRDATATYPE_BASE: {
         TrainerMonBase *trmon = (TrainerMonBase *)buf;
         for (i = 0; i < dto->trainer[battler].header.partySize; i++) {
-            u16 species = trmon[i].species & 0x3FF;
-            u8 form = (trmon[i].species & 0xFC00) >> TRAINER_MON_FORM_SHIFT;
+            effIdx = (i != 0 && i != 5 && i + 5 < dto->trainer[battler].header.poolSize) ? (LCRNG_Next() % 2 == 0 ? i : i + 5) : i;
+            u16 species = trmon[effIdx].species & 0x3FF;
+            u8 form = (trmon[effIdx].species & 0xFC00) >> TRAINER_MON_FORM_SHIFT;
 
-            monPersonality = getPersonalityForNatureAndAbility(trmon[i].nature, trmon[i].ability);
-            ivs = trmon[i].ivScale * MAX_IVS_SINGLE_STAT / MAX_IV_SCALE;
+            monPersonality = getPersonalityForNatureAndAbility(trmon[effIdx].nature, trmon[effIdx].ability);
+            ivs = trmon[effIdx].ivScale * MAX_IVS_SINGLE_STAT / MAX_IV_SCALE;
 
-            Pokemon_InitWith(mon, species, trmon[i].level, ivs, TRUE, monPersonality, OTID_NOT_SHINY, 0);
-            Pokemon_SetValue(mon, MON_DATA_HELD_ITEM, &trmon[i].item);
+            Pokemon_InitWith(mon, species, trmon[effIdx].level, ivs, TRUE, monPersonality, OTID_NOT_SHINY, 0);
+            Pokemon_SetValue(mon, MON_DATA_HELD_ITEM, &trmon[effIdx].item);
 
-            Pokemon_SetBallSeal(trmon[i].cbSeal, mon, heapID);
+            Pokemon_SetBallSeal(trmon[effIdx].cbSeal, mon, heapID);
             Pokemon_SetValue(mon, MON_DATA_FORM, &form);
             Party_AddPokemon(dto->parties[battler], mon);
         }
@@ -215,20 +217,21 @@ static void TrainerData_BuildParty(FieldBattleDTO *dto, int battler, enum HeapID
     case TRDATATYPE_WITH_MOVES: {
         TrainerMonWithMoves *trmon = (TrainerMonWithMoves *)buf;
         for (i = 0; i < dto->trainer[battler].header.partySize; i++) {
-            u16 species = trmon[i].species & 0x3FF;
-            u8 form = (trmon[i].species & 0xFC00) >> TRAINER_MON_FORM_SHIFT;
+            effIdx = (i != 0 && i != 5 && i + 5 < dto->trainer[battler].header.poolSize) ? (LCRNG_Next() % 2 == 0 ? i : i + 5) : i;
+            u16 species = trmon[effIdx].species & 0x3FF;
+            u8 form = (trmon[effIdx].species & 0xFC00) >> TRAINER_MON_FORM_SHIFT;
 
-            monPersonality = getPersonalityForNatureAndAbility(trmon[i].nature, trmon[i].ability);
-            ivs = trmon[i].ivScale * MAX_IVS_SINGLE_STAT / MAX_IV_SCALE;
+            monPersonality = getPersonalityForNatureAndAbility(trmon[effIdx].nature, trmon[effIdx].ability);
+            ivs = trmon[effIdx].ivScale * MAX_IVS_SINGLE_STAT / MAX_IV_SCALE;
 
-            Pokemon_InitWith(mon, species, trmon[i].level, ivs, TRUE, monPersonality, OTID_NOT_SHINY, 0);
-            Pokemon_SetValue(mon, MON_DATA_HELD_ITEM, &trmon[i].item);
+            Pokemon_InitWith(mon, species, trmon[effIdx].level, ivs, TRUE, monPersonality, OTID_NOT_SHINY, 0);
+            Pokemon_SetValue(mon, MON_DATA_HELD_ITEM, &trmon[effIdx].item);
 
             for (j = 0; j < 4; j++) {
-                Pokemon_SetMoveSlot(mon, trmon[i].moves[j], j);
+                Pokemon_SetMoveSlot(mon, trmon[effIdx].moves[j], j);
             }
 
-            Pokemon_SetBallSeal(trmon[i].cbSeal, mon, heapID);
+            Pokemon_SetBallSeal(trmon[effIdx].cbSeal, mon, heapID);
             Pokemon_SetValue(mon, MON_DATA_FORM, &form);
             Party_AddPokemon(dto->parties[battler], mon);
         }

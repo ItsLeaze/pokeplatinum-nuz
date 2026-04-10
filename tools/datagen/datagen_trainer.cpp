@@ -99,7 +99,8 @@ static TrainerHeader ParseTrainerData(const rapidjson::Document &doc)
     }
 
     const rapidjson::Value &party = doc["party"];
-    trdata.partySize = party.GetArray().Size();
+    trdata.poolSize = party.GetArray().Size();
+    trdata.partySize = trdata.poolSize <= 6 ? trdata.poolSize : 6;
 
     bool partyMoves = AnyMemberHasValue(party, "moves");
     if (partyMoves) {
@@ -134,9 +135,9 @@ static void ParseMovesAndPack(const rapidjson::Value &member, TrainerMonBase &ba
     memcpy(bufp, &withMoves, sizeof(withMoves));
 }
 
-static void ParseAndPackParty(const rapidjson::Document &doc, TrainerDataType monDataType, std::size_t partySize, NarcBuilder &trpokeBuilder)
+static void ParseAndPackParty(const rapidjson::Document &doc, TrainerDataType monDataType, std::size_t poolSize, NarcBuilder &trpokeBuilder)
 {
-    if (partySize == 0) {
+    if (poolSize == 0) {
         static constexpr std::array<std::byte, 8> sEmptyParty = {};
         trpokeBuilder.append(const_cast<std::byte *>(sEmptyParty.data()), sEmptyParty.size());
         return;
@@ -144,7 +145,7 @@ static void ParseAndPackParty(const rapidjson::Document &doc, TrainerDataType mo
 
     TrainerMonSubparser subparser = sTrainerDataTypeTable[monDataType].subparser;
     std::size_t monSize = sTrainerDataTypeTable[monDataType].monSize;
-    std::size_t bufSize = monSize * partySize;
+    std::size_t bufSize = monSize * poolSize;
     bufSize = bufSize + (-bufSize & 3); // align to 4-byte boundary
 
     std::byte *partyBuf = new std::byte[bufSize];
@@ -282,7 +283,7 @@ int main(int argc, char **argv)
         try {
             TrainerHeader trdata = ParseTrainerData(doc);
             trdataBuilder.append(reinterpret_cast<std::byte*>(&trdata), sizeof(trdata));
-            ParseAndPackParty(doc, static_cast<TrainerDataType>(trdata.monDataType), trdata.partySize, trpokeBuilder);
+            ParseAndPackParty(doc, static_cast<TrainerDataType>(trdata.monDataType), trdata.poolSize, trpokeBuilder);
         } catch (const std::exception &e) {
             std::cerr << e.what() << std::endl;
             std::exit(EXIT_FAILURE);

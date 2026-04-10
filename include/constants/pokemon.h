@@ -6,6 +6,7 @@
 #include "generated/pokemon_types.h" // PokemonType
 #include "generated/species_data_params.h" // SpeciesDataParam
 
+#define MAX_POOL_SIZE  10
 #define MAX_PARTY_SIZE  6
 #define PARTY_SLOT_NONE 0xFF
 

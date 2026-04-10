@@ -94,7 +94,7 @@ The player is now given a cap candy item after the starter selection. The cap ca
 
 The player is also given the Mobile box item and Pokeballs after the starter selection.
 
-# 25 Add New-Gen Sturfy
+# 25 Add New-Gen Sturdy
 Add the effect of modern-gen Sturdy to the Sturdy ability. Pokemon with the ability endure the hit with 1 HP if their HP would have been reduced from 100% to 0.
 TO TEST: normal oh-ko; pokemon does not endure if it wasn't full HP; pokemon dies to multi-hit or poison; idk about Fissure/Sheer Cold; Future Sight; Pursuit
 
@@ -158,3 +158,6 @@ Lucky Chant lasts for 7 turns instead of 5.
 
 # 36 Increase Crit Stages by +1 when having 2+ fainted Pokemon in the Party
 -"-
+
+# 37 Implement flex-spots for tainers
+Trainers can have alternative Pokemon for the slots 2-5. When defined, there is a 50% chance for slots 2-5 being replaced by slots 7-10.

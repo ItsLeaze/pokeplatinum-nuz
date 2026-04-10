@@ -24,6 +24,7 @@ typedef struct TrainerHeader {
     u8 trainerType;
     u8 sprite;
     u8 partySize;
+    u8 poolSize;
     u16 items[MAX_TRAINER_ITEMS];
     u32 aiMask;
     u32 battleType;
