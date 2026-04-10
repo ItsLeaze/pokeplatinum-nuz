@@ -9945,6 +9945,27 @@
         "The foe’s {STRVAR_1 1, 0, 0} used\n",
         "Volt Switch!"
       ]
+    },
+    {
+      "id": "pl_msg_00000000_01422",
+      "en_US": [
+        "{STRVAR_1 1, 0, 0} used\n",
+        "Nuzzle!"
+      ]
+    },
+    {
+      "id": "pl_msg_00000000_01423",
+      "en_US": [
+        "The wild {STRVAR_1 1, 0, 0} used\n",
+        "Nuzzle!"
+      ]
+    },
+    {
+      "id": "pl_msg_00000000_01424",
+      "en_US": [
+        "The foe’s {STRVAR_1 1, 0, 0} used\n",
+        "Nuzzle!"
+      ]
     }
   ]
 }

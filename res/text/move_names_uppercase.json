@@ -1896,6 +1896,10 @@
     {
       "id": "pl_msg_00000648_00473",
       "en_US": "VOLT SWITCH"
+    },
+    {
+      "id": "pl_msg_00000648_00474",
+      "en_US": "NUZZLE"
     }
   ]
 }

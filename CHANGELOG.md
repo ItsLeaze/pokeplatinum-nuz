@@ -164,3 +164,6 @@ Trainers can have alternative Pokemon for the slots 2-5. When defined, there is 
 
 # 38 Revive last Pokemon on party heal if all Pokemon fainted
 This avoids the game bugging out after wiping and going into a fight with 0 mons alive.
+
+# 39 Add more Moves
+Add Nuzzle.
