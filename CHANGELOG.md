@@ -167,3 +167,4 @@ This avoids the game bugging out after wiping and going into a fight with 0 mons
 
 # 39 Add more Moves
 Add Nuzzle.
+Add Dazzling Gleam

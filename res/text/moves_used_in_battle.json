@@ -9966,6 +9966,27 @@
         "The foe’s {STRVAR_1 1, 0, 0} used\n",
         "Nuzzle!"
       ]
+    },
+    {
+      "id": "pl_msg_00000000_01425",
+      "en_US": [
+        "{STRVAR_1 1, 0, 0} used\n",
+        "Dazzling Gleam!"
+      ]
+    },
+    {
+      "id": "pl_msg_00000000_01426",
+      "en_US": [
+        "The wild {STRVAR_1 1, 0, 0} used\n",
+        "Dazzling Gleam!"
+      ]
+    },
+    {
+      "id": "pl_msg_00000000_01427",
+      "en_US": [
+        "The foe’s {STRVAR_1 1, 0, 0} used\n",
+        "Dazzling Gleam!"
+      ]
     }
   ]
 }

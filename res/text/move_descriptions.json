@@ -4641,6 +4641,15 @@
         "This leaves targets\n",
         "paralyzed."
       ]
+    },
+    {
+      "id": "pl_msg_00000646_00475",
+      "en_US": [
+        "The user damages\n",
+        "opposing Pokémon by\n",
+        "emitting a powerful\n",
+        "flash."
+      ]
     }
   ]
 }
