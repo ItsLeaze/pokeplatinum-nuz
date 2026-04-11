@@ -172,3 +172,7 @@ Add Dazzling Gleam
 # 40 Stop Berry growth in blooming stage and make yield always 1
 -"-
 TODO: test that properly
+
+# 41 Make Absorb a Dark-Type move with a changed animation
+-"-
+
