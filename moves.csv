@@ -45,7 +45,7 @@ Ice Ball,Physical,Ice,30,100,20,0,BATTLE_EFFECT_DOUBLE_POWER_EACH_TURN_LOCK_INTO
 Amnesia,Status,Psychic,0,0,20,0,BATTLE_EFFECT_SP_DEF_UP_2,0,User,N,N,N,N,N,N,N,N
 Rolling Kick,Physical,Fighting,60,100,15,0,BATTLE_EFFECT_FLINCH_HIT,30,Single Target,N,N,N,N,N,N,N,N
 -,Physical,Normal,0,0,0,0,BATTLE_EFFECT_HIT,0,Single Target,N,N,N,N,N,N,N,N
-Overheat,Special,Fire,120,100,5,0,BATTLE_EFFECT_USER_SP_ATK_DOWN_2,100,Single Target,N,N,N,N,N,N,N,N
+Overheat,Special,Fire,130,100,5,0,BATTLE_EFFECT_USER_SP_ATK_DOWN_2,100,Single Target,N,N,N,N,N,N,N,N
 Karate Chop,Physical,Fighting,50,100,25,0,BATTLE_EFFECT_HIGH_CRITICAL,0,Single Target,N,N,N,N,N,N,N,N
 Magnitude,Physical,Ground,1,100,30,0,BATTLE_EFFECT_PSYWAVE,0,All Adjacent,N,N,N,N,N,N,N,N
 Leech Seed,Status,Grass,0,100,10,0,BATTLE_EFFECT_STATUS_LEECH_SEED,0,Single Target,N,N,N,N,N,N,N,N
@@ -53,7 +53,7 @@ Pain Split,Status,Normal,0,0,20,0,BATTLE_EFFECT_AVERAGE_HP,0,Single Target,N,N,N
 Acupressure,Status,Normal,0,0,30,0,BATTLE_EFFECT_RANDOM_STAT_UP_2,0,User or Ally,N,N,N,N,N,N,N,N
 Draining Kiss,Special,Fairy,70,100,10,0,BATTLE_EFFECT_RECOVER_HALF_DAMAGE_DEALT,0,Single Target,N,N,N,N,N,N,N,N
 Lick,Physical,Ghost,60,100,15,0,BATTLE_EFFECT_PARALYZE_HIT,30,Single Target,N,N,N,N,N,N,N,N
-Crabhammer,Physical,Water,100,85,10,0,BATTLE_EFFECT_HIGH_CRITICAL,0,Single Target,N,N,N,N,N,N,N,N
+Crabhammer,Physical,Water,100,95,10,0,BATTLE_EFFECT_HIGH_CRITICAL,0,Single Target,N,N,N,N,N,N,N,N
 Milk Drink,Status,Normal,0,0,10,0,BATTLE_EFFECT_RESTORE_HALF_HP,0,User,N,N,N,N,N,N,N,N
 Magical Leaf,Special,Grass,70,0,20,0,BATTLE_EFFECT_BYPASS_ACCURACY,0,Single Target,N,N,N,N,N,N,N,N
 Energy Ball,Special,Grass,95,100,10,0,BATTLE_EFFECT_LOWER_SP_DEF_HIT,10,Single Target,N,N,N,N,N,N,N,N
@@ -65,7 +65,7 @@ Power Swap,Status,Psychic,0,0,10,0,BATTLE_EFFECT_SWAP_ATK_SP_ATK_STAT_CHANGES,0,
 Sunny Day,Status,Fire,0,0,5,0,BATTLE_EFFECT_WEATHER_SUN,0,Field,N,N,N,N,N,N,N,N
 Body Slam,Physical,Normal,85,100,15,0,BATTLE_EFFECT_PARALYZE_HIT,30,Single Target,N,N,N,N,N,N,N,N
 Seed Flare,Special,Grass,120,85,5,0,BATTLE_EFFECT_LOWER_SP_DEF_2_HIT,40,Single Target,N,N,N,N,N,N,N,N
-Skull Bash,Physical,Normal,100,100,15,0,BATTLE_EFFECT_CHARGE_TURN_DEF_UP,100,Single Target,N,N,N,N,N,N,N,N
+Skull Bash,Physical,Normal,120,100,5,0,BATTLE_EFFECT_CHARGE_TURN_DEF_UP,100,Single Target,N,N,N,N,N,N,N,N
 Thunder Wave,Status,Electric,0,100,20,0,BATTLE_EFFECT_STATUS_PARALYZE,0,Single Target,N,N,N,N,N,N,N,N
 PoisonPowder,Status,Poison,0,95,35,0,BATTLE_EFFECT_STATUS_POISON,0,Single Target,N,N,N,N,N,N,N,N
 Waterfall,Physical,Water,80,100,15,0,BATTLE_EFFECT_FLINCH_HIT,20,Single Target,N,N,N,N,N,N,N,N
@@ -75,13 +75,13 @@ Vacuum Wave,Special,Fighting,40,100,30,1,BATTLE_EFFECT_PRIORITY_1,0,Single Targe
 Snatch,Status,Dark,0,0,10,4,BATTLE_EFFECT_STEAL_STATUS_MOVE,0,Single Target (Special),N,N,N,N,N,N,N,N
 Bind,Physical,Normal,40,100,10,0,BATTLE_EFFECT_BIND_HIT,0,Single Target,N,N,N,N,N,N,N,N
 Stomp,Physical,Normal,65,100,20,0,BATTLE_EFFECT_FLINCH_MINIMIZE_DOUBLE_HIT,30,Single Target,N,N,N,N,N,N,N,N
-Tackle,Physical,Normal,35,95,35,0,BATTLE_EFFECT_HIT,0,Single Target,N,N,N,N,N,N,N,N
+Tackle,Physical,Normal,40,100,35,0,BATTLE_EFFECT_HIT,0,Single Target,N,N,N,N,N,N,N,N
 Mean Look,Status,Normal,0,0,5,0,BATTLE_EFFECT_PREVENT_ESCAPE,0,Single Target,N,N,N,N,N,N,N,N
 Rock Wrecker,Physical,Rock,150,100,1,0,BATTLE_EFFECT_RECHARGE_AFTER,0,Single Target,N,N,N,N,N,N,N,N
 Assist,Status,Normal,0,0,20,0,BATTLE_EFFECT_USE_RANDOM_ALLY_MOVE,0,Single Target (Special),N,N,N,N,N,N,N,N
 Disable,Status,Normal,0,100,20,0,BATTLE_EFFECT_DISABLE,0,Single Target,N,N,N,N,N,N,N,N
 Hail,Status,Ice,0,0,10,0,BATTLE_EFFECT_WEATHER_HAIL,0,Field,N,N,N,N,N,N,N,N
-Psycho Boost,Special,Psychic,140,100,5,0,BATTLE_EFFECT_USER_SP_ATK_DOWN_2,100,Single Target,N,N,N,N,N,N,N,N
+Psycho Boost,Special,Psychic,130,100,5,0,BATTLE_EFFECT_USER_SP_ATK_DOWN_2,100,Single Target,N,N,N,N,N,N,N,N
 Rollout,Physical,Rock,30,100,20,0,BATTLE_EFFECT_DOUBLE_POWER_EACH_TURN_LOCK_INTO,0,Single Target,N,N,N,N,N,N,N,N
 Hydro Pump,Special,Water,120,85,5,0,BATTLE_EFFECT_HIT,0,Single Target,N,N,N,N,N,N,N,N
 Spacial Rend,Special,Dragon,100,100,5,0,BATTLE_EFFECT_HIGH_CRITICAL,0,Single Target,N,N,N,N,N,N,N,N
@@ -142,7 +142,7 @@ Wood Hammer,Physical,Grass,120,100,15,0,BATTLE_EFFECT_RECOIL_THIRD,0,Single Targ
 Signal Beam,Special,Bug,75,100,15,0,BATTLE_EFFECT_CONFUSE_HIT,10,Single Target,N,N,N,N,N,N,N,N
 Bullet Seed,Physical,Grass,30,100,30,0,BATTLE_EFFECT_MULTI_HIT,0,Single Target,N,N,N,N,N,N,N,N
 Volt Tackle,Physical,Electric,120,100,15,0,BATTLE_EFFECT_RECOIL_PARALYZE_HIT,10,Single Target,N,N,N,N,N,N,N,N
-Fire Blast,Special,Fire,110,85,5,0,BATTLE_EFFECT_BURN_HIT,10,Single Target,N,N,N,N,N,N,N,N
+Fire Blast,Special,Fire,120,85,5,0,BATTLE_EFFECT_BURN_HIT,10,Single Target,N,N,N,N,N,N,N,N
 Blast Burn,Special,Fire,150,100,1,0,BATTLE_EFFECT_RECHARGE_AFTER,0,Single Target,N,N,N,N,N,N,N,N
 Grass Knot,Special,Grass,1,100,20,0,BATTLE_EFFECT_INCREASE_POWER_WITH_WEIGHT,0,Single Target,N,N,N,N,N,N,N,N
 Metal Burst,Physical,Steel,1,100,10,0,BATTLE_EFFECT_METAL_BURST,0,Single Target (Special),N,N,N,N,N,N,N,N
@@ -159,7 +159,7 @@ Power Trick,Status,Psychic,0,0,10,0,BATTLE_EFFECT_SWAP_ATK_DEF,0,User,N,N,N,N,N,
 Metal Sound,Status,Steel,0,85,40,0,BATTLE_EFFECT_SP_DEF_DOWN_2,0,Single Target,N,N,N,N,N,N,N,N
 Encore,Status,Normal,0,100,5,0,BATTLE_EFFECT_ENCORE,0,Single Target,N,N,N,N,N,N,N,N
 Hidden Power,Special,Normal,1,100,15,0,BATTLE_EFFECT_RANDOM_POWER_BASED_ON_IVS,0,Single Target,N,N,N,N,N,N,N,N
-Draco Meteor,Special,Dragon,140,100,5,0,BATTLE_EFFECT_USER_SP_ATK_DOWN_2,100,Single Target,N,N,N,N,N,N,N,N
+Draco Meteor,Special,Dragon,130,100,5,0,BATTLE_EFFECT_USER_SP_ATK_DOWN_2,100,Single Target,N,N,N,N,N,N,N,N
 Pin Missile,Physical,Bug,14,85,20,0,BATTLE_EFFECT_MULTI_HIT,0,Single Target,N,N,N,N,N,N,N,N
 Lava Plume,Special,Fire,80,100,15,0,BATTLE_EFFECT_BURN_HIT,30,All Adjacent,N,N,N,N,N,N,N,N
 Punishment,Physical,Dark,1,100,5,0,BATTLE_EFFECT_INCREASE_POWER_WITH_MORE_STAT_UP,0,Single Target,N,N,N,N,N,N,N,N
@@ -175,7 +175,7 @@ Fly,Physical,Flying,90,100,15,0,BATTLE_EFFECT_FLY,0,Single Target,N,N,N,N,N,N,N,
 Growl,Status,Normal,0,100,40,0,BATTLE_EFFECT_ATK_DOWN,0,Adjacent Opponents,N,N,N,N,N,N,N,N
 Blizzard,Special,Ice,120,85,5,0,BATTLE_EFFECT_BLIZZARD,10,Adjacent Opponents,N,N,N,N,N,N,N,N
 Bounce,Physical,Flying,85,100,5,0,BATTLE_EFFECT_BOUNCE,30,Single Target,N,N,N,N,N,N,N,N
-Giga Impact,Physical,Normal,150,90,5,0,BATTLE_EFFECT_RECHARGE_AFTER,0,Single Target,N,N,N,N,N,N,N,N
+Giga Impact,Physical,Normal,150,100,1,0,BATTLE_EFFECT_RECHARGE_AFTER,0,Single Target,N,N,N,N,N,N,N,N
 Brave Bird,Physical,Flying,120,100,15,0,BATTLE_EFFECT_RECOIL_THIRD,0,Single Target,N,N,N,N,N,N,N,N
 Tail Glow,Status,Bug,0,0,20,0,BATTLE_EFFECT_SP_ATK_UP_2,0,User,N,N,N,N,N,N,N,N
 Superpower,Physical,Fighting,120,100,5,0,BATTLE_EFFECT_LOWER_OWN_ATK_AND_DEF,0,Single Target,N,N,N,N,N,N,N,N
@@ -236,7 +236,7 @@ Protect,Status,Normal,0,0,10,3,BATTLE_EFFECT_PROTECT,0,User,N,N,N,N,N,N,N,N
 Double Hit,Physical,Normal,40,100,10,0,BATTLE_EFFECT_HIT_TWICE,0,Single Target,N,N,N,N,N,N,N,N
 Cotton Spore,Status,Grass,0,100,40,0,BATTLE_EFFECT_SPEED_DOWN_2,0,Single Target,N,N,N,N,N,N,N,N
 Astonish,Physical,Ghost,30,100,15,0,BATTLE_EFFECT_FLINCH_HIT,30,Single Target,N,N,N,N,N,N,N,N
-Iron Tail,Physical,Steel,100,85,15,0,BATTLE_EFFECT_LOWER_DEFENSE_HIT,30,Single Target,N,N,N,N,N,N,N,N
+Iron Tail,Physical,Steel,100,85,10,0,BATTLE_EFFECT_LOWER_DEFENSE_HIT,30,Single Target,N,N,N,N,N,N,N,N
 Return,Physical,Normal,1,100,20,0,BATTLE_EFFECT_POWER_BASED_ON_FRIENDSHIP,0,Single Target,N,N,N,N,N,N,N,N
 Synthesis,Status,Grass,0,0,5,0,BATTLE_EFFECT_HEAL_HALF_MORE_IN_SUN,0,User,N,N,N,N,N,N,N,N
 Hyper Fang,Physical,Normal,80,100,15,0,BATTLE_EFFECT_FLINCH_HIT,10,Single Target,N,N,N,N,N,N,N,N
@@ -273,7 +273,7 @@ Bubble,Special,Water,50,100,30,0,BATTLE_EFFECT_LOWER_SPEED_HIT,10,Adjacent Oppon
 Mach Punch,Physical,Fighting,40,100,30,1,BATTLE_EFFECT_PRIORITY_1,0,Single Target,N,N,N,N,N,N,N,N
 Teleport,Status,Psychic,0,0,20,0,BATTLE_EFFECT_FLEE_FROM_WILD_BATTLE,0,User,N,N,N,N,N,N,N,N
 Conversion,Status,Normal,0,0,30,0,BATTLE_EFFECT_CONVERSION,0,User,N,N,N,N,N,N,N,N
-Absorb,Special,Grass,20,100,25,0,BATTLE_EFFECT_RECOVER_HALF_DAMAGE_DEALT,0,Single Target,N,N,N,N,N,N,N,N
+Absorb,Special,Dark,70,100,10,0,BATTLE_EFFECT_RECOVER_HALF_DAMAGE_DEALT,0,Single Target,N,N,N,N,N,N,N,N
 Heal Block,Status,Psychic,0,100,15,0,BATTLE_EFFECT_PREVENT_HEALING,0,Adjacent Opponents,N,N,N,N,N,N,N,N
 Sleep Powder,Status,Grass,0,75,15,0,BATTLE_EFFECT_STATUS_SLEEP,0,Single Target,N,N,N,N,N,N,N,N
 Yawn,Status,Normal,0,0,10,0,BATTLE_EFFECT_STATUS_SLEEP_NEXT_TURN,0,Single Target,N,N,N,N,N,N,N,N
@@ -381,10 +381,10 @@ Hyper Voice,Special,Normal,90,100,10,0,BATTLE_EFFECT_HIT,0,Adjacent Opponents,N,
 Roost,Status,Flying,0,0,10,0,BATTLE_EFFECT_HEAL_HALF_REMOVE_FLYING_TYPE,0,User,N,N,N,N,N,N,N,N
 Scary Face,Status,Normal,0,100,10,0,BATTLE_EFFECT_SPEED_DOWN_2,0,Single Target,N,N,N,N,N,N,N,N
 Night Slash,Physical,Dark,80,100,15,0,BATTLE_EFFECT_HIGH_CRITICAL,0,Single Target,N,N,N,N,N,N,N,N
-Hi Jump Kick,Physical,Fighting,100,90,20,0,BATTLE_EFFECT_CRASH_ON_MISS,0,Single Target,N,N,N,N,N,N,N,N
+Hi Jump Kick,Physical,Fighting,120,90,10,0,BATTLE_EFFECT_CRASH_ON_MISS,0,Single Target,N,N,N,N,N,N,N,N
 Shadow Sneak,Physical,Ghost,40,100,30,1,BATTLE_EFFECT_PRIORITY_1,0,Single Target,N,N,N,N,N,N,N,N
 Thunder,Special,Electric,120,85,5,0,BATTLE_EFFECT_THUNDER,30,Single Target,N,N,N,N,N,N,N,N
-Hydro Cannon,Special,Water,150,95,5,0,BATTLE_EFFECT_RECHARGE_AFTER,0,Single Target,N,N,N,N,N,N,N,N
+Hydro Cannon,Special,Water,150,100,1,0,BATTLE_EFFECT_RECHARGE_AFTER,0,Single Target,N,N,N,N,N,N,N,N
 Dragon Rush,Physical,Dragon,100,85,10,0,BATTLE_EFFECT_FLINCH_HIT,20,Single Target,N,N,N,N,N,N,N,N
 Earthquake,Physical,Ground,100,100,10,0,BATTLE_EFFECT_DOUBLE_DAMAGE_DIG,0,All Adjacent,N,N,N,N,N,N,N,N
 Swagger,Status,Normal,0,100,15,0,BATTLE_EFFECT_ATK_UP_2_STATUS_CONFUSION,0,Single Target,N,N,N,N,N,N,N,N

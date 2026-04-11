@@ -7,7 +7,7 @@
         "special_attack": 36,
         "special_defense": 56
     },
-    "types": [ "TYPE_FLYING", "TYPE_PSYCHIC" ],
+    "types": [ "TYPE_PSYCHIC", "TYPE_FLYING" ],
     "catch_rate": 255,
     "base_exp_reward": 58,
     "ev_yields": {
