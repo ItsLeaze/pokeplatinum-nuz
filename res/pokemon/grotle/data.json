@@ -7,7 +7,7 @@
         "special_attack": 55,
         "special_defense": 65
     },
-    "types": [ "TYPE_GRASS", "TYPE_GRASS" ],
+    "types": [ "TYPE_GRASS", "TYPE_GROUND" ],
     "catch_rate": 45,
     "base_exp_reward": 141,
     "ev_yields": {
