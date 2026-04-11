@@ -2,9 +2,9 @@
     "name": "Poison Jab",
     "class": "CLASS_PHYSICAL",
     "type": "TYPE_POISON",
-    "power": 80,
+    "power": 90,
     "accuracy": 100,
-    "pp": 20,
+    "pp": 15,
     "effect": {
         "type": "BATTLE_EFFECT_POISON_HIT",
         "chance": 30

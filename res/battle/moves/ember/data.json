@@ -2,7 +2,7 @@
     "name": "Ember",
     "class": "CLASS_SPECIAL",
     "type": "TYPE_FIRE",
-    "power": 40,
+    "power": 60,
     "accuracy": 100,
     "pp": 25,
     "effect": {

@@ -2,8 +2,8 @@
     "name": "Mud Shot",
     "class": "CLASS_SPECIAL",
     "type": "TYPE_GROUND",
-    "power": 55,
-    "accuracy": 95,
+    "power": 60,
+    "accuracy": 100,
     "pp": 15,
     "effect": {
         "type": "BATTLE_EFFECT_LOWER_SPEED_HIT",

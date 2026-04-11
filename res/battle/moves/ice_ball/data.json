@@ -3,7 +3,7 @@
     "class": "CLASS_PHYSICAL",
     "type": "TYPE_ICE",
     "power": 30,
-    "accuracy": 90,
+    "accuracy": 100,
     "pp": 20,
     "effect": {
         "type": "BATTLE_EFFECT_DOUBLE_POWER_EACH_TURN_LOCK_INTO",

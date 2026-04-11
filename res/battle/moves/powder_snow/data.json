@@ -2,7 +2,7 @@
     "name": "Powder Snow",
     "class": "CLASS_SPECIAL",
     "type": "TYPE_ICE",
-    "power": 40,
+    "power": 70,
     "accuracy": 100,
     "pp": 25,
     "effect": {

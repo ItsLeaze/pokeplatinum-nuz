@@ -2,7 +2,7 @@
     "name": "Peck",
     "class": "CLASS_PHYSICAL",
     "type": "TYPE_FLYING",
-    "power": 35,
+    "power": 50,
     "accuracy": 100,
     "pp": 35,
     "effect": {

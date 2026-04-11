@@ -2,7 +2,7 @@
     "name": "Night Slash",
     "class": "CLASS_PHYSICAL",
     "type": "TYPE_DARK",
-    "power": 70,
+    "power": 80,
     "accuracy": 100,
     "pp": 15,
     "effect": {

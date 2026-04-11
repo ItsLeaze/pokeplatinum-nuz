@@ -2,8 +2,8 @@
     "name": "Bone Club",
     "class": "CLASS_PHYSICAL",
     "type": "TYPE_GROUND",
-    "power": 65,
-    "accuracy": 85,
+    "power": 80,
+    "accuracy": 100,
     "pp": 20,
     "effect": {
         "type": "BATTLE_EFFECT_FLINCH_HIT",

@@ -2,8 +2,8 @@
     "name": "Cross Chop",
     "class": "CLASS_PHYSICAL",
     "type": "TYPE_FIGHTING",
-    "power": 100,
-    "accuracy": 80,
+    "power": 90,
+    "accuracy": 100,
     "pp": 5,
     "effect": {
         "type": "BATTLE_EFFECT_HIGH_CRITICAL",

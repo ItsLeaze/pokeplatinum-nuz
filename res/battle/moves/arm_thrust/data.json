@@ -2,9 +2,9 @@
     "name": "Arm Thrust",
     "class": "CLASS_PHYSICAL",
     "type": "TYPE_FIGHTING",
-    "power": 15,
+    "power": 30,
     "accuracy": 100,
-    "pp": 20,
+    "pp": 10,
     "effect": {
         "type": "BATTLE_EFFECT_MULTI_HIT",
         "chance": 0

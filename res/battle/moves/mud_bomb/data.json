@@ -2,7 +2,7 @@
     "name": "Mud Bomb",
     "class": "CLASS_SPECIAL",
     "type": "TYPE_GROUND",
-    "power": 65,
+    "power": 80,
     "accuracy": 85,
     "pp": 10,
     "effect": {

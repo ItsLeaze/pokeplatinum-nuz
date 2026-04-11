@@ -2,9 +2,9 @@
     "name": "Aurora Beam",
     "class": "CLASS_SPECIAL",
     "type": "TYPE_ICE",
-    "power": 65,
+    "power": 80,
     "accuracy": 100,
-    "pp": 20,
+    "pp": 15,
     "effect": {
         "type": "BATTLE_EFFECT_LOWER_ATTACK_HIT",
         "chance": 10

@@ -4,10 +4,10 @@
     "type": "TYPE_POISON",
     "power": 40,
     "accuracy": 100,
-    "pp": 30,
+    "pp": 10,
     "effect": {
         "type": "BATTLE_EFFECT_LOWER_SP_DEF_HIT",
-        "chance": 10
+        "chance": 100
     },
     "range": "RANGE_ADJACENT_OPPONENTS",
     "priority": 0,

@@ -2,7 +2,7 @@
     "name": "Sludge Bomb",
     "class": "CLASS_SPECIAL",
     "type": "TYPE_POISON",
-    "power": 90,
+    "power": 95,
     "accuracy": 100,
     "pp": 10,
     "effect": {

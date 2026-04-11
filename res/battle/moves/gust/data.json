@@ -2,7 +2,7 @@
     "name": "Gust",
     "class": "CLASS_SPECIAL",
     "type": "TYPE_FLYING",
-    "power": 40,
+    "power": 50,
     "accuracy": 100,
     "pp": 35,
     "effect": {

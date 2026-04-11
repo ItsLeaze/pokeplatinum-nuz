@@ -2,9 +2,9 @@
     "name": "Razor Leaf",
     "class": "CLASS_PHYSICAL",
     "type": "TYPE_GRASS",
-    "power": 55,
-    "accuracy": 95,
-    "pp": 25,
+    "power": 70,
+    "accuracy": 100,
+    "pp": 15,
     "effect": {
         "type": "BATTLE_EFFECT_HIGH_CRITICAL",
         "chance": 0

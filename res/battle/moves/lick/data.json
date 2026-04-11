@@ -2,9 +2,9 @@
     "name": "Lick",
     "class": "CLASS_PHYSICAL",
     "type": "TYPE_GHOST",
-    "power": 20,
+    "power": 60,
     "accuracy": 100,
-    "pp": 30,
+    "pp": 15,
     "effect": {
         "type": "BATTLE_EFFECT_PARALYZE_HIT",
         "chance": 30

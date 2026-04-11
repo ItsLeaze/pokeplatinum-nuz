@@ -2,7 +2,7 @@
     "name": "Flash Cannon",
     "class": "CLASS_SPECIAL",
     "type": "TYPE_STEEL",
-    "power": 80,
+    "power": 95,
     "accuracy": 100,
     "pp": 10,
     "effect": {

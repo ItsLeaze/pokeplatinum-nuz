@@ -3,8 +3,8 @@
     "class": "CLASS_SPECIAL",
     "type": "TYPE_ELECTRIC",
     "power": 120,
-    "accuracy": 70,
-    "pp": 10,
+    "accuracy": 85,
+    "pp": 5,
     "effect": {
         "type": "BATTLE_EFFECT_THUNDER",
         "chance": 30

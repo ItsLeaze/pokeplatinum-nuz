@@ -2,9 +2,9 @@
     "name": "Fury Swipes",
     "class": "CLASS_PHYSICAL",
     "type": "TYPE_NORMAL",
-    "power": 18,
-    "accuracy": 80,
-    "pp": 15,
+    "power": 30,
+    "accuracy": 100,
+    "pp": 10,
     "effect": {
         "type": "BATTLE_EFFECT_MULTI_HIT",
         "chance": 0

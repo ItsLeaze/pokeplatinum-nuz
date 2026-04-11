@@ -5781,9 +5781,9 @@ static BOOL BtlCmd_Present(BattleSystem *battleSys, BattleContext *battleCtx)
     int jumpIfHeal = BattleScript_Read(battleCtx);
     int rnd = BattleSystem_RandNext(battleSys) & 0xFF;
 
-    if (rnd < (255 * 40 / 100)) {
+    if (rnd < (255 * 20 / 100)) {
         battleCtx->movePower = 40;
-    } else if (rnd < (255 * 70 / 100)) {
+    } else if (rnd < (255 * 60 / 100)) {
         battleCtx->movePower = 80;
     } else if (rnd < (255 * 80 / 100)) {
         battleCtx->movePower = 120;

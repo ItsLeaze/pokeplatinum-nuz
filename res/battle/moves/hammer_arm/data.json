@@ -3,8 +3,8 @@
     "class": "CLASS_PHYSICAL",
     "type": "TYPE_FIGHTING",
     "power": 100,
-    "accuracy": 90,
-    "pp": 10,
+    "accuracy": 100,
+    "pp": 5,
     "effect": {
         "type": "BATTLE_EFFECT_SPEED_DOWN_HIT",
         "chance": 0

@@ -231,7 +231,7 @@ electivire,Electric,Electric,MOTOR_DRIVE,NONE,75,123,67,95,85,95
 treecko,Grass,Grass,OVERGROW,NONE,40,45,35,65,55,70
 nidoran_f,Poison,Poison,POISON_POINT,RIVALRY,55,47,52,40,40,41
 froslass,Ice,Ghost,SNOW_CLOAK,SNOW_CLOAK,70,80,70,80,70,110
-grotle,Grass,Grass,OVERGROW,NONE,75,89,85,55,65,36
+grotle,Grass,Ground,OVERGROW,NONE,75,89,85,55,65,36
 dewgong,Water,Ice,THICK_FAT,HYDRATION,90,70,80,70,95,70
 unown,Psychic,Psychic,LEVITATE,NONE,48,72,48,72,48,48
 metapod,Bug,Bug,SHED_SKIN,NONE,50,20,55,25,25,30

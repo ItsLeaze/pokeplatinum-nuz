@@ -2,7 +2,7 @@
     "name": "Beat Up",
     "class": "CLASS_PHYSICAL",
     "type": "TYPE_DARK",
-    "power": 10,
+    "power": 20,
     "accuracy": 100,
     "pp": 10,
     "effect": {

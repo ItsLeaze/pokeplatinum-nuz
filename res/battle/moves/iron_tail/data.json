@@ -3,8 +3,8 @@
     "class": "CLASS_PHYSICAL",
     "type": "TYPE_STEEL",
     "power": 100,
-    "accuracy": 75,
-    "pp": 15,
+    "accuracy": 85,
+    "pp": 10,
     "effect": {
         "type": "BATTLE_EFFECT_LOWER_DEFENSE_HIT",
         "chance": 30
