@@ -2,7 +2,7 @@
     "name": "Tri Attack",
     "class": "CLASS_SPECIAL",
     "type": "TYPE_NORMAL",
-    "power": 80,
+    "power": 90,
     "accuracy": 100,
     "pp": 10,
     "effect": {

@@ -4,7 +4,7 @@
     "type": "TYPE_FIGHTING",
     "power": 0,
     "accuracy": 0,
-    "pp": 5,
+    "pp": 3,
     "effect": {
         "type": "BATTLE_EFFECT_PROTECT",
         "chance": 0

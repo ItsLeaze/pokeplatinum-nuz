@@ -6,7 +6,7 @@
     "accuracy": 100,
     "pp": 10,
     "effect": {
-        "type": "BATTLE_EFFECT_STEAL_HELD_ITEM",
+        "type": "BATTLE_EFFECT_REMOVE_HELD_ITEM",
         "chance": 0
     },
     "range": "RANGE_SINGLE_TARGET",

@@ -2,8 +2,8 @@
     "name": "Fury Cutter",
     "class": "CLASS_PHYSICAL",
     "type": "TYPE_BUG",
-    "power": 10,
-    "accuracy": 95,
+    "power": 30,
+    "accuracy": 100,
     "pp": 20,
     "effect": {
         "type": "BATTLE_EFFECT_DOUBLE_POWER_EACH_TURN",

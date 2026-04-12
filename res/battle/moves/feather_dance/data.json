@@ -4,7 +4,7 @@
     "type": "TYPE_FLYING",
     "power": 0,
     "accuracy": 100,
-    "pp": 15,
+    "pp": 5,
     "effect": {
         "type": "BATTLE_EFFECT_ATK_DOWN_2",
         "chance": 0
