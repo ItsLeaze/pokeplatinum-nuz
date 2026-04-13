@@ -1,11 +1,11 @@
 {
     "base_stats": {
-        "hp": 75,
+        "hp": 70,
         "attack": 130,
-        "defense": 75,
-        "speed": 105,
+        "defense": 70,
+        "speed": 90,
         "special_attack": 75,
-        "special_defense": 75
+        "special_defense": 70
     },
     "types": [ "TYPE_DARK", "TYPE_DARK" ],
     "catch_rate": 30,
@@ -27,7 +27,7 @@
     "base_friendship": 35,
     "exp_rate": "EXP_RATE_MEDIUM_SLOW",
     "egg_groups": [ "EGG_GROUP_FIELD", "EGG_GROUP_FIELD" ],
-    "abilities": [ "ABILITY_PRESSURE", "ABILITY_SUPER_LUCK" ],
+    "abilities": [ "ABILITY_SHARPNESS", "ABILITY_SUPER_LUCK" ],
     "safari_flee_rate": 0,
     "body_color": "MON_COLOR_WHITE",
     "flip_sprite": true,
