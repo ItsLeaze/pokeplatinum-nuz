@@ -6593,6 +6593,42 @@ static const u16 sPunchingMoves[] = {
     MOVE_SKY_UPPERCUT
 };
 
+static const u16 sBitingMoves[] = {
+    MOVE_BITE,
+    MOVE_CRUNCH,
+    MOVE_FIRE_FANG,
+    MOVE_HYPER_FANG,
+    MOVE_ICE_FANG,
+    MOVE_POISON_FANG,
+    MOVE_THUNDER_FANG
+};
+
+static const u16 sSlashingMoves[] = {
+    MOVE_AERIAL_ACE,
+    MOVE_AIR_CUTTER,
+    MOVE_AIR_SLASH,
+    MOVE_FURY_CUTTER,
+    MOVE_LEAF_BLADE,
+    MOVE_NIGHT_SLASH,
+    MOVE_PSYCHO_CUT,
+    MOVE_SHADOW_CLAW,
+    MOVE_SLASH,
+    MOVE_X_SCISSOR,
+    MOVE_CROSS_POISON,
+    MOVE_CRUSH_CLAW,
+    MOVE_CUT,
+    MOVE_DRAGON_CLAW,
+    MOVE_METAL_CLAW,
+    MOVE_RAZOR_LEAF
+};
+
+static const u16 sPulseMoves[] = {
+    MOVE_AURA_SPHERE,
+    MOVE_DARK_PULSE,
+    MOVE_DRAGON_PULSE,
+    MOVE_WATER_PULSE
+};
+
 typedef struct DamageCalcParams {
     u16 species;
     s16 curHP;
@@ -6811,15 +6847,6 @@ int BattleSystem_CalcMoveDamage(BattleSystem *battleSys,
         defenseStat = defenseStat * 150 / 100;
     }
 
-    if (attackerParams.ability == ABILITY_PLUS
-        && BattleSystem_CountAbility(battleSys, battleCtx, COUNT_ALIVE_BATTLERS_OUR_SIDE, attacker, ABILITY_MINUS)) {
-        spAttackStat = spAttackStat * 150 / 100;
-    }
-    if (attackerParams.ability == ABILITY_MINUS
-        && BattleSystem_CountAbility(battleSys, battleCtx, COUNT_ALIVE_BATTLERS_OUR_SIDE, attacker, ABILITY_PLUS)) {
-        spAttackStat = spAttackStat * 150 / 100;
-    }
-
     if (moveType == TYPE_ELECTRIC
         && BattleSystem_AnyBattlersWithMoveEffect(battleSys, battleCtx, MOVE_EFFECT_MUD_SPORT)) {
         movePower /= 2;
@@ -6926,6 +6953,27 @@ int BattleSystem_CalcMoveDamage(BattleSystem *battleSys,
     for (i = 0; i < NELEMS(sPunchingMoves); i++) {
         if (sPunchingMoves[i] == move && attackerParams.ability == ABILITY_IRON_FIST) {
             movePower = movePower * 12 / 10;
+            break;
+        }
+    }
+
+    for (i = 0; i < NELEMS(sBitingMoves); i++) {
+        if (sBitingMoves[i] == move && attackerParams.ability == ABILITY_STRONG_JAW) {
+            movePower = movePower * 15 / 10;
+            break;
+        }
+    }
+
+    for (i = 0; i < NELEMS(sSlashingMoves); i++) {
+        if (sSlashingMoves[i] == move && attackerParams.ability == ABILITY_SHARPNESS) {
+            movePower = movePower * 15 / 10;
+            break;
+        }
+    }
+
+    for (i = 0; i < NELEMS(sPulseMoves); i++) {
+        if (sPulseMoves[i] == move && attackerParams.ability == ABILITY_MEGA_LAUNCHER) {
+            movePower = movePower * 15 / 10;
             break;
         }
     }

@@ -1372,7 +1372,6 @@ Basic_CheckGastroAcid:
     IfLoadedEqualTo ABILITY_STENCH, ScoreMinus10
     IfLoadedEqualTo ABILITY_RUN_AWAY, ScoreMinus10
     IfLoadedEqualTo ABILITY_PICKUP, ScoreMinus10
-    IfLoadedEqualTo ABILITY_HONEY_GATHER, ScoreMinus10
     PopOrEnd 
 
 Basic_CheckLuckyChant:

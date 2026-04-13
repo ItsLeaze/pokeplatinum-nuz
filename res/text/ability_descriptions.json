@@ -400,15 +400,15 @@
     {
       "id": "pl_msg_00000612_00057",
       "en_US": [
-        "Boosts Sp. Atk if another\n",
-        "Pokémon has Minus."
+        "Boosts the power of\n",
+        "biting moves."
       ]
     },
     {
       "id": "pl_msg_00000612_00058",
       "en_US": [
-        "Boosts Sp. Atk if another\n",
-        "Pokémon has Plus."
+        "Boosts the power of\n",
+        "slicing moves."
       ]
     },
     {
@@ -827,8 +827,8 @@
     {
       "id": "pl_msg_00000612_00118",
       "en_US": [
-        "The Pokémon may gather\n",
-        "Honey from somewhere."
+        "Boosts the power of\n",
+        "aura and pulse attacks."
       ]
     },
     {

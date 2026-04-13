@@ -7810,29 +7810,6 @@ static BOOL BtlCmd_GenerateEndOfBattleItem(BattleSystem *battleSys, BattleContex
                 }
             }
         }
-
-        if (ability == ABILITY_HONEY_GATHER
-            && species != SPECIES_NONE
-            && species != SPECIES_EGG
-            && item == ITEM_NONE) {
-            j = 0;
-            max = 10;
-            level = Pokemon_GetValue(mon, MON_DATA_LEVEL, NULL);
-
-            // floor the Pokemon's level by ranges of 10
-            // e.g., levels 1-10 eval to 0, levels 21-30 eval to 2, etc.
-            while (level > max) {
-                j++;
-                max += 10;
-            }
-
-            GF_ASSERT(j < 10);
-
-            if (BattleSystem_RandNext(battleSys) % 100 < sHoneyGatherRate[j]) {
-                j = ITEM_HONEY;
-                Pokemon_SetValue(mon, MON_DATA_HELD_ITEM, &j);
-            }
-        }
     }
 
     return FALSE;

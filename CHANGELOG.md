@@ -176,3 +176,6 @@ TODO: test that properly
 # 41 Make Absorb a Dark-Type move with a changed animation
 -"-
 
+# 42 Add abilities Mega Launcher, Strong Jaw, Sharpness
+-"-
+
