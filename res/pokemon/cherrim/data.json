@@ -4,8 +4,8 @@
         "attack": 60,
         "defense": 70,
         "speed": 85,
-        "special_attack": 87,
-        "special_defense": 78
+        "special_attack": 100,
+        "special_defense": 90
     },
     "types": [ "TYPE_GRASS", "TYPE_GRASS" ],
     "catch_rate": 75,

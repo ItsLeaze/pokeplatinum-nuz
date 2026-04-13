@@ -1,10 +1,10 @@
 {
     "base_stats": {
-        "hp": 55,
-        "attack": 104,
+        "hp": 60,
+        "attack": 115,
         "defense": 105,
-        "speed": 52,
-        "special_attack": 94,
+        "speed": 60,
+        "special_attack": 85,
         "special_defense": 75
     },
     "types": [ "TYPE_WATER", "TYPE_DARK" ],
@@ -27,7 +27,7 @@
     "base_friendship": 70,
     "exp_rate": "EXP_RATE_ERRATIC",
     "egg_groups": [ "EGG_GROUP_WATER_1", "EGG_GROUP_WATER_1" ],
-    "abilities": [ "ABILITY_SWIFT_SWIM", "ABILITY_NONE" ],
+    "abilities": [ "ABILITY_SWIFT_SWIM", "ABILITY_SWIFT_SWIM" ],
     "safari_flee_rate": 0,
     "body_color": "MON_COLOR_BLUE",
     "flip_sprite": false,

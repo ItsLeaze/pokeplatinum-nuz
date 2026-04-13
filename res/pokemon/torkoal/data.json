@@ -4,7 +4,7 @@
         "attack": 85,
         "defense": 140,
         "speed": 20,
-        "special_attack": 85,
+        "special_attack": 95,
         "special_defense": 70
     },
     "types": [ "TYPE_FIRE", "TYPE_FIRE" ],

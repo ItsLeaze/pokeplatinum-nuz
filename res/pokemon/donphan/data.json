@@ -5,7 +5,7 @@
         "defense": 120,
         "speed": 50,
         "special_attack": 60,
-        "special_defense": 60
+        "special_defense": 80
     },
     "types": [ "TYPE_GROUND", "TYPE_GROUND" ],
     "catch_rate": 60,

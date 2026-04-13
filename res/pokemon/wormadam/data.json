@@ -1,10 +1,10 @@
 {
     "base_stats": {
         "hp": 60,
-        "attack": 59,
+        "attack": 55,
         "defense": 85,
-        "speed": 36,
-        "special_attack": 79,
+        "speed": 30,
+        "special_attack": 90,
         "special_defense": 105
     },
     "types": [ "TYPE_BUG", "TYPE_GRASS" ],

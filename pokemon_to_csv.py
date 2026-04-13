@@ -30,11 +30,17 @@ TYPE_MAP = {
 }
 
 def find_pokemon_files(base_dir):
-    """Find all data.json files in pokemon folders."""
+    """Find data.json files exactly one folder deep."""
     files_found = []
-    for root, dirs, files in os.walk(base_dir):
-        if "data.json" in files:
-            files_found.append(os.path.join(root, "data.json"))
+
+    for entry in os.listdir(base_dir):
+        pokemon_dir = os.path.join(base_dir, entry)
+
+        if os.path.isdir(pokemon_dir):
+            data_file = os.path.join(pokemon_dir, "data.json")
+            if os.path.isfile(data_file):
+                files_found.append(data_file)
+
     return files_found
 
 def load_json(file_path):
@@ -85,6 +91,7 @@ def main():
     files = find_pokemon_files(POKEMON_DIR)
     rows = []
 
+    files.sort()
     for file in files:
         data = load_json(file)
         row = process_pokemon(data, file)
