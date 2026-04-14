@@ -9073,7 +9073,7 @@ static BOOL BtlCmd_CheckHoldOnWith1HP(BattleSystem *battleSys, BattleContext *ba
     int itemEffect = Battler_HeldItemEffect(battleCtx, battler);
     int itemPower = Battler_HeldItemPower(battleCtx, battler, ITEM_POWER_CHECK_ALL);
 
-    if (battleCtx->battleMons[battler].ability == ABILITY_STURDY) {
+    if (Battler_Ability(battleCtx, battler) == ABILITY_STURDY && Battler_Ability(battleCtx, battleCtx->attacker) != ABILITY_MOLD_BREAKER) {
         endure = TRUE;
         endureWithSturdy = TRUE;
     }

@@ -3385,7 +3385,7 @@ static void BattleControllerPlayer_UpdateHP(BattleSystem *battleSys, BattleConte
             battleCtx->damage = (DEFENDING_MON.curHP - 1) * -1;
         }
 
-        if (DEFENDING_MON.curHP == DEFENDING_MON.maxHP && battleCtx->battleMons[battleCtx->defender].ability == ABILITY_STURDY) {
+        if (Battler_Ability(battleCtx, battleCtx->defender) == ABILITY_STURDY && Battler_Ability(battleCtx, battleCtx->attacker) != ABILITY_MOLD_BREAKER && DEFENDING_MON.curHP == DEFENDING_MON.maxHP) {
             DEFENDER_TURN_FLAGS.enduring = TRUE;
         }
 
