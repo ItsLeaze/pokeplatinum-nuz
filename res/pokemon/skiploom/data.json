@@ -1,10 +1,10 @@
 {
     "base_stats": {
-        "hp": 55,
+        "hp": 65,
         "attack": 45,
         "defense": 50,
-        "speed": 80,
-        "special_attack": 45,
+        "speed": 95,
+        "special_attack": 70,
         "special_defense": 65
     },
     "types": [ "TYPE_GRASS", "TYPE_FLYING" ],
