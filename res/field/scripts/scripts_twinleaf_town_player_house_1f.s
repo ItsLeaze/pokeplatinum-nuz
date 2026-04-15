@@ -34,7 +34,8 @@ TwinleafTownPlayerHouse1F_HideRivalsMom:
 TwinleafTownPlayerHouse1F_OnFrame_RivalAlreadyLeft:
     LockAll
     SetFlag FLAG_TALKED_TO_MOM
-    ApplyMovement 0, StartOfGame_MoveMomToPlayer
+    ApplyMovement LOCALID_MOM, StartOfGame_MoveMomToPlayer
+    ApplyMovement LOCALID_PLAYER, TwinleafTownPlayerHouse1F_Movement_PlayerTurnToMom
     WaitMovement
     BufferPlayerName 0
     BufferRivalName 1
@@ -83,6 +84,12 @@ TwinleafTownPlayerHouse1F_IsYourProjectComingAlong:
     SetFlag FLAG_TALKED_TO_MOM_ABOUT_NATIONAL_DEX_PROGRESS
     Message TwinleafTownPlayerHouse1F_Text_IsYourProjectComingAlong
     Return
+
+    .balign 4, 0
+TwinleafTownPlayerHouse1F_Movement_PlayerTurnToMom:
+    Delay4
+    WalkOnSpotNormalSouth
+    EndMovement
 
     .balign 4, 0
 TwinleafTownPlayerHouse1F_Movement_PlayerFaceMomPostgame:

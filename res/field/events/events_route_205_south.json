@@ -16,7 +16,7 @@
             "movement_type": "MOVEMENT_TYPE_LOOK_SOUTH_AND_WEST",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
-            "script": "TRAINER_HIKER_DANIEL",
+            "script": "TRAINER_R205S_HIKER_DANIEL",
             "initial_dir": 2,
             "data": [
                 4
@@ -33,7 +33,7 @@
             "movement_type": "MOVEMENT_TYPE_ROTATE_COUNTERCLOCKWISE",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
-            "script": "TRAINER_AROMA_LADY_ELIZABETH",
+            "script": "TRAINER_R205S_AROMA_LADY_ELIZABETH",
             "initial_dir": 2,
             "data": [
                 3
@@ -50,7 +50,7 @@
             "movement_type": "MOVEMENT_TYPE_LOOK_NORTH_SOUTH_AND_EAST",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
-            "script": "TRAINER_CAMPER_JACOB",
+            "script": "TRAINER_R205S_CAMPER_JACOB",
             "initial_dir": 3,
             "data": [
                 4
@@ -67,7 +67,7 @@
             "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
-            "script": "TRAINER_PICNICKER_SIENA",
+            "script": "TRAINER_R205S_PICNICKER_SIENA",
             "initial_dir": 2,
             "data": [
                 2
@@ -84,7 +84,7 @@
             "movement_type": "MOVEMENT_TYPE_LOOK_SOUTH_AND_EAST",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
-            "script": "TRAINER_HIKER_NICHOLAS",
+            "script": "TRAINER_R205S_HIKER_NICHOLAS",
             "initial_dir": 1,
             "data": [
                 2
@@ -101,7 +101,7 @@
             "movement_type": "MOVEMENT_TYPE_WALK_WEST_SOUTH_EAST_NORTH",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
-            "script": "TRAINER_BATTLE_GIRL_KELSEY",
+            "script": "TRAINER_R205S_BATTLE_GIRL_KELSEY",
             "initial_dir": 1,
             "data": [
                 2

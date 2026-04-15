@@ -81,7 +81,7 @@
         {
             "id": "TRAINERS_SCHOOL_YOUNGSTER_4",
             "graphics_id": "OBJ_EVENT_GFX_YOUNGSTER",
-            "movement_type": "MOVEMENT_TYPE_LOOK_WEST",
+            "movement_type": "MOVEMENT_TYPE_LOOK_EAST",
             "trainer_type": "TRAINER_TYPE_NONE",
             "hidden_flag": "0",
             "script": 5,
@@ -89,8 +89,8 @@
             "data": [],
             "movement_range_x": 0,
             "movement_range_z": 0,
-            "x": 5,
-            "z": 8,
+            "x": 4,
+            "z": 3,
             "y": 0
         },
         {
@@ -151,6 +151,21 @@
             "movement_range_z": 0,
             "x": 1,
             "z": 4,
+            "y": 0
+        },
+        {
+            "id": "LOCALID_BRIEFCASE_KANTO",
+            "graphics_id": "OBJ_EVENT_GFX_BRIEFCASE",
+            "movement_type": "MOVEMENT_TYPE_LOOK_NORTH",
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "hidden_flag": "VAR_KANTO_STARTER_ACQUIRED",
+            "script": 13,
+            "initial_dir": 1,
+            "data": [],
+            "movement_range_x": 0,
+            "movement_range_z": 0,
+            "x": 5,
+            "z": 3,
             "y": 0
         }
     ],

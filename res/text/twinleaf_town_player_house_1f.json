@@ -4,10 +4,10 @@
     {
       "id": "TwinleafTownPlayerHouse1F_Text_RivalAlreadyLeft",
       "en_US": [
-        "Mom: {STRVAR_1 3, 0, 0}!\r",
-        "{STRVAR_1 3, 1, 0} already left.\r",
-        "I don’t know what it was about, but\n",
-        "he sure was in a hurry!\r"
+        "Mom: Good Morning!\n",
+        "You’re already late.\r",
+        "Pick up {STRVAR_1 3, 1, 0} at his house\n",
+        "and wait for Prof. Rowan at Route 201!\r"
       ]
     },
     {

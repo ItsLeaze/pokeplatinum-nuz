@@ -163,11 +163,8 @@ Route202_LucasHereIllGiveYouFivePokeballsToGetYouStarted:
     GoTo Route202_GivePokeballs
 
 Route202_GivePokeballs:
-    SetVar VAR_0x8004, ITEM_POKE_BALL
+    SetVar VAR_0x8004, ITEM_ORAN_BERRY
     SetVar VAR_0x8005, 5
-    # TODO remove the following 2 lines again? give Rare Candy for testing purposes and Add appropriate message
-    SetVar VAR_0x8004, 0x32
-    SetVar VAR_0x8005, 100
     Common_GiveItemQuantity
     GetPlayerGender VAR_RESULT
     GoToIfEq VAR_RESULT, GENDER_MALE, Route202_DawnLeave

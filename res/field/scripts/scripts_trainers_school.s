@@ -1,5 +1,6 @@
 #include "macros/scrcmd.inc"
 #include "res/text/bank/trainers_school.h"
+#include "res/field/events/events_trainers_school.h"
 
 
     ScriptEntry _0032
@@ -14,6 +15,7 @@
     ScriptEntry _02E4
     ScriptEntry _03D9
     ScriptEntry _049C
+    ScriptEntry TrainerSchool_Briefcase
     ScriptEntryEnd
 
 _0032:
@@ -151,17 +153,17 @@ _01E7:
     End
 
 _0212:
-    StartTrainerBattle TRAINER_SCHOOL_KID_HARRISON
+    StartTrainerBattle TRAINER_JUBILIFE_SCHOOL_KID_HARRISON
     GoTo _023C
     End
 
 _0220:
-    StartTrainerBattle TRAINER_SCHOOL_KID_HARRISON
+    StartTrainerBattle TRAINER_JUBILIFE_SCHOOL_KID_HARRISON
     GoTo _023C
     End
 
 _022E:
-    StartTrainerBattle TRAINER_SCHOOL_KID_HARRISON
+    StartTrainerBattle TRAINER_JUBILIFE_SCHOOL_KID_HARRISON
     GoTo _023C
     End
 
@@ -244,17 +246,17 @@ _031A:
     End
 
 _0345:
-    StartTrainerBattle TRAINER_SCHOOL_KID_CHRISTINE
+    StartTrainerBattle TRAINER_JUBILIFE_SCHOOL_KID_CHRISTINE
     GoTo _036F
     End
 
 _0353:
-    StartTrainerBattle TRAINER_SCHOOL_KID_CHRISTINE
+    StartTrainerBattle TRAINER_JUBILIFE_SCHOOL_KID_CHRISTINE
     GoTo _036F
     End
 
 _0361:
-    StartTrainerBattle TRAINER_SCHOOL_KID_CHRISTINE
+    StartTrainerBattle TRAINER_JUBILIFE_SCHOOL_KID_CHRISTINE
     GoTo _036F
     End
 
@@ -361,3 +363,21 @@ _049C:
     End
 
     .balign 4, 0
+
+TrainerSchool_Briefcase:
+    LockAll
+    FadeScreen 6, 1, 0, 0
+    WaitFadeScreen
+    RemoveObject LOCALID_BRIEFCASE_KANTO
+    StartChooseStarterScene SPECIES_BULBASAUR, SPECIES_CHARMANDER, SPECIES_SQUIRTLE
+    ReturnToField
+    FadeScreen 6, 1, 1, 0
+    WaitFadeScreen
+    GetChosenBriefcaseSpecies VAR_0x8000
+    GivePokemon VAR_0x8000, 5, ITEM_NONE, VAR_RESULT
+    GoToIfEq VAR_RESULT TRUE SetKantoStarterAcquired
+    End
+
+SetKantoStarterAcquired:
+    SetFlag VAR_KANTO_STARTER_ACQUIRED
+    End

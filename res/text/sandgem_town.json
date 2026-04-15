@@ -5,8 +5,7 @@
       "id": "SandgemTown_Text_DawnTheProfessorIsWaiting",
       "en_US": [
         "Dawn: Oh! There you are!\n",
-        "Please, come with me!\f",
-        "The professor is waiting!\r"
+        "Please, come with me!\r"
       ]
     },
     {
@@ -20,9 +19,8 @@
     {
       "id": "SandgemTown_Text_LucasTheProfsWaitingToSeeYou",
       "en_US": [
-        "Lucas: Hi! I’ve been waiting for you!\n",
-        "Please, come with me.\f",
-        "The prof’s waiting to see you.\r"
+        "Lucas: Oh! There you are!\n",
+        "Please, come with me.\r"
       ]
     },
     {
@@ -51,21 +49,15 @@
     {
       "id": "SandgemTown_Text_DawnLetsGoInside",
       "en_US": [
-        "Dawn: Wow, what was that?\r",
-        "Your friend sure seems to be really\n",
-        "impatient.\r",
-        "Well, anyway...\n",
+        "Dawn: Anyway...\n",
         "Let’s go inside.\r"
       ]
     },
     {
       "id": "SandgemTown_Text_LucasLetsGoIn",
       "en_US": [
-        "Lucas: What was that?!\r",
-        "Your friend always seems to be\n",
-        "in such a rush.\r",
-        "Anyway...\n",
-        "Let’s go in.\r"
+        "Lucas:Anyway...\n",
+        "Let’s go inside.\r"
       ]
     },
     {

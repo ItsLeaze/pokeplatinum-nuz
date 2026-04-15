@@ -72,7 +72,7 @@
             "movement_type": "MOVEMENT_TYPE_LOOK_NORTH_AND_SOUTH",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
-            "script": "TRAINER_BREEDER_ALBERT",
+            "script": "TRAINER_R209_BREEDER_ALBERT",
             "initial_dir": 1,
             "data": [
                 3
@@ -89,7 +89,7 @@
             "movement_type": "MOVEMENT_TYPE_LOOK_NORTH_SOUTH_AND_EAST",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
-            "script": "TRAINER_BREEDER_JENNIFER",
+            "script": "TRAINER_R209_BREEDER_JENNIFER",
             "initial_dir": 3,
             "data": [
                 5
@@ -106,7 +106,7 @@
             "movement_type": "MOVEMENT_TYPE_LOOK_EAST",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
-            "script": "TRAINER_COWGIRL_SHELLEY",
+            "script": "TRAINER_R209_COWGIRL_SHELLEY",
             "initial_dir": 3,
             "data": [
                 2
@@ -123,7 +123,7 @@
             "movement_type": "MOVEMENT_TYPE_WALK_SOUTH_WEST_EAST_NORTH",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "FLAG_HIDE_ROUTE_209_JOGGER_RICHARD",
-            "script": "TRAINER_JOGGER_RICHARD",
+            "script": "TRAINER_R209_JOGGER_RICHARD",
             "initial_dir": 1,
             "data": [
                 4
@@ -157,7 +157,7 @@
             "movement_type": "MOVEMENT_TYPE_LOOK_EAST",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
-            "script": "TRAINER_POKE_KID_DANIELLE",
+            "script": "TRAINER_R209_POKE_KID_DANIELLE",
             "initial_dir": 3,
             "data": [],
             "movement_range_x": 0,
@@ -190,7 +190,7 @@
             "movement_type": "MOVEMENT_TYPE_WALK_WEST_NORTH_EAST_SOUTH",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
-            "script": "TRAINER_YOUNG_COUPLE_TY_AND_SUE",
+            "script": "TRAINER_R209_YOUNG_COUPLE_TY_AND_SUE",
             "double_battle_id": 2,
             "initial_dir": 2,
             "data": [
@@ -208,7 +208,7 @@
             "movement_type": "MOVEMENT_TYPE_FOLLOW_PARTNER_TRAINER",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
-            "script": "TRAINER_YOUNG_COUPLE_TY_AND_SUE",
+            "script": "TRAINER_R209_YOUNG_COUPLE_TY_AND_SUE",
             "double_battle_id": 1,
             "initial_dir": 1,
             "data": [

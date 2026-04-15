@@ -33,10 +33,7 @@
       "en_US": [
         "So, what you do is, you scoot over to\n",
         "the next patch of grass before any\f",
-        "wild Pokémon can appear!\r",
-        "If we just keep dashing, we can get to\n",
-        "Sandgem Town without running into\f",
-        "wild Pokémon!\r",
+        "wild Pokémon can appear!\n",
         "OK, stick with me!\r"
       ]
     },
@@ -54,10 +51,10 @@
     {
       "id": "Route201_Text_YouTwoDontHaveAnyPokemon",
       "en_US": [
-        "Professor: You two don’t seem to have\n",
-        "any Pokémon between you?\r",
-        "Then, what is the meaning of going into\n",
-        "the tall grass?!\r"
+        "Professor: The tall grass can be very\n",
+        "dangerous without your Pokemon!\r",
+        "But don’t worry. Today you will start\n",
+        "your Pokemon journey.\r"
       ]
     },
     {
@@ -188,18 +185,11 @@
     {
       "id": "Route201_Text_IWillEntrustYouWithPokemon",
       "en_US": [
-        "Professor: !\r",
-        "How big of you...\r",
-        "Very well, then!\n",
-        "I will entrust you two with Pokémon!\r",
-        "I apologize for putting you through\n",
-        "that exercise.\r",
-        "However!\r",
-        "You must promise me that you will never\n",
+        "I will entrust you with your first\n",
+        "Pokemon.\r",
+        "But promise me me that you will never\n",
         "recklessly endanger yourselves again.\r",
-        "Now, then...\r",
-        "Hm?\n",
-        "Now, where...?\r"
+        "Now, where is...?\r"
       ]
     },
     {
@@ -232,18 +222,14 @@
       "id": "Route201_Text_ThereItIsNiceWorkDawn",
       "en_US": [
         "Rowan: Ah! There it is!\n",
-        "Dawn, nice work.\r",
-        "What I was about to do was to entrust\n",
-        "these two with their own Pokémon.\r"
+        "Dawn, nice work.\r"
       ]
     },
     {
       "id": "Route201_Text_ThereItIsNiceWorkLucas",
       "en_US": [
         "Rowan: Ah! There it is!\n",
-        "Lucas, nice work.\r",
-        "What I was about to do was to entrust\n",
-        "these two with their own Pokémon.\r"
+        "Lucas, nice work.\r"
       ]
     },
     {
@@ -265,14 +251,9 @@
     {
       "id": "Route201_Text_PeopleShouldMeetPokemon",
       "en_US": [
-        "Rowan: Hm!\r",
-        "We exist side by side with Pokémon.\r",
-        "There comes a time when people should\n",
-        "meet Pokémon.\r",
-        "There is a world that should be\n",
-        "explored together.\r",
-        "For them, today is that time.\n",
-        "The place, right here.\r"
+        "Rowan: This is it!\r",
+        "You two shall have your first Pokemon.\n",
+        "Make sure to take good care of them!\r"
       ]
     },
     {
@@ -317,44 +298,42 @@
     {
       "id": "Route201_Text_ImPickingThisStarter",
       "en_US": [
-        "{STRVAR_1 3, 0, 0}: Then, I choose you!\n",
-        "I’m picking this {STRVAR_1 0, 2, 0}!\r"
+        "{STRVAR_1 3, 0, 0}: I’m picking {STRVAR_1 0, 2, 0}!\r",
+        "Rowan: Very well! You’ll also\n",
+        "want this device to record all\r",
+        "the Pokemon you’ve seen and caught.\r"
       ]
     },
     {
       "id": "Route201_Text_IHopeYoullDoWellTogether",
       "en_US": [
-        "Rowan: Very well! Both of you have\n",
-        "chosen a good Pokémon, it seems.\r",
-        "Now, listen well!\r",
-        "The Pokémon you have been entrusted\n",
-        "with are unfamiliar with the world.\r",
-        "In that regard, they’re much\n",
-        "like you.\r",
-        "As fellow newcomers to the world,\n",
-        "I hope you’ll do well together.\r"
+        "{STRVAR_1 3, 0, 0} obtained\n",
+        "the {COLOR 1}Pokédex{COLOR 0}!"
       ]
     },
     {
       "id": "Route201_Text_ComeSeeMeInSandgemTown",
       "en_US": [
-        "If you have any trouble, come see me\n",
-        "at my lab in Sandgem Town.\r",
-        "And now, we’ll be on our way.\r"
+        "I wish you all the best\n",
+        "on your Pokemon journey!\r",
+        "Make sure to pay me a visit in\n",
+        "Sandgem Town when you pass through.\r"
       ]
     },
     {
       "id": "Route201_Text_DawnWaitForMe",
       "en_US": [
-        "Dawn: Professor!\n",
-        "Wait for me, please!\r"
+        "Oh, and feed this candy to your\n",
+        "Pokemon to keep them leveled up!\r",
+        "Just give them a small bite every\n",
+        "time and it will last you forever!\r"
       ]
     },
     {
       "id": "Route201_Text_DawnPleaseLetMePass",
       "en_US": [
-        "I’m sorry...\n",
-        "Please let me pass.\r"
+        "And a couple of Pokeballs and Repels\n",
+        "will help you get started.\r"
       ]
     },
     {
@@ -410,9 +389,9 @@
       "id": "Route201_Text_WhewLetsGoHome",
       "en_US": [
         "{STRVAR_1 3, 0, 0}: Whew!\n",
-        "Let’s go home.\r",
-        "I’m beat after that battle.\n",
-        "My Pokémon needs rest, too.\r",
+        "Nice battle!\r",
+        "I’ll use Repel and rest my\n",
+        "Pokémon in Sandgem Town.\r",
         "See ya, {STRVAR_1 3, 1, 0}!\r"
       ]
     },

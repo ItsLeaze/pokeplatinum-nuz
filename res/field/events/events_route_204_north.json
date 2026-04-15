@@ -7,7 +7,7 @@
             "movement_type": "MOVEMENT_TYPE_WALK_BACK_AND_FORTH",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
-            "script": "TRAINER_BUG_CATCHER_BRANDON",
+            "script": "TRAINER_R204N_BUG_CATCHER_BRANDON",
             "initial_dir": 2,
             "data": [
                 1
@@ -24,7 +24,7 @@
             "movement_type": "MOVEMENT_TYPE_LOOK_SOUTH_AND_EAST",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
-            "script": "TRAINER_AROMA_LADY_TAYLOR",
+            "script": "TRAINER_R204N_AROMA_LADY_TAYLOR",
             "initial_dir": 1,
             "data": [
                 4
@@ -41,7 +41,7 @@
             "movement_type": "MOVEMENT_TYPE_LOOK_SOUTH",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
-            "script": "TRAINER_TWINS_LIV_AND_LIZ",
+            "script": "TRAINER_R204N_TWINS_LIV_AND_LIZ",
             "double_battle_id": 1,
             "initial_dir": 1,
             "data": [
@@ -59,7 +59,7 @@
             "movement_type": "MOVEMENT_TYPE_LOOK_SOUTH",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
-            "script": "TRAINER_TWINS_LIV_AND_LIZ",
+            "script": "TRAINER_R204N_TWINS_LIV_AND_LIZ",
             "double_battle_id": 2,
             "initial_dir": 1,
             "data": [

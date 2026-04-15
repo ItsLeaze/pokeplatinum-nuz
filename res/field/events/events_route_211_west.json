@@ -24,7 +24,7 @@
             "movement_type": "MOVEMENT_TYPE_LOOK_SOUTH",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
-            "script": "TRAINER_BIRD_KEEPER_ALEXANDRA",
+            "script": "TRAINER_R211W_BIRD_KEEPER_ALEXANDRA",
             "initial_dir": 1,
             "data": [
                 2
@@ -58,7 +58,7 @@
             "movement_type": "MOVEMENT_TYPE_DISGUISE_ROCK",
             "trainer_type": "TRAINER_TYPE_VIEW_ALL_DIRECTIONS",
             "hidden_flag": "0",
-            "script": "TRAINER_NINJA_BOY_ZACH",
+            "script": "TRAINER_R211W_NINJA_BOY_ZACH",
             "initial_dir": 1,
             "data": [
                 1

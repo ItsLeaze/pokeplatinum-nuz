@@ -24,7 +24,7 @@
             "movement_type": "MOVEMENT_TYPE_LOOK_SOUTH",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
-            "script": "TRAINER_HIKER_ROBERT",
+            "script": "TRAINER_R208_HIKER_ROBERT",
             "initial_dir": 1,
             "data": [
                 2
@@ -41,7 +41,7 @@
             "movement_type": "MOVEMENT_TYPE_LOOK_EAST",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
-            "script": "TRAINER_HIKER_ALEXANDER",
+            "script": "TRAINER_R208_HIKER_ALEXANDER",
             "initial_dir": 3,
             "data": [
                 2
@@ -58,7 +58,7 @@
             "movement_type": "MOVEMENT_TYPE_LOOK_SOUTH_AND_WEST",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
-            "script": "TRAINER_HIKER_JONATHAN",
+            "script": "TRAINER_R208_HIKER_JONATHAN",
             "initial_dir": 2,
             "data": [
                 2
@@ -75,7 +75,7 @@
             "movement_type": "MOVEMENT_TYPE_WALK_NORTH_WEST_SOUTH_EAST",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
-            "script": "TRAINER_BLACK_BELT_KYLE",
+            "script": "TRAINER_R208_BLACK_BELT_KYLE",
             "initial_dir": 0,
             "data": [
                 2
@@ -92,7 +92,7 @@
             "movement_type": "MOVEMENT_TYPE_LOOK_EAST",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
-            "script": "TRAINER_FISHERMAN_CODY",
+            "script": "TRAINER_R208_FISHERMAN_CODY",
             "initial_dir": 3,
             "data": [],
             "movement_range_x": 0,
@@ -107,7 +107,7 @@
             "movement_type": "MOVEMENT_TYPE_ROTATE_COUNTERCLOCKWISE",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
-            "script": "TRAINER_AROMA_LADY_HANNAH",
+            "script": "TRAINER_R208_AROMA_LADY_HANNAH",
             "initial_dir": 0,
             "data": [
                 2
@@ -124,7 +124,7 @@
             "movement_type": "MOVEMENT_TYPE_LOOK_WEST_AND_EAST",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
-            "script": "TRAINER_ARTIST_WILLIAM",
+            "script": "TRAINER_R208_ARTIST_WILLIAM",
             "initial_dir": 3,
             "data": [
                 4

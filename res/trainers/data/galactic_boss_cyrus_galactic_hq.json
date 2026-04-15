@@ -1,10 +1,7 @@
 {
     "name": "Cyrus",
     "class": "TRAINER_CLASS_GALACTIC_BOSS",
-    "items": [
-        "ITEM_HYPER_POTION",
-        "ITEM_FULL_RESTORE"
-    ],
+    "items": [],
     "ai_flags": [
         "AI_FLAG_BASIC",
         "AI_FLAG_EVAL_ATTACK",

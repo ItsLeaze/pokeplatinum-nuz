@@ -82,7 +82,7 @@
             "movement_type": "MOVEMENT_TYPE_LOOK_SOUTH",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
-            "script": "TRAINER_TWINS_TERI_AND_TIA",
+            "script": "TRAINER_R210S_TWINS_TERI_AND_TIA",
             "double_battle_id": 2,
             "initial_dir": 1,
             "data": [
@@ -100,7 +100,7 @@
             "movement_type": "MOVEMENT_TYPE_LOOK_SOUTH",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
-            "script": "TRAINER_TWINS_TERI_AND_TIA",
+            "script": "TRAINER_R210S_TWINS_TERI_AND_TIA",
             "double_battle_id": 1,
             "initial_dir": 1,
             "data": [
@@ -152,7 +152,7 @@
             "movement_type": "MOVEMENT_TYPE_LOOK_WEST",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
-            "script": "TRAINER_BREEDER_KAHLIL",
+            "script": "TRAINER_R210S_BREEDER_KAHLIL",
             "initial_dir": 2,
             "data": [
                 2
@@ -169,7 +169,7 @@
             "movement_type": "MOVEMENT_TYPE_LOOK_SOUTH_AND_WEST",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
-            "script": "TRAINER_BREEDER_AMBER",
+            "script": "TRAINER_R210S_BREEDER_AMBER",
             "initial_dir": 1,
             "data": [
                 3

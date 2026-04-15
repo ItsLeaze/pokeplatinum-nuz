@@ -1,9 +1,7 @@
 {
     "name": "Rebecca",
     "class": "TRAINER_CLASS_SOCIALITE",
-    "items": [
-        "ITEM_FULL_RESTORE"
-    ],
+    "items": [],
     "ai_flags": [
         "AI_FLAG_BASIC"
     ],

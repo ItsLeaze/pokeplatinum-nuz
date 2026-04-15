@@ -1,9 +1,7 @@
 {
     "name": "Trey",
     "class": "TRAINER_CLASS_RICH_BOY",
-    "items": [
-        "ITEM_FULL_RESTORE"
-    ],
+    "items": [],
     "ai_flags": [
         "AI_FLAG_BASIC"
     ],

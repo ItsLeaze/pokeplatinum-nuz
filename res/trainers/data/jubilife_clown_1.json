@@ -1,0 +1,23 @@
+{
+    "name": "Jasper",
+    "class": "TRAINER_CLASS_CLOWN",
+    "items": [],
+    "ai_flags": [
+        "AI_FLAG_EXPERT"
+    ],
+    "double_battle": false,
+    "party": [
+        {
+            "species": "SPECIES_TOGEPI",
+            "form": 0,
+            "level": 10,
+            "item": "ITEM_QUICK_CLAW",
+            "moves": [
+                "MOVE_METRONOME"
+            ],
+            "iv_scale": 255,
+            "ball_seal": 0
+        }
+    ],
+    "messages": []
+}

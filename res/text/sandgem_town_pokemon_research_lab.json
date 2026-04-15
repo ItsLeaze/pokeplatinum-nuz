@@ -4,17 +4,13 @@
     {
       "id": "SandgemTownLab_Text_LetsHaveALookAtYourPokemon",
       "en_US": [
-        "Professor: Well, well, look who’s here.\r",
-        "{STRVAR_1 3, 0, 0}, was it?\n",
+        "Professor: Well, well, look who’s here.\n",
         "Let’s have a look at your Pokémon.\r"
       ]
     },
     {
       "id": "SandgemTownLab_Text_ThisPokemonSeemstoBeRatherHappy",
       "en_US": [
-        "...\r",
-        "Hmm...\n",
-        "I see...\r",
         "This Pokémon seems to be rather\n",
         "happy.\r"
       ]
@@ -38,8 +34,7 @@
     {
       "id": "SandgemTownLab_Text_WouldYouLikeToGiveItANickname",
       "en_US": [
-        "Professor: Well, would you like to give\n",
-        "it a nickname?"
+        "Professor: Let’s give it a name.\r"
       ]
     },
     {
@@ -147,13 +142,11 @@
     {
       "id": "SandgemTownLab_Text_MeetEveryKindOfPokemonInThisRegion",
       "en_US": [
-        "Rowan: That Pokédex is a very\n",
-        "high-tech device.\r",
-        "It will automatically record data on\n",
-        "every kind of Pokémon you encounter.\r",
-        "{STRVAR_1 3, 0, 0}, I ask that you go\n",
-        "everywhere and meet every kind of\f",
-        "Pokémon in this region!\r"
+        "Rowan: There’s one more thing I want\n",
+        "you to have.\r",
+        "The Mobile Box allows you to access\n",
+        "your Pokemon Storage System from\r",
+        "almost anywhere.\r"
       ]
     },
     {
@@ -170,15 +163,6 @@
     {
       "id": "SandgemTownLab_Text_YourGrandAdventureBeginsRightNow",
       "en_US": [
-        "Rowan: When you walked up Route 201\n",
-        "with your Pokémon, what did you feel?\r",
-        "I’ve lived for 60 long years.\n",
-        "Even now, I get a thrill when\r",
-        "I’m with a Pokémon.\r",
-        "Now, you should know that there are\n",
-        "countless Pokémon in this world.\r",
-        "That means there are just as many\n",
-        "thrills waiting for you out there!\r",
         "Now go!\r",
         "{STRVAR_1 3, 0, 0}, your grand adventure\n",
         "begins right now!\r"
@@ -195,30 +179,15 @@
     {
       "id": "SandgemTownLab_Text_DawnIllBeHappyToTeachYouThings",
       "en_US": [
-        "Dawn: The Pokémon that I met for\n",
-        "the first time was {STRVAR_1 0, 1, 0}!\r",
-        "If you would have chosen {STRVAR_1 0, 1, 0}\n",
-        "on Route 201, we’d have the same\f",
-        "Pokémon now!\r",
-        "Not that it matters, but...\r",
-        "Anyway, I’m Dawn.\r",
-        "I also help the professor add pages\n",
-        "to the Pokédex.\r",
-        "So, in a sense, I’m just like you.\r",
-        "I just got a little head start on you,\n",
-        "that’s all.\r",
-        "I’ll be happy to teach you things.\n",
-        "Glad to meet you, {STRVAR_1 3, 0, 0}!\r"
+        "Dawn: Meet me on Route 202.\n",
+        "And use your Cap Candy before!\r"
       ]
     },
     {
       "id": "SandgemTownLab_Text_LucasIllTeachYouStuffLater",
       "en_US": [
-        "Lucas: The professor asked me to help,\n",
-        "so I’m filling the Pokédex pages, too.\r",
-        "That makes us comrades working toward\n",
-        "the same goal.\r",
-        "I’ll teach you stuff later, OK?\r"
+        "Lucas: Meet me on Route 202.\n",
+        "And use your Cap Candy before!\r"
       ]
     },
     {

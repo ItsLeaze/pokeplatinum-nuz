@@ -8,10 +8,9 @@
     {
       "id": "TwinleafTown_Text_GoingToSeeProfRowan",
       "en_US": [
-        "{STRVAR_1 3, 0, 0}: What was that about?!\r",
         "Oh, hey, {STRVAR_1 3, 1, 0}!\r",
-        "Hey! I’m going to see Prof. Rowan!\n",
-        "You should come, too! And quickly!\r"
+        "Last one in Sandgem Town has to\n",
+        "listen to Prof. Rowan’s monologue!\r"
       ]
     },
     {

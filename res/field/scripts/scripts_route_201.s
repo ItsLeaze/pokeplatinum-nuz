@@ -130,9 +130,7 @@ Route201_GoIntoTallGrass:
     End
 
 Route201_WeStillLovePokemon:
-    Message Route201_Text_ItWorriesMeWhatPeopleWouldDo
     BufferRivalName 0
-    Message Route201_Text_GiveAPokemonToMyFriendHere
     Message Route201_Text_IWillEntrustYouWithPokemon
     CloseMessage
     ApplyMovement LOCALID_PROF_ROWAN, Route201_Movement_ProfRowanLookAround
@@ -155,11 +153,7 @@ Route201_DawnBringBriefcase:
     ClearFlag FLAG_HIDE_ROUTE_201_BRIEFCASE
     AddObject LOCALID_BRIEFCASE
     WaitTime 15, VAR_RESULT
-    Message Route201_Text_OhIsSomethingWrongHere
     Message Route201_Text_ThereItIsNiceWorkDawn
-    ApplyMovement LOCALID_COUNTERPART, Route201_Movement_CounterpartWalkOnSpotEast
-    WaitMovement
-    Message Route201_Text_DawnThosePokemonAreHardToReplace
     GoTo Route201_GoOnChoosePokemon
     End
 
@@ -169,7 +163,6 @@ Route201_LucasBringBriefcase:
     ClearFlag FLAG_HIDE_ROUTE_201_BRIEFCASE
     AddObject LOCALID_BRIEFCASE
     WaitTime 15, VAR_RESULT
-    Message Route201_Text_IsSomethingWrongHere
     Message Route201_Text_ThereItIsNiceWorkLucas
     ApplyMovement LOCALID_COUNTERPART, Route201_Movement_CounterpartWalkOnSpotEast
     WaitMovement
@@ -178,15 +171,10 @@ Route201_LucasBringBriefcase:
     End
 
 Route201_GoOnChoosePokemon:
-    Message Route201_Text_PeopleShouldMeetPokemon
-    CloseMessage
     ApplyMovement LOCALID_PROF_ROWAN, Route201_Movement_ProfRowanFacePlayerEast
     WaitMovement
     WaitTime 15, VAR_RESULT
     Message Route201_Text_GoOnChooseAPokemon
-    BufferPlayerName 1
-    Message Route201_Text_YouCanChooseFirst
-    WaitButton
     CloseMessage
     Common_FadeToDefaultMusic
     SetObjectEventMovementType LOCALID_RIVAL, MOVEMENT_TYPE_LOOK_WEST
@@ -214,17 +202,24 @@ Route201_Briefcase:
     BufferRivalName 0
     BufferRivalStarterSpeciesName 2
     Message Route201_Text_ImPickingThisStarter
+    GivePokedex
+    SetFlag FLAG_HAS_POKEDEX
+    BufferPlayerName 0
     Message Route201_Text_IHopeYoullDoWellTogether
-    Message Route201_Text_ComeSeeMeInSandgemTown
-    SetVar VAR_0x8004, ITEM_MOBILE_BOX
-    SetVar VAR_0x8005, 1
-    Common_GiveItemQuantity
+    PlayFanfare SEQ_FANFA4
+    WaitFanfare
+    Message Route201_Text_DawnWaitForMe
     SetVar VAR_0x8004, ITEM_CAP_CANDY
     SetVar VAR_0x8005, 1
     Common_GiveItemQuantity
+    Message Route201_Text_DawnPleaseLetMePass
     SetVar VAR_0x8004, ITEM_POKE_BALL
     SetVar VAR_0x8005, 100
     Common_GiveItemQuantity
+    SetVar VAR_0x8004, ITEM_REPEL
+    SetVar VAR_0x8005, 100
+    Common_GiveItemQuantity
+    Message Route201_Text_ComeSeeMeInSandgemTown
     CloseMessage
     ApplyMovement LOCALID_COUNTERPART, Route201_Movement_CounterpartLeave
     ApplyMovement LOCALID_PROF_ROWAN, Route201_Movement_ProfRowanLeave
@@ -248,7 +243,7 @@ KantoStarterSelection:
     FadeScreen 6, 1, 1, 0
     WaitFadeScreen
     GetChosenBriefcaseSpecies VAR_0x8000
-    GivePokemon VAR_0x8000, 5, ITEM_NONE, VAR_RESULT
+    GivePokemon VAR_0x8000, 10, ITEM_NONE, VAR_RESULT
     GoToIfEq VAR_RESULT TRUE SetKantoStarterAcquired
     End
 

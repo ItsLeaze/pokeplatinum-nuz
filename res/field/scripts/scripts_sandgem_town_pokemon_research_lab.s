@@ -134,8 +134,6 @@ SandgemTownLab_OnFrameGetPokedex:
     BufferPlayerName 0
     Message SandgemTownLab_Text_LetsHaveALookAtYourPokemon
     CloseMessage
-    SetPlayerState PLAYER_TRANSITION_HEALING
-    ChangePlayerState
     ApplyMovement LOCALID_PLAYER, SandgemTownLab_Movement_PlayerGive
     WaitMovement
     SetVar VAR_0x8004, 0
@@ -158,13 +156,8 @@ SandgemTownLab_WouldYouLikeToGiveItANickname:
     CloseMessage
     ApplyMovement LOCALID_PLAYER, SandgemTownLab_Movement_PlayerReceive
     WaitMovement
-    SetPlayerState PLAYER_TRANSITION_WALKING
-    ChangePlayerState
     BufferPartyMonSpecies 0, 0
-    Message SandgemTownLab_Text_EntrustingYouWithThatStarterWasNoMistake
     Message SandgemTownLab_Text_WouldYouLikeToGiveItANickname
-    ShowYesNoMenu VAR_RESULT
-    GoToIfEq VAR_RESULT, MENU_NO, SandgemTownLab_CherishThatStarterOfYours
     GoTo SandgemTownLab_NicknameStarter
     End
 
@@ -178,7 +171,7 @@ SandgemTownLab_NicknameStarter:
     FadeScreenIn
     WaitFadeScreen
     CallIfNe VAR_0x8002, 1, SandgemTownLab_IncrementRecordPokemonNicknamed
-    GoTo SandgemTownLab_CherishThatStarterOfYours
+    GoTo SandgemTownLab_YourGrandAdventureBeginsRightNow
     End
 
 SandgemTownLab_IncrementRecordPokemonNicknamed:
@@ -186,10 +179,6 @@ SandgemTownLab_IncrementRecordPokemonNicknamed:
     Return
 
 SandgemTownLab_CherishThatStarterOfYours:
-    BufferPartyMonSpecies 0, 0
-    BufferRivalName 1
-    Message SandgemTownLab_Text_CherishThatStarterOfYours
-    CloseMessage
     ApplyMovement LOCALID_COUNTERPART, SandgemTownLab_Movement_CounterpartWalkOnSpotWest
     WaitMovement
     ApplyMovement LOCALID_PLAYER, SandgemTownLab_Movement_PlayerFaceCounterpart
@@ -262,6 +251,11 @@ SandgemTownLab_LucasIveGotTheSameKindOfPokedex:
     End
 
 SandgemTownLab_YourGrandAdventureBeginsRightNow:
+    SetFlag FLAG_ALT_MUSIC_ROWANS_LAB
+    Message SandgemTownLab_Text_MeetEveryKindOfPokemonInThisRegion
+    SetVar VAR_0x8004, ITEM_MOBILE_BOX
+    SetVar VAR_0x8005, 1
+    Common_GiveItemQuantity
     BufferPlayerName 0
     Message SandgemTownLab_Text_YourGrandAdventureBeginsRightNow
     CloseMessage
@@ -294,8 +288,9 @@ SandgemTownLab_CounterpartLeave:
     ApplyMovement LOCALID_COUNTERPART, SandgemTownLab_Movement_CounterpartLeave
     WaitMovement
     RemoveObject LOCALID_COUNTERPART
-    ClearFlag FLAG_HIDE_SANDGEM_TOWN_COUNTERPART
     SetVar VAR_SANDGEM_TOWN_LAB_STATE, 1
+    ClearFlag FLAG_HIDE_SANDGEM_TOWN_PROF_ROWAN
+    SetVar VAR_SANDGEM_TOWN_STATE, 2
     ReleaseAll
     End
 

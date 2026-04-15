@@ -5,7 +5,9 @@
       "id": "JubilifeCity_Text_DawnAreYouCatchingPokemon",
       "en_US": [
         "Dawn: Hi, {STRVAR_1 3, 1, 0}!\n",
-        "Are you catching Pokémon?\r"
+        "Hope your battles went well!\r",
+        "Let me show you the Pokemon\n",
+        "School of Jubilife City!\r"
       ]
     },
     {
@@ -42,7 +44,9 @@
       "id": "JubilifeCity_Text_LucasHowManyPokemonhaveYouCaught",
       "en_US": [
         "Lucas: Hey, {STRVAR_1 3, 1, 0}!\n",
-        "How many Pokémon have you caught?\r"
+        "Hope your battles went well!\r",
+        "Let me show you the Pokemon\n",
+        "School of Jubilife City!\r"
       ]
     },
     {
@@ -103,9 +107,8 @@
     {
       "id": "JubilifeCity_Text_HowDidYouUnmaskMe",
       "en_US": [
-        "Mysterious man: ...How did you know?\r",
-        "How did you unmask me as a member of\n",
-        "the International Police?!\r"
+        "Mysterious man: ...How did you know\n",
+        "I’m an undercover investiagtor?!\r"
       ]
     },
     {
@@ -139,16 +142,8 @@
     {
       "id": "JubilifeCity_Text_IsTheSayingDontBeAThiefFamiliarToYou",
       "en_US": [
-        "Now that my cover has been blown, let\n",
-        "me introduce myself.\r",
-        "I am a globe-trotting elite of the\n",
-        "International Police.\r",
-        "My name... Ah, no, I shall inform you\n",
-        "only of my code name.\r",
-        "My code name, it is Looker.\n",
-        "It is what they all call me.\r",
-        "Incidentally, is the saying, “Don’t be\n",
-        "a thief!” familiar to you?"
+        "Shady man: My code name, it is Looker.\n",
+        "It is what they all call me.\r"
       ]
     },
     {
@@ -172,26 +167,17 @@
     {
       "id": "JubilifeCity_Text_PerhapsYouCanMakeUseOfThis",
       "en_US": [
-        "Unfortunately, there are apparently\n",
-        "those who do not heed those words.\r",
-        "In Sinnoh, in fact, there are criminals\n",
-        "stealing the Pokémon of others.\r",
-        "I have, therefore, been on the lookout\n",
-        "for characters arousing my suspicion.\r",
         "Incidentally, you are Trainers, yes?\n",
-        "Perhaps you can make use of this?\r"
+        "Perhaps you can make use of these?\r"
       ]
     },
     {
       "id": "JubilifeCity_Text_ThatVsRecorderItIsANiftyDeviceForRecordingAMatch",
       "en_US": [
-        "That Vs. Recorder, it is a nifty device\n",
-        "for recording a match.\r",
-        "I obtained it because it is quite popular\n",
-        "these days.\r",
-        "But myself, I do not do Pokémon\n",
-        "battling very often.\r",
-        "It will be in better hands with you.\r"
+        "I got these as a gift, but have no\n",
+        "use for them.\r",
+        "Myself, I do not do Pokémon\n",
+        "battling very often.\r"
       ]
     },
     {
@@ -203,23 +189,20 @@
         "...Actually, yes, yes, you may speak to\n",
         "me. You must.\r",
         "Not because I am lonely, no, no!\n",
-        "You must inform me of bad guys!\f",
         "You must inform me of any happenings!\r"
       ]
     },
     {
       "id": "JubilifeCity_Text_DawnWorkingForTheInternationPoliceMustBeHard",
       "en_US": [
-        "Dawn: ...Working for the International\n",
-        "Police must be hard.\r"
+        "Dawn: Anyway...\r"
       ]
     },
     {
       "id": "JubilifeCity_Text_DawnHereItIsItsTheTrainersSchool",
       "en_US": [
         "{STRVAR_1 3, 0, 0}, here it is.\n",
-        "It’s the Trainers’ School.\f",
-        "The name says it all!\r"
+        "It’s the Trainers’ School.\r"
       ]
     },
     {
@@ -366,20 +349,14 @@
       "en_US": [
         "Oh, oh, oh?\r",
         "You call yourself a Pokémon Trainer?\n",
-        "And yet you have no Pokétch?\r",
-        "That is, Pokémon Watch, or Pokétch\n",
-        "for short!\r",
-        "Oh my, you are a rare case\n",
-        "indeed!\r"
+        "And yet you have no Pokétch?\r"
       ]
     },
     {
       "id": "JubilifeCity_Text_AllYouHaveToDoIsFindThreeClownsInJubilifeCity",
       "en_US": [
-        "You see, I invented, and now\n",
-        "manufacture, Pokétches.\r",
-        "Not only that, I’m now conducting\n",
-        "the Pokétch promotional campaign!\r",
+        "You see, I invented Pokétches and\n",
+        "want you to have one too!\r",
         "All you have to do is find three\n",
         "clowns in Jubilife City.\r",
         "If you can find them...\n",
@@ -391,10 +368,6 @@
       "en_US": [
         "The three clowns will each ask you\n",
         "a skill-testing question.\r",
-        "The questions will all have to do\n",
-        "with Pokémon.\r",
-        "After all, a Pokétch is a tool for\n",
-        "Pokémon Trainers.\r",
         "Collect a Coupon from each clown,\n",
         "then come see me, OK?"
       ]
@@ -403,12 +376,10 @@
       "id": "JubilifeCity_Text_InReturnForTheseCouponsIPresentYouThisPokemonWatch",
       "en_US": [
         "OK, let me count your Coupons!\n",
-        "I’ll use the Pokétch here...\r",
-        "One, two, three!\n",
+        "One, two, three!\r",
         "Bravo! I say, bravo!\r",
         "In return for these Coupons,\n",
-        "I present you this Pokémon Watch,\f",
-        "or Pokétch for short!\r"
+        "I present you this Pokétch!\r"
       ]
     },
     {
@@ -437,7 +408,9 @@
       "id": "JubilifeCity_Text_DingDingYoureAbsolutelyCorrect1",
       "en_US": [
         "Ding-ding!\n",
-        "You’re absolutely correct!\r"
+        "You’re absolutely correct!\r",
+        "But did you really understand?\n",
+        "Show me!\r"
       ]
     },
     {
@@ -460,7 +433,7 @@
     {
       "id": "JubilifeCity_Text_HereYouGoYourPoketchCoupon1",
       "en_US": [
-        "Here you go!\n",
+        "Seems like you got it!\n",
         "Your Pokétch Coupon!\r"
       ]
     },
@@ -487,7 +460,9 @@
       "id": "JubilifeCity_Text_DingDingYoureAbsolutelyCorrect2",
       "en_US": [
         "Ding-ding!\n",
-        "You’re absolutely correct!\r"
+        "You’re absolutely correct!\r",
+        "But did you really understand?\n",
+        "Show me!\r"
       ]
     },
     {
@@ -508,7 +483,7 @@
     {
       "id": "JubilifeCity_Text_HereYouGoYourPoketchCoupon2",
       "en_US": [
-        "Here you go!\n",
+        "Seems like you got it!\n",
         "Your Pokétch Coupon!\r"
       ]
     },
@@ -532,7 +507,9 @@
       "id": "JubilifeCity_Text_DingDingYoureAbsolutelyCorrect3",
       "en_US": [
         "Ding-ding!\n",
-        "You’re absolutely correct!\r"
+        "You’re absolutely correct!\r",
+        "But did you really understand?\n",
+        "Show me!\r"
       ]
     },
     {
@@ -555,7 +532,7 @@
     {
       "id": "JubilifeCity_Text_HereYouGoYourPoketchCoupon3",
       "en_US": [
-        "Here you go!\n",
+        "Seems like you got it!\n",
         "Your Pokétch Coupon!\r"
       ]
     },
@@ -821,8 +798,8 @@
     {
       "id": "JubilifeCity_Text_WhenYouWalkWithYourPokemonTheyGraduallyGrowFriendlier",
       "en_US": [
-        "When you walk with your Pokémon,\n",
-        "they gradually grow friendlier."
+        "I’m sorry, me and my kids are\n",
+        "gone any second now."
       ]
     },
     {
@@ -896,15 +873,15 @@
     },
     {
       "id": "JubilifeCity_Text_ImTradingPokemonWithMyBuddy",
-      "en_US": "I’m trading Pokémon with my buddy!"
+      "en_US": [
+        "One more minute, we’re battling!"
+      ]
     },
     {
       "id": "JubilifeCity_TextIMadeMyPokemonHoldAnItemBeforeTradingIt",
       "en_US": [
-        "I made my Pokémon hold an item before\n",
-        "trading it.\r",
-        "That will make the other Trainer\n",
-        "double happy!"
+        "I can’t stop right now, I have to\n",
+        "finish this battle!"
       ]
     },
     {

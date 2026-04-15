@@ -6,13 +6,7 @@
       "en_US": [
         "{STRVAR_1 3, 1, 0}: Hey, {STRVAR_1 3, 0, 0}!\n",
         "Did you come to study, too?\r",
-        "I went ahead and memorized everything\n",
-        "that was up on the blackboard.\r",
-        "After all, it’s the Trainer’s job to\n",
-        "avoid having their precious Pokémon\f",
-        "hurt in battle, right?\r",
-        "So, {STRVAR_1 3, 0, 0}, what brings you?\n",
-        "Huh?\f",
+        "Huh?\n",
         "You’ve got something for me?\r"
       ]
     },
@@ -39,11 +33,14 @@
         "Well, according to the Town Map,\n",
         "I guess Oreburgh City is where\f",
         "I should be going next.\r",
-        "There’s a Gym, so it’d be perfect for\n",
-        "raising the Pokémon I just caught.\r",
-        "Well, I’m on the road to becoming\n",
+        "I’m on the road to becoming\n",
         "the greatest Trainer of all time!\r",
-        "See you around!\r"
+        "See you around!\r",
+        "...\r",
+        "Oh, by the way, they let us choose\n",
+        "another Pokemon in today’s class.\r",
+        "Since you were too late, only the\n",
+        "three in that briefcase are left.\r"
       ]
     },
     {

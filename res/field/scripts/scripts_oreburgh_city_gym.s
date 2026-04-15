@@ -1,5 +1,6 @@
 #include "macros/scrcmd.inc"
 #include "res/text/bank/oreburgh_city_gym.h"
+#include "res/field/events/events_oreburgh_city_gym.h"
 
 
     ScriptEntry OreburghGym_Roark
@@ -38,6 +39,7 @@ OreburghGym_Roark:
     ClearFlag FLAG_HIDE_JUBILIFE_CITY_COUNTERPART
     ClearFlag FLAG_HIDE_JUBILIFE_ROWAN
     ClearFlag FLAG_HIDE_JUBILIFE_GALACTIC_GRUNTS
+    SetFlag VAR_JUBILIFE_NORTH_OPEN
     SetFlag FLAG_HIDE_SANDGEM_TOWN_LAB_PROF_ROWAN
     Message OreburghGym_Text_RoarkExplainCoalBadge
     GoTo OreburghGym_RoarkGiveTM76

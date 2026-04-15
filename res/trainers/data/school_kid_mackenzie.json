@@ -1,9 +1,7 @@
 {
     "name": "Mackenzie",
     "class": "TRAINER_CLASS_SCHOOL_KID_FEMALE",
-    "items": [
-        "ITEM_SUPER_POTION"
-    ],
+    "items": [],
     "ai_flags": [
         "AI_FLAG_BASIC",
         "AI_FLAG_EXPERT"

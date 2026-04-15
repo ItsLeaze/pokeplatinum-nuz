@@ -4,52 +4,52 @@
         {
             "id": "LOCALID_YOUNGSTER_SEBASTIAN",
             "graphics_id": "OBJ_EVENT_GFX_YOUNGSTER",
-            "movement_type": "MOVEMENT_TYPE_LOOK_WEST",
+            "movement_type": "MOVEMENT_TYPE_LOOK_EAST",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
             "script": "TRAINER_YOUNGSTER_SEBASTIAN",
             "initial_dir": 2,
             "data": [
-                5
+                6
             ],
             "movement_range_x": 0,
             "movement_range_z": 0,
-            "x": 234,
-            "z": 757,
+            "x": 235,
+            "z": 759,
             "y": 0
         },
         {
             "id": "LOCALID_YOUNGSTER_MICHAEL",
             "graphics_id": "OBJ_EVENT_GFX_YOUNGSTER",
-            "movement_type": "MOVEMENT_TYPE_LOOK_WEST",
+            "movement_type": "MOVEMENT_TYPE_LOOK_SOUTH",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
-            "script": "TRAINER_YOUNGSTER_MICHAEL",
+            "script": "TRAINER_R203_YOUNGSTER_MICHAEL",
             "initial_dir": 2,
             "data": [
-                2
+                4
             ],
             "movement_range_x": 0,
             "movement_range_z": 0,
-            "x": 204,
-            "z": 750,
+            "x": 215,
+            "z": 756,
             "y": 1
         },
         {
             "id": "LOCALID_LASS_KAITLIN",
             "graphics_id": "OBJ_EVENT_GFX_LASS",
-            "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+            "movement_type": "MOVEMENT_TYPE_LOOK_NORTH",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
             "script": "TRAINER_LASS_KAITLIN",
             "initial_dir": 0,
             "data": [
-                1
+                4
             ],
             "movement_range_x": 1,
             "movement_range_z": 1,
-            "x": 243,
-            "z": 757,
+            "x": 242,
+            "z": 759,
             "y": 0
         },
         {
@@ -61,12 +61,12 @@
             "script": "TRAINER_YOUNGSTER_DALLAS",
             "initial_dir": 1,
             "data": [
-                4
+                3
             ],
             "movement_range_x": 0,
             "movement_range_z": 0,
-            "x": 222,
-            "z": 756,
+            "x": 226,
+            "z": 755,
             "y": 4
         },
         {
@@ -78,12 +78,12 @@
             "script": "TRAINER_LASS_MADELINE",
             "initial_dir": 1,
             "data": [
-                5
+                4
             ],
             "movement_range_x": 0,
             "movement_range_z": 0,
-            "x": 240,
-            "z": 748,
+            "x": 242,
+            "z": 755,
             "y": 1
         },
         {

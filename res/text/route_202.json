@@ -25,41 +25,23 @@
     {
       "id": "Route202_Text_DawnIHaventShownYouHowToCatchAPokemon",
       "en_US": [
-        "Dawn: Oh, that’s right!\r",
-        "{STRVAR_1 3, 1, 0}, I haven’t shown you\n",
-        "how to catch a Pokémon.\r",
-        "I’ll demonstrate how to catch \n",
-        "one, so just watch me, OK?\r"
+        "Dawn: Ready for your first battle?\n",
+        "I hope you leveled your Pokemon!\r"
       ]
     },
     {
       "id": "Route202_Text_DawnToGetYouStartedIllGiveYouFivePokeBalls",
       "en_US": [
-        "Dawn: Giggle...\n",
-        "See? Isn’t it neat?\r",
-        "Actually, it’s better to lower your\n",
-        "target’s HP more than I did.\r",
-        "It’s important to get the Pokémon’s\n",
-        "HP down as low as possible.\r",
-        "This is because a healthy Pokémon\n",
-        "is very difficult to catch.\r",
-        "Oh, Pokémon also get easier to catch\n",
-        "if you make them sleep or something\f",
-        "by using a Pokémon’s move.\r",
-        "OK, {STRVAR_1 3, 0, 0}, to get you\n",
-        "started, I’ll give you five\f",
-        "Poké Balls!\r"
+        "Dawn: Wow, I’m impressed!\n",
+        "Next time I wont go easy on you!\r",
+        "Your opponents may even put items on\n",
+        "their Pokemon. Have these for a start.\r"
       ]
     },
     {
       "id": "Route202_Text_DawnByeNow",
       "en_US": [
-        "If you have lots of Pokémon with you,\n",
-        "it will be safer on long trips.\r",
-        "Plus, it will be a lot more fun\n",
-        "having your Pokémon friends along.\r",
-        "OK, I need to get going.\n",
-        "Bye, now!\r"
+        "See you around!\r"
       ]
     },
     {
@@ -87,36 +69,22 @@
     {
       "id": "Route202_Text_LucasDoYouKnowHowToCatchAPokemon",
       "en_US": [
-        "Lucas: {STRVAR_1 3, 1, 0}, do you know\n",
-        "how to catch a Pokémon?\r",
-        "I’ll demonstrate how to catch\n",
-        "one, so just watch, OK?\r"
+        "Lucas: Ready for your first battle?\n",
+        "I hope you leveled your Pokemon!\r"
       ]
     },
     {
       "id": "Route202_Text_LucasHereIllGiveYouFivePokeballsToGetYouStarted",
       "en_US": [
-        "Lucas: And that’s how it’s done.\r",
-        "Actually, I should have lowered the\n",
-        "target’s HP some more.\r",
-        "Yup, the important thing is to lower\n",
-        "the Pokémon’s HP as much as possible.\r",
-        "See, a healthy Pokémon isn’t easy to\n",
-        "catch.\r",
-        "Oh, yeah. They also get easier to\n",
-        "catch if you make one of your\f",
-        "Pokémon put them to sleep or such.\r",
-        "Here, {STRVAR_1 3, 0, 0}, I’ll give you\n",
-        "five Poké Balls to get you started.\r"
+        "Lucas: Wow, I’m impressed!\n",
+        "Next time I wont go easy on you!\r",
+        "Your opponents may even put items on\n",
+        "their Pokemon. Have these for a start.\r"
       ]
     },
     {
       "id": "Route202_Text_LucasSeeYouAround",
       "en_US": [
-        "If you have lots of Pokémon with you,\n",
-        "you’ll be able to travel farther.\r",
-        "That way, you’ll have a better shot\n",
-        "at meeting more Pokémon.\r",
         "See you around!\r"
       ]
     },

@@ -103,18 +103,10 @@ JubilifeCity_MeetLookerWithDawn:
     BufferCounterpartName 0
     BufferPlayerName 1
     Message JubilifeCity_Text_DawnAreYouCatchingPokemon
-    GetPartyCount VAR_RESULT
-    BufferNumber 0, VAR_RESULT
-    CallIfGe VAR_RESULT, 4, JubilifeCity_DawnAtLeastFourPokemon
-    CallIfLe VAR_RESULT, 3, JubilifeCity_DawnLessThanFourPokemon
-    BufferPlayerName 0
-    BufferRivalName 1
-    Message JubilifeCity_Text_DawnFollowMe
     Call JubilifeCity_PlayerAndCounterpartWalkNorth
     Message JubilifeCity_Text_DawnThatManWhatIsHeDoing
     CloseMessage
     Call JubilifeCity_LookerWalkAround
-    Message JubilifeCity_Text_DawnUm
     Call JubilifeCity_LookerNoticePlayerAndCounterpart
     Message JubilifeCity_Text_DawnIWasJustMakingConversation
     Call JubilifeCity_IsTheSayingDontBeAThiefFamiliarToYou
@@ -145,18 +137,10 @@ JubilifeCity_MeetLookerWithLucas:
     BufferCounterpartName 0
     BufferPlayerName 1
     Message JubilifeCity_Text_LucasHowManyPokemonhaveYouCaught
-    GetPartyCount VAR_RESULT
-    BufferNumber 0, VAR_RESULT
-    CallIfGe VAR_RESULT, 4, JubilifeCity_LucasAtLeastFourPokemon
-    CallIfLe VAR_RESULT, 3, JubilifeCity_LucasLessThanFourPokemon
-    BufferPlayerName 0
-    BufferRivalName 1
-    Message JubilifeCity_Text_LucasFollowMe
     Call JubilifeCity_PlayerAndCounterpartWalkNorth
     Message JubilifeCity_Text_LucasThatGuyWhatsHeDoing
     CloseMessage
     Call JubilifeCity_LookerWalkAround
-    Message JubilifeCity_Text_LucasUhExcuse
     Call JubilifeCity_LookerNoticePlayerAndCounterpart
     Message JubilifeCity_Text_LucasIWasJustMakingSmallTalk
     Call JubilifeCity_IsTheSayingDontBeAThiefFamiliarToYou
@@ -239,11 +223,8 @@ JubilifeCity_LookerNoticePlayerAndCounterpart:
     Return
 
 JubilifeCity_IsTheSayingDontBeAThiefFamiliarToYou:
-    Message JubilifeCity_Text_IKnowBetterNotToBelieveThat
     Message JubilifeCity_Text_IsTheSayingDontBeAThiefFamiliarToYou
-    ShowYesNoMenu VAR_RESULT
-    GoToIfEq VAR_RESULT, MENU_YES, JubilifeCity_TakingWhatBelongsToOthersIsWrong
-    GoToIfEq VAR_RESULT, MENU_NO, JubilifeCity_YouClaimToNotKnowIt
+    Return
     End
 
 JubilifeCity_TakingWhatBelongsToOthersIsWrong:
@@ -397,7 +378,6 @@ JubilifeCity_Movement_PlayerWatchLookerLeave:
     .balign 4, 0
 JubilifeCity_Movement_LookerWalkAround:
     WalkOnSpotFastWest
-    Delay8 2
     WalkOnSpotFastSouth
     Delay8
     WalkSlowWest
@@ -405,7 +385,6 @@ JubilifeCity_Movement_LookerWalkAround:
     WalkOnSpotFastEast
     Delay8
     WalkOnSpotFastNorth
-    Delay8
     EndMovement
 
     .balign 4, 0
@@ -1437,7 +1416,6 @@ JubilifeCity_GivePoketch:
     Message JubilifeCity_Text_PlayerReceivedAPoketch
     PlayFanfare SEQ_FANFA4
     WaitFanfare
-    Message JubilifeCity_Text_YouCanAddAppsToYourPoketch
     CloseMessage
     GetPlayerDir VAR_RESULT
     GoToIfEq VAR_RESULT, DIR_NORTH, JubilifeCity_PoketchCoPresidentLeaveNorthWestEast
@@ -1507,13 +1485,23 @@ JubilifeCity_Clown1:
 JubilifeCity_Clown1CorrectAnswer:
     PlaySE SEQ_SE_DP_PINPON
     Message JubilifeCity_Text_DingDingYoureAbsolutelyCorrect1
-    Message JubilifeCity_Text_PokemonGrowStrongerByDefeatingOtherPokemonInBattle
+    CloseMessage
+    StartTrainerBattle TRAINER_JUBILIFE_CLOWN_1
+    CheckWonBattle VAR_RESULT
+    GoToIfEq VAR_RESULT, FALSE, LostBattle
+    LockAll
+    FacePlayer
     Message JubilifeCity_Text_HereYouGoYourPoketchCoupon1
     SetVar VAR_0x8004, ITEM_COUPON_1
     SetVar VAR_0x8005, 1
     SetFlag FLAG_OBTAINED_COUPON_1
     Common_GiveItemQuantityNoLineFeed
     CloseMessage
+    ReleaseAll
+    End
+
+LostBattle:
+    BlackOutFromBattle
     ReleaseAll
     End
 
@@ -1546,7 +1534,12 @@ JubilifeCity_Clown2:
 JubilifeCity_Clown2CorrectAnswer:
     PlaySE SEQ_SE_DP_PINPON
     Message JubilifeCity_Text_DingDingYoureAbsolutelyCorrect2
-    Message JubilifeCity_Text_IfThePokemonsTypeMatchesItsMovesTypeThatMoveIsMadeMuchMorePowerful
+    CloseMessage
+    StartTrainerBattle TRAINER_JUBILIFE_CLOWN_2
+    CheckWonBattle VAR_RESULT
+    GoToIfEq VAR_RESULT, FALSE, LostBattle
+    LockAll
+    FacePlayer
     Message JubilifeCity_Text_HereYouGoYourPoketchCoupon2
     SetVar VAR_0x8004, ITEM_COUPON_2
     SetVar VAR_0x8005, 1
@@ -1586,7 +1579,12 @@ JubilifeCity_Clown3:
 JubilifeCity_Clown3CorrectAnswer:
     PlaySE SEQ_SE_DP_PINPON
     Message JubilifeCity_Text_DingDingYoureAbsolutelyCorrect3
-    Message JubilifeCity_Text_APokemonMayHoldASingleItem
+    CloseMessage
+    StartTrainerBattle TRAINER_JUBILIFE_CLOWN_3
+    CheckWonBattle VAR_RESULT
+    GoToIfEq VAR_RESULT, FALSE, LostBattle
+    LockAll
+    FacePlayer
     Message JubilifeCity_Text_HereYouGoYourPoketchCoupon3
     SetPosition LOCALID_POKETCH_CO_PRESIDENT, 174, 1, 771, DIR_SOUTH
     SetVar VAR_0x8004, ITEM_COUPON_3

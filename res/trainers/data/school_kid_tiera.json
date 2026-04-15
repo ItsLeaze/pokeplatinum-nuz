@@ -1,9 +1,7 @@
 {
     "name": "Tiera",
     "class": "TRAINER_CLASS_SCHOOL_KID_FEMALE",
-    "items": [
-        "ITEM_HYPER_POTION"
-    ],
+    "items": [],
     "ai_flags": [
         "AI_FLAG_BASIC",
         "AI_FLAG_EXPERT"

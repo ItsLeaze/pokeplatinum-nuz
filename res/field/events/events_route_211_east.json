@@ -16,7 +16,7 @@
             "movement_type": "MOVEMENT_TYPE_LOOK_EAST",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
-            "script": "TRAINER_BIRD_KEEPER_KATHERINE",
+            "script": "TRAINER_R211E_BIRD_KEEPER_KATHERINE",
             "initial_dir": 3,
             "data": [
                 2
@@ -33,7 +33,7 @@
             "movement_type": "MOVEMENT_TYPE_DISGUISE_ROCK",
             "trainer_type": "TRAINER_TYPE_VIEW_ALL_DIRECTIONS",
             "hidden_flag": "0",
-            "script": "TRAINER_NINJA_BOY_NICK",
+            "script": "TRAINER_R211E_NINJA_BOY_NICK",
             "initial_dir": 1,
             "data": [
                 1
@@ -50,7 +50,7 @@
             "movement_type": "MOVEMENT_TYPE_WALK_BACK_AND_FORTH",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
-            "script": "TRAINER_BLACK_BELT_SEAN",
+            "script": "TRAINER_R211E_BLACK_BELT_SEAN",
             "initial_dir": 3,
             "data": [
                 2

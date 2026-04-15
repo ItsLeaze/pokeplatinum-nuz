@@ -150,17 +150,8 @@ SandgemTown_WalkToPokemonResearchLabZ848:
 
 SandgemTown_ThisIsOurPokemonResearchLab:
     GetPlayerGender VAR_RESULT
-    GoToIfEq VAR_RESULT, GENDER_MALE, SandgemTown_DawnThisIsItOurPokemonResearchLab
-    GoToIfEq VAR_RESULT, GENDER_FEMALE, SandgemTown_LucasSeeThisIsIsOurPokemonResearchLab
+    GoTo SandgemTown_RivalExitLab
     End
-
-SandgemTown_DawnThisIsItOurPokemonResearchLab:
-    Message SandgemTown_Text_DawnThisIsItOurPokemonResearchLab
-    GoTo SandgemTown_RivalExitLab
-
-SandgemTown_LucasSeeThisIsIsOurPokemonResearchLab:
-    Message SandgemTown_Text_LucasSeeThisIsIsOurPokemonResearchLab
-    GoTo SandgemTown_RivalExitLab
 
 SandgemTown_RivalExitLab:
     LoadDoorAnimation 5, 26, 8, 10, ANIMATION_TAG_DOOR_1

@@ -1,12 +1,7 @@
 {
     "name": "Cynthia",
     "class": "TRAINER_CLASS_CHAMPION_CYNTHIA",
-    "items": [
-        "ITEM_FULL_RESTORE",
-        "ITEM_FULL_RESTORE",
-        "ITEM_FULL_RESTORE",
-        "ITEM_FULL_RESTORE"
-    ],
+    "items": [],
     "ai_flags": [
         "AI_FLAG_BASIC",
         "AI_FLAG_EVAL_ATTACK",

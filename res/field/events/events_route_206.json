@@ -24,7 +24,7 @@
             "movement_type": "MOVEMENT_TYPE_LOOK_EAST",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
-            "script": "TRAINER_CYCLIST_AXEL",
+            "script": "TRAINER_R206_CYCLIST_AXEL",
             "initial_dir": 3,
             "data": [
                 4
@@ -41,7 +41,7 @@
             "movement_type": "MOVEMENT_TYPE_LOOK_NORTH",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
-            "script": "TRAINER_CYCLIST_MEGAN",
+            "script": "TRAINER_R206_CYCLIST_MEGAN",
             "initial_dir": 0,
             "data": [
                 1
@@ -58,7 +58,7 @@
             "movement_type": "MOVEMENT_TYPE_LOOK_WEST",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
-            "script": "TRAINER_CYCLIST_JAMES",
+            "script": "TRAINER_R206_CYCLIST_JAMES",
             "initial_dir": 2,
             "data": [
                 5
@@ -75,7 +75,7 @@
             "movement_type": "MOVEMENT_TYPE_WALK_BACK_AND_FORTH",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
-            "script": "TRAINER_CYCLIST_NICOLE",
+            "script": "TRAINER_R206_CYCLIST_NICOLE",
             "initial_dir": 3,
             "data": [
                 2
@@ -92,7 +92,7 @@
             "movement_type": "MOVEMENT_TYPE_LOOK_EAST",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
-            "script": "TRAINER_CYCLIST_JOHN",
+            "script": "TRAINER_R206_CYCLIST_JOHN",
             "initial_dir": 3,
             "data": [
                 3
@@ -109,7 +109,7 @@
             "movement_type": "MOVEMENT_TYPE_LOOK_NORTH",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
-            "script": "TRAINER_CYCLIST_KAYLA",
+            "script": "TRAINER_R206_CYCLIST_KAYLA",
             "initial_dir": 0,
             "data": [
                 1
@@ -126,7 +126,7 @@
             "movement_type": "MOVEMENT_TYPE_LOOK_NORTH",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
-            "script": "TRAINER_CYCLIST_RYAN",
+            "script": "TRAINER_R206_CYCLIST_RYAN",
             "initial_dir": 0,
             "data": [
                 1
@@ -143,7 +143,7 @@
             "movement_type": "MOVEMENT_TYPE_LOOK_EAST",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
-            "script": "TRAINER_CYCLIST_RACHEL",
+            "script": "TRAINER_R206_CYCLIST_RACHEL",
             "initial_dir": 3,
             "data": [
                 3

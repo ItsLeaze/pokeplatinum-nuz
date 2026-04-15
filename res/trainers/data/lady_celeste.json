@@ -1,9 +1,7 @@
 {
     "name": "Celeste",
     "class": "TRAINER_CLASS_LADY",
-    "items": [
-        "ITEM_FULL_RESTORE"
-    ],
+    "items": [],
     "ai_flags": [
         "AI_FLAG_BASIC"
     ],
