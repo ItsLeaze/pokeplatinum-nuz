@@ -3512,21 +3512,21 @@ u8 GetLevelCap(TrainerInfo *info)
     case 0:
         return 16;
     case 1:
-        return 22;
+        return 24;
     case 2:
-        return 28;
+        return 30;
     case 3:
-        return 36;
+        return 38;
     case 4:
-        return 42;
+        return 44;
     case 5:
         return 50;
     case 6:
-        return 56;
+        return 60;
     case 7:
-        return 64;
-    case 8:
         return 70;
+    case 8:
+        return 80;
     default:
         return 100;
     }
