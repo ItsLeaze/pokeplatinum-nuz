@@ -2,42 +2,27 @@
   "key": 40315,
   "messages": [
     {
-      "id": "Route211East_Text_ImStrong",
+      "id": "Route211East_Text_TheyAreFilming",
       "en_US": [
-        "I’m strong!\n",
-        "I’m strong!\f",
-        "I’m strong!\f",
-        "I’m strong!\f",
-        "I’m strong!\f",
-        "I’m strong!\f",
-        "I’m strong!\f",
-        "I’m strong!\f",
-        "...Am I really?\f",
-        "No, I am strong!\f",
-        "I’m strong!\f",
-        "OK! I’m all good to go!\r"
+        "Sorry, we are filimng here.\n",
+        "You’ll have to go elsewhere for now."
       ]
     },
     {
-      "id": "Route211East_Text_YouStartledMe",
+      "id": "Route211East_Text_WeAreFilming",
       "en_US": [
-        "Wah!\n",
-        "You startled me good!\r",
-        "I think you’ll understand what I was\n",
-        "doing when you see this TM.\r"
+        "We are filming right now!\n",
+        "You’ll have to come back another time!"
       ]
     },
     {
-      "id": "Route211East_Text_ExplainPsychUp",
+      "id": "Route211East_Text_Gardenia",
       "en_US": [
-        "Let me explain how that move works\n",
-        "without getting too technical.\r",
-        "Let’s say your opponent raises its\n",
-        "Defense using Harden.\r",
-        "Your Pokémon can use Psych Up to get\n",
-        "the same Defense boost as its foe.\r",
-        "Basically, your Pokémon gets the same\n",
-        "status boosts as its target."
+        "Hi! I’m Gardenia!\n",
+        "I’m just tending to some berries.\r",
+        "...\r",
+        "You want to challenge me in my Gym?\n",
+        "Exciting! I’m heading right back!\r"
       ]
     },
     {

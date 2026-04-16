@@ -27,7 +27,7 @@
     ScriptEntry EternaCity_OnTransition
     ScriptEntry EternaCity_BugCatcher2
     ScriptEntry EternaCity_TriggerBlockExitWest
-    ScriptEntry EternaCity_Gardenia
+    ScriptEntry EternaCity_GardeniaIsEast
     ScriptEntry EternaCity_TriggerRival
     ScriptEntry EternaCity_TriggerCynthiaTryGiveEgg
     ScriptEntry EternaCity_TriggerCynthiaBlockBikeShop
@@ -671,36 +671,9 @@ EternaCity_Movement_BugCatcher2PushPlayerAndMoveBackZ534:
     WalkOnSpotNormalSouth
     EndMovement
 
-EternaCity_Gardenia:
-    PlaySE SEQ_SE_CONFIRM
-    LockAll
-    FacePlayer
-    BufferRivalName 0
-    Message EternaCity_Text_HiImGardeniaImThisTownsGymLeader
-    CloseMessage
-    ApplyMovement LOCALID_GARDENIA, EternaCity_Movement_GardeniaWalkOnSpotNorth
-    WaitMovement
-    LoadDoorAnimation 9, 17, 24, 18, ANIMATION_TAG_DOOR_1
-    PlayDoorOpenAnimation ANIMATION_TAG_DOOR_1
-    WaitForAnimation ANIMATION_TAG_DOOR_1
-    ApplyMovement LOCALID_GARDENIA, EternaCity_Movement_GardeniaEnterGym
-    WaitMovement
-    RemoveObject LOCALID_GARDENIA
-    PlayDoorCloseAnimation ANIMATION_TAG_DOOR_1
-    WaitForAnimation ANIMATION_TAG_DOOR_1
-    UnloadAnimation ANIMATION_TAG_DOOR_1
-    ReleaseAll
+EternaCity_GardeniaIsEast:
+    NPCMessage EternaCity_Text_GardeniaIsEast
     End
-
-    .balign 4, 0
-EternaCity_Movement_GardeniaWalkOnSpotNorth:
-    WalkOnSpotNormalNorth
-    EndMovement
-
-    .balign 4, 0
-EternaCity_Movement_GardeniaEnterGym:
-    WalkNormalNorth
-    EndMovement
 
 EternaCity_TriggerRival:
     LockAll

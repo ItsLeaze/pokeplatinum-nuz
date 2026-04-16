@@ -45,6 +45,7 @@ CanalaveGym_Byron:
     ClearFlag FLAG_HIDE_CANALAVE_LIBRARY_ROWAN
     SetVar VAR_CANALAVE_STATE, 2
     SetFlag FLAG_HIDE_SANDGEM_TOWN_LAB_PROF_ROWAN
+    SetFlag VAR_BYRON_DEFEATED
     Message CanalaveGym_Text_ByronExplainMineBadge
     GoTo CanalaveGym_ByronTryGiveTM91
 

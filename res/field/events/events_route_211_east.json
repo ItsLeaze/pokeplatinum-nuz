@@ -13,18 +13,18 @@
         {
             "id": "LOCALID_BIRD_KEEPER_KATHERINE",
             "graphics_id": "OBJ_EVENT_GFX_ACE_TRAINER_F",
-            "movement_type": "MOVEMENT_TYPE_LOOK_EAST",
+            "movement_type": "MOVEMENT_TYPE_LOOK_WEST",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
             "script": "TRAINER_R211E_BIRD_KEEPER_KATHERINE",
             "initial_dir": 3,
             "data": [
-                2
+                4
             ],
             "movement_range_x": 0,
             "movement_range_z": 0,
-            "x": 432,
-            "z": 520,
+            "x": 427,
+            "z": 531,
             "y": 0
         },
         {
@@ -40,25 +40,25 @@
             ],
             "movement_range_x": 0,
             "movement_range_z": 0,
-            "x": 425,
-            "z": 520,
+            "x": 434,
+            "z": 522,
             "y": 0
         },
         {
             "id": "LOCALID_BLACK_BELT_SEAN",
             "graphics_id": "OBJ_EVENT_GFX_BLACK_BELT",
-            "movement_type": "MOVEMENT_TYPE_WALK_BACK_AND_FORTH",
+            "movement_type": "MOVEMENT_TYPE_LOOK_NORTH",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
             "script": "TRAINER_R211E_BLACK_BELT_SEAN",
             "initial_dir": 3,
             "data": [
-                2
+                5
             ],
             "movement_range_x": 9,
             "movement_range_z": 0,
-            "x": 428,
-            "z": 540,
+            "x": 423,
+            "z": 533,
             "y": 0
         },
         {
@@ -72,8 +72,8 @@
             "data": [],
             "movement_range_x": 0,
             "movement_range_z": 0,
-            "x": 423,
-            "z": 533,
+            "x": 419,
+            "z": 530,
             "y": 0
         },
         {
@@ -92,33 +92,33 @@
             "y": 0
         },
         {
-            "id": "LOCALID_ROCK_SMASH_2",
-            "graphics_id": "OBJ_EVENT_GFX_ROCK_SMASH",
+            "id": "LOCALID_STRENGTH_BOULDER_3",
+            "graphics_id": "OBJ_EVENT_GFX_STRENGTH_BOULDER",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",
             "hidden_flag": "FLAG_HIDE_OBSTACLE_3",
-            "script": 10001,
+            "script": 10002,
             "initial_dir": 0,
             "data": [],
             "movement_range_x": 0,
             "movement_range_z": 0,
-            "x": 431,
-            "z": 519,
+            "x": 447,
+            "z": 526,
             "y": 0
         },
         {
-            "id": "LOCALID_ROCK_SMASH_3",
-            "graphics_id": "OBJ_EVENT_GFX_ROCK_SMASH",
+            "id": "LOCALID_STRENGTH_BOULDER_2",
+            "graphics_id": "OBJ_EVENT_GFX_STRENGTH_BOULDER",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",
             "hidden_flag": "FLAG_HIDE_OBSTACLE_4",
-            "script": 10001,
+            "script": 10002,
             "initial_dir": 0,
             "data": [],
             "movement_range_x": 0,
             "movement_range_z": 0,
-            "x": 429,
-            "z": 519,
+            "x": 447,
+            "z": 530,
             "y": 0
         },
         {
@@ -162,8 +162,8 @@
             "data": [],
             "movement_range_x": 0,
             "movement_range_z": 0,
-            "x": 427,
-            "z": 526,
+            "x": 429,
+            "z": 519,
             "y": 0
         },
         {
@@ -284,15 +284,45 @@
         {
             "id": "LOCALID_ACE_TRAINER_M",
             "graphics_id": "OBJ_EVENT_GFX_ACE_TRAINER_M",
-            "movement_type": "MOVEMENT_TYPE_LOOK_SOUTH",
+            "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
             "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "0",
+            "hidden_flag": "VAR_BYRON_DEFEATED",
             "script": 1,
             "initial_dir": 1,
             "data": [],
             "movement_range_x": 0,
             "movement_range_z": 0,
-            "x": 430,
+            "x": 447,
+            "z": 527,
+            "y": 0
+        },
+        {
+            "id": "LOCALID_CAMERAMAN",
+            "graphics_id": "OBJ_EVENT_GFX_CAMERAMAN",
+            "movement_type": "MOVEMENT_TYPE_LOOK_SOUTH",
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "hidden_flag": "VAR_BYRON_DEFEATED",
+            "script": 5,
+            "initial_dir": 1,
+            "data": [],
+            "movement_range_x": 0,
+            "movement_range_z": 0,
+            "x": 447,
+            "z": 528,
+            "y": 0
+        },
+        {
+            "id": "LOCALID_REPORTER",
+            "graphics_id": "OBJ_EVENT_GFX_REPORTER",
+            "movement_type": "MOVEMENT_TYPE_LOOK_NORTH",
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "hidden_flag": "VAR_BYRON_DEFEATED",
+            "script": 5,
+            "initial_dir": 1,
+            "data": [],
+            "movement_range_x": 0,
+            "movement_range_z": 0,
+            "x": 447,
             "z": 529,
             "y": 0
         },
@@ -314,18 +344,18 @@
         {
             "id": "LOCALID_RUIN_MANIAC_HARRY",
             "graphics_id": "OBJ_EVENT_GFX_RUIN_MANIAC",
-            "movement_type": "MOVEMENT_TYPE_LOOK_SOUTH_AND_WEST",
+            "movement_type": "MOVEMENT_TYPE_LOOK_EAST",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
             "script": "TRAINER_RUIN_MANIAC_HARRY",
             "initial_dir": 1,
             "data": [
-                2
+                1
             ],
             "movement_range_x": 0,
             "movement_range_z": 0,
-            "x": 429,
-            "z": 525,
+            "x": 432,
+            "z": 522,
             "y": 0
         },
         {
@@ -359,6 +389,21 @@
             "x": 433,
             "z": 535,
             "y": 0
+        },
+        {
+            "id": "LOCALID_GARDENIA",
+            "graphics_id": "OBJ_EVENT_GFX_GARDENIA",
+            "movement_type": "MOVEMENT_TYPE_LOOK_NORTH",
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "hidden_flag": "FLAG_HIDE_ETERNA_CITY_GARDENIA",
+            "script": 6,
+            "initial_dir": 1,
+            "data": [],
+            "movement_range_x": 1,
+            "movement_range_z": 1,
+            "x": 436,
+            "z": 525,
+            "y": 7
         }
     ],
     "warp_events": [

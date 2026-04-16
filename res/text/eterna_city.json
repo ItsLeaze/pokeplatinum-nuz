@@ -174,22 +174,10 @@
       ]
     },
     {
-      "id": "EternaCity_Text_HiImGardeniaImThisTownsGymLeader",
+      "id": "EternaCity_Text_GardeniaIsEast",
       "en_US": [
-        "Hi! I’m Gardenia!\n",
-        "I’m this town’s Gym Leader!\r",
-        "My last challenger was this awfully\n",
-        "speedy young guy.\r",
-        "...Actually, his name was {STRVAR_1 3, 0, 0}.\n",
-        "He told me about you.\r",
-        "He said that another challenger’s on\n",
-        "the way, so that made me antsy!\r",
-        "At my Gym, no one gets to battle with\n",
-        "the Gym Leader, me, until the end.\r",
-        "The challenger has to beat all the\n",
-        "other Gym Trainers first.\r",
-        "I’ll be waiting for you in the back,\n",
-        "Trainer. Don’t disappoint me!\r"
+        "The Gym Leader went east to Route 211.\n",
+        "She said she had to water some berries."
       ]
     },
     {
