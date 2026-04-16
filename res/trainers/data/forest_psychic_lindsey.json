@@ -24,14 +24,13 @@
         {
             "type": "TRMSG_PRE_BATTLE",
             "en_US": [
-                "I see it...\n",
-                "I see it...\r",
-                "I see you going down in defeat...\r"
+                "These Team Galactic people think\n",
+                "they’ve figured it all out...\r"
             ]
         },
         {
             "type": "TRMSG_DEFEAT",
-            "en_US": "It is I that has gone down in defeat."
+            "en_US": "Impressively calm mind!"
         },
         {
             "type": "TRMSG_POST_BATTLE",

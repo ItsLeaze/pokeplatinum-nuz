@@ -1,6 +1,6 @@
 {
-    "name": "Rachael",
-    "class": "TRAINER_CLASS_PSYCHIC_FEMALE",
+    "name": "Grunt",
+    "class": "TRAINER_CLASS_GALACTIC_GRUNT_MALE",
     "items": [],
     "ai_flags": [
         "AI_FLAG_BASIC",
@@ -9,16 +9,14 @@
     "double_battle": false,
     "party": [
         {
-            "species": "SPECIES_PSYDUCK",
+            "species": "SPECIES_ZUBAT",
             "form": 0,
-            "level": 17,
+            "level": 6,
             "item": null,
             "moves": [
-                "MOVE_CONFUSION",
-                "MOVE_WATER_GUN",
-                "MOVE_SCRATCH"
+                "MOVE_ABSORB"
             ],
-            "iv_scale": 20,
+            "iv_scale": 0,
             "ball_seal": 0
         }
     ],

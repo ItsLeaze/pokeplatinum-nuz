@@ -1,6 +1,6 @@
 {
-    "name": "Briana",
-    "class": "TRAINER_CLASS_LASS",
+    "name": "Grunt",
+    "class": "TRAINER_CLASS_GALACTIC_GRUNT_FEMALE",
     "items": [],
     "ai_flags": [
         "AI_FLAG_BASIC"
@@ -8,11 +8,13 @@
     "double_battle": false,
     "party": [
         {
-            "species": "SPECIES_PACHIRISU",
+            "species": "SPECIES_ZUBAT",
             "form": 0,
-            "level": 16,
+            "level": 6,
             "item": null,
-            "moves": null,
+            "moves": [
+                "MOVE_ABSORB"
+            ],
             "iv_scale": 0,
             "ball_seal": 0
         }
@@ -20,7 +22,7 @@
     "messages": [
         {
             "type": "TRMSG_PRE_BATTLE",
-            "en_US": "We’re just out on a power walk!\r"
+            "en_US": "So many ... bugs!\r"
         },
         {
             "type": "TRMSG_DEFEAT",

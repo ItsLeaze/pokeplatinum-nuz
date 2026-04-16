@@ -11,7 +11,7 @@
         {
             "species": "SPECIES_ABRA",
             "form": 0,
-            "level": 17,
+            "level": 6,
             "item": null,
             "moves": [
                 "MOVE_HIDDEN_POWER"
@@ -24,22 +24,21 @@
         {
             "type": "TRMSG_PRE_BATTLE",
             "en_US": [
-                "When a Trainer and a Pokémon bond\n",
-                "as one, a wondrous power is born...\r"
+                "The energies changed here since\n",
+                "Team Galactic arrived.\r"
             ]
         },
         {
             "type": "TRMSG_DEFEAT",
             "en_US": [
-                "Urmmm...\n",
-                "Urrrrmmmmm...\n"
+                "I have this eerie feeling...\n"
             ]
         },
         {
             "type": "TRMSG_POST_BATTLE",
             "en_US": [
-                "There still remain many mysteries yet\n",
-                "to be solved in this strange world...\n"
+                "The pokemon started behaving\n",
+                "weird here recently...\n"
             ]
         }
     ]

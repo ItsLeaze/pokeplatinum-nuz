@@ -1,0 +1,36 @@
+{
+    "name": "Grunt",
+    "class": "TRAINER_CLASS_GALACTIC_GRUNT_MALE",
+    "items": [],
+    "ai_flags": [
+        "AI_FLAG_BASIC"
+    ],
+    "double_battle": false,
+    "party": [
+        {
+            "species": "SPECIES_ZUBAT",
+            "form": 0,
+            "level": 6,
+            "item": null,
+            "moves": [
+                "MOVE_ABSORB"
+            ],
+            "iv_scale": 0,
+            "ball_seal": 0
+        }
+    ],
+    "messages": [
+        {
+            "type": "TRMSG_PRE_BATTLE",
+            "en_US": "Feel the energy!\r"
+        },
+        {
+            "type": "TRMSG_DEFEAT",
+            "en_US": "Whoooh...\n"
+        },
+        {
+            "type": "TRMSG_POST_BATTLE",
+            "en_US": "Your energy is unmatched!\n"
+        }
+    ]
+}
