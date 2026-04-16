@@ -116,23 +116,6 @@
             "y": 0
         },
         {
-            "id": "LOCALID_LOOKER",
-            "graphics_id": "OBJ_EVENT_GFX_LOOKER",
-            "movement_type": "MOVEMENT_TYPE_LOOK_NORTH",
-            "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_HIDE_VALLEY_WINDWORKS_OUTSIDE_LOOKER",
-            "script": 0,
-            "initial_dir": 0,
-            "data": [
-                3
-            ],
-            "movement_range_x": 0,
-            "movement_range_z": 0,
-            "x": 242,
-            "z": 659,
-            "y": 0
-        },
-        {
             "id": "LOCALID_ITEM_ELECTIRIZER",
             "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
             "movement_type": "MOVEMENT_TYPE_NONE",

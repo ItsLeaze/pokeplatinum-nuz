@@ -10,7 +10,7 @@ static const BerryPatchInit sBerryInitTable[] = {
     { .berryItemID = ITEM_WEPEAR_BERRY, .yield = 1 },
     { .berryItemID = ITEM_CORNN_BERRY, .yield = 1 },
     { .berryItemID = ITEM_MAGOST_BERRY, .yield = 1 },
-    { .berryItemID = ITEM_RABUTA_BERRY, .yield = 1 },
+    { .berryItemID = ITEM_CHESTO_BERRY, .yield = 1 },
     { .berryItemID = ITEM_NOMEL_BERRY, .yield = 1 },
     { .berryItemID = ITEM_SPELON_BERRY, .yield = 1 },
     { .berryItemID = ITEM_PAMTRE_BERRY, .yield = 1 },

@@ -135,6 +135,42 @@
         "Floaroma Meadow Ahead\n",
         "Honey Available"
       ]
+    },
+    {
+      "id": "FloaromaTown_Text_ClownQuestion",
+      "en_US": [
+        "Answer me this:\n",
+        "Are there Pokemon that don’t evolve?"
+      ]
+    },
+    {
+      "id": "FloaromaTown_Text_ClownAbsolutelyCorrect",
+      "en_US": [
+        "Ding-ding!\n",
+        "You’re absolutely correct!\r",
+        "Let me show you just how good they are!\r"
+      ]
+    },
+    {
+      "id": "FloaromaTown_Text_ClownWrongAnswer",
+      "en_US": [
+        "Bzzzzt!\n",
+        "That’s the wrong answer..."
+      ]
+    },
+    {
+      "id": "FloaromaTown_Text_ClownAfterWin",
+      "en_US": [
+        "Aren’t they awesome?\n",
+        "You should give one of them a chance.\r"
+      ]
+    },
+    {
+      "id": "FloaromaTown_Text_ClownUsed",
+      "en_US": [
+        "How is my Pokemon doing?\n",
+        "Surely you’re taking good care of it."
+      ]
     }
   ]
 }

@@ -58,11 +58,7 @@
         "Charon: My, my.\n",
         "Lose to a child, will you?\r",
         "But, no matter.\n",
-        "We’ve collected plenty of electricity.\r",
-        "With the power we obtained, we can\n",
-        "do something quite spectacular.\r",
-        "It seems quite obvious to me, Charon,\n",
-        "the genius even the boss recognizes.\r",
+        "We’ve collected plenty of electricity.\f",
         "Now, Mars, we should be going.\r"
       ]
     },
@@ -72,8 +68,7 @@
         "Mars: Will you shut it!\r",
         "The boss is the only person in the world\n",
         "who’s allowed to order me around!\r",
-        "You can keep quiet around me!\n",
-        "You only joined us recently.\f",
+        "You only joined us recently.\n",
         "Don’t think you’re important!\r"
       ]
     },
@@ -119,9 +114,7 @@
       "id": "ValleyWindworksBuilding_Text_IThinkTheBalloonPokemonWillComeVisitingAgain",
       "en_US": [
         "Little girl: Thank you, Trainer!\n",
-        "You made those bad people go away!\r",
-        "I think the balloon Pokémon will\n",
-        "come visiting again!"
+        "You made those bad people go away!"
       ]
     },
     {

@@ -121,18 +121,12 @@ FloaromaMeadow_DefeatedGrunts:
     Common_GiveItemQuantity
     SetFlag FLAG_OBTAINED_FLOAROMA_MEADOW_WORKS_KEY
     Message FloaromaMeadow_Text_INeedToThankYouThisSweetSweetHoneyGoOnTakeAWholeLot
-    SetVar VAR_0x8004, ITEM_HONEY
-    SetVar VAR_0x8005, 10
-    GoToIfCannotFitItem VAR_0x8004, VAR_0x8005, VAR_RESULT, FloaromaMeadow_CantGiveHoneyBagIsFull
-    Common_GiveItemQuantity
-    Message FloaromaMeadow_Text_SlatherThatHoneyOnASweetSmellingTree
     GoTo FloaromaMeadow_DefeatedGruntsReturn
 
 FloaromaMeadow_CantGiveHoneyBagIsFull:
     Message FloaromaMeadow_Text_OhTooBadSeemsToMeYourBagsFull
 FloaromaMeadow_DefeatedGruntsReturn:
     SetFlag FLAG_DEFEATED_FLOAROMA_MEADOW_GRUNTS
-    WaitButton
     CloseMessage
     Return
 

@@ -10,18 +10,18 @@
             "script": "TRAINER_R204N_BUG_CATCHER_BRANDON",
             "initial_dir": 2,
             "data": [
-                1
+                6
             ],
             "movement_range_x": 4,
             "movement_range_z": 0,
             "x": 182,
-            "z": 685,
+            "z": 686,
             "y": 5
         },
         {
             "id": "LOCALID_AROMA_LADY_TAYLOR",
             "graphics_id": "OBJ_EVENT_GFX_POKEMON_BREEDER_F",
-            "movement_type": "MOVEMENT_TYPE_LOOK_SOUTH_AND_EAST",
+            "movement_type": "MOVEMENT_TYPE_LOOK_SOUTH",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
             "script": "TRAINER_R204N_AROMA_LADY_TAYLOR",
@@ -45,7 +45,7 @@
             "double_battle_id": 1,
             "initial_dir": 1,
             "data": [
-                3
+                6
             ],
             "movement_range_x": 0,
             "movement_range_z": 0,
@@ -63,7 +63,7 @@
             "double_battle_id": 2,
             "initial_dir": 1,
             "data": [
-                4
+                6
             ],
             "movement_range_x": 0,
             "movement_range_z": 0,

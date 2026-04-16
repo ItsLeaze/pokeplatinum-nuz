@@ -12,9 +12,7 @@
       "id": "FloaromaMeadow_Text_DoAsWeSayTeamGalacticWillHaveThatHoney",
       "en_US": [
         "Grunt 2: Do as we say!\n",
-        "Team Galactic will have that Honey!\r",
-        "We must have it to attract Pokémon\n",
-        "in great numbers!\r"
+        "Team Galactic will have that Honey!\r"
       ]
     },
     {
@@ -27,9 +25,7 @@
     {
       "id": "FloaromaMeadow_Text_TheSolutionsSimpleWeEnsureTheBratStaysQuiet",
       "en_US": [
-        "Grunt 2: We don’t need the brat\n",
-        "running off to get help...\r",
-        "The solution’s simple!\n",
+        "Grunt 2: The solution’s simple...\n",
         "We ensure the brat stays quiet!\r"
       ]
     },
@@ -44,9 +40,7 @@
       "id": "FloaromaMeadow_Text_ImUpNextHeheheh",
       "en_US": [
         "Grunt 2: I’m up next!\n",
-        "Heheheh...\r",
-        "Battling you right after my cohort\n",
-        "weakened you gives me the edge!\r"
+        "Heheheh...\r"
       ]
     },
     {
@@ -54,8 +48,6 @@
       "en_US": [
         "Grunt 1: This brat’s tough!\n",
         "Like, really, really tough!\r",
-        "Tougher than I can put into words,\n",
-        "and I know a lot of words!\r",
         "We’re done for here... Let’s get back\n",
         "to the Valley Windworks.\r"
       ]
@@ -76,15 +68,11 @@
       "en_US": [
         "Thank you!\n",
         "You surely saved me.\r",
-        "Those goons were trying to rob me\n",
-        "of my sweet, sweet Honey.\r",
-        "They sure were weird, though.\n",
-        "You saw how they were dressed.\r",
-        "What they were saying didn’t make\n",
-        "a whole lot of sense, either.\r",
-        "Oh! I need to thank you!\n",
-        "This sweet, sweet Honey!\f",
-        "Go on, take a whole lot!\r"
+        "I’d love to repay you, but I don’t\n",
+        "have anything of use for you.\r",
+        "If you want to find Pokemon\n",
+        "attracted to honey, just\f",
+        "interact with some honey trees.\r"
       ]
     },
     {

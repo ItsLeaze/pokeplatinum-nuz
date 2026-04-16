@@ -1,0 +1,45 @@
+{
+    "name": "Calvin",
+    "class": "TRAINER_CLASS_CLOWN",
+    "items": [],
+    "ai_flags": [
+        "AI_FLAG_EXPERT"
+    ],
+    "double_battle": false,
+    "party": [
+        {
+            "species": "SPECIES_SHUCKLE",
+            "form": 0,
+            "level": 5,
+            "item": "ITEM_QUICK_CLAW",
+            "moves": [
+                "MOVE_WRAP"
+            ],
+            "iv_scale": 255,
+            "ball_seal": 0
+        },
+        {
+            "species": "SPECIES_DUNSPARCE",
+            "form": 0,
+            "level": 5,
+            "item": "ITEM_QUICK_CLAW",
+            "moves": [
+                "MOVE_BODY_SLAM"
+            ],
+            "iv_scale": 255,
+            "ball_seal": 0
+        },
+        {
+            "species": "SPECIES_QWILFISH",
+            "form": 0,
+            "level": 5,
+            "item": "ITEM_QUICK_CLAW",
+            "moves": [
+                "MOVE_POISON_STING"
+            ],
+            "iv_scale": 255,
+            "ball_seal": 0
+        }
+    ],
+    "messages": []
+}

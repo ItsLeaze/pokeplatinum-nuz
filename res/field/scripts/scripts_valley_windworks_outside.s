@@ -158,39 +158,6 @@ ValleyWindworksOutside_BlackOutDrifloon:
 
 ValleyWindworksOutside_OnFrameLooker:
     LockAll
-    ApplyMovement LOCALID_LOOKER, ValleyWindworksOutside_Movement_LookerNoticeAndWalkToPlayer
-    ApplyMovement LOCALID_PLAYER, ValleyWindworksOutside_Movement_PlayerFaceLookerWest
-    WaitMovement
-    Message ValleyWindworksOutside_Text_IShallInvestigateInside
-    CloseMessage
-    ApplyMovement LOCALID_PLAYER, ValleyWindworksOutside_Movement_PlayerMoveAwayFromDoor
-    ApplyMovement LOCALID_LOOKER, ValleyWindworksOutside_Movement_LookerWalkToDoor
-    WaitMovement
-    LoadDoorAnimation 7, 20, 19, 14, ANIMATION_TAG_DOOR_1
-    PlayDoorOpenAnimation ANIMATION_TAG_DOOR_1
-    WaitForAnimation ANIMATION_TAG_DOOR_1
-    ApplyMovement LOCALID_LOOKER, ValleyWindworksOutside_Movement_LookerEnterBuilding
-    WaitMovement
-    PlayDoorCloseAnimation ANIMATION_TAG_DOOR_1
-    WaitForAnimation ANIMATION_TAG_DOOR_1
-    UnloadAnimation ANIMATION_TAG_DOOR_1
-    WaitTime 120, VAR_RESULT
-    LoadDoorAnimation 7, 20, 19, 14, ANIMATION_TAG_DOOR_1
-    PlayDoorOpenAnimation ANIMATION_TAG_DOOR_1
-    WaitForAnimation ANIMATION_TAG_DOOR_1
-    ApplyMovement LOCALID_LOOKER, ValleyWindworksOutside_Movement_LookerExitBuilding
-    WaitMovement
-    PlayDoorCloseAnimation ANIMATION_TAG_DOOR_1
-    WaitForAnimation ANIMATION_TAG_DOOR_1
-    UnloadAnimation ANIMATION_TAG_DOOR_1
-    ApplyMovement LOCALID_LOOKER, ValleyWindworksOutside_Movement_LookerWalkOnSpotSouth
-    WaitMovement
-    Message ValleyWindworksOutside_Text_IHaveReceivedTipsThatTheTeamGalacticHideoutIsInEternaCity
-    CloseMessage
-    ApplyMovement LOCALID_PLAYER, ValleyWindworksOutside_Movement_PlayerWatchLookerLeave
-    ApplyMovement LOCALID_LOOKER, ValleyWindworksOutside_Movement_LookerLeave
-    WaitMovement
-    RemoveObject LOCALID_LOOKER
     SetVar VAR_VALLEY_WINDWORKS_LOOKER_STATE, 2
     ReleaseAll
     End

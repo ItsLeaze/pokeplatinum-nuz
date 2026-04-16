@@ -558,10 +558,8 @@
     {
       "id": "JubilifeCity_Text_HandOverAllYourResearchFindings",
       "en_US": [
-        "Mystery man: Now, now, now, now, now!\n",
-        "Professor Rowan, you must comply.\r",
-        "Hand over all your research findings.\n",
-        "For free, naturally.\r",
+        "Mystery man: Professor, you must comply!\n",
+        "Hand over all your research findings.\r",
         "Failure to comply will result in a painful\n",
         "time for your assistant.\r"
       ]
@@ -571,21 +569,15 @@
       "en_US": [
         "Rowan: Ah, {STRVAR_1 3, 0, 0}.\n",
         "Well? How is the Pokédex progressing?\r",
-        "Hm!\n",
-        "That’s Oreburgh’s Gym Badge, I see.\r",
-        "But hadn’t I given you your first\n",
-        "Pokémon only recently...?\r",
-        "Perhaps being a Trainer is like second\n",
-        "nature to you.\r"
+        "That’s Oreburgh’s Gym Badge, I see.\n",
+        "Very impressive! You’re a natural!\r"
       ]
     },
     {
       "id": "JubilifeCity_Text_OhProfessorOfRowanMustYouBeSoDifficult",
       "en_US": [
-        "Mystery man: Oh, professor of Pokémon,\n",
-        "must you be so difficult?\r",
-        "We are speaking to you on business.\n",
-        "Because this is work for us.\r",
+        "Mystery man: Must you be so difficult?\n",
+        "This is work for us.\r",
         "What we’re saying is--we demand\n",
         "you comply with our demands.\r"
       ]
@@ -594,19 +586,7 @@
       "id": "JubilifeCity_Text_WhyMustYouBeSuchANuisance",
       "en_US": [
         "Rowan: Quiet, you lot!\n",
-        "Why must you be such a nuisance?\r",
-        "Let me list some lessons you still\n",
-        "need to learn.\r",
-        "#1: Don’t loiter about for no good\n",
-        "reason.\r",
-        "#2: Don’t interrupt others while they\n",
-        "are attempting to converse.\r",
-        "#3: If you don’t get your way, don’t\n",
-        "raise your voice to be intimidating.\r",
-        "#4: Don’t think you’ve grown strong\n",
-        "just because you’re in a group.\r",
-        "#5: What is with those outlandish\n",
-        "outfits you have on?\r"
+        "Why must you be such a nuisance?\r"
       ]
     },
     {
@@ -623,8 +603,6 @@
       "en_US": [
         "Mystery man: Eeeeeh!\n",
         "You had to make this personal!\r",
-        "You have forced our hand into making\n",
-        "a show of force!\r",
         "We will make you regret insulting\n",
         "Team Galactic!\r"
       ]
@@ -706,24 +684,14 @@
     {
       "id": "JubilifeCity_Text_WhyDontYouCollectAllTheGymBadgesOfSinnoh",
       "en_US": [
-        "Rowan: It’s all over, so you can \n",
-        "relax now.\r",
-        "Still, thanks to you two, nothing came\n",
+        "Rowan: Thanks to you two, nothing came\n",
         "of that situation. I appreciate that.\r",
         "Incidentally, {STRVAR_1 3, 0, 0}.\n",
         "Kudos to you for your battling skill.\r",
         "It got me thinking. Why don’t you\n",
         "collect all the Gym Badges of Sinnoh?\r",
-        "Doing so, you will be sure to encounter\n",
-        "lots of Pokémon.\r",
-        "That, of course, means your Pokédex\n",
-        "pages will continuously fill up.\r",
-        "In other words, it will be of great help\n",
-        "to my research.\r",
-        "That said, I’ve given you your first\n",
-        "Pokémon and Pokédex as yours to keep.\r",
-        "You’re free to do with them as you wish.\n",
-        "Take care now.\r"
+        "Either way, I wish you the best of luck\n",
+        "on your journey. Take care now.\r"
       ]
     },
     {
@@ -731,8 +699,6 @@
       "en_US": [
         "Oh, that was very good!\n",
         "Nicely done! Truly excellent!\r",
-        "Oh, I beg your pardon, I’m from\n",
-        "Jubilife TV!\r",
         "I’d like you to have something for\n",
         "letting me see that smashing battle!\r"
       ]
@@ -740,16 +706,11 @@
     {
       "id": "JubilifeCity_Text_DressUpYourPokemonAndWatchTheirAppealGrow",
       "en_US": [
-        "Contained within that Fashion Case...\r",
-        "You will find a whole spectrum of chic\n",
+        "Contained within that Fashion Case,\n",
+        "you will find a whole spectrum of chic\f",
         "Accessories and tasteful Backdrops!\r",
-        "Dress up your Pokémon and watch\n",
-        "their appeal grow!\r",
-        "And, right now the TV station is\n",
-        "offering its facilities so visitors\f",
-        "can dress up their Pokémon!\r",
-        "There are also prize giveaways, too!\n",
-        "Please do visit our TV station!\r"
+        "Dress up your Pokémon and\n",
+        "visit our TV station some time!\r"
       ]
     },
     {

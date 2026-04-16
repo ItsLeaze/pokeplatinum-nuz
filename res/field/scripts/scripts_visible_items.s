@@ -429,7 +429,7 @@ VisibleItems_ValleyWindworksOutside_TM24:
     End
 
 VisibleItems_Route205South_HealBall:
-    SetVar VAR_0x8008, ITEM_HEAL_BALL
+    SetVar VAR_0x8008, ITEM_SILVERPOWDER
     SetVar VAR_0x8009, 1
     GoTo VisibleItems_TryGiveItem
     End

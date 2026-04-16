@@ -872,9 +872,7 @@ JubilifeCity_TeamGalacticBattle:
     Message JubilifeCity_Text_ThatLotTheyCalledThemselvesTeamGalactic
     ApplyMovement LOCALID_COUNTERPART, JubilifeCity_Movement_CounterpartWalkOnSpotSouth2
     WaitMovement
-    GetPlayerGender VAR_RESULT
-    GoToIfEq VAR_RESULT, GENDER_MALE, JubilifeCity_DawnTheProfessorStudiesTheEvolutionOfPokemonToo
-    GoToIfEq VAR_RESULT, GENDER_FEMALE, JubilifeCity_LucasTheProfessorStudiesTheEvolutionOfPokemonToo
+    GoTo JubilifeCity_CounterpartAndProfRowanLeave
     End
 
 JubilifeCity_SetPlayerCounterpartPartnerTeam:

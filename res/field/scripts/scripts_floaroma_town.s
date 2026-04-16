@@ -13,6 +13,7 @@
     ScriptEntry FloaromaTown_LandmarkSignFlowerShop
     ScriptEntry FloaromaTown_LandmarkSignFloaromaMeadow
     ScriptEntry FloaromaTown_Beauty
+    ScriptEntry FloaromaTown_Clown
     ScriptEntryEnd
 
 FloaromaTown_OnTransition:
@@ -130,6 +131,64 @@ FloaromaTown_BeautyEnd:
     WaitButton
     CloseMessage
     ReleaseAll
+    End
+
+FloaromaTown_Clown:
+    PlaySE SEQ_SE_CONFIRM
+    LockAll
+    FacePlayer
+    GoToIfSet VAR_JOHTO_STARTER_ACQUIRED, FloaromaTown_ClownPokemonAlreadyObtained
+    Message FloaromaTown_Text_ClownQuestion
+    ShowYesNoMenu VAR_RESULT
+    GoToIfEq VAR_RESULT, MENU_YES, FloaromaTown_ClownCorrectAnswer
+    GoToIfEq VAR_RESULT, MENU_NO, FloaromaTown_ClownWrongAnswer
+    End
+
+FloaromaTown_ClownCorrectAnswer:
+    PlaySE SEQ_SE_DP_PINPON
+    Message FloaromaTown_Text_ClownAbsolutelyCorrect
+    CloseMessage
+    StartTrainerBattle TRAINER_FLOAROMA_CLOWN
+    CheckWonBattle VAR_RESULT
+    GoToIfEq VAR_RESULT, FALSE, LostBattle
+    LockAll
+    FacePlayer
+    Message FloaromaTown_Text_ClownAfterWin
+    CloseMessage
+    FadeScreen 6, 1, 0, 0
+    WaitFadeScreen
+    StartChooseStarterScene SPECIES_SHUCKLE, SPECIES_DUNSPARCE, SPECIES_QWILFISH
+    ReturnToField
+    FadeScreen 6, 1, 1, 0
+    WaitFadeScreen
+    GetChosenBriefcaseSpecies VAR_0x8000
+    GivePokemon VAR_0x8000, 15, ITEM_NONE, VAR_RESULT
+    GoToIfEq VAR_RESULT TRUE SetKantoStarterAcquired
+    ReleaseAll
+    End
+
+LostBattle:
+    BlackOutFromBattle
+    ReleaseAll
+    End
+
+FloaromaTown_ClownWrongAnswer:
+    PlaySE SEQ_SE_DP_BOX03
+    Message FloaromaTown_Text_ClownWrongAnswer
+    WaitButton
+    CloseMessage
+    ReleaseAll
+    End
+
+FloaromaTown_ClownPokemonAlreadyObtained:
+    Message FloaromaTown_Text_ClownUsed
+    WaitButton
+    CloseMessage
+    ReleaseAll
+    End
+
+SetKantoStarterAcquired:
+    SetFlag VAR_JOHTO_STARTER_ACQUIRED
     End
 
     .balign 4, 0
