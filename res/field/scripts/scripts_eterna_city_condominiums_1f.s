@@ -96,7 +96,7 @@ EternaCityCondominiums1F_NinjaBoy:
     LockAll
     FacePlayer
     GoToIfSet FLAG_TRADED_FOR_CHARAP_CHATOT, EternaCityCondominiums1F_DidThatChatotITradedYouTotallyLearnThatChatterMove
-    Message EternaCityCondominiums1F_Text_DoYouGotThatPokemonNamedBuizelWannTradeItForMyChatot
+    Message EternaCityCondominiums1F_Text_WannaTradeAPokemon
     ShowYesNoMenu VAR_RESULT
     GoToIfEq VAR_RESULT, MENU_YES, EternaCityCondominiums1F_TryTrade
     GoTo EternaCityCondominiums1F_OhOKTotallyGotIt
@@ -112,9 +112,6 @@ EternaCityCondominiums1F_TryTrade:
     GoToIfEq VAR_RESULT, 0xFF, EternaCityCondominiums1F_OhOKTotallyGotIt
     InitNPCTrade NPC_TRADE_CHARAP_CHATOT
     SetVar VAR_0x8004, VAR_RESULT
-    GetPartyMonSpecies VAR_0x8004, VAR_0x8005
-    GetNPCTradeRequestedSpecies VAR_RESULT
-    GoToIfNe VAR_0x8005, VAR_RESULT, EternaCityCondominiums1F_WhatITotallyWantIsABuizel
     StartNPCTrade VAR_0x8004
     FinishNPCTrade
     SetFlag FLAG_TRADED_FOR_CHARAP_CHATOT
