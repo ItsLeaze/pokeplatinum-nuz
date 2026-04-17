@@ -65,8 +65,24 @@ Route207_Dawn:
     Call Route207_GiveVsSeeker
     Message Route207_Text_DawnYouCanHaveThisTooThen
     Call Route207_GivePoketchAppDowsingMachine
-    Message Route207_Text_DawnTheDowsingMachineIsSomethingYouShouldTouchOften
-    GoTo Route207_CounterpartLeave
+    Message Route207_Text_HowMuchHaveYouImproved
+    CloseMessage
+    GetPlayerStarterSpecies VAR_RESULT
+    GoToIfEq VAR_RESULT, SPECIES_TURTWIG, Route207_StartDawnBattleTurtwig
+    GoToIfEq VAR_RESULT, SPECIES_CHIMCHAR, Route207_StartDawnBattleChimchar
+    GoTo Route207_StartDawnBattlePiplup
+
+Route207_StartDawnBattlePiplup:
+    StartTrainerBattle TRAINER_R207_DAWN_PIPLUP
+    GoTo Route207_CounterpartPostBattle
+
+Route207_StartDawnBattleTurtwig:
+    StartTrainerBattle TRAINER_R207_DAWN_TURTWIG
+    GoTo Route207_CounterpartPostBattle
+
+Route207_StartDawnBattleChimchar:
+    StartTrainerBattle TRAINER_R207_DAWN_CHIMCHAR
+    GoTo Route207_CounterpartPostBattle
 
 Route207_Lucas:
     BufferPlayerName 0
@@ -80,8 +96,24 @@ Route207_Lucas:
     Call Route207_GiveVsSeeker
     Message Route207_Text_LucasYouCanHaveThisTooThen
     Call Route207_GivePoketchAppDowsingMachine
-    Message Route207_Text_LucasTheDowsingMachineIsJustTryTouchingIt
-    GoTo Route207_CounterpartLeave
+    Message Route207_Text_LucasHowMuchHaveYouImproved
+    CloseMessage
+    GetPlayerStarterSpecies VAR_RESULT
+    GoToIfEq VAR_RESULT, SPECIES_TURTWIG, Route207_StartLucasBattleTurtwig
+    GoToIfEq VAR_RESULT, SPECIES_CHIMCHAR, Route207_StartLucasBattleChimchar
+    GoTo Route207_StartLucasBattlePiplup
+
+Route207_StartLucasBattlePiplup:
+    StartTrainerBattle TRAINER_R207_LUCAS_PIPLUP
+    GoTo Route207_CounterpartPostBattle
+
+Route207_StartLucasBattleTurtwig:
+    StartTrainerBattle TRAINER_R207_LUCAS_TURTWIG
+    GoTo Route207_CounterpartPostBattle
+
+Route207_StartLucasBattleChimchar:
+    StartTrainerBattle TRAINER_R207_LUCAS_CHIMCHAR
+    GoTo Route207_CounterpartPostBattle
 
 Route207_GiveVsSeeker:
     SetFlag FLAG_UNLOCKED_VS_SEEKER_LVL_1
@@ -96,6 +128,16 @@ Route207_GivePoketchAppDowsingMachine:
     BufferPoketchAppName 1, POKETCH_APPID_DOWSINGMACHINE
     Return
 
+Route207_CounterpartPostBattle:
+    CheckWonBattle VAR_RESULT
+    GoToIfEq VAR_RESULT, FALSE, Route207_BlackOut
+    LockAll
+    ApplyMovement LOCALID_COUNTERPART, Route207_Movement_CounterpartFacePlayer
+    WaitMovement
+    Message Route207_Text_YouImproved
+    GoTo Route207_CounterpartLeave
+    End
+
 Route207_CounterpartLeave:
     CloseMessage
     ApplyMovement LOCALID_COUNTERPART, Route207_Movement_CounterpartLeave
@@ -106,9 +148,21 @@ Route207_CounterpartLeave:
     ReleaseAll
     End
 
+Route207_BlackOut:
+    RemoveObject LOCALID_COUNTERPART
+    SetVar VAR_ROUTE_207_COUNTERPART_TRIGGER_STATE, 1
+    BlackOutFromBattle
+    ReleaseAll
+    End
+
     .balign 4, 0
 Route207_Movement_PlayerFaceCounterpart:
     WalkOnSpotNormalWest
+    EndMovement
+
+    .balign 4, 0
+Route207_Movement_CounterpartFacePlayer:
+    WalkOnSpotNormalEast
     EndMovement
 
 Route207_UnusedMovement:

@@ -1,9 +1,7 @@
 {
     "name": "Travon",
     "class": "TRAINER_CLASS_SCIENTIST",
-    "items": [
-        "ITEM_X_SPECIAL"
-    ],
+    "items": [],
     "ai_flags": [
         "AI_FLAG_BASIC",
         "AI_FLAG_EXPERT"
@@ -11,9 +9,9 @@
     "double_battle": false,
     "party": [
         {
-            "species": "SPECIES_KADABRA",
+            "species": "SPECIES_ABRA",
             "form": 0,
-            "level": 20,
+            "level": 5,
             "item": null,
             "moves": [
                 "MOVE_CONFUSION"

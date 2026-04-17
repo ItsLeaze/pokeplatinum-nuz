@@ -29,26 +29,16 @@
         "Dawn: Using that Vs. Seeker, you can\n",
         "find Trainers who want a rematch\f",
         "with you.\r",
-        "Oh, {STRVAR_1 3, 0, 0}, do you also have\n",
-        "a Pokétch?\r",
-        "Yup, you do.\n",
-        "You can have this too, then.\r",
-        "You deserve it for all your hard\n",
-        "work, {STRVAR_1 3, 0, 0}.\r"
+        "I see you also have a Pokétch.\n",
+        "You can have this too, then.\r"
       ]
     },
     {
-      "id": "Route207_Text_DawnTheDowsingMachineIsSomethingYouShouldTouchOften",
+      "id": "Route207_Text_HowMuchHaveYouImproved",
       "en_US": [
-        "Dawn: The {STRVAR_1 24, 1, 0} is\n",
-        "something you should touch often.\r",
-        "It will tell you if there is an item\n",
-        "on the ground that you can’t see.\r",
-        "I think there’s something here, even.\n",
-        "You should try it out.\r",
-        "OK, let’s keep working on our\n",
-        "Pokédexes.\r",
-        "Professor Rowan is counting on us!\r"
+        "Dawn: Besides, how much have your\n",
+        "battle skills improved?\r",
+        "Let’s put them to the test!\r"
       ]
     },
     {
@@ -89,16 +79,11 @@
       ]
     },
     {
-      "id": "Route207_Text_LucasTheDowsingMachineIsJustTryTouchingIt",
+      "id": "Route207_Text_LucasHowMuchHaveYouImproved",
       "en_US": [
-        "Lucas: The {STRVAR_1 24, 1, 0} is...\n",
-        "Just try touching it.\r",
-        "It’ll alert you if there is an\n",
-        "unseeable item on the ground.\r",
-        "Try it out now.\n",
-        "I think there’s something here.\r",
-        "OK, keep working on your Pokédex.\n",
-        "Professor Rowan is counting on us!\r"
+        "Lucas: Besides, how much have your\n",
+        "battle skills improved?\r",
+        "Let’s put them to the test!\r"
       ]
     },
     {
@@ -145,6 +130,12 @@
         "it could be disastrous.\r",
         "If your opponent’s Pokémon can’t\n",
         "move, it’s a big opportunity!"
+      ]
+    },
+    {
+      "id": "Route207_Text_YouImproved",
+      "en_US": [
+        "Your improvement is astounding!\r"
       ]
     }
   ]

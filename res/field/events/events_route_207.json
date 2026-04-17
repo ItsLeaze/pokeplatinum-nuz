@@ -79,24 +79,24 @@
         {
             "id": "LOCALID_YOUNGSTER_AUSTIN",
             "graphics_id": "OBJ_EVENT_GFX_YOUNGSTER",
-            "movement_type": "MOVEMENT_TYPE_WALK_EAST_SOUTH_WEST_NORTH",
+            "movement_type": "MOVEMENT_TYPE_LOOK_NORTH",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
             "script": "TRAINER_R207_YOUNGSTER_AUSTIN",
-            "initial_dir": 3,
+            "initial_dir": 0,
             "data": [
-                2
+                3
             ],
-            "movement_range_x": 6,
-            "movement_range_z": 1,
+            "movement_range_x": 0,
+            "movement_range_z": 0,
             "x": 325,
-            "z": 725,
+            "z": 727,
             "y": 5
         },
         {
             "id": "LOCALID_HIKER_JUSTIN",
             "graphics_id": "OBJ_EVENT_GFX_HIKER",
-            "movement_type": "MOVEMENT_TYPE_LOOK_NORTH_AND_EAST",
+            "movement_type": "MOVEMENT_TYPE_LOOK_NORTH",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
             "script": "TRAINER_R207_HIKER_JUSTIN",
@@ -113,34 +113,34 @@
         {
             "id": "LOCALID_HIKER_KEVIN",
             "graphics_id": "OBJ_EVENT_GFX_HIKER",
-            "movement_type": "MOVEMENT_TYPE_LOOK_NORTH_AND_EAST",
+            "movement_type": "MOVEMENT_TYPE_LOOK_EAST",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
             "script": "TRAINER_R207_HIKER_KEVIN",
             "initial_dir": 0,
             "data": [
-                2
+                3
             ],
             "movement_range_x": 0,
             "movement_range_z": 0,
-            "x": 319,
-            "z": 721,
+            "x": 328,
+            "z": 722,
             "y": 7
         },
         {
             "id": "LOCALID_BATTLE_GIRL_HELEN",
             "graphics_id": "OBJ_EVENT_GFX_BATTLE_GIRL",
-            "movement_type": "MOVEMENT_TYPE_WALK_BACK_AND_FORTH",
+            "movement_type": "MOVEMENT_TYPE_LOOK_WEST",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
             "script": "TRAINER_R207_BATTLE_GIRL_HELEN",
-            "initial_dir": 3,
+            "initial_dir": 0,
             "data": [
-                2
+                1
             ],
-            "movement_range_x": 4,
+            "movement_range_x": 0,
             "movement_range_z": 0,
-            "x": 336,
+            "x": 342,
             "z": 722,
             "y": 6
         },
@@ -413,8 +413,8 @@
             "data": [],
             "movement_range_x": 0,
             "movement_range_z": 0,
-            "x": 326,
-            "z": 715,
+            "x": 319,
+            "z": 710,
             "y": 0
         },
         {
@@ -428,8 +428,8 @@
             "data": [],
             "movement_range_x": 0,
             "movement_range_z": 0,
-            "x": 328,
-            "z": 715,
+            "x": 319,
+            "z": 716,
             "y": 0
         },
         {
