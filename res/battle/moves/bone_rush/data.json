@@ -2,7 +2,7 @@
     "name": "Bone Rush",
     "class": "CLASS_PHYSICAL",
     "type": "TYPE_GROUND",
-    "power": 30,
+    "power": 25,
     "accuracy": 100,
     "pp": 10,
     "effect": {

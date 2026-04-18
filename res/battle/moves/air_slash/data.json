@@ -2,7 +2,7 @@
     "name": "Air Slash",
     "class": "CLASS_SPECIAL",
     "type": "TYPE_FLYING",
-    "power": 90,
+    "power": 80,
     "accuracy": 100,
     "pp": 10,
     "effect": {

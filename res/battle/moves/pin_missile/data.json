@@ -2,7 +2,7 @@
     "name": "Pin Missile",
     "class": "CLASS_PHYSICAL",
     "type": "TYPE_BUG",
-    "power": 30,
+    "power": 25,
     "accuracy": 100,
     "pp": 10,
     "effect": {

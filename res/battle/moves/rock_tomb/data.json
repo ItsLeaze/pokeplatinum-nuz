@@ -2,7 +2,7 @@
     "name": "Rock Tomb",
     "class": "CLASS_PHYSICAL",
     "type": "TYPE_ROCK",
-    "power": 50,
+    "power": 60,
     "accuracy": 100,
     "pp": 10,
     "effect": {

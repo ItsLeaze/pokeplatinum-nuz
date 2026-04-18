@@ -109,6 +109,7 @@ def main():
     move_files = find_move_files(MOVES_DIR)
     rows = []
 
+    move_files.sort()
     for file in move_files:
         data = load_move(file)
         row = process_move(data)

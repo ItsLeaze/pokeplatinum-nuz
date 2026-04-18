@@ -2,7 +2,7 @@
     "name": "Slash",
     "class": "CLASS_PHYSICAL",
     "type": "TYPE_NORMAL",
-    "power": 80,
+    "power": 70,
     "accuracy": 100,
     "pp": 20,
     "effect": {

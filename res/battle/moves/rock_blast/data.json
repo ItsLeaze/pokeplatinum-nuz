@@ -2,7 +2,7 @@
     "name": "Rock Blast",
     "class": "CLASS_PHYSICAL",
     "type": "TYPE_ROCK",
-    "power": 30,
+    "power": 25,
     "accuracy": 100,
     "pp": 10,
     "effect": {

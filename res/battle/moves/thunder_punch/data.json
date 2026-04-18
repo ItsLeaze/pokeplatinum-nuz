@@ -2,7 +2,7 @@
     "name": "ThunderPunch",
     "class": "CLASS_PHYSICAL",
     "type": "TYPE_ELECTRIC",
-    "power": 90,
+    "power": 80,
     "accuracy": 100,
     "pp": 15,
     "effect": {

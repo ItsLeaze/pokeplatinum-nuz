@@ -4,7 +4,7 @@
     "type": "TYPE_GRASS",
     "power": 150,
     "accuracy": 100,
-    "pp": 1,
+    "pp": 5,
     "effect": {
         "type": "BATTLE_EFFECT_RECHARGE_AFTER",
         "chance": 0

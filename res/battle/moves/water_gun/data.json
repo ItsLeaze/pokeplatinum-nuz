@@ -2,7 +2,7 @@
     "name": "Water Gun",
     "class": "CLASS_SPECIAL",
     "type": "TYPE_WATER",
-    "power": 40,
+    "power": 50,
     "accuracy": 100,
     "pp": 25,
     "effect": {
