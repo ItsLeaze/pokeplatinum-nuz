@@ -532,7 +532,7 @@
             "graphics_id": "OBJ_EVENT_GFX_GYM_GUIDE",
             "movement_type": "MOVEMENT_TYPE_LOOK_SOUTH",
             "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "VAR_TALKED_TO_GARDENIA",
+            "hidden_flag": "FLAG_TALKED_TO_GARDENIA",
             "script": 24,
             "initial_dir": 1,
             "data": [],

@@ -158,7 +158,7 @@
             "graphics_id": "OBJ_EVENT_GFX_BRIEFCASE",
             "movement_type": "MOVEMENT_TYPE_LOOK_NORTH",
             "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "VAR_KANTO_STARTER_ACQUIRED",
+            "hidden_flag": "FLAG_KANTO_STARTERS_OBTAINED",
             "script": 13,
             "initial_dir": 1,
             "data": [],

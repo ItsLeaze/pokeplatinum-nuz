@@ -374,5 +374,5 @@ TrainerSchool_Briefcase:
     End
 
 SetKantoStarterAcquired:
-    SetFlag VAR_KANTO_STARTER_ACQUIRED
+    SetFlag FLAG_KANTO_STARTERS_OBTAINED
     End

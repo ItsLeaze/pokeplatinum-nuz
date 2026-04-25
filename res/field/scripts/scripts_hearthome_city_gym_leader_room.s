@@ -69,6 +69,7 @@ HearthomeGym_FantinaMain:
     PlayFanfare SEQ_BADGE
     WaitFanfare
     GiveBadge BADGE_ID_RELIC
+    SetFlag FLAG_FANTINA_BADGE_OBTAINED
     IncrementTrainerScore2 TRAINER_SCORE_EVENT_BADGE_EARNED
     SetTrainerFlag TRAINER_CAMPER_DREW
     SetTrainerFlag TRAINER_ACE_TRAINER_ALLEN
@@ -80,7 +81,6 @@ HearthomeGym_FantinaMain:
     SetTrainerFlag TRAINER_YOUNGSTER_DONNY
     CreateJournalEvent LOCATION_EVENT_BEAT_GYM_LEADER, 91, TRAINER_LEADER_FANTINA, 0, 0
     SetVar VAR_HEARTHOME_STATE, 1
-    SetFlag FLAG_HIDE_HEARTHOME_ROUTE_209_ROADBLOCK
     ClearFlag FLAG_HIDE_HEARTHOME_ROUTE_209_GATE_RIVAL
     Message HearthomeGym_Text_FantinaExplainRelicBadge
     GoTo HearthomeGym_FantinaTryGiveTM65

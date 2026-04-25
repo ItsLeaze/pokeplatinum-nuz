@@ -56,6 +56,7 @@ PastoriaGym_Wake:
     PlayFanfare SEQ_BADGE
     WaitFanfare
     GiveBadge BADGE_ID_FEN
+    SetFlag FLAG_WAKE_BADGE_OBTAINED
     IncrementTrainerScore2 TRAINER_SCORE_EVENT_BADGE_EARNED
     SetTrainerFlag TRAINER_FISHERMAN_ERICK
     SetTrainerFlag TRAINER_SAILOR_DAMIAN

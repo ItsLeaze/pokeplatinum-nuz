@@ -29,6 +29,7 @@ CanalaveGym_Byron:
     PlayFanfare SEQ_BADGE
     WaitFanfare
     GiveBadge BADGE_ID_MINE
+    SetFlag FLAG_BYRON_BADGE_OBTAINED
     IncrementTrainerScore2 TRAINER_SCORE_EVENT_BADGE_EARNED
     SetTrainerFlag TRAINER_BLACK_BELT_DAVID
     SetTrainerFlag TRAINER_WORKER_JACKSON
@@ -45,7 +46,6 @@ CanalaveGym_Byron:
     ClearFlag FLAG_HIDE_CANALAVE_LIBRARY_ROWAN
     SetVar VAR_CANALAVE_STATE, 2
     SetFlag FLAG_HIDE_SANDGEM_TOWN_LAB_PROF_ROWAN
-    SetFlag VAR_BYRON_DEFEATED
     Message CanalaveGym_Text_ByronExplainMineBadge
     GoTo CanalaveGym_ByronTryGiveTM91
 

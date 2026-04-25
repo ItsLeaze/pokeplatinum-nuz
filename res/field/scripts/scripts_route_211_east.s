@@ -57,7 +57,7 @@ Route211East_GardeniaLeaveLeftThenDown:
 
 Route211East_GardeniaLeft:
     RemoveObject LOCALID_GARDENIA
-    SetFlag VAR_TALKED_TO_GARDENIA
+    SetFlag FLAG_TALKED_TO_GARDENIA
     ReleaseAll
     End
 

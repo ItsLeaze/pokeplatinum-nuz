@@ -33,6 +33,7 @@ SnowpointGym_Candice:
     PlayFanfare SEQ_BADGE
     WaitFanfare
     GiveBadge BADGE_ID_ICICLE
+    SetFlag FLAG_CANDICE_BADGE_OBTAINED
     IncrementTrainerScore2 TRAINER_SCORE_EVENT_BADGE_EARNED
     SetTrainerFlag TRAINER_ACE_TRAINER_SERGIO
     SetTrainerFlag TRAINER_ACE_TRAINER_ISAIAH
@@ -41,7 +42,6 @@ SnowpointGym_Candice:
     SetTrainerFlag TRAINER_ACE_TRAINER_ALICIA
     SetTrainerFlag TRAINER_ACE_TRAINER_BRENNA
     CreateJournalEvent LOCATION_EVENT_BEAT_GYM_LEADER, 167, TRAINER_LEADER_CANDICE, 0, 0
-    SetFlag FLAG_HIDE_VEILSTONE_GALACTIC_GRUNTS
     Message SnowpointGym_Text_CandiceExplainIcicleBadge
     GoTo SnowpointGym_CandiceTryGiveTM72
 

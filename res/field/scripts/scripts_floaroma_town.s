@@ -137,7 +137,7 @@ FloaromaTown_Clown:
     PlaySE SEQ_SE_CONFIRM
     LockAll
     FacePlayer
-    GoToIfSet VAR_JOHTO_STARTER_ACQUIRED, FloaromaTown_ClownPokemonAlreadyObtained
+    GoToIfSet FLAG_FLOAROMA_BRIEFCASE_ACQUIRED, FloaromaTown_ClownPokemonAlreadyObtained
     Message FloaromaTown_Text_ClownQuestion
     ShowYesNoMenu VAR_RESULT
     GoToIfEq VAR_RESULT, MENU_YES, FloaromaTown_ClownCorrectAnswer
@@ -188,7 +188,7 @@ FloaromaTown_ClownPokemonAlreadyObtained:
     End
 
 SetKantoStarterAcquired:
-    SetFlag VAR_JOHTO_STARTER_ACQUIRED
+    SetFlag FLAG_FLOAROMA_BRIEFCASE_ACQUIRED
     End
 
     .balign 4, 0
