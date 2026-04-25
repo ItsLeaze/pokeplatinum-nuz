@@ -11,35 +11,10 @@
         {
             "species": "SPECIES_MACHOKE",
             "form": 0,
-            "level": 23,
+            "level": 20,
             "item": null,
             "moves": [
                 "MOVE_KARATE_CHOP",
-                "MOVE_LEER",
-                "MOVE_FORESIGHT"
-            ],
-            "iv_scale": 40,
-            "ball_seal": 0
-        },
-        {
-            "species": "SPECIES_MACHOKE",
-            "form": 0,
-            "level": 25,
-            "item": null,
-            "moves": [
-                "MOVE_LOW_KICK",
-                "MOVE_FORESIGHT"
-            ],
-            "iv_scale": 40,
-            "ball_seal": 0
-        },
-        {
-            "species": "SPECIES_MACHOKE",
-            "form": 0,
-            "level": 27,
-            "item": null,
-            "moves": [
-                "MOVE_SUBMISSION",
                 "MOVE_LEER",
                 "MOVE_FORESIGHT"
             ],

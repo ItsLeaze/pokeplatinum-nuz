@@ -11,37 +11,13 @@
         {
             "species": "SPECIES_MACHOP",
             "form": 0,
-            "level": 25,
+            "level": 20,
             "item": null,
             "moves": [
                 "MOVE_KARATE_CHOP",
                 "MOVE_FORESIGHT"
             ],
-            "iv_scale": 40,
-            "ball_seal": 0
-        },
-        {
-            "species": "SPECIES_MEDITITE",
-            "form": 0,
-            "level": 25,
-            "item": null,
-            "moves": [
-                "MOVE_CONFUSION",
-                "MOVE_FORCE_PALM"
-            ],
-            "iv_scale": 40,
-            "ball_seal": 0
-        },
-        {
-            "species": "SPECIES_MACHOKE",
-            "form": 0,
-            "level": 25,
-            "item": null,
-            "moves": [
-                "MOVE_KARATE_CHOP",
-                "MOVE_FORESIGHT"
-            ],
-            "iv_scale": 40,
+            "iv_scale": 0,
             "ball_seal": 0
         }
     ],
