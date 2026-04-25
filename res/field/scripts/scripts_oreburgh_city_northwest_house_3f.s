@@ -10,15 +10,7 @@ OreburghCityNorthwestHouse3F_Lass:
     PlaySE SEQ_SE_CONFIRM
     LockAll
     FacePlayer
-    GoToIfSet FLAG_RECEIVED_OREBURGH_CITY_NORTHWEST_HOUSE_3F_HARD_STONE, OreburghCityNorthwestHouse3F_ThatItemIntensifiesThePowerOfRockTypeMoves
-    BufferItemName 0, ITEM_HARD_STONE
-    Message OreburghCityNorthwestHouse3F_Text_IfYoudLikeLetOneHoldThisItem
-    SetVar VAR_0x8004, ITEM_HARD_STONE
-    SetVar VAR_0x8005, 1
-    GoToIfCannotFitItem VAR_0x8004, VAR_0x8005, VAR_RESULT, OreburghCityNorthwestHouse3F_BagIsFull
-    SetFlag FLAG_RECEIVED_OREBURGH_CITY_NORTHWEST_HOUSE_3F_HARD_STONE
-    Common_GiveItemQuantityNoLineFeed
-    CloseMessage
+    GoTo OreburghCityNorthwestHouse3F_ThatItemIntensifiesThePowerOfRockTypeMoves
     ReleaseAll
     End
 

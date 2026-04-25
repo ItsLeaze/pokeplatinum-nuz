@@ -14,19 +14,11 @@ EternaCitySouthHouse_ProfOak:
     Call EternaCitySouthHouse_CheckCaughtAllRoamingLegendaryBirds
     GoToIfEq VAR_RESULT, TRUE, EternaCitySouthHouse_CaughtAllRoamingLegendaryBirds
     GoToIfSet FLAG_ACTIVATED_ROAMING_LEGENDARY_BIRDS, EternaCitySouthHouse_TryReactivateRoamingLegendaryBirds
-    GoToIfSet FLAG_RECEIVED_ETERNA_CITY_SOUTH_HOUSE_UPGRADE, EternaCitySouthHouse_PokedexRatingsCheckOak
     BufferPlayerName 0
     Message EternaCitySouthHouse_Text_HowIsYourPokedexComingAlong
     CloseMessage
     ApplyMovement LOCALID_PROF_OAK, EternaCitySouthHouse_Movement_EmoteExclamationMark
     WaitMovement
-    Message EternaCitySouthHouse_Text_AnAcquaintanceFromKantoHasSentSomethingQuiteInteresting
-    SetVar VAR_0x8004, ITEM_UPGRADE
-    SetVar VAR_0x8005, 1
-    GoToIfCannotFitItem VAR_0x8004, VAR_0x8005, VAR_RESULT, EternaCitySouthHouse_BagIsFull
-    Common_GiveItemQuantity
-    SetFlag FLAG_RECEIVED_ETERNA_CITY_SOUTH_HOUSE_UPGRADE
-    Message EternaCitySouthHouse_Text_IUnderstandThereIsAPokemonThatEvolvesWhenItIsTradedWhileHoldingThatUpGrade
     GoTo EternaCitySouthHouse_ActivateRoamingLegendaryBirds
     End
 

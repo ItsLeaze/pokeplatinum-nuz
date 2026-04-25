@@ -5,9 +5,7 @@
       "id": "pl_msg_00000049_00000",
       "en_US": [
         "{STRVAR_1 3, 1, 0}: Hey, {STRVAR_1 3, 0, 0}!\n",
-        "Did you come to study, too?\r",
-        "Huh?\n",
-        "You’ve got something for me?\r"
+        "Finally you’re here.\r"
       ]
     },
     {
@@ -17,13 +15,10 @@
     {
       "id": "pl_msg_00000049_00002",
       "en_US": [
-        "{STRVAR_1 3, 1, 0}: So, what is this...?\r",
-        "Score!\n",
-        "It’s a Town Map!\r",
-        "Huh?!\n",
-        "Why are there two in here?\r",
-        "I like it a lot, but I don’t need two.\n",
-        "Here, {STRVAR_1 3, 0, 0}, you take one!\r"
+        "{STRVAR_1 3, 1, 0}: They just\r",
+        "gave an awesome battle lesson!\n",
+        "And they gave us this.\n",
+        "I also got one for you!\r"
       ]
     },
     {

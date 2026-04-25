@@ -40,7 +40,6 @@ LakeVerityLowWater_HideStarly:
 
 LakeVerityLowWater_OnFrameCyrus:
     LockAll
-    SetFlag FLAG_HIDE_LAKE_VERITY_LOW_WATER_RIVAL
     SetVar VAR_FOLLOWER_RIVAL_STATE, 4
     SetVar VAR_VISITED_LAKE_VERITY_WITH_RIVAL, 1
     ReleaseAll

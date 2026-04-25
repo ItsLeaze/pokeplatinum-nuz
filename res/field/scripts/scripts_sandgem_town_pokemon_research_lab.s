@@ -289,7 +289,6 @@ SandgemTownLab_CounterpartLeave:
     WaitMovement
     RemoveObject LOCALID_COUNTERPART
     SetVar VAR_SANDGEM_TOWN_LAB_STATE, 1
-    ClearFlag FLAG_HIDE_SANDGEM_TOWN_PROF_ROWAN
     SetVar VAR_SANDGEM_TOWN_STATE, 2
     ReleaseAll
     End

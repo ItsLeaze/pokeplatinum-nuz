@@ -30,19 +30,9 @@ OreburghCity_Rival:
     PlaySE SEQ_SE_CONFIRM
     LockAll
     FacePlayer
-    GoToIfSet FLAG_TALKED_TO_OREBURGH_CITY_RIVAL, OreburghCity_IToldYouTheGymLeaderWentDownToTheOreburghMine
     BufferRivalName 0
     BufferPlayerName 1
     Message OreburghCity_Text_TheGymLeadersGoneOffToTheCoalMine
-    WaitButton
-    SetFlag FLAG_TALKED_TO_OREBURGH_CITY_RIVAL
-    CloseMessage
-    ReleaseAll
-    End
-
-OreburghCity_IToldYouTheGymLeaderWentDownToTheOreburghMine:
-    BufferRivalName 0
-    Message OreburghCity_Text_IToldYouTheGymLeaderWentDownToTheOreburghMine
     WaitButton
     CloseMessage
     ReleaseAll
@@ -273,25 +263,7 @@ OreburghCity_Worker2:
     PlaySE SEQ_SE_CONFIRM
     LockAll
     FacePlayer
-    GoToIfSet FLAG_RECEIVED_OREBURGH_CITY_SUPER_POTION, OreburghCity_FeelingHaleAndHeartyPutsASmileOnMyFace
     Message OreburghCity_Text_HereTakeOneOfThese
-    SetVar VAR_0x8004, ITEM_SUPER_POTION
-    SetVar VAR_0x8005, 1
-    GoToIfCannotFitItem VAR_0x8004, VAR_0x8005, VAR_RESULT, OreburghCity_BagIsFull
-    Common_GiveItemQuantity
-    SetFlag FLAG_RECEIVED_OREBURGH_CITY_SUPER_POTION
-    GoTo OreburghCity_FeelingHaleAndHeartyPutsASmileOnMyFace
-    End
-
-OreburghCity_FeelingHaleAndHeartyPutsASmileOnMyFace:
-    Message OreburghCity_Text_FeelingHaleAndHeartyPutsASmileOnMyFace
-    WaitButton
-    CloseMessage
-    ReleaseAll
-    End
-
-OreburghCity_BagIsFull:
-    Common_MessageBagIsFull
     CloseMessage
     ReleaseAll
     End

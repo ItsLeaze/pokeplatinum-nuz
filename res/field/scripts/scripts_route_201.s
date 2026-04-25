@@ -18,9 +18,6 @@
     ScriptEntry Route201_TriggerFollowingRivalStopPlayerEast
     ScriptEntry Route201_ProfRowan
     ScriptEntry Route201_TriggerLetsCatchThatLegendaryPokemon
-    ScriptEntry KantoStarterSelection
-    ScriptEntry JohtoStarterSelection
-    ScriptEntry HoennStarterSelection
     ScriptEntryEnd
 
 Route201_OnTransition:
@@ -231,60 +228,6 @@ Route201_Briefcase:
     RemoveObject LOCALID_PROF_ROWAN
     RemoveObject LOCALID_COUNTERPART
     GoTo Route201_CounterpartLeave
-    End
-
-KantoStarterSelection:
-    LockAll
-    FadeScreen 6, 1, 0, 0
-    WaitFadeScreen
-    RemoveObject LOCALID_BRIEFCASE_KANTO
-    StartChooseStarterScene SPECIES_BULBASAUR, SPECIES_CHARMANDER, SPECIES_SQUIRTLE
-    ReturnToField
-    FadeScreen 6, 1, 1, 0
-    WaitFadeScreen
-    GetChosenBriefcaseSpecies VAR_0x8000
-    GivePokemon VAR_0x8000, 10, ITEM_NONE, VAR_RESULT
-    GoToIfEq VAR_RESULT TRUE SetKantoStarterAcquired
-    End
-
-SetKantoStarterAcquired:
-    SetFlag VAR_KANTO_STARTER_ACQUIRED
-    End
-
-JohtoStarterSelection:
-    LockAll
-    FadeScreen 6, 1, 0, 0
-    WaitFadeScreen
-    RemoveObject LOCALID_BRIEFCASE_JOHTO
-    StartChooseStarterScene SPECIES_CHIKORITA, SPECIES_CYNDAQUIL, SPECIES_TOTODILE
-    ReturnToField
-    FadeScreen 6, 1, 1, 0
-    WaitFadeScreen
-    GetChosenBriefcaseSpecies VAR_0x8000
-    GivePokemon VAR_0x8000, 5, ITEM_NONE, VAR_RESULT
-    GoToIfEq VAR_RESULT TRUE SetJohtoStarterAcquired
-    End
-
-SetJohtoStarterAcquired:
-    SetFlag VAR_JOHTO_STARTER_ACQUIRED
-    End
-
-HoennStarterSelection:
-    LockAll
-    FadeScreen 6, 1, 0, 0
-    WaitFadeScreen
-    RemoveObject LOCALID_BRIEFCASE_HOENN
-    StartChooseStarterScene SPECIES_TREECKO, SPECIES_TORCHIC, SPECIES_MUDKIP
-    ReturnToField
-    FadeScreen 6, 1, 1, 0
-    WaitFadeScreen
-    GetChosenBriefcaseSpecies VAR_0x8000
-    GivePokemon VAR_0x8000, 5, ITEM_NONE, VAR_RESULT
-    GoToIfEq VAR_RESULT TRUE SetHoennStarterAcquired
-    End
-
-SetHoennStarterAcquired:
-    SetFlag VAR_HOENN_STARTER_ACQUIRED
     End
 
 Route201_CounterpartLeave:
@@ -998,7 +941,6 @@ _0CF1:
     SetFlag FLAG_HIDE_ROUTE_201_RIVAL
     SetFlag FLAG_UNK_0x0195
     SetVar VAR_UNK_0x4082, 4
-    SetFlag FLAG_HIDE_LAKE_VERITY_LOW_WATER_RIVAL
     WaitTime 30, VAR_RESULT
     FadeScreenOut FADE_SCREEN_SPEED_MEDIUM
     WaitFadeScreen
@@ -1118,14 +1060,7 @@ Route201_Cashier:
     PlaySE SEQ_SE_CONFIRM
     LockAll
     FacePlayer
-    GoToIfSet FLAG_GOT_POTION_FROM_ROUTE_201_CASHIER, Route201_YouCanFindMartsInCitiesAndMajorTowns
-    Message Route201_Text_HereAPotionAsAFreeSample
-    SetVar VAR_0x8004, ITEM_POTION
-    SetVar VAR_0x8005, 1
-    GoToIfCannotFitItem VAR_0x8004, VAR_0x8005, VAR_RESULT, Route201_BagIsFull
-    SetFlag FLAG_GOT_POTION_FROM_ROUTE_201_CASHIER
-    Common_GiveItemQuantityNoLineFeed
-    CloseMessage
+    GoTo Route201_YouCanFindMartsInCitiesAndMajorTowns
     ReleaseAll
     End
 

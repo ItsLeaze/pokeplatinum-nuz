@@ -426,7 +426,6 @@ SandgemTown_Movement_RivalLeave:
 
 SandgemTown_OnFrameExitLab:
     LockAll
-    ClearFlag FLAG_HIDE_SANDGEM_TOWN_PROF_ROWAN
     ApplyMovement LOCALID_PLAYER, PlayerWalkOneStepSouth
     WaitMovement
     GoTo DawnTalkAndWalkAway

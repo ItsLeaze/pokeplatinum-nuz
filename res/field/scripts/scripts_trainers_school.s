@@ -25,11 +25,6 @@ _0032:
     BufferPlayerName 0
     BufferRivalName 1
     Message 0
-    PlayFanfare SEQ_FANFA4
-    BufferPlayerName 0
-    Message 1
-    WaitFanfare
-    RemoveItem ITEM_PARCEL, 1, VAR_RESULT
     BufferPlayerName 0
     BufferRivalName 1
     Message 2
