@@ -69,7 +69,7 @@
         {
             "id": "LOCALID_BREEDER_ALBERT",
             "graphics_id": "OBJ_EVENT_GFX_POKEMON_BREEDER_M",
-            "movement_type": "MOVEMENT_TYPE_LOOK_NORTH_AND_SOUTH",
+            "movement_type": "MOVEMENT_TYPE_LOOK_SOUTH",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
             "script": "TRAINER_R209_BREEDER_ALBERT",
@@ -79,14 +79,14 @@
             ],
             "movement_range_x": 0,
             "movement_range_z": 0,
-            "x": 522,
-            "z": 725,
+            "x": 528,
+            "z": 722,
             "y": 0
         },
         {
             "id": "LOCALID_BREEDER_JENNIFER",
             "graphics_id": "OBJ_EVENT_GFX_POKEMON_BREEDER_F",
-            "movement_type": "MOVEMENT_TYPE_LOOK_NORTH_SOUTH_AND_EAST",
+            "movement_type": "MOVEMENT_TYPE_LOOK_SOUTH",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
             "script": "TRAINER_R209_BREEDER_JENNIFER",
@@ -120,18 +120,18 @@
         {
             "id": "LOCALID_JOGGER_RICHARD",
             "graphics_id": "OBJ_EVENT_GFX_JOGGER",
-            "movement_type": "MOVEMENT_TYPE_WALK_SOUTH_WEST_EAST_NORTH",
+            "movement_type": "MOVEMENT_TYPE_WALK_BACK_AND_FORTH",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "FLAG_HIDE_ROUTE_209_JOGGER_RICHARD",
             "script": "TRAINER_R209_JOGGER_RICHARD",
             "initial_dir": 1,
             "data": [
-                4
+                5
             ],
-            "movement_range_x": 8,
-            "movement_range_z": 7,
+            "movement_range_x": 0,
+            "movement_range_z": 3,
             "x": 540,
-            "z": 716,
+            "z": 724,
             "y": 0
         },
         {
@@ -141,14 +141,14 @@
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "FLAG_HIDE_ROUTE_209_JOGGER_RAUL",
             "script": "TRAINER_JOGGER_RAUL",
-            "initial_dir": 2,
+            "initial_dir": 1,
             "data": [
-                1
+                5
             ],
-            "movement_range_x": 5,
-            "movement_range_z": 0,
-            "x": 561,
-            "z": 715,
+            "movement_range_x": 0,
+            "movement_range_z": 3,
+            "x": 540,
+            "z": 718,
             "y": 0
         },
         {
@@ -474,8 +474,8 @@
             "data": [],
             "movement_range_x": 0,
             "movement_range_z": 0,
-            "x": 540,
-            "z": 712,
+            "x": 539,
+            "z": 725,
             "y": 0
         },
         {
@@ -489,8 +489,8 @@
             "data": [],
             "movement_range_x": 0,
             "movement_range_z": 0,
-            "x": 541,
-            "z": 712,
+            "x": 539,
+            "z": 726,
             "y": 0
         },
         {
@@ -504,8 +504,8 @@
             "data": [],
             "movement_range_x": 0,
             "movement_range_z": 0,
-            "x": 565,
-            "z": 702,
+            "x": 539,
+            "z": 727,
             "y": 0
         },
         {
@@ -519,8 +519,8 @@
             "data": [],
             "movement_range_x": 0,
             "movement_range_z": 0,
-            "x": 565,
-            "z": 700,
+            "x": 559,
+            "z": 689,
             "y": 0
         },
         {
@@ -536,40 +536,6 @@
             "movement_range_z": 0,
             "x": 532,
             "z": 727,
-            "y": 0
-        },
-        {
-            "id": "LOCALID_JOGGER_RICHARD_NO_BATTLE",
-            "graphics_id": "OBJ_EVENT_GFX_JOGGER",
-            "movement_type": "MOVEMENT_TYPE_WALK_SOUTH_WEST_EAST_NORTH",
-            "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_HIDE_ROUTE_209_JOGGER_RICHARD_NO_BATTLE",
-            "script": 6,
-            "initial_dir": 1,
-            "data": [
-                4
-            ],
-            "movement_range_x": 8,
-            "movement_range_z": 7,
-            "x": 540,
-            "z": 716,
-            "y": 0
-        },
-        {
-            "id": "LOCALID_JOGGER_RAUL_NO_BATTLE",
-            "graphics_id": "OBJ_EVENT_GFX_JOGGER",
-            "movement_type": "MOVEMENT_TYPE_WALK_BACK_AND_FORTH",
-            "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_HIDE_ROUTE_209_JOGGER_RAUL_NO_BATTLE",
-            "script": 7,
-            "initial_dir": 2,
-            "data": [
-                2
-            ],
-            "movement_range_x": 5,
-            "movement_range_z": 0,
-            "x": 561,
-            "z": 715,
             "y": 0
         },
         {

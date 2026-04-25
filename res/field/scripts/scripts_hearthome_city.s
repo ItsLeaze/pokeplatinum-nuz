@@ -568,7 +568,6 @@ HearthomeCity_SignPoffinHouse:
     End
 
 HearthomeCity_GymGuide:
-    NPCMessage HearthomeCity_Text_ComeBackAnotherTime
     End
 
 HearthomeCity_Artist:

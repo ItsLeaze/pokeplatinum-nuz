@@ -15,8 +15,7 @@
 
 Route209_OnTransition:
     GetTimeOfDay VAR_MAP_LOCAL_0
-    GoToIfEq VAR_MAP_LOCAL_0, TIMEOFDAY_MORNING, Route209_SetJoggersBattle
-    GoToIfInRange VAR_MAP_LOCAL_0, TIMEOFDAY_DAY, TIMEOFDAY_LATE_NIGHT, Route209_SetJoggersNoBattle
+    GoTo Route209_SetJoggersBattle
     End
 
 Route209_SetJoggersBattle:

@@ -106,35 +106,6 @@ SolaceonTown_SignPokemonNewsPress:
     End
 
 SolaceonTown_TriggerRival:
-    LockAll
-    ApplyMovement LOCALID_PLAYER, SolaceonTown_Movement_PlayerNoticeRival
-    WaitMovement
-    Common_SetRivalBGM
-    GetPlayerMapPos VAR_0x8004, VAR_0x8005
-    SetObjectEventPos LOCALID_RIVAL, VAR_0x8004, 0x295
-    ClearFlag FLAG_HIDE_SOLACEON_TOWN_RIVAL
-    AddObject LOCALID_RIVAL
-    LockObject LOCALID_RIVAL
-    ApplyMovement LOCALID_PLAYER, SolaceonTown_Movement_PlayerFaceNorth
-    ApplyMovement LOCALID_RIVAL, SolaceonTown_Movement_RivalWalkSouth
-    WaitMovement
-    Message SolaceonTown_Text_Yahoo
-    CloseMessage
-    ApplyMovement LOCALID_RIVAL, SolaceonTown_Movement_RivalLookAround
-    WaitMovement
-    BufferRivalName 0
-    BufferPlayerName 1
-    Message SolaceonTown_Text_IGotSomethingCool
-    ApplyMovement LOCALID_RIVAL, SolaceonTown_Movement_RivalExclamationMark
-    WaitMovement
-    Message SolaceonTown_Text_CheckOutTheRuins
-    CloseMessage
-    ApplyMovement LOCALID_RIVAL, SolaceonTown_Movement_RivalLeave
-    WaitMovement
-    RemoveObject LOCALID_RIVAL
-    Common_FadeToDefaultMusic2
-    SetVar VAR_SOLACEON_TOWN_STATE, 1
-    ReleaseAll
     End
 
     .balign 4, 0

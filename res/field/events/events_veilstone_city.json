@@ -325,8 +325,8 @@
             "data": [],
             "movement_range_x": 0,
             "movement_range_z": 0,
-            "x": 710,
-            "z": 635,
+            "x": 717,
+            "z": 638,
             "y": 0
         },
         {
@@ -340,8 +340,8 @@
             "data": [],
             "movement_range_x": 0,
             "movement_range_z": 0,
-            "x": 712,
-            "z": 637,
+            "x": 720,
+            "z": 638,
             "y": 0
         },
         {
@@ -437,16 +437,16 @@
         {
             "id": "LOCALID_GRUNT_M_SOUTHEAST",
             "graphics_id": "OBJ_EVENT_GFX_GRUNT_M",
-            "movement_type": "MOVEMENT_TYPE_LOOK_WEST",
+            "movement_type": "MOVEMENT_TYPE_LOOK_NORTH",
             "trainer_type": "TRAINER_TYPE_NONE",
             "hidden_flag": "FLAG_HIDE_VEILSTONE_GALACTIC_GRUNTS",
             "script": 14,
-            "initial_dir": 2,
+            "initial_dir": 0,
             "data": [],
-            "movement_range_x": 1,
-            "movement_range_z": 2,
-            "x": 720,
-            "z": 632,
+            "movement_range_x": 0,
+            "movement_range_z": 0,
+            "x": 719,
+            "z": 637,
             "y": 7
         },
         {
@@ -495,18 +495,18 @@
             "y": 0
         },
         {
-            "id": "LOCALID_BATTLE_GIRL_3",
-            "graphics_id": "OBJ_EVENT_GFX_BATTLE_GIRL",
-            "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+            "id": "LOCALID_GRUNT_M_SOUTHEAST_2",
+            "graphics_id": "OBJ_EVENT_GFX_GRUNT_F",
+            "movement_type": "MOVEMENT_TYPE_LOOK_NORTH",
             "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "0",
-            "script": 32,
-            "initial_dir": 1,
+            "hidden_flag": "FLAG_HIDE_VEILSTONE_GALACTIC_GRUNTS",
+            "script": 14,
+            "initial_dir": 0,
             "data": [],
-            "movement_range_x": 2,
+            "movement_range_x": 0,
             "movement_range_z": 0,
-            "x": 705,
-            "z": 632,
+            "x": 718,
+            "z": 637,
             "y": 7
         },
         {

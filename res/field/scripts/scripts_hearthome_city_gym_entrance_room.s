@@ -65,6 +65,8 @@ HearthomeGym_GymStatueAfterBadge:
 
 HearthomeGym_GymGuide_InitialVisit:
     LockAll
+    SetVar VAR_CONTEST_HALL_LOBBY_STATE, 1
+    SetFlag FLAG_CONTEST_HALL_VISITED
     ApplyMovement LOCALID_GYM_GUIDE, HearthomeGym_GymGuideMoveToPlayer
     WaitMovement
     Message HearthomeGym_Text_GymGuideInitialVisit

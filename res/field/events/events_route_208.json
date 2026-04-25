@@ -27,12 +27,12 @@
             "script": "TRAINER_R208_HIKER_ROBERT",
             "initial_dir": 1,
             "data": [
-                2
+                1
             ],
             "movement_range_x": 0,
             "movement_range_z": 0,
-            "x": 420,
-            "z": 722,
+            "x": 422,
+            "z": 714,
             "y": 0
         },
         {
@@ -55,7 +55,7 @@
         {
             "id": "LOCALID_HIKER_JONATHAN",
             "graphics_id": "OBJ_EVENT_GFX_HIKER",
-            "movement_type": "MOVEMENT_TYPE_LOOK_SOUTH_AND_WEST",
+            "movement_type": "MOVEMENT_TYPE_LOOK_SOUTH",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
             "script": "TRAINER_R208_HIKER_JONATHAN",
@@ -78,7 +78,7 @@
             "script": "TRAINER_R208_BLACK_BELT_KYLE",
             "initial_dir": 0,
             "data": [
-                2
+                4
             ],
             "movement_range_x": 5,
             "movement_range_z": 1,
@@ -104,7 +104,7 @@
         {
             "id": "LOCALID_AROMA_LADY_HANNAH",
             "graphics_id": "OBJ_EVENT_GFX_POKEMON_BREEDER_F",
-            "movement_type": "MOVEMENT_TYPE_ROTATE_COUNTERCLOCKWISE",
+            "movement_type": "MOVEMENT_TYPE_LOOK_WEST",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
             "script": "TRAINER_R208_AROMA_LADY_HANNAH",
@@ -114,24 +114,24 @@
             ],
             "movement_range_x": 0,
             "movement_range_z": 0,
-            "x": 433,
-            "z": 720,
+            "x": 428,
+            "z": 719,
             "y": 0
         },
         {
             "id": "LOCALID_ARTIST_WILLIAM",
             "graphics_id": "OBJ_EVENT_GFX_ARTIST",
-            "movement_type": "MOVEMENT_TYPE_LOOK_WEST_AND_EAST",
+            "movement_type": "MOVEMENT_TYPE_LOOK_SOUTH",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
             "script": "TRAINER_R208_ARTIST_WILLIAM",
             "initial_dir": 3,
             "data": [
-                4
+                5
             ],
             "movement_range_x": 0,
             "movement_range_z": 0,
-            "x": 439,
+            "x": 442,
             "z": 724,
             "y": 0
         },
@@ -193,7 +193,7 @@
             ],
             "movement_range_x": 0,
             "movement_range_z": 0,
-            "x": 444,
+            "x": 443,
             "z": 724,
             "y": 0
         },

@@ -1,0 +1,43 @@
+{
+    "name": "Argenta",
+    "class": "TRAINER_CLASS_HALL_MATRON",
+    "items": [],
+    "ai_flags": [
+        "AI_FLAG_BASIC",
+        "AI_FLAG_EVAL_ATTACK",
+        "AI_FLAG_EXPERT"
+    ],
+    "double_battle": false,
+    "party": [
+        {
+            "species": "SPECIES_RATTATA",
+            "form": 0,
+            "level": 15,
+            "item": null,
+            "moves": [
+                "MOVE_TACKLE"
+            ],
+            "iv_scale": 0,
+            "ball_seal": 0
+        }
+    ],
+    "messages": [
+        {
+            "type": "TRMSG_PRE_BATTLE",
+            "en_US": [
+                "Let’s see what you got\r"
+            ]
+        },
+        {
+            "type": "TRMSG_DEFEAT",
+            "en_US": "Impressive!\n"
+        },
+        {
+            "type": "TRMSG_POST_BATTLE",
+            "en_US": [
+                "I underestimated you.\n",
+                "But you were a good match!\n"
+            ]
+        }
+    ]
+}
