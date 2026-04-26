@@ -10,52 +10,7 @@
         {
             "species": "SPECIES_SKORUPI",
             "form": 0,
-            "level": 21,
-            "item": null,
-            "moves": null,
-            "iv_scale": 0,
-            "ball_seal": 0
-        },
-        {
-            "species": "SPECIES_TANGELA",
-            "form": 0,
-            "level": 21,
-            "item": null,
-            "moves": null,
-            "iv_scale": 0,
-            "ball_seal": 0
-        },
-        {
-            "species": "SPECIES_YANMA",
-            "form": 0,
-            "level": 21,
-            "item": null,
-            "moves": null,
-            "iv_scale": 0,
-            "ball_seal": 0
-        },
-        {
-            "species": "SPECIES_CARNIVINE",
-            "form": 0,
-            "level": 21,
-            "item": null,
-            "moves": null,
-            "iv_scale": 0,
-            "ball_seal": 0
-        },
-        {
-            "species": "SPECIES_CROAGUNK",
-            "form": 0,
-            "level": 21,
-            "item": null,
-            "moves": null,
-            "iv_scale": 0,
-            "ball_seal": 0
-        },
-        {
-            "species": "SPECIES_TROPIUS",
-            "form": 0,
-            "level": 21,
+            "level": 20,
             "item": null,
             "moves": null,
             "iv_scale": 0,

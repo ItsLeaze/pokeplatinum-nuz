@@ -9,27 +9,9 @@
     "double_battle": false,
     "party": [
         {
-            "species": "SPECIES_CHINGLING",
-            "form": 0,
-            "level": 23,
-            "item": null,
-            "moves": null,
-            "iv_scale": 0,
-            "ball_seal": 0
-        },
-        {
-            "species": "SPECIES_DRIFLOON",
-            "form": 0,
-            "level": 25,
-            "item": null,
-            "moves": null,
-            "iv_scale": 0,
-            "ball_seal": 0
-        },
-        {
             "species": "SPECIES_KIRLIA",
             "form": 0,
-            "level": 27,
+            "level": 20,
             "item": null,
             "moves": null,
             "iv_scale": 0,

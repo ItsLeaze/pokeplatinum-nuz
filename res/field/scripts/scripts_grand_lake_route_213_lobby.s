@@ -7,6 +7,7 @@
     ScriptEntry GrandLakeRoute213Lobby_Policeman
     ScriptEntry GrandLakeRoute213Lobby_AceTrainerF
     ScriptEntry GrandLakeRoute213Lobby_Looker
+    ScriptEntry GrandLakeRoute213Lobby_Caitlin
     ScriptEntryEnd
 
 GrandLakeRoute213Lobby_OnTransition:
@@ -56,6 +57,10 @@ GrandLakeRoute213Lobby_IWillSearchInside:
     WaitButton
     CloseMessage
     ReleaseAll
+    End
+
+GrandLakeRoute213Lobby_Caitlin:
+    NPCMessage GrandLakeRoute213Lobby_Text_Caitlin
     End
 
     .balign 4, 0
