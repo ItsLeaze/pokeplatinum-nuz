@@ -19,6 +19,7 @@
 
 CelesticTown_OnTransition:
     SetFlag FLAG_UNLOCKED_VS_SEEKER_LVL_2
+    SetFlag FLAG_CELESTIC_VISITED
     End
 
 CelesticTown_GruntM:
