@@ -222,15 +222,12 @@ ValorLakefront_Cynthia:
     RemoveObject LOCALID_RIVAL
     Common_FadeToDefaultMusic2
     Message ValorLakefront_Text_HesYourFriend
-    CloseMessage
     CallIfEq VAR_0x8000, DIR_NORTH, ValorLakefront_CynthiaFacePlayerNorth
     CallIfEq VAR_0x8000, DIR_SOUTH, ValorLakefront_CynthiaFacePlayerSouth
     CallIfEq VAR_0x8000, DIR_WEST, ValorLakefront_CynthiaFacePlayerWest
     CallIfEq VAR_0x8000, DIR_EAST, ValorLakefront_CynthiaFacePlayerEast
     Message ValorLakefront_Text_HaveYouSeenPsyduck
-    ShowYesNoMenu VAR_RESULT
-    GoToIfEq VAR_RESULT, MENU_YES, ValorLakefront_YeahThatsRight
-    GoToIfEq VAR_RESULT, MENU_NO, ValorLakefront_YouHaventSeen
+    GoTo ValorLakefront_YeahThatsRight
     End
 
 ValorLakefront_SetCynthiaPositionNorth:

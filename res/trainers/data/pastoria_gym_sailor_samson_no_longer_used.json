@@ -8,42 +8,16 @@
     "double_battle": false,
     "party": [
         {
-            "species": "SPECIES_WINGULL",
-            "form": 0,
-            "level": 29,
-            "item": null,
-            "moves": [
-                "MOVE_WATER_PULSE",
-                "MOVE_WING_ATTACK",
-                "MOVE_SUPERSONIC"
-            ],
-            "iv_scale": 10,
-            "ball_seal": 0
-        },
-        {
             "species": "SPECIES_SHELLOS",
             "form": 0,
-            "level": 30,
+            "level": 20,
             "item": null,
             "moves": [
                 "MOVE_WATER_PULSE",
                 "MOVE_MUD_BOMB",
                 "MOVE_RAIN_DANCE"
             ],
-            "iv_scale": 10,
-            "ball_seal": 0
-        },
-        {
-            "species": "SPECIES_GOLDUCK",
-            "form": 0,
-            "level": 31,
-            "item": null,
-            "moves": [
-                "MOVE_FURY_SWIPES",
-                "MOVE_CONFUSION",
-                "MOVE_WATER_PULSE"
-            ],
-            "iv_scale": 10,
+            "iv_scale": 0,
             "ball_seal": 0
         }
     ],

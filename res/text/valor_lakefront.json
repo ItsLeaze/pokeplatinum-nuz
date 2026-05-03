@@ -49,14 +49,11 @@
       "id": "ValorLakefront_Text_IHadToTalk",
       "en_US": [
         "Cynthia: Oh, hello, long time no see!\n",
-        "How is your Pokédex filling up?\r",
-        "I came to research the folklore\n",
-        "about the lake, but...\r",
-        "Well, it doesn’t appear as if the\n",
-        "lake is open to the public now.\r",
-        "Have you heard the folklore about it?\r",
-        "They say there is an island inside\n",
-        "the lake.\r",
+        "I came to research the folklore\f",
+        "about the lake, but it appears the lake\f",
+        "is not open to the public right now.\r",
+        "Have you heard the folklore about it?\n",
+        "They say there is an island in there.\r",
         "And inside that island is a mirage\n",
         "of a Pokémon.\r",
         "No one must enter the chamber\n",
@@ -108,14 +105,12 @@
         "Cynthia: So, getting back to what I\n",
         "started saying earlier...\r",
         "Have you seen the group of PSYDUCK\n",
-        "on Route 210?"
+        "on Route 210?\r"
       ]
     },
     {
       "id": "ValorLakefront_Text_YeahThatsRight",
       "en_US": [
-        "Cynthia: Yes, that’s right.\n",
-        "By the café on Route 210.\r",
         "You’ve seen that group of PSYDUCK\n",
         "huddled with their heads in their,\f",
         "uh, hands...?\r"
@@ -135,20 +130,12 @@
       "id": "ValorLakefront_Text_UseMedicineOnPsyduck",
       "en_US": [
         "Anyway, what you should do is use\n",
-        "this medicine on the PSYDUCK.\r",
-        "You’re working on a Pokédex, so it\n",
-        "would be worthwhile for you.\r"
+        "this medicine on the PSYDUCK.\r"
       ]
     },
     {
       "id": "ValorLakefront_Text_SeeYouLater",
       "en_US": [
-        "Cynthia: I went on a big adventure\n",
-        "with a Pokédex when I was younger.\r",
-        "I hope you get to meet every kind\n",
-        "of Pokémon there is to see.\r",
-        "It may help you with the secret of\n",
-        "the mirage Pokémon.\r",
         "See you later!\r"
       ]
     },

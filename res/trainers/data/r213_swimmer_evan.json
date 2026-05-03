@@ -1,6 +1,6 @@
 {
-    "name": "Cyndy",
-    "class": "TRAINER_CLASS_BEAUTY",
+    "name": "Evan",
+    "class": "TRAINER_CLASS_SWIMMER_MALE",
     "items": [],
     "ai_flags": [
         "AI_FLAG_BASIC"
@@ -8,9 +8,9 @@
     "double_battle": false,
     "party": [
         {
-            "species": "SPECIES_GLAMEOW",
+            "species": "SPECIES_GOLDUCK",
             "form": 0,
-            "level": 29,
+            "level": 20,
             "item": null,
             "moves": null,
             "iv_scale": 0,
@@ -21,29 +21,30 @@
         {
             "type": "TRMSG_PRE_BATTLE",
             "en_US": [
-                "Let me demonstrate my technique.\n",
-                "It’s how this grown-up battles.\r"
+                "Brr... I’m starting to get chilly.\n",
+                "I could use a win to get warmed up.\r"
             ]
         },
         {
             "type": "TRMSG_DEFEAT",
             "en_US": [
-                "Oh, my gosh!\n",
-                "You attack that savagely?\n"
+                "The chill of the sea, and the\n",
+                "coldness of defeat...\r",
+                "It’s a double whammy.\n"
             ]
         },
         {
             "type": "TRMSG_POST_BATTLE",
             "en_US": [
-                "You’re so much more of a Trainer\n",
-                "than you look!\n"
+                "Look at my lips...\n",
+                "They’re the color of prunes!\n"
             ]
         },
         {
             "type": "TRMSG_REMATCH",
             "en_US": [
-                "OK, this time I’ll really show you how a\n",
-                "grown-up battles!\r"
+                "Brr... I’m starting to feel chilly.\n",
+                "How about a hot Pokémon battle?\r"
             ]
         }
     ]

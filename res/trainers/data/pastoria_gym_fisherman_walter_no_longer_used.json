@@ -10,13 +10,13 @@
         {
             "species": "SPECIES_WHISCASH",
             "form": 0,
-            "level": 33,
+            "level": 20,
             "item": null,
             "moves": [
                 "MOVE_WATER_PULSE",
                 "MOVE_MAGNITUDE"
             ],
-            "iv_scale": 10,
+            "iv_scale": 0,
             "ball_seal": 0
         }
     ],

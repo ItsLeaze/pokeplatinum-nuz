@@ -369,53 +369,7 @@ PastoriaCity_Movement_RivalWalkOnSpotSouth:
     EndMovement
 
 PastoriaCity_TriggerRivalBattle:
-    LockAll
-    ClearFlag FLAG_HIDE_PASTORIA_CITY_RIVAL
-    SetObjectEventPos LOCALID_RIVAL, 595, 819
-    SetObjectEventMovementType LOCALID_RIVAL, MOVEMENT_TYPE_LOOK_WEST
-    SetObjectEventDir LOCALID_RIVAL, DIR_WEST
-    AddObject LOCALID_RIVAL
-    ApplyMovement LOCALID_RIVAL, PastoriaCity_Movement_RivalEnterForBattle
-    WaitMovement
-    Common_SetRivalBGM
-    ApplyMovement LOCALID_RIVAL, PastoriaCity_Movement_RivalWalkToPlayerForBattle
-    ApplyMovement LOCALID_PLAYER, PastoriaCity_Movement_PlayerFaceRivalForBattle
-    WaitMovement
-    BufferRivalName 0
-    BufferPlayerName 1
-    Message PastoriaCity_Text_IllTestYou
-    CloseMessage
-    ApplyMovement LOCALID_RIVAL, PastoriaCity_Movement_RivalWalkWest
-    WaitMovement
-    GetPlayerStarterSpecies VAR_RESULT
-    GoToIfEq VAR_RESULT, SPECIES_TURTWIG, PastoriaCity_StartRivalBattleTurtwig
-    GoToIfEq VAR_RESULT, SPECIES_CHIMCHAR, PastoriaCity_StartRivalBattleChimchar
-    GoTo PastoriaCity_StartRivalBattlePiplup
-
-PastoriaCity_StartRivalBattlePiplup:
-    StartTrainerBattle TRAINER_RIVAL_PASTORIA_CITY_PIPLUP
-    GoTo PastoriaCity_RivalPostBattle
-
-PastoriaCity_StartRivalBattleTurtwig:
-    StartTrainerBattle TRAINER_RIVAL_PASTORIA_CITY_TURTWIG
-    GoTo PastoriaCity_RivalPostBattle
-
-PastoriaCity_StartRivalBattleChimchar:
-    StartTrainerBattle TRAINER_RIVAL_PASTORIA_CITY_CHIMCHAR
-    GoTo PastoriaCity_RivalPostBattle
-
-PastoriaCity_RivalPostBattle:
-    CheckWonBattle VAR_RESULT
-    GoToIfEq VAR_RESULT, FALSE, PastoriaCity_BlackOut
-    BufferRivalName 0
-    BufferPlayerName 1
-    Message PastoriaCity_Text_YouDidGetTougher
-    CloseMessage
-    ApplyMovement LOCALID_RIVAL, PastoriaCity_Movement_RivalLeaveAfterBattle
-    WaitMovement
-    RemoveObject LOCALID_RIVAL
     SetVar VAR_PASTORIA_STATE, 2
-    ReleaseAll
     End
 
 PastoriaCity_BlackOut:
@@ -499,7 +453,6 @@ PastoriaCity_OnFrameExitGym:
     Message PastoriaCity_Text_ListenKid
     ApplyMovement LOCALID_CRASHER_WAKE, PastoriaCity_Movement_CrasherWakeWalkOnSpotSouth
     WaitMovement
-    Message PastoriaCity_Text_YouDontNeedMe
     BufferRivalName 0
     Message PastoriaCity_Text_TheresTroubleBrewing
     ApplyMovement LOCALID_CRASHER_WAKE, PastoriaCity_Movement_CrasherWakeWalkOnSpotEast
@@ -642,9 +595,6 @@ PastoriaCity_TriggerBomb:
 PastoriaCity_Explosion:
     ApplyMovement LOCALID_RIVAL, PastoriaCity_Movement_RivalWalkToPlayerForExplosion
     WaitMovement
-    BufferRivalName 0
-    Message PastoriaCity_Text_DontForgetImHere
-    CloseMessage
     ApplyMovement LOCALID_PLAYER, PastoriaCity_Movement_PlayerFaceNorth
     ApplyMovement LOCALID_CRASHER_WAKE, PastoriaCity_Movement_CrasherWakeWalkOnSpotNorth
     WaitMovement
@@ -702,7 +652,6 @@ PastoriaCity_GoAfterThatGoon:
     BufferRivalName 0
     BufferPlayerName 1
     Message PastoriaCity_Text_GoAfterThatGoon
-    WaitButton
     CloseMessage
     Return
 

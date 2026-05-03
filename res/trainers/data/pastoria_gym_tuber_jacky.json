@@ -10,7 +10,7 @@
         {
             "species": "SPECIES_BIBAREL",
             "form": 0,
-            "level": 32,
+            "level": 20,
             "item": null,
             "moves": [
                 "MOVE_WATER_GUN",
@@ -18,7 +18,7 @@
                 "MOVE_HYPER_FANG",
                 "MOVE_YAWN"
             ],
-            "iv_scale": 10,
+            "iv_scale": 0,
             "ball_seal": 0
         }
     ],

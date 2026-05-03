@@ -8,29 +8,14 @@
     "double_battle": false,
     "party": [
         {
-            "species": "SPECIES_WINGULL",
+            "species": "SPECIES_BUIZEL",
             "form": 0,
-            "level": 31,
+            "level": 20,
             "item": null,
             "moves": [
-                "MOVE_WATER_PULSE",
-                "MOVE_WING_ATTACK",
-                "MOVE_QUICK_ATTACK"
+                "MOVE_SCRATCH"
             ],
-            "iv_scale": 10,
-            "ball_seal": 0
-        },
-        {
-            "species": "SPECIES_PELIPPER",
-            "form": 0,
-            "level": 31,
-            "item": null,
-            "moves": [
-                "MOVE_WATER_PULSE",
-                "MOVE_WING_ATTACK",
-                "MOVE_QUICK_ATTACK"
-            ],
-            "iv_scale": 10,
+            "iv_scale": 0,
             "ball_seal": 0
         }
     ],

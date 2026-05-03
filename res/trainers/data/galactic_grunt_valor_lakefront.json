@@ -10,10 +10,10 @@
         {
             "species": "SPECIES_CROAGUNK",
             "form": 0,
-            "level": 31,
+            "level": 25,
             "item": null,
             "moves": null,
-            "iv_scale": 30,
+            "iv_scale": 0,
             "ball_seal": 0
         }
     ],

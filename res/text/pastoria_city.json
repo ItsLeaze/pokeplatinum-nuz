@@ -101,7 +101,7 @@
         "{STRVAR_1 3, 0, 0}: Oh, hey!\n",
         "You got the Gym Badge here, huh?\r",
         "What’d I tell you? Mr. Wake--I mean,\n",
-        "the master--is pretty awesome, hey?\r"
+        "my master--is pretty awesome, hey?\r"
       ]
     },
     {
@@ -209,8 +209,6 @@
         "was a bomb, named the Galactic Bomb.\r",
         "Me, I was told to push the button.\n",
         "So I did. Like, “Poink!”\r",
-        "Oh, that’s right! Mustn’t forget!\n",
-        "The test results need reporting!\r",
         "Cheerio, then!\n",
         "You daft codger, your mask’s absurd!\r"
       ]
@@ -234,8 +232,7 @@
         "{STRVAR_1 3, 0, 0}: Hey! {STRVAR_1 3, 1, 0}!\n",
         "You go after that Galactic goon!\r",
         "I’m staying here like Master said!\n",
-        "Gotta keep others from going in!\r",
-        "Don’t let that Galactic guy get away!"
+        "Gotta keep others from going in!\r"
       ]
     },
     {
@@ -258,13 +255,7 @@
       "id": "PastoriaCity_Text_StopChasingMe",
       "en_US": [
         "What’s with you?\n",
-        "Stop chasing after me, you.\r",
-        "I’ve half a mind to pulverize you with\n",
-        "my Pokémon!\r",
-        "But I have to be on my way to the\n",
-        "lake ASAP! So, you’re lucky! I’m out!\r",
-        "All right, do I make myself clear?\n",
-        "Don’t you dare follow me!\r"
+        "Stop chasing after me, you.\r"
       ]
     },
     {

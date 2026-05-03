@@ -104,7 +104,7 @@
             "movement_type": "MOVEMENT_TYPE_WALK_EAST_SOUTH_WEST_NORTH",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
-            "script": "TRAINER_SWIMMER_SHELTIN",
+            "script": "TRAINER_R213_SWIMMER_SHELTIN",
             "initial_dir": 3,
             "data": [
                 2
@@ -121,7 +121,7 @@
             "movement_type": "MOVEMENT_TYPE_LOOK_SOUTH_AND_EAST",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
-            "script": "TRAINER_SWIMMER_EVAN",
+            "script": "TRAINER_R213_SWIMMER_EVAN",
             "initial_dir": 3,
             "data": [
                 4
@@ -138,7 +138,7 @@
             "movement_type": "MOVEMENT_TYPE_LOOK_WEST",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
-            "script": "TRAINER_SWIMMER_MARY",
+            "script": "TRAINER_R213_SWIMMER_MARY",
             "initial_dir": 2,
             "data": [
                 4
@@ -155,7 +155,7 @@
             "movement_type": "MOVEMENT_TYPE_WALK_BACK_AND_FORTH",
             "trainer_type": "TRAINER_TYPE_SPIN_COUNTERCLOCKWISE",
             "hidden_flag": "0",
-            "script": "TRAINER_SWIMMER_HALEY",
+            "script": "TRAINER_R213_SWIMMER_HALEY",
             "initial_dir": 3,
             "data": [
                 2,
@@ -170,67 +170,67 @@
         {
             "id": "LOCALID_TUBER_JARED",
             "graphics_id": "OBJ_EVENT_GFX_TUBER_M",
-            "movement_type": "MOVEMENT_TYPE_WALK_BACK_AND_FORTH",
+            "movement_type": "MOVEMENT_TYPE_LOOK_WEST",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
-            "script": "TRAINER_TUBER_JARED",
-            "initial_dir": 3,
+            "script": "TRAINER_R213_TUBER_JARED",
+            "initial_dir": 0,
             "data": [
-                3
+                4
             ],
-            "movement_range_x": 9,
+            "movement_range_x": 0,
             "movement_range_z": 0,
-            "x": 703,
-            "z": 832,
+            "x": 708,
+            "z": 823,
             "y": 0
         },
         {
             "id": "LOCALID_TUBER_CHELSEA",
             "graphics_id": "OBJ_EVENT_GFX_TUBER_F",
-            "movement_type": "MOVEMENT_TYPE_LOOK_NORTH_SOUTH_AND_WEST",
+            "movement_type": "MOVEMENT_TYPE_LOOK_EAST",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
-            "script": "TRAINER_TUBER_CHELSEA",
-            "initial_dir": 1,
+            "script": "TRAINER_R213_TUBER_CHELSEA",
+            "initial_dir": 0,
             "data": [
                 4
             ],
             "movement_range_x": 0,
             "movement_range_z": 0,
             "x": 704,
-            "z": 827,
+            "z": 823,
             "y": 0
         },
         {
             "id": "LOCALID_BEAUTY_CYNDY",
             "graphics_id": "OBJ_EVENT_GFX_BEAUTY",
-            "movement_type": "MOVEMENT_TYPE_LOOK_WEST_AND_EAST",
+            "movement_type": "MOVEMENT_TYPE_LOOK_WEST",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
-            "script": "TRAINER_BEAUTY_CYNDY",
+            "script": "TRAINER_R213_BEAUTY_CYNDY",
             "initial_dir": 2,
             "data": [
                 5
             ],
             "movement_range_x": 0,
             "movement_range_z": 0,
-            "x": 668,
-            "z": 827,
+            "x": 669,
+            "z": 830,
             "y": 0
         },
         {
             "id": "LOCALID_FISHERMAN_KENNETH",
             "graphics_id": "OBJ_EVENT_GFX_FISHERMAN",
             "movement_type": "MOVEMENT_TYPE_LOOK_SOUTH",
-            "trainer_type": "TRAINER_TYPE_NORMAL",
+            "trainer_type": "TRAINER_TYPE_VIEW_ALL_DIRECTIONS",
             "hidden_flag": "0",
-            "script": "TRAINER_FISHERMAN_KENNETH",
+            "script": "TRAINER_R213_FISHERMAN_KENNETH",
             "initial_dir": 1,
-            "data": [],
+            "data": [2],
             "movement_range_x": 0,
             "movement_range_z": 0,
-            "x": 665,
-            "z": 845,
+            "x": 677,
+            "z": 837,
             "y": 0
         },
         {
@@ -239,7 +239,7 @@
             "movement_type": "MOVEMENT_TYPE_LOOK_NORTH",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
-            "script": "TRAINER_SAILOR_PAUL",
+            "script": "TRAINER_R213_SAILOR_PAUL",
             "initial_dir": 0,
             "data": [
                 3
@@ -368,7 +368,7 @@
             "data": [],
             "movement_range_x": 0,
             "movement_range_z": 0,
-            "x": 665,
+            "x": 661,
             "z": 835,
             "y": 0
         },
@@ -571,8 +571,8 @@
             "data": [],
             "movement_range_x": 0,
             "movement_range_z": 0,
-            "x": 677,
-            "z": 837,
+            "x": 665,
+            "z": 845,
             "y": 0
         },
         {
