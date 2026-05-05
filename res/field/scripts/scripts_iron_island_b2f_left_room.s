@@ -169,7 +169,7 @@ IronIslandB2FLeftRoom_TriggerGrunts:
     Message IronIslandB2FLeftRoom_Text_WeCantLose
     CloseMessage
     SetHasPartner
-    StartTrainerBattle TRAINER_GALACTIC_GRUNT_IRON_ISLAND_1, TRAINER_GALACTIC_GRUNT_IRON_ISLAND_2
+    StartTrainerBattle TRAINER_IRONIS_B2FL_GALACTIC_GRUNT_1, TRAINER_IRONIS_B2FL_GALACTIC_GRUNT_2
     ClearHasPartner
     CheckWonBattle VAR_RESULT
     GoToIfEq VAR_RESULT, FALSE, IronIslandB2FLeftRoom_BlackOut

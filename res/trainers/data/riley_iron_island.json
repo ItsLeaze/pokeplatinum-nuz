@@ -12,15 +12,16 @@
         {
             "species": "SPECIES_LUCARIO",
             "form": 0,
-            "level": 41,
-            "item": null,
+            "level": 50,
+            "item": "ITEM_LIFE_ORB",
             "moves": [
+                "MOVE_AURA_SPHERE",
+                "MOVE_DRAGON_PULSE",
                 "MOVE_METAL_CLAW",
-                "MOVE_FORCE_PALM",
-                "MOVE_QUICK_ATTACK",
-                "MOVE_BONE_RUSH"
+                "MOVE_EXTREME_SPEED"
             ],
-            "iv_scale": 30,
+            "iv_scale": 255,
+            "nature": "NATURE_RASH",
             "ball_seal": 0
         }
     ],
