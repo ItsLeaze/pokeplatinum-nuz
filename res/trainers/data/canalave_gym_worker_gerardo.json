@@ -8,29 +8,16 @@
     "double_battle": false,
     "party": [
         {
-            "species": "SPECIES_MAGNEMITE",
+            "species": "SPECIES_MAWILE",
             "form": 0,
-            "level": 35,
+            "level": 33,
             "item": null,
             "moves": [
                 "MOVE_SUPERSONIC",
                 "MOVE_MAGNET_BOMB",
                 "MOVE_SPARK"
             ],
-            "iv_scale": 10,
-            "ball_seal": 0
-        },
-        {
-            "species": "SPECIES_MAGNEMITE",
-            "form": 0,
-            "level": 35,
-            "item": null,
-            "moves": [
-                "MOVE_THUNDER_WAVE",
-                "MOVE_MAGNET_BOMB",
-                "MOVE_SPARK"
-            ],
-            "iv_scale": 10,
+            "iv_scale": 0,
             "ball_seal": 0
         }
     ],

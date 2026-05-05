@@ -9,9 +9,9 @@
     "double_battle": false,
     "party": [
         {
-            "species": "SPECIES_STEELIX",
+            "species": "SPECIES_MAWILE",
             "form": 0,
-            "level": 38,
+            "level": 32,
             "item": null,
             "moves": [
                 "MOVE_IRON_TAIL",
@@ -19,7 +19,7 @@
                 "MOVE_TORMENT",
                 "MOVE_SCREECH"
             ],
-            "iv_scale": 40,
+            "iv_scale": 0,
             "ball_seal": 0
         }
     ],
