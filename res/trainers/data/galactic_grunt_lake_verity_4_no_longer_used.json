@@ -8,16 +8,11 @@
     "double_battle": false,
     "party": [
         {
-            "species": "SPECIES_GLAMEOW",
+            "species": "SPECIES_HOUNDOUR",
             "form": 0,
             "level": 35,
             "item": null,
-            "moves": [
-                "MOVE_FURY_SWIPES",
-                "MOVE_FAINT_ATTACK",
-                "MOVE_GROWL",
-                "MOVE_SCRATCH"
-            ],
+            "moves": null,
             "iv_scale": 0,
             "ball_seal": 0
         }
@@ -26,21 +21,22 @@
         {
             "type": "TRMSG_PRE_BATTLE",
             "en_US": [
-                "In order for us to bring peace to\n",
-                "the world, we must control it!\r"
+                "If this mission is successful, we\n",
+                "will get a nice bonus.\r"
             ]
         },
         {
             "type": "TRMSG_DEFEAT",
-            "en_US": "You’re too young to understand.\n"
+            "en_US": [
+                "There goes our bonus...\n",
+                "This is an epic tragedy...\n"
+            ]
         },
         {
             "type": "TRMSG_POST_BATTLE",
             "en_US": [
-                "Our boss always had plans for\n",
-                "the three lakes...\r",
-                "While you were blissfully ignorant,\n",
-                "our work went ahead...\n"
+                "I want Team Galactic to become\n",
+                "powerful. That is all I want.\n"
             ]
         }
     ]

@@ -8,21 +8,12 @@
     "double_battle": false,
     "party": [
         {
-            "species": "SPECIES_HOUNDOUR",
-            "form": 0,
-            "level": 34,
-            "item": null,
-            "moves": null,
-            "iv_scale": 30,
-            "ball_seal": 0
-        },
-        {
             "species": "SPECIES_GLAMEOW",
             "form": 0,
-            "level": 36,
+            "level": 35,
             "item": null,
             "moves": null,
-            "iv_scale": 30,
+            "iv_scale": 0,
             "ball_seal": 0
         }
     ],
@@ -30,22 +21,24 @@
         {
             "type": "TRMSG_PRE_BATTLE",
             "en_US": [
-                "If this mission is successful, we\n",
-                "will get a nice bonus.\r"
+                "...Would you like to join the MAGIKARP\n",
+                "and flop around in the mud?\r"
             ]
         },
         {
             "type": "TRMSG_DEFEAT",
-            "en_US": [
-                "There goes our bonus...\n",
-                "This is an epic tragedy...\n"
-            ]
+            "en_US": "...Overwhelming!\n"
         },
         {
             "type": "TRMSG_POST_BATTLE",
             "en_US": [
-                "I want Team Galactic to become\n",
-                "powerful. That is all I want.\n"
+                "I played you for a child, and paid\n",
+                "a stiff price for my arrogance...\r",
+                "However, you’re much too late.\r",
+                "Team Galactic has already found the\n",
+                "sunken island under the lake.\r",
+                "And the Pokémon that lay in it?\n",
+                "Well, what do you think?\n"
             ]
         }
     ]

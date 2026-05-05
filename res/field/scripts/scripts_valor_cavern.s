@@ -77,7 +77,7 @@ ValorCavern_Saturn:
     WaitTime 30, VAR_RESULT
     Message ValorCavern_Text_SaturnBattleIntro
     CloseMessage
-    StartTrainerBattle TRAINER_COMMANDER_SATURN_VALOR_CAVERN
+    StartTrainerBattle TRAINER_VALOR_CAVERN_COMMANDER_SATURN
     CheckWonBattle VAR_RESULT
     GoToIfEq VAR_RESULT, FALSE, ValorCavern_LostBattleCommanderSaturn
     Message ValorCavern_Text_SaturnPostBattle

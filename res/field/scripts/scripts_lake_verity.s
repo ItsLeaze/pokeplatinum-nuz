@@ -209,9 +209,7 @@ LakeVerity_Mars:
     RemoveObject LOCALID_MARS
     RemoveObject LOCALID_GRUNT_M
     RemoveObject LOCALID_GALACTIC_GRUNT_1
-    RemoveObject LOCALID_GALACTIC_GRUNT_3
     RemoveObject LOCALID_GALACTIC_GRUNT_2
-    RemoveObject LOCALID_GALACTIC_GRUNT_4
     SetFlag FLAG_ALT_MUSIC_LAKE_VERITY
     ApplyMovement LOCALID_COUNTERPART, LakeVerity_Movement_CounterpartFaceSouth
     ApplyMovement LOCALID_PLAYER, LakeVerity_Movement_PlayerFaceWest
