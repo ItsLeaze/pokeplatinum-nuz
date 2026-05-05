@@ -158,7 +158,7 @@
             "movement_type": "MOVEMENT_TYPE_LOOK_SOUTH",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
-            "script": "TRAINER_ACE_TRAINER_MARIAH",
+            "script": "TRAINER_R216_ACE_TRAINER_MARIAH",
             "initial_dir": 1,
             "data": [
                 2

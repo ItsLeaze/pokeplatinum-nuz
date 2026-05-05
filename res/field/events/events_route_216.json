@@ -16,15 +16,15 @@
             "movement_type": "MOVEMENT_TYPE_LOOK_SOUTH",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
-            "script": "TRAINER_ACE_TRAINER_BLAKE",
+            "script": "TRAINER_R216_ACE_TRAINER_BLAKE",
             "initial_dir": 1,
             "data": [
-                3
+                4
             ],
             "movement_range_x": 0,
             "movement_range_z": 0,
             "x": 355,
-            "z": 402,
+            "z": 401,
             "y": 0
         },
         {
@@ -33,7 +33,7 @@
             "movement_type": "MOVEMENT_TYPE_LOOK_NORTH",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
-            "script": "TRAINER_ACE_TRAINER_LAURA",
+            "script": "TRAINER_R216_ACE_TRAINER_LAURA",
             "initial_dir": 0,
             "data": [
                 4
@@ -50,7 +50,7 @@
             "movement_type": "MOVEMENT_TYPE_LOOK_NORTH_AND_EAST",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
-            "script": "TRAINER_BLACK_BELT_PHILIP",
+            "script": "TRAINER_R216_BLACK_BELT_PHILIP",
             "initial_dir": 0,
             "data": [
                 3
@@ -67,7 +67,7 @@
             "movement_type": "MOVEMENT_TYPE_WALK_BACK_AND_FORTH",
             "trainer_type": "TRAINER_TYPE_SPIN_COUNTERCLOCKWISE",
             "hidden_flag": "0",
-            "script": "TRAINER_SKIER_BRADLEY",
+            "script": "TRAINER_R216_SKIER_BRADLEY",
             "initial_dir": 2,
             "data": [
                 2
@@ -81,27 +81,27 @@
         {
             "id": "LOCALID_ACE_TRAINER_GARRETT",
             "graphics_id": "OBJ_EVENT_GFX_ACE_TRAINER_SNOW_M",
-            "movement_type": "MOVEMENT_TYPE_LOOK_NORTH_AND_SOUTH",
+            "movement_type": "MOVEMENT_TYPE_LOOK_SOUTH",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
-            "script": "TRAINER_ACE_TRAINER_GARRETT",
+            "script": "TRAINER_R216_ACE_TRAINER_GARRETT",
             "initial_dir": 1,
             "data": [
-                2
+                5
             ],
             "movement_range_x": 0,
             "movement_range_z": 0,
-            "x": 299,
-            "z": 394,
+            "x": 300,
+            "z": 388,
             "y": 0
         },
         {
             "id": "LOCALID_ACE_TRAINER_MARIA",
             "graphics_id": "OBJ_EVENT_GFX_ACE_TRAINER_SNOW_F",
-            "movement_type": "MOVEMENT_TYPE_LOOK_NORTH_AND_WEST",
+            "movement_type": "MOVEMENT_TYPE_LOOK_NORTH",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
-            "script": "TRAINER_ACE_TRAINER_MARIA",
+            "script": "TRAINER_R216_ACE_TRAINER_MARIA",
             "initial_dir": 0,
             "data": [
                 2
@@ -118,7 +118,7 @@
             "movement_type": "MOVEMENT_TYPE_WALK_SOUTH_EAST_NORTH_WEST",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
-            "script": "TRAINER_SKIER_KAITLYN",
+            "script": "TRAINER_R216_SKIER_KAITLYN",
             "initial_dir": 3,
             "data": [
                 2
@@ -135,7 +135,7 @@
             "movement_type": "MOVEMENT_TYPE_WALK_SOUTH_EAST_NORTH_WEST",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
-            "script": "TRAINER_SKIER_EDWARD",
+            "script": "TRAINER_R216_SKIER_EDWARD",
             "initial_dir": 1,
             "data": [
                 1
@@ -152,7 +152,7 @@
             "movement_type": "MOVEMENT_TYPE_WALK_EAST_SOUTH_WEST_NORTH",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
-            "script": "TRAINER_SKIER_ANDREA",
+            "script": "TRAINER_R216_SKIER_ANDREA",
             "initial_dir": 3,
             "data": [
                 2
