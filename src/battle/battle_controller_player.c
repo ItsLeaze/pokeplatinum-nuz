@@ -3342,6 +3342,8 @@ static void BattleControllerPlayer_UseMove(BattleSystem *battleSys, BattleContex
 
 static void BattleControllerPlayer_UpdateHP(BattleSystem *battleSys, BattleContext *battleCtx)
 {
+    BOOL sturdyActivated = FALSE;
+
     if (battleCtx->moveStatusFlags & MOVE_STATUS_ONE_HIT_KO) {
         battleCtx->damage = DEFENDING_MON.maxHP * -1;
     }
@@ -3386,7 +3388,7 @@ static void BattleControllerPlayer_UpdateHP(BattleSystem *battleSys, BattleConte
         }
 
         if (Battler_Ability(battleCtx, battleCtx->defender) == ABILITY_STURDY && Battler_Ability(battleCtx, battleCtx->attacker) != ABILITY_MOLD_BREAKER && DEFENDING_MON.curHP == DEFENDING_MON.maxHP) {
-            DEFENDER_TURN_FLAGS.enduring = TRUE;
+            sturdyActivated = TRUE;
         }
 
         if (DEFENDER_TURN_FLAGS.enduring == 0) {
@@ -3399,11 +3401,13 @@ static void BattleControllerPlayer_UpdateHP(BattleSystem *battleSys, BattleConte
             }
         }
 
-        if ((DEFENDER_TURN_FLAGS.enduring || DEFENDER_SELF_TURN_FLAGS.focusItemActivated)
+        if ((DEFENDER_TURN_FLAGS.enduring || DEFENDER_SELF_TURN_FLAGS.focusItemActivated || sturdyActivated)
             && DEFENDING_MON.curHP + battleCtx->damage <= 0) {
             battleCtx->damage = (DEFENDING_MON.curHP - 1) * -1;
 
-            if (DEFENDER_TURN_FLAGS.enduring) {
+            if (sturdyActivated) {
+                battleCtx->moveStatusFlags |= MOVE_STATUS_ENDURED;
+            } else if (DEFENDER_TURN_FLAGS.enduring) {
                 battleCtx->moveStatusFlags |= MOVE_STATUS_ENDURED;
             } else {
                 battleCtx->moveStatusFlags |= MOVE_STATUS_ENDURED_ITEM;
