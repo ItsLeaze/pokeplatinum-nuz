@@ -23,7 +23,7 @@
         "rare": "ITEM_LUM_BERRY"
     },
     "gender_ratio": "GENDER_RATIO_NO_GENDER",
-    "hatch_cycles": 120,
+    "hatch_cycles": 12,
     "base_friendship": 100,
     "exp_rate": "EXP_RATE_MEDIUM_SLOW",
     "egg_groups": [ "EGG_GROUP_UNDISCOVERED", "EGG_GROUP_UNDISCOVERED" ],
