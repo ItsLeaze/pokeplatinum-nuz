@@ -10,19 +10,10 @@
         {
             "species": "SPECIES_HOUNDOUR",
             "form": 0,
-            "level": 40,
+            "level": 35,
             "item": null,
             "moves": null,
-            "iv_scale": 30,
-            "ball_seal": 0
-        },
-        {
-            "species": "SPECIES_GLAMEOW",
-            "form": 0,
-            "level": 42,
-            "item": null,
-            "moves": null,
-            "iv_scale": 30,
+            "iv_scale": 0,
             "ball_seal": 0
         }
     ],

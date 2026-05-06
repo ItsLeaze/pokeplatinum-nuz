@@ -163,29 +163,16 @@ SpearPillar_TriggerMarsJupiter:
     LockAll
     Call SpearPillar_MarsJupiterWalkToPlayer
     Message SpearPillar_Text_GoThroughMeFirst
-    Message SpearPillar_Text_IllBeNext
     CloseMessage
-    Call SpearPillar_RivalEnter
-    BufferRivalName 0
-    Message SpearPillar_Text_DontPartyWithoutMe
-    Message SpearPillar_Text_Huh
-    Message SpearPillar_Text_ImHereForRevenge
-    Message SpearPillar_Text_LetsBattleTwoOnTwo
-    CloseMessage
-    Call SpearPillar_SetRivalPartnerTeam
-    StartTagBattle VAR_0x8004, TRAINER_COMMANDER_MARS_SPEAR_PILLAR, TRAINER_COMMANDER_JUPITER_SPEAR_PILLAR
+    StartTrainerBattle TRAINER_COMMANDER_MARS_SPEAR_PILLAR
     CheckWonBattle VAR_RESULT
     GoToIfEq VAR_RESULT, FALSE, SpearPillar_BlackOutMarsJupiter
-    Call SpearPillar_PlayerRivalFaceEachOther
-    BufferRivalName 0
-    BufferPlayerName 1
-    Message SpearPillar_Text_IllHelpYou
-    PlayFanfare SEQ_ASA
-    WaitFanfare
-    HealParty
-    Message SpearPillar_Text_FullyHealedPokemon
-    Message SpearPillar_Text_ItsYourShowNow
+    ApplyMovement LOCALID_PLAYER, SpearPillar_Movement_TurnToJupiter
+    Message SpearPillar_Text_IllBeNext
     CloseMessage
+    StartTrainerBattle TRAINER_COMMANDER_JUPITER_SPEAR_PILLAR
+    CheckWonBattle VAR_RESULT
+    GoToIfEq VAR_RESULT, FALSE, SpearPillar_BlackOutMarsJupiter
     ScrCmd_18C LOCALID_PLAYER, DIR_SOUTH
     ApplyMovement LOCALID_RIVAL, SpearPillar_Movement_RivalLeave
     WaitMovement
@@ -242,16 +229,16 @@ SpearPillar_MarsJupiterWalkToPlayer:
     Return
 
 SpearPillar_MarsJupiterWalkToPlayerX30:
-    ScrCmd_18C LOCALID_PLAYER, DIR_WEST
+    ScrCmd_18C LOCALID_PLAYER, DIR_EAST
     ApplyMovement LOCALID_JUPITER, SpearPillar_Movement_JupiterWalkOnSpotEast
-    ApplyMovement LOCALID_MARS, SpearPillar_Movement_MarsWalkWest
+    ApplyMovement LOCALID_MARS, SpearPillar_Movement_MarsWalkWest2
     WaitMovement
     Return
 
 SpearPillar_MarsJupiterWalkToPlayerX31:
     ScrCmd_18C LOCALID_PLAYER, DIR_EAST
     ApplyMovement LOCALID_JUPITER, SpearPillar_Movement_JupiterWalkOnSpotEast2
-    ApplyMovement LOCALID_MARS, SpearPillar_Movement_MarsWalkWest2
+    ApplyMovement LOCALID_MARS, SpearPillar_Movement_MarsWalkWest
     WaitMovement
     Return
 
@@ -274,17 +261,17 @@ SpearPillar_Movement_MarsWalkWest:
 
     .balign 4, 0
 SpearPillar_Movement_JupiterWalkOnSpotEast2:
-    WalkOnSpotNormalEast
+    WalkNormalEast
     EndMovement
 
     .balign 4, 0
 SpearPillar_Movement_MarsWalkWest2:
-    WalkNormalWest
+    WalkNormalWest 2
     EndMovement
 
     .balign 4, 0
 SpearPillar_Movement_JupiterWalkEast:
-    WalkNormalEast
+    WalkNormalEast 2
     EndMovement
 
     .balign 4, 0
@@ -464,4 +451,9 @@ SpearPillar_Movement_CameraMoveToCyrusX33:
     Delay8
     WalkNormalNorth 6
     WalkNormalWest 2
+    EndMovement
+
+    .balign 4, 0
+SpearPillar_Movement_TurnToJupiter:
+    WalkOnSpotNormalWest
     EndMovement
