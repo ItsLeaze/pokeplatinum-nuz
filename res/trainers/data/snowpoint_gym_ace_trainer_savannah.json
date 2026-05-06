@@ -12,43 +12,14 @@
         {
             "species": "SPECIES_SNORUNT",
             "form": 0,
-            "level": 39,
+            "level": 35,
             "item": null,
             "moves": [
                 "MOVE_ICE_FANG",
                 "MOVE_CRUNCH",
-                "MOVE_HAIL",
-                "MOVE_PROTECT"
+                "MOVE_HAIL"
             ],
-            "iv_scale": 60,
-            "ball_seal": 0
-        },
-        {
-            "species": "SPECIES_SNORUNT",
-            "form": 0,
-            "level": 40,
-            "item": null,
-            "moves": [
-                "MOVE_ICE_FANG",
-                "MOVE_CRUNCH",
-                "MOVE_HAIL",
-                "MOVE_PROTECT"
-            ],
-            "iv_scale": 60,
-            "ball_seal": 0
-        },
-        {
-            "species": "SPECIES_GLALIE",
-            "form": 0,
-            "level": 42,
-            "item": null,
-            "moves": [
-                "MOVE_ICE_FANG",
-                "MOVE_CRUNCH",
-                "MOVE_HAIL",
-                "MOVE_PROTECT"
-            ],
-            "iv_scale": 60,
+            "iv_scale": 0,
             "ball_seal": 0
         }
     ],
