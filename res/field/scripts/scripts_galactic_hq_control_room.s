@@ -40,9 +40,6 @@ GalacticHQControlRoom_Saturn:
     GoToIfSet FLAG_DEFEATED_GALACTIC_HQ_CONTROL_ROOM_SATURN, GalacticHQControlRoom_PressButtonAndFreePokemon
     Message GalacticHQControlRoom_Text_SaturnIntro
     CloseMessage
-    StartTrainerBattle TRAINER_COMMANDER_SATURN_GALACTIC_HQ
-    CheckWonBattle VAR_RESULT
-    GoToIfEq VAR_RESULT, FALSE, GalacticHQControlRoom_BlackOut
     SetFlag FLAG_DEFEATED_GALACTIC_HQ_CONTROL_ROOM_SATURN
     SetVar FLAG_GALACTIC_HQ_CONTROL_ROOM_STATE, 1
     Message GalacticHQControlRoom_Text_WhatMakesYouSoTough

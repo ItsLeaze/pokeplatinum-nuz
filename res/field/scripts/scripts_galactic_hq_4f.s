@@ -20,32 +20,9 @@ GalacticHQ4F_TriggerCyrus:
     WaitMovement
     Message GalacticHQ4F_Text_IKnowWhyYoureHere
     CloseMessage
-    GetPlayerMapPos VAR_0x8004, VAR_0x8005
-    GoToIfEq VAR_0x8004, 8, GalacticHQ4F_CyrusWalkToPlayerX8
-    GoToIfEq VAR_0x8004, 9, GalacticHQ4F_CyrusWalkToPlayerX9
-    End
-
-GalacticHQ4F_CyrusWalkToPlayerX8:
-    ApplyMovement LOCALID_CYRUS, GalacticHQ4F_Movement_CyrusWalkToPlayerX8
-    WaitMovement
-    GoTo GalacticHQ4F_Cyrus
-
-GalacticHQ4F_CyrusWalkToPlayerX9:
-    ApplyMovement LOCALID_CYRUS, GalacticHQ4F_Movement_CyrusWalkToPlayerX9
-    WaitMovement
     GoTo GalacticHQ4F_Cyrus
 
 GalacticHQ4F_Cyrus:
-    StartTrainerBattle TRAINER_GALACTIC_BOSS_CYRUS_GALACTIC_HQ
-    CheckWonBattle VAR_RESULT
-    GoToIfEq VAR_RESULT, FALSE, GalacticHQ4F_BlackOut
-    Message GalacticHQ4F_Text_YouAreIndeedStrong
-    SetVar VAR_0x8004, ITEM_MASTER_BALL
-    SetVar VAR_0x8005, 1
-    CanFitItem VAR_0x8004, VAR_0x8005, VAR_RESULT
-    CallIfEq VAR_RESULT, TRUE, GalacticHQ4F_GiveMasterBall
-    Message GalacticHQ4F_Text_IMakePowerMyOwn
-    CloseMessage
     ApplyMovement LOCALID_CYRUS, GalacticHQ4F_Movement_CyrusWalkNorthEast
     WaitMovement
     Message GalacticHQ4F_Text_TakeWarpPanel
@@ -90,7 +67,6 @@ GalacticHQ4F_Movement_CyrusWalkToPlayerX9:
 
     .balign 4, 0
 GalacticHQ4F_Movement_CyrusWalkNorthEast:
-    WalkNormalNorth
     WalkNormalEast 4
     WalkNormalNorth 3
     WalkOnSpotNormalSouth

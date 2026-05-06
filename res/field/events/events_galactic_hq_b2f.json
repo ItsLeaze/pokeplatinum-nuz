@@ -49,10 +49,10 @@
         {
             "id": "LOCALID_GALACTIC_GRUNT_1",
             "graphics_id": "OBJ_EVENT_GFX_GRUNT_M",
-            "movement_type": "MOVEMENT_TYPE_LOOK_NORTH_AND_WEST",
+            "movement_type": "MOVEMENT_TYPE_LOOK_WEST",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "FLAG_HIDE_GALACTIC_HQ_TEAM_GALACTIC",
-            "script": "TRAINER_GALACTIC_GRUNT_GALACTIC_HQ_B2F_1",
+            "script": "TRAINER_GALACTIC_HQ_B2F_GALACTIC_GRUNT_1",
             "initial_dir": 2,
             "data": [
                 5
@@ -69,7 +69,7 @@
             "movement_type": "MOVEMENT_TYPE_LOOK_SOUTH",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "FLAG_HIDE_GALACTIC_HQ_TEAM_GALACTIC",
-            "script": "TRAINER_GALACTIC_GRUNT_GALACTIC_HQ_B2F_2",
+            "script": "TRAINER_GALACTIC_HQ_B2F_GALACTIC_GRUNT_2",
             "initial_dir": 1,
             "data": [
                 3

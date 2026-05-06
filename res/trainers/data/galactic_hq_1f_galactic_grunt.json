@@ -1,6 +1,6 @@
 {
     "name": "Grunt",
-    "class": "TRAINER_CLASS_GALACTIC_GRUNT_MALE",
+    "class": "TRAINER_CLASS_GALACTIC_GRUNT_FEMALE",
     "items": [],
     "ai_flags": [
         "AI_FLAG_BASIC"
@@ -8,7 +8,7 @@
     "double_battle": false,
     "party": [
         {
-            "species": "SPECIES_GOLBAT",
+            "species": "SPECIES_GLAMEOW",
             "form": 0,
             "level": 35,
             "item": null,
@@ -21,21 +21,24 @@
         {
             "type": "TRMSG_PRE_BATTLE",
             "en_US": [
-                "Having fun scampering around our HQ,\n",
-                "you sneaky intruder?\r",
-                "Your trail blazing will go out in\n",
-                "a blaze of glory right now!\r"
+                "Who do you think you are?\n",
+                "Desecrating the halls of our HQ?!\r"
             ]
         },
         {
             "type": "TRMSG_DEFEAT",
-            "en_US": "Your trailblazing streak lives on!\n"
+            "en_US": [
+                "A tough little Trainer is what you\n",
+                "are...\n"
+            ]
         },
         {
             "type": "TRMSG_POST_BATTLE",
             "en_US": [
-                "So what, you have momentum...\n",
-                "It’s too late. The experiment’s done!\n"
+                "In our HQ, we get around by taking\n",
+                "warp panels.\r",
+                "I’d like to see you figure out how\n",
+                "they connect.\n"
             ]
         }
     ]
