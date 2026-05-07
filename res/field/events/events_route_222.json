@@ -72,7 +72,7 @@
             "movement_type": "MOVEMENT_TYPE_LOOK_SOUTH",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
-            "script": "TRAINER_FISHERMAN_BRETT",
+            "script": "TRAINER_R222_FISHERMAN_BRETT",
             "initial_dir": 1,
             "data": [],
             "movement_range_x": 0,
@@ -87,7 +87,7 @@
             "movement_type": "MOVEMENT_TYPE_LOOK_SOUTH",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
-            "script": "TRAINER_FISHERMAN_ALEC",
+            "script": "TRAINER_R222_FISHERMAN_ALEC",
             "initial_dir": 1,
             "data": [],
             "movement_range_x": 0,
@@ -102,7 +102,7 @@
             "movement_type": "MOVEMENT_TYPE_LOOK_SOUTH",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
-            "script": "TRAINER_FISHERMAN_GEORGE",
+            "script": "TRAINER_R222_FISHERMAN_GEORGE",
             "initial_dir": 1,
             "data": [],
             "movement_range_x": 0,
@@ -117,7 +117,7 @@
             "movement_type": "MOVEMENT_TYPE_LOOK_SOUTH",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
-            "script": "TRAINER_FISHERMAN_COLE",
+            "script": "TRAINER_R222_FISHERMAN_COLE",
             "initial_dir": 1,
             "data": [],
             "movement_range_x": 0,
@@ -129,121 +129,69 @@
         {
             "id": "ROUTE_222_BEAUTY_NICOLA",
             "graphics_id": "OBJ_EVENT_GFX_BEAUTY",
-            "movement_type": "MOVEMENT_TYPE_LOOK_NORTH_AND_SOUTH",
+            "movement_type": "MOVEMENT_TYPE_LOOK_NORTH",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
-            "script": "TRAINER_BEAUTY_NICOLA",
+            "script": "TRAINER_R222_BEAUTY_NICOLA",
             "initial_dir": 1,
             "data": [
-                2
+                3
             ],
             "movement_range_x": 0,
             "movement_range_z": 0,
-            "x": 771,
-            "z": 777,
+            "x": 756,
+            "z": 779,
             "y": 0
         },
         {
             "id": "ROUTE_222_TUBER_CONNER",
             "graphics_id": "OBJ_EVENT_GFX_TUBER_M",
-            "movement_type": "MOVEMENT_TYPE_LOOK_WEST",
+            "movement_type": "MOVEMENT_TYPE_LOOK_SOUTH",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
-            "script": "TRAINER_TUBER_CONNER",
+            "script": "TRAINER_R222_TUBER_CONNER",
             "initial_dir": 2,
             "data": [
-                3
+                4
             ],
             "movement_range_x": 0,
             "movement_range_z": 0,
-            "x": 812,
-            "z": 781,
+            "x": 790,
+            "z": 776,
             "y": 0
         },
         {
             "id": "ROUTE_222_RICH_BOY_TREY",
             "graphics_id": "OBJ_EVENT_GFX_RICH_BOY",
-            "movement_type": "MOVEMENT_TYPE_LOOK_EAST",
-            "trainer_type": "TRAINER_TYPE_NORMAL",
-            "hidden_flag": "0",
-            "script": "TRAINER_RICH_BOY_TREY",
-            "initial_dir": 3,
-            "data": [
-                6
-            ],
-            "movement_range_x": 0,
-            "movement_range_z": 0,
-            "x": 751,
-            "z": 782,
-            "y": 0
-        },
-        {
-            "id": "ROUTE_222_SAILOR_LUTHER",
-            "graphics_id": "OBJ_EVENT_GFX_SAILOR",
             "movement_type": "MOVEMENT_TYPE_LOOK_SOUTH",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
-            "script": "TRAINER_SAILOR_LUTHER",
-            "initial_dir": 1,
-            "data": [
-                2
-            ],
-            "movement_range_x": 0,
-            "movement_range_z": 0,
-            "x": 814,
-            "z": 785,
-            "y": 0
-        },
-        {
-            "id": "ROUTE_222_POLICEMAN_THOMAS",
-            "graphics_id": "OBJ_EVENT_GFX_POLICEMAN",
-            "movement_type": "MOVEMENT_TYPE_WALK_BACK_AND_FORTH",
-            "trainer_type": "TRAINER_TYPE_FACE_SIDES",
-            "hidden_flag": "FLAG_UNK_0x026B",
-            "script": "TRAINER_POLICEMAN_THOMAS",
-            "initial_dir": 3,
-            "data": [
-                2,
-                2
-            ],
-            "movement_range_x": 8,
-            "movement_range_z": 0,
-            "x": 794,
-            "z": 778,
-            "y": 0
-        },
-        {
-            "id": "ROUTE_222_TUBER_HOLLY",
-            "graphics_id": "OBJ_EVENT_GFX_TUBER_F",
-            "movement_type": "MOVEMENT_TYPE_LOOK_NORTH_AND_SOUTH",
-            "trainer_type": "TRAINER_TYPE_NORMAL",
-            "hidden_flag": "0",
-            "script": "TRAINER_TUBER_HOLLY",
-            "initial_dir": 0,
-            "data": [
-                2
-            ],
-            "movement_range_x": 0,
-            "movement_range_z": 0,
-            "x": 787,
-            "z": 788,
-            "y": 0
-        },
-        {
-            "id": "ROUTE_222_SAILOR_MARC",
-            "graphics_id": "OBJ_EVENT_GFX_SAILOR",
-            "movement_type": "MOVEMENT_TYPE_LOOK_WEST_AND_EAST",
-            "trainer_type": "TRAINER_TYPE_NORMAL",
-            "hidden_flag": "0",
-            "script": "TRAINER_SAILOR_MARC",
+            "script": "TRAINER_R222_RICH_BOY_TREY",
             "initial_dir": 3,
             "data": [
                 3
             ],
             "movement_range_x": 0,
             "movement_range_z": 0,
-            "x": 808,
-            "z": 781,
+            "x": 756,
+            "z": 784,
+            "y": 0
+        },
+        {
+            "id": "ROUTE_222_TUBER_HOLLY",
+            "graphics_id": "OBJ_EVENT_GFX_TUBER_F",
+            "movement_type": "MOVEMENT_TYPE_LOOK_NORTH",
+            "trainer_type": "TRAINER_TYPE_NORMAL",
+            "hidden_flag": "0",
+            "script": "TRAINER_R222_TUBER_HOLLY",
+            "initial_dir": 0,
+            "data": [
+                3
+            ],
+            "movement_range_x": 0,
+            "movement_range_z": 0,
+            "x": 804,
+            "z": 788,
             "y": 0
         },
         {

@@ -1,6 +1,6 @@
 {
-    "name": "Conner",
-    "class": "TRAINER_CLASS_TUBER_MALE",
+    "name": "Cole",
+    "class": "TRAINER_CLASS_FISHERMAN",
     "items": [],
     "ai_flags": [
         "AI_FLAG_BASIC"
@@ -10,7 +10,7 @@
         {
             "species": "SPECIES_REMORAID",
             "form": 0,
-            "level": 44,
+            "level": 40,
             "item": null,
             "moves": null,
             "iv_scale": 0,
@@ -21,29 +21,29 @@
         {
             "type": "TRMSG_PRE_BATTLE",
             "en_US": [
-                "Look, look! Look at my Pokémon!\n",
-                "It’s really cool!\r"
+                "If I stare at the water’s surface\n",
+                "for too long, I begin to forget what\f",
+                "I was doing in the first place.\r"
             ]
         },
         {
             "type": "TRMSG_DEFEAT",
-            "en_US": [
-                "Wowee! I had to hold on tight to\n",
-                "my inflatable tube!\n"
-            ]
+            "en_US": "I don’t know how, but I lost!\n"
         },
         {
             "type": "TRMSG_POST_BATTLE",
             "en_US": [
-                "Pools are OK, but I like the sea\n",
-                "because Pokémon live there.\n"
+                "Oh, right...\n",
+                "I was fishing, wasn’t I?\n"
             ]
         },
         {
             "type": "TRMSG_REMATCH",
             "en_US": [
-                "Yay! You came to see my Pokémon\n",
-                "again, right? Look, look!\r"
+                "When I looked up from staring at the\n",
+                "water’s surface, I saw your face.\r",
+                "I’m not sure about what I was just\n",
+                "doing, but do you want to battle?\r"
             ]
         }
     ]

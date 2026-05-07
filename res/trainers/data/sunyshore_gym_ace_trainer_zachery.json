@@ -10,30 +10,16 @@
     "double_battle": false,
     "party": [
         {
-            "species": "SPECIES_ELECTABUZZ",
-            "form": 0,
-            "level": 47,
-            "item": null,
-            "moves": [
-                "MOVE_THUNDERBOLT",
-                "MOVE_SHOCK_WAVE",
-                "MOVE_QUICK_ATTACK",
-                "MOVE_IRON_TAIL"
-            ],
-            "iv_scale": 60,
-            "ball_seal": 0
-        },
-        {
             "species": "SPECIES_MAGNETON",
             "form": 0,
-            "level": 48,
+            "level": 40,
             "item": null,
             "moves": [
                 "MOVE_THUNDERBOLT",
                 "MOVE_TRI_ATTACK",
                 "MOVE_MIRROR_SHOT"
             ],
-            "iv_scale": 60,
+            "iv_scale": 0,
             "ball_seal": 0
         }
     ],

@@ -1,6 +1,6 @@
 {
-    "name": "Trey",
-    "class": "TRAINER_CLASS_RICH_BOY",
+    "name": "Luther",
+    "class": "TRAINER_CLASS_SAILOR",
     "items": [],
     "ai_flags": [
         "AI_FLAG_BASIC"
@@ -8,43 +8,44 @@
     "double_battle": false,
     "party": [
         {
-            "species": "SPECIES_LUXRAY",
+            "species": "SPECIES_MACHOKE",
             "form": 0,
-            "level": 45,
+            "level": 40,
             "item": null,
             "moves": null,
             "iv_scale": 0,
-            "ball_seal": 4
+            "ball_seal": 0
         }
     ],
     "messages": [
         {
             "type": "TRMSG_PRE_BATTLE",
             "en_US": [
-                "I need to escape these doldrums...\n",
-                "You can keep me company.\r"
+                "My dream’s a big one!\r",
+                "I want to battle every kind of Pokémon\n",
+                "from around the world!\r"
             ]
         },
         {
             "type": "TRMSG_DEFEAT",
             "en_US": [
-                "That did liberate me from the doldrums,\n",
-                "but at what price...\n",
-                "\n"
+                "I lost, but I am one step closer to\n",
+                "realizing my dream!\n"
             ]
         },
         {
             "type": "TRMSG_POST_BATTLE",
             "en_US": [
-                "I’m going back to the hotel to rest!\n",
-                "I find you exceedingly tiresome!\n"
+                "Listen, you! Whatever happens, never\n",
+                "lose sight of your dream!\n"
             ]
         },
         {
             "type": "TRMSG_REMATCH",
             "en_US": [
-                "I’m afraid I’m in the doldrums again.\n",
-                "You shall keep me company again!\r"
+                "All right, you!\r",
+                "Help me realize my dream of battling\n",
+                "every kind of Pokémon there is!\r"
             ]
         }
     ]

@@ -12,7 +12,7 @@
         {
             "species": "SPECIES_ELECTABUZZ",
             "form": 0,
-            "level": 47,
+            "level": 40,
             "item": null,
             "moves": [
                 "MOVE_THUNDERBOLT",
@@ -20,21 +20,7 @@
                 "MOVE_QUICK_ATTACK",
                 "MOVE_IRON_TAIL"
             ],
-            "iv_scale": 60,
-            "ball_seal": 0
-        },
-        {
-            "species": "SPECIES_RAICHU",
-            "form": 0,
-            "level": 48,
-            "item": null,
-            "moves": [
-                "MOVE_THUNDERBOLT",
-                "MOVE_DIG",
-                "MOVE_THUNDER_WAVE",
-                "MOVE_LIGHT_SCREEN"
-            ],
-            "iv_scale": 60,
+            "iv_scale": 0,
             "ball_seal": 0
         }
     ],

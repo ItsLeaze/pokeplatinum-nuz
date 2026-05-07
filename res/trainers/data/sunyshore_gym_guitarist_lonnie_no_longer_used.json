@@ -10,7 +10,7 @@
         {
             "species": "SPECIES_RAICHU",
             "form": 0,
-            "level": 47,
+            "level": 40,
             "item": null,
             "moves": [
                 "MOVE_THUNDERBOLT",
@@ -18,7 +18,7 @@
                 "MOVE_THUNDER_WAVE",
                 "MOVE_QUICK_ATTACK"
             ],
-            "iv_scale": 10,
+            "iv_scale": 0,
             "ball_seal": 0
         }
     ],
