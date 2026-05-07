@@ -67,7 +67,7 @@ _00C4:
     WaitCry
     CloseMessage
     SetFlag FLAG_MAP_LOCAL
-    StartGiratinaOriginBattle SPECIES_GIRATINA, 47
+    StartGiratinaOriginBattle SPECIES_GIRATINA, 81
     ClearFlag FLAG_MAP_LOCAL
     CheckWonBattle VAR_RESULT
     GetBattleResult VAR_RESULT

@@ -8,7 +8,7 @@
         "special_defense": 120
     },
     "types": [ "TYPE_GHOST", "TYPE_DRAGON" ],
-    "catch_rate": 3,
+    "catch_rate": 1,
     "base_exp_reward": 220,
     "ev_yields": {
         "hp": 3,
@@ -35,16 +35,19 @@
     "learnset": {
         "by_level": [
             [ 1, "MOVE_DRAGON_BREATH" ],
-            [ 1, "MOVE_SCARY_FACE" ],
-            [ 10, "MOVE_OMINOUS_WIND" ],
-            [ 20, "MOVE_ANCIENT_POWER" ],
-            [ 30, "MOVE_DRAGON_CLAW" ],
-            [ 40, "MOVE_SHADOW_FORCE" ],
-            [ 50, "MOVE_HEAL_BLOCK" ],
-            [ 60, "MOVE_EARTH_POWER" ],
-            [ 70, "MOVE_SLASH" ],
-            [ 80, "MOVE_SHADOW_CLAW" ],
-            [ 90, "MOVE_AURA_SPHERE" ]
+            [ 5, "MOVE_HEAL_BLOCK" ],
+            [ 10, "MOVE_SHADOW_SNEAK" ],
+            [ 20, "MOVE_SCARY_FACE" ],
+            [ 30, "MOVE_PAIN_SPLIT" ],
+            [ 40, "MOVE_DESTINY_BOND" ],
+            [ 50, "MOVE_SLASH" ],
+            [ 60, "MOVE_OMINOUS_WIND" ],
+            [ 70, "MOVE_ANCIENT_POWER" ],
+            [ 80, "MOVE_DRAGON_CLAW" ],
+            [ 85, "MOVE_EARTH_POWER" ],
+            [ 90, "MOVE_SHADOW_CLAW" ],
+            [ 95, "MOVE_AURA_SPHERE" ],
+            [ 100, "MOVE_SHADOW_FORCE" ]
         ],
         "by_tm": [
             "TM02",

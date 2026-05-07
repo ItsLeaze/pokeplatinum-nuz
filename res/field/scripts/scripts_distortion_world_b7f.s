@@ -95,13 +95,7 @@ _016D:
     ApplyMovement 128, _0300
     ApplyMovement LOCALID_PLAYER, _0280
 _017D:
-    BufferPlayerName 0
-    Message 8
-    PlayFanfare SEQ_ASA
-    WaitFanfare
-    HealParty
     WaitMovement
-    Message 9
     CloseMessage
     ApplyMovement 128, _02C8
     GetPlayerMapPos VAR_0x8004, VAR_0x8005

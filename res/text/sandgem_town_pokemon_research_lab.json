@@ -525,15 +525,8 @@
     {
       "id": "SandgemTownLab_Text_WhyNotObtainSunyshoresBadge",
       "en_US": [
-        "Rowan: Oh, yes, there was something\n",
-        "I had to tell you.\r",
-        "The three Pokémon of the lakes appear\n",
-        "to have returned to their homes.\r",
-        "So, tell me.\n",
-        "How are things going for you?\r",
-        "The Pokédex...?\r",
-        "Hm! A total of {STRVAR_1 52, 1, 0}!\n",
-        "...And the number of Badges?\r",
+        "Rowan: Besides, how many Badges\n",
+        "have you collected on your journey?\r",
         "Well! You’ve got seven already!\n",
         "That only leaves Sunyshore’s Gym.\r",
         "Hm! You’ve come this far.\n",
@@ -541,9 +534,7 @@
         "And why not challenge the Pokémon\n",
         "League?\r",
         "That will broaden your horizons\n",
-        "further than ever before.\r",
-        "Not to mention the opportunities to\n",
-        "meet even more Pokémon."
+        "further than ever before."
       ]
     },
     {
