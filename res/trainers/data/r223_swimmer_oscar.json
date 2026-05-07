@@ -10,25 +10,7 @@
         {
             "species": "SPECIES_MANTYKE",
             "form": 0,
-            "level": 41,
-            "item": null,
-            "moves": null,
-            "iv_scale": 0,
-            "ball_seal": 0
-        },
-        {
-            "species": "SPECIES_REMORAID",
-            "form": 0,
-            "level": 42,
-            "item": null,
-            "moves": null,
-            "iv_scale": 0,
-            "ball_seal": 0
-        },
-        {
-            "species": "SPECIES_MANTINE",
-            "form": 0,
-            "level": 43,
+            "level": 40,
             "item": null,
             "moves": null,
             "iv_scale": 0,

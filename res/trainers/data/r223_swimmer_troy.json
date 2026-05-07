@@ -1,5 +1,5 @@
 {
-    "name": "Francisco",
+    "name": "Troy",
     "class": "TRAINER_CLASS_SWIMMER_MALE",
     "items": [],
     "ai_flags": [
@@ -8,18 +8,9 @@
     "double_battle": false,
     "party": [
         {
-            "species": "SPECIES_TENTACOOL",
+            "species": "SPECIES_GYARADOS",
             "form": 0,
-            "level": 41,
-            "item": null,
-            "moves": null,
-            "iv_scale": 0,
-            "ball_seal": 0
-        },
-        {
-            "species": "SPECIES_GOLDUCK",
-            "form": 0,
-            "level": 45,
+            "level": 40,
             "item": null,
             "moves": null,
             "iv_scale": 0,
@@ -30,26 +21,27 @@
         {
             "type": "TRMSG_PRE_BATTLE",
             "en_US": [
-                "The sea around these parts is harsh.\n",
-                "As am I!\r"
+                "Yes, I know I can surf, but I’d\n",
+                "rather swim instead.\r",
+                "It does seem weird, I agree.\r"
             ]
         },
         {
             "type": "TRMSG_DEFEAT",
-            "en_US": "The world is so harsh...\n"
+            "en_US": "Kaploosh!\n"
         },
         {
             "type": "TRMSG_POST_BATTLE",
             "en_US": [
-                "What? You’ve got that many Gym\n",
-                "Badges? No wonder you’re so tough...\n"
+                "If you don’t know how, I’m willing to\n",
+                "show you how to swim.\n"
             ]
         },
         {
             "type": "TRMSG_REMATCH",
             "en_US": [
-                "It’s me again! The harsh sea here\n",
-                "should have toughened me up more!\r"
+                "If you rely on your Pokémon all the\n",
+                "time, you’ll never learn how to swim!\r"
             ]
         }
     ]

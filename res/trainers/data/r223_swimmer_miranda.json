@@ -1,6 +1,6 @@
 {
-    "name": "Troy",
-    "class": "TRAINER_CLASS_SWIMMER_MALE",
+    "name": "Miranda",
+    "class": "TRAINER_CLASS_SWIMMER_FEMALE",
     "items": [],
     "ai_flags": [
         "AI_FLAG_BASIC"
@@ -8,9 +8,9 @@
     "double_battle": false,
     "party": [
         {
-            "species": "SPECIES_GYARADOS",
+            "species": "SPECIES_LUMINEON",
             "form": 0,
-            "level": 45,
+            "level": 41,
             "item": null,
             "moves": null,
             "iv_scale": 0,
@@ -21,27 +21,28 @@
         {
             "type": "TRMSG_PRE_BATTLE",
             "en_US": [
-                "Yes, I know I can surf, but I’d\n",
-                "rather swim instead.\r",
-                "It does seem weird, I agree.\r"
+                "I’m determined to go to the Pokémon\n",
+                "League, no matter how hard it is.\r"
             ]
         },
         {
             "type": "TRMSG_DEFEAT",
-            "en_US": "Kaploosh!\n"
+            "en_US": "Th-this is so hard...\n"
         },
         {
             "type": "TRMSG_POST_BATTLE",
             "en_US": [
-                "If you don’t know how, I’m willing to\n",
-                "show you how to swim.\n"
+                "Losing won’t make me quit.\n",
+                "I mean, this is my dream!\r",
+                "The Pokémon League isn’t going\n",
+                "anywhere, either.\n"
             ]
         },
         {
             "type": "TRMSG_REMATCH",
             "en_US": [
-                "If you rely on your Pokémon all the\n",
-                "time, you’ll never learn how to swim!\r"
+                "It doesn’t matter how long it takes,\n",
+                "I’m going to the Pokémon League!\r"
             ]
         }
     ]

@@ -19,36 +19,19 @@
     ],
     "object_events": [
         {
-            "id": "ROUTE_223_SWIMMER_WESLEY",
-            "graphics_id": "OBJ_EVENT_GFX_SWIMMER_M",
-            "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
-            "trainer_type": "TRAINER_TYPE_NORMAL",
-            "hidden_flag": "0",
-            "script": "TRAINER_SWIMMER_WESLEY",
-            "initial_dir": 1,
-            "data": [
-                5
-            ],
-            "movement_range_x": 0,
-            "movement_range_z": 0,
-            "x": 837,
-            "z": 664,
-            "y": 0
-        },
-        {
             "id": "ROUTE_223_SWIMMER_RICARDO",
             "graphics_id": "OBJ_EVENT_GFX_SWIMMER_M",
             "movement_type": "MOVEMENT_TYPE_LOOK_NORTH_AND_EAST",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
-            "script": "TRAINER_SWIMMER_RICARDO",
+            "script": "TRAINER_R223_SWIMMER_RICARDO",
             "initial_dir": 3,
             "data": [
                 3
             ],
             "movement_range_x": 0,
             "movement_range_z": 0,
-            "x": 844,
+            "x": 850,
             "z": 682,
             "y": 0
         },
@@ -58,7 +41,7 @@
             "movement_type": "MOVEMENT_TYPE_LOOK_NORTH",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
-            "script": "TRAINER_SWIMMER_FRANCISCO",
+            "script": "TRAINER_R223_SWIMMER_FRANCISCO",
             "initial_dir": 0,
             "data": [
                 2
@@ -70,29 +53,12 @@
             "y": 0
         },
         {
-            "id": "ROUTE_223_SWIMMER_COLTON",
-            "graphics_id": "OBJ_EVENT_GFX_SWIMMER_M",
-            "movement_type": "MOVEMENT_TYPE_LOOK_WEST",
-            "trainer_type": "TRAINER_TYPE_NORMAL",
-            "hidden_flag": "0",
-            "script": "TRAINER_SWIMMER_COLTON",
-            "initial_dir": 2,
-            "data": [
-                6
-            ],
-            "movement_range_x": 0,
-            "movement_range_z": 0,
-            "x": 854,
-            "z": 689,
-            "y": 0
-        },
-        {
             "id": "ROUTE_223_SWIMMER_TROY",
             "graphics_id": "OBJ_EVENT_GFX_SWIMMER_M",
             "movement_type": "MOVEMENT_TYPE_WALK_BACK_AND_FORTH",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
-            "script": "TRAINER_SWIMMER_TROY",
+            "script": "TRAINER_R223_SWIMMER_TROY",
             "initial_dir": 2,
             "data": [
                 3
@@ -109,7 +75,7 @@
             "movement_type": "MOVEMENT_TYPE_LOOK_EAST",
             "trainer_type": "TRAINER_TYPE_FACE_COUNTERCLOCKWISE",
             "hidden_flag": "0",
-            "script": "TRAINER_SWIMMER_OSCAR",
+            "script": "TRAINER_R223_SWIMMER_OSCAR",
             "initial_dir": 3,
             "data": [
                 5
@@ -126,7 +92,7 @@
             "movement_type": "MOVEMENT_TYPE_WALK_BACK_AND_FORTH",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
-            "script": "TRAINER_SWIMMER_MIRANDA",
+            "script": "TRAINER_R223_SWIMMER_MIRANDA",
             "initial_dir": 3,
             "data": [
                 3
@@ -138,46 +104,12 @@
             "y": 0
         },
         {
-            "id": "ROUTE_223_SWIMMER_AUBREE",
-            "graphics_id": "OBJ_EVENT_GFX_SWIMMER_F",
-            "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
-            "trainer_type": "TRAINER_TYPE_NORMAL",
-            "hidden_flag": "0",
-            "script": "TRAINER_SWIMMER_AUBREE",
-            "initial_dir": 1,
-            "data": [
-                2
-            ],
-            "movement_range_x": 0,
-            "movement_range_z": 0,
-            "x": 851,
-            "z": 715,
-            "y": 0
-        },
-        {
-            "id": "ROUTE_223_SWIMMER_PAIGE",
-            "graphics_id": "OBJ_EVENT_GFX_SWIMMER_F",
-            "movement_type": "MOVEMENT_TYPE_LOOK_EAST",
-            "trainer_type": "TRAINER_TYPE_NORMAL",
-            "hidden_flag": "0",
-            "script": "TRAINER_SWIMMER_PAIGE",
-            "initial_dir": 3,
-            "data": [
-                6
-            ],
-            "movement_range_x": 0,
-            "movement_range_z": 0,
-            "x": 847,
-            "z": 689,
-            "y": 0
-        },
-        {
             "id": "ROUTE_223_SWIMMER_CRYSTAL",
             "graphics_id": "OBJ_EVENT_GFX_SWIMMER_F",
             "movement_type": "MOVEMENT_TYPE_WALK_BACK_AND_FORTH",
             "trainer_type": "TRAINER_TYPE_FACE_CLOCKWISE",
             "hidden_flag": "0",
-            "script": "TRAINER_SWIMMER_CRYSTAL",
+            "script": "TRAINER_R223_SWIMMER_CRYSTAL",
             "initial_dir": 3,
             "data": [
                 4,
@@ -195,7 +127,7 @@
             "movement_type": "MOVEMENT_TYPE_WALK_WEST_SOUTH_NORTH_EAST",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
-            "script": "TRAINER_SWIMMER_CASSANDRA",
+            "script": "TRAINER_R223_SWIMMER_CASSANDRA",
             "initial_dir": 2,
             "data": [
                 3
@@ -204,23 +136,6 @@
             "movement_range_z": 5,
             "x": 855,
             "z": 636,
-            "y": 0
-        },
-        {
-            "id": "ROUTE_223_SWIMMER_GABRIELLE",
-            "graphics_id": "OBJ_EVENT_GFX_SWIMMER_F",
-            "movement_type": "MOVEMENT_TYPE_LOOK_NORTH_AND_WEST",
-            "trainer_type": "TRAINER_TYPE_NORMAL",
-            "hidden_flag": "0",
-            "script": "TRAINER_SWIMMER_GABRIELLE",
-            "initial_dir": 2,
-            "data": [
-                4
-            ],
-            "movement_range_x": 0,
-            "movement_range_z": 0,
-            "x": 843,
-            "z": 642,
             "y": 0
         },
         {
@@ -259,14 +174,14 @@
             "movement_type": "MOVEMENT_TYPE_LOOK_SOUTH",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
-            "script": "TRAINER_SAILOR_ZACHARIAH",
+            "script": "TRAINER_R223_SAILOR_ZACHARIAH",
             "initial_dir": 1,
             "data": [
                 2
             ],
             "movement_range_x": 0,
             "movement_range_z": 0,
-            "x": 847,
+            "x": 845,
             "z": 655,
             "y": 0
         },

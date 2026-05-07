@@ -1,6 +1,6 @@
 {
-    "name": "Gabrielle",
-    "class": "TRAINER_CLASS_SWIMMER_FEMALE",
+    "name": "Wesley",
+    "class": "TRAINER_CLASS_SWIMMER_MALE",
     "items": [],
     "ai_flags": [
         "AI_FLAG_BASIC"
@@ -8,9 +8,9 @@
     "double_battle": false,
     "party": [
         {
-            "species": "SPECIES_GOLDUCK",
+            "species": "SPECIES_FLOATZEL",
             "form": 0,
-            "level": 45,
+            "level": 40,
             "item": null,
             "moves": null,
             "iv_scale": 0,
@@ -21,28 +21,26 @@
         {
             "type": "TRMSG_PRE_BATTLE",
             "en_US": [
-                "My favorite kind of guy is someone\n",
-                "that looks good out on the open sea!\r"
+                "I’ve decided!\n",
+                "I’m off to the Pokémon League if I win!\r"
             ]
         },
         {
             "type": "TRMSG_DEFEAT",
-            "en_US": "The tide is going out...\n"
+            "en_US": "Blblblblugh...\n"
         },
         {
             "type": "TRMSG_POST_BATTLE",
             "en_US": [
-                "Don’t get me wrong, it’s not as if I\n",
-                "don’t like mountain men.\r",
-                "But, you know, my most favorite kind of\n",
-                "guy looks great with Pokémon!\n"
+                "It’s OK. Just let me float away\n",
+                "like driftwood...\n"
             ]
         },
         {
             "type": "TRMSG_REMATCH",
             "en_US": [
-                "Hello again! You’re that Trainer who\n",
-                "looks keen with your Pokémon!\r"
+                "This is it! I’m going to beat you, then\n",
+                "I’m off to the Pokémon League!\r"
             ]
         }
     ]
