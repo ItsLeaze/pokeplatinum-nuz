@@ -19,7 +19,7 @@ _001F:
 _0027:
     LockAll
     SetPlayerBike FALSE
-    ApplyMovement 28, _0140
+    ApplyMovement 0, _0140
     WaitMovement
     GetPlayerMapPos VAR_0x8004, VAR_0x8005
     GoToIfEq VAR_0x8005, 55, _008C
@@ -31,32 +31,32 @@ _0027:
     End
 
 _008C:
-    ApplyMovement 28, _014C
+    ApplyMovement 0, _014C
     WaitMovement
     GoTo _00EC
 
 _009C:
-    ApplyMovement 28, _0158
+    ApplyMovement 0, _0158
     WaitMovement
     GoTo _00EC
 
 _00AC:
-    ApplyMovement 28, _0164
+    ApplyMovement 0, _0164
     WaitMovement
     GoTo _00EC
 
 _00BC:
-    ApplyMovement 28, _0170
+    ApplyMovement 0, _0170
     WaitMovement
     GoTo _00EC
 
 _00CC:
-    ApplyMovement 28, _0178
+    ApplyMovement 0, _0178
     WaitMovement
     GoTo _00EC
 
 _00DC:
-    ApplyMovement 28, _0184
+    ApplyMovement 0, _0184
     WaitMovement
     GoTo _00EC
 
@@ -75,7 +75,7 @@ _00EC:
     CloseMessage
     SetVar VAR_PARTNER_TRAINER_ID, TRAINER_MARLEY_VICTORY_ROAD
     SetHasPartner
-    SetMovementType 28, 48
+    SetMovementType 0, 48
     ReleaseAll
     End
 
@@ -131,13 +131,13 @@ _0184:
 _0190:
     LockAll
     ApplyMovement LOCALID_PLAYER, _0274
-    ApplyMovement 28, _02DC
+    ApplyMovement 0, _02DC
     WaitMovement
     Message 4
     CloseMessage
     SetVar VAR_UNK_0x4090, 0
     ClearHasPartner
-    SetMovementType 28, 14
+    SetMovementType 0, 14
     GetPlayerMapPos VAR_0x8004, VAR_0x8005
     GoToIfEq VAR_0x8005, 55, _020D
     GoToIfEq VAR_0x8005, 56, _021D
@@ -148,32 +148,32 @@ _0190:
     End
 
 _020D:
-    ApplyMovement 28, _0284
+    ApplyMovement 0, _0284
     WaitMovement
     GoTo _026D
 
 _021D:
-    ApplyMovement 28, _0294
+    ApplyMovement 0, _0294
     WaitMovement
     GoTo _026D
 
 _022D:
-    ApplyMovement 28, _02A4
+    ApplyMovement 0, _02A4
     WaitMovement
     GoTo _026D
 
 _023D:
-    ApplyMovement 28, _02B4
+    ApplyMovement 0, _02B4
     WaitMovement
     GoTo _026D
 
 _024D:
-    ApplyMovement 28, _02BC
+    ApplyMovement 0, _02BC
     WaitMovement
     GoTo _026D
 
 _025D:
-    ApplyMovement 28, _02CC
+    ApplyMovement 0, _02CC
     WaitMovement
     GoTo _026D
 
@@ -238,9 +238,9 @@ _02DC:
 _02E4:
     LockAll
     ClearHasPartner
-    SetMovementType 28, 14
+    SetMovementType 0, 14
     ApplyMovement LOCALID_PLAYER, _03B4
-    ApplyMovement 28, _03E0
+    ApplyMovement 0, _03E0
     WaitMovement
     Message 5
     CloseMessage
@@ -253,30 +253,30 @@ _02E4:
 
 _0341:
     ApplyMovement LOCALID_PLAYER, _03C0
-    ApplyMovement 28, _03EC
+    ApplyMovement 0, _03EC
     WaitMovement
     GoTo _03A1
 
 _0359:
     ApplyMovement LOCALID_PLAYER, _03C0
-    ApplyMovement 28, _0400
+    ApplyMovement 0, _0400
     WaitMovement
     GoTo _03A1
 
 _0371:
     ApplyMovement LOCALID_PLAYER, _03C0
-    ApplyMovement 28, _0414
+    ApplyMovement 0, _0414
     WaitMovement
     GoTo _03A1
 
 _0389:
     ApplyMovement LOCALID_PLAYER, _03D0
-    ApplyMovement 28, _0428
+    ApplyMovement 0, _0428
     WaitMovement
     GoTo _03A1
 
 _03A1:
-    RemoveObject 28
+    RemoveObject 0
     SetFlag FLAG_TRAVELED_WITH_MARLEY
     SetVar VAR_UNK_0x4090, 2
     ReleaseAll

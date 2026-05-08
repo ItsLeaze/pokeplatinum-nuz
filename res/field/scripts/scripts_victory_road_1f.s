@@ -11,7 +11,6 @@ _000A:
     GoToIfUnset FLAG_GAME_COMPLETED, _002F
     GetNationalDexEnabled VAR_MAP_LOCAL_0
     GoToIfEq VAR_MAP_LOCAL_0, 0, _002F
-    SetFlag FLAG_UNK_0x027E
 _002F:
     End
 

@@ -43,6 +43,21 @@
     ],
     "object_events": [
         {
+            "id": "VICTORY_ROAD_1F_ROOM_2_MARLEY_28",
+            "graphics_id": "OBJ_EVENT_GFX_MARLEY",
+            "movement_type": "MOVEMENT_TYPE_LOOK_EAST",
+            "trainer_type": "TRAINER_TYPE_NONE",
+            "hidden_flag": "FLAG_UNK_0x01E6",
+            "script": 9705,
+            "initial_dir": 3,
+            "data": [],
+            "movement_range_x": 0,
+            "movement_range_z": 0,
+            "x": 7,
+            "z": 58,
+            "y": 1
+        },
+        {
             "id": "LOCALID_ITEM_NUGGET",
             "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
             "movement_type": "MOVEMENT_TYPE_NONE",
@@ -103,13 +118,64 @@
             "y": 1
         },
         {
-            "id": "VICTORY_ROAD_1F_ROOM_2_ACE_TRAINER_MICAH",
+            "id": "VICTORY_ROAD_1F_ROOM_2_BLACK_BELT_EDDIE",
+            "graphics_id": "OBJ_EVENT_GFX_BLACK_BELT",
+            "movement_type": "MOVEMENT_TYPE_LOOK_EAST",
+            "trainer_type": "TRAINER_TYPE_NORMAL",
+            "hidden_flag": "0",
+            "script": "TRAINER_VR_BLACK_BELT_EDDIE",
+            "initial_dir": 0,
+            "data": [
+                1
+            ],
+            "movement_range_x": 0,
+            "movement_range_z": 0,
+            "x": 7,
+            "z": 10,
+            "y": 1
+        },
+        {
+            "id": "VICTORY_ROAD_1F_ROOM_2_VETERAN_TERRELL",
+            "graphics_id": "OBJ_EVENT_GFX_EXPERT_M",
+            "movement_type": "MOVEMENT_TYPE_LOOK_WEST",
+            "trainer_type": "TRAINER_TYPE_NORMAL",
+            "hidden_flag": "0",
+            "script": "TRAINER_VR_VETERAN_TERRELL",
+            "initial_dir": 1,
+            "data": [
+                1
+            ],
+            "movement_range_x": 0,
+            "movement_range_z": 0,
+            "x": 9,
+            "z": 10,
+            "y": 1
+        },
+        {
+            "id": "VICTORY_ROAD_1F_ROOM_2_BIRD_KEEPER_AUTUMN",
+            "graphics_id": "OBJ_EVENT_GFX_ACE_TRAINER_F",
+            "movement_type": "MOVEMENT_TYPE_LOOK_EAST",
+            "trainer_type": "TRAINER_TYPE_NORMAL",
+            "hidden_flag": "0",
+            "script": "TRAINER_VR_BIRD_KEEPER_AUTUMN",
+            "initial_dir": 0,
+            "data": [
+                3
+            ],
+            "movement_range_x": 0,
+            "movement_range_z": 0,
+            "x": 6,
+            "z": 47,
+            "y": 1
+        },
+        {
+            "id": "VICTORY_ROAD_1F_ROOM_2_DRAGON_TAMER_JOE",
             "graphics_id": "OBJ_EVENT_GFX_ACE_TRAINER_M",
             "movement_type": "MOVEMENT_TYPE_LOOK_WEST",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
-            "script": "TRAINER_ACE_TRAINER_MICAH",
-            "initial_dir": 2,
+            "script": "TRAINER_VR_DRAGON_TAMER_JOE",
+            "initial_dir": 1,
             "data": [
                 3
             ],
@@ -120,206 +186,19 @@
             "y": 1
         },
         {
-            "id": "VICTORY_ROAD_1F_ROOM_2_ACE_TRAINER_BRANDI",
-            "graphics_id": "OBJ_EVENT_GFX_ACE_TRAINER_F",
-            "movement_type": "MOVEMENT_TYPE_LOOK_EAST",
-            "trainer_type": "TRAINER_TYPE_NORMAL",
-            "hidden_flag": "0",
-            "script": "TRAINER_ACE_TRAINER_BRANDI",
-            "initial_dir": 3,
-            "data": [
-                3
-            ],
-            "movement_range_x": 0,
-            "movement_range_z": 0,
-            "x": 6,
-            "z": 47,
-            "y": 1
-        },
-        {
-            "id": "VICTORY_ROAD_1F_ROOM_2_PSYCHIC_DESIREE",
-            "graphics_id": "OBJ_EVENT_GFX_PSYCHIC",
-            "movement_type": "MOVEMENT_TYPE_LOOK_SOUTH",
-            "trainer_type": "TRAINER_TYPE_NORMAL",
-            "hidden_flag": "0",
-            "script": "TRAINER_PSYCHIC_DESIREE",
-            "initial_dir": 1,
-            "data": [
-                4
-            ],
-            "movement_range_x": 0,
-            "movement_range_z": 0,
-            "x": 7,
-            "z": 13,
-            "y": 1
-        },
-        {
-            "id": "VICTORY_ROAD_1F_ROOM_2_PSYCHIC_LANDON",
-            "graphics_id": "OBJ_EVENT_GFX_PSYCHIC",
-            "movement_type": "MOVEMENT_TYPE_LOOK_EAST",
-            "trainer_type": "TRAINER_TYPE_NORMAL",
-            "hidden_flag": "0",
-            "script": "TRAINER_PSYCHIC_LANDON",
-            "initial_dir": 3,
-            "data": [
-                1
-            ],
-            "movement_range_x": 0,
-            "movement_range_z": 0,
-            "x": 6,
-            "z": 17,
-            "y": 1
-        },
-        {
-            "id": "VICTORY_ROAD_1F_ROOM_2_BLACK_BELT_EDDIE",
-            "graphics_id": "OBJ_EVENT_GFX_BLACK_BELT",
-            "movement_type": "MOVEMENT_TYPE_LOOK_NORTH",
-            "trainer_type": "TRAINER_TYPE_NORMAL",
-            "hidden_flag": "0",
-            "script": "TRAINER_BLACK_BELT_EDDIE",
-            "initial_dir": 0,
-            "data": [
-                1
-            ],
-            "movement_range_x": 0,
-            "movement_range_z": 0,
-            "x": 16,
-            "z": 12,
-            "y": 1
-        },
-        {
-            "id": "VICTORY_ROAD_1F_ROOM_2_VETERAN_TERRELL",
-            "graphics_id": "OBJ_EVENT_GFX_EXPERT_M",
-            "movement_type": "MOVEMENT_TYPE_LOOK_SOUTH",
-            "trainer_type": "TRAINER_TYPE_NORMAL",
-            "hidden_flag": "0",
-            "script": "TRAINER_VETERAN_TERRELL",
-            "initial_dir": 1,
-            "data": [
-                1
-            ],
-            "movement_range_x": 0,
-            "movement_range_z": 0,
-            "x": 16,
-            "z": 10,
-            "y": 1
-        },
-        {
-            "id": "VICTORY_ROAD_1F_ROOM_2_ACE_TRAINER_ARTHUR",
-            "graphics_id": "OBJ_EVENT_GFX_ACE_TRAINER_M",
-            "movement_type": "MOVEMENT_TYPE_LOOK_WEST",
-            "trainer_type": "TRAINER_TYPE_NORMAL",
-            "hidden_flag": "0",
-            "script": "TRAINER_ACE_TRAINER_ARTHUR",
-            "initial_dir": 2,
-            "data": [
-                1
-            ],
-            "movement_range_x": 0,
-            "movement_range_z": 0,
-            "x": 44,
-            "z": 57,
-            "y": 1
-        },
-        {
-            "id": "VICTORY_ROAD_1F_ROOM_2_ACE_TRAINER_CLARICE",
-            "graphics_id": "OBJ_EVENT_GFX_ACE_TRAINER_F",
-            "movement_type": "MOVEMENT_TYPE_LOOK_EAST",
-            "trainer_type": "TRAINER_TYPE_NORMAL",
-            "hidden_flag": "0",
-            "script": "TRAINER_ACE_TRAINER_CLARICE",
-            "initial_dir": 3,
-            "data": [
-                1
-            ],
-            "movement_range_x": 0,
-            "movement_range_z": 0,
-            "x": 42,
-            "z": 57,
-            "y": 1
-        },
-        {
-            "id": "VICTORY_ROAD_1F_ROOM_2_PSYCHIC_DEANDRE",
-            "graphics_id": "OBJ_EVENT_GFX_PSYCHIC",
-            "movement_type": "MOVEMENT_TYPE_LOOK_WEST",
-            "trainer_type": "TRAINER_TYPE_NORMAL",
-            "hidden_flag": "0",
-            "script": "TRAINER_PSYCHIC_DEANDRE",
-            "initial_dir": 2,
-            "data": [
-                1
-            ],
-            "movement_range_x": 0,
-            "movement_range_z": 0,
-            "x": 38,
-            "z": 17,
-            "y": 1
-        },
-        {
-            "id": "VICTORY_ROAD_1F_ROOM_2_PSYCHIC_KENDRA",
-            "graphics_id": "OBJ_EVENT_GFX_PSYCHIC",
-            "movement_type": "MOVEMENT_TYPE_LOOK_EAST",
-            "trainer_type": "TRAINER_TYPE_NORMAL",
-            "hidden_flag": "0",
-            "script": "TRAINER_PSYCHIC_KENDRA",
-            "initial_dir": 3,
-            "data": [
-                1
-            ],
-            "movement_range_x": 0,
-            "movement_range_z": 0,
-            "x": 36,
-            "z": 17,
-            "y": 1
-        },
-        {
-            "id": "VICTORY_ROAD_1F_ROOM_2_BIRD_KEEPER_AUTUMN",
-            "graphics_id": "OBJ_EVENT_GFX_ACE_TRAINER_F",
-            "movement_type": "MOVEMENT_TYPE_LOOK_NORTH",
-            "trainer_type": "TRAINER_TYPE_NORMAL",
-            "hidden_flag": "0",
-            "script": "TRAINER_BIRD_KEEPER_AUTUMN",
-            "initial_dir": 0,
-            "data": [
-                1
-            ],
-            "movement_range_x": 0,
-            "movement_range_z": 0,
-            "x": 28,
-            "z": 12,
-            "y": 1
-        },
-        {
-            "id": "VICTORY_ROAD_1F_ROOM_2_DRAGON_TAMER_JOE",
-            "graphics_id": "OBJ_EVENT_GFX_ACE_TRAINER_M",
-            "movement_type": "MOVEMENT_TYPE_LOOK_SOUTH",
-            "trainer_type": "TRAINER_TYPE_NORMAL",
-            "hidden_flag": "0",
-            "script": "TRAINER_DRAGON_TAMER_JOE",
-            "initial_dir": 1,
-            "data": [
-                1
-            ],
-            "movement_range_x": 0,
-            "movement_range_z": 0,
-            "x": 28,
-            "z": 10,
-            "y": 1
-        },
-        {
             "id": "VICTORY_ROAD_1F_ROOM_2_BLACK_BELT_WILLIE",
             "graphics_id": "OBJ_EVENT_GFX_BLACK_BELT",
             "movement_type": "MOVEMENT_TYPE_LOOK_NORTH",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
-            "script": "TRAINER_BLACK_BELT_WILLIE",
+            "script": "TRAINER_VR_BLACK_BELT_WILLIE",
             "initial_dir": 0,
             "data": [
                 1
             ],
             "movement_range_x": 0,
             "movement_range_z": 0,
-            "x": 46,
+            "x": 47,
             "z": 25,
             "y": 1
         },
@@ -329,19 +208,19 @@
             "movement_type": "MOVEMENT_TYPE_LOOK_SOUTH",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
-            "script": "TRAINER_VETERAN_BRENDEN",
+            "script": "TRAINER_VR_VETERAN_BRENDEN",
             "initial_dir": 1,
             "data": [
                 1
             ],
             "movement_range_x": 0,
             "movement_range_z": 0,
-            "x": 46,
+            "x": 47,
             "z": 23,
             "y": 1
         },
         {
-            "id": "VICTORY_ROAD_1F_ROOM_2_STRENGTH_BOULDER_18",
+            "id": "VICTORY_ROAD_1F_ROOM_2_STRENGTH_BOULDER_1",
             "graphics_id": "OBJ_EVENT_GFX_STRENGTH_BOULDER",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",
@@ -351,12 +230,12 @@
             "data": [],
             "movement_range_x": 0,
             "movement_range_z": 0,
-            "x": 6,
-            "z": 51,
+            "x": 46,
+            "z": 23,
             "y": 0
         },
         {
-            "id": "VICTORY_ROAD_1F_ROOM_2_STRENGTH_BOULDER_19",
+            "id": "VICTORY_ROAD_1F_ROOM_2_STRENGTH_BOULDER_2",
             "graphics_id": "OBJ_EVENT_GFX_STRENGTH_BOULDER",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",
@@ -366,12 +245,12 @@
             "data": [],
             "movement_range_x": 0,
             "movement_range_z": 0,
-            "x": 7,
-            "z": 31,
-            "y": 1
+            "x": 46,
+            "z": 25,
+            "y": 0
         },
         {
-            "id": "VICTORY_ROAD_1F_ROOM_2_STRENGTH_BOULDER_20",
+            "id": "VICTORY_ROAD_1F_ROOM_2_STRENGTH_BOULDER_3",
             "graphics_id": "OBJ_EVENT_GFX_STRENGTH_BOULDER",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",
@@ -381,12 +260,12 @@
             "data": [],
             "movement_range_x": 0,
             "movement_range_z": 0,
-            "x": 7,
-            "z": 28,
-            "y": 1
+            "x": 10,
+            "z": 48,
+            "y": 0
         },
         {
-            "id": "VICTORY_ROAD_1F_ROOM_2_STRENGTH_BOULDER_21",
+            "id": "VICTORY_ROAD_1F_ROOM_2_STRENGTH_BOULDER_4",
             "graphics_id": "OBJ_EVENT_GFX_STRENGTH_BOULDER",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",
@@ -397,11 +276,11 @@
             "movement_range_x": 0,
             "movement_range_z": 0,
             "x": 7,
-            "z": 25,
-            "y": 1
+            "z": 11,
+            "y": 0
         },
         {
-            "id": "VICTORY_ROAD_1F_ROOM_2_STRENGTH_BOULDER_22",
+            "id": "VICTORY_ROAD_1F_ROOM_2_STRENGTH_BOULDER_5",
             "graphics_id": "OBJ_EVENT_GFX_STRENGTH_BOULDER",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",
@@ -411,12 +290,12 @@
             "data": [],
             "movement_range_x": 0,
             "movement_range_z": 0,
-            "x": 8,
-            "z": 9,
-            "y": 1
+            "x": 9,
+            "z": 11,
+            "y": 0
         },
         {
-            "id": "VICTORY_ROAD_1F_ROOM_2_STRENGTH_BOULDER_23",
+            "id": "VICTORY_ROAD_1F_ROOM_2_STRENGTH_BOULDER_6",
             "graphics_id": "OBJ_EVENT_GFX_STRENGTH_BOULDER",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",
@@ -427,11 +306,11 @@
             "movement_range_x": 0,
             "movement_range_z": 0,
             "x": 10,
-            "z": 7,
-            "y": 1
+            "z": 10,
+            "y": 0
         },
         {
-            "id": "VICTORY_ROAD_1F_ROOM_2_STRENGTH_BOULDER_24",
+            "id": "VICTORY_ROAD_1F_ROOM_2_STRENGTH_BOULDER_7",
             "graphics_id": "OBJ_EVENT_GFX_STRENGTH_BOULDER",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",
@@ -441,69 +320,9 @@
             "data": [],
             "movement_range_x": 0,
             "movement_range_z": 0,
-            "x": 8,
-            "z": 5,
-            "y": 1
-        },
-        {
-            "id": "VICTORY_ROAD_1F_ROOM_2_STRENGTH_BOULDER_25",
-            "graphics_id": "OBJ_EVENT_GFX_STRENGTH_BOULDER",
-            "movement_type": "MOVEMENT_TYPE_NONE",
-            "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_HIDE_OBSTACLE_8",
-            "script": 10002,
-            "initial_dir": 0,
-            "data": [],
-            "movement_range_x": 0,
-            "movement_range_z": 0,
-            "x": 12,
-            "z": 32,
-            "y": 1
-        },
-        {
-            "id": "VICTORY_ROAD_1F_ROOM_2_STRENGTH_BOULDER_26",
-            "graphics_id": "OBJ_EVENT_GFX_STRENGTH_BOULDER",
-            "movement_type": "MOVEMENT_TYPE_NONE",
-            "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_HIDE_OBSTACLE_9",
-            "script": 10002,
-            "initial_dir": 0,
-            "data": [],
-            "movement_range_x": 0,
-            "movement_range_z": 0,
-            "x": 12,
-            "z": 31,
-            "y": 1
-        },
-        {
-            "id": "VICTORY_ROAD_1F_ROOM_2_STRENGTH_BOULDER_27",
-            "graphics_id": "OBJ_EVENT_GFX_STRENGTH_BOULDER",
-            "movement_type": "MOVEMENT_TYPE_NONE",
-            "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_HIDE_OBSTACLE_10",
-            "script": 10002,
-            "initial_dir": 0,
-            "data": [],
-            "movement_range_x": 0,
-            "movement_range_z": 0,
-            "x": 21,
+            "x": 10,
             "z": 11,
-            "y": 1
-        },
-        {
-            "id": "VICTORY_ROAD_1F_ROOM_2_MARLEY_28",
-            "graphics_id": "OBJ_EVENT_GFX_MARLEY",
-            "movement_type": "MOVEMENT_TYPE_LOOK_EAST",
-            "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_UNK_0x01E6",
-            "script": 9705,
-            "initial_dir": 3,
-            "data": [],
-            "movement_range_x": 0,
-            "movement_range_z": 0,
-            "x": 7,
-            "z": 58,
-            "y": 1
+            "y": 0
         }
     ],
     "warp_events": [

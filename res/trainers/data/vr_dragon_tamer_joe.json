@@ -1,5 +1,5 @@
 {
-    "name": "Ondrej",
+    "name": "Joe",
     "class": "TRAINER_CLASS_DRAGON_TAMER",
     "items": [],
     "ai_flags": [
@@ -10,21 +10,12 @@
     "double_battle": false,
     "party": [
         {
-            "species": "SPECIES_ALTARIA",
+            "species": "SPECIES_DRATINI",
             "form": 0,
             "level": 45,
             "item": null,
             "moves": null,
-            "iv_scale": 50,
-            "ball_seal": 0
-        },
-        {
-            "species": "SPECIES_GABITE",
-            "form": 0,
-            "level": 47,
-            "item": null,
-            "moves": null,
-            "iv_scale": 50,
+            "iv_scale": 0,
             "ball_seal": 0
         }
     ],
@@ -32,20 +23,19 @@
         {
             "type": "TRMSG_PRE_BATTLE",
             "en_US": [
-                "I take Pokémon that are tough to begin\n",
-                "with and toughen them up even more.\r",
-                "You can help me!\r"
+                "Learning how to manage tough Pokémon\n",
+                "is the shortcut to getting tough.\r"
             ]
         },
         {
             "type": "TRMSG_DEFEAT",
-            "en_US": "There’s no way I could have won!\n"
+            "en_US": "I lost? But how is that possible?!\n"
         },
         {
             "type": "TRMSG_POST_BATTLE",
             "en_US": [
-                "How should I teach the most powerful\n",
-                "of the Dragon-type moves...?\n"
+                "Getting the best out of any Pokémon...\n",
+                "That’s what makes a good Trainer...\n"
             ]
         }
     ]

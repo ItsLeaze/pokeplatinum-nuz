@@ -11,10 +11,10 @@
         {
             "species": "SPECIES_MACHAMP",
             "form": 0,
-            "level": 48,
+            "level": 40,
             "item": null,
             "moves": null,
-            "iv_scale": 30,
+            "iv_scale": 0,
             "ball_seal": 0
         }
     ],

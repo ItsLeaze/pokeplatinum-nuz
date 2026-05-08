@@ -11,19 +11,10 @@
         {
             "species": "SPECIES_HERACROSS",
             "form": 0,
-            "level": 54,
+            "level": 45,
             "item": null,
             "moves": null,
-            "iv_scale": 30,
-            "ball_seal": 0
-        },
-        {
-            "species": "SPECIES_MACHAMP",
-            "form": 0,
-            "level": 54,
-            "item": null,
-            "moves": null,
-            "iv_scale": 30,
+            "iv_scale": 0,
             "ball_seal": 0
         }
     ],

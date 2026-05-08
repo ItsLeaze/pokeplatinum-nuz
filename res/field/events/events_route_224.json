@@ -200,7 +200,7 @@
             "movement_type": "MOVEMENT_TYPE_LOOK_EAST",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
-            "script": "TRAINER_ACE_TRAINER_RUBEN",
+            "script": "TRAINER_R224_ACE_TRAINER_RUBEN",
             "initial_dir": 3,
             "data": [
                 3
@@ -217,7 +217,7 @@
             "movement_type": "MOVEMENT_TYPE_LOOK_NORTH",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
-            "script": "TRAINER_PSYCHIC_MAXWELL",
+            "script": "TRAINER_R224_PSYCHIC_MAXWELL",
             "initial_dir": 0,
             "data": [
                 4
@@ -234,7 +234,7 @@
             "movement_type": "MOVEMENT_TYPE_WALK_SOUTH_EAST_NORTH_WEST",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
-            "script": "TRAINER_BLACK_BELT_CARL",
+            "script": "TRAINER_R224_BLACK_BELT_CARL",
             "initial_dir": 3,
             "data": [
                 2
@@ -248,10 +248,10 @@
         {
             "id": "ROUTE_224_VETERAN_ARMANDO",
             "graphics_id": "OBJ_EVENT_GFX_EXPERT_M",
-            "movement_type": "MOVEMENT_TYPE_LOOK_SOUTH_AND_WEST",
+            "movement_type": "MOVEMENT_TYPE_LOOK_SOUTH",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
-            "script": "TRAINER_VETERAN_ARMANDO",
+            "script": "TRAINER_R224_VETERAN_ARMANDO",
             "initial_dir": 1,
             "data": [
                 3
@@ -268,7 +268,7 @@
             "movement_type": "MOVEMENT_TYPE_LOOK_EAST",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
-            "script": "TRAINER_PSYCHIC_BRITTNEY",
+            "script": "TRAINER_R224_PSYCHIC_BRITTNEY",
             "initial_dir": 3,
             "data": [
                 2
@@ -285,7 +285,7 @@
             "movement_type": "MOVEMENT_TYPE_LOOK_WEST",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
-            "script": "TRAINER_ACE_TRAINER_JAMIE",
+            "script": "TRAINER_R224_ACE_TRAINER_JAMIE",
             "initial_dir": 2,
             "data": [
                 6
@@ -302,7 +302,7 @@
             "movement_type": "MOVEMENT_TYPE_LOOK_EAST",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
-            "script": "TRAINER_RUIN_MANIAC_LARRY",
+            "script": "TRAINER_R224_RUIN_MANIAC_LARRY",
             "initial_dir": 3,
             "data": [
                 4
@@ -319,7 +319,7 @@
             "movement_type": "MOVEMENT_TYPE_ROTATE_CLOCKWISE",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
-            "script": "TRAINER_DRAGON_TAMER_HAYDEN",
+            "script": "TRAINER_R224_DRAGON_TAMER_HAYDEN",
             "initial_dir": 3,
             "data": [
                 3

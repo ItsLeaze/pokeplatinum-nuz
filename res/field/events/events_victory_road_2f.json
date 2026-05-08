@@ -79,49 +79,15 @@
             "y": 0
         },
         {
-            "id": "VICTORY_ROAD_2F_ACE_TRAINER_OMAR",
-            "graphics_id": "OBJ_EVENT_GFX_ACE_TRAINER_M",
-            "movement_type": "MOVEMENT_TYPE_LOOK_SOUTH",
-            "trainer_type": "TRAINER_TYPE_NORMAL",
-            "hidden_flag": "0",
-            "script": "TRAINER_ACE_TRAINER_OMAR",
-            "initial_dir": 1,
-            "data": [
-                4
-            ],
-            "movement_range_x": 0,
-            "movement_range_z": 0,
-            "x": 5,
-            "z": 27,
-            "y": 0
-        },
-        {
-            "id": "VICTORY_ROAD_2F_ACE_TRAINER_SYDNEY",
-            "graphics_id": "OBJ_EVENT_GFX_ACE_TRAINER_F",
-            "movement_type": "MOVEMENT_TYPE_LOOK_WEST",
-            "trainer_type": "TRAINER_TYPE_NORMAL",
-            "hidden_flag": "0",
-            "script": "TRAINER_ACE_TRAINER_SYDNEY",
-            "initial_dir": 2,
-            "data": [
-                4
-            ],
-            "movement_range_x": 0,
-            "movement_range_z": 0,
-            "x": 15,
-            "z": 37,
-            "y": 0
-        },
-        {
             "id": "VICTORY_ROAD_2F_VETERAN_CLAYTON",
             "graphics_id": "OBJ_EVENT_GFX_EXPERT_M",
             "movement_type": "MOVEMENT_TYPE_LOOK_SOUTH",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
-            "script": "TRAINER_VETERAN_CLAYTON",
+            "script": "TRAINER_VR_VETERAN_CLAYTON",
             "initial_dir": 1,
             "data": [
-                4
+                5
             ],
             "movement_range_x": 0,
             "movement_range_z": 0,
@@ -135,7 +101,7 @@
             "movement_type": "MOVEMENT_TYPE_LOOK_WEST",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
-            "script": "TRAINER_DOUBLE_TEAM_AL_AND_KAY",
+            "script": "TRAINER_VR_DOUBLE_TEAM_AL_AND_KAY",
             "double_battle_id": 1,
             "initial_dir": 2,
             "data": [
@@ -153,7 +119,7 @@
             "movement_type": "MOVEMENT_TYPE_LOOK_WEST",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
-            "script": "TRAINER_DOUBLE_TEAM_AL_AND_KAY",
+            "script": "TRAINER_VR_DOUBLE_TEAM_AL_AND_KAY",
             "double_battle_id": 2,
             "initial_dir": 2,
             "data": [
@@ -418,96 +384,6 @@
             "movement_range_z": 0,
             "x": 42,
             "z": 30,
-            "y": 0
-        },
-        {
-            "id": "VICTORY_ROAD_2F_ROCK_SMASH_26",
-            "graphics_id": "OBJ_EVENT_GFX_ROCK_SMASH",
-            "movement_type": "MOVEMENT_TYPE_NONE",
-            "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_HIDE_OBSTACLE_18",
-            "script": 10001,
-            "initial_dir": 0,
-            "data": [],
-            "movement_range_x": 0,
-            "movement_range_z": 0,
-            "x": 15,
-            "z": 16,
-            "y": 0
-        },
-        {
-            "id": "VICTORY_ROAD_2F_ROCK_SMASH_27",
-            "graphics_id": "OBJ_EVENT_GFX_ROCK_SMASH",
-            "movement_type": "MOVEMENT_TYPE_NONE",
-            "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_HIDE_OBSTACLE_19",
-            "script": 10001,
-            "initial_dir": 0,
-            "data": [],
-            "movement_range_x": 0,
-            "movement_range_z": 0,
-            "x": 16,
-            "z": 19,
-            "y": 0
-        },
-        {
-            "id": "VICTORY_ROAD_2F_ROCK_SMASH_28",
-            "graphics_id": "OBJ_EVENT_GFX_ROCK_SMASH",
-            "movement_type": "MOVEMENT_TYPE_NONE",
-            "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_HIDE_OBSTACLE_20",
-            "script": 10001,
-            "initial_dir": 0,
-            "data": [],
-            "movement_range_x": 0,
-            "movement_range_z": 0,
-            "x": 17,
-            "z": 19,
-            "y": 0
-        },
-        {
-            "id": "VICTORY_ROAD_2F_ROCK_SMASH_29",
-            "graphics_id": "OBJ_EVENT_GFX_ROCK_SMASH",
-            "movement_type": "MOVEMENT_TYPE_NONE",
-            "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_HIDE_OBSTACLE_21",
-            "script": 10001,
-            "initial_dir": 0,
-            "data": [],
-            "movement_range_x": 0,
-            "movement_range_z": 0,
-            "x": 5,
-            "z": 34,
-            "y": 0
-        },
-        {
-            "id": "VICTORY_ROAD_2F_ROCK_SMASH_30",
-            "graphics_id": "OBJ_EVENT_GFX_ROCK_SMASH",
-            "movement_type": "MOVEMENT_TYPE_NONE",
-            "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_HIDE_OBSTACLE_22",
-            "script": 10001,
-            "initial_dir": 0,
-            "data": [],
-            "movement_range_x": 0,
-            "movement_range_z": 0,
-            "x": 41,
-            "z": 31,
-            "y": 0
-        },
-        {
-            "id": "VICTORY_ROAD_2F_ROCK_SMASH_31",
-            "graphics_id": "OBJ_EVENT_GFX_ROCK_SMASH",
-            "movement_type": "MOVEMENT_TYPE_NONE",
-            "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_HIDE_OBSTACLE_23",
-            "script": 10001,
-            "initial_dir": 0,
-            "data": [],
-            "movement_range_x": 0,
-            "movement_range_z": 0,
-            "x": 9,
-            "z": 10,
             "y": 0
         }
     ],

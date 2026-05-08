@@ -104,10 +104,10 @@
         {
             "id": "VICTORY_ROAD_1F_PSYCHIC_BRYCE",
             "graphics_id": "OBJ_EVENT_GFX_PSYCHIC",
-            "movement_type": "MOVEMENT_TYPE_LOOK_NORTH_AND_EAST",
+            "movement_type": "MOVEMENT_TYPE_LOOK_EAST",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
-            "script": "TRAINER_PSYCHIC_BRYCE",
+            "script": "TRAINER_VR_PSYCHIC_BRYCE",
             "initial_dir": 0,
             "data": [
                 2
@@ -124,7 +124,7 @@
             "movement_type": "MOVEMENT_TYPE_LOOK_SOUTH",
             "trainer_type": "TRAINER_TYPE_FACE_SIDES",
             "hidden_flag": "0",
-            "script": "TRAINER_BLACK_BELT_MILES",
+            "script": "TRAINER_VR_BLACK_BELT_MILES",
             "initial_dir": 1,
             "data": [
                 1
@@ -141,7 +141,7 @@
             "movement_type": "MOVEMENT_TYPE_LOOK_WEST",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
-            "script": "TRAINER_BIRD_KEEPER_HANA",
+            "script": "TRAINER_VR_BIRD_KEEPER_HANA",
             "initial_dir": 2,
             "data": [
                 3
@@ -158,7 +158,7 @@
             "movement_type": "MOVEMENT_TYPE_LOOK_SOUTH",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
-            "script": "TRAINER_R216_ACE_TRAINER_MARIAH",
+            "script": "TRAINER_VR_ACE_TRAINER_MARIAH",
             "initial_dir": 1,
             "data": [
                 2
@@ -175,7 +175,7 @@
             "movement_type": "MOVEMENT_TYPE_LOOK_EAST",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
-            "script": "TRAINER_VETERAN_EDGAR",
+            "script": "TRAINER_VR_VETERAN_EDGAR",
             "initial_dir": 3,
             "data": [
                 2
@@ -192,7 +192,7 @@
             "movement_type": "MOVEMENT_TYPE_LOOK_WEST",
             "trainer_type": "TRAINER_TYPE_NORMAL",
             "hidden_flag": "0",
-            "script": "TRAINER_DRAGON_TAMER_CLINTON",
+            "script": "TRAINER_VR_DRAGON_TAMER_CLINTON",
             "initial_dir": 2,
             "data": [
                 3
@@ -201,21 +201,6 @@
             "movement_range_z": 0,
             "x": 40,
             "z": 31,
-            "y": 0
-        },
-        {
-            "id": "VICTORY_ROAD_1F_COLLECTOR_11",
-            "graphics_id": "OBJ_EVENT_GFX_COLLECTOR",
-            "movement_type": "MOVEMENT_TYPE_NONE",
-            "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_UNK_0x027E",
-            "script": 2,
-            "initial_dir": 2,
-            "data": [],
-            "movement_range_x": 0,
-            "movement_range_z": 0,
-            "x": 45,
-            "z": 33,
             "y": 0
         }
     ],

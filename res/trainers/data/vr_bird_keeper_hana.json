@@ -10,16 +10,7 @@
         {
             "species": "SPECIES_NOCTOWL",
             "form": 0,
-            "level": 45,
-            "item": null,
-            "moves": null,
-            "iv_scale": 0,
-            "ball_seal": 0
-        },
-        {
-            "species": "SPECIES_TOGETIC",
-            "form": 0,
-            "level": 47,
+            "level": 40,
             "item": null,
             "moves": null,
             "iv_scale": 0,

@@ -10,23 +10,9 @@
     "double_battle": false,
     "party": [
         {
-            "species": "SPECIES_STARAPTOR",
-            "form": 0,
-            "level": 47,
-            "item": null,
-            "moves": [
-                "MOVE_BRAVE_BIRD",
-                "MOVE_QUICK_ATTACK",
-                "MOVE_DOUBLE_TEAM",
-                "MOVE_GROWL"
-            ],
-            "iv_scale": 100,
-            "ball_seal": 0
-        },
-        {
             "species": "SPECIES_LICKILICKY",
             "form": 0,
-            "level": 47,
+            "level": 40,
             "item": null,
             "moves": [
                 "MOVE_SLAM",
@@ -34,7 +20,7 @@
                 "MOVE_EARTHQUAKE",
                 "MOVE_BRICK_BREAK"
             ],
-            "iv_scale": 100,
+            "iv_scale": 0,
             "ball_seal": 0
         }
     ],
