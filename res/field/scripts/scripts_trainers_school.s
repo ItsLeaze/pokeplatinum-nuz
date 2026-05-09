@@ -179,7 +179,7 @@ _0269:
 
 _0274:
     Message 13
-    SetVar VAR_0x8004, ITEM_POTION
+    SetVar VAR_0x8004, ITEM_GREAT_BALL
     SetVar VAR_0x8005, 1
     GoToIfCannotFitItem VAR_0x8004, VAR_0x8005, VAR_RESULT, _02B3
     Common_GiveItemQuantity

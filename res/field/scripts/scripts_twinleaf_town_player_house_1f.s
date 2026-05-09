@@ -259,7 +259,7 @@ TwinleafTownPlayerHouse1F_Unused2:
     BufferPlayerName 0
     Message TwinleafTownPlayerHouse1F_Text_PutTheseOn
     GiveBag
-    AddItem ITEM_POTION, 1, VAR_RESULT
+    AddItem ITEM_GREAT_BALL, 1, VAR_RESULT
     BufferPlayerName 0
     Message TwinleafTownPlayerHouse1F_Text_PlayerReceivedRunningShoes
     PlayFanfare SEQ_FANFA4

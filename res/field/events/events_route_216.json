@@ -196,11 +196,11 @@
             "y": 0
         },
         {
-            "id": "LOCALID_ITEM_TM13",
+            "id": "LOCALID_ITEM_1",
             "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_OBTAINED_ROUTE_216_TM13",
+            "hidden_flag": "FLAG_OBTAINED_ROUTE_216_ITEM_1",
             "script": 7157,
             "initial_dir": 0,
             "data": [],
@@ -211,11 +211,11 @@
             "y": 0
         },
         {
-            "id": "LOCALID_ITEM_FULL_HEAL",
+            "id": "LOCALID_ITEM_2",
             "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_OBTAINED_ROUTE_216_FULL_HEAL",
+            "hidden_flag": "FLAG_OBTAINED_ROUTE_216_ITEM_2",
             "script": 7159,
             "initial_dir": 0,
             "data": [],
@@ -226,11 +226,11 @@
             "y": 0
         },
         {
-            "id": "LOCALID_ITEM_MENTAL_HERB",
+            "id": "LOCALID_ITEM_3",
             "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_OBTAINED_ROUTE_216_MENTAL_HERB",
+            "hidden_flag": "FLAG_OBTAINED_ROUTE_216_ITEM_3",
             "script": 7158,
             "initial_dir": 0,
             "data": [],
@@ -241,11 +241,11 @@
             "y": 0
         },
         {
-            "id": "LOCALID_ITEM_HP_UP",
+            "id": "LOCALID_ITEM_4",
             "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_OBTAINED_ROUTE_216_HP_UP",
+            "hidden_flag": "FLAG_OBTAINED_ROUTE_216_ITEM_4",
             "script": 7246,
             "initial_dir": 0,
             "data": [],
@@ -256,11 +256,11 @@
             "y": 0
         },
         {
-            "id": "LOCALID_ITEM_MAX_POTION",
+            "id": "LOCALID_ITEM_5",
             "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_OBTAINED_ROUTE_216_MAX_POTION",
+            "hidden_flag": "FLAG_OBTAINED_ROUTE_216_ITEM_5",
             "script": 7290,
             "initial_dir": 0,
             "data": [],
@@ -271,11 +271,11 @@
             "y": 0
         },
         {
-            "id": "LOCALID_ITEM_REVIVE",
+            "id": "LOCALID_ITEM_6",
             "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_OBTAINED_ROUTE_216_REVIVE",
+            "hidden_flag": "FLAG_OBTAINED_ROUTE_216_ITEM_6",
             "script": 7291,
             "initial_dir": 0,
             "data": [],

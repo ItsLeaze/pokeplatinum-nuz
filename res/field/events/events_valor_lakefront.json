@@ -80,11 +80,11 @@
             "y": 0
         },
         {
-            "id": "LOCALID_ITEM_TM85",
+            "id": "LOCALID_ITEM_1",
             "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_OBTAINED_VALOR_LAKEFRONT_TM85",
+            "hidden_flag": "FLAG_OBTAINED_VALOR_LAKEFRONT_ITEM_1",
             "script": 7083,
             "initial_dir": 0,
             "data": [],
@@ -95,11 +95,11 @@
             "y": 0
         },
         {
-            "id": "LOCALID_ITEM_ULTRA_BALL",
+            "id": "LOCALID_ITEM_2",
             "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_OBTAINED_VALOR_LAKEFRONT_ULTRA_BALL",
+            "hidden_flag": "FLAG_OBTAINED_VALOR_LAKEFRONT_ITEM_2",
             "script": 7084,
             "initial_dir": 0,
             "data": [],
@@ -201,11 +201,11 @@
             "y": 0
         },
         {
-            "id": "LOCALID_ITEM_IRON",
+            "id": "LOCALID_ITEM_3",
             "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_OBTAINED_VALOR_LAKEFRONT_IRN",
+            "hidden_flag": "FLAG_OBTAINED_VALOR_LAKEFRONT_ITEM_3",
             "script": 7315,
             "initial_dir": 0,
             "data": [],

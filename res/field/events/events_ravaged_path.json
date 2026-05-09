@@ -407,11 +407,11 @@
             "y": 0
         },
         {
-            "id": "LOCALID_ITEM_TM39",
+            "id": "LOCALID_ITEM_1",
             "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_OBTAINED_RAVAGED_PATH_TM39",
+            "hidden_flag": "FLAG_OBTAINED_RAVAGED_PATH_ITEM_1",
             "script": 7011,
             "initial_dir": 0,
             "data": [],
@@ -422,11 +422,11 @@
             "y": 0
         },
         {
-            "id": "LOCALID_ITEM_LUCK_INCENSE",
+            "id": "LOCALID_ITEM_2",
             "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_OBTAINED_RAVAGED_PATH_LUCK_INCENSE",
+            "hidden_flag": "FLAG_OBTAINED_RAVAGED_PATH_ITEM_2",
             "script": 7012,
             "initial_dir": 0,
             "data": [],
@@ -437,11 +437,11 @@
             "y": 0
         },
         {
-            "id": "LOCALID_ITEM_TM03",
+            "id": "LOCALID_ITEM_3",
             "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_OBTAINED_RAVAGED_PATH_TM03",
+            "hidden_flag": "FLAG_OBTAINED_RAVAGED_PATH_ITEM_3",
             "script": 7013,
             "initial_dir": 0,
             "data": [],
@@ -452,11 +452,11 @@
             "y": 0
         },
         {
-            "id": "LOCALID_ITEM_POTION",
+            "id": "LOCALID_ITEM_4",
             "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_OBTAINED_RAVAGED_PATH_POTION",
+            "hidden_flag": "FLAG_OBTAINED_RAVAGED_PATH_ITEM_4",
             "script": 7251,
             "initial_dir": 0,
             "data": [],

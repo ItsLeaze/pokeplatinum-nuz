@@ -161,11 +161,11 @@
             "y": 0
         },
         {
-            "id": "LOCALID_ITEM_FULL_HEAL",
+            "id": "LOCALID_ITEM_1",
             "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_OBTAINED_STARK_MOUNTAIN_ROOM_1_FULL_HEAL",
+            "hidden_flag": "FLAG_OBTAINED_STARK_MOUNTAIN_ROOM_1_ITEM_1",
             "script": 7212,
             "initial_dir": 0,
             "data": [],
@@ -176,11 +176,11 @@
             "y": 0
         },
         {
-            "id": "LOCALID_ITEM_ESCAPE_ROPE",
+            "id": "LOCALID_ITEM_2",
             "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_OBTAINED_STARK_MOUNTAIN_ROOM_1_ESCAPE_ROPE",
+            "hidden_flag": "FLAG_OBTAINED_STARK_MOUNTAIN_ROOM_1_ITEM_2",
             "script": 7213,
             "initial_dir": 0,
             "data": [],
@@ -191,11 +191,11 @@
             "y": 0
         },
         {
-            "id": "LOCALID_ITEM_PP_UP",
+            "id": "LOCALID_ITEM_3",
             "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_OBTAINED_STARK_MOUNTAIN_ROOM_1_PP_UP",
+            "hidden_flag": "FLAG_OBTAINED_STARK_MOUNTAIN_ROOM_1_ITEM_3",
             "script": 7214,
             "initial_dir": 0,
             "data": [],
@@ -206,11 +206,11 @@
             "y": 0
         },
         {
-            "id": "LOCALID_ITEM_FULL_RESTORE",
+            "id": "LOCALID_ITEM_4",
             "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_OBTAINED_STARK_MOUNTAIN_ROOM_1_FULL_RESTORE",
+            "hidden_flag": "FLAG_OBTAINED_STARK_MOUNTAIN_ROOM_1_ITEM_4",
             "script": 7215,
             "initial_dir": 0,
             "data": [],

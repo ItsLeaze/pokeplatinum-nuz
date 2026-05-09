@@ -270,11 +270,11 @@
             "y": 0
         },
         {
-            "id": "LOCALID_ITEM_GREAT_BALL",
+            "id": "LOCALID_ITEM_1",
             "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_OBTAINED_ROUTE_209_GREAT_BALL",
+            "hidden_flag": "FLAG_OBTAINED_ROUTE_209_ITEM_1",
             "script": 7086,
             "initial_dir": 0,
             "data": [],
@@ -285,11 +285,11 @@
             "y": 0
         },
         {
-            "id": "LOCALID_ITEM_HYPER_POTION",
+            "id": "LOCALID_ITEM_2",
             "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_OBTAINED_ROUTE_209_HYPER_POTION",
+            "hidden_flag": "FLAG_OBTAINED_ROUTE_209_ITEM_2",
             "script": 7087,
             "initial_dir": 0,
             "data": [],
@@ -300,11 +300,11 @@
             "y": 0
         },
         {
-            "id": "LOCALID_ITEM_TM47",
+            "id": "LOCALID_ITEM_3",
             "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_OBTAINED_ROUTE_209_TM47",
+            "hidden_flag": "FLAG_OBTAINED_ROUTE_209_ITEM_3",
             "script": 7089,
             "initial_dir": 0,
             "data": [],
@@ -315,11 +315,11 @@
             "y": 0
         },
         {
-            "id": "LOCALID_ITEM_CALCIUM",
+            "id": "LOCALID_ITEM_4",
             "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_OBTAINED_ROUTE_209_CALCIUM",
+            "hidden_flag": "FLAG_OBTAINED_ROUTE_209_ITEM_4",
             "script": 7088,
             "initial_dir": 0,
             "data": [],
@@ -330,11 +330,11 @@
             "y": 0
         },
         {
-            "id": "LOCALID_ITEM_TM19",
+            "id": "LOCALID_ITEM_5",
             "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_OBTAINED_ROUTE_209_TM19",
+            "hidden_flag": "FLAG_OBTAINED_ROUTE_209_ITEM_5",
             "script": 7090,
             "initial_dir": 0,
             "data": [],
@@ -554,11 +554,11 @@
             "y": 0
         },
         {
-            "id": "LOCALID_ITEM_ETHER",
+            "id": "LOCALID_ITEM_6",
             "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_OBTAINED_ROUTE_209_ETHER",
+            "hidden_flag": "FLAG_OBTAINED_ROUTE_209_ITEM_6",
             "script": 7268,
             "initial_dir": 0,
             "data": [],

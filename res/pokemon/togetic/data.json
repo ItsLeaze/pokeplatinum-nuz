@@ -118,8 +118,8 @@
     },
     "evolutions": [
         [
-            "EVO_USE_ITEM",
-            "ITEM_SHINY_STONE",
+            "EVO_LEVEL",
+            55,
             "SPECIES_TOGEKISS"
         ]
     ],

@@ -158,11 +158,11 @@
             "y": 0
         },
         {
-            "id": "LOCALID_ITEM_PROTEIN",
+            "id": "LOCALID_ITEM_1",
             "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_OBTAINED_ROUTE_221_PROTEIN",
+            "hidden_flag": "FLAG_OBTAINED_ROUTE_221_ITEM_1",
             "script": 7130,
             "initial_dir": 0,
             "data": [],
@@ -173,11 +173,11 @@
             "y": 0
         },
         {
-            "id": "LOCALID_ITEM_TM81",
+            "id": "LOCALID_ITEM_2",
             "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_OBTAINED_ROUTE_221_TM81",
+            "hidden_flag": "FLAG_OBTAINED_ROUTE_221_ITEM_2",
             "script": 7131,
             "initial_dir": 0,
             "data": [],
@@ -188,11 +188,11 @@
             "y": 0
         },
         {
-            "id": "LOCALID_ITEM_ULTRA_BALL",
+            "id": "LOCALID_ITEM_3",
             "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_OBTAINED_ROUTE_221_ULTRA_BALL",
+            "hidden_flag": "FLAG_OBTAINED_ROUTE_221_ITEM_3",
             "script": 7129,
             "initial_dir": 0,
             "data": [],
@@ -271,11 +271,11 @@
             "y": 0
         },
         {
-            "id": "LOCALID_ITEM_PURE_INCENSE",
+            "id": "LOCALID_ITEM_4",
             "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_OBTAINED_ROUTE_221_PURE_INCENSE",
+            "hidden_flag": "FLAG_OBTAINED_ROUTE_221_ITEM_4",
             "script": 7101,
             "initial_dir": 0,
             "data": [],

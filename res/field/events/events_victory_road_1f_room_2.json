@@ -58,11 +58,11 @@
             "y": 1
         },
         {
-            "id": "LOCALID_ITEM_NUGGET",
+            "id": "LOCALID_ITEM_1",
             "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_OBTAINED_VICTORY_ROAD_1F_ROOM_2_NUGGET",
+            "hidden_flag": "FLAG_OBTAINED_VICTORY_ROAD_1F_ROOM_2_ITEM_1",
             "script": 7193,
             "initial_dir": 0,
             "data": [],
@@ -73,11 +73,11 @@
             "y": 1
         },
         {
-            "id": "LOCALID_ITEM_FULL_RESTORE",
+            "id": "LOCALID_ITEM_2",
             "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_OBTAINED_VICTORY_ROAD_1F_ROOM_2_FULL_RESTORE",
+            "hidden_flag": "FLAG_OBTAINED_VICTORY_ROAD_1F_ROOM_2_ITEM_2",
             "script": 7191,
             "initial_dir": 0,
             "data": [],
@@ -88,11 +88,11 @@
             "y": 1
         },
         {
-            "id": "LOCALID_ITEM_DUSK_STONE",
+            "id": "LOCALID_ITEM_3",
             "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_OBTAINED_VICTORY_ROAD_1F_ROOM_2_DUSK_STONE",
+            "hidden_flag": "FLAG_OBTAINED_VICTORY_ROAD_1F_ROOM_2_ITEM_3",
             "script": 7192,
             "initial_dir": 0,
             "data": [],
@@ -103,11 +103,11 @@
             "y": 1
         },
         {
-            "id": "LOCALID_ITEM_LEFTOVERS",
+            "id": "LOCALID_ITEM_4",
             "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_OBTAINED_VICTORY_ROAD_1F_ROOM_2_LEFTOVERS",
+            "hidden_flag": "FLAG_OBTAINED_VICTORY_ROAD_1F_ROOM_2_ITEM_4",
             "script": 7197,
             "initial_dir": 0,
             "data": [],

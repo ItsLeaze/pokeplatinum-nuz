@@ -44,11 +44,11 @@
             "y": 0
         },
         {
-            "id": "LOCALID_ITEM_CHARCOAL",
+            "id": "LOCALID_ITEM_1",
             "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_OBTAINED_ROUTE_227_CHARCOAL",
+            "hidden_flag": "FLAG_OBTAINED_ROUTE_227_ITEM_1",
             "script": 7208,
             "initial_dir": 0,
             "data": [],
@@ -59,11 +59,11 @@
             "y": 0
         },
         {
-            "id": "LOCALID_ITEM_ZINC",
+            "id": "LOCALID_ITEM_2",
             "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_OBTAINED_ROUTE_227_ZINC",
+            "hidden_flag": "FLAG_OBTAINED_ROUTE_227_ITEM_2",
             "script": 7209,
             "initial_dir": 0,
             "data": [],
@@ -217,11 +217,11 @@
             "y": 0
         },
         {
-            "id": "LOCALID_ITEM_YELLOW_SHARD",
+            "id": "LOCALID_ITEM_3",
             "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_OBTAINED_ROUTE_227_YELLOW_SHARD",
+            "hidden_flag": "FLAG_OBTAINED_ROUTE_227_ITEM_3",
             "script": 7307,
             "initial_dir": 0,
             "data": [],

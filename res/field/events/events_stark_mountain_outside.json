@@ -2,11 +2,11 @@
     "bg_events": [],
     "object_events": [
         {
-            "id": "LOCALID_ITEM_LIFE_ORB",
+            "id": "LOCALID_ITEM_1",
             "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_OBTAINED_STARK_MOUNTAIN_OUTSIDE_LIFE_ORB",
+            "hidden_flag": "FLAG_OBTAINED_STARK_MOUNTAIN_OUTSIDE_ITEM_1",
             "script": 7211,
             "initial_dir": 0,
             "data": [],
@@ -17,11 +17,11 @@
             "y": 0
         },
         {
-            "id": "LOCALID_ITEM_MAX_ELIXIR",
+            "id": "LOCALID_ITEM_2",
             "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_OBTAINED_STARK_MOUNTAIN_OUTSIDE_MAX_ELIXIR",
+            "hidden_flag": "FLAG_OBTAINED_STARK_MOUNTAIN_OUTSIDE_ITEM_2",
             "script": 7210,
             "initial_dir": 0,
             "data": [],

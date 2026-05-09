@@ -27,11 +27,11 @@
     ],
     "object_events": [
         {
-            "id": "LOCALID_ITEM_MIND_PLATE",
+            "id": "LOCALID_ITEM_1",
             "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_OBTAINED_SOLACEON_RUINS_ROOM_7_MIND_PLATE",
+            "hidden_flag": "FLAG_OBTAINED_SOLACEON_RUINS_ROOM_7_ITEM_1",
             "script": 7095,
             "initial_dir": 0,
             "data": [],
@@ -42,11 +42,11 @@
             "y": 0
         },
         {
-            "id": "LOCALID_ITEM_ODD_INCENSE",
+            "id": "LOCALID_ITEM_2",
             "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_OBTAINED_SOLACEON_RUINS_ROOM_7_ODD_INCENSE",
+            "hidden_flag": "FLAG_OBTAINED_SOLACEON_RUINS_ROOM_7_ITEM_2",
             "script": 7096,
             "initial_dir": 0,
             "data": [],
@@ -57,11 +57,11 @@
             "y": 0
         },
         {
-            "id": "LOCALID_ITEM_NUGGET",
+            "id": "LOCALID_ITEM_3",
             "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_OBTAINED_SOLACEON_RUINS_ROOM_7_NUGGET",
+            "hidden_flag": "FLAG_OBTAINED_SOLACEON_RUINS_ROOM_7_ITEM_3",
             "script": 7097,
             "initial_dir": 0,
             "data": [],
@@ -72,11 +72,11 @@
             "y": 0
         },
         {
-            "id": "LOCALID_ITEM_HM05",
+            "id": "LOCALID_ITEM_4",
             "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_OBTAINED_SOLACEON_RUINS_ROOM_7_HM05",
+            "hidden_flag": "FLAG_OBTAINED_SOLACEON_RUINS_ROOM_7_ITEM_4",
             "script": 7098,
             "initial_dir": 0,
             "data": [],

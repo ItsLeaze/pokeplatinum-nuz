@@ -27,11 +27,11 @@
     ],
     "object_events": [
         {
-            "id": "LOCALID_ITEM_ULTRA_BALL",
+            "id": "LOCALID_ITEM_1",
             "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_OBTAINED_IRON_ISLAND_B2F_LEFT_ROOM_ULTRA_BALL",
+            "hidden_flag": "FLAG_OBTAINED_IRON_ISLAND_B2F_LEFT_ROOM_ITEM_1",
             "script": 7142,
             "initial_dir": 0,
             "data": [],
@@ -42,11 +42,11 @@
             "y": 0
         },
         {
-            "id": "LOCALID_ITEM_DUSK_BALL",
+            "id": "LOCALID_ITEM_2",
             "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_OBTAINED_IRON_ISLAND_B2F_LEFT_ROOM_DUSK_BALL",
+            "hidden_flag": "FLAG_OBTAINED_IRON_ISLAND_B2F_LEFT_ROOM_ITEM_2",
             "script": 7140,
             "initial_dir": 0,
             "data": [],
@@ -57,11 +57,11 @@
             "y": 0
         },
         {
-            "id": "LOCALID_ITEM_MAX_POTION",
+            "id": "LOCALID_ITEM_3",
             "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_OBTAINED_IRON_ISLAND_B2F_LEFT_ROOM_MAX_POTION",
+            "hidden_flag": "FLAG_OBTAINED_IRON_ISLAND_B2F_LEFT_ROOM_ITEM_3",
             "script": 7141,
             "initial_dir": 0,
             "data": [],
@@ -72,11 +72,11 @@
             "y": 0
         },
         {
-            "id": "LOCALID_ITEM_HP_UP",
+            "id": "LOCALID_ITEM_4",
             "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_OBTAINED_IRON_ISLAND_B2F_LEFT_ROOM_HP_UP",
+            "hidden_flag": "FLAG_OBTAINED_IRON_ISLAND_B2F_LEFT_ROOM_ITEM_4",
             "script": 7143,
             "initial_dir": 0,
             "data": [],
@@ -234,11 +234,11 @@
             "y": 0
         },
         {
-            "id": "LOCALID_ITEM_RED_SHARD",
+            "id": "LOCALID_ITEM_5",
             "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_OBTAINED_IRON_ISLAND_B2F_LEFT_ROOM_RED_SHARD",
+            "hidden_flag": "FLAG_OBTAINED_IRON_ISLAND_B2F_LEFT_ROOM_ITEM_5",
             "script": 7286,
             "initial_dir": 0,
             "data": [],
@@ -249,11 +249,11 @@
             "y": 0
         },
         {
-            "id": "LOCALID_ITEM_NUGGET",
+            "id": "LOCALID_ITEM_6",
             "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_OBTAINED_IRON_ISLAND_B2F_LEFT_ROOM_NUGGET",
+            "hidden_flag": "FLAG_OBTAINED_IRON_ISLAND_B2F_LEFT_ROOM_ITEM_6",
             "script": 7288,
             "initial_dir": 0,
             "data": [],

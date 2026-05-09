@@ -63,7 +63,7 @@ SolaceonTownPokemonNewsPress_SetReward:
     CallIfEq VAR_RESULT, 10, SolaceonTownPokemonNewsPress_SetRewardHealBall
     CallIfEq VAR_RESULT, 11, SolaceonTownPokemonNewsPress_SetRewardQuickBall
     SetVar VAR_0x8005, 3
-    CanFitItem ITEM_HEART_SCALE, 1, VAR_RESULT
+    CanFitItem ITEM_ULTRA_BALL, 1, VAR_RESULT
     GoToIfNe VAR_RESULT, FALSE, SolaceonTownPokemonNewsPress_GiveRewardIHopeYoullHelpAgainTomorrow
     SetFlag FLAG_GOT_POKEMON_NEWS_PRESS_REWARD
     GoToIfEq VAR_RESULT, FALSE, SolaceonTownPokemonNewsPress_CouldntGiveReward
@@ -119,7 +119,7 @@ SolaceonTownPokemonNewsPress_SetRewardQuickBall:
 
 SolaceonTownPokemonNewsPress_GiveRewardIHopeYoullHelpAgainTomorrow:
     Common_GiveItemQuantity
-    SetVar VAR_0x8004, ITEM_HEART_SCALE
+    SetVar VAR_0x8004, ITEM_ULTRA_BALL
     SetVar VAR_0x8005, 1
     Common_GiveItemQuantity
     ClearFlag FLAG_COULD_NOT_RECEIVE_POKEMON_NEWS_PRESS_REWARD
@@ -132,7 +132,7 @@ SolaceonTownPokemonNewsPress_GiveRewardIHopeYoullHelpAgainTomorrow:
     End
 
 SolaceonTownPokemonNewsPress_TryGiveReward:
-    GoToIfCannotFitItem ITEM_HEART_SCALE, 1, VAR_RESULT, SolaceonTownPokemonNewsPress_YourBagIsStuffedFull
+    GoToIfCannotFitItem ITEM_ULTRA_BALL, 1, VAR_RESULT, SolaceonTownPokemonNewsPress_YourBagIsStuffedFull
     SetVar VAR_0x8004, VAR_POKEMON_NEWS_PRESS_POKE_BALL_REWARD
     SetVar VAR_0x8005, 3
     GoTo SolaceonTownPokemonNewsPress_GiveReward
@@ -156,7 +156,7 @@ SolaceonTownPokemonNewsPress_GiveReward:
     ClearFlag FLAG_COULD_NOT_RECEIVE_POKEMON_NEWS_PRESS_REWARD
     SetVar VAR_POKEMON_NEWS_PRESS_REQUESTED_POKEMON, 0
     Common_GiveItemQuantity
-    SetVar VAR_0x8004, ITEM_HEART_SCALE
+    SetVar VAR_0x8004, ITEM_ULTRA_BALL
     SetVar VAR_0x8005, 1
     Common_GiveItemQuantityNoLineFeed
     CloseMessage

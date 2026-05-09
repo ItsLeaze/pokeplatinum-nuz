@@ -19,11 +19,11 @@
     ],
     "object_events": [
         {
-            "id": "LOCALID_ITEM_TM79",
+            "id": "LOCALID_ITEM_1",
             "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_OBTAINED_VICTORY_ROAD_2F_TM79",
+            "hidden_flag": "FLAG_OBTAINED_VICTORY_ROAD_2F_ITEM_1",
             "script": 7188,
             "initial_dir": 0,
             "data": [],
@@ -34,11 +34,11 @@
             "y": 0
         },
         {
-            "id": "LOCALID_ITEM_MAX_ELIXIR",
+            "id": "LOCALID_ITEM_2",
             "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_OBTAINED_VICTORY_ROAD_2F_MAX_ELIXIR",
+            "hidden_flag": "FLAG_OBTAINED_VICTORY_ROAD_2F_ITEM_2",
             "script": 7186,
             "initial_dir": 0,
             "data": [],
@@ -49,11 +49,11 @@
             "y": 0
         },
         {
-            "id": "LOCALID_ITEM_FULL_RESTORE",
+            "id": "LOCALID_ITEM_3",
             "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_OBTAINED_VICTORY_ROAD_2F_FULL_RESTORE",
+            "hidden_flag": "FLAG_OBTAINED_VICTORY_ROAD_2F_ITEM_3",
             "script": 7187,
             "initial_dir": 0,
             "data": [],
@@ -64,11 +64,11 @@
             "y": 0
         },
         {
-            "id": "LOCALID_ITEM_TM71",
+            "id": "LOCALID_ITEM_4",
             "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_OBTAINED_VICTORY_ROAD_2F_TM71",
+            "hidden_flag": "FLAG_OBTAINED_VICTORY_ROAD_2F_ITEM_4",
             "script": 7189,
             "initial_dir": 0,
             "data": [],

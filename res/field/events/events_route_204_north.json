@@ -149,11 +149,11 @@
             "y": 0
         },
         {
-            "id": "LOCALID_ITEM_TM09",
+            "id": "LOCALID_ITEM_1",
             "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_OBTAINED_ROUTE_204_NORTH_TM09",
+            "hidden_flag": "FLAG_OBTAINED_ROUTE_204_NORTH_ITEM_1",
             "script": 7014,
             "initial_dir": 0,
             "data": [],
@@ -179,11 +179,11 @@
             "y": 0
         },
         {
-            "id": "LOCALID_ITEM_AWAKENING",
+            "id": "LOCALID_ITEM_2",
             "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_OBTAINED_ROUTE_204_NORTH_AWAKENING",
+            "hidden_flag": "FLAG_OBTAINED_ROUTE_204_NORTH_ITEM_2",
             "script": 7254,
             "initial_dir": 0,
             "data": [],

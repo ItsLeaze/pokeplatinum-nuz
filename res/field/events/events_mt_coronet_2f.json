@@ -19,11 +19,11 @@
     ],
     "object_events": [
         {
-            "id": "LOCALID_ITEM_MAX_REVIVE",
+            "id": "LOCALID_ITEM_1",
             "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_OBTAINED_MT_CORONET_2F_MAX_REVIVE",
+            "hidden_flag": "FLAG_OBTAINED_MT_CORONET_2F_ITEM_1",
             "script": 7170,
             "initial_dir": 0,
             "data": [],
@@ -34,11 +34,11 @@
             "y": 0
         },
         {
-            "id": "LOCALID_ITEM_MAX_REPEL",
+            "id": "LOCALID_ITEM_2",
             "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_OBTAINED_MT_CORONET_2F_MAX_REPEL",
+            "hidden_flag": "FLAG_OBTAINED_MT_CORONET_2F_ITEM_2",
             "script": 7172,
             "initial_dir": 0,
             "data": [],
@@ -49,11 +49,11 @@
             "y": 0
         },
         {
-            "id": "LOCALID_ITEM_TM80",
+            "id": "LOCALID_ITEM_3",
             "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_OBTAINED_MT_CORONET_2F_TM80",
+            "hidden_flag": "FLAG_OBTAINED_MT_CORONET_2F_ITEM_3",
             "script": 7171,
             "initial_dir": 0,
             "data": [],
@@ -64,11 +64,11 @@
             "y": 0
         },
         {
-            "id": "LOCALID_ITEM_ESCAPE_ROPE",
+            "id": "LOCALID_ITEM_4",
             "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_OBTAINED_MT_CORONET_2F_ESCAPE_ROPE",
+            "hidden_flag": "FLAG_OBTAINED_MT_CORONET_2F_ITEM_4",
             "script": 7173,
             "initial_dir": 0,
             "data": [],

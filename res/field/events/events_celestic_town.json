@@ -232,11 +232,11 @@
             "y": 0
         },
         {
-            "id": "LOCALID_ITEM_DRAGON_FANG",
+            "id": "LOCALID_ITEM_1",
             "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_OBTAINED_CELESTIC_TOWN_DRAGON_FANG",
+            "hidden_flag": "FLAG_OBTAINED_CELESTIC_TOWN_ITEM_1",
             "script": 7319,
             "initial_dir": 0,
             "data": [],

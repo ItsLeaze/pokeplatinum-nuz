@@ -213,7 +213,7 @@ Route201_Briefcase:
     SetVar VAR_0x8004, ITEM_POKE_BALL
     SetVar VAR_0x8005, 100
     Common_GiveItemQuantity
-    SetVar VAR_0x8004, ITEM_REPEL
+    SetVar VAR_0x8004, ITEM_SUPER_REPEL
     SetVar VAR_0x8005, 100
     Common_GiveItemQuantity
     Message Route201_Text_ComeSeeMeInSandgemTown

@@ -99,11 +99,11 @@
     ],
     "object_events": [
         {
-            "id": "LOCALID_ITEM_REVIVE",
+            "id": "LOCALID_ITEM_1",
             "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_OBTAINED_GALACTIC_HQ_2F_REVIVE",
+            "hidden_flag": "FLAG_OBTAINED_GALACTIC_HQ_2F_ITEM_1",
             "script": 7167,
             "initial_dir": 0,
             "data": [],
@@ -182,11 +182,11 @@
             "y": 0
         },
         {
-            "id": "LOCALID_ITEM_GREEN_SHARD",
+            "id": "LOCALID_ITEM_2",
             "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_OBTAINED_GALACTIC_HQ_2F_GREEN_SHARD",
+            "hidden_flag": "FLAG_OBTAINED_GALACTIC_HQ_2F_ITEM_2",
             "script": 7298,
             "initial_dir": 0,
             "data": [],

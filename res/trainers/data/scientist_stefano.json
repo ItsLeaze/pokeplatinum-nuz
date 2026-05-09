@@ -1,9 +1,7 @@
 {
     "name": "Stefano",
     "class": "TRAINER_CLASS_SCIENTIST",
-    "items": [
-        "ITEM_X_DEFENSE"
-    ],
+    "items": [],
     "ai_flags": [
         "AI_FLAG_BASIC",
         "AI_FLAG_EXPERT"

@@ -312,11 +312,11 @@
             "y": 0
         },
         {
-            "id": "LOCALID_ITEM_RARE_CANDY",
+            "id": "LOCALID_ITEM_1",
             "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_OBTAINED_ROUTE_214_RARE_CANDY",
+            "hidden_flag": "FLAG_OBTAINED_ROUTE_214_ITEM_1",
             "script": 7115,
             "initial_dir": 0,
             "data": [],
@@ -327,11 +327,11 @@
             "y": 0
         },
         {
-            "id": "LOCALID_ITEM_MAX_REPEL",
+            "id": "LOCALID_ITEM_2",
             "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_OBTAINED_ROUTE_214_MAX_REPEL",
+            "hidden_flag": "FLAG_OBTAINED_ROUTE_214_ITEM_2",
             "script": 7114,
             "initial_dir": 0,
             "data": [],
@@ -342,11 +342,11 @@
             "y": 0
         },
         {
-            "id": "LOCALID_ITEM_RED_SHARD",
+            "id": "LOCALID_ITEM_3",
             "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_OBTAINED_ROUTE_214_RED_SHARD",
+            "hidden_flag": "FLAG_OBTAINED_ROUTE_214_ITEM_3",
             "script": 7113,
             "initial_dir": 0,
             "data": [],
@@ -357,11 +357,11 @@
             "y": 0
         },
         {
-            "id": "LOCALID_ITEM_BIG_ROOT",
+            "id": "LOCALID_ITEM_4",
             "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_OBTAINED_ROUTE_214_BIG_ROOT",
+            "hidden_flag": "FLAG_OBTAINED_ROUTE_214_ITEM_4",
             "script": 7112,
             "initial_dir": 0,
             "data": [],
@@ -462,11 +462,11 @@
             "y": 0
         },
         {
-            "id": "LOCALID_ITEM_MAGMARIZER",
+            "id": "LOCALID_ITEM_5",
             "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_OBTAINED_ROUTE_214_MAGMARIZER",
+            "hidden_flag": "FLAG_OBTAINED_ROUTE_214_ITEM_5",
             "script": 7317,
             "initial_dir": 0,
             "data": [],

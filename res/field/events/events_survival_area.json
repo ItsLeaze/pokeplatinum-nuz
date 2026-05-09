@@ -159,11 +159,11 @@
             "y": 0
         },
         {
-            "id": "LOCALID_ITEM_RARE_CANDY",
+            "id": "LOCALID_ITEM_1",
             "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_OBTAINED_SURVIVAL_AREA_RARE_CANDY",
+            "hidden_flag": "FLAG_OBTAINED_SURVIVAL_AREA_ITEM_1",
             "script": 7314,
             "initial_dir": 0,
             "data": [],
@@ -174,11 +174,11 @@
             "y": 0
         },
         {
-            "id": "LOCALID_ITEM_RED_SHARD",
+            "id": "LOCALID_ITEM_2",
             "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_OBTAINED_SURVIVAL_AREA_RED_SHARD",
+            "hidden_flag": "FLAG_OBTAINED_SURVIVAL_AREA_ITEM_2",
             "script": 7311,
             "initial_dir": 0,
             "data": [],

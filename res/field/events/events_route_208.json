@@ -298,11 +298,11 @@
             "y": 0
         },
         {
-            "id": "LOCALID_ITEM_ETHER",
+            "id": "LOCALID_ITEM_1",
             "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_OBTAINED_ROUTE_208_ETHER",
+            "hidden_flag": "FLAG_OBTAINED_ROUTE_208_ITEM_1",
             "script": 7050,
             "initial_dir": 0,
             "data": [],
@@ -313,11 +313,11 @@
             "y": 0
         },
         {
-            "id": "LOCALID_ITEM_CARBOS",
+            "id": "LOCALID_ITEM_2",
             "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_OBTAINED_ROUTE_208_CARBOS",
+            "hidden_flag": "FLAG_OBTAINED_ROUTE_208_ITEM_2",
             "script": 7048,
             "initial_dir": 0,
             "data": [],

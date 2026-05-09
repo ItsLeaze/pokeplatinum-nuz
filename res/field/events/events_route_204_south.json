@@ -115,11 +115,11 @@
             "y": 0
         },
         {
-            "id": "LOCALID_ITEM_SEA_INCENSE",
+            "id": "LOCALID_ITEM_1",
             "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_OBTAINED_ROUTE_204_SOUTH_SEA_INCENSE",
+            "hidden_flag": "FLAG_OBTAINED_ROUTE_204_SOUTH_ITEM_1",
             "script": 7009,
             "initial_dir": 0,
             "data": [],
@@ -130,11 +130,11 @@
             "y": 0
         },
         {
-            "id": "LOCALID_ITEM_HP_UP",
+            "id": "LOCALID_ITEM_2",
             "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_OBTAINED_ROUTE_204_SOUTH_HP_UP",
+            "hidden_flag": "FLAG_OBTAINED_ROUTE_204_SOUTH_ITEM_2",
             "script": 7010,
             "initial_dir": 0,
             "data": [],
@@ -145,11 +145,11 @@
             "y": 0
         },
         {
-            "id": "LOCALID_ITEM_PARLYZ_HEAL",
+            "id": "LOCALID_ITEM_3",
             "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_OBTAINED_ROUTE_204_SOUTH_PARLYZ_HEAL",
+            "hidden_flag": "FLAG_OBTAINED_ROUTE_204_SOUTH_ITEM_3",
             "script": 7082,
             "initial_dir": 0,
             "data": [],

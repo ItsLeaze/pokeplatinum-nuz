@@ -69,11 +69,11 @@
             "y": 0
         },
         {
-            "id": "LOCALID_ITEM_RAZOR_FANG",
+            "id": "LOCALID_ITEM_1",
             "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_OBTAINED_ROUTE_225_RAZOR_FANG",
+            "hidden_flag": "FLAG_OBTAINED_ROUTE_225_ITEM_1",
             "script": 7198,
             "initial_dir": 0,
             "data": [],
@@ -84,11 +84,11 @@
             "y": 0
         },
         {
-            "id": "LOCALID_ITEM_RARE_CANDY",
+            "id": "LOCALID_ITEM_2",
             "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_OBTAINED_ROUTE_225_RARE_CANDY",
+            "hidden_flag": "FLAG_OBTAINED_ROUTE_225_ITEM_2",
             "script": 7199,
             "initial_dir": 0,
             "data": [],
@@ -99,11 +99,11 @@
             "y": 0
         },
         {
-            "id": "LOCALID_ITEM_HP_UP",
+            "id": "LOCALID_ITEM_3",
             "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_OBTAINED_ROUTE_225_HP_UP",
+            "hidden_flag": "FLAG_OBTAINED_ROUTE_225_ITEM_3",
             "script": 7200,
             "initial_dir": 0,
             "data": [],
@@ -114,11 +114,11 @@
             "y": 0
         },
         {
-            "id": "LOCALID_ITEM_LAX_INCENSE",
+            "id": "LOCALID_ITEM_4",
             "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_OBTAINED_ROUTE_225_LAX_INCENSE",
+            "hidden_flag": "FLAG_OBTAINED_ROUTE_225_ITEM_4",
             "script": 7201,
             "initial_dir": 0,
             "data": [],
@@ -129,11 +129,11 @@
             "y": 0
         },
         {
-            "id": "LOCALID_ITEM_DUBIOUS_DISC",
+            "id": "LOCALID_ITEM_5",
             "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_OBTAINED_ROUTE_225_DUBIOUS_DISC",
+            "hidden_flag": "FLAG_OBTAINED_ROUTE_225_ITEM_5",
             "script": 7202,
             "initial_dir": 0,
             "data": [],
@@ -144,11 +144,11 @@
             "y": 0
         },
         {
-            "id": "LOCALID_ITEM_DAWN_STONE",
+            "id": "LOCALID_ITEM_6",
             "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_OBTAINED_ROUTE_225_DAWN_STONE",
+            "hidden_flag": "FLAG_OBTAINED_ROUTE_225_ITEM_6",
             "script": 7203,
             "initial_dir": 0,
             "data": [],
@@ -227,11 +227,11 @@
             "y": 0
         },
         {
-            "id": "LOCALID_ITEM_REVIVE",
+            "id": "LOCALID_ITEM_7",
             "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_OBTAINED_ROUTE_225_REVIVE",
+            "hidden_flag": "FLAG_OBTAINED_ROUTE_225_ITEM_7",
             "script": 7204,
             "initial_dir": 0,
             "data": [],
@@ -517,11 +517,11 @@
             "y": 0
         },
         {
-            "id": "LOCALID_ITEM_GREEN_SHARD",
+            "id": "LOCALID_ITEM_8",
             "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_OBTAINED_ROUTE_225_GREEN_SHARD",
+            "hidden_flag": "FLAG_OBTAINED_ROUTE_225_ITEM_8",
             "script": 7306,
             "initial_dir": 0,
             "data": [],

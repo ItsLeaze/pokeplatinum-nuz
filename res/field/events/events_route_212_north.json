@@ -218,11 +218,11 @@
             "y": 0
         },
         {
-            "id": "LOCALID_ITEM_ROSE_INCENSE",
+            "id": "LOCALID_ITEM_1",
             "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_OBTAINED_ROUTE_212_NORTH_ROSE_INCENSE",
+            "hidden_flag": "FLAG_OBTAINED_ROUTE_212_NORTH_ITEM_1",
             "script": 7055,
             "initial_dir": 0,
             "data": [],
@@ -233,11 +233,11 @@
             "y": 0
         },
         {
-            "id": "LOCALID_ITEM_TM11",
+            "id": "LOCALID_ITEM_2",
             "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_OBTAINED_ROUTE_212_NORTH_TM11",
+            "hidden_flag": "FLAG_OBTAINED_ROUTE_212_NORTH_ITEM_2",
             "script": 7054,
             "initial_dir": 0,
             "data": [],
@@ -316,11 +316,11 @@
             "y": 0
         },
         {
-            "id": "LOCALID_ITEM_ELIXIR",
+            "id": "LOCALID_ITEM_3",
             "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_OBTAINED_ROUTE_212_NORTH_ELIXIR",
+            "hidden_flag": "FLAG_OBTAINED_ROUTE_212_NORTH_ITEM_3",
             "script": 7056,
             "initial_dir": 0,
             "data": [],
@@ -475,11 +475,11 @@
             "y": 0
         },
         {
-            "id": "LOCALID_ITEM_GREEN_SHARD",
+            "id": "LOCALID_ITEM_4",
             "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_OBTAINED_ROUTE_212_NORTH_GREEN_SHARD",
+            "hidden_flag": "FLAG_OBTAINED_ROUTE_212_NORTH_ITEM_4",
             "script": 7273,
             "initial_dir": 0,
             "data": [],
@@ -490,11 +490,11 @@
             "y": 0
         },
         {
-            "id": "LOCALID_ITEM_IRON",
+            "id": "LOCALID_ITEM_5",
             "graphics_id": "OBJ_EVENT_GFX_POKEBALL",
             "movement_type": "MOVEMENT_TYPE_NONE",
             "trainer_type": "TRAINER_TYPE_NONE",
-            "hidden_flag": "FLAG_OBTAINED_ROUTE_212_NORTH_IRON",
+            "hidden_flag": "FLAG_OBTAINED_ROUTE_212_NORTH_ITEM_5",
             "script": 7272,
             "initial_dir": 0,
             "data": [],
