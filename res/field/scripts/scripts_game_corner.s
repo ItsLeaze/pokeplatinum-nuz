@@ -106,11 +106,7 @@ GameCorner_CoinsClerk:
     Message GameCorner_Text_WelcomeToTheVeilstoneGameCorner
     CheckItem ITEM_COIN_CASE, 1, VAR_RESULT
     GoToIfEq VAR_RESULT, FALSE, GameCorner_CoinsClerk_NoCoinCase
-    GoToIfSet FLAG_GAME_CORNER_RECEIVED_TM64, GameCorner_CoinsClerk_ShowCoinsAndMoney
-    GoToIfSet FLAG_GAME_CORNER_SAVED_TM64, GameCorner_CoinsClerk_CheckIfCanGiveTM64
-    CheckBonusRoundStreak VAR_RESULT
-    GoToIfEq VAR_RESULT, FALSE, GameCorner_CoinsClerk_ShowCoinsAndMoney
-    GoTo GameCorner_CoinsClerk_CheckIfCanGiveTM64
+    GoTo GameCorner_CoinsClerk_ShowCoinsAndMoney
     End
 
 GameCorner_CoinsClerk_NoCoinCase:
