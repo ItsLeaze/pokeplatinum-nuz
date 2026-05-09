@@ -109,13 +109,13 @@
     },
     "evolutions": [
         [
-            "EVO_LEVEL",
-            30,
+            "EVO_LEVEL_FEMALE",
+            40,
             "SPECIES_GARDEVOIR"
         ],
         [
-            "EVO_USE_ITEM_MALE",
-            "ITEM_DAWN_STONE",
+            "EVO_LEVEL_MALE",
+            40,
             "SPECIES_GALLADE"
         ]
     ],

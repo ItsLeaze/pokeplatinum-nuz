@@ -122,7 +122,7 @@
     "evolutions": [
         [
             "EVO_LEVEL",
-            42,
+            28,
             "SPECIES_RHYDON"
         ]
     ],

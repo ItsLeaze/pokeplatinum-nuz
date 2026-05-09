@@ -111,7 +111,7 @@
     "evolutions": [
         [
             "EVO_LEVEL",
-            20,
+            16,
             "SPECIES_LINOONE"
         ]
     ],

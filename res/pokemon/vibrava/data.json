@@ -99,7 +99,7 @@
     "evolutions": [
         [
             "EVO_LEVEL",
-            45,
+            40,
             "SPECIES_FLYGON"
         ]
     ],

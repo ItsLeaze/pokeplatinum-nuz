@@ -97,7 +97,7 @@
     "evolutions": [
         [
             "EVO_LEVEL",
-            30,
+            32,
             "SPECIES_GASTRODON"
         ]
     ],

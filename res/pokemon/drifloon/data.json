@@ -115,7 +115,7 @@
     "evolutions": [
         [
             "EVO_LEVEL",
-            28,
+            40,
             "SPECIES_DRIFBLIM"
         ]
     ],

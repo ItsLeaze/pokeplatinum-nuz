@@ -99,7 +99,7 @@
     "evolutions": [
         [
             "EVO_LEVEL",
-            48,
+            60,
             "SPECIES_GARCHOMP"
         ]
     ],

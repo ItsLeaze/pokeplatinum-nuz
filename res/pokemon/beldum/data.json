@@ -46,7 +46,7 @@
     "evolutions": [
         [
             "EVO_LEVEL",
-            20,
+            35,
             "SPECIES_METANG"
         ]
     ],

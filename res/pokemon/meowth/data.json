@@ -118,7 +118,7 @@
     "evolutions": [
         [
             "EVO_LEVEL",
-            28,
+            20,
             "SPECIES_PERSIAN"
         ]
     ],

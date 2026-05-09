@@ -44,7 +44,7 @@
     "evolutions": [
         [
             "EVO_LEVEL",
-            7,
+            14,
             "SPECIES_KAKUNA"
         ]
     ],

@@ -35,7 +35,6 @@
     "learnset": {
         "by_level": [
             [ 1, "MOVE_ANCIENT_POWER" ],
-            [ 1, "MOVE_PECK" ],
             [ 1, "MOVE_ODOR_SLEUTH" ],
             [ 1, "MOVE_MUD_SPORT" ],
             [ 1, "MOVE_POWDER_SNOW" ],
@@ -49,7 +48,8 @@
             [ 32, "MOVE_TAKE_DOWN" ],
             [ 33, "MOVE_FURY_ATTACK" ],
             [ 40, "MOVE_EARTHQUAKE" ],
-            [ 48, "MOVE_MIST" ],
+            [ 48, "MOVE_ANCIENT_POWER" ],
+            [ 52, "MOVE_MIST" ],
             [ 56, "MOVE_BLIZZARD" ],
             [ 65, "MOVE_AMNESIA" ]
         ],

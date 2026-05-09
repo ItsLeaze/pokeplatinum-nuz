@@ -104,7 +104,7 @@
     "evolutions": [
         [
             "EVO_LEVEL",
-            25,
+            40,
             "SPECIES_PELIPPER"
         ]
     ],

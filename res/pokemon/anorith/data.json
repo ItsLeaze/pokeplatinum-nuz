@@ -102,7 +102,7 @@
     "evolutions": [
         [
             "EVO_LEVEL",
-            40,
+            38,
             "SPECIES_ARMALDO"
         ]
     ],

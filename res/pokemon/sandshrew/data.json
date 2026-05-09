@@ -112,7 +112,7 @@
     "evolutions": [
         [
             "EVO_LEVEL",
-            22,
+            34,
             "SPECIES_SANDSLASH"
         ]
     ],

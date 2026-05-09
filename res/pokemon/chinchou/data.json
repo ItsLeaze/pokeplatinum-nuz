@@ -102,7 +102,7 @@
     "evolutions": [
         [
             "EVO_LEVEL",
-            27,
+            40,
             "SPECIES_LANTURN"
         ]
     ],

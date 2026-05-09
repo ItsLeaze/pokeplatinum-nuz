@@ -108,7 +108,7 @@
     "evolutions": [
         [
             "EVO_LEVEL",
-            20,
+            26,
             "SPECIES_QUAGSIRE"
         ]
     ],

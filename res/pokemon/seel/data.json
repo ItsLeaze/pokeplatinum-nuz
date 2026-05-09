@@ -102,7 +102,7 @@
     "evolutions": [
         [
             "EVO_LEVEL",
-            34,
+            26,
             "SPECIES_DEWGONG"
         ]
     ],

@@ -109,7 +109,7 @@
     "evolutions": [
         [
             "EVO_LEVEL",
-            18,
+            28,
             "SPECIES_AZUMARILL"
         ]
     ],

@@ -119,8 +119,8 @@
     },
     "evolutions": [
         [
-            "EVO_USE_ITEM",
-            "ITEM_MOON_STONE",
+            "EVO_LEVEL",
+            20,
             "SPECIES_DELCATTY"
         ]
     ],

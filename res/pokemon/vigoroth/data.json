@@ -108,7 +108,7 @@
     "evolutions": [
         [
             "EVO_LEVEL",
-            36,
+            46,
             "SPECIES_SLAKING"
         ]
     ],

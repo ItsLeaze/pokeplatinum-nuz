@@ -95,7 +95,7 @@
     "evolutions": [
         [
             "EVO_LEVEL",
-            31,
+            20,
             "SPECIES_VENOMOTH"
         ]
     ],

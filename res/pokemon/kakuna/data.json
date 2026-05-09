@@ -43,7 +43,7 @@
     "evolutions": [
         [
             "EVO_LEVEL",
-            10,
+            18,
             "SPECIES_BEEDRILL"
         ]
     ],

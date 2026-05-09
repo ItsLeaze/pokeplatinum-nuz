@@ -94,7 +94,7 @@
     "evolutions": [
         [
             "EVO_LEVEL",
-            27,
+            28,
             "SPECIES_JUMPLUFF"
         ]
     ],

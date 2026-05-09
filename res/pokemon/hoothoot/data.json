@@ -109,7 +109,7 @@
     "evolutions": [
         [
             "EVO_LEVEL",
-            20,
+            28,
             "SPECIES_NOCTOWL"
         ]
     ],

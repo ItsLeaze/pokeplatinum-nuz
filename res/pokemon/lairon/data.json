@@ -108,7 +108,7 @@
     "evolutions": [
         [
             "EVO_LEVEL",
-            42,
+            48,
             "SPECIES_AGGRON"
         ]
     ],

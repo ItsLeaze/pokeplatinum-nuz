@@ -96,7 +96,7 @@
     "evolutions": [
         [
             "EVO_LEVEL",
-            23,
+            32,
             "SPECIES_BRELOOM"
         ]
     ],
