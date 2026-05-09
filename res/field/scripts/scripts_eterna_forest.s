@@ -139,7 +139,7 @@ EternaForest_TriggerCherylLeavePlayer:
     WaitMovement
     BufferPlayerName 0
     Message EternaForest_Text_OhTheresTheExitThankYouSoMuchPlayer
-    SetVar VAR_0x8004, ITEM_SOOTHE_BELL
+    SetVar VAR_0x8004, ITEM_SHINY_STONE
     SetVar VAR_0x8005, 1
     GoToIfCannotFitItem VAR_0x8004, VAR_0x8005, VAR_RESULT, EternaForest_CherylWalkToExit
     GoTo EternaForest_GiveSootheBell

@@ -48,15 +48,15 @@ Route221House_ExpertMEnd:
     End
 
 Route221House_SetRewardBlackBelt:
-    SetVar VAR_0x8004, ITEM_BLACK_BELT
+    SetVar VAR_0x8004, ITEM_POKE_BALL
     Return
 
 Route221House_SetRewardExpertBelt:
-    SetVar VAR_0x8004, ITEM_EXPERT_BELT
+    SetVar VAR_0x8004, ITEM_GREAT_BALL
     Return
 
 Route221House_SetRewardFocusSash:
-    SetVar VAR_0x8004, ITEM_FOCUS_SASH
+    SetVar VAR_0x8004, ITEM_ULTRA_BALL
     Return
 
 Route221House_NoRoomInBag:

@@ -19,14 +19,14 @@ OreburghCityNorthHouse2F_Collector:
     PlaySE SEQ_SE_CONFIRM
     LockAll
     FacePlayer
-    GoToIfSet FLAG_RECEIVED_OREBURGH_CITY_NORTH_HOUSE_2F_HEAL_BALL, OreburghCityNorthHouse2F_YeahThereAreSoManyKindsOfPokemonOutInTheWorld
+    GoToIfSet FLAG_RECEIVED_OREBURGH_CITY_NORTH_HOUSE_2F_ITEM, OreburghCityNorthHouse2F_YeahThereAreSoManyKindsOfPokemonOutInTheWorld
     CheckPartyHasSpecies VAR_RESULT, SPECIES_GEODUDE
     GoToIfEq VAR_RESULT, FALSE, OreburghCityNorthHouse2F_HowAboutShowingMeAPokemonCalledGeodude
     Message OreburghCityNorthHouse2F_Text_ThatsAGeodudeThisIsATokenOfMyThanks
-    SetVar VAR_0x8004, ITEM_HEAL_BALL
+    SetVar VAR_0x8004, ITEM_GREAT_BALL
     SetVar VAR_0x8005, 1
     GoToIfCannotFitItem VAR_0x8004, VAR_0x8005, VAR_RESULT, OreburghCityNorthHouse2F_BagIsFull
-    SetFlag FLAG_RECEIVED_OREBURGH_CITY_NORTH_HOUSE_2F_HEAL_BALL
+    SetFlag FLAG_RECEIVED_OREBURGH_CITY_NORTH_HOUSE_2F_ITEM
     Common_GiveItemQuantityNoLineFeed
     CloseMessage
     ReleaseAll

@@ -63,7 +63,6 @@ TurnbackCaveGiratinaRoom_BlackOut:
 TurnbackCaveGiratinaRoom_Item:
     PlaySE SEQ_SE_CONFIRM
     LockAll
-    GoToIfEq VAR_TURNBACK_CAVE_ROOMS_VISITED, 3, TurnbackCaveGiratinaRoom_SetItemReaperCloth
     GoToIfLt VAR_TURNBACK_CAVE_ROOMS_VISITED, 15, TurnbackCaveGiratinaRoom_SetItemRareBone
     SetVar VAR_0x8004, ITEM_STARDUST
 TurnbackCaveGiratinaRoom_GiveItem:
@@ -74,10 +73,6 @@ TurnbackCaveGiratinaRoom_GiveItem:
     RemoveObject LOCALID_ITEM
     ReleaseAll
     End
-
-TurnbackCaveGiratinaRoom_SetItemReaperCloth:
-    SetVar VAR_0x8004, ITEM_REAPER_CLOTH
-    GoTo TurnbackCaveGiratinaRoom_GiveItem
 
 TurnbackCaveGiratinaRoom_SetItemRareBone:
     SetVar VAR_0x8004, ITEM_RARE_BONE

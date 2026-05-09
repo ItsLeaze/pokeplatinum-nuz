@@ -116,7 +116,7 @@
             "graphics_id": "OBJ_EVENT_GFX_THORTON",
             "movement_type": "MOVEMENT_TYPE_LOOK_NORTH",
             "trainer_type": "TRAINER_TYPE_NORMAL",
-            "hidden_flag": "FLAG_OBTAINED_MAYLENE_TM60",
+            "hidden_flag": "FLAG_MAYLENE_BADGE_OBTAINED",
             "script": "TRAINER_R215_THORTON",
             "initial_dir": 0,
             "data": [
@@ -133,7 +133,7 @@
             "graphics_id": "OBJ_EVENT_GFX_ARGENTA",
             "movement_type": "MOVEMENT_TYPE_LOOK_SOUTH",
             "trainer_type": "TRAINER_TYPE_NORMAL",
-            "hidden_flag": "FLAG_OBTAINED_MAYLENE_TM60",
+            "hidden_flag": "FLAG_MAYLENE_BADGE_OBTAINED",
             "script": "TRAINER_R215_ARGENTA",
             "initial_dir": 1,
             "data": [

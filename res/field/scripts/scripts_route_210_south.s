@@ -226,7 +226,7 @@ Route210South_AceTrainerF:
     FacePlayer
     GoToIfSet FLAG_RECEIVED_ROUTE_210_SOUTH_TM51, Route210South_BirdPokemonWouldCrash
     Message Route210South_Text_YouShouldRestToo
-    SetVar VAR_0x8004, ITEM_TM51
+    SetVar VAR_0x8004, ITEM_TM09
     SetVar VAR_0x8005, 1
     GoToIfCannotFitItem VAR_0x8004, VAR_0x8005, VAR_RESULT, Route210South_BagIsFull
     Common_GiveItemQuantity

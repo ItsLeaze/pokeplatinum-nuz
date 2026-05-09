@@ -35,13 +35,13 @@ _007D:
     PlaySE SEQ_SE_CONFIRM
     LockAll
     FacePlayer
-    GoToIfSet FLAG_UNK_0x00CE, _00C2
+    GoToIfSet FLAG_RECEIVED_ROUTE_222_RICH_BOY_ITEM, _00C2
     Message 0
-    SetVar VAR_0x8004, ITEM_TM56
+    SetVar VAR_0x8004, ITEM_TM60
     SetVar VAR_0x8005, 1
     GoToIfCannotFitItem VAR_0x8004, VAR_0x8005, VAR_RESULT, _00CD
     Common_GiveItemQuantity
-    SetFlag FLAG_UNK_0x00CE
+    SetFlag FLAG_RECEIVED_ROUTE_222_RICH_BOY_ITEM
     GoTo _00C2
 
 _00C2:

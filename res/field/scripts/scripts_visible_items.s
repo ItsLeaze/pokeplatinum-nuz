@@ -128,7 +128,7 @@
     ScriptEntry VisibleItems_FuegoIronworksBuilding_Item4
     ScriptEntry VisibleItems_Route219_Item1
     ScriptEntry VisibleItems_Route220_Item2
-    ScriptEntry VisibleItems_Route205South_Item3
+    ScriptEntry VisibleItems_Route205South_Item4
     ScriptEntry VisibleItems_Route220_Item1
     ScriptEntry VisibleItems_Route220_Item3
     ScriptEntry VisibleItems_Route221_Item3
@@ -1088,7 +1088,7 @@ VisibleItems_Route220_Item2:
     GoTo VisibleItems_TryGiveItem
     End
 
-VisibleItems_Route205South_Item3:
+VisibleItems_Route205South_Item4:
     SetVar VAR_0x8008, ITEM_ULTRA_BALL
     SetVar VAR_0x8009, 1
     GoTo VisibleItems_TryGiveItem

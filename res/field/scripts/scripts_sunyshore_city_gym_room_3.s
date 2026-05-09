@@ -50,11 +50,11 @@ SunyshoreGymRoom3_Volkner:
     GoTo SunyshoreGymRoom3_VolknerTryGiveTM57
 
 SunyshoreGymRoom3_VolknerTryGiveTM57:
-    SetVar VAR_0x8004, ITEM_TM57
+    SetVar VAR_0x8004, ITEM_TM25
     SetVar VAR_0x8005, 1
     GoToIfCannotFitItem VAR_0x8004, VAR_0x8005, VAR_RESULT, SunyshoreGymRoom3_VolknerCannotGiveTM57
     Common_GiveItemQuantity
-    SetFlag FLAG_OBTAINED_VOLKNER_TM57
+    SetFlag FLAG_OBTAINED_VOLKNER_TM25
     BufferItemName 0, VAR_0x8004
     BufferTMHMMoveName 1, VAR_0x8004
     Message SunyshoreGymRoom3_Text_VolknerExplainTM57
@@ -70,7 +70,7 @@ SunyshoreGymRoom3_VolknerCannotGiveTM57:
     End
 
 SunyshoreGymRoom3_VolknerAlreadyHaveBeaconBadge:
-    GoToIfUnset FLAG_OBTAINED_VOLKNER_TM57, SunyshoreGymRoom3_VolknerTryGiveTM57
+    GoToIfUnset FLAG_OBTAINED_VOLKNER_TM25, SunyshoreGymRoom3_VolknerTryGiveTM57
     Message SunyshoreGymRoom3_Text_Afterbadge
     WaitButton
     CloseMessage

@@ -5794,6 +5794,9 @@ static BOOL ScrCmd_ChangeDeoxysForm(ScriptContext *ctx)
     return TRUE;
 }
 
+/**
+ * Changed to only check for a male combee
+ */
 static BOOL ScrCmd_CheckPartyCombeeGenderCount(ScriptContext *ctx)
 {
     int i, hasMale, hasFemale;
@@ -5821,12 +5824,10 @@ static BOOL ScrCmd_CheckPartyCombeeGenderCount(ScriptContext *ctx)
         }
     }
 
-    if (hasMale == TRUE && hasFemale == TRUE) {
-        *destVar = 2;
-    } else if ((!hasMale) && (!hasFemale)) {
-        *destVar = 0;
-    } else {
+    if (hasMale == TRUE) {
         *destVar = 1;
+    } else {
+        *destVar = 0;
     }
 
     return TRUE;

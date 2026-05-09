@@ -31,7 +31,7 @@ Route208_BlackBelt:
     FacePlayer
     GoToIfSet FLAG_RECEIVED_ROUTE_208_ODD_KEYSTONE, Route208_GoToRoute209
     Message Route208_Text_JustTakeIt
-    SetVar VAR_0x8004, ITEM_ODD_KEYSTONE
+    SetVar VAR_0x8004, ITEM_TOXIC_ORB
     SetVar VAR_0x8005, 1
     GoToIfCannotFitItem VAR_0x8004, VAR_0x8005, VAR_RESULT, Route208_BagIsFull
     SetFlag FLAG_RECEIVED_ROUTE_208_ODD_KEYSTONE

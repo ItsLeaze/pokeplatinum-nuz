@@ -13,7 +13,7 @@ GrandLakeRoute213NorthwestHouse_Clown:
     FacePlayer
     GoToIfSet FLAG_RECEIVED_GRAND_LAKE_ROUTE_213_NORTHWEST_HOUSE_TM92, GrandLakeRoute213NorthwestHouse_ExplainTrickRoom
     Message GrandLakeRoute213NorthwestHouse_Text_TravelingTroupe
-    SetVar VAR_0x8004, ITEM_TM92
+    SetVar VAR_0x8004, ITEM_TM79
     SetVar VAR_0x8005, 1
     GoToIfCannotFitItem VAR_0x8004, VAR_0x8005, VAR_RESULT, GrandLakeRoute213NorthwestHouse_BagIsFull
     Common_GiveItemQuantity

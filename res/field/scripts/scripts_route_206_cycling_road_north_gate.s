@@ -91,7 +91,7 @@ Route206CyclingRoadNorthGate_PlayerFemaleLetMeAskYouHowManyPokemonHaveYouMet:
 Route206CyclingRoadNorthGate_CheckAmountPokemonSeen:
     GetNationalDexSeenCount VAR_0x8004
     BufferNumber 1, VAR_0x8004
-    GoToIfLt VAR_0x8004, 35, Route206CyclingRoadNorthGate_YouveGotToFindAtLeast35
+    GoToIfLt VAR_0x8004, 10, Route206CyclingRoadNorthGate_YouveGotToFindAtLeast35
     Message Route206CyclingRoadNorthGate_Text_ProfessorRowanShouldBeDelightedHereIsSomethingForYou
     SetVar VAR_0x8004, ITEM_EXP_SHARE
     SetVar VAR_0x8005, 1

@@ -9,12 +9,12 @@ Route217NortheastHouse_PokemonBreederF:
     PlaySE SEQ_SE_CONFIRM
     LockAll
     FacePlayer
-    GoToIfSet FLAG_RECEIVED_ROUTE_217_NORTHEAST_HOUSE_SPELL_TAG, Route217NortheastHouse_ExplainSpellTag
+    GoToIfSet FLAG_RECEIVED_ROUTE_217_NORTHEAST_HOUSE_ITEM, Route217NortheastHouse_ExplainSpellTag
     Message Route217NortheastHouse_Text_PersonRareSight
-    SetVar VAR_0x8004, ITEM_SPELL_TAG
+    SetVar VAR_0x8004, ITEM_TM07
     SetVar VAR_0x8005, 1
     GoToIfCannotFitItem VAR_0x8004, VAR_0x8005, VAR_RESULT, Route217NortheastHouse_BagIsFull
-    SetFlag FLAG_RECEIVED_ROUTE_217_NORTHEAST_HOUSE_SPELL_TAG
+    SetFlag FLAG_RECEIVED_ROUTE_217_NORTHEAST_HOUSE_ITEM
     SetFlag FLAG_HIDE_ROUTE_217_NORTHEAST_HOUSE_POKEMON_BREEDER_F
     Common_GiveItemQuantityNoLineFeed
     CloseMessage

@@ -27,7 +27,7 @@ Route217WestHouse_IFoundIciclePlate:
 
 Route217WestHouse_TryGiveIciclePlate:
     Message Route217WestHouse_Text_YouFoundHM
-    SetVar VAR_0x8004, ITEM_ICICLE_PLATE
+    SetVar VAR_0x8004, ITEM_WHITE_HERB
     SetVar VAR_0x8005, 1
     GoToIfCannotFitItem VAR_0x8004, VAR_0x8005, VAR_RESULT, Route217WestHouse_BagIsFull
     Common_GiveItemQuantity

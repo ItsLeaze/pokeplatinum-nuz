@@ -17,11 +17,9 @@
     {
       "id": "PastoriaCityMiddleHouse_Text_CatchBothGendersCombee",
       "en_US": [
-        "Hey, have you caught both the female\n",
-        "and male forms of COMBEE?\r",
-        "If you have, I want to see both of\n",
-        "them together.\r",
-        "I’ll give you a Macho Brace if you do\n",
+        "Hey, have you caught a male COMBEE?\n",
+        "If you have, I want to see it!\r",
+        "I’ll give you a reward if you do\n",
         "that for me. Deal?"
       ]
     },
@@ -32,9 +30,8 @@
         "COMBEE?\r",
         "It’s so cute how they’re attracted\n",
         "by the aroma of Honey.\r",
-        "Let me see a male and female COMBEE\n",
-        "together, OK?\r",
-        "I’ll give you a Macho Brace if you do\n",
+        "Let me see a male COMBEE, OK?\r",
+        "I’ll give you a reward if you do\n",
         "that for me."
       ]
     },
@@ -56,7 +53,7 @@
     {
       "id": "PastoriaCityMiddleHouse_Text_BothGendersCombee",
       "en_US": [
-        "Cool! A female and a male COMBEE.\n",
+        "Cool! A male COMBEE.\n",
         "I feel giddy!\r",
         "Here’s your reward like I promised.\n",
         "Go ahead, take it!\r"

@@ -39,7 +39,7 @@ MtCoronet2F_TriggerLooker:
     ApplyMovement LOCALID_LOOKER, MtCoronet2F_Movement_LookerWalkOnSpotWest
     WaitMovement
     Message MtCoronet2F_Text_YouAreFarSuperiorToMeAllICanDoNowIsGiveYouThis
-    SetVar VAR_0x8004, ITEM_BLACK_FLUTE
+    SetVar VAR_0x8004, ITEM_ENIGMA_BERRY
     SetVar VAR_0x8005, 1
     GoToIfCannotFitItem VAR_0x8004, VAR_0x8005, VAR_RESULT, MtCoronet2F_BagIsFull
     Common_GiveItemQuantity
@@ -49,7 +49,7 @@ MtCoronet2F_TriggerLooker:
     End
 
 MtCoronet2F_PleaseYouMustStopTeamGalactic:
-    SetFlag FLAG_RECEIVED_MT_CORONET_2F_BLACK_FLUTE
+    SetFlag FLAG_RECEIVED_MT_CORONET_2F_LOOKER_ITEM
     Message MtCoronet2F_Text_PleaseYouMustStopTeamGalactic
     WaitButton
     CloseMessage
@@ -132,7 +132,7 @@ MtCoronet2F_Looker:
     PlaySE SEQ_SE_CONFIRM
     LockAll
     FacePlayer
-    GoToIfUnset FLAG_RECEIVED_MT_CORONET_2F_BLACK_FLUTE, MtCoronet2F_TryAgainGiveBlackFlute
+    GoToIfUnset FLAG_RECEIVED_MT_CORONET_2F_LOOKER_ITEM, MtCoronet2F_TryAgainGiveBlackFlute
     Message MtCoronet2F_Text_PleaseYouMustStopTeamGalactic
     WaitButton
     CloseMessage

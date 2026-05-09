@@ -34,10 +34,6 @@ GalacticHQ4F_Cyrus:
     ReleaseAll
     End
 
-GalacticHQ4F_GiveMasterBall:
-    Common_GiveItemQuantity
-    Return
-
 GalacticHQ4F_BlackOut:
     BlackOutFromBattle
     ReleaseAll

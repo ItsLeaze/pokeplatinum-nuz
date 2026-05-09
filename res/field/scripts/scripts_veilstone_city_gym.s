@@ -48,11 +48,11 @@ VeilstoneGym_Maylene:
     End
 
 VeilstoneGym_MayleneTryGiveTM60:
-    SetVar VAR_0x8004, ITEM_TM60
+    SetVar VAR_0x8004, ITEM_TM31
     SetVar VAR_0x8005, 1
     GoToIfCannotFitItem VAR_0x8004, VAR_0x8005, VAR_RESULT, VeilstoneGym_MayleneCannotGiveTM60
     Common_GiveItemQuantity
-    SetFlag FLAG_OBTAINED_MAYLENE_TM60
+    SetFlag FLAG_OBTAINED_MAYLENE_TM31
     BufferItemName 0, VAR_0x8004
     BufferTMHMMoveName 1, VAR_0x8004
     Message VeilstoneGym_Text_MayleneExplainTM60
@@ -68,7 +68,7 @@ VeilstoneGym_MayleneCannotGiveTM60:
     End
 
 VeilstoneGym_MayleneAfterBadge:
-    GoToIfUnset FLAG_OBTAINED_MAYLENE_TM60, VeilstoneGym_MayleneTryGiveTM60
+    GoToIfUnset FLAG_OBTAINED_MAYLENE_TM31, VeilstoneGym_MayleneTryGiveTM60
     BufferPlayerName 0
     Message VeilstoneGym_Text_MayleneAfterBadge
     WaitButton
