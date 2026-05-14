@@ -4,23 +4,21 @@
     {
       "id": "OreburghCityNorthHouse1F_Text_WouldYouBeWillingToTradeYourMachopForMyAbra",
       "en_US": [
-        "Listen, listen. Do you have a Pokémon\n",
-        "called MACHOP?\r",
-        "Would you be willing to trade your\n",
-        "MACHOP for my ABRA?"
+        "Listen, listen. Do you have a\n",
+        "Pokémon you want to trade?\r",
+        "I can offer you this SEEDOT I\n",
+        "caught."
       ]
     },
     {
       "id": "OreburghCityNorthHouse1F_Text_BeNiceToMyAbra",
       "en_US": [
-        "Be nice to my ABRA!\r",
-        "I’ll be sure to look after your MACHOP\n",
-        "in return!"
+        "Be nice to my SEEDOT!"
       ]
     },
     {
       "id": "OreburghCityNorthHouse1F_Text_WhatIAskedForWasAMachop",
-      "en_US": "What I asked for was a MACHOP..."
+      "en_US": "What I asked for was a Pokémon..."
     },
     {
       "id": "OreburghCityNorthHouse1F_Text_IfYouChangeYourMindIllBeRightHereWaiting",

@@ -2,71 +2,71 @@
     "land_rate": 30,
     "land_encounters": [
         {
-            "level": 48,
-            "species": "SPECIES_ROSELIA"
+            "level": 60,
+            "species": "SPECIES_FORRETRESS"
         },
         {
-            "level": 49,
-            "species": "SPECIES_ROSELIA"
+            "level": 61,
+            "species": "SPECIES_PURUGLY"
         },
         {
-            "level": 50,
-            "species": "SPECIES_LEDIAN"
+            "level": 60,
+            "species": "SPECIES_WOBBUFFET"
         },
         {
-            "level": 50,
-            "species": "SPECIES_LEDIAN"
+            "level": 61,
+            "species": "SPECIES_WOBBUFFET"
         },
         {
-            "level": 49,
-            "species": "SPECIES_VOLBEAT"
+            "level": 60,
+            "species": "SPECIES_MILTANK"
         },
         {
-            "level": 49,
-            "species": "SPECIES_ILLUMISE"
+            "level": 61,
+            "species": "SPECIES_MILTANK"
         },
         {
-            "level": 47,
-            "species": "SPECIES_PIDGEY"
+            "level": 60,
+            "species": "SPECIES_BLISSEY"
         },
         {
-            "level": 50,
-            "species": "SPECIES_ROSELIA"
+            "level": 61,
+            "species": "SPECIES_BLISSEY"
         },
         {
-            "level": 48,
-            "species": "SPECIES_BEAUTIFLY"
+            "level": 60,
+            "species": "SPECIES_CASTFORM"
         },
         {
-            "level": 48,
-            "species": "SPECIES_DUSTOX"
+            "level": 61,
+            "species": "SPECIES_CASTFORM"
         },
         {
-            "level": 48,
-            "species": "SPECIES_BEAUTIFLY"
+            "level": 60,
+            "species": "SPECIES_GIRAFARIG"
         },
         {
-            "level": 48,
-            "species": "SPECIES_DUSTOX"
+            "level": 61,
+            "species": "SPECIES_GIRAFARIG"
         }
     ],
     "swarms": [
-        "SPECIES_PINSIR",
-        "SPECIES_PINSIR"
+        "SPECIES_WOBBUFFET",
+        "SPECIES_WOBBUFFET"
     ],
     "day": [
-        "SPECIES_PIDGEY",
-        "SPECIES_PIDGEY"
+        "SPECIES_WOBBUFFET",
+        "SPECIES_WOBBUFFET"
     ],
     "night": [
-        "SPECIES_ARIADOS",
-        "SPECIES_ARIADOS"
+        "SPECIES_WOBBUFFET",
+        "SPECIES_WOBBUFFET"
     ],
     "radar": [
-        "SPECIES_VENOMOTH",
-        "SPECIES_VENOMOTH",
-        "SPECIES_VENONAT",
-        "SPECIES_VENONAT"
+        "SPECIES_WOBBUFFET",
+        "SPECIES_WOBBUFFET",
+        "SPECIES_WOBBUFFET",
+        "SPECIES_WOBBUFFET"
     ],
     "rate_form0": 100,
     "rate_form1": 100,
@@ -75,24 +75,24 @@
     "rate_form4": 0,
     "unown_table": 0,
     "ruby": [
-        "SPECIES_NUZLEAF",
-        "SPECIES_NUZLEAF"
+        "SPECIES_WOBBUFFET",
+        "SPECIES_WOBBUFFET"
     ],
     "sapphire": [
-        "SPECIES_LOMBRE",
-        "SPECIES_LOMBRE"
+        "SPECIES_WOBBUFFET",
+        "SPECIES_WOBBUFFET"
     ],
     "emerald": [
-        "SPECIES_PINECO",
-        "SPECIES_PINECO"
+        "SPECIES_WOBBUFFET",
+        "SPECIES_WOBBUFFET"
     ],
     "firered": [
-        "SPECIES_BEAUTIFLY",
-        "SPECIES_DUSTOX"
+        "SPECIES_WOBBUFFET",
+        "SPECIES_WOBBUFFET"
     ],
     "leafgreen": [
-        "SPECIES_BEAUTIFLY",
-        "SPECIES_DUSTOX"
+        "SPECIES_WOBBUFFET",
+        "SPECIES_WOBBUFFET"
     ],
     "surf_rate": 10,
     "surf_encounters": [
@@ -127,27 +127,27 @@
         {
             "level_max": 6,
             "level_min": 4,
-            "species": "SPECIES_MAGIKARP"
+            "species": "SPECIES_FINNEON"
         },
         {
             "level_max": 7,
             "level_min": 3,
-            "species": "SPECIES_MAGIKARP"
+            "species": "SPECIES_FINNEON"
         },
         {
             "level_max": 10,
             "level_min": 5,
-            "species": "SPECIES_MAGIKARP"
+            "species": "SPECIES_FINNEON"
         },
         {
             "level_max": 10,
             "level_min": 5,
-            "species": "SPECIES_MAGIKARP"
+            "species": "SPECIES_FINNEON"
         },
         {
             "level_max": 15,
             "level_min": 5,
-            "species": "SPECIES_MAGIKARP"
+            "species": "SPECIES_FINNEON"
         }
     ],
     "good_rod_rate": 50,
@@ -155,7 +155,7 @@
         {
             "level_max": 20,
             "level_min": 15,
-            "species": "SPECIES_MAGIKARP"
+            "species": "SPECIES_FINNEON"
         },
         {
             "level_max": 20,
@@ -165,7 +165,7 @@
         {
             "level_max": 25,
             "level_min": 10,
-            "species": "SPECIES_MAGIKARP"
+            "species": "SPECIES_FINNEON"
         },
         {
             "level_max": 25,

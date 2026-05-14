@@ -2,71 +2,71 @@
     "land_rate": 10,
     "land_encounters": [
         {
-            "level": 53,
+            "level": 54,
             "species": "SPECIES_MAGCARGO"
         },
         {
-            "level": 55,
+            "level": 54,
             "species": "SPECIES_MAGCARGO"
         },
         {
-            "level": 53,
-            "species": "SPECIES_GOLBAT"
+            "level": 52,
+            "species": "SPECIES_DITTO"
+        },
+        {
+            "level": 51,
+            "species": "SPECIES_DITTO"
         },
         {
             "level": 52,
-            "species": "SPECIES_GRAVELER"
+            "species": "SPECIES_GRANBULL"
         },
         {
-            "level": 55,
-            "species": "SPECIES_RHYDON"
+            "level": 53,
+            "species": "SPECIES_GRANBULL"
         },
         {
-            "level": 54,
-            "species": "SPECIES_WEEZING"
+            "level": 51,
+            "species": "SPECIES_SPINDA"
+        },
+        {
+            "level": 53,
+            "species": "SPECIES_SPINDA"
         },
         {
             "level": 52,
-            "species": "SPECIES_WEEZING"
+            "species": "SPECIES_MAWILE"
         },
         {
-            "level": 54,
-            "species": "SPECIES_GRAVELER"
+            "level": 52,
+            "species": "SPECIES_MAWILE"
         },
         {
-            "level": 53,
-            "species": "SPECIES_SLUGMA"
+            "level": 52,
+            "species": "SPECIES_MAWILE"
         },
         {
-            "level": 53,
-            "species": "SPECIES_KOFFING"
-        },
-        {
-            "level": 53,
-            "species": "SPECIES_SLUGMA"
-        },
-        {
-            "level": 53,
-            "species": "SPECIES_KOFFING"
+            "level": 52,
+            "species": "SPECIES_MAWILE"
         }
     ],
     "swarms": [
-        "SPECIES_MAGCARGO",
-        "SPECIES_MAGCARGO"
+        "SPECIES_DITTO",
+        "SPECIES_DITTO"
     ],
     "day": [
-        "SPECIES_GOLBAT",
-        "SPECIES_GRAVELER"
+        "SPECIES_DITTO",
+        "SPECIES_DITTO"
     ],
     "night": [
-        "SPECIES_GOLBAT",
-        "SPECIES_GRAVELER"
+        "SPECIES_DITTO",
+        "SPECIES_DITTO"
     ],
     "radar": [
-        "SPECIES_RHYDON",
-        "SPECIES_WEEZING",
-        "SPECIES_SLUGMA",
-        "SPECIES_KOFFING"
+        "SPECIES_DITTO",
+        "SPECIES_DITTO",
+        "SPECIES_DITTO",
+        "SPECIES_DITTO"
     ],
     "rate_form0": 100,
     "rate_form1": 100,
@@ -75,24 +75,24 @@
     "rate_form4": 0,
     "unown_table": 0,
     "ruby": [
-        "SPECIES_SLUGMA",
-        "SPECIES_KOFFING"
+        "SPECIES_DITTO",
+        "SPECIES_DITTO"
     ],
     "sapphire": [
-        "SPECIES_SLUGMA",
-        "SPECIES_KOFFING"
+        "SPECIES_DITTO",
+        "SPECIES_DITTO"
     ],
     "emerald": [
-        "SPECIES_SLUGMA",
-        "SPECIES_KOFFING"
+        "SPECIES_DITTO",
+        "SPECIES_DITTO"
     ],
     "firered": [
-        "SPECIES_SLUGMA",
-        "SPECIES_KOFFING"
+        "SPECIES_DITTO",
+        "SPECIES_DITTO"
     ],
     "leafgreen": [
-        "SPECIES_SLUGMA",
-        "SPECIES_KOFFING"
+        "SPECIES_DITTO",
+        "SPECIES_DITTO"
     ],
     "surf_rate": 0,
     "surf_encounters": [

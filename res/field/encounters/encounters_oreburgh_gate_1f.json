@@ -2,71 +2,71 @@
     "land_rate": 10,
     "land_encounters": [
         {
-            "level": 5,
+            "level": 10,
             "species": "SPECIES_ZUBAT"
         },
         {
-            "level": 5,
-            "species": "SPECIES_PSYDUCK"
+            "level": 10,
+            "species": "SPECIES_MACHOP"
         },
         {
-            "level": 6,
-            "species": "SPECIES_ZUBAT"
+            "level": 9,
+            "species": "SPECIES_SLUGMA"
         },
         {
-            "level": 6,
-            "species": "SPECIES_PSYDUCK"
+            "level": 10,
+            "species": "SPECIES_SLUGMA"
         },
         {
-            "level": 5,
-            "species": "SPECIES_GEODUDE"
+            "level": 9,
+            "species": "SPECIES_PARAS"
         },
         {
-            "level": 5,
-            "species": "SPECIES_ZUBAT"
+            "level": 10,
+            "species": "SPECIES_PARAS"
         },
         {
-            "level": 7,
-            "species": "SPECIES_PSYDUCK"
+            "level": 9,
+            "species": "SPECIES_SANDSHREW"
         },
         {
-            "level": 7,
-            "species": "SPECIES_GEODUDE"
+            "level": 10,
+            "species": "SPECIES_SANDSHREW"
         },
         {
-            "level": 7,
-            "species": "SPECIES_ZUBAT"
+            "level": 9,
+            "species": "SPECIES_DIGLETT"
         },
         {
-            "level": 8,
-            "species": "SPECIES_ZUBAT"
+            "level": 10,
+            "species": "SPECIES_DIGLETT"
         },
         {
-            "level": 7,
-            "species": "SPECIES_ZUBAT"
+            "level": 10,
+            "species": "SPECIES_LUNATONE"
         },
         {
-            "level": 8,
-            "species": "SPECIES_ZUBAT"
+            "level": 10,
+            "species": "SPECIES_SOLROCK"
         }
     ],
     "swarms": [
-        "SPECIES_ZUBAT",
-        "SPECIES_PSYDUCK"
+        "SPECIES_SLUGMA",
+        "SPECIES_SLUGMA"
     ],
     "day": [
-        "SPECIES_ZUBAT",
-        "SPECIES_PSYDUCK"
+        "SPECIES_SLUGMA",
+        "SPECIES_SLUGMA"
     ],
     "night": [
-        "SPECIES_ZUBAT",
-        "SPECIES_PSYDUCK"
+        "SPECIES_SLUGMA",
+        "SPECIES_SLUGMA"
     ],
     "radar": [
-        "SPECIES_GEODUDE",
-        "SPECIES_ZUBAT",
-        "SPECIES_ZUBAT",
-        "SPECIES_ZUBAT"
+        "SPECIES_SLUGMA",
+        "SPECIES_SLUGMA",
+        "SPECIES_SLUGMA",
+        "SPECIES_SLUGMA"
     ],
     "rate_form0": 0,
     "rate_form1": 0,

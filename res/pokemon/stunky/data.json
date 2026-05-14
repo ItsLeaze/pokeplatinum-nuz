@@ -106,7 +106,7 @@
     "evolutions": [
         [
             "EVO_LEVEL",
-            34,
+            28,
             "SPECIES_SKUNTANK"
         ]
     ],

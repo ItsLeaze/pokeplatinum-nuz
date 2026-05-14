@@ -2,71 +2,71 @@
     "land_rate": 10,
     "land_encounters": [
         {
-            "level": 14,
-            "species": "SPECIES_BRONZOR"
-        },
-        {
-            "level": 15,
+            "level": 20,
             "species": "SPECIES_GEODUDE"
         },
         {
-            "level": 14,
-            "species": "SPECIES_MEDITITE"
+            "level": 21,
+            "species": "SPECIES_ZUBAT"
         },
         {
-            "level": 13,
-            "species": "SPECIES_CLEFFA"
+            "level": 20,
+            "species": "SPECIES_CLEFAIRY"
         },
         {
-            "level": 16,
-            "species": "SPECIES_MACHOP"
+            "level": 21,
+            "species": "SPECIES_CLEFAIRY"
         },
         {
-            "level": 16,
-            "species": "SPECIES_MEDITITE"
+            "level": 21,
+            "species": "SPECIES_CUBONE"
         },
         {
-            "level": 13,
-            "species": "SPECIES_CHINGLING"
+            "level": 20,
+            "species": "SPECIES_SWINUB"
         },
         {
-            "level": 14,
+            "level": 20,
             "species": "SPECIES_NOSEPASS"
         },
         {
-            "level": 15,
-            "species": "SPECIES_ZUBAT"
+            "level": 21,
+            "species": "SPECIES_NOSEPASS"
         },
         {
-            "level": 15,
-            "species": "SPECIES_CHINGLING"
+            "level": 20,
+            "species": "SPECIES_ARON"
         },
         {
-            "level": 15,
-            "species": "SPECIES_ZUBAT"
+            "level": 21,
+            "species": "SPECIES_ARON"
         },
         {
-            "level": 15,
-            "species": "SPECIES_CHINGLING"
+            "level": 20,
+            "species": "SPECIES_BRONZOR"
+        },
+        {
+            "level": 21,
+            "species": "SPECIES_BRONZOR"
         }
     ],
     "swarms": [
-        "SPECIES_BRONZOR",
-        "SPECIES_GEODUDE"
+        "SPECIES_CLEFAIRY",
+        "SPECIES_CLEFAIRY"
     ],
     "day": [
-        "SPECIES_MEDITITE",
-        "SPECIES_GEODUDE"
+        "SPECIES_CLEFAIRY",
+        "SPECIES_CLEFAIRY"
     ],
     "night": [
-        "SPECIES_ZUBAT",
-        "SPECIES_CLEFFA"
+        "SPECIES_CLEFAIRY",
+        "SPECIES_CLEFAIRY"
     ],
     "radar": [
-        "SPECIES_MACHOP",
-        "SPECIES_MEDITITE",
-        "SPECIES_ZUBAT",
-        "SPECIES_CHINGLING"
+        "SPECIES_CLEFAIRY",
+        "SPECIES_CLEFAIRY",
+        "SPECIES_CLEFAIRY",
+        "SPECIES_CLEFAIRY"
     ],
     "rate_form0": 0,
     "rate_form1": 0,
@@ -75,24 +75,24 @@
     "rate_form4": 0,
     "unown_table": 0,
     "ruby": [
-        "SPECIES_ZUBAT",
-        "SPECIES_CHINGLING"
+        "SPECIES_CLEFAIRY",
+        "SPECIES_CLEFAIRY"
     ],
     "sapphire": [
-        "SPECIES_ZUBAT",
-        "SPECIES_CHINGLING"
+        "SPECIES_CLEFAIRY",
+        "SPECIES_CLEFAIRY"
     ],
     "emerald": [
-        "SPECIES_ZUBAT",
-        "SPECIES_CHINGLING"
+        "SPECIES_CLEFAIRY",
+        "SPECIES_CLEFAIRY"
     ],
     "firered": [
-        "SPECIES_ZUBAT",
-        "SPECIES_CHINGLING"
+        "SPECIES_CLEFAIRY",
+        "SPECIES_CLEFAIRY"
     ],
     "leafgreen": [
-        "SPECIES_ZUBAT",
-        "SPECIES_CHINGLING"
+        "SPECIES_CLEFAIRY",
+        "SPECIES_CLEFAIRY"
     ],
     "surf_rate": 0,
     "surf_encounters": [

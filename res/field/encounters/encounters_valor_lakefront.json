@@ -2,71 +2,71 @@
     "land_rate": 30,
     "land_encounters": [
         {
-            "level": 26,
-            "species": "SPECIES_GIRAFARIG"
+            "level": 28,
+            "species": "SPECIES_DONPHAN"
         },
         {
-            "level": 25,
-            "species": "SPECIES_BIBAREL"
-        },
-        {
-            "level": 26,
-            "species": "SPECIES_STARAVIA"
-        },
-        {
-            "level": 27,
-            "species": "SPECIES_KRICKETUNE"
-        },
-        {
-            "level": 27,
-            "species": "SPECIES_STARAVIA"
+            "level": 29,
+            "species": "SPECIES_LUXIO"
         },
         {
             "level": 28,
-            "species": "SPECIES_HOUNDOUR"
+            "species": "SPECIES_AMBIPOM"
+        },
+        {
+            "level": 29,
+            "species": "SPECIES_AMBIPOM"
         },
         {
             "level": 28,
-            "species": "SPECIES_STARAVIA"
+            "species": "SPECIES_PONYTA"
         },
         {
-            "level": 26,
-            "species": "SPECIES_BIBAREL"
-        },
-        {
-            "level": 28,
-            "species": "SPECIES_GIRAFARIG"
-        },
-        {
-            "level": 27,
-            "species": "SPECIES_BIBAREL"
+            "level": 29,
+            "species": "SPECIES_PONYTA"
         },
         {
             "level": 28,
-            "species": "SPECIES_GIRAFARIG"
+            "species": "SPECIES_DRIFLOON"
         },
         {
-            "level": 27,
-            "species": "SPECIES_BIBAREL"
+            "level": 29,
+            "species": "SPECIES_DRIFLOON"
+        },
+        {
+            "level": 28,
+            "species": "SPECIES_ABSOL"
+        },
+        {
+            "level": 29,
+            "species": "SPECIES_ABSOL"
+        },
+        {
+            "level": 12,
+            "species": "SPECIES_CHIKORITA"
+        },
+        {
+            "level": 13,
+            "species": "SPECIES_CHIKORITA"
         }
     ],
     "swarms": [
-        "SPECIES_GIRAFARIG",
-        "SPECIES_BIBAREL"
+        "SPECIES_AMBIPOM",
+        "SPECIES_AMBIPOM"
     ],
     "day": [
-        "SPECIES_STARAVIA",
-        "SPECIES_STARAVIA"
+        "SPECIES_AMBIPOM",
+        "SPECIES_AMBIPOM"
     ],
     "night": [
-        "SPECIES_KRICKETUNE",
-        "SPECIES_HOUNDOUR"
+        "SPECIES_AMBIPOM",
+        "SPECIES_AMBIPOM"
     ],
     "radar": [
-        "SPECIES_NIDORINO",
-        "SPECIES_NIDORINA",
-        "SPECIES_NIDORINO",
-        "SPECIES_NIDORINA"
+        "SPECIES_AMBIPOM",
+        "SPECIES_AMBIPOM",
+        "SPECIES_AMBIPOM",
+        "SPECIES_AMBIPOM"
     ],
     "rate_form0": 100,
     "rate_form1": 100,
@@ -75,24 +75,24 @@
     "rate_form4": 0,
     "unown_table": 0,
     "ruby": [
-        "SPECIES_GIRAFARIG",
-        "SPECIES_BIBAREL"
+        "SPECIES_AMBIPOM",
+        "SPECIES_AMBIPOM"
     ],
     "sapphire": [
-        "SPECIES_GIRAFARIG",
-        "SPECIES_BIBAREL"
+        "SPECIES_AMBIPOM",
+        "SPECIES_AMBIPOM"
     ],
     "emerald": [
-        "SPECIES_GIRAFARIG",
-        "SPECIES_BIBAREL"
+        "SPECIES_AMBIPOM",
+        "SPECIES_AMBIPOM"
     ],
     "firered": [
-        "SPECIES_GIRAFARIG",
-        "SPECIES_BIBAREL"
+        "SPECIES_AMBIPOM",
+        "SPECIES_AMBIPOM"
     ],
     "leafgreen": [
-        "SPECIES_GIRAFARIG",
-        "SPECIES_BIBAREL"
+        "SPECIES_AMBIPOM",
+        "SPECIES_AMBIPOM"
     ],
     "surf_rate": 0,
     "surf_encounters": [

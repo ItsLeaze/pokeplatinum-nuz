@@ -154,15 +154,6 @@ void HoneyTree_SlatherTree(FieldSystem *fieldSystem)
     TrainerInfo *trainer = SaveData_GetTrainerInfo(fieldSystem->saveData);
     munchlaxTree = IsMunchlaxTree(TrainerInfo_ID(trainer), treeId);
 
-    // Slathering the same tree twice in succession has a 90% chance to give the same group again.
-    if (SpecialEncounter_GetLastSlatheredTreeId(treeDat) == treeId) {
-        if ((LCRNG_RandMod(100)) < 90) {
-            GetTreeEncounterSlot(&tree->encounterSlot);
-            tree->numShakes = GetShakesFromGroup(tree->encounterGroup);
-            return;
-        }
-    }
-
     GetTreeEncounterGroup(munchlaxTree, &tree->encounterGroup);
 
     if (tree->encounterGroup != TREE_GROUP_NO_ENCOUNTER) {
@@ -214,11 +205,11 @@ static void GetTreeEncounterGroup(const BOOL isMunchlaxTree, u8 *group)
     int roll = LCRNG_RandMod(100);
 
     if (isMunchlaxTree) {
-        if (roll < 1) {
+        if (roll < 20) {
             *group = TREE_GROUP_C;
-        } else if (roll < 10) {
-            *group = TREE_GROUP_NO_ENCOUNTER;
         } else if (roll < 30) {
+            *group = TREE_GROUP_NO_ENCOUNTER;
+        } else if (roll < 50) {
             *group = TREE_GROUP_A;
         } else {
             *group = TREE_GROUP_B;
@@ -410,28 +401,10 @@ static BOOL IsMunchlaxTree(const u32 trainerId, const u8 treeId)
     u8 i, j;
     u8 munchlaxTreeIds[4];
 
-    munchlaxTreeIds[0] = (trainerId >> 24) & 0xff;
-    munchlaxTreeIds[1] = (trainerId >> 16) & 0xff;
-    munchlaxTreeIds[2] = (trainerId >> 8) & 0xff;
-    munchlaxTreeIds[3] = trainerId & 0xff;
-
-    munchlaxTreeIds[0] %= NUM_HONEY_TREES;
-    munchlaxTreeIds[1] %= NUM_HONEY_TREES;
-    munchlaxTreeIds[2] %= NUM_HONEY_TREES;
-    munchlaxTreeIds[3] %= NUM_HONEY_TREES;
-
-    // Increments tree IDs if they are equal, so the player will always have 4 possible Munchlax trees.
-    for (i = 1; i < 4; i++) {
-        for (j = 0; j < i; j++) {
-            if (munchlaxTreeIds[j] == munchlaxTreeIds[i]) {
-                munchlaxTreeIds[i]++;
-
-                if (munchlaxTreeIds[i] >= NUM_HONEY_TREES) {
-                    munchlaxTreeIds[i] = 0;
-                }
-            }
-        }
-    }
+    munchlaxTreeIds[0] = 14;
+    munchlaxTreeIds[1] = 15;
+    munchlaxTreeIds[2] = 16;
+    munchlaxTreeIds[3] = 19;
 
     for (i = 0; i < 4; i++) {
         if (treeId == munchlaxTreeIds[i]) {

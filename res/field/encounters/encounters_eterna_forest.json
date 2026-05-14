@@ -2,71 +2,71 @@
     "land_rate": 30,
     "land_encounters": [
         {
-            "level": 11,
-            "species": "SPECIES_BUNEARY"
+            "level": 14,
+            "species": "SPECIES_SPINARAK"
         },
         {
-            "level": 10,
-            "species": "SPECIES_BUDEW"
+            "level": 15,
+            "species": "SPECIES_PARAS"
         },
         {
-            "level": 10,
+            "level": 14,
+            "species": "SPECIES_VENONAT"
+        },
+        {
+            "level": 15,
+            "species": "SPECIES_VENONAT"
+        },
+        {
+            "level": 14,
+            "species": "SPECIES_NINCADA"
+        },
+        {
+            "level": 15,
             "species": "SPECIES_WURMPLE"
         },
         {
-            "level": 12,
-            "species": "SPECIES_KRICKETOT"
+            "level": 14,
+            "species": "SPECIES_SHROOMISH"
         },
         {
-            "level": 11,
-            "species": "SPECIES_BUDEW"
-        },
-        {
-            "level": 12,
-            "species": "SPECIES_BIDOOF"
-        },
-        {
-            "level": 12,
-            "species": "SPECIES_SILCOON"
-        },
-        {
-            "level": 12,
-            "species": "SPECIES_CASCOON"
-        },
-        {
-            "level": 13,
-            "species": "SPECIES_BUNEARY"
-        },
-        {
-            "level": 13,
-            "species": "SPECIES_GASTLY"
+            "level": 15,
+            "species": "SPECIES_SHROOMISH"
         },
         {
             "level": 14,
-            "species": "SPECIES_BEAUTIFLY"
+            "species": "SPECIES_NATU"
+        },
+        {
+            "level": 15,
+            "species": "SPECIES_NATU"
         },
         {
             "level": 14,
-            "species": "SPECIES_DUSTOX"
+            "species": "SPECIES_STANTLER"
+        },
+        {
+            "level": 15,
+            "species": "SPECIES_STANTLER"
         }
     ],
     "swarms": [
-        "SPECIES_SLAKOTH",
-        "SPECIES_SLAKOTH"
+        "SPECIES_VENONAT",
+        "SPECIES_VENONAT"
     ],
     "day": [
-        "SPECIES_WURMPLE",
-        "SPECIES_BUDEW"
+        "SPECIES_VENONAT",
+        "SPECIES_VENONAT"
     ],
     "night": [
-        "SPECIES_KRICKETOT",
-        "SPECIES_HOOTHOOT"
+        "SPECIES_VENONAT",
+        "SPECIES_VENONAT"
     ],
     "radar": [
-        "SPECIES_NINCADA",
-        "SPECIES_NINCADA",
-        "SPECIES_NINCADA",
-        "SPECIES_NINCADA"
+        "SPECIES_VENONAT",
+        "SPECIES_VENONAT",
+        "SPECIES_VENONAT",
+        "SPECIES_VENONAT"
     ],
     "rate_form0": 0,
     "rate_form1": 0,
@@ -75,24 +75,24 @@
     "rate_form4": 0,
     "unown_table": 0,
     "ruby": [
-        "SPECIES_SEEDOT",
-        "SPECIES_SEEDOT"
+        "SPECIES_VENONAT",
+        "SPECIES_VENONAT"
     ],
     "sapphire": [
-        "SPECIES_BUNEARY",
-        "SPECIES_GASTLY"
+        "SPECIES_VENONAT",
+        "SPECIES_VENONAT"
     ],
     "emerald": [
-        "SPECIES_PINECO",
-        "SPECIES_PINECO"
+        "SPECIES_VENONAT",
+        "SPECIES_VENONAT"
     ],
     "firered": [
-        "SPECIES_CATERPIE",
-        "SPECIES_METAPOD"
+        "SPECIES_VENONAT",
+        "SPECIES_VENONAT"
     ],
     "leafgreen": [
-        "SPECIES_WEEDLE",
-        "SPECIES_KAKUNA"
+        "SPECIES_VENONAT",
+        "SPECIES_VENONAT"
     ],
     "surf_rate": 0,
     "surf_encounters": [

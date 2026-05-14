@@ -106,7 +106,7 @@
     "evolutions": [
         [
             "EVO_LEVEL",
-            30,
+            36,
             "SPECIES_FERALIGATR"
         ]
     ],

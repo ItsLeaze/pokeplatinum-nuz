@@ -2,71 +2,71 @@
     "land_rate": 10,
     "land_encounters": [
         {
-            "level": 36,
-            "species": "SPECIES_SNOVER"
+            "level": 45,
+            "species": "SPECIES_WEAVILE"
         },
         {
-            "level": 38,
+            "level": 46,
             "species": "SPECIES_ABOMASNOW"
         },
         {
-            "level": 38,
-            "species": "SPECIES_MEDICHAM"
-        },
-        {
-            "level": 39,
-            "species": "SPECIES_ABOMASNOW"
-        },
-        {
-            "level": 40,
-            "species": "SPECIES_MACHOKE"
-        },
-        {
-            "level": 40,
-            "species": "SPECIES_MEDICHAM"
-        },
-        {
-            "level": 37,
-            "species": "SPECIES_CHINGLING"
-        },
-        {
-            "level": 38,
-            "species": "SPECIES_NOSEPASS"
-        },
-        {
-            "level": 38,
+            "level": 45,
             "species": "SPECIES_ABSOL"
         },
         {
-            "level": 39,
-            "species": "SPECIES_CHINGLING"
-        },
-        {
-            "level": 40,
+            "level": 46,
             "species": "SPECIES_ABSOL"
         },
         {
-            "level": 39,
-            "species": "SPECIES_CHINGLING"
+            "level": 45,
+            "species": "SPECIES_TAUROS"
+        },
+        {
+            "level": 46,
+            "species": "SPECIES_TAUROS"
+        },
+        {
+            "level": 45,
+            "species": "SPECIES_TORKOAL"
+        },
+        {
+            "level": 46,
+            "species": "SPECIES_TORKOAL"
+        },
+        {
+            "level": 45,
+            "species": "SPECIES_WEAVILE"
+        },
+        {
+            "level": 46,
+            "species": "SPECIES_WEAVILE"
+        },
+        {
+            "level": 45,
+            "species": "SPECIES_WEAVILE"
+        },
+        {
+            "level": 46,
+            "species": "SPECIES_WEAVILE"
         }
     ],
     "swarms": [
-        "SPECIES_SNOVER",
-        "SPECIES_ABOMASNOW"
+        "SPECIES_ABSOL",
+        "SPECIES_ABSOL"
     ],
     "day": [
-        "SPECIES_MEDICHAM",
-        "SPECIES_ABOMASNOW"
+        "SPECIES_ABSOL",
+        "SPECIES_ABSOL"
     ],
     "night": [
-        "SPECIES_GOLBAT",
-        "SPECIES_NOCTOWL"
+        "SPECIES_ABSOL",
+        "SPECIES_ABSOL"
     ],
     "radar": [
-        "SPECIES_LOUDRED",
-        "SPECIES_LOUDRED",
-        "SPECIES_LOUDRED",
-        "SPECIES_LOUDRED"
+        "SPECIES_ABSOL",
+        "SPECIES_ABSOL",
+        "SPECIES_ABSOL",
+        "SPECIES_ABSOL"
     ],
     "rate_form0": 0,
     "rate_form1": 0,
@@ -75,24 +75,24 @@
     "rate_form4": 0,
     "unown_table": 0,
     "ruby": [
-        "SPECIES_SOLROCK",
-        "SPECIES_SOLROCK"
+        "SPECIES_ABSOL",
+        "SPECIES_ABSOL"
     ],
     "sapphire": [
-        "SPECIES_LUNATONE",
-        "SPECIES_LUNATONE"
+        "SPECIES_ABSOL",
+        "SPECIES_ABSOL"
     ],
     "emerald": [
         "SPECIES_ABSOL",
-        "SPECIES_CHINGLING"
+        "SPECIES_ABSOL"
     ],
     "firered": [
         "SPECIES_ABSOL",
-        "SPECIES_CHINGLING"
+        "SPECIES_ABSOL"
     ],
     "leafgreen": [
         "SPECIES_ABSOL",
-        "SPECIES_CHINGLING"
+        "SPECIES_ABSOL"
     ],
     "surf_rate": 0,
     "surf_encounters": [

@@ -2,16 +2,12 @@
     "land_rate": 30,
     "land_encounters": [
         {
-            "level": 2,
-            "species": "SPECIES_STARLY"
-        },
-        {
-            "level": 2,
+            "level": 3,
             "species": "SPECIES_BIDOOF"
         },
         {
             "level": 3,
-            "species": "SPECIES_STARLY"
+            "species": "SPECIES_HOPPIP"
         },
         {
             "level": 3,
@@ -19,54 +15,58 @@
         },
         {
             "level": 3,
-            "species": "SPECIES_STARLY"
+            "species": "SPECIES_KRICKETOT"
         },
         {
             "level": 3,
-            "species": "SPECIES_BIDOOF"
+            "species": "SPECIES_CATERPIE"
         },
         {
             "level": 3,
-            "species": "SPECIES_STARLY"
+            "species": "SPECIES_CATERPIE"
         },
         {
             "level": 3,
-            "species": "SPECIES_BIDOOF"
+            "species": "SPECIES_PIDGEY"
         },
         {
-            "level": 2,
-            "species": "SPECIES_STARLY"
+            "level": 3,
+            "species": "SPECIES_PIDGEY"
         },
         {
-            "level": 2,
-            "species": "SPECIES_BIDOOF"
+            "level": 3,
+            "species": "SPECIES_TANGELA"
         },
         {
-            "level": 2,
-            "species": "SPECIES_STARLY"
+            "level": 3,
+            "species": "SPECIES_TANGELA"
         },
         {
-            "level": 2,
-            "species": "SPECIES_BIDOOF"
+            "level": 3,
+            "species": "SPECIES_BELLSPROUT"
+        },
+        {
+            "level": 3,
+            "species": "SPECIES_BELLSPROUT"
         }
     ],
     "swarms": [
-        "SPECIES_DODUO",
-        "SPECIES_DODUO"
+        "SPECIES_KRICKETOT",
+        "SPECIES_KRICKETOT"
     ],
     "day": [
-        "SPECIES_STARLY",
-        "SPECIES_BIDOOF"
+        "SPECIES_SUNKERN",
+        "SPECIES_SUNKERN"
     ],
     "night": [
         "SPECIES_KRICKETOT",
-        "SPECIES_BIDOOF"
+        "SPECIES_KRICKETOT"
     ],
     "radar": [
-        "SPECIES_NIDORAN_M",
-        "SPECIES_NIDORAN_F",
-        "SPECIES_NIDORAN_M",
-        "SPECIES_NIDORAN_F"
+        "SPECIES_KRICKETOT",
+        "SPECIES_KRICKETOT",
+        "SPECIES_KRICKETOT",
+        "SPECIES_KRICKETOT"
     ],
     "rate_form0": 0,
     "rate_form1": 0,
@@ -75,24 +75,24 @@
     "rate_form4": 0,
     "unown_table": 0,
     "ruby": [
-        "SPECIES_STARLY",
-        "SPECIES_BIDOOF"
+        "SPECIES_KRICKETOT",
+        "SPECIES_KRICKETOT"
     ],
     "sapphire": [
-        "SPECIES_STARLY",
-        "SPECIES_BIDOOF"
+        "SPECIES_KRICKETOT",
+        "SPECIES_KRICKETOT"
     ],
     "emerald": [
-        "SPECIES_STARLY",
-        "SPECIES_BIDOOF"
+        "SPECIES_KRICKETOT",
+        "SPECIES_KRICKETOT"
     ],
     "firered": [
-        "SPECIES_GROWLITHE",
-        "SPECIES_GROWLITHE"
+        "SPECIES_KRICKETOT",
+        "SPECIES_KRICKETOT"
     ],
     "leafgreen": [
-        "SPECIES_STARLY",
-        "SPECIES_BIDOOF"
+        "SPECIES_KRICKETOT",
+        "SPECIES_KRICKETOT"
     ],
     "surf_rate": 0,
     "surf_encounters": [

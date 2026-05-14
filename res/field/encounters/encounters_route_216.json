@@ -2,71 +2,71 @@
     "land_rate": 30,
     "land_encounters": [
         {
-            "level": 32,
+            "level": 36,
             "species": "SPECIES_SNOVER"
         },
         {
-            "level": 33,
+            "level": 37,
+            "species": "SPECIES_SNOVER"
+        },
+        {
+            "level": 36,
+            "species": "SPECIES_SNORUNT"
+        },
+        {
+            "level": 37,
+            "species": "SPECIES_SNORUNT"
+        },
+        {
+            "level": 36,
+            "species": "SPECIES_PILOSWINE"
+        },
+        {
+            "level": 37,
+            "species": "SPECIES_PILOSWINE"
+        },
+        {
+            "level": 36,
             "species": "SPECIES_SNEASEL"
         },
         {
-            "level": 32,
-            "species": "SPECIES_MEDITITE"
-        },
-        {
-            "level": 33,
-            "species": "SPECIES_SNOVER"
-        },
-        {
-            "level": 33,
-            "species": "SPECIES_MEDITITE"
-        },
-        {
-            "level": 34,
+            "level": 37,
             "species": "SPECIES_SNEASEL"
         },
         {
-            "level": 34,
-            "species": "SPECIES_SNOVER"
+            "level": 36,
+            "species": "SPECIES_URSARING"
         },
         {
-            "level": 35,
-            "species": "SPECIES_SNEASEL"
+            "level": 37,
+            "species": "SPECIES_URSARING"
         },
         {
-            "level": 35,
-            "species": "SPECIES_GRAVELER"
+            "level": 36,
+            "species": "SPECIES_ABSOL"
         },
         {
-            "level": 35,
-            "species": "SPECIES_SNOVER"
-        },
-        {
-            "level": 35,
-            "species": "SPECIES_GRAVELER"
-        },
-        {
-            "level": 35,
-            "species": "SPECIES_SNOVER"
+            "level": 37,
+            "species": "SPECIES_ABSOL"
         }
     ],
     "swarms": [
-        "SPECIES_SNOVER",
-        "SPECIES_SNEASEL"
+        "SPECIES_SNORUNT",
+        "SPECIES_SNORUNT"
     ],
     "day": [
-        "SPECIES_MEDITITE",
-        "SPECIES_SNOVER"
+        "SPECIES_SNORUNT",
+        "SPECIES_SNORUNT"
     ],
     "night": [
-        "SPECIES_ZUBAT",
+        "SPECIES_SNORUNT",
         "SPECIES_SNORUNT"
     ],
     "radar": [
-        "SPECIES_MEDITITE",
-        "SPECIES_SNEASEL",
-        "SPECIES_GRAVELER",
-        "SPECIES_SNOVER"
+        "SPECIES_SNORUNT",
+        "SPECIES_SNORUNT",
+        "SPECIES_SNORUNT",
+        "SPECIES_SNORUNT"
     ],
     "rate_form0": 0,
     "rate_form1": 0,
@@ -75,24 +75,24 @@
     "rate_form4": 0,
     "unown_table": 0,
     "ruby": [
-        "SPECIES_GRAVELER",
-        "SPECIES_SNOVER"
+        "SPECIES_SNORUNT",
+        "SPECIES_SNORUNT"
     ],
     "sapphire": [
-        "SPECIES_GRAVELER",
-        "SPECIES_SNOVER"
+        "SPECIES_SNORUNT",
+        "SPECIES_SNORUNT"
     ],
     "emerald": [
-        "SPECIES_URSARING",
-        "SPECIES_URSARING"
+        "SPECIES_SNORUNT",
+        "SPECIES_SNORUNT"
     ],
     "firered": [
-        "SPECIES_GRAVELER",
-        "SPECIES_SNOVER"
+        "SPECIES_SNORUNT",
+        "SPECIES_SNORUNT"
     ],
     "leafgreen": [
-        "SPECIES_GRAVELER",
-        "SPECIES_SNOVER"
+        "SPECIES_SNORUNT",
+        "SPECIES_SNORUNT"
     ],
     "surf_rate": 0,
     "surf_encounters": [

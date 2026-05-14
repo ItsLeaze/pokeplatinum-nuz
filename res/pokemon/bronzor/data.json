@@ -101,7 +101,7 @@
     "evolutions": [
         [
             "EVO_LEVEL",
-            55,
+            40,
             "SPECIES_BRONZONG"
         ]
     ],

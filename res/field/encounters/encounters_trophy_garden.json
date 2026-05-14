@@ -2,70 +2,70 @@
     "land_rate": 10,
     "land_encounters": [
         {
-            "level": 21,
+            "level": 5,
+            "species": "SPECIES_IGGLYBUFF"
+        },
+        {
+            "level": 5,
+            "species": "SPECIES_AZURILL"
+        },
+        {
+            "level": 5,
             "species": "SPECIES_PICHU"
         },
         {
-            "level": 22,
-            "species": "SPECIES_ROSELIA"
-        },
-        {
-            "level": 22,
-            "species": "SPECIES_STARAVIA"
-        },
-        {
-            "level": 23,
-            "species": "SPECIES_KRICKETUNE"
-        },
-        {
-            "level": 23,
-            "species": "SPECIES_ROSELIA"
-        },
-        {
-            "level": 24,
-            "species": "SPECIES_STARAVIA"
-        },
-        {
-            "level": 22,
-            "species": "SPECIES_PIKACHU"
-        },
-        {
-            "level": 22,
+            "level": 5,
             "species": "SPECIES_PICHU"
         },
         {
-            "level": 24,
-            "species": "SPECIES_PIKACHU"
+            "level": 5,
+            "species": "SPECIES_CLEFFA"
         },
         {
-            "level": 22,
-            "species": "SPECIES_PICHU"
+            "level": 5,
+            "species": "SPECIES_SMOOCHUM"
         },
         {
-            "level": 24,
-            "species": "SPECIES_PIKACHU"
+            "level": 5,
+            "species": "SPECIES_BUDEW"
         },
         {
-            "level": 22,
-            "species": "SPECIES_PICHU"
+            "level": 5,
+            "species": "SPECIES_CHINGLING"
+        },
+        {
+            "level": 5,
+            "species": "SPECIES_BONSLY"
+        },
+        {
+            "level": 5,
+            "species": "SPECIES_MIME_JR"
+        },
+        {
+            "level": 5,
+            "species": "SPECIES_BONSLY"
+        },
+        {
+            "level": 5,
+            "species": "SPECIES_MIME_JR"
         }
     ],
     "swarms": [
         "SPECIES_PICHU",
-        "SPECIES_ROSELIA"
+        "SPECIES_PICHU"
     ],
     "day": [
-        "SPECIES_STARAVIA",
-        "SPECIES_STARAVIA"
+        "SPECIES_PICHU",
+        "SPECIES_PICHU"
     ],
     "night": [
-        "SPECIES_KRICKETUNE",
-        "SPECIES_KRICKETUNE"
+        "SPECIES_PICHU",
+        "SPECIES_PICHU"
     ],
     "radar": [
-        "SPECIES_ROSELIA",
-        "SPECIES_STARAVIA",
-        "SPECIES_PIKACHU",
+        "SPECIES_PICHU",
+        "SPECIES_PICHU",
+        "SPECIES_PICHU",
         "SPECIES_PICHU"
     ],
     "rate_form0": 100,
@@ -75,23 +75,23 @@
     "rate_form4": 0,
     "unown_table": 0,
     "ruby": [
-        "SPECIES_PIKACHU",
+        "SPECIES_PICHU",
         "SPECIES_PICHU"
     ],
     "sapphire": [
-        "SPECIES_PIKACHU",
+        "SPECIES_PICHU",
         "SPECIES_PICHU"
     ],
     "emerald": [
-        "SPECIES_PIKACHU",
+        "SPECIES_PICHU",
         "SPECIES_PICHU"
     ],
     "firered": [
-        "SPECIES_PIKACHU",
+        "SPECIES_PICHU",
         "SPECIES_PICHU"
     ],
     "leafgreen": [
-        "SPECIES_PIKACHU",
+        "SPECIES_PICHU",
         "SPECIES_PICHU"
     ],
     "surf_rate": 0,
@@ -207,22 +207,22 @@
         }
     ],
     "daily_encounters": [
-        "SPECIES_EEVEE",
-        "SPECIES_BONSLY",
-        "SPECIES_HAPPINY",
-        "SPECIES_MEOWTH",
-        "SPECIES_CLEFFA",
-        "SPECIES_CLEFAIRY",
-        "SPECIES_IGGLYBUFF",
-        "SPECIES_PLUSLE",
-        "SPECIES_JIGGLYPUFF",
-        "SPECIES_DITTO",
-        "SPECIES_CASTFORM",
         "SPECIES_MINUN",
-        "SPECIES_MIME_JR",
-        "SPECIES_MARILL",
-        "SPECIES_CHANSEY",
-        "SPECIES_AZURILL"
+        "SPECIES_PLUSLE",
+        "SPECIES_MINUN",
+        "SPECIES_PLUSLE",
+        "SPECIES_MINUN",
+        "SPECIES_PLUSLE",
+        "SPECIES_MINUN",
+        "SPECIES_PLUSLE",
+        "SPECIES_MINUN",
+        "SPECIES_PLUSLE",
+        "SPECIES_MINUN",
+        "SPECIES_PLUSLE",
+        "SPECIES_MINUN",
+        "SPECIES_PLUSLE",
+        "SPECIES_MINUN",
+        "SPECIES_PLUSLE"
     ],
     "map_category": {
         "map_type": "dungeon",

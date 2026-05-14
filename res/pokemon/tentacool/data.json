@@ -101,7 +101,7 @@
     "evolutions": [
         [
             "EVO_LEVEL",
-            50,
+            30,
             "SPECIES_TENTACRUEL"
         ]
     ],

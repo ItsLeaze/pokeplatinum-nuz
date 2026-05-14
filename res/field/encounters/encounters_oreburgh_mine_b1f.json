@@ -2,57 +2,57 @@
     "land_rate": 10,
     "land_encounters": [
         {
-            "level": 5,
+            "level": 9,
             "species": "SPECIES_GEODUDE"
         },
         {
-            "level": 6,
+            "level": 10,
             "species": "SPECIES_GEODUDE"
         },
         {
-            "level": 5,
+            "level": 9,
             "species": "SPECIES_ZUBAT"
         },
         {
-            "level": 6,
+            "level": 10,
             "species": "SPECIES_ZUBAT"
         },
         {
-            "level": 4,
-            "species": "SPECIES_GEODUDE"
+            "level": 10,
+            "species": "SPECIES_DIGLETT"
         },
         {
-            "level": 7,
-            "species": "SPECIES_GEODUDE"
+            "level": 9,
+            "species": "SPECIES_WHISMUR"
         },
         {
-            "level": 6,
+            "level": 9,
+            "species": "SPECIES_BALTOY"
+        },
+        {
+            "level": 10,
+            "species": "SPECIES_NOSEPASS"
+        },
+        {
+            "level": 9,
+            "species": "SPECIES_LUNATONE"
+        },
+        {
+            "level": 9,
+            "species": "SPECIES_SOLROCK"
+        },
+        {
+            "level": 9,
             "species": "SPECIES_ONIX"
         },
         {
-            "level": 8,
+            "level": 10,
             "species": "SPECIES_ONIX"
-        },
-        {
-            "level": 8,
-            "species": "SPECIES_GEODUDE"
-        },
-        {
-            "level": 7,
-            "species": "SPECIES_ZUBAT"
-        },
-        {
-            "level": 8,
-            "species": "SPECIES_GEODUDE"
-        },
-        {
-            "level": 7,
-            "species": "SPECIES_ZUBAT"
         }
     ],
     "swarms": [
-        "SPECIES_GEODUDE",
-        "SPECIES_GEODUDE"
+        "SPECIES_ZUBAT",
+        "SPECIES_ZUBAT"
     ],
     "day": [
         "SPECIES_ZUBAT",
@@ -63,10 +63,10 @@
         "SPECIES_ZUBAT"
     ],
     "radar": [
-        "SPECIES_GEODUDE",
-        "SPECIES_GEODUDE",
-        "SPECIES_GEODUDE",
-        "SPECIES_GEODUDE"
+        "SPECIES_ZUBAT",
+        "SPECIES_ZUBAT",
+        "SPECIES_ZUBAT",
+        "SPECIES_ZUBAT"
     ],
     "rate_form0": 0,
     "rate_form1": 0,

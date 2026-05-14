@@ -122,7 +122,7 @@
     "evolutions": [
         [
             "EVO_LEVEL",
-            50,
+            40,
             "SPECIES_SNORLAX"
         ]
     ],

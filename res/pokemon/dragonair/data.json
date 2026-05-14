@@ -98,7 +98,7 @@
     "evolutions": [
         [
             "EVO_LEVEL",
-            70,
+            60,
             "SPECIES_DRAGONITE"
         ]
     ],

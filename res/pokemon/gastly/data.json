@@ -117,7 +117,7 @@
     "evolutions": [
         [
             "EVO_LEVEL",
-            26,
+            25,
             "SPECIES_HAUNTER"
         ]
     ],

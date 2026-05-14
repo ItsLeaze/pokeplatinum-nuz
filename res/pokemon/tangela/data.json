@@ -46,7 +46,7 @@
             [ 29, "MOVE_STUN_SPORE" ],
             [ 33, "MOVE_NATURAL_GIFT" ],
             [ 36, "MOVE_KNOCK_OFF" ],
-            [ 40, "MOVE_ANCIENT_POWER" ],
+            [ 38, "MOVE_ANCIENT_POWER" ],
             [ 43, "MOVE_SLAM" ],
             [ 47, "MOVE_TICKLE" ],
             [ 50, "MOVE_WRING_OUT" ],

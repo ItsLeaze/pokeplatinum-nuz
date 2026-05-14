@@ -2,71 +2,71 @@
     "land_rate": 15,
     "land_encounters": [
         {
-            "level": 47,
-            "species": "SPECIES_GRAVELER"
+            "level": 45,
+            "species": "SPECIES_RHYHORN"
         },
         {
-            "level": 47,
-            "species": "SPECIES_FLOATZEL"
+            "level": 46,
+            "species": "SPECIES_LAIRON"
         },
         {
-            "level": 49,
-            "species": "SPECIES_GRAVELER"
-        },
-        {
-            "level": 48,
+            "level": 45,
             "species": "SPECIES_ONIX"
         },
         {
-            "level": 50,
+            "level": 46,
             "species": "SPECIES_ONIX"
         },
         {
-            "level": 48,
-            "species": "SPECIES_FLOATZEL"
+            "level": 45,
+            "species": "SPECIES_SHELGON"
         },
         {
-            "level": 49,
-            "species": "SPECIES_GOLBAT"
+            "level": 46,
+            "species": "SPECIES_PUPITAR"
         },
         {
-            "level": 49,
-            "species": "SPECIES_FLOATZEL"
+            "level": 45,
+            "species": "SPECIES_METANG"
         },
         {
-            "level": 50,
-            "species": "SPECIES_STEELIX"
+            "level": 46,
+            "species": "SPECIES_METANG"
         },
         {
-            "level": 50,
+            "level": 45,
             "species": "SPECIES_GABITE"
         },
         {
-            "level": 50,
-            "species": "SPECIES_STEELIX"
+            "level": 46,
+            "species": "SPECIES_GABITE"
         },
         {
-            "level": 50,
-            "species": "SPECIES_GABITE"
+            "level": 45,
+            "species": "SPECIES_MAWILE"
+        },
+        {
+            "level": 46,
+            "species": "SPECIES_MAWILE"
         }
     ],
     "swarms": [
-        "SPECIES_GRAVELER",
-        "SPECIES_FLOATZEL"
+        "SPECIES_ONIX",
+        "SPECIES_ONIX"
     ],
     "day": [
-        "SPECIES_GRAVELER",
+        "SPECIES_ONIX",
         "SPECIES_ONIX"
     ],
     "night": [
-        "SPECIES_GOLBAT",
+        "SPECIES_ONIX",
         "SPECIES_ONIX"
     ],
     "radar": [
         "SPECIES_ONIX",
-        "SPECIES_FLOATZEL",
-        "SPECIES_STEELIX",
-        "SPECIES_GABITE"
+        "SPECIES_ONIX",
+        "SPECIES_ONIX",
+        "SPECIES_ONIX"
     ],
     "rate_form0": 100,
     "rate_form1": 100,
@@ -75,24 +75,24 @@
     "rate_form4": 0,
     "unown_table": 0,
     "ruby": [
-        "SPECIES_STEELIX",
-        "SPECIES_GABITE"
+        "SPECIES_ONIX",
+        "SPECIES_ONIX"
     ],
     "sapphire": [
-        "SPECIES_STEELIX",
-        "SPECIES_GABITE"
+        "SPECIES_ONIX",
+        "SPECIES_ONIX"
     ],
     "emerald": [
-        "SPECIES_STEELIX",
-        "SPECIES_GABITE"
+        "SPECIES_ONIX",
+        "SPECIES_ONIX"
     ],
     "firered": [
-        "SPECIES_STEELIX",
-        "SPECIES_GABITE"
+        "SPECIES_ONIX",
+        "SPECIES_ONIX"
     ],
     "leafgreen": [
-        "SPECIES_STEELIX",
-        "SPECIES_GABITE"
+        "SPECIES_ONIX",
+        "SPECIES_ONIX"
     ],
     "surf_rate": 0,
     "surf_encounters": [

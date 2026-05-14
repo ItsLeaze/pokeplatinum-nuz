@@ -47,8 +47,8 @@
             [ 28, "MOVE_ICE_FANG" ],
             [ 32, "MOVE_TAKE_DOWN" ],
             [ 33, "MOVE_FURY_ATTACK" ],
-            [ 40, "MOVE_EARTHQUAKE" ],
-            [ 48, "MOVE_ANCIENT_POWER" ],
+            [ 38, "MOVE_ANCIENT_POWER" ],
+            [ 45, "MOVE_EARTHQUAKE" ],
             [ 52, "MOVE_MIST" ],
             [ 56, "MOVE_BLIZZARD" ],
             [ 65, "MOVE_AMNESIA" ]

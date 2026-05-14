@@ -2,71 +2,71 @@
     "land_rate": 30,
     "land_encounters": [
         {
-            "level": 13,
+            "level": 16,
             "species": "SPECIES_MEDITITE"
         },
         {
-            "level": 14,
-            "species": "SPECIES_BIDOOF"
-        },
-        {
-            "level": 14,
-            "species": "SPECIES_MEDITITE"
-        },
-        {
-            "level": 15,
-            "species": "SPECIES_MEDITITE"
-        },
-        {
-            "level": 14,
+            "level": 17,
             "species": "SPECIES_CHINGLING"
         },
         {
-            "level": 14,
-            "species": "SPECIES_MACHOP"
+            "level": 16,
+            "species": "SPECIES_POOCHYENA"
+        },
+        {
+            "level": 17,
+            "species": "SPECIES_POOCHYENA"
         },
         {
             "level": 16,
-            "species": "SPECIES_CHINGLING"
+            "species": "SPECIES_NATU"
         },
         {
-            "level": 14,
-            "species": "SPECIES_BRONZOR"
-        },
-        {
-            "level": 15,
-            "species": "SPECIES_MACHOP"
+            "level": 17,
+            "species": "SPECIES_HOOTHOOT"
         },
         {
             "level": 16,
-            "species": "SPECIES_BRONZOR"
+            "species": "SPECIES_DROWZEE"
         },
         {
-            "level": 15,
-            "species": "SPECIES_MACHOP"
+            "level": 17,
+            "species": "SPECIES_DROWZEE"
         },
         {
             "level": 16,
-            "species": "SPECIES_BRONZOR"
+            "species": "SPECIES_MURKROW"
+        },
+        {
+            "level": 17,
+            "species": "SPECIES_MURKROW"
+        },
+        {
+            "level": 16,
+            "species": "SPECIES_HOUNDOUR"
+        },
+        {
+            "level": 17,
+            "species": "SPECIES_HOUNDOUR"
         }
     ],
     "swarms": [
-        "SPECIES_MEDITITE",
-        "SPECIES_BIDOOF"
+        "SPECIES_POOCHYENA",
+        "SPECIES_POOCHYENA"
     ],
     "day": [
-        "SPECIES_MEDITITE",
-        "SPECIES_MEDITITE"
+        "SPECIES_POOCHYENA",
+        "SPECIES_POOCHYENA"
     ],
     "night": [
-        "SPECIES_ZUBAT",
-        "SPECIES_HOOTHOOT"
+        "SPECIES_POOCHYENA",
+        "SPECIES_POOCHYENA"
     ],
     "radar": [
-        "SPECIES_TYROGUE",
-        "SPECIES_TYROGUE",
-        "SPECIES_TYROGUE",
-        "SPECIES_TYROGUE"
+        "SPECIES_POOCHYENA",
+        "SPECIES_POOCHYENA",
+        "SPECIES_POOCHYENA",
+        "SPECIES_POOCHYENA"
     ],
     "rate_form0": 0,
     "rate_form1": 0,
@@ -75,24 +75,24 @@
     "rate_form4": 0,
     "unown_table": 0,
     "ruby": [
-        "SPECIES_MACHOP",
-        "SPECIES_BRONZOR"
+        "SPECIES_POOCHYENA",
+        "SPECIES_POOCHYENA"
     ],
     "sapphire": [
-        "SPECIES_MACHOP",
-        "SPECIES_BRONZOR"
+        "SPECIES_POOCHYENA",
+        "SPECIES_POOCHYENA"
     ],
     "emerald": [
-        "SPECIES_TEDDIURSA",
-        "SPECIES_TEDDIURSA"
+        "SPECIES_POOCHYENA",
+        "SPECIES_POOCHYENA"
     ],
     "firered": [
-        "SPECIES_MACHOP",
-        "SPECIES_BRONZOR"
+        "SPECIES_POOCHYENA",
+        "SPECIES_POOCHYENA"
     ],
     "leafgreen": [
-        "SPECIES_MACHOP",
-        "SPECIES_BRONZOR"
+        "SPECIES_POOCHYENA",
+        "SPECIES_POOCHYENA"
     ],
     "surf_rate": 0,
     "surf_encounters": [

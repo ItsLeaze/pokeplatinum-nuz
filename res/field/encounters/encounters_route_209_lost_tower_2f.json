@@ -3,34 +3,30 @@
     "land_encounters": [
         {
             "level": 18,
-            "species": "SPECIES_GASTLY"
+            "species": "SPECIES_RATTATA"
         },
         {
             "level": 17,
-            "species": "SPECIES_ZUBAT"
+            "species": "SPECIES_CUBONE"
         },
         {
             "level": 19,
-            "species": "SPECIES_GASTLY"
+            "species": "SPECIES_BALTOY"
         },
         {
             "level": 17,
-            "species": "SPECIES_GASTLY"
+            "species": "SPECIES_BALTOY"
         },
         {
             "level": 18,
-            "species": "SPECIES_ZUBAT"
+            "species": "SPECIES_KOFFING"
         },
         {
             "level": 17,
-            "species": "SPECIES_GASTLY"
+            "species": "SPECIES_KOFFING"
         },
         {
             "level": 19,
-            "species": "SPECIES_ZUBAT"
-        },
-        {
-            "level": 20,
             "species": "SPECIES_GASTLY"
         },
         {
@@ -39,34 +35,38 @@
         },
         {
             "level": 20,
-            "species": "SPECIES_GASTLY"
+            "species": "SPECIES_DUSKULL"
         },
         {
             "level": 20,
-            "species": "SPECIES_GASTLY"
+            "species": "SPECIES_DUSKULL"
         },
         {
             "level": 20,
-            "species": "SPECIES_GASTLY"
+            "species": "SPECIES_VULPIX"
+        },
+        {
+            "level": 20,
+            "species": "SPECIES_VULPIX"
         }
     ],
     "swarms": [
-        "SPECIES_GASTLY",
-        "SPECIES_ZUBAT"
+        "SPECIES_BALTOY",
+        "SPECIES_BALTOY"
     ],
     "day": [
-        "SPECIES_GASTLY",
-        "SPECIES_GASTLY"
+        "SPECIES_BALTOY",
+        "SPECIES_BALTOY"
     ],
     "night": [
-        "SPECIES_DUSKULL",
-        "SPECIES_DUSKULL"
+        "SPECIES_BALTOY",
+        "SPECIES_BALTOY"
     ],
     "radar": [
-        "SPECIES_ZUBAT",
-        "SPECIES_GASTLY",
-        "SPECIES_GASTLY",
-        "SPECIES_GASTLY"
+        "SPECIES_BALTOY",
+        "SPECIES_BALTOY",
+        "SPECIES_BALTOY",
+        "SPECIES_BALTOY"
     ],
     "rate_form0": 100,
     "rate_form1": 100,

@@ -2,52 +2,52 @@
     "land_rate": 30,
     "land_encounters": [
         {
-            "level": 19,
+            "level": 20,
+            "species": "SPECIES_MARILL"
+        },
+        {
+            "level": 22,
             "species": "SPECIES_STARAVIA"
         },
         {
             "level": 20,
-            "species": "SPECIES_MARILL"
+            "species": "SPECIES_POLIWAG"
         },
         {
             "level": 22,
-            "species": "SPECIES_SCYTHER"
-        },
-        {
-            "level": 21,
-            "species": "SPECIES_STARAVIA"
+            "species": "SPECIES_POLIWAG"
         },
         {
             "level": 20,
-            "species": "SPECIES_LICKITUNG"
+            "species": "SPECIES_SHROOMISH"
         },
         {
-            "level": 19,
-            "species": "SPECIES_ABRA"
+            "level": 22,
+            "species": "SPECIES_MANKEY"
         },
         {
             "level": 20,
-            "species": "SPECIES_SCYTHER"
-        },
-        {
-            "level": 21,
-            "species": "SPECIES_KADABRA"
+            "species": "SPECIES_SWABLU"
         },
         {
             "level": 22,
-            "species": "SPECIES_MARILL"
+            "species": "SPECIES_SWABLU"
+        },
+        {
+            "level": 20,
+            "species": "SPECIES_CROAGUNK"
         },
         {
             "level": 22,
-            "species": "SPECIES_KADABRA"
+            "species": "SPECIES_CROAGUNK"
         },
         {
-            "level": 22,
-            "species": "SPECIES_MARILL"
+            "level": 12,
+            "species": "SPECIES_SQUIRTLE"
         },
         {
-            "level": 22,
-            "species": "SPECIES_KADABRA"
+            "level": 13,
+            "species": "SPECIES_SQUIRTLE"
         }
     ],
     "swarms": [

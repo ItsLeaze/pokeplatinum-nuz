@@ -2,71 +2,71 @@
     "land_rate": 15,
     "land_encounters": [
         {
-            "level": 25,
-            "species": "SPECIES_HAUNTER"
+            "level": 15,
+            "species": "SPECIES_ZUBAT"
         },
         {
-            "level": 25,
-            "species": "SPECIES_BRONZOR"
+            "level": 15,
+            "species": "SPECIES_KOFFING"
         },
         {
-            "level": 26,
-            "species": "SPECIES_HAUNTER"
-        },
-        {
-            "level": 27,
-            "species": "SPECIES_GOLBAT"
-        },
-        {
-            "level": 27,
-            "species": "SPECIES_HAUNTER"
-        },
-        {
-            "level": 27,
-            "species": "SPECIES_GOLBAT"
-        },
-        {
-            "level": 25,
-            "species": "SPECIES_GOLBAT"
-        },
-        {
-            "level": 26,
-            "species": "SPECIES_CHINGLING"
-        },
-        {
-            "level": 28,
+            "level": 16,
             "species": "SPECIES_DUSKULL"
         },
         {
-            "level": 28,
+            "level": 17,
+            "species": "SPECIES_DUSKULL"
+        },
+        {
+            "level": 17,
+            "species": "SPECIES_CUBONE"
+        },
+        {
+            "level": 17,
+            "species": "SPECIES_CUBONE"
+        },
+        {
+            "level": 18,
+            "species": "SPECIES_BALTOY"
+        },
+        {
+            "level": 16,
+            "species": "SPECIES_BALTOY"
+        },
+        {
+            "level": 18,
             "species": "SPECIES_CHINGLING"
         },
         {
-            "level": 28,
-            "species": "SPECIES_DUSCLOPS"
+            "level": 18,
+            "species": "SPECIES_CHINGLING"
         },
         {
-            "level": 28,
-            "species": "SPECIES_CHIMECHO"
+            "level": 18,
+            "species": "SPECIES_CHINGLING"
+        },
+        {
+            "level": 18,
+            "species": "SPECIES_CHINGLING"
         }
     ],
     "swarms": [
-        "SPECIES_HAUNTER",
-        "SPECIES_BRONZOR"
+        "SPECIES_DUSKULL",
+        "SPECIES_DUSKULL"
     ],
     "day": [
-        "SPECIES_HAUNTER",
-        "SPECIES_GOLBAT"
+        "SPECIES_DUSKULL",
+        "SPECIES_DUSKULL"
     ],
     "night": [
-        "SPECIES_DUSCLOPS",
-        "SPECIES_GOLBAT"
+        "SPECIES_DUSKULL",
+        "SPECIES_DUSKULL"
     ],
     "radar": [
-        "SPECIES_HAUNTER",
-        "SPECIES_GOLBAT",
-        "SPECIES_DUSCLOPS",
-        "SPECIES_CHINGLING"
+        "SPECIES_DUSKULL",
+        "SPECIES_DUSKULL",
+        "SPECIES_DUSKULL",
+        "SPECIES_DUSKULL"
     ],
     "rate_form0": 100,
     "rate_form1": 100,
@@ -75,24 +75,24 @@
     "rate_form4": 0,
     "unown_table": 0,
     "ruby": [
-        "SPECIES_SOLROCK",
-        "SPECIES_SOLROCK"
+        "SPECIES_DUSKULL",
+        "SPECIES_DUSKULL"
     ],
     "sapphire": [
-        "SPECIES_LUNATONE",
-        "SPECIES_LUNATONE"
+        "SPECIES_DUSKULL",
+        "SPECIES_DUSKULL"
     ],
     "emerald": [
-        "SPECIES_DUSCLOPS",
-        "SPECIES_CHINGLING"
+        "SPECIES_DUSKULL",
+        "SPECIES_DUSKULL"
     ],
     "firered": [
-        "SPECIES_DUSCLOPS",
-        "SPECIES_CHINGLING"
+        "SPECIES_DUSKULL",
+        "SPECIES_DUSKULL"
     ],
     "leafgreen": [
-        "SPECIES_DUSCLOPS",
-        "SPECIES_CHINGLING"
+        "SPECIES_DUSKULL",
+        "SPECIES_DUSKULL"
     ],
     "surf_rate": 0,
     "surf_encounters": [

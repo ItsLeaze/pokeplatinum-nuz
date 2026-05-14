@@ -2,70 +2,70 @@
     "land_rate": 10,
     "land_encounters": [
         {
-            "level": 23,
-            "species": "SPECIES_GEODUDE"
-        },
-        {
-            "level": 22,
-            "species": "SPECIES_GEODUDE"
-        },
-        {
-            "level": 21,
-            "species": "SPECIES_GEODUDE"
-        },
-        {
-            "level": 23,
-            "species": "SPECIES_GEODUDE"
-        },
-        {
-            "level": 23,
-            "species": "SPECIES_GEODUDE"
-        },
-        {
-            "level": 23,
-            "species": "SPECIES_GEODUDE"
-        },
-        {
-            "level": 23,
-            "species": "SPECIES_GEODUDE"
-        },
-        {
-            "level": 23,
-            "species": "SPECIES_GEODUDE"
-        },
-        {
-            "level": 23,
-            "species": "SPECIES_GEODUDE"
-        },
-        {
-            "level": 22,
+            "level": 25,
             "species": "SPECIES_HIPPOPOTAS"
         },
         {
-            "level": 23,
-            "species": "SPECIES_GEODUDE"
+            "level": 26,
+            "species": "SPECIES_DIGLETT"
         },
         {
-            "level": 24,
+            "level": 25,
             "species": "SPECIES_HIPPOPOTAS"
+        },
+        {
+            "level": 26,
+            "species": "SPECIES_HIPPOPOTAS"
+        },
+        {
+            "level": 25,
+            "species": "SPECIES_HIPPOPOTAS"
+        },
+        {
+            "level": 26,
+            "species": "SPECIES_SANDSHREW"
+        },
+        {
+            "level": 25,
+            "species": "SPECIES_SANDSHREW"
+        },
+        {
+            "level": 26,
+            "species": "SPECIES_SANDSHREW"
+        },
+        {
+            "level": 25,
+            "species": "SPECIES_TRAPINCH"
+        },
+        {
+            "level": 26,
+            "species": "SPECIES_TRAPINCH"
+        },
+        {
+            "level": 25,
+            "species": "SPECIES_LARVITAR"
+        },
+        {
+            "level": 26,
+            "species": "SPECIES_LARVITAR"
         }
     ],
     "swarms": [
-        "SPECIES_GEODUDE",
-        "SPECIES_GEODUDE"
+        "SPECIES_HIPPOPOTAS",
+        "SPECIES_HIPPOPOTAS"
     ],
     "day": [
-        "SPECIES_GEODUDE",
-        "SPECIES_GEODUDE"
+        "SPECIES_HIPPOPOTAS",
+        "SPECIES_HIPPOPOTAS"
     ],
     "night": [
-        "SPECIES_GEODUDE",
-        "SPECIES_GEODUDE"
+        "SPECIES_HIPPOPOTAS",
+        "SPECIES_HIPPOPOTAS"
     ],
     "radar": [
-        "SPECIES_GEODUDE",
-        "SPECIES_GEODUDE",
-        "SPECIES_GEODUDE",
+        "SPECIES_HIPPOPOTAS",
+        "SPECIES_HIPPOPOTAS",
+        "SPECIES_HIPPOPOTAS",
         "SPECIES_HIPPOPOTAS"
     ],
     "rate_form0": 100,
@@ -75,23 +75,23 @@
     "rate_form4": 0,
     "unown_table": 0,
     "ruby": [
-        "SPECIES_GEODUDE",
+        "SPECIES_HIPPOPOTAS",
         "SPECIES_HIPPOPOTAS"
     ],
     "sapphire": [
-        "SPECIES_GEODUDE",
+        "SPECIES_HIPPOPOTAS",
         "SPECIES_HIPPOPOTAS"
     ],
     "emerald": [
-        "SPECIES_GEODUDE",
+        "SPECIES_HIPPOPOTAS",
         "SPECIES_HIPPOPOTAS"
     ],
     "firered": [
-        "SPECIES_GEODUDE",
+        "SPECIES_HIPPOPOTAS",
         "SPECIES_HIPPOPOTAS"
     ],
     "leafgreen": [
-        "SPECIES_GEODUDE",
+        "SPECIES_HIPPOPOTAS",
         "SPECIES_HIPPOPOTAS"
     ],
     "surf_rate": 0,

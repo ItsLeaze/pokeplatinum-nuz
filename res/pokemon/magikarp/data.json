@@ -44,7 +44,7 @@
     "evolutions": [
         [
             "EVO_LEVEL",
-            60,
+            50,
             "SPECIES_GYARADOS"
         ]
     ],
