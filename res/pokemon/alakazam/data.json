@@ -19,8 +19,8 @@
         "special_defense": 0
     },
     "held_items": {
-        "common": "ITEM_NONE",
-        "rare": "ITEM_TWISTEDSPOON"
+        "common": "ITEM_TWISTEDSPOON",
+        "rare": "ITEM_NONE"
     },
     "gender_ratio": "GENDER_RATIO_FEMALE_25",
     "hatch_cycles": 2,

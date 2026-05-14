@@ -19,7 +19,7 @@
         "special_defense": 0
     },
     "held_items": {
-        "common": "ITEM_NONE",
+        "common": "ITEM_PECHA_BERRY",
         "rare": "ITEM_SHED_SHELL"
     },
     "gender_ratio": "GENDER_RATIO_FEMALE_50",
