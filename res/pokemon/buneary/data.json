@@ -39,15 +39,21 @@
             [ 1, "MOVE_DEFENSE_CURL" ],
             [ 1, "MOVE_FORESIGHT" ],
             [ 6, "MOVE_ENDURE" ],
-            [ 13, "MOVE_FRUSTRATION" ],
-            [ 16, "MOVE_QUICK_ATTACK" ],
-            [ 23, "MOVE_JUMP_KICK" ],
-            [ 26, "MOVE_BATON_PASS" ],
-            [ 33, "MOVE_AGILITY" ],
-            [ 36, "MOVE_DIZZY_PUNCH" ],
-            [ 43, "MOVE_CHARM" ],
-            [ 46, "MOVE_BOUNCE" ],
-            [ 53, "MOVE_HEALING_WISH" ]
+            [ 9, "MOVE_QUICK_ATTACK" ],
+            [ 13, "MOVE_FAKE_TEARS" ],
+            [ 16, "MOVE_FAKE_OUT" ],
+            [ 19, "MOVE_BOUNCE" ],
+            [ 22, "MOVE_DOUBLE_KICK" ],
+            [ 25, "MOVE_HEALING_WISH" ],
+            [ 28, "MOVE_DIZZY_PUNCH" ],
+
+            [ 32, "MOVE_ICE_PUNCH" ],
+            [ 35, "MOVE_FLATTER" ],
+            [ 37, "MOVE_FIRE_PUNCH" ],
+            [ 39, "MOVE_DRAIN_PUNCH" ],
+            [ 42, "MOVE_THUNDER_PUNCH" ],
+            [ 48, "MOVE_AGILITY" ],
+            [ 55, "MOVE_GIGA_IMPACT" ]
         ],
         "by_tm": [
             "TM01",
@@ -87,24 +93,17 @@
         ],
         "by_tutor": [
             "MOVE_MUD_SLAP",
-            "MOVE_SNORE",
             "MOVE_HELPING_HAND",
-            "MOVE_ENDEAVOR",
             "MOVE_LAST_RESORT",
             "MOVE_BOUNCE",
-            "MOVE_SWIFT",
-            "MOVE_UPROAR"
+            "MOVE_SWIFT"
         ],
         "egg_moves": [
             "MOVE_FAKE_TEARS",
-            "MOVE_FAKE_OUT",
-            "MOVE_ENCORE",
             "MOVE_SWEET_KISS",
             "MOVE_DOUBLE_HIT",
             "MOVE_ATTRACT",
             "MOVE_LOW_KICK",
-            "MOVE_SKY_UPPERCUT",
-            "MOVE_SWITCHEROO",
             "MOVE_THUNDER_PUNCH",
             "MOVE_ICE_PUNCH",
             "MOVE_FIRE_PUNCH"

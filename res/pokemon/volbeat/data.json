@@ -4,7 +4,7 @@
         "attack": 90,
         "defense": 55,
         "speed": 85,
-        "special_attack": 50,
+        "special_attack": 60,
         "special_defense": 75
     },
     "types": [ "TYPE_BUG", "TYPE_BUG" ],
@@ -37,16 +37,22 @@
             [ 1, "MOVE_FLASH" ],
             [ 1, "MOVE_TACKLE" ],
             [ 5, "MOVE_DOUBLE_TEAM" ],
-            [ 9, "MOVE_CONFUSE_RAY" ],
-            [ 13, "MOVE_MOONLIGHT" ],
-            [ 17, "MOVE_QUICK_ATTACK" ],
-            [ 21, "MOVE_TAIL_GLOW" ],
-            [ 25, "MOVE_SIGNAL_BEAM" ],
-            [ 29, "MOVE_PROTECT" ],
-            [ 33, "MOVE_HELPING_HAND" ],
-            [ 37, "MOVE_ZEN_HEADBUTT" ],
-            [ 41, "MOVE_BUG_BUZZ" ],
-            [ 45, "MOVE_DOUBLE_EDGE" ]
+            [ 8, "MOVE_CONFUSE_RAY" ],
+            [ 11, "MOVE_HELPING_HAND" ],
+            [ 14, "MOVE_SIGNAL_BEAM" ],
+            [ 16, "MOVE_MOONLIGHT" ],
+            [ 19, "MOVE_QUICK_ATTACK" ],
+            [ 22, "MOVE_SPARK" ],
+            [ 25, "MOVE_BUG_BUZZ" ],
+            [ 28, "MOVE_ZEN_HEADBUTT" ],
+            [ 30, "MOVE_U_TURN" ],
+            [ 33, "MOVE_AERIAL_ACE" ],
+            [ 37, "MOVE_THUNDER_WAVE" ],
+            [ 42, "MOVE_MOONBLAST" ],
+            [ 48, "MOVE_THUNDER" ],
+            [ 55, "MOVE_DOUBLE_EDGE" ],
+            [ 65, "MOVE_SHADOW_BALL" ],
+            [ 70, "MOVE_TAIL_GLOW" ]
         ],
         "by_tm": [
             "TM01",
@@ -93,7 +99,6 @@
             "MOVE_THUNDER_PUNCH",
             "MOVE_ICE_PUNCH",
             "MOVE_OMINOUS_WIND",
-            "MOVE_SNORE",
             "MOVE_AIR_CUTTER",
             "MOVE_HELPING_HAND",
             "MOVE_SIGNAL_BEAM",
@@ -101,10 +106,7 @@
             "MOVE_SWIFT"
         ],
         "egg_moves": [
-            "MOVE_BATON_PASS",
             "MOVE_SILVER_WIND",
-            "MOVE_TRICK",
-            "MOVE_ENCORE",
             "MOVE_BUG_BUZZ"
         ]
     },

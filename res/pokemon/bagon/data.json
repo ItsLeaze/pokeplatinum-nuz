@@ -34,18 +34,25 @@
     "icon_palette": 2,
     "learnset": {
         "by_level": [
-            [ 1, "MOVE_RAGE" ],
+            [ 1, "MOVE_LEER" ],
+            [ 1, "MOVE_EMBER" ],
             [ 5, "MOVE_BITE" ],
-            [ 10, "MOVE_LEER" ],
-            [ 16, "MOVE_HEADBUTT" ],
-            [ 20, "MOVE_FOCUS_ENERGY" ],
-            [ 25, "MOVE_EMBER" ],
-            [ 31, "MOVE_DRAGON_BREATH" ],
-            [ 35, "MOVE_ZEN_HEADBUTT" ],
-            [ 40, "MOVE_SCARY_FACE" ],
-            [ 46, "MOVE_CRUNCH" ],
-            [ 50, "MOVE_DRAGON_CLAW" ],
-            [ 55, "MOVE_DOUBLE_EDGE" ]
+            [ 11, "MOVE_DEFENSE_CURL" ],
+            [ 15, "MOVE_FOCUS_ENERGY" ],
+            [ 19, "MOVE_DRAGON_BREATH" ],
+            [ 22, "MOVE_HEADBUTT" ],
+            [ 26, "MOVE_ZEN_HEADBUTT" ],
+            [ 29, "MOVE_SCARY_FACE" ],
+
+            [ 35, "MOVE_ROCK_TOMB" ],
+            [ 40, "MOVE_FLAMETHROWER" ],
+            [ 45, "MOVE_THRASH" ],
+            [ 50, "MOVE_ROCK_SLIDE" ],
+            [ 54, "MOVE_DRAGON_RUSH" ],
+            [ 57, "MOVE_OUTRAGE" ],
+
+            [ 60, "MOVE_DRAGON_CLAW" ],
+            [ 70, "MOVE_DOUBLE_EDGE" ]
         ],
         "by_tm": [
             "TM02",
@@ -83,7 +90,6 @@
         "by_tutor": [
             "MOVE_MUD_SLAP",
             "MOVE_FURY_CUTTER",
-            "MOVE_SNORE",
             "MOVE_OUTRAGE",
             "MOVE_ZEN_HEADBUTT",
             "MOVE_TWISTER"
@@ -93,7 +99,6 @@
             "MOVE_THRASH",
             "MOVE_DRAGON_RAGE",
             "MOVE_TWISTER",
-            "MOVE_DRAGON_DANCE",
             "MOVE_FIRE_FANG",
             "MOVE_SHADOW_CLAW",
             "MOVE_DRAGON_RUSH"

@@ -1,10 +1,10 @@
 {
     "base_stats": {
         "hp": 40,
-        "attack": 20,
+        "attack": 55,
         "defense": 30,
         "speed": 55,
-        "special_attack": 40,
+        "special_attack": 55,
         "special_defense": 80
     },
     "types": [ "TYPE_BUG", "TYPE_FLYING" ],
@@ -36,17 +36,15 @@
         "by_level": [
             [ 1, "MOVE_TACKLE" ],
             [ 6, "MOVE_SUPERSONIC" ],
-            [ 9, "MOVE_COMET_PUNCH" ],
-            [ 14, "MOVE_LIGHT_SCREEN" ],
-            [ 14, "MOVE_REFLECT" ],
-            [ 14, "MOVE_SAFEGUARD" ],
-            [ 17, "MOVE_MACH_PUNCH" ],
-            [ 22, "MOVE_BATON_PASS" ],
-            [ 25, "MOVE_SILVER_WIND" ],
+            [ 9, "MOVE_SAFEGUARD" ],
+            [ 12, "MOVE_SWIFT" ],
+            [ 15, "MOVE_BUG_BITE" ],
+            [ 17, "MOVE_LIGHT_SCREEN" ],
+            [ 17, "MOVE_REFLECT" ],
+            [ 26, "MOVE_BUG_BUZZ" ],
             [ 30, "MOVE_AGILITY" ],
-            [ 33, "MOVE_SWIFT" ],
             [ 38, "MOVE_DOUBLE_EDGE" ],
-            [ 41, "MOVE_BUG_BUZZ" ]
+            [ 45, "MOVE_BATON_PASS" ]
         ],
         "by_tm": [
             "TM01",
@@ -89,11 +87,9 @@
             "MOVE_THUNDER_PUNCH",
             "MOVE_ICE_PUNCH",
             "MOVE_OMINOUS_WIND",
-            "MOVE_SNORE",
             "MOVE_AIR_CUTTER",
             "MOVE_KNOCK_OFF",
-            "MOVE_SWIFT",
-            "MOVE_UPROAR"
+            "MOVE_SWIFT"
         ],
         "egg_moves": [
             "MOVE_PSYBEAM",
@@ -101,7 +97,6 @@
             "MOVE_SILVER_WIND",
             "MOVE_BUG_BUZZ",
             "MOVE_SCREECH",
-            "MOVE_ENCORE",
             "MOVE_KNOCK_OFF",
             "MOVE_BUG_BITE"
         ]

@@ -1,7 +1,7 @@
 {
     "base_stats": {
         "hp": 65,
-        "attack": 80,
+        "attack": 85,
         "defense": 140,
         "speed": 70,
         "special_attack": 40,
@@ -41,13 +41,17 @@
             [ 12, "MOVE_AGILITY" ],
             [ 17, "MOVE_FURY_ATTACK" ],
             [ 20, "MOVE_FEINT" ],
-            [ 23, "MOVE_AIR_CUTTER" ],
-            [ 28, "MOVE_SPIKES" ],
+            [ 23, "MOVE_AIR_SLASH" ],
             [ 31, "MOVE_METAL_SOUND" ],
-            [ 34, "MOVE_STEEL_WING" ],
-            [ 39, "MOVE_AIR_SLASH" ],
             [ 42, "MOVE_SLASH" ],
-            [ 45, "MOVE_NIGHT_SLASH" ]
+            [ 34, "MOVE_STEEL_WING" ],
+            [ 39, "MOVE_AERIAL_ACE" ],
+            [ 45, "MOVE_ROCK_TOMB" ],
+            [ 49, "MOVE_NIGHT_SLASH" ],
+            [ 55, "MOVE_DRILL_PECK" ],
+            [ 59, "MOVE_ROCK_SLIDE" ],
+            [ 66, "MOVE_IRON_HEAD" ],
+            [ 73, "MOVE_BRAVE_BIRD" ]
         ],
         "by_tm": [
             "TM05",
@@ -95,10 +99,8 @@
             "MOVE_FURY_CUTTER",
             "MOVE_ICY_WIND",
             "MOVE_OMINOUS_WIND",
-            "MOVE_SNORE",
             "MOVE_AIR_CUTTER",
             "MOVE_TWISTER",
-            "MOVE_IRON_DEFENSE",
             "MOVE_SWIFT"
         ],
         "egg_moves": [
@@ -106,7 +108,6 @@
             "MOVE_PURSUIT",
             "MOVE_WHIRLWIND",
             "MOVE_SKY_ATTACK",
-            "MOVE_CURSE",
             "MOVE_BRAVE_BIRD",
             "MOVE_ASSURANCE"
         ]

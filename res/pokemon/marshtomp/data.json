@@ -36,19 +36,25 @@
         "by_level": [
             [ 1, "MOVE_TACKLE" ],
             [ 1, "MOVE_GROWL" ],
-            [ 1, "MOVE_MUD_SLAP" ],
-            [ 1, "MOVE_WATER_GUN" ],
-            [ 6, "MOVE_MUD_SLAP" ],
+            [ 5, "MOVE_MUD_SLAP" ],
             [ 10, "MOVE_WATER_GUN" ],
             [ 15, "MOVE_BIDE" ],
+
             [ 16, "MOVE_MUD_SHOT" ],
-            [ 20, "MOVE_FORESIGHT" ],
+            [ 19, "MOVE_ROLLOUT" ],
+            [ 21, "MOVE_ICE_BALL" ],
             [ 25, "MOVE_MUD_BOMB" ],
-            [ 31, "MOVE_TAKE_DOWN" ],
-            [ 37, "MOVE_MUDDY_WATER" ],
-            [ 42, "MOVE_PROTECT" ],
-            [ 46, "MOVE_EARTHQUAKE" ],
-            [ 53, "MOVE_ENDEAVOR" ]
+            [ 28, "MOVE_TAKE_DOWN" ],
+            [ 31, "MOVE_MUDDY_WATER" ],
+            [ 34, "MOVE_BULLDOZE" ],
+
+            [ 38, "MOVE_ROCK_TOMB" ],
+            [ 42, "MOVE_EARTHQUAKE" ],
+            [ 46, "MOVE_ENDEAVOR" ],
+            [ 50, "MOVE_HAMMER_ARM" ],
+            [ 56, "MOVE_STONE_EDGE" ],
+            [ 60, "MOVE_AVALANCHE" ],
+            [ 66, "MOVE_GIGA_IMPACT" ]
         ],
         "by_tm": [
             "TM03",
@@ -93,10 +99,8 @@
             "MOVE_SUPERPOWER",
             "MOVE_ICE_PUNCH",
             "MOVE_AQUA_TAIL",
-            "MOVE_SNORE",
             "MOVE_ENDEAVOR",
-            "MOVE_ANCIENT_POWER",
-            "MOVE_EARTH_POWER"
+            "MOVE_ANCIENT_POWER"
         ]
     },
     "evolutions": [

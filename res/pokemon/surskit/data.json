@@ -1,11 +1,11 @@
 {
     "base_stats": {
         "hp": 40,
-        "attack": 30,
-        "defense": 32,
+        "attack": 40,
+        "defense": 35,
         "speed": 65,
-        "special_attack": 50,
-        "special_defense": 52
+        "special_attack": 60,
+        "special_defense": 55
     },
     "types": [ "TYPE_BUG", "TYPE_WATER" ],
     "catch_rate": 200,
@@ -36,13 +36,13 @@
         "by_level": [
             [ 1, "MOVE_BUBBLE" ],
             [ 7, "MOVE_QUICK_ATTACK" ],
-            [ 13, "MOVE_SWEET_SCENT" ],
-            [ 19, "MOVE_WATER_SPORT" ],
+            [ 12, "MOVE_BUG_BITE" ],
+            [ 16, "MOVE_SWEET_SCENT" ],
             [ 25, "MOVE_BUBBLE_BEAM" ],
-            [ 31, "MOVE_AGILITY" ],
-            [ 37, "MOVE_MIST" ],
+            [ 30, "MOVE_AGILITY" ],
+            [ 33, "MOVE_MIST" ],
             [ 37, "MOVE_HAZE" ],
-            [ 43, "MOVE_BATON_PASS" ]
+            [ 42, "MOVE_HYDRO_PUMP" ]
         ],
         "by_tm": [
             "TM03",

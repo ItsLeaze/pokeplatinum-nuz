@@ -2,7 +2,7 @@
     "base_stats": {
         "hp": 95,
         "attack": 70,
-        "defense": 85,
+        "defense": 80,
         "speed": 95,
         "special_attack": 95,
         "special_defense": 95
@@ -34,26 +34,25 @@
     "icon_palette": 2,
     "learnset": {
         "by_level": [
-            [ 1, "MOVE_HEADBUTT" ],
             [ 1, "MOVE_GROWL" ],
-            [ 1, "MOVE_SIGNAL_BEAM" ],
-            [ 1, "MOVE_ICY_WIND" ],
-            [ 3, "MOVE_GROWL" ],
-            [ 7, "MOVE_SIGNAL_BEAM" ],
-            [ 11, "MOVE_ICY_WIND" ],
-            [ 13, "MOVE_ENCORE" ],
-            [ 17, "MOVE_ICE_SHARD" ],
-            [ 21, "MOVE_REST" ],
-            [ 23, "MOVE_AQUA_RING" ],
-            [ 27, "MOVE_AURORA_BEAM" ],
-            [ 31, "MOVE_AQUA_JET" ],
-            [ 33, "MOVE_BRINE" ],
-            [ 34, "MOVE_SHEER_COLD" ],
-            [ 37, "MOVE_TAKE_DOWN" ],
-            [ 41, "MOVE_DIVE" ],
-            [ 43, "MOVE_AQUA_TAIL" ],
-            [ 47, "MOVE_ICE_BEAM" ],
-            [ 51, "MOVE_SAFEGUARD" ]
+            [ 1, "MOVE_HEADBUTT" ],
+            [ 8, "MOVE_ICY_WIND" ],
+            [ 11, "MOVE_BRINE" ],
+            [ 13, "MOVE_TAKE_DOWN" ],
+            [ 15, "MOVE_HAIL" ],
+            [ 18, "MOVE_LICK" ],
+            [ 21, "MOVE_AQUA_RING" ],
+            [ 24, "MOVE_AQUA_JET" ],
+
+            [ 26, "MOVE_AURORA_BEAM" ],
+            [ 29, "MOVE_DIVE" ],
+            [ 33, "MOVE_ICE_SHARD" ],
+            [ 37, "MOVE_BUBBLE_BEAM" ],
+            [ 40, "MOVE_SAFEGUARD" ],
+            [ 43, "MOVE_SIGNAL_BEAM" ],
+            [ 48, "MOVE_REST" ],
+            [ 55, "MOVE_ICE_BEAM" ],
+            [ 63, "MOVE_DISABLE" ]
         ],
         "by_tm": [
             "TM03",
@@ -91,7 +90,6 @@
             "MOVE_DIVE",
             "MOVE_ICY_WIND",
             "MOVE_AQUA_TAIL",
-            "MOVE_SNORE",
             "MOVE_SIGNAL_BEAM"
         ]
     },

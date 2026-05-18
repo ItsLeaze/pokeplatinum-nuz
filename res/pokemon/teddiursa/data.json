@@ -34,20 +34,23 @@
     "icon_palette": 0,
     "learnset": {
         "by_level": [
-            [ 1, "MOVE_COVET" ],
             [ 1, "MOVE_SCRATCH" ],
             [ 1, "MOVE_LEER" ],
-            [ 1, "MOVE_LICK" ],
             [ 1, "MOVE_FAKE_TEARS" ],
-            [ 8, "MOVE_FURY_SWIPES" ],
-            [ 15, "MOVE_FAINT_ATTACK" ],
-            [ 22, "MOVE_SWEET_SCENT" ],
-            [ 29, "MOVE_SLASH" ],
-            [ 36, "MOVE_CHARM" ],
-            [ 43, "MOVE_REST" ],
-            [ 43, "MOVE_SNORE" ],
-            [ 50, "MOVE_THRASH" ],
-            [ 57, "MOVE_FLING" ]
+            [ 5, "MOVE_LICK" ],
+            [ 10, "MOVE_FURY_SWIPES" ],
+            [ 13, "MOVE_YAWN" ],
+            [ 16, "MOVE_FAINT_ATTACK" ],
+            [ 18, "MOVE_SWEET_SCENT" ],
+            [ 21, "MOVE_SLASH" ],
+            [ 25, "MOVE_SNORE" ],
+            [ 28, "MOVE_PLAY_ROUGH" ],
+            
+            [ 37, "MOVE_REST" ],
+            [ 45, "MOVE_SNORE" ],
+            [ 52, "MOVE_THRASH" ],
+            [ 56, "MOVE_PAYBACK" ],
+            [ 67, "MOVE_DOUBLE_EDGE" ]
         ],
         "by_tm": [
             "TM01",
@@ -96,7 +99,6 @@
             "MOVE_FIRE_PUNCH",
             "MOVE_SUPERPOWER",
             "MOVE_ICE_PUNCH",
-            "MOVE_SNORE",
             "MOVE_GUNK_SHOT",
             "MOVE_SEED_BOMB",
             "MOVE_LAST_RESORT",
@@ -106,14 +108,9 @@
             "MOVE_CRUNCH",
             "MOVE_TAKE_DOWN",
             "MOVE_SEISMIC_TOSS",
-            "MOVE_COUNTER",
             "MOVE_METAL_CLAW",
-            "MOVE_FAKE_TEARS",
-            "MOVE_YAWN",
             "MOVE_SLEEP_TALK",
             "MOVE_CROSS_CHOP",
-            "MOVE_DOUBLE_EDGE",
-            "MOVE_CLOSE_COMBAT",
             "MOVE_NIGHT_SLASH"
         ]
     },

@@ -2,10 +2,10 @@
     "base_stats": {
         "hp": 50,
         "attack": 85,
-        "defense": 40,
+        "defense": 50,
         "speed": 35,
         "special_attack": 85,
-        "special_defense": 40
+        "special_defense": 50
     },
     "types": [ "TYPE_GRASS", "TYPE_GRASS" ],
     "catch_rate": 190,
@@ -34,22 +34,26 @@
     "icon_palette": 1,
     "learnset": {
         "by_level": [
-            [ 1, "MOVE_POISON_STING" ],
             [ 1, "MOVE_LEER" ],
-            [ 5, "MOVE_ABSORB" ],
-            [ 9, "MOVE_GROWTH" ],
-            [ 13, "MOVE_LEECH_SEED" ],
-            [ 17, "MOVE_SAND_ATTACK" ],
-            [ 21, "MOVE_PIN_MISSILE" ],
-            [ 25, "MOVE_INGRAIN" ],
-            [ 29, "MOVE_FAINT_ATTACK" ],
-            [ 33, "MOVE_SPIKES" ],
-            [ 37, "MOVE_SUCKER_PUNCH" ],
-            [ 41, "MOVE_PAYBACK" ],
-            [ 45, "MOVE_NEEDLE_ARM" ],
-            [ 49, "MOVE_COTTON_SPORE" ],
-            [ 53, "MOVE_SANDSTORM" ],
-            [ 57, "MOVE_DESTINY_BOND" ]
+            [ 1, "MOVE_POISON_STING" ],
+            [ 8, "MOVE_SAND_ATTACK" ],
+            [ 13, "MOVE_COTTON_SPORE" ],
+            [ 16, "MOVE_INGRAIN" ],
+            [ 19, "MOVE_FAINT_ATTACK" ],
+            [ 23, "MOVE_SANDSTORM" ],
+            [ 26, "MOVE_ABSORB" ],
+            
+            [ 31, "MOVE_NEEDLE_ARM" ],
+            [ 33, "MOVE_PAYBACK" ],
+            [ 36, "MOVE_POISON_JAB" ],
+            [ 38, "MOVE_ENERGY_BALL" ],
+            [ 41, "MOVE_DRAIN_PUNCH" ],
+            [ 44, "MOVE_DARK_PULSE" ],
+            [ 47, "MOVE_PIN_MISSILE" ],
+            [ 50, "MOVE_SUCKER_PUNCH" ],
+            [ 54, "MOVE_LEECH_SEED" ],
+            [ 59, "MOVE_BULLET_SEED" ],
+            [ 67, "MOVE_SPIKES" ]
         ],
         "by_tm": [
             "TM01",
@@ -90,9 +94,7 @@
             "MOVE_MUD_SLAP",
             "MOVE_FURY_CUTTER",
             "MOVE_THUNDER_PUNCH",
-            "MOVE_SNORE",
             "MOVE_SPITE",
-            "MOVE_SYNTHESIS",
             "MOVE_SEED_BOMB",
             "MOVE_SUCKER_PUNCH"
         ],

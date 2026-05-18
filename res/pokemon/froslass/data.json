@@ -1,11 +1,11 @@
 {
     "base_stats": {
-        "hp": 75,
-        "attack": 85,
-        "defense": 75,
+        "hp": 70,
+        "attack": 80,
+        "defense": 70,
         "speed": 110,
         "special_attack": 115,
-        "special_defense": 75
+        "special_defense": 70
     },
     "types": [ "TYPE_ICE", "TYPE_GHOST" ],
     "catch_rate": 75,
@@ -34,21 +34,26 @@
     "icon_palette": 2,
     "learnset": {
         "by_level": [
-            [ 1, "MOVE_POWDER_SNOW" ],
             [ 1, "MOVE_LEER" ],
-            [ 1, "MOVE_DOUBLE_TEAM" ],
-            [ 1, "MOVE_ASTONISH" ],
-            [ 4, "MOVE_DOUBLE_TEAM" ],
-            [ 10, "MOVE_ASTONISH" ],
-            [ 13, "MOVE_ICY_WIND" ],
-            [ 19, "MOVE_CONFUSE_RAY" ],
-            [ 22, "MOVE_OMINOUS_WIND" ],
-            [ 28, "MOVE_WAKE_UP_SLAP" ],
-            [ 31, "MOVE_CAPTIVATE" ],
-            [ 37, "MOVE_ICE_SHARD" ],
-            [ 40, "MOVE_HAIL" ],
-            [ 51, "MOVE_BLIZZARD" ],
-            [ 59, "MOVE_DESTINY_BOND" ]
+            [ 1, "MOVE_POWDER_SNOW" ],
+            [ 10, "MOVE_BITE" ],
+            [ 16, "MOVE_DOUBLE_TEAM" ],
+            [ 21, "MOVE_FAKE_TEARS" ],
+            [ 25, "MOVE_ICY_WIND" ],
+            [ 29, "MOVE_HEADBUTT" ],
+            [ 33, "MOVE_HAIL" ],
+            [ 38, "MOVE_BLOCK" ],
+
+            [ 40, "MOVE_OMINOUS_WIND" ],
+            [ 43, "MOVE_ICE_BEAM" ],
+            [ 46, "MOVE_SPITE" ],
+            [ 48, "MOVE_CONFUSE_RAY" ],
+            [ 50, "MOVE_WEATHER_BALL" ],
+            [ 54, "MOVE_SHADOW_BALL" ],
+            [ 59, "MOVE_BLIZZARD" ],
+            [ 66, "MOVE_DRAINING_KISS" ],
+            [ 70, "MOVE_ICE_SHARD" ],
+            [ 76, "MOVE_DREAM_EATER" ]
         ],
         "by_tm": [
             "TM03",
@@ -96,13 +101,10 @@
         "by_tutor": [
             "MOVE_MUD_SLAP",
             "MOVE_ICY_WIND",
-            "MOVE_ROLLOUT",
             "MOVE_ICE_PUNCH",
             "MOVE_OMINOUS_WIND",
-            "MOVE_SNORE",
             "MOVE_SPITE",
             "MOVE_SIGNAL_BEAM",
-            "MOVE_TRICK",
             "MOVE_SUCKER_PUNCH"
         ]
     },

@@ -1,7 +1,7 @@
 {
     "base_stats": {
         "hp": 70,
-        "attack": 100,
+        "attack": 90,
         "defense": 40,
         "speed": 100,
         "special_attack": 45,
@@ -34,18 +34,19 @@
     "icon_palette": 2,
     "learnset": {
         "by_level": [
-            [ 1, "MOVE_FURY_ATTACK" ],
-            [ 10, "MOVE_FURY_ATTACK" ],
-            [ 13, "MOVE_FOCUS_ENERGY" ],
-            [ 16, "MOVE_TWINEEDLE" ],
-            [ 19, "MOVE_RAGE" ],
-            [ 22, "MOVE_PURSUIT" ],
-            [ 25, "MOVE_TOXIC_SPIKES" ],
-            [ 28, "MOVE_PIN_MISSILE" ],
-            [ 31, "MOVE_AGILITY" ],
+            [ 1, "MOVE_POISON_STING" ],
+            [ 10, "MOVE_POISON_STING" ],
+            [ 18, "MOVE_TWINEEDLE" ],
+            [ 20, "MOVE_PURSUIT" ],
+            [ 22, "MOVE_CROSS_POISON" ],
+            [ 26, "MOVE_LEECH_LIFE" ],
+            [ 30, "MOVE_POISON_JAB" ],
             [ 34, "MOVE_ASSURANCE" ],
-            [ 37, "MOVE_POISON_JAB" ],
-            [ 40, "MOVE_ENDEAVOR" ]
+            [ 38, "MOVE_FOCUS_ENERGY" ],
+            [ 42, "MOVE_PIN_MISSILE" ],
+            [ 48, "MOVE_AGILITY" ],
+            [ 54, "MOVE_KNOCK_OFF" ],
+            [ 58, "MOVE_U_TURN" ]
         ],
         "by_tm": [
             "TM06",
@@ -89,10 +90,8 @@
         "by_tutor": [
             "MOVE_FURY_CUTTER",
             "MOVE_OMINOUS_WIND",
-            "MOVE_SNORE",
             "MOVE_AIR_CUTTER",
             "MOVE_ENDEAVOR",
-            "MOVE_KNOCK_OFF",
             "MOVE_SWIFT"
         ]
     },

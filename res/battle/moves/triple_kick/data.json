@@ -2,7 +2,7 @@
     "name": "Triple Kick",
     "class": "CLASS_PHYSICAL",
     "type": "TYPE_FIGHTING",
-    "power": 20,
+    "power": 30,
     "accuracy": 95,
     "pp": 10,
     "effect": {

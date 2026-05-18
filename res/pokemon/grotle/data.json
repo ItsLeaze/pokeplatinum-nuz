@@ -1,10 +1,10 @@
 {
     "base_stats": {
         "hp": 75,
-        "attack": 89,
+        "attack": 90,
         "defense": 85,
         "speed": 36,
-        "special_attack": 55,
+        "special_attack": 60,
         "special_defense": 65
     },
     "types": [ "TYPE_GRASS", "TYPE_GROUND" ],
@@ -36,17 +36,20 @@
         "by_level": [
             [ 1, "MOVE_TACKLE" ],
             [ 1, "MOVE_WITHDRAW" ],
-            [ 5, "MOVE_WITHDRAW" ],
-            [ 9, "MOVE_ABSORB" ],
+            [ 5, "MOVE_MEGA_DRAIN" ],
+            [ 10, "MOVE_BITE" ],
             [ 13, "MOVE_RAZOR_LEAF" ],
-            [ 17, "MOVE_CURSE" ],
-            [ 22, "MOVE_BITE" ],
-            [ 27, "MOVE_MEGA_DRAIN" ],
-            [ 32, "MOVE_LEECH_SEED" ],
-            [ 37, "MOVE_SYNTHESIS" ],
-            [ 42, "MOVE_CRUNCH" ],
-            [ 47, "MOVE_GIGA_DRAIN" ],
-            [ 52, "MOVE_LEAF_STORM" ]
+            [ 15, "MOVE_WORRY_SEED" ],
+            [ 18, "MOVE_BULLDOZE" ],
+            [ 21, "MOVE_BULLET_SEED" ],
+            [ 25, "MOVE_CRUNCH" ],
+            [ 28, "MOVE_SEED_BOMB" ],
+            [ 33, "MOVE_EARTHQUAKE" ],
+            [ 36, "MOVE_GIGA_DRAIN" ],
+            [ 39, "MOVE_LEAF_STORM" ],
+            [ 42, "MOVE_THRASH" ],
+            [ 46, "MOVE_SYNTHESIS" ],
+            [ 50, "MOVE_DOUBLE_EDGE" ]
         ],
         "by_tm": [
             "TM06",

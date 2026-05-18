@@ -34,24 +34,26 @@
     "icon_palette": 2,
     "learnset": {
         "by_level": [
-            [ 1, "MOVE_ANCIENT_POWER" ],
+            [ 1, "MOVE_TACKLE" ],
             [ 1, "MOVE_ODOR_SLEUTH" ],
-            [ 1, "MOVE_MUD_SPORT" ],
-            [ 1, "MOVE_POWDER_SNOW" ],
-            [ 4, "MOVE_MUD_SPORT" ],
-            [ 8, "MOVE_POWDER_SNOW" ],
-            [ 13, "MOVE_MUD_SLAP" ],
-            [ 16, "MOVE_ENDURE" ],
-            [ 20, "MOVE_MUD_BOMB" ],
-            [ 25, "MOVE_ICY_WIND" ],
-            [ 28, "MOVE_ICE_FANG" ],
-            [ 32, "MOVE_TAKE_DOWN" ],
-            [ 33, "MOVE_FURY_ATTACK" ],
-            [ 38, "MOVE_ANCIENT_POWER" ],
-            [ 45, "MOVE_EARTHQUAKE" ],
-            [ 52, "MOVE_MIST" ],
-            [ 56, "MOVE_BLIZZARD" ],
-            [ 65, "MOVE_AMNESIA" ]
+            [ 8, "MOVE_ENDURE" ],
+            [ 13, "MOVE_POWDER_SNOW" ],
+            [ 17, "MOVE_MUD_SLAP" ],
+            [ 21, "MOVE_ICY_WIND" ],
+
+            [ 24, "MOVE_MUD_BOMB" ],
+            [ 28, "MOVE_TAKE_DOWN" ],
+            [ 32, "MOVE_ICE_SHARD" ],
+            [ 37, "MOVE_BULLDOZE" ],
+            [ 40, "MOVE_ANCIENT_POWER" ],
+
+            [ 41, "MOVE_BLIZZARD" ],
+            [ 43, "MOVE_EARTHQUAKE" ],
+            [ 46, "MOVE_ICICLE_SPEAR" ],
+            [ 48, "MOVE_MIST" ],
+            [ 53, "MOVE_AVALANCE" ],
+            [ 58, "MOVE_THRASH" ],
+            [ 65, "MOVE_STONE_EDGE" ]
         ],
         "by_tm": [
             "TM05",
@@ -94,7 +96,6 @@
             "MOVE_MUD_SLAP",
             "MOVE_ICY_WIND",
             "MOVE_SUPERPOWER",
-            "MOVE_SNORE",
             "MOVE_ENDEAVOR",
             "MOVE_ANCIENT_POWER",
             "MOVE_EARTH_POWER"

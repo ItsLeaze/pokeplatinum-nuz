@@ -115,7 +115,6 @@
             "MOVE_THUNDER_PUNCH",
             "MOVE_FIRE_PUNCH",
             "MOVE_ICE_PUNCH",
-            "MOVE_SNORE",
             "MOVE_HELPING_HAND",
             "MOVE_ENDEAVOR",
             "MOVE_ZEN_HEADBUTT",
@@ -124,7 +123,6 @@
         "egg_moves": [
             "MOVE_PRESENT",
             "MOVE_METRONOME",
-            "MOVE_HEAL_BELL",
             "MOVE_AROMATHERAPY",
             "MOVE_SUBSTITUTE",
             "MOVE_COUNTER",

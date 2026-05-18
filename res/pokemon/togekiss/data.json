@@ -1,7 +1,7 @@
 {
     "base_stats": {
         "hp": 85,
-        "attack": 50,
+        "attack": 75,
         "defense": 95,
         "speed": 80,
         "special_attack": 120,
@@ -27,17 +27,35 @@
     "base_friendship": 70,
     "exp_rate": "EXP_RATE_FAST",
     "egg_groups": [ "EGG_GROUP_FLYING", "EGG_GROUP_FAIRY" ],
-    "abilities": [ "ABILITY_SUPER_LUCK", "ABILITY_SERENE_GRACE" ],
+    "abilities": [ "ABILITY_SERENE_GRACE", "ABILITY_NONE" ],
     "safari_flee_rate": 0,
     "body_color": "MON_COLOR_WHITE",
     "flip_sprite": true,
     "icon_palette": 2,
     "learnset": {
         "by_level": [
-            [ 1, "MOVE_SKY_ATTACK" ],
-            [ 1, "MOVE_EXTREME_SPEED" ],
-            [ 1, "MOVE_AURA_SPHERE" ],
-            [ 1, "MOVE_AIR_SLASH" ]
+            [ 1, "MOVE_GROWL" ],
+            [ 1, "MOVE_METRONOME" ],
+            [ 8, "MOVE_SWEET_KISS" ],
+            [ 13, "MOVE_YAWN" ],
+            [ 16, "MOVE_DISARMING_VOICE" ],
+            [ 19, "MOVE_FOLLOW_ME" ],
+            [ 22, "MOVE_ANCIENT_POWER" ],
+
+            [ 24, "MOVE_AIR_CUTTER" ],
+            [ 27, "MOVE_SAFEGUARD" ],
+            [ 30, "MOVE_DAZZLING_GLEAM" ],
+            [ 33, "MOVE_LAST_RESORT" ],
+            [ 37, "MOVE_PSYCHO_SHIFT" ],
+            [ 43, "MOVE_EXTRASENSORY" ],
+
+            [ 48, "MOVE_SKY_ATTACK" ],
+            [ 53, "MOVE_DOUBLE_EDGE" ],
+            [ 56, "MOVE_AIR_SLASH" ],
+            [ 60, "MOVE_AURA_SPHERE" ],
+            [ 66, "MOVE_EXTREME_SPEED" ],
+            [ 72, "MOVE_MOONBLAST" ],
+            [ 80, "MOVE_WISH" ]
         ],
         "by_tm": [
             "TM01",
@@ -92,15 +110,12 @@
             "MOVE_MUD_SLAP",
             "MOVE_ROLLOUT",
             "MOVE_OMINOUS_WIND",
-            "MOVE_SNORE",
             "MOVE_AIR_CUTTER",
-            "MOVE_ENDEAVOR",
             "MOVE_ANCIENT_POWER",
             "MOVE_SIGNAL_BEAM",
             "MOVE_ZEN_HEADBUTT",
             "MOVE_TWISTER",
             "MOVE_LAST_RESORT",
-            "MOVE_TRICK",
             "MOVE_HEAT_WAVE",
             "MOVE_SWIFT"
         ]

@@ -1,6 +1,6 @@
 {
     "base_stats": {
-        "hp": 35,
+        "hp": 40,
         "attack": 70,
         "defense": 55,
         "speed": 25,
@@ -35,15 +35,19 @@
     "learnset": {
         "by_level": [
             [ 1, "MOVE_SCRATCH" ],
-            [ 6, "MOVE_STUN_SPORE" ],
-            [ 6, "MOVE_POISON_POWDER" ],
-            [ 11, "MOVE_LEECH_LIFE" ],
-            [ 17, "MOVE_SPORE" ],
-            [ 22, "MOVE_SLASH" ],
-            [ 27, "MOVE_GROWTH" ],
-            [ 33, "MOVE_GIGA_DRAIN" ],
-            [ 38, "MOVE_AROMATHERAPY" ],
-            [ 43, "MOVE_X_SCISSOR" ]
+            [ 5, "MOVE_MEGA_DRAIN" ],
+            [ 10, "MOVE_STUN_SPORE" ],
+            [ 10, "MOVE_POISON_POWDER" ],
+            [ 16, "MOVE_LEECH_LIFE" ],
+            [ 18, "MOVE_SLASH" ],
+            [ 22, "MOVE_BULLET_SEED" ],
+            [ 25, "MOVE_GIGA_DRAIN" ],
+            [ 26, "MOVE_SPORE" ],
+            [ 28, "MOVE_DIG" ],
+            [ 30, "MOVE_CROSS_POISON" ],
+            [ 33, "MOVE_GROWTH" ],
+            [ 35, "MOVE_X_SCISSOR" ],
+            [ 38, "MOVE_AROMATHERAPY" ]
         ],
         "by_tm": [
             "TM06",
@@ -82,7 +86,6 @@
         ],
         "by_tutor": [
             "MOVE_FURY_CUTTER",
-            "MOVE_SNORE",
             "MOVE_SYNTHESIS",
             "MOVE_SEED_BOMB",
             "MOVE_KNOCK_OFF"
@@ -90,7 +93,6 @@
         "egg_moves": [
             "MOVE_FALSE_SWIPE",
             "MOVE_SCREECH",
-            "MOVE_COUNTER",
             "MOVE_PSYBEAM",
             "MOVE_FLAIL",
             "MOVE_SWEET_SCENT",

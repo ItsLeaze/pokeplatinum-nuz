@@ -1,0 +1,750 @@
+
+===================================================
+SIMULATIONS: 1000
+LOCATIONS: 46
+TOTAL POKEMON EVO LINES: 250
+===================================================
+
+OVERALL ENCOUNTER COUNTS
+------------------------
+SPECIES_GEODUDE                740 ( 74.00%)
+SPECIES_BUIZEL                 720 ( 72.00%)
+SPECIES_ZUBAT                  706 ( 70.60%)
+SPECIES_SNOVER                 703 ( 70.30%)
+SPECIES_SNORUNT                683 ( 68.30%)
+SPECIES_SWINUB                 641 ( 64.10%)
+SPECIES_LUVDISC                640 ( 64.00%)
+SPECIES_MANTYKE                604 ( 60.40%)
+SPECIES_SEEL                   596 ( 59.60%)
+SPECIES_LOTAD                  575 ( 57.50%)
+SPECIES_SHELLOS                557 ( 55.70%)
+SPECIES_PONYTA                 549 ( 54.90%)
+SPECIES_RATTATA                536 ( 53.60%)
+SPECIES_ONIX                   534 ( 53.40%)
+SPECIES_FINNEON                533 ( 53.30%)
+SPECIES_SHINX                  529 ( 52.90%)
+SPECIES_HOUNDOUR               522 ( 52.20%)
+SPECIES_ARON                   512 ( 51.20%)
+SPECIES_RHYHORN                506 ( 50.60%)
+SPECIES_SNEASEL                506 ( 50.60%)
+SPECIES_HIPPOPOTAS             503 ( 50.30%)
+SPECIES_BIDOOF                 490 ( 49.00%)
+SPECIES_MAKUHITA               490 ( 49.00%)
+SPECIES_AZURILL                481 ( 48.10%)
+SPECIES_MURKROW                473 ( 47.30%)
+SPECIES_SKORUPI                472 ( 47.20%)
+SPECIES_STARLY                 453 ( 45.30%)
+SPECIES_MEDITITE               452 ( 45.20%)
+SPECIES_CHINGLING              451 ( 45.10%)
+SPECIES_WINGULL                448 ( 44.80%)
+SPECIES_WOOPER                 447 ( 44.70%)
+SPECIES_CLEFFA                 443 ( 44.30%)
+SPECIES_CROAGUNK               440 ( 44.00%)
+SPECIES_REMORAID               437 ( 43.70%)
+SPECIES_MAGBY                  427 ( 42.70%)
+SPECIES_ELEKID                 424 ( 42.40%)
+SPECIES_MUDKIP                 421 ( 42.10%)
+SPECIES_POOCHYENA              418 ( 41.80%)
+SPECIES_GOLDEEN                415 ( 41.50%)
+SPECIES_PSYDUCK                407 ( 40.70%)
+SPECIES_TANGELA                406 ( 40.60%)
+SPECIES_PICHU                  404 ( 40.40%)
+SPECIES_KRABBY                 393 ( 39.30%)
+SPECIES_SPINARAK               390 ( 39.00%)
+SPECIES_DUSKULL                377 ( 37.70%)
+SPECIES_HOOTHOOT               376 ( 37.60%)
+SPECIES_MACHOP                 373 ( 37.30%)
+SPECIES_BELLSPROUT             367 ( 36.70%)
+SPECIES_TROPIUS                365 ( 36.50%)
+SPECIES_SLUGMA                 363 ( 36.30%)
+SPECIES_BUDEW                  362 ( 36.20%)
+SPECIES_PIDGEY                 358 ( 35.80%)
+SPECIES_PARAS                  356 ( 35.60%)
+SPECIES_MANKEY                 352 ( 35.20%)
+SPECIES_BUNEARY                349 ( 34.90%)
+SPECIES_NATU                   344 ( 34.40%)
+SPECIES_WHISMUR                344 ( 34.40%)
+SPECIES_DIGLETT                333 ( 33.30%)
+SPECIES_STARYU                 330 ( 33.00%)
+SPECIES_CATERPIE               326 ( 32.60%)
+SPECIES_KOFFING                319 ( 31.90%)
+SPECIES_PINSIR                 317 ( 31.70%)
+SPECIES_NINCADA                312 ( 31.20%)
+SPECIES_SANDSHREW              309 ( 30.90%)
+SPECIES_PHANPY                 308 ( 30.80%)
+SPECIES_BALTOY                 305 ( 30.50%)
+SPECIES_SKARMORY               303 ( 30.30%)
+SPECIES_AIPOM                  302 ( 30.20%)
+SPECIES_RALTS                  296 ( 29.60%)
+SPECIES_NIDORAN_F              295 ( 29.50%)
+SPECIES_BRONZOR                289 ( 28.90%)
+SPECIES_ABRA                   287 ( 28.70%)
+SPECIES_VULPIX                 287 ( 28.70%)
+SPECIES_CACNEA                 286 ( 28.60%)
+SPECIES_CUBONE                 286 ( 28.60%)
+SPECIES_LICKITUNG              281 ( 28.10%)
+SPECIES_MISDREAVUS             281 ( 28.10%)
+SPECIES_KRICKETOT              279 ( 27.90%)
+SPECIES_ZANGOOSE               277 ( 27.70%)
+SPECIES_POLIWAG                273 ( 27.30%)
+SPECIES_HOPPIP                 272 ( 27.20%)
+SPECIES_NIDORAN_M              269 ( 26.90%)
+SPECIES_SURSKIT                264 ( 26.40%)
+SPECIES_NOSEPASS               259 ( 25.90%)
+SPECIES_SKITTY                 256 ( 25.60%)
+SPECIES_SLAKOTH                256 ( 25.60%)
+SPECIES_DODUO                  255 ( 25.50%)
+SPECIES_KANGASKHAN             250 ( 25.00%)
+SPECIES_ODDISH                 249 ( 24.90%)
+SPECIES_IGGLYBUFF              248 ( 24.80%)
+SPECIES_VOLTORB                248 ( 24.80%)
+SPECIES_MAREEP                 243 ( 24.30%)
+SPECIES_TAILLOW                241 ( 24.10%)
+SPECIES_SHROOMISH              228 ( 22.80%)
+SPECIES_SWABLU                 227 ( 22.70%)
+SPECIES_NUMEL                  220 ( 22.00%)
+SPECIES_YANMA                  209 ( 20.90%)
+SPECIES_GULPIN                 208 ( 20.80%)
+SPECIES_GROWLITHE              207 ( 20.70%)
+SPECIES_SPOINK                 206 ( 20.60%)
+SPECIES_CARVANHA               205 ( 20.50%)
+SPECIES_VENONAT                204 ( 20.40%)
+SPECIES_ZIGZAGOON              203 ( 20.30%)
+SPECIES_CLAMPERL               194 ( 19.40%)
+SPECIES_SENTRET                194 ( 19.40%)
+SPECIES_SUNKERN                193 ( 19.30%)
+SPECIES_CHINCHOU               191 ( 19.10%)
+SPECIES_CARNIVINE              186 ( 18.60%)
+SPECIES_SHUPPET                186 ( 18.60%)
+SPECIES_TRAPINCH               185 ( 18.50%)
+SPECIES_CHIKORITA              183 ( 18.30%)
+SPECIES_MEOWTH                 183 ( 18.30%)
+SPECIES_KECLEON                176 ( 17.60%)
+SPECIES_DELIBIRD               172 ( 17.20%)
+SPECIES_PACHIRISU              171 ( 17.10%)
+SPECIES_MAGNEMITE              170 ( 17.00%)
+SPECIES_TAUROS                 167 ( 16.70%)
+SPECIES_SCYTHER                166 ( 16.60%)
+SPECIES_SLOWPOKE               164 ( 16.40%)
+SPECIES_TEDDIURSA              163 ( 16.30%)
+SPECIES_TENTACOOL              151 ( 15.10%)
+SPECIES_ABSOL                  146 ( 14.60%)
+SPECIES_MAGIKARP               144 ( 14.40%)
+SPECIES_EXEGGCUTE              142 ( 14.20%)
+SPECIES_LARVITAR               142 ( 14.20%)
+SPECIES_SMOOCHUM               136 ( 13.60%)
+SPECIES_BAGON                  135 ( 13.50%)
+SPECIES_TREECKO                133 ( 13.30%)
+SPECIES_GLIGAR                 131 ( 13.10%)
+SPECIES_WAILMER                131 ( 13.10%)
+SPECIES_BARBOACH               126 ( 12.60%)
+SPECIES_BELDUM                 126 ( 12.60%)
+SPECIES_GASTLY                 114 ( 11.40%)
+SPECIES_EKANS                  113 ( 11.30%)
+SPECIES_DRIFLOON               110 ( 11.00%)
+SPECIES_GIBLE                  104 ( 10.40%)
+SPECIES_DROWZEE                103 ( 10.30%)
+SPECIES_SPEAROW                 99 (  9.90%)
+SPECIES_CYNDAQUIL               98 (  9.80%)
+SPECIES_WURMPLE                 96 (  9.60%)
+SPECIES_BURMY                   88 (  8.80%)
+SPECIES_RELICANTH               87 (  8.70%)
+SPECIES_CORPHISH                86 (  8.60%)
+SPECIES_TOTODILE                81 (  8.10%)
+SPECIES_MAWILE                  80 (  8.00%)
+SPECIES_MIME_JR                 68 (  6.80%)
+SPECIES_LUNATONE                61 (  6.10%)
+SPECIES_BONSLY                  59 (  5.90%)
+SPECIES_SOLROCK                 54 (  5.40%)
+SPECIES_TORCHIC                 38 (  3.80%)
+SPECIES_FEEBAS                  37 (  3.70%)
+SPECIES_TORKOAL                 36 (  3.60%)
+SPECIES_CORSOLA                 34 (  3.40%)
+SPECIES_DRATINI                 32 (  3.20%)
+SPECIES_STANTLER                28 (  2.80%)
+SPECIES_SPHEAL                  27 (  2.70%)
+SPECIES_HORSEA                  26 (  2.60%)
+SPECIES_SQUIRTLE                22 (  2.20%)
+SPECIES_WEEDLE                  21 (  2.10%)
+SPECIES_AERODACTYL              13 (  1.30%)
+SPECIES_TURTWIG                  9 (  0.90%)
+SPECIES_BULBASAUR                8 (  0.80%)
+SPECIES_FARFETCHD                7 (  0.70%)
+SPECIES_LAPRAS                   3 (  0.30%)
+
+===================================================
+PER-LOCATION STATS
+===================================================
+
+encounters_route_201.json
+-------------------------
+SPECIES_BIDOOF                 219 ( 21.90%)
+SPECIES_HOPPIP                 205 ( 20.50%)
+SPECIES_KRICKETOT              189 ( 18.90%)
+SPECIES_CATERPIE               183 ( 18.30%)
+SPECIES_PIDGEY                 115 ( 11.50%)
+SPECIES_TANGELA                 66 (  6.60%)
+SPECIES_BELLSPROUT              23 (  2.30%)
+
+encounters_lake_verity_low_water.json
+-------------------------------------
+SPECIES_SURSKIT                233 ( 23.30%)
+SPECIES_NINCADA                222 ( 22.20%)
+SPECIES_SENTRET                194 ( 19.40%)
+SPECIES_BIDOOF                 164 ( 16.40%)
+SPECIES_CATERPIE                86 (  8.60%)
+SPECIES_ODDISH                  82 (  8.20%)
+SPECIES_YANMA                   19 (  1.90%)
+
+encounters_route_202.json
+-------------------------
+SPECIES_RATTATA                212 ( 21.20%)
+SPECIES_ZIGZAGOON              203 ( 20.30%)
+SPECIES_PIDGEY                 164 ( 16.40%)
+SPECIES_SHINX                  125 ( 12.50%)
+SPECIES_SPEAROW                 99 (  9.90%)
+SPECIES_KRICKETOT               90 (  9.00%)
+SPECIES_BURMY                   88 (  8.80%)
+SPECIES_TEDDIURSA               19 (  1.90%)
+
+encounters_route_203.json
+-------------------------
+SPECIES_SKITTY                 256 ( 25.60%)
+SPECIES_MEOWTH                 183 ( 18.30%)
+SPECIES_STARLY                 173 ( 17.30%)
+SPECIES_DELIBIRD                90 (  9.00%)
+SPECIES_RALTS                   82 (  8.20%)
+SPECIES_ABRA                    76 (  7.60%)
+SPECIES_FINNEON                 73 (  7.30%)
+SPECIES_REMORAID                41 (  4.10%)
+SPECIES_MUDKIP                  15 (  1.50%)
+SPECIES_SURSKIT                  5 (  0.50%)
+SPECIES_KRABBY                   3 (  0.30%)
+SPECIES_WOOPER                   3 (  0.30%)
+
+encounters_twinleaf_town.json
+-----------------------------
+SPECIES_LUVDISC                614 ( 61.40%)
+SPECIES_FINNEON                271 ( 27.10%)
+SPECIES_AZURILL                 54 (  5.40%)
+SPECIES_GOLDEEN                 50 (  5.00%)
+SPECIES_CORSOLA                 11 (  1.10%)
+
+encounters_oreburgh_gate_1f.json
+--------------------------------
+SPECIES_SLUGMA                 207 ( 20.70%)
+SPECIES_ZUBAT                  207 ( 20.70%)
+SPECIES_MACHOP                 198 ( 19.80%)
+SPECIES_PARAS                  189 ( 18.90%)
+SPECIES_SANDSHREW               93 (  9.30%)
+SPECIES_DIGLETT                 84 (  8.40%)
+SPECIES_SOLROCK                 13 (  1.30%)
+SPECIES_LUNATONE                 9 (  0.90%)
+
+encounters_route_207.json
+-------------------------
+SPECIES_MAKUHITA               227 ( 22.70%)
+SPECIES_SPOINK                 206 ( 20.60%)
+SPECIES_MANKEY                 200 ( 20.00%)
+SPECIES_MACHOP                 175 ( 17.50%)
+SPECIES_PONYTA                  97 (  9.70%)
+SPECIES_PHANPY                  81 (  8.10%)
+SPECIES_KECLEON                 14 (  1.40%)
+
+encounters_oreburgh_mine_b1f.json
+---------------------------------
+SPECIES_GEODUDE                412 ( 41.20%)
+SPECIES_ZUBAT                  166 ( 16.60%)
+SPECIES_WHISMUR                108 ( 10.80%)
+SPECIES_DIGLETT                 89 (  8.90%)
+SPECIES_BALTOY                  59 (  5.90%)
+SPECIES_LUNATONE                52 (  5.20%)
+SPECIES_NOSEPASS                46 (  4.60%)
+SPECIES_SOLROCK                 41 (  4.10%)
+SPECIES_ONIX                    27 (  2.70%)
+
+encounters_route_204_south.json
+-------------------------------
+SPECIES_BUDEW                  205 ( 20.50%)
+SPECIES_SUNKERN                193 ( 19.30%)
+SPECIES_ODDISH                 167 ( 16.70%)
+SPECIES_DELIBIRD                82 (  8.20%)
+SPECIES_GOLDEEN                 81 (  8.10%)
+SPECIES_TANGELA                 81 (  8.10%)
+SPECIES_TEDDIURSA               66 (  6.60%)
+SPECIES_CATERPIE                57 (  5.70%)
+SPECIES_SURSKIT                 26 (  2.60%)
+SPECIES_WEEDLE                  21 (  2.10%)
+SPECIES_KRABBY                  14 (  1.40%)
+SPECIES_CORSOLA                  6 (  0.60%)
+SPECIES_CORPHISH                 1 (  0.10%)
+
+encounters_ravaged_path.json
+----------------------------
+SPECIES_NUMEL                  220 ( 22.00%)
+SPECIES_PSYDUCK                185 ( 18.50%)
+SPECIES_SLUGMA                 156 ( 15.60%)
+SPECIES_ZUBAT                  114 ( 11.40%)
+SPECIES_NOSEPASS                98 (  9.80%)
+SPECIES_REMORAID                84 (  8.40%)
+SPECIES_RHYHORN                 77 (  7.70%)
+SPECIES_AZURILL                 32 (  3.20%)
+SPECIES_TRAPINCH                17 (  1.70%)
+SPECIES_POLIWAG                  9 (  0.90%)
+SPECIES_RELICANTH                6 (  0.60%)
+SPECIES_CLAMPERL                 2 (  0.20%)
+
+encounters_valley_windworks_outside.json
+----------------------------------------
+SPECIES_BUNEARY                196 ( 19.60%)
+SPECIES_PACHIRISU              171 ( 17.10%)
+SPECIES_SHINX                  146 ( 14.60%)
+SPECIES_DODUO                   98 (  9.80%)
+SPECIES_REMORAID                88 (  8.80%)
+SPECIES_PIDGEY                  79 (  7.90%)
+SPECIES_VOLTORB                 77 (  7.70%)
+SPECIES_HOPPIP                  67 (  6.70%)
+SPECIES_AZURILL                 38 (  3.80%)
+SPECIES_MAREEP                  16 (  1.60%)
+SPECIES_CHINCHOU                12 (  1.20%)
+SPECIES_CORPHISH                12 (  1.20%)
+
+encounters_route_205_south.json
+-------------------------------
+SPECIES_SLAKOTH                218 ( 21.80%)
+SPECIES_KECLEON                162 ( 16.20%)
+SPECIES_NIDORAN_F               98 (  9.80%)
+SPECIES_ELEKID                  95 (  9.50%)
+SPECIES_MAGBY                   90 (  9.00%)
+SPECIES_MANKEY                  85 (  8.50%)
+SPECIES_NIDORAN_M               81 (  8.10%)
+SPECIES_REMORAID                56 (  5.60%)
+SPECIES_MAKUHITA                54 (  5.40%)
+SPECIES_KRABBY                  43 (  4.30%)
+SPECIES_FARFETCHD                7 (  0.70%)
+SPECIES_BARBOACH                 6 (  0.60%)
+SPECIES_CORPHISH                 5 (  0.50%)
+
+encounters_eterna_forest.json
+-----------------------------
+SPECIES_VENONAT                204 ( 20.40%)
+SPECIES_SPINARAK               200 ( 20.00%)
+SPECIES_PARAS                  167 ( 16.70%)
+SPECIES_SHROOMISH              122 ( 12.20%)
+SPECIES_WURMPLE                 96 (  9.60%)
+SPECIES_NATU                    93 (  9.30%)
+SPECIES_NINCADA                 90 (  9.00%)
+SPECIES_STANTLER                28 (  2.80%)
+
+encounters_route_211_west.json
+------------------------------
+SPECIES_CHINGLING              218 ( 21.80%)
+SPECIES_POOCHYENA              202 ( 20.20%)
+SPECIES_MEDITITE               198 ( 19.80%)
+SPECIES_DROWZEE                103 ( 10.30%)
+SPECIES_NATU                    91 (  9.10%)
+SPECIES_HOOTHOOT                90 (  9.00%)
+SPECIES_MURKROW                 77 (  7.70%)
+SPECIES_HOUNDOUR                21 (  2.10%)
+
+encounters_mt_coronet_1f_north_room_1.json
+------------------------------------------
+SPECIES_CLEFFA                 248 ( 24.80%)
+SPECIES_GEODUDE                145 ( 14.50%)
+SPECIES_ZUBAT                  125 ( 12.50%)
+SPECIES_CUBONE                 120 ( 12.00%)
+SPECIES_SWINUB                 118 ( 11.80%)
+SPECIES_NOSEPASS               115 ( 11.50%)
+SPECIES_ARON                   106 ( 10.60%)
+SPECIES_BRONZOR                 23 (  2.30%)
+
+encounters_old_chateau_back_east_room.json
+------------------------------------------
+SPECIES_MURKROW                209 ( 20.90%)
+SPECIES_CHINGLING              208 ( 20.80%)
+SPECIES_SPINARAK               190 ( 19.00%)
+SPECIES_RATTATA                180 ( 18.00%)
+SPECIES_HOOTHOOT               108 ( 10.80%)
+SPECIES_POOCHYENA               76 (  7.60%)
+SPECIES_HOUNDOUR                29 (  2.90%)
+
+encounters_route_206.json
+-------------------------
+SPECIES_PICHU                  234 ( 23.40%)
+SPECIES_LICKITUNG              200 ( 20.00%)
+SPECIES_HOUNDOUR               181 ( 18.10%)
+SPECIES_PONYTA                 173 ( 17.30%)
+SPECIES_ZANGOOSE                93 (  9.30%)
+SPECIES_CACNEA                  89 (  8.90%)
+SPECIES_GLIGAR                  30 (  3.00%)
+
+encounters_wayward_cave_1f.json
+-------------------------------
+SPECIES_SKORUPI                273 ( 27.30%)
+SPECIES_WHISMUR                236 ( 23.60%)
+SPECIES_ONIX                   151 ( 15.10%)
+SPECIES_KOFFING                112 ( 11.20%)
+SPECIES_GEODUDE                 98 (  9.80%)
+SPECIES_ZUBAT                   94 (  9.40%)
+SPECIES_TORKOAL                 36 (  3.60%)
+
+encounters_route_208.json
+-------------------------
+SPECIES_HOOTHOOT               178 ( 17.80%)
+SPECIES_NATU                   160 ( 16.00%)
+SPECIES_POOCHYENA              140 ( 14.00%)
+SPECIES_EKANS                  113 ( 11.30%)
+SPECIES_TAILLOW                 98 (  9.80%)
+SPECIES_RALTS                   93 (  9.30%)
+SPECIES_MURKROW                 75 (  7.50%)
+SPECIES_GOLDEEN                 59 (  5.90%)
+SPECIES_KRABBY                  59 (  5.90%)
+SPECIES_PINSIR                  18 (  1.80%)
+SPECIES_BARBOACH                 7 (  0.70%)
+
+encounters_route_209.json
+-------------------------
+SPECIES_CACNEA                 197 ( 19.70%)
+SPECIES_NIDORAN_F              197 ( 19.70%)
+SPECIES_NIDORAN_M              188 ( 18.80%)
+SPECIES_MURKROW                112 ( 11.20%)
+SPECIES_LICKITUNG               81 (  8.10%)
+SPECIES_RALTS                   69 (  6.90%)
+SPECIES_KRABBY                  66 (  6.60%)
+SPECIES_REMORAID                58 (  5.80%)
+SPECIES_GROWLITHE               17 (  1.70%)
+SPECIES_CARVANHA                15 (  1.50%)
+
+encounters_route_209_lost_tower_1f.json
+---------------------------------------
+SPECIES_BALTOY                 246 ( 24.60%)
+SPECIES_KOFFING                207 ( 20.70%)
+SPECIES_CUBONE                 166 ( 16.60%)
+SPECIES_RATTATA                144 ( 14.40%)
+SPECIES_GASTLY                 114 ( 11.40%)
+SPECIES_DUSKULL                104 ( 10.40%)
+SPECIES_VULPIX                  19 (  1.90%)
+
+encounters_route_210_south.json
+-------------------------------
+SPECIES_MAGBY                  209 ( 20.90%)
+SPECIES_ELEKID                 200 ( 20.00%)
+SPECIES_TANGELA                192 ( 19.20%)
+SPECIES_ZANGOOSE               184 ( 18.40%)
+SPECIES_PINSIR                 109 ( 10.90%)
+SPECIES_TAUROS                  86 (  8.60%)
+SPECIES_SCYTHER                 20 (  2.00%)
+
+encounters_route_215.json
+-------------------------
+SPECIES_POLIWAG                212 ( 21.20%)
+SPECIES_AZURILL                182 ( 18.20%)
+SPECIES_STARLY                 180 ( 18.00%)
+SPECIES_SWABLU                 132 ( 13.20%)
+SPECIES_SHROOMISH              106 ( 10.60%)
+SPECIES_CROAGUNK                99 (  9.90%)
+SPECIES_MANKEY                  67 (  6.70%)
+SPECIES_SQUIRTLE                22 (  2.20%)
+
+encounters_route_214.json
+-------------------------
+SPECIES_RHYHORN                205 ( 20.50%)
+SPECIES_HOUNDOUR               165 ( 16.50%)
+SPECIES_PONYTA                 158 ( 15.80%)
+SPECIES_BUNEARY                153 ( 15.30%)
+SPECIES_VULPIX                 101 ( 10.10%)
+SPECIES_TAUROS                  81 (  8.10%)
+SPECIES_RELICANTH               64 (  6.40%)
+SPECIES_BARBOACH                44 (  4.40%)
+SPECIES_CARNIVINE               22 (  2.20%)
+SPECIES_CARVANHA                 7 (  0.70%)
+
+encounters_maniac_tunnel.json
+-----------------------------
+SPECIES_HIPPOPOTAS             503 ( 50.30%)
+SPECIES_SANDSHREW              216 ( 21.60%)
+SPECIES_DIGLETT                160 ( 16.00%)
+SPECIES_TRAPINCH                93 (  9.30%)
+SPECIES_LARVITAR                28 (  2.80%)
+
+encounters_valor_lakefront.json
+-------------------------------
+SPECIES_AIPOM                  251 ( 25.10%)
+SPECIES_PHANPY                 227 ( 22.70%)
+SPECIES_SHINX                  151 ( 15.10%)
+SPECIES_PONYTA                 121 ( 12.10%)
+SPECIES_ABSOL                  115 ( 11.50%)
+SPECIES_DRIFLOON               110 ( 11.00%)
+SPECIES_CHIKORITA               25 (  2.50%)
+
+encounters_route_213.json
+-------------------------
+SPECIES_WINGULL                194 ( 19.40%)
+SPECIES_BUIZEL                 190 ( 19.00%)
+SPECIES_SHELLOS                190 ( 19.00%)
+SPECIES_DODUO                  157 ( 15.70%)
+SPECIES_TRAPINCH                75 (  7.50%)
+SPECIES_MAREEP                  64 (  6.40%)
+SPECIES_GOLDEEN                 57 (  5.70%)
+SPECIES_KRABBY                  38 (  3.80%)
+SPECIES_MANTYKE                 17 (  1.70%)
+SPECIES_TOTODILE                16 (  1.60%)
+SPECIES_HORSEA                   2 (  0.20%)
+
+encounters_great_marsh_1.json
+-----------------------------
+SPECIES_WOOPER                 335 ( 33.50%)
+SPECIES_MUDKIP                 200 ( 20.00%)
+SPECIES_YANMA                  190 ( 19.00%)
+SPECIES_BIDOOF                 107 ( 10.70%)
+SPECIES_TROPIUS                 73 (  7.30%)
+SPECIES_SKORUPI                 60 (  6.00%)
+SPECIES_CARNIVINE               22 (  2.20%)
+SPECIES_BARBOACH                13 (  1.30%)
+
+encounters_route_212_south.json
+-------------------------------
+SPECIES_CROAGUNK               218 ( 21.80%)
+SPECIES_GULPIN                 208 ( 20.80%)
+SPECIES_BELLSPROUT             194 ( 19.40%)
+SPECIES_WOOPER                 109 ( 10.90%)
+SPECIES_TANGELA                 67 (  6.70%)
+SPECIES_REMORAID                61 (  6.10%)
+SPECIES_KRABBY                  53 (  5.30%)
+SPECIES_AIPOM                   51 (  5.10%)
+SPECIES_DRATINI                 25 (  2.50%)
+SPECIES_CARVANHA                14 (  1.40%)
+
+encounters_trophy_garden.json
+-----------------------------
+SPECIES_IGGLYBUFF              248 ( 24.80%)
+SPECIES_PICHU                  170 ( 17.00%)
+SPECIES_AZURILL                167 ( 16.70%)
+SPECIES_SMOOCHUM               136 ( 13.60%)
+SPECIES_CLEFFA                  88 (  8.80%)
+SPECIES_MIME_JR                 68 (  6.80%)
+SPECIES_BONSLY                  59 (  5.90%)
+SPECIES_BUDEW                   39 (  3.90%)
+SPECIES_CHINGLING               25 (  2.50%)
+
+encounters_fuego_ironworks_outside.json
+---------------------------------------
+SPECIES_GROWLITHE              190 ( 19.00%)
+SPECIES_VULPIX                 167 ( 16.70%)
+SPECIES_MAGBY                  128 ( 12.80%)
+SPECIES_HOUNDOUR               126 ( 12.60%)
+SPECIES_MAGNEMITE               88 (  8.80%)
+SPECIES_CORPHISH                59 (  5.90%)
+SPECIES_SHELLOS                 54 (  5.40%)
+SPECIES_CYNDAQUIL               48 (  4.80%)
+SPECIES_CLAMPERL                39 (  3.90%)
+SPECIES_TENTACOOL               39 (  3.90%)
+SPECIES_TORCHIC                 38 (  3.80%)
+SPECIES_CHINCHOU                17 (  1.70%)
+SPECIES_HORSEA                   7 (  0.70%)
+
+encounters_route_219.json
+-------------------------
+SPECIES_BUIZEL                 476 ( 47.60%)
+SPECIES_SHELLOS                268 ( 26.80%)
+SPECIES_FINNEON                 60 (  6.00%)
+SPECIES_TAILLOW                 57 (  5.70%)
+SPECIES_GOLDEEN                 53 (  5.30%)
+SPECIES_SLOWPOKE                52 (  5.20%)
+SPECIES_LUVDISC                 16 (  1.60%)
+SPECIES_HORSEA                  10 (  1.00%)
+SPECIES_AZURILL                  8 (  0.80%)
+
+encounters_route_220.json
+-------------------------
+SPECIES_LOTAD                  575 ( 57.50%)
+SPECIES_WINGULL                214 ( 21.40%)
+SPECIES_CARVANHA                56 (  5.60%)
+SPECIES_KRABBY                  53 (  5.30%)
+SPECIES_TAILLOW                 45 (  4.50%)
+SPECIES_TENTACOOL               30 (  3.00%)
+SPECIES_CHINCHOU                11 (  1.10%)
+SPECIES_MAGIKARP                 9 (  0.90%)
+SPECIES_STARYU                   7 (  0.70%)
+
+encounters_route_221.json
+-------------------------
+SPECIES_TROPIUS                169 ( 16.90%)
+SPECIES_SCYTHER                146 ( 14.60%)
+SPECIES_CARNIVINE              142 ( 14.20%)
+SPECIES_EXEGGCUTE              142 ( 14.20%)
+SPECIES_KANGASKHAN              78 (  7.80%)
+SPECIES_TENTACOOL               73 (  7.30%)
+SPECIES_KRABBY                  64 (  6.40%)
+SPECIES_CHIKORITA               44 (  4.40%)
+SPECIES_TREECKO                 43 (  4.30%)
+SPECIES_POLIWAG                 42 (  4.20%)
+SPECIES_TAILLOW                 30 (  3.00%)
+SPECIES_CARVANHA                11 (  1.10%)
+SPECIES_MAGIKARP                 9 (  0.90%)
+SPECIES_FEEBAS                   4 (  0.40%)
+SPECIES_STARYU                   2 (  0.20%)
+SPECIES_LAPRAS                   1 (  0.10%)
+
+encounters_route_218.json
+-------------------------
+SPECIES_ABRA                   211 ( 21.10%)
+SPECIES_MUDKIP                 164 ( 16.40%)
+SPECIES_SKORUPI                139 ( 13.90%)
+SPECIES_GLIGAR                 101 ( 10.10%)
+SPECIES_WAILMER                 61 (  6.10%)
+SPECIES_BUIZEL                  54 (  5.40%)
+SPECIES_RALTS                   52 (  5.20%)
+SPECIES_FINNEON                 49 (  4.90%)
+SPECIES_REMORAID                49 (  4.90%)
+SPECIES_SHELLOS                 45 (  4.50%)
+SPECIES_MISDREAVUS              26 (  2.60%)
+SPECIES_CORSOLA                 17 (  1.70%)
+SPECIES_LUVDISC                 10 (  1.00%)
+SPECIES_TENTACOOL                9 (  0.90%)
+SPECIES_SLOWPOKE                 7 (  0.70%)
+SPECIES_HORSEA                   4 (  0.40%)
+SPECIES_BARBOACH                 2 (  0.20%)
+
+encounters_iron_island_1f.json
+------------------------------
+SPECIES_BRONZOR                266 ( 26.60%)
+SPECIES_ARON                   233 ( 23.30%)
+SPECIES_ONIX                   193 ( 19.30%)
+SPECIES_SKARMORY               123 ( 12.30%)
+SPECIES_GEODUDE                 85 (  8.50%)
+SPECIES_RHYHORN                 76 (  7.60%)
+SPECIES_MAWILE                  24 (  2.40%)
+
+encounters_lake_valor.json
+--------------------------
+SPECIES_PINSIR                 190 ( 19.00%)
+SPECIES_PSYDUCK                177 ( 17.70%)
+SPECIES_CROAGUNK               123 ( 12.30%)
+SPECIES_GOLDEEN                115 ( 11.50%)
+SPECIES_SLOWPOKE               105 ( 10.50%)
+SPECIES_STARLY                 100 ( 10.00%)
+SPECIES_FINNEON                 80 (  8.00%)
+SPECIES_MUDKIP                  42 (  4.20%)
+SPECIES_CHIKORITA               19 (  1.90%)
+SPECIES_RELICANTH               17 (  1.70%)
+SPECIES_BARBOACH                15 (  1.50%)
+SPECIES_POLIWAG                 10 (  1.00%)
+SPECIES_CORPHISH                 4 (  0.40%)
+SPECIES_HORSEA                   3 (  0.30%)
+
+encounters_route_216.json
+-------------------------
+SPECIES_SNOVER                 394 ( 39.40%)
+SPECIES_SNORUNT                243 ( 24.30%)
+SPECIES_SWINUB                 155 ( 15.50%)
+SPECIES_SNEASEL                110 ( 11.00%)
+SPECIES_TEDDIURSA               78 (  7.80%)
+SPECIES_ABSOL                   20 (  2.00%)
+
+encounters_route_217.json
+-------------------------
+SPECIES_SNORUNT                207 ( 20.70%)
+SPECIES_MEDITITE               201 ( 20.10%)
+SPECIES_SNEASEL                198 ( 19.80%)
+SPECIES_SWINUB                 186 ( 18.60%)
+SPECIES_SNOVER                 159 ( 15.90%)
+SPECIES_SLAKOTH                 38 (  3.80%)
+SPECIES_ABSOL                   11 (  1.10%)
+
+encounters_acuity_lakefront.json
+--------------------------------
+SPECIES_MAKUHITA               209 ( 20.90%)
+SPECIES_SWINUB                 182 ( 18.20%)
+SPECIES_SNORUNT                161 ( 16.10%)
+SPECIES_DUSKULL                153 ( 15.30%)
+SPECIES_SNOVER                 150 ( 15.00%)
+SPECIES_SNEASEL                 96 (  9.60%)
+SPECIES_SKARMORY                49 (  4.90%)
+
+encounters_lake_acuity.json
+---------------------------
+SPECIES_SEEL                   596 ( 59.60%)
+SPECIES_SNEASEL                102 ( 10.20%)
+SPECIES_SKARMORY                84 (  8.40%)
+SPECIES_SNORUNT                 72 (  7.20%)
+SPECIES_MEDITITE                53 (  5.30%)
+SPECIES_BARBOACH                32 (  3.20%)
+SPECIES_SPHEAL                  27 (  2.70%)
+SPECIES_MAWILE                  19 (  1.90%)
+SPECIES_STARYU                   7 (  0.70%)
+SPECIES_CORPHISH                 5 (  0.50%)
+SPECIES_LAPRAS                   2 (  0.20%)
+SPECIES_WAILMER                  1 (  0.10%)
+
+encounters_sendoff_spring.json
+------------------------------
+SPECIES_MISDREAVUS             255 ( 25.50%)
+SPECIES_SHUPPET                186 ( 18.60%)
+SPECIES_CLAMPERL               120 ( 12.00%)
+SPECIES_DUSKULL                120 ( 12.00%)
+SPECIES_CLEFFA                 107 ( 10.70%)
+SPECIES_SWABLU                  88 (  8.80%)
+SPECIES_SKARMORY                47 (  4.70%)
+SPECIES_PSYDUCK                 45 (  4.50%)
+SPECIES_AERODACTYL              13 (  1.30%)
+SPECIES_STARYU                   7 (  0.70%)
+SPECIES_MAGIKARP                 6 (  0.60%)
+SPECIES_DRATINI                  3 (  0.30%)
+SPECIES_FEEBAS                   3 (  0.30%)
+
+encounters_route_222.json
+-------------------------
+SPECIES_VOLTORB                171 ( 17.10%)
+SPECIES_MAREEP                 163 ( 16.30%)
+SPECIES_ELEKID                 129 ( 12.90%)
+SPECIES_SHINX                  107 ( 10.70%)
+SPECIES_CHINCHOU                83 (  8.30%)
+SPECIES_MAGNEMITE               82 (  8.20%)
+SPECIES_TOTODILE                55 (  5.50%)
+SPECIES_STARYU                  52 (  5.20%)
+SPECIES_CYNDAQUIL               50 (  5.00%)
+SPECIES_MAGIKARP                48 (  4.80%)
+SPECIES_WINGULL                 40 (  4.00%)
+SPECIES_TAILLOW                 11 (  1.10%)
+SPECIES_FEEBAS                   9 (  0.90%)
+
+encounters_route_223.json
+-------------------------
+SPECIES_MANTYKE                560 ( 56.00%)
+SPECIES_STARYU                 255 ( 25.50%)
+SPECIES_CARVANHA               102 ( 10.20%)
+SPECIES_CHINCHOU                68 (  6.80%)
+SPECIES_FEEBAS                   8 (  0.80%)
+SPECIES_SWABLU                   7 (  0.70%)
+
+encounters_route_224.json
+-------------------------
+SPECIES_KANGASKHAN             172 ( 17.20%)
+SPECIES_BELLSPROUT             150 ( 15.00%)
+SPECIES_TROPIUS                123 ( 12.30%)
+SPECIES_BUDEW                  118 ( 11.80%)
+SPECIES_CHIKORITA               95 (  9.50%)
+SPECIES_TREECKO                 90 (  9.00%)
+SPECIES_MAGIKARP                72 (  7.20%)
+SPECIES_WAILMER                 69 (  6.90%)
+SPECIES_CLAMPERL                33 (  3.30%)
+SPECIES_MANTYKE                 27 (  2.70%)
+SPECIES_FEEBAS                  13 (  1.30%)
+SPECIES_TOTODILE                10 (  1.00%)
+SPECIES_TURTWIG                  9 (  0.90%)
+SPECIES_BULBASAUR                8 (  0.80%)
+SPECIES_BARBOACH                 7 (  0.70%)
+SPECIES_DRATINI                  4 (  0.40%)
+
+encounters_victory_road_1f.json
+-------------------------------
+SPECIES_ARON                   173 ( 17.30%)
+SPECIES_ONIX                   163 ( 16.30%)
+SPECIES_RHYHORN                148 ( 14.80%)
+SPECIES_BAGON                  135 ( 13.50%)
+SPECIES_BELDUM                 126 ( 12.60%)
+SPECIES_LARVITAR               114 ( 11.40%)
+SPECIES_GIBLE                  104 ( 10.40%)
+SPECIES_MAWILE                  37 (  3.70%)
+Done.

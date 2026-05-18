@@ -34,22 +34,26 @@
     "icon_palette": 2,
     "learnset": {
         "by_level": [
-            [ 1, "MOVE_RAGE" ],
-            [ 1, "MOVE_BITE" ],
             [ 1, "MOVE_LEER" ],
-            [ 1, "MOVE_HEADBUTT" ],
+            [ 1, "MOVE_EMBER" ],
             [ 5, "MOVE_BITE" ],
-            [ 10, "MOVE_LEER" ],
-            [ 16, "MOVE_HEADBUTT" ],
-            [ 20, "MOVE_FOCUS_ENERGY" ],
-            [ 25, "MOVE_EMBER" ],
-            [ 30, "MOVE_PROTECT" ],
-            [ 32, "MOVE_DRAGON_BREATH" ],
-            [ 37, "MOVE_ZEN_HEADBUTT" ],
-            [ 43, "MOVE_SCARY_FACE" ],
-            [ 50, "MOVE_CRUNCH" ],
-            [ 55, "MOVE_DRAGON_CLAW" ],
-            [ 61, "MOVE_DOUBLE_EDGE" ]
+            [ 11, "MOVE_DEFENSE_CURL" ],
+            [ 15, "MOVE_FOCUS_ENERGY" ],
+            [ 19, "MOVE_DRAGON_BREATH" ],
+            [ 22, "MOVE_HEADBUTT" ],
+            [ 26, "MOVE_ZEN_HEADBUTT" ],
+            [ 29, "MOVE_SCARY_FACE" ],
+
+            [ 30, "MOVE_ROLLOUT" ],
+            [ 36, "MOVE_ROCK_TOMB" ],
+            [ 41, "MOVE_FLAMETHROWER" ],
+            [ 47, "MOVE_THRASH" ],
+            [ 53, "MOVE_ROCK_SLIDE" ],
+            [ 56, "MOVE_DRAGON_RUSH" ],
+            [ 58, "MOVE_OUTRAGE" ],
+
+            [ 63, "MOVE_DRAGON_CLAW" ],
+            [ 75, "MOVE_DOUBLE_EDGE" ]
         ],
         "by_tm": [
             "TM02",
@@ -88,7 +92,6 @@
             "MOVE_MUD_SLAP",
             "MOVE_FURY_CUTTER",
             "MOVE_ROLLOUT",
-            "MOVE_SNORE",
             "MOVE_OUTRAGE",
             "MOVE_ZEN_HEADBUTT",
             "MOVE_TWISTER",

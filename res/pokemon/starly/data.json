@@ -27,7 +27,7 @@
     "base_friendship": 70,
     "exp_rate": "EXP_RATE_MEDIUM_SLOW",
     "egg_groups": [ "EGG_GROUP_FLYING", "EGG_GROUP_FLYING" ],
-    "abilities": [ "ABILITY_KEEN_EYE", "ABILITY_RECKLESS" ],
+    "abilities": [ "ABILITY_KEEN_EYE", "ABILITY_KEEN_EYE" ],
     "safari_flee_rate": 90,
     "body_color": "MON_COLOR_BROWN",
     "flip_sprite": false,
@@ -38,13 +38,20 @@
             [ 1, "MOVE_GROWL" ],
             [ 5, "MOVE_QUICK_ATTACK" ],
             [ 9, "MOVE_WING_ATTACK" ],
-            [ 13, "MOVE_DOUBLE_TEAM" ],
-            [ 17, "MOVE_ENDEAVOR" ],
-            [ 21, "MOVE_WHIRLWIND" ],
-            [ 25, "MOVE_AERIAL_ACE" ],
-            [ 29, "MOVE_TAKE_DOWN" ],
-            [ 33, "MOVE_AGILITY" ],
-            [ 37, "MOVE_BRAVE_BIRD" ]
+            [ 12, "MOVE_DOUBLE_TEAM" ],
+            
+            [ 16, "MOVE_FURY_ATTACK" ],
+            [ 20, "MOVE_ASTONISH" ],
+            [ 23, "MOVE_PURSUIT" ],
+            [ 27, "MOVE_AERIAL_ACE" ],
+            [ 30, "MOVE_TAKE_DOWN" ],
+
+            [ 36, "MOVE_STEEL_WING" ],
+            [ 40, "MOVE_AGILITY" ],
+            [ 45, "MOVE_ENDURE" ],
+            [ 50, "MOVE_FACADE" ],
+            [ 58, "MOVE_BRAVE_BIRD" ],
+            [ 70, "MOVE_DOUBLE_EDGE" ]
         ],
         "by_tm": [
             "TM06",
@@ -77,9 +84,7 @@
         "by_tutor": [
             "MOVE_MUD_SLAP",
             "MOVE_OMINOUS_WIND",
-            "MOVE_SNORE",
             "MOVE_AIR_CUTTER",
-            "MOVE_ENDEAVOR",
             "MOVE_TWISTER",
             "MOVE_HEAT_WAVE",
             "MOVE_SWIFT"

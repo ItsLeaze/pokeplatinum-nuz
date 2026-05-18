@@ -38,12 +38,13 @@
             [ 1, "MOVE_TACKLE" ],
             [ 1, "MOVE_HELPING_HAND" ],
             [ 8, "MOVE_SAND_ATTACK" ],
-            [ 15, "MOVE_GROWL" ],
-            [ 22, "MOVE_QUICK_ATTACK" ],
-            [ 29, "MOVE_BITE" ],
-            [ 36, "MOVE_BATON_PASS" ],
-            [ 43, "MOVE_TAKE_DOWN" ],
-            [ 50, "MOVE_LAST_RESORT" ],
+            [ 13, "MOVE_GROWL" ],
+            [ 15, "MOVE_QUICK_ATTACK" ],
+            [ 24, "MOVE_BITE" ],
+            [ 27, "MOVE_YAWN" ],
+            [ 33, "MOVE_TAKE_DOWN" ],
+            [ 43, "MOVE_LAST_RESORT" ],
+            [ 50, "MOVE_COPYCAT" ],
             [ 57, "MOVE_TRUMP_CARD" ]
         ],
         "by_tm": [
@@ -71,21 +72,14 @@
         ],
         "by_tutor": [
             "MOVE_MUD_SLAP",
-            "MOVE_SNORE",
             "MOVE_HELPING_HAND",
             "MOVE_LAST_RESORT",
             "MOVE_SWIFT"
         ],
         "egg_moves": [
-            "MOVE_CHARM",
             "MOVE_FLAIL",
             "MOVE_ENDURE",
-            "MOVE_CURSE",
-            "MOVE_TICKLE",
-            "MOVE_WISH",
-            "MOVE_YAWN",
-            "MOVE_FAKE_TEARS",
-            "MOVE_COVET"
+            "MOVE_TICKLE"
         ]
     },
     "evolutions": [
@@ -115,6 +109,16 @@
             "EVO_USE_ITEM",
             "ITEM_MOON_STONE",
             "SPECIES_UMBREON"
+        ],
+        [
+            "EVO_USE_ITEM",
+            "ITEM_ICE_STONE",
+            "SPECIES_GLACEON"
+        ],
+        [
+            "EVO_USE_ITEM",
+            "ITEM_LEAF_STONE",
+            "SPECIES_LEAFEON"
         ]
     ],
     "offspring": "SPECIES_EEVEE",

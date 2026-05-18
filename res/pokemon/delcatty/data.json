@@ -34,10 +34,26 @@
     "icon_palette": 2,
     "learnset": {
         "by_level": [
+            [ 1, "MOVE_GROWL" ],
+            [ 1, "MOVE_TAIL_WHIP" ],
+            [ 1, "MOVE_TACKLE" ],
             [ 1, "MOVE_FAKE_OUT" ],
-            [ 1, "MOVE_ATTRACT" ],
-            [ 1, "MOVE_SING" ],
-            [ 1, "MOVE_DOUBLE_SLAP" ]
+            [ 4, "MOVE_FORESIGHT" ],
+            [ 8, "MOVE_ATTRACT" ],
+            [ 11, "MOVE_SING" ],
+            [ 13, "MOVE_DOUBLE_HIT" ],
+            [ 16, "MOVE_COPYCAT" ],
+
+            [ 20, "MOVE_HYPER_VOICE" ],
+            [ 22, "MOVE_ASSIST" ],
+            [ 25, "MOVE_FAINT_ATTACK" ],
+            [ 29, "MOVE_WAKE_UP_SLAP" ],
+            [ 32, "MOVE_ZEN_HEADBUTT" ],
+            [ 35, "MOVE_SUCKER_PUNCH" ],
+            [ 38, "MOVE_HEAL_BELL" ],
+            [ 41, "MOVE_DOUBLE_EDGE" ],
+            [ 44, "MOVE_WISH" ],
+            [ 50, "MOVE_DREAM_EATER" ]
         ],
         "by_tm": [
             "TM03",
@@ -86,7 +102,6 @@
             "MOVE_MUD_SLAP",
             "MOVE_ICY_WIND",
             "MOVE_ROLLOUT",
-            "MOVE_SNORE",
             "MOVE_HELPING_HAND",
             "MOVE_ZEN_HEADBUTT",
             "MOVE_LAST_RESORT",

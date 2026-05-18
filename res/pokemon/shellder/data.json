@@ -4,8 +4,8 @@
         "attack": 65,
         "defense": 100,
         "speed": 40,
-        "special_attack": 45,
-        "special_defense": 25
+        "special_attack": 65,
+        "special_defense": 35
     },
     "types": [ "TYPE_WATER", "TYPE_WATER" ],
     "catch_rate": 190,
@@ -37,16 +37,21 @@
             [ 1, "MOVE_TACKLE" ],
             [ 4, "MOVE_WITHDRAW" ],
             [ 8, "MOVE_SUPERSONIC" ],
-            [ 13, "MOVE_ICICLE_SPEAR" ],
-            [ 16, "MOVE_PROTECT" ],
-            [ 20, "MOVE_LEER" ],
-            [ 25, "MOVE_CLAMP" ],
-            [ 28, "MOVE_ICE_SHARD" ],
-            [ 32, "MOVE_AURORA_BEAM" ],
-            [ 37, "MOVE_WHIRLPOOL" ],
-            [ 40, "MOVE_IRON_DEFENSE" ],
-            [ 44, "MOVE_BRINE" ],
-            [ 49, "MOVE_ICE_BEAM" ]
+            [ 13, "MOVE_LICK" ],
+            [ 16, "MOVE_WHIRLPOOL" ],
+            [ 19, "MOVE_CLAMP" ],
+            [ 23, "MOVE_ICE_SHARD" ],
+            [ 27, "MOVE_BRINE" ],
+            [ 30, "MOVE_MUD_SHOT" ],
+            [ 33, "MOVE_BUBBLE_BEAM" ],
+            [ 37, "MOVE_AURORA_BEAM" ],
+            [ 41, "MOVE_ICICLE_SPEAR" ],
+            [ 44, "MOVE_ICE_BEAM" ],
+            [ 47, "MOVE_RAPID_SPIN" ],
+            [ 50, "MOVE_AVALANCHE" ],
+            [ 54, "MOVE_ROCK_BLAST" ],
+            [ 59, "MOVE_HYDRO_PUMP" ],
+            [ 65, "MOVE_SPIKE_CANNON" ]
         ],
         "by_tm": [
             "TM03",
@@ -78,14 +83,11 @@
         "by_tutor": [
             "MOVE_DIVE",
             "MOVE_ICY_WIND",
-            "MOVE_SNORE",
-            "MOVE_IRON_DEFENSE",
             "MOVE_SWIFT"
         ],
         "egg_moves": [
             "MOVE_BUBBLE_BEAM",
             "MOVE_TAKE_DOWN",
-            "MOVE_BARRIER",
             "MOVE_RAPID_SPIN",
             "MOVE_SCREECH",
             "MOVE_ICICLE_SPEAR",

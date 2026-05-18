@@ -36,7 +36,6 @@
         "by_level": [
             [ 1, "MOVE_TOXIC_SPIKES" ],
             [ 1, "MOVE_TACKLE" ],
-            [ 1, "MOVE_PROTECT" ],
             [ 1, "MOVE_SELFDESTRUCT" ],
             [ 1, "MOVE_BUG_BITE" ],
             [ 6, "MOVE_SELFDESTRUCT" ],

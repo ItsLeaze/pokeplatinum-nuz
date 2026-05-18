@@ -35,7 +35,6 @@
     "learnset": {
         "by_level": [
             [ 1, "MOVE_POUND" ],
-            [ 1, "MOVE_CHARM" ],
             [ 5, "MOVE_COPYCAT" ],
             [ 9, "MOVE_REFRESH" ],
             [ 12, "MOVE_SWEET_KISS" ]
@@ -82,12 +81,10 @@
             "MOVE_MUD_SLAP",
             "MOVE_ICY_WIND",
             "MOVE_ROLLOUT",
-            "MOVE_SNORE",
             "MOVE_HELPING_HAND",
             "MOVE_ENDEAVOR",
             "MOVE_ZEN_HEADBUTT",
-            "MOVE_LAST_RESORT",
-            "MOVE_UPROAR"
+            "MOVE_LAST_RESORT"
         ],
         "egg_moves": [
             "MOVE_PRESENT",

@@ -36,11 +36,10 @@
         "by_level": [
             [ 1, "MOVE_BIDE" ],
             [ 3, "MOVE_HARDEN" ],
-            [ 7, "MOVE_GROWTH" ],
-            [ 13, "MOVE_NATURE_POWER" ],
-            [ 21, "MOVE_SYNTHESIS" ],
-            [ 31, "MOVE_SUNNY_DAY" ],
-            [ 43, "MOVE_EXPLOSION" ]
+            [ 9, "MOVE_ROLLOUT" ],
+            [ 12, "MOVE_MEGA_DRAIN" ],
+            [ 16, "MOVE_NATURE_POWER" ],
+            [ 25, "MOVE_EXPLOSION" ]
         ],
         "by_tm": [
             "TM06",
@@ -74,20 +73,15 @@
         ],
         "by_tutor": [
             "MOVE_ROLLOUT",
-            "MOVE_SNORE",
             "MOVE_SPITE",
-            "MOVE_SYNTHESIS",
             "MOVE_SEED_BOMB"
         ],
         "egg_moves": [
-            "MOVE_LEECH_SEED",
-            "MOVE_AMNESIA",
             "MOVE_QUICK_ATTACK",
             "MOVE_RAZOR_WIND",
             "MOVE_TAKE_DOWN",
             "MOVE_FALSE_SWIPE",
-            "MOVE_WORRY_SEED",
-            "MOVE_NASTY_PLOT"
+            "MOVE_WORRY_SEED"
         ]
     },
     "evolutions": [

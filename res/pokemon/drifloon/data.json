@@ -40,13 +40,15 @@
             [ 11, "MOVE_GUST" ],
             [ 14, "MOVE_FOCUS_ENERGY" ],
             [ 17, "MOVE_PAYBACK" ],
-            [ 22, "MOVE_STOCKPILE" ],
-            [ 27, "MOVE_SWALLOW" ],
-            [ 27, "MOVE_SPIT_UP" ],
-            [ 30, "MOVE_OMINOUS_WIND" ],
-            [ 33, "MOVE_BATON_PASS" ],
-            [ 38, "MOVE_SHADOW_BALL" ],
-            [ 43, "MOVE_EXPLOSION" ]
+            [ 20, "MOVE_OMINOUS_WIND" ],
+            [ 23, "MOVE_MEMENTO" ],
+            [ 27, "MOVE_HYPNOSIS" ],
+            [ 43, "MOVE_SELF_DESTRUCT" ],
+            [ 37, "MOVE_AIR_CUTTER" ],
+
+            [ 43, "MOVE_SHADOW_BALL" ],
+            [ 50, "MOVE_WEATHER_BALL" ],
+            [ 55, "MOVE_EXPLOSION" ]
         ],
         "by_tm": [
             "TM04",
@@ -95,10 +97,8 @@
             "MOVE_ICY_WIND",
             "MOVE_ROLLOUT",
             "MOVE_OMINOUS_WIND",
-            "MOVE_SNORE",
             "MOVE_SPITE",
             "MOVE_AIR_CUTTER",
-            "MOVE_TRICK",
             "MOVE_KNOCK_OFF",
             "MOVE_SUCKER_PUNCH",
             "MOVE_SWIFT"
@@ -106,8 +106,6 @@
         "egg_moves": [
             "MOVE_MEMENTO",
             "MOVE_BODY_SLAM",
-            "MOVE_DESTINY_BOND",
-            "MOVE_DISABLE",
             "MOVE_HAZE",
             "MOVE_HYPNOSIS"
         ]

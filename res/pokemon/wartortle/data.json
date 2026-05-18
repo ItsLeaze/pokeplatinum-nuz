@@ -1,10 +1,10 @@
 {
     "base_stats": {
         "hp": 59,
-        "attack": 63,
+        "attack": 65,
         "defense": 80,
         "speed": 58,
-        "special_attack": 65,
+        "special_attack": 70,
         "special_defense": 80
     },
     "types": [ "TYPE_WATER", "TYPE_WATER" ],
@@ -36,20 +36,22 @@
         "by_level": [
             [ 1, "MOVE_TACKLE" ],
             [ 1, "MOVE_TAIL_WHIP" ],
-            [ 1, "MOVE_BUBBLE" ],
-            [ 4, "MOVE_TAIL_WHIP" ],
-            [ 7, "MOVE_BUBBLE" ],
+            [ 5, "MOVE_BUBBLE" ],
             [ 10, "MOVE_WITHDRAW" ],
-            [ 13, "MOVE_WATER_GUN" ],
-            [ 16, "MOVE_BITE" ],
-            [ 20, "MOVE_RAPID_SPIN" ],
-            [ 24, "MOVE_PROTECT" ],
-            [ 28, "MOVE_WATER_PULSE" ],
-            [ 32, "MOVE_AQUA_TAIL" ],
-            [ 36, "MOVE_SKULL_BASH" ],
-            [ 40, "MOVE_IRON_DEFENSE" ],
-            [ 44, "MOVE_RAIN_DANCE" ],
-            [ 48, "MOVE_HYDRO_PUMP" ]
+            [ 13, "MOVE_BITE" ],
+            [ 16, "MOVE_RAPID_SPIN" ],
+            [ 19, "MOVE_RAIN_DANCE" ],
+            [ 22, "MOVE_WATER_PULSE" ],
+            [ 25, "MOVE_ICY_WIND" ],
+            [ 27, "MOVE_YAWN" ],
+            [ 30, "MOVE_HAZE" ],
+            [ 33, "MOVE_SKULL_BASH" ],
+            [ 37, "MOVE_HYDRO_PUMP" ],
+            [ 39, "MOVE_AQUA_RING" ],
+            [ 42, "MOVE_AURA_SPHERE" ],
+            [ 46, "MOVE_AQUA_JET" ],
+            [ 50, "MOVE_ICE_BEAM" ],
+            [ 55, "MOVE_REFRESH" ]
         ],
         "by_tm": [
             "TM01",
@@ -93,9 +95,7 @@
             "MOVE_ROLLOUT",
             "MOVE_ICE_PUNCH",
             "MOVE_AQUA_TAIL",
-            "MOVE_SNORE",
-            "MOVE_ZEN_HEADBUTT",
-            "MOVE_IRON_DEFENSE"
+            "MOVE_ZEN_HEADBUTT"
         ]
     },
     "evolutions": [

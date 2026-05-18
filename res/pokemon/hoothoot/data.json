@@ -1,10 +1,10 @@
 {
     "base_stats": {
         "hp": 60,
-        "attack": 30,
+        "attack": 50,
         "defense": 30,
         "speed": 50,
-        "special_attack": 36,
+        "special_attack": 60,
         "special_defense": 56
     },
     "types": [ "TYPE_PSYCHIC", "TYPE_FLYING" ],
@@ -37,18 +37,22 @@
             [ 1, "MOVE_TACKLE" ],
             [ 1, "MOVE_GROWL" ],
             [ 1, "MOVE_FORESIGHT" ],
-            [ 5, "MOVE_HYPNOSIS" ],
-            [ 9, "MOVE_PECK" ],
-            [ 13, "MOVE_UPROAR" ],
-            [ 17, "MOVE_REFLECT" ],
-            [ 21, "MOVE_CONFUSION" ],
-            [ 25, "MOVE_TAKE_DOWN" ],
-            [ 29, "MOVE_AIR_SLASH" ],
-            [ 33, "MOVE_ZEN_HEADBUTT" ],
-            [ 37, "MOVE_EXTRASENSORY" ],
-            [ 41, "MOVE_PSYCHO_SHIFT" ],
-            [ 45, "MOVE_ROOST" ],
-            [ 49, "MOVE_DREAM_EATER" ]
+            [ 5, "MOVE_PECK" ],
+            [ 10, "MOVE_HYPNOSIS" ],
+            [ 13, "MOVE_CONFUSION" ],
+            [ 16, "MOVE_NIGHT_SHADE" ],
+            [ 19, "MOVE_UPROAR" ],
+            [ 22, "MOVE_TWISTER" ],
+            [ 25, "MOVE_AIR_SLASH" ],
+
+            [ 29, "MOVE_OMINOUS_WIND" ],
+            [ 32, "MOVE_PSYCHO_SHIFT" ],
+            [ 36, "MOVE_DREAM_EATER" ],
+            [ 40, "MOVE_MOONBLAST" ],
+            [ 43, "MOVE_REFLECT" ],
+            [ 46, "MOVE_PSYCHIC" ],
+            [ 50, "MOVE_AGILITY" ],
+            [ 54, "MOVE_SHADOW_BALL" ]
         ],
         "by_tm": [
             "TM06",
@@ -89,10 +93,8 @@
             "MOVE_OMINOUS_WIND",
             "MOVE_AIR_CUTTER",
             "MOVE_ZEN_HEADBUTT",
-            "MOVE_TWISTER",
             "MOVE_HEAT_WAVE",
-            "MOVE_SWIFT",
-            "MOVE_UPROAR"
+            "MOVE_SWIFT"
         ],
         "egg_moves": [
             "MOVE_MIRROR_MOVE",
@@ -101,7 +103,6 @@
             "MOVE_WING_ATTACK",
             "MOVE_WHIRLWIND",
             "MOVE_SKY_ATTACK",
-            "MOVE_FEATHER_DANCE",
             "MOVE_AGILITY",
             "MOVE_NIGHT_SHADE"
         ]

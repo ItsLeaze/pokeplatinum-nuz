@@ -3,8 +3,8 @@
         "hp": 60,
         "attack": 70,
         "defense": 50,
-        "speed": 65,
-        "special_attack": 90,
+        "speed": 75,
+        "special_attack": 95,
         "special_defense": 50
     },
     "types": [ "TYPE_BUG", "TYPE_FLYING" ],
@@ -34,17 +34,18 @@
     "icon_palette": 0,
     "learnset": {
         "by_level": [
-            [ 1, "MOVE_ABSORB" ],
-            [ 10, "MOVE_ABSORB" ],
-            [ 13, "MOVE_GUST" ],
-            [ 17, "MOVE_STUN_SPORE" ],
-            [ 20, "MOVE_MORNING_SUN" ],
-            [ 24, "MOVE_MEGA_DRAIN" ],
+            [ 1, "MOVE_GUST" ],
+            [ 18, "MOVE_AIR_CUTTER" ],
+            [ 20, "MOVE_MEGA_DRAIN" ],
+            [ 22, "MOVE_STUN_SPORE" ],
+            [ 24, "MOVE_SILVER_WIND" ],
             [ 27, "MOVE_WHIRLWIND" ],
-            [ 31, "MOVE_ATTRACT" ],
-            [ 34, "MOVE_SILVER_WIND" ],
-            [ 38, "MOVE_GIGA_DRAIN" ],
-            [ 41, "MOVE_BUG_BUZZ" ]
+            [ 30, "MOVE_BUG_BUZZ" ],
+            [ 33, "MOVE_GIGA_DRAIN" ],
+            [ 38, "MOVE_DAZZLING_GLEAM" ],
+            [ 44, "MOVE_AIR_SLASH" ],
+            [ 50, "MOVE_SAFEGUARD" ],
+            [ 55, "MOVE_SOLAR_BEAM" ]
         ],
         "by_tm": [
             "TM06",
@@ -82,7 +83,6 @@
         ],
         "by_tutor": [
             "MOVE_OMINOUS_WIND",
-            "MOVE_SNORE",
             "MOVE_AIR_CUTTER",
             "MOVE_SIGNAL_BEAM",
             "MOVE_TWISTER",

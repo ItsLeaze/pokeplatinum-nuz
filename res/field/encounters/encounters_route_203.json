@@ -1,5 +1,4 @@
 {
-    "land_rate": 30,
     "land_encounters": [
         {
             "level": 5,
@@ -50,51 +49,6 @@
             "species": "SPECIES_MUDKIP"
         }
     ],
-    "swarms": [
-        "SPECIES_MEOWTH",
-        "SPECIES_MEOWTH"
-    ],
-    "day": [
-        "SPECIES_MEOWTH",
-        "SPECIES_MEOWTH"
-    ],
-    "night": [
-        "SPECIES_MEOWTH",
-        "SPECIES_MEOWTH"
-    ],
-    "radar": [
-        "SPECIES_MEOWTH",
-        "SPECIES_MEOWTH",
-        "SPECIES_MEOWTH",
-        "SPECIES_MEOWTH"
-    ],
-    "rate_form0": 0,
-    "rate_form1": 0,
-    "rate_form2": 0,
-    "rate_form3": 0,
-    "rate_form4": 0,
-    "unown_table": 0,
-    "ruby": [
-        "SPECIES_MEOWTH",
-        "SPECIES_MEOWTH"
-    ],
-    "sapphire": [
-        "SPECIES_MEOWTH",
-        "SPECIES_MEOWTH"
-    ],
-    "emerald": [
-        "SPECIES_MEOWTH",
-        "SPECIES_MEOWTH"
-    ],
-    "firered": [
-        "SPECIES_MEOWTH",
-        "SPECIES_MEOWTH"
-    ],
-    "leafgreen": [
-        "SPECIES_MEOWTH",
-        "SPECIES_MEOWTH"
-    ],
-    "surf_rate": 10,
     "surf_encounters": [
         {
             "level_max": 26,
@@ -122,7 +76,6 @@
             "species": "SPECIES_POLIWHIRL"
         }
     ],
-    "old_rod_rate": 25,
     "old_rod_encounters": [
         {
             "level_max": 10,
@@ -149,65 +102,5 @@
             "level_min": 5,
             "species": "SPECIES_WOOPER"
         }
-    ],
-    "good_rod_rate": 50,
-    "good_rod_encounters": [
-        {
-            "level_max": 15,
-            "level_min": 15,
-            "species": "SPECIES_FINNEON"
-        },
-        {
-            "level_max": 15,
-            "level_min": 15,
-            "species": "SPECIES_REMORAID"
-        },
-        {
-            "level_max": 15,
-            "level_min": 15,
-            "species": "SPECIES_SURSKIT"
-        },
-        {
-            "level_max": 15,
-            "level_min": 15,
-            "species": "SPECIES_KRABBY"
-        },
-        {
-            "level_max": 15,
-            "level_min": 15,
-            "species": "SPECIES_WOOPER"
-        }
-    ],
-    "super_rod_rate": 75,
-    "super_rod_encounters": [
-        {
-            "level_max": 40,
-            "level_min": 35,
-            "species": "SPECIES_LUMINEON"
-        },
-        {
-            "level_max": 40,
-            "level_min": 35,
-            "species": "SPECIES_OCTILLERY"
-        },
-        {
-            "level_max": 40,
-            "level_min": 35,
-            "species": "SPECIES_MASQUERAIN"
-        },
-        {
-            "level_max": 40,
-            "level_min": 35,
-            "species": "SPECIES_KINGLER"
-        },
-        {
-            "level_max": 40,
-            "level_min": 35,
-            "species": "SPECIES_QUAGSIRE"
-        }
-    ],
-    "map_category": {
-        "map_type": "field",
-        "map_number": 14
-    }
+    ]
 }

@@ -34,21 +34,23 @@
     "icon_palette": 2,
     "learnset": {
         "by_level": [
-            [ 1, "MOVE_PLUCK" ],
-            [ 1, "MOVE_PECK" ],
             [ 1, "MOVE_GROWL" ],
-            [ 1, "MOVE_QUICK_ATTACK" ],
-            [ 1, "MOVE_RAGE" ],
+            [ 1, "MOVE_PECK" ],
             [ 5, "MOVE_QUICK_ATTACK" ],
-            [ 10, "MOVE_RAGE" ],
-            [ 14, "MOVE_FURY_ATTACK" ],
-            [ 19, "MOVE_PURSUIT" ],
-            [ 23, "MOVE_UPROAR" ],
-            [ 28, "MOVE_ACUPRESSURE" ],
-            [ 34, "MOVE_TRI_ATTACK" ],
-            [ 41, "MOVE_AGILITY" ],
-            [ 47, "MOVE_DRILL_PECK" ],
-            [ 54, "MOVE_ENDEAVOR" ]
+            [ 12, "MOVE_PLUCK" ],
+            [ 16, "MOVE_FURY_ATTACK" ],
+            [ 22, "MOVE_DOUBLE_KICK" ],
+            [ 24, "MOVE_PURSUIT" ],
+            [ 26, "MOVE_AGILITY" ],
+
+            [ 28, "MOVE_TRI_ATTACK" ],
+            [ 30, "MOVE_DRILL_PECK" ],
+            [ 35, "MOVE_TRIPLE_KICK" ],
+            [ 39, "MOVE_ASSURANCE" ],
+            [ 43, "MOVE_HAZE" ],
+            [ 48, "MOVE_THRASH" ],
+            [ 53, "MOVE_BRAVE_BIRD" ],
+            [ 60, "MOVE_ACUPRESSURE" ]
         ],
         "by_tm": [
             "TM06",
@@ -82,12 +84,8 @@
         ],
         "by_tutor": [
             "MOVE_MUD_SLAP",
-            "MOVE_SNORE",
             "MOVE_AIR_CUTTER",
-            "MOVE_ENDEAVOR",
-            "MOVE_KNOCK_OFF",
-            "MOVE_SWIFT",
-            "MOVE_UPROAR"
+            "MOVE_SWIFT"
         ]
     },
     "evolutions": [  ],

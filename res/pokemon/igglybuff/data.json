@@ -34,12 +34,11 @@
     "icon_palette": 1,
     "learnset": {
         "by_level": [
-            [ 1, "MOVE_SING" ],
-            [ 1, "MOVE_CHARM" ],
-            [ 5, "MOVE_DEFENSE_CURL" ],
-            [ 9, "MOVE_POUND" ],
-            [ 13, "MOVE_SWEET_KISS" ],
-            [ 17, "MOVE_COPYCAT" ]
+            [ 1, "MOVE_SWEET_KISS" ],
+            [ 1, "MOVE_DEFENSE_CURL" ],
+            [ 5, "MOVE_POUND" ],
+            [ 9, "MOVE_SING" ],
+            [ 12, "MOVE_COPYCAT" ]
         ],
         "by_tm": [
             "TM03",
@@ -83,21 +82,16 @@
             "MOVE_MUD_SLAP",
             "MOVE_ICY_WIND",
             "MOVE_ROLLOUT",
-            "MOVE_SNORE",
             "MOVE_HELPING_HAND",
             "MOVE_ENDEAVOR",
             "MOVE_LAST_RESORT",
-            "MOVE_BOUNCE",
-            "MOVE_UPROAR"
+            "MOVE_BOUNCE"
         ],
         "egg_moves": [
-            "MOVE_PERISH_SONG",
             "MOVE_PRESENT",
             "MOVE_FAINT_ATTACK",
             "MOVE_WISH",
-            "MOVE_FAKE_TEARS",
             "MOVE_LAST_RESORT",
-            "MOVE_COVET",
             "MOVE_GRAVITY"
         ]
     },

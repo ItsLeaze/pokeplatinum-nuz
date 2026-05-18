@@ -39,12 +39,21 @@
             [ 5, "MOVE_PURSUIT" ],
             [ 11, "MOVE_HAZE" ],
             [ 15, "MOVE_WING_ATTACK" ],
-            [ 21, "MOVE_NIGHT_SHADE" ],
-            [ 25, "MOVE_ASSURANCE" ],
-            [ 31, "MOVE_TAUNT" ],
-            [ 35, "MOVE_FAINT_ATTACK" ],
-            [ 41, "MOVE_MEAN_LOOK" ],
-            [ 45, "MOVE_SUCKER_PUNCH" ]
+            [ 18, "MOVE_NIGHT_SHADE" ],
+            [ 21, "MOVE_ASSURANCE" ],
+            [ 24, "MOVE_MEAN_LOOK" ],
+            [ 27, "MOVE_AIR_CUTTER" ],
+            [ 30, "MOVE_FAINT_ATTACK" ],
+            [ 33, "MOVE_SWAGGER" ],
+            [ 36, "MOVE_SUCKER_PUNCH" ],
+            [ 41, "MOVE_PSYCHO_SHIFT" ],
+            [ 44, "MOVE_FLATTER" ],
+            [ 47, "MOVE_DARK_PULSE" ],
+            [ 50, "MOVE_DRILL_PECK" ],
+            [ 53, "MOVE_SPITE" ],
+            [ 57, "MOVE_NIGHT_SLASH" ],
+            [ 63, "MOVE_STEEL_WING" ],
+            [ 70, "MOVE_SKY_ATTACK" ]
         ],
         "by_tm": [
             "TM04",
@@ -94,8 +103,7 @@
             "MOVE_TWISTER",
             "MOVE_HEAT_WAVE",
             "MOVE_SUCKER_PUNCH",
-            "MOVE_SWIFT",
-            "MOVE_UPROAR"
+            "MOVE_SWIFT"
         ],
         "egg_moves": [
             "MOVE_WHIRLWIND",
@@ -104,8 +112,6 @@
             "MOVE_WING_ATTACK",
             "MOVE_SKY_ATTACK",
             "MOVE_CONFUSE_RAY",
-            "MOVE_FEATHER_DANCE",
-            "MOVE_PERISH_SONG",
             "MOVE_PSYCHO_SHIFT",
             "MOVE_SCREECH",
             "MOVE_FAINT_ATTACK"

@@ -37,13 +37,19 @@
             [ 1, "MOVE_WITHDRAW" ],
             [ 1, "MOVE_CONSTRICT" ],
             [ 1, "MOVE_BIDE" ],
-            [ 9, "MOVE_ENCORE" ],
+            [ 6, "MOVE_BUG_BITE" ],
+            [ 11, "MOVE_BIND" ],
             [ 14, "MOVE_SAFEGUARD" ],
-            [ 22, "MOVE_WRAP" ],
-            [ 27, "MOVE_REST" ],
-            [ 35, "MOVE_GASTRO_ACID" ],
-            [ 40, "MOVE_BUG_BITE" ],
-            [ 48, "MOVE_POWER_TRICK" ]
+            [ 17, "MOVE_ROLLOUT" ],
+            [ 21, "MOVE_WRAP" ],
+            [ 24, "MOVE_GASTRO_ACID" ],
+            [ 27, "MOVE_SAND_TOMB" ],
+            [ 30, "MOVE_ROCK_TOMB" ],
+            [ 35, "MOVE_MUD_SLAP" ],
+            [ 40, "MOVE_ENCORE" ],
+            [ 45, "MOVE_BODY_SLAM" ],
+            [ 50, "MOVE_REST" ],
+            [ 56, "MOVE_SNORE" ]
         ],
         "by_tm": [
             "TM06",
@@ -82,16 +88,13 @@
             "MOVE_MUD_SLAP",
             "MOVE_ROLLOUT",
             "MOVE_GASTRO_ACID",
-            "MOVE_SNORE",
             "MOVE_HELPING_HAND",
             "MOVE_ANCIENT_POWER",
             "MOVE_EARTH_POWER"
         ],
         "egg_moves": [
             "MOVE_SWEET_SCENT",
-            "MOVE_KNOCK_OFF",
             "MOVE_HELPING_HAND",
-            "MOVE_ACUPRESSURE",
             "MOVE_SAND_TOMB",
             "MOVE_MUD_SLAP"
         ]

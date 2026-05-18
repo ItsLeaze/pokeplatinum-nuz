@@ -1,10 +1,10 @@
 {
     "base_stats": {
         "hp": 39,
-        "attack": 52,
+        "attack": 55,
         "defense": 43,
         "speed": 65,
-        "special_attack": 60,
+        "special_attack": 65,
         "special_defense": 50
     },
     "types": [ "TYPE_FIRE", "TYPE_FIRE" ],
@@ -38,12 +38,16 @@
             [ 1, "MOVE_GROWL" ],
             [ 7, "MOVE_EMBER" ],
             [ 10, "MOVE_SMOKE_SCREEN" ],
+            [ 14, "MOVE_BITE" ],
             [ 16, "MOVE_DRAGON_RAGE" ],
             [ 19, "MOVE_SCARY_FACE" ],
-            [ 25, "MOVE_FIRE_FANG" ],
-            [ 28, "MOVE_SLASH" ],
-            [ 34, "MOVE_FLAMETHROWER" ],
-            [ 37, "MOVE_FIRE_SPIN" ]
+            [ 20, "MOVE_FIRE_FANG" ],
+            [ 24, "MOVE_FIRE_SPIN" ],
+            [ 27, "MOVE_METAL_CLAW" ],
+            [ 30, "MOVE_FLAMETHROWER" ],
+            [ 37, "MOVE_HEAT_WAVE" ],
+            [ 48, "MOVE_OUTRAGE" ],
+            [ 55, "MOVE_FIRE_BLAST" ]
         ],
         "by_tm": [
             "TM01",
@@ -87,19 +91,15 @@
             "MOVE_FURY_CUTTER",
             "MOVE_THUNDER_PUNCH",
             "MOVE_FIRE_PUNCH",
-            "MOVE_SNORE",
             "MOVE_HEAT_WAVE",
             "MOVE_SWIFT"
         ],
         "egg_moves": [
-            "MOVE_BELLY_DRUM",
             "MOVE_ANCIENT_POWER",
             "MOVE_ROCK_SLIDE",
             "MOVE_BITE",
             "MOVE_OUTRAGE",
             "MOVE_BEAT_UP",
-            "MOVE_SWORDS_DANCE",
-            "MOVE_DRAGON_DANCE",
             "MOVE_CRUNCH",
             "MOVE_DRAGON_RUSH",
             "MOVE_METAL_CLAW",

@@ -40,18 +40,19 @@
             [ 8, "MOVE_NIGHT_SHADE" ],
             [ 11, "MOVE_ASTONISH" ],
             [ 15, "MOVE_FURY_SWIPES" ],
-            [ 18, "MOVE_FAKE_OUT" ],
-            [ 22, "MOVE_DETECT" ],
+            [ 18, "MOVE_CONFUSE_RAY" ],
+            [ 21, "MOVE_FAKE_OUT" ],
             [ 25, "MOVE_SHADOW_SNEAK" ],
-            [ 29, "MOVE_KNOCK_OFF" ],
-            [ 32, "MOVE_FAINT_ATTACK" ],
+            [ 28, "MOVE_KNOCK_OFF" ],
+            [ 31, "MOVE_MEAN_LOOK" ],
+            [ 34, "MOVE_FAINT_ATTACK" ],
             [ 36, "MOVE_PUNISHMENT" ],
             [ 39, "MOVE_SHADOW_CLAW" ],
             [ 43, "MOVE_POWER_GEM" ],
-            [ 46, "MOVE_CONFUSE_RAY" ],
-            [ 50, "MOVE_ZEN_HEADBUTT" ],
-            [ 53, "MOVE_SHADOW_BALL" ],
-            [ 57, "MOVE_MEAN_LOOK" ]
+            [ 46, "MOVE_ZEN_HEADBUTT" ],
+            [ 50, "MOVE_DAZZLING_GLEAM" ],
+            [ 56, "MOVE_SHADOW_BALL" ],
+            [ 65, "MOVE_SUCKER_PUNCH" ]
         ],
         "by_tm": [
             "TM01",
@@ -107,19 +108,13 @@
             "MOVE_FIRE_PUNCH",
             "MOVE_ICE_PUNCH",
             "MOVE_OMINOUS_WIND",
-            "MOVE_SNORE",
             "MOVE_SPITE",
             "MOVE_SIGNAL_BEAM",
             "MOVE_ZEN_HEADBUTT",
-            "MOVE_TRICK",
             "MOVE_KNOCK_OFF",
             "MOVE_SUCKER_PUNCH"
         ],
         "egg_moves": [
-            "MOVE_PSYCH_UP",
-            "MOVE_RECOVER",
-            "MOVE_MOONLIGHT",
-            "MOVE_NASTY_PLOT",
             "MOVE_FLATTER"
         ]
     },

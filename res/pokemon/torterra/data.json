@@ -34,23 +34,24 @@
     "icon_palette": 1,
     "learnset": {
         "by_level": [
-            [ 1, "MOVE_WOOD_HAMMER" ],
             [ 1, "MOVE_TACKLE" ],
             [ 1, "MOVE_WITHDRAW" ],
-            [ 1, "MOVE_ABSORB" ],
-            [ 1, "MOVE_RAZOR_LEAF" ],
-            [ 5, "MOVE_WITHDRAW" ],
-            [ 9, "MOVE_ABSORB" ],
+            [ 5, "MOVE_MEGA_DRAIN" ],
+            [ 10, "MOVE_BITE" ],
             [ 13, "MOVE_RAZOR_LEAF" ],
-            [ 17, "MOVE_CURSE" ],
-            [ 22, "MOVE_BITE" ],
-            [ 27, "MOVE_MEGA_DRAIN" ],
+            [ 15, "MOVE_WORRY_SEED" ],
+            [ 18, "MOVE_BULLDOZE" ],
+            [ 21, "MOVE_BULLET_SEED" ],
+            [ 25, "MOVE_CRUNCH" ],
+            [ 28, "MOVE_SEED_BOMB" ],
             [ 32, "MOVE_EARTHQUAKE" ],
-            [ 33, "MOVE_LEECH_SEED" ],
-            [ 39, "MOVE_SYNTHESIS" ],
-            [ 45, "MOVE_CRUNCH" ],
-            [ 51, "MOVE_GIGA_DRAIN" ],
-            [ 57, "MOVE_LEAF_STORM" ]
+            [ 37, "MOVE_GIGA_DRAIN" ],
+            [ 41, "MOVE_IRON_TAIL" ],
+            [ 45, "MOVE_BODY_SLAM" ],
+            [ 51, "MOVE_SYNTHESIS" ],
+            [ 57, "MOVE_DOUBLE_EDGE" ],
+            [ 65, "MOVE_IRON_HEAD" ],
+            [ 70, "MOVE_SUPERPOWER" ]
         ],
         "by_tm": [
             "TM05",
@@ -100,9 +101,7 @@
             "MOVE_MUD_SLAP",
             "MOVE_SUPERPOWER",
             "MOVE_IRON_HEAD",
-            "MOVE_SNORE",
             "MOVE_OUTRAGE",
-            "MOVE_SYNTHESIS",
             "MOVE_EARTH_POWER",
             "MOVE_SEED_BOMB"
         ]

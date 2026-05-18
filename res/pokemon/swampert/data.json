@@ -36,20 +36,26 @@
         "by_level": [
             [ 1, "MOVE_TACKLE" ],
             [ 1, "MOVE_GROWL" ],
-            [ 1, "MOVE_MUD_SLAP" ],
-            [ 1, "MOVE_WATER_GUN" ],
-            [ 6, "MOVE_MUD_SLAP" ],
+            [ 5, "MOVE_MUD_SLAP" ],
             [ 10, "MOVE_WATER_GUN" ],
             [ 15, "MOVE_BIDE" ],
+
             [ 16, "MOVE_MUD_SHOT" ],
-            [ 20, "MOVE_FORESIGHT" ],
+            [ 19, "MOVE_ROLLOUT" ],
+            [ 21, "MOVE_ICE_BALL" ],
             [ 25, "MOVE_MUD_BOMB" ],
-            [ 31, "MOVE_TAKE_DOWN" ],
-            [ 39, "MOVE_MUDDY_WATER" ],
-            [ 46, "MOVE_PROTECT" ],
-            [ 52, "MOVE_EARTHQUAKE" ],
-            [ 61, "MOVE_ENDEAVOR" ],
-            [ 69, "MOVE_HAMMER_ARM" ]
+            [ 28, "MOVE_TAKE_DOWN" ],
+            [ 31, "MOVE_MUDDY_WATER" ],
+            [ 34, "MOVE_BULLDOZE" ],
+
+            [ 36, "MOVE_AQUA_TAIL" ],
+            [ 39, "MOVE_ROCK_TOMB" ],
+            [ 43, "MOVE_EARTHQUAKE" ],
+            [ 47, "MOVE_ENDEAVOR" ],
+            [ 52, "MOVE_HAMMER_ARM" ],
+            [ 58, "MOVE_STONE_EDGE" ],
+            [ 63, "MOVE_AVALANCHE" ],
+            [ 70, "MOVE_GIGA_IMPACT" ]
         ],
         "by_tm": [
             "TM01",
@@ -102,11 +108,9 @@
             "MOVE_SUPERPOWER",
             "MOVE_ICE_PUNCH",
             "MOVE_AQUA_TAIL",
-            "MOVE_SNORE",
             "MOVE_ENDEAVOR",
             "MOVE_OUTRAGE",
-            "MOVE_ANCIENT_POWER",
-            "MOVE_EARTH_POWER"
+            "MOVE_ANCIENT_POWER"
         ]
     },
     "evolutions": [  ],

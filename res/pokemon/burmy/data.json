@@ -1,10 +1,10 @@
 {
     "base_stats": {
-        "hp": 40,
-        "attack": 29,
+        "hp": 45,
+        "attack": 45,
         "defense": 45,
         "speed": 36,
-        "special_attack": 29,
+        "special_attack": 45,
         "special_defense": 45
     },
     "types": [ "TYPE_BUG", "TYPE_BUG" ],
@@ -38,10 +38,12 @@
     ],
     "learnset": {
         "by_level": [
-            [ 1, "MOVE_PROTECT" ],
-            [ 10, "MOVE_TACKLE" ],
-            [ 15, "MOVE_BUG_BITE" ],
-            [ 20, "MOVE_HIDDEN_POWER" ]
+            [ 1, "MOVE_TACKLE" ],
+            [ 5, "MOVE_BUG_BITE" ],
+            [ 10, "MOVE_HIDDEN_POWER" ],
+            [ 15, "MOVE_MEGA_DRAIN" ],
+            [ 24, "MOVE_PROTECT" ],
+            [ 28, "MOVE_SILVER_WIND" ]
         ],
         "by_tm": [  ],
         "by_tutor": [ "MOVE_SNORE" ]

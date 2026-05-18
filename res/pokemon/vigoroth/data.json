@@ -1,7 +1,7 @@
 {
     "base_stats": {
         "hp": 80,
-        "attack": 80,
+        "attack": 90,
         "defense": 80,
         "speed": 90,
         "special_attack": 55,
@@ -35,17 +35,23 @@
     "learnset": {
         "by_level": [
             [ 1, "MOVE_SCRATCH" ],
-            [ 1, "MOVE_FOCUS_ENERGY" ],
-            [ 1, "MOVE_ENCORE" ],
-            [ 1, "MOVE_UPROAR" ],
-            [ 7, "MOVE_ENCORE" ],
-            [ 13, "MOVE_UPROAR" ],
-            [ 19, "MOVE_FURY_SWIPES" ],
-            [ 25, "MOVE_ENDURE" ],
-            [ 31, "MOVE_SLASH" ],
-            [ 37, "MOVE_COUNTER" ],
-            [ 43, "MOVE_FOCUS_PUNCH" ],
-            [ 49, "MOVE_REVERSAL" ]
+            [ 1, "MOVE_YAWN" ],
+            [ 5, "MOVE_SLACK_OFF" ],
+            [ 10, "MOVE_FAINT_ATTACK" ],
+            [ 15, "MOVE_CRUSH_CLAW" ],
+            [ 18, "MOVE_SLASH" ],
+            [ 20, "MOVE_UPROAR" ],
+            [ 22, "MOVE_ENDURE" ],
+            [ 25, "MOVE_PLAY_ROUGH" ],
+
+            [ 27, "MOVE_BRICK_BREAK" ],
+            [ 29, "MOVE_SHADOW_CLAW" ],
+            [ 34, "MOVE_SWAGGER" ],
+            [ 37, "MOVE_NIGHT_SLASH" ],
+
+            [ 49, "MOVE_HAMMER_ARM" ],
+            [ 49, "MOVE_REVERSAL" ],
+            [ 43, "MOVE_FOCUS_PUNCH" ]
         ],
         "by_tm": [
             "TM01",
@@ -101,14 +107,13 @@
             "MOVE_FIRE_PUNCH",
             "MOVE_ICE_PUNCH",
             "MOVE_GUNK_SHOT",
-            "MOVE_SUCKER_PUNCH",
-            "MOVE_UPROAR"
+            "MOVE_SUCKER_PUNCH"
         ]
     },
     "evolutions": [
         [
             "EVO_LEVEL",
-            46,
+            40,
             "SPECIES_SLAKING"
         ]
     ],

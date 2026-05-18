@@ -1,11 +1,11 @@
 {
     "base_stats": {
         "hp": 100,
-        "attack": 75,
-        "defense": 100,
+        "attack": 70,
+        "defense": 90,
         "speed": 45,
-        "special_attack": 75,
-        "special_defense": 75
+        "special_attack": 65,
+        "special_defense": 80
     },
     "types": [ "TYPE_GROUND", "TYPE_NORMAL" ],
     "catch_rate": 190,
@@ -34,20 +34,28 @@
     "icon_palette": 2,
     "learnset": {
         "by_level": [
-            [ 1, "MOVE_RAGE" ],
+            [ 1, "MOVE_POUND" ],
             [ 5, "MOVE_DEFENSE_CURL" ],
             [ 9, "MOVE_YAWN" ],
-            [ 13, "MOVE_GLARE" ],
-            [ 17, "MOVE_ROLLOUT" ],
-            [ 21, "MOVE_SPITE" ],
-            [ 25, "MOVE_PURSUIT" ],
-            [ 29, "MOVE_SCREECH" ],
-            [ 33, "MOVE_ROOST" ],
-            [ 37, "MOVE_TAKE_DOWN" ],
-            [ 41, "MOVE_ANCIENT_POWER" ],
-            [ 45, "MOVE_DIG" ],
-            [ 49, "MOVE_ENDEAVOR" ],
-            [ 53, "MOVE_FLAIL" ]
+            [ 13, "MOVE_ROLLOUT" ],
+            [ 17, "MOVE_GLARE" ],
+            [ 20, "MOVE_SPITE" ],
+            [ 23, "MOVE_HEADBUTT" ],
+            [ 25, "MOVE_BULLDOZE" ],
+            [ 28, "MOVE_ANCIENT_POWER" ],
+            [ 30, "MOVE_SCREECH" ],
+            [ 33, "MOVE_BODY_SLAM" ],
+            [ 35, "MOVE_PURSUIT" ],
+            [ 37, "MOVE_DIG" ],
+            [ 39, "MOVE_AQUA_TAIL" ],
+            [ 41, "MOVE_TAKE_DOWN" ],
+            [ 45, "MOVE_TRUMP_CARD" ],
+            [ 48, "MOVE_IRON_TAIL" ],
+            [ 51, "MOVE_CURSE" ],
+            [ 54, "MOVE_DRAGON_RUSH" ],
+            [ 57, "MOVE_EARTHQUAKE" ],
+            [ 60, "MOVE_DOUBLE_EDGE" ],
+            [ 67, "MOVE_ROOST" ]
         ],
         "by_tm": [
             "TM03",
@@ -100,9 +108,7 @@
             "MOVE_MUD_SLAP",
             "MOVE_ROLLOUT",
             "MOVE_AQUA_TAIL",
-            "MOVE_SNORE",
             "MOVE_SPITE",
-            "MOVE_ENDEAVOR",
             "MOVE_ANCIENT_POWER",
             "MOVE_ZEN_HEADBUTT",
             "MOVE_LAST_RESORT"
@@ -112,12 +118,8 @@
             "MOVE_ANCIENT_POWER",
             "MOVE_ROCK_SLIDE",
             "MOVE_BITE",
-            "MOVE_HEADBUTT",
             "MOVE_ASTONISH",
-            "MOVE_CURSE",
-            "MOVE_TRUMP_CARD",
-            "MOVE_MAGIC_COAT",
-            "MOVE_SNORE"
+            "MOVE_TRUMP_CARD"
         ]
     },
     "evolutions": [  ],

@@ -4,7 +4,7 @@
         "attack": 85,
         "defense": 60,
         "speed": 115,
-        "special_attack": 65,
+        "special_attack": 60,
         "special_defense": 65
     },
     "types": [ "TYPE_NORMAL", "TYPE_NORMAL" ],
@@ -34,24 +34,24 @@
     "icon_palette": 1,
     "learnset": {
         "by_level": [
-            [ 1, "MOVE_SWITCHEROO" ],
             [ 1, "MOVE_SCRATCH" ],
             [ 1, "MOVE_GROWL" ],
-            [ 1, "MOVE_BITE" ],
-            [ 1, "MOVE_FAKE_OUT" ],
             [ 6, "MOVE_BITE" ],
-            [ 9, "MOVE_FAKE_OUT" ],
-            [ 14, "MOVE_FURY_SWIPES" ],
-            [ 17, "MOVE_SCREECH" ],
+            [ 9, "MOVE_FURY_SWIPES" ],
+            [ 13, "MOVE_FAKE_OUT" ],
+            [ 16, "MOVE_SCREECH" ],
+            [ 18, "MOVE_NASTY_PLOT" ],
+
+            [ 20, "MOVE_SLASH" ],
             [ 22, "MOVE_FAINT_ATTACK" ],
-            [ 25, "MOVE_TAUNT" ],
-            [ 32, "MOVE_POWER_GEM" ],
-            [ 37, "MOVE_SLASH" ],
-            [ 44, "MOVE_NASTY_PLOT" ],
-            [ 49, "MOVE_ASSURANCE" ],
-            [ 56, "MOVE_CAPTIVATE" ],
-            [ 61, "MOVE_NIGHT_SLASH" ],
-            [ 68, "MOVE_FEINT" ]
+            [ 25, "MOVE_FEINT" ],
+            [ 28, "MOVE_TAUNT" ],
+            [ 31, "MOVE_SWIFT" ],
+            [ 34, "MOVE_ASSURANCE" ],
+            [ 37, "MOVE_POWER_GEM" ],
+            [ 40, "MOVE_HYPNOSIS" ],
+            [ 44, "MOVE_NIGHT_SLASH" ],
+            [ 48, "MOVE_PLAY_ROUGH" ]
         ],
         "by_tm": [
             "TM03",

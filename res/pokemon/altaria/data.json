@@ -2,7 +2,7 @@
     "base_stats": {
         "hp": 75,
         "attack": 100,
-        "defense": 100,
+        "defense": 90,
         "speed": 80,
         "special_attack": 100,
         "special_defense": 105
@@ -34,23 +34,25 @@
     "icon_palette": 0,
     "learnset": {
         "by_level": [
-            [ 1, "MOVE_PLUCK" ],
-            [ 1, "MOVE_PECK" ],
             [ 1, "MOVE_GROWL" ],
-            [ 1, "MOVE_ASTONISH" ],
-            [ 1, "MOVE_SING" ],
+            [ 1, "MOVE_PECK" ],
             [ 5, "MOVE_ASTONISH" ],
-            [ 9, "MOVE_SING" ],
-            [ 13, "MOVE_FURY_ATTACK" ],
+            [ 10, "MOVE_DISARMING_VOICE" ],
+            [ 15, "MOVE_SING" ],
             [ 18, "MOVE_SAFEGUARD" ],
-            [ 23, "MOVE_MIST" ],
-            [ 28, "MOVE_TAKE_DOWN" ],
-            [ 32, "MOVE_NATURAL_GIFT" ],
-            [ 35, "MOVE_DRAGON_BREATH" ],
-            [ 39, "MOVE_DRAGON_DANCE" ],
-            [ 46, "MOVE_REFRESH" ],
-            [ 54, "MOVE_DRAGON_PULSE" ],
-            [ 62, "MOVE_PERISH_SONG" ],
+            [ 21, "MOVE_GUST" ],
+            [ 25, "MOVE_MIST" ],
+            [ 28, "MOVE_DRAGON_BREATH" ],
+            [ 31, "MOVE_NATURAL_GIFT" ],
+            [ 34, "MOVE_DAZZLING_GLEAM" ],
+            [ 37, "MOVE_AERIAL_ACE" ],
+            [ 39, "MOVE_MIRROR_MOVE" ],
+
+            [ 40, "MOVE_DRAGON_PULSE" ],
+            [ 43, "MOVE_REFRESH" ],
+            [ 47, "MOVE_HYPER_VOICE" ],
+            [ 52, "MOVE_MOONBLAST" ],
+            [ 60, "MOVE_HAZE" ],
             [ 70, "MOVE_SKY_ATTACK" ]
         ],
         "by_tm": [
@@ -97,13 +99,11 @@
         "by_tutor": [
             "MOVE_MUD_SLAP",
             "MOVE_OMINOUS_WIND",
-            "MOVE_SNORE",
             "MOVE_AIR_CUTTER",
             "MOVE_OUTRAGE",
             "MOVE_TWISTER",
             "MOVE_HEAT_WAVE",
-            "MOVE_SWIFT",
-            "MOVE_UPROAR"
+            "MOVE_SWIFT"
         ]
     },
     "evolutions": [  ],

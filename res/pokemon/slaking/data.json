@@ -36,19 +36,26 @@
         "by_level": [
             [ 1, "MOVE_SCRATCH" ],
             [ 1, "MOVE_YAWN" ],
-            [ 1, "MOVE_ENCORE" ],
-            [ 1, "MOVE_SLACK_OFF" ],
-            [ 7, "MOVE_ENCORE" ],
-            [ 13, "MOVE_SLACK_OFF" ],
-            [ 19, "MOVE_FAINT_ATTACK" ],
-            [ 25, "MOVE_AMNESIA" ],
-            [ 31, "MOVE_COVET" ],
-            [ 36, "MOVE_SWAGGER" ],
-            [ 37, "MOVE_COUNTER" ],
-            [ 43, "MOVE_FLAIL" ],
-            [ 49, "MOVE_FLING" ],
-            [ 55, "MOVE_PUNISHMENT" ],
-            [ 61, "MOVE_HAMMER_ARM" ]
+            [ 5, "MOVE_SLACK_OFF" ],
+            [ 10, "MOVE_FAINT_ATTACK" ],
+            [ 15, "MOVE_CRUSH_CLAW" ],
+            [ 18, "MOVE_SLASH" ],
+            [ 20, "MOVE_UPROAR" ],
+            [ 22, "MOVE_ENDURE" ],
+            [ 25, "MOVE_PLAY_ROUGH" ],
+
+            [ 27, "MOVE_BRICK_BREAK" ],
+            [ 29, "MOVE_SHADOW_CLAW" ],
+            [ 34, "MOVE_SWAGGER" ],
+            [ 37, "MOVE_NIGHT_SLASH" ],
+
+            [ 40, "MOVE_FOCUS_PUNCH" ],
+            [ 45, "MOVE_PUNISHMENT" ],
+            [ 51, "MOVE_BODY_SLAM" ],
+            [ 58, "MOVE_HAMMER_ARM" ],
+            [ 64, "MOVE_FLING" ],
+            [ 70, "MOVE_SUCKER_PUNCH" ],
+            [ 75, "MOVE_REVERSAL" ]
         ],
         "by_tm": [
             "TM01",
@@ -105,7 +112,6 @@
             "MOVE_THUNDER_PUNCH",
             "MOVE_FIRE_PUNCH",
             "MOVE_ICE_PUNCH",
-            "MOVE_SNORE",
             "MOVE_GUNK_SHOT",
             "MOVE_SUCKER_PUNCH"
         ]

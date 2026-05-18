@@ -3,7 +3,7 @@
         "hp": 80,
         "attack": 120,
         "defense": 80,
-        "speed": 75,
+        "speed": 85,
         "special_attack": 95,
         "special_defense": 80
     },
@@ -35,18 +35,24 @@
     "learnset": {
         "by_level": [
             [ 1, "MOVE_TACKLE" ],
-            [ 1, "MOVE_LEER" ],
-            [ 1, "MOVE_CHARGE" ],
             [ 5, "MOVE_LEER" ],
-            [ 9, "MOVE_CHARGE" ],
-            [ 13, "MOVE_SPARK" ],
-            [ 18, "MOVE_BITE" ],
-            [ 23, "MOVE_ROAR" ],
-            [ 28, "MOVE_SWAGGER" ],
-            [ 35, "MOVE_THUNDER_FANG" ],
-            [ 42, "MOVE_CRUNCH" ],
-            [ 49, "MOVE_SCARY_FACE" ],
-            [ 56, "MOVE_DISCHARGE" ]
+            [ 8, "MOVE_ROAR" ],
+            [ 11, "MOVE_SPARK" ],
+
+            [ 15, "MOVE_BITE" ],
+            [ 18, "MOVE_THUNDER_WAVE" ],
+            [ 22, "MOVE_TAKE_DOWN" ],
+            [ 25, "MOVE_SWAGGER" ],
+            [ 28, "MOVE_DOUBLE_KICK" ],
+
+            [ 30, "MOVE_SCARY_FACE" ],
+            [ 34, "MOVE_THUNDER_FANG" ],
+            [ 37, "MOVE_NIGHT_SLASH" ],
+            [ 43, "MOVE_DISCHARGE" ],
+            [ 49, "MOVE_FIRE_FANG" ],
+            [ 54, "MOVE_ICE_FANG" ],
+            [ 60, "MOVE_CRUNCH" ],
+            [ 72, "MOVE_VOLT_TACKLE" ]
         ],
         "by_tm": [
             "TM05",
@@ -84,7 +90,6 @@
             "MOVE_MUD_SLAP",
             "MOVE_FURY_CUTTER",
             "MOVE_SUPERPOWER",
-            "MOVE_SNORE",
             "MOVE_SIGNAL_BEAM",
             "MOVE_MAGNET_RISE",
             "MOVE_SWIFT"

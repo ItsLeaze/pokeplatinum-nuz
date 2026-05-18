@@ -1,0 +1,30 @@
+############ GARDENIA ############
+
+# Encouters
+Ariados @ Silver Powder
+Ability: Swarm
+Level: 25
+Adamant Nature
+- Poison Jab
+- Pin Missile
+- Shadow Sneak
+
+# Gardenia's Mons
+Roserade
+Ability: Natural Cure
+Level: 25
+Hardy Nature
+- Magical Leaf
+- Sludge
+- Extrasensory
+
+######## E4 #########
+Roserade
+Ability: Natural Cure
+Level: 80
+Hardy Nature
+
+Togekiss
+Ability: Hustle
+Level: 80
+Hardy Nature

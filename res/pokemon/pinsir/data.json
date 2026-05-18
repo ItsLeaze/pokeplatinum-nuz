@@ -38,16 +38,19 @@
             [ 1, "MOVE_FOCUS_ENERGY" ],
             [ 4, "MOVE_BIND" ],
             [ 8, "MOVE_SEISMIC_TOSS" ],
-            [ 13, "MOVE_HARDEN" ],
-            [ 18, "MOVE_REVENGE" ],
-            [ 21, "MOVE_BRICK_BREAK" ],
+            [ 11, "MOVE_HARDEN" ],
+            [ 14, "MOVE_FURY_CUTTER" ],
+            [ 17, "MOVE_SUBMISSION" ],
             [ 25, "MOVE_VITAL_THROW" ],
-            [ 30, "MOVE_X_SCISSOR" ],
-            [ 35, "MOVE_THRASH" ],
-            [ 38, "MOVE_SWORDS_DANCE" ],
-            [ 42, "MOVE_SUBMISSION" ],
-            [ 47, "MOVE_GUILLOTINE" ],
-            [ 52, "MOVE_SUPERPOWER" ]
+            [ 29, "MOVE_REVENGE" ],
+            [ 33, "MOVE_BRICK_BREAK" ],
+            [ 37, "MOVE_X_SCISSOR" ],
+            [ 41, "MOVE_THRASH" ],
+            [ 47, "MOVE_MIMIC" ],
+            [ 52, "MOVE_SUPERPOWER" ],
+            [ 57, "MOVE_STONE_EDGE" ],
+            [ 64, "MOVE_EARTHQUAKE" ],
+            [ 47, "MOVE_GUILLOTINE" ]
         ],
         "by_tm": [
             "TM01",
@@ -93,9 +96,7 @@
         "by_tutor": [
             "MOVE_FURY_CUTTER",
             "MOVE_SUPERPOWER",
-            "MOVE_SNORE",
-            "MOVE_IRON_DEFENSE",
-            "MOVE_KNOCK_OFF"
+            "MOVE_IRON_DEFENSE"
         ],
         "egg_moves": [
             "MOVE_FURY_ATTACK",

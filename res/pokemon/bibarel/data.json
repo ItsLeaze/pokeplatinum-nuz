@@ -4,7 +4,7 @@
         "attack": 90,
         "defense": 60,
         "speed": 75,
-        "special_attack": 60,
+        "special_attack": 55,
         "special_defense": 60
     },
     "types": [ "TYPE_NORMAL", "TYPE_WATER" ],
@@ -36,18 +36,22 @@
         "by_level": [
             [ 1, "MOVE_TACKLE" ],
             [ 1, "MOVE_GROWL" ],
-            [ 5, "MOVE_GROWL" ],
-            [ 9, "MOVE_DEFENSE_CURL" ],
-            [ 13, "MOVE_ROLLOUT" ],
-            [ 15, "MOVE_WATER_GUN" ],
-            [ 18, "MOVE_HEADBUTT" ],
-            [ 23, "MOVE_HYPER_FANG" ],
-            [ 28, "MOVE_YAWN" ],
-            [ 33, "MOVE_AMNESIA" ],
-            [ 38, "MOVE_TAKE_DOWN" ],
-            [ 43, "MOVE_SUPER_FANG" ],
-            [ 48, "MOVE_SUPERPOWER" ],
-            [ 53, "MOVE_CURSE" ]
+            [ 5, "MOVE_DEFENSE_CURL" ],
+            [ 10, "MOVE_ROLLOUT" ],
+            [ 14, "MOVE_HEADBUTT" ],
+
+            [ 16, "MOVE_AQUA_JET" ],
+            [ 19, "MOVE_YAWN" ],
+            [ 22, "MOVE_HYPER_FANG" ],
+            [ 25, "MOVE_DIVE" ],
+            [ 28, "MOVE_FLING" ],
+            [ 30, "MOVE_AQUA_TAIL" ],
+            [ 33, "MOVE_IRON_TAIL" ],
+            [ 37, "MOVE_SUPER_FANG" ],
+            [ 41, "MOVE_TAKE_DOWN" ],
+            [ 44, "MOVE_AMNESIA" ],
+            [ 49, "MOVE_SUPERPOWER" ],
+            [ 56, "MOVE_GIGA_IMPACT" ]
         ],
         "by_tm": [
             "TM01",
@@ -103,7 +107,6 @@
             "MOVE_ROLLOUT",
             "MOVE_SUPERPOWER",
             "MOVE_AQUA_TAIL",
-            "MOVE_SNORE",
             "MOVE_LAST_RESORT",
             "MOVE_SWIFT"
         ]

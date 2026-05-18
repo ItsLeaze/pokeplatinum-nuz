@@ -2,10 +2,10 @@
     "base_stats": {
         "hp": 115,
         "attack": 45,
-        "defense": 20,
+        "defense": 25,
         "speed": 20,
         "special_attack": 45,
-        "special_defense": 25
+        "special_defense": 30
     },
     "types": [ "TYPE_NORMAL", "TYPE_FAIRY" ],
     "catch_rate": 170,
@@ -34,19 +34,29 @@
     "icon_palette": 0,
     "learnset": {
         "by_level": [
-            [ 1, "MOVE_SING" ],
-            [ 5, "MOVE_DEFENSE_CURL" ],
-            [ 9, "MOVE_POUND" ],
-            [ 13, "MOVE_DISABLE" ],
-            [ 17, "MOVE_ROLLOUT" ],
-            [ 21, "MOVE_DOUBLE_SLAP" ],
-            [ 25, "MOVE_REST" ],
-            [ 29, "MOVE_BODY_SLAM" ],
-            [ 33, "MOVE_GYRO_BALL" ],
-            [ 37, "MOVE_WAKE_UP_SLAP" ],
-            [ 41, "MOVE_MIMIC" ],
-            [ 45, "MOVE_HYPER_VOICE" ],
-            [ 49, "MOVE_DOUBLE_EDGE" ]
+            [ 1, "MOVE_SWEET_KISS" ],
+            [ 1, "MOVE_DEFENSE_CURL" ],
+            [ 5, "MOVE_POUND" ],
+            [ 9, "MOVE_SING" ],
+
+            [ 10, "MOVE_ROLLOUT" ],
+            [ 13, "MOVE_COPYCAT" ],
+            [ 16, "MOVE_DISARMING_VOICE" ],
+            [ 18, "MOVE_DOUBLE_SLAP" ],
+
+            [ 23, "MOVE_COPYCAT" ],
+            [ 25, "MOVE_WAKE_UP_SLAP" ],
+            [ 28, "MOVE_PLAY_ROUGH" ],
+            [ 31, "MOVE_DISABLE" ],
+            [ 36, "MOVE_GYRO_BALL" ],
+            [ 38, "MOVE_HYPER_VOICE" ],
+            [ 40, "MOVE_DAZZLING_GLEAM" ],
+            [ 46, "MOVE_GRAVITY" ],
+            [ 50, "MOVE_DOUBLE_EDGE" ],
+            [ 54, "MOVE_GRASS_KNOT" ],
+            [ 60, "MOVE_THUNDER" ],
+            [ 64, "MOVE_BLIZZARD" ],
+            [ 68, "MOVE_MOONBLAST" ]
         ],
         "by_tm": [
             "TM01",
@@ -105,12 +115,10 @@
             "MOVE_THUNDER_PUNCH",
             "MOVE_FIRE_PUNCH",
             "MOVE_ICE_PUNCH",
-            "MOVE_SNORE",
             "MOVE_HELPING_HAND",
             "MOVE_ENDEAVOR",
             "MOVE_LAST_RESORT",
-            "MOVE_BOUNCE",
-            "MOVE_KNOCK_OFF"
+            "MOVE_BOUNCE"
         ]
     },
     "evolutions": [

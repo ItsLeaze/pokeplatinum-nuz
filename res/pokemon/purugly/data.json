@@ -1,7 +1,7 @@
 {
     "base_stats": {
         "hp": 90,
-        "attack": 90,
+        "attack": 95,
         "defense": 70,
         "speed": 110,
         "special_attack": 70,
@@ -34,21 +34,23 @@
     "icon_palette": 2,
     "learnset": {
         "by_level": [
-            [ 1, "MOVE_FAKE_OUT" ],
             [ 1, "MOVE_SCRATCH" ],
-            [ 1, "MOVE_GROWL" ],
-            [ 5, "MOVE_SCRATCH" ],
-            [ 8, "MOVE_GROWL" ],
-            [ 13, "MOVE_HYPNOSIS" ],
-            [ 17, "MOVE_FAINT_ATTACK" ],
-            [ 20, "MOVE_FURY_SWIPES" ],
-            [ 25, "MOVE_CHARM" ],
-            [ 29, "MOVE_ASSIST" ],
-            [ 32, "MOVE_CAPTIVATE" ],
-            [ 37, "MOVE_SLASH" ],
-            [ 38, "MOVE_SWAGGER" ],
-            [ 45, "MOVE_BODY_SLAM" ],
-            [ 53, "MOVE_ATTRACT" ]
+            [ 5, "MOVE_GROWL" ],
+            [ 9, "MOVE_HYPNOSIS" ],
+            [ 13, "MOVE_SLASH" ],
+            [ 15, "MOVE_ASSIST" ],
+            [ 17, "MOVE_ATTRACT" ],
+            [ 19, "MOVE_AERIAL_ACE" ],
+            [ 21, "MOVE_FAKE_OUT" ],
+            [ 23, "MOVE_FAINT_ATTACK" ],
+
+            [ 24, "MOVE_BULLDOZE" ],
+            [ 27, "MOVE_SUCKER_PUNCH" ],
+            [ 31, "MOVE_FURY_SWIPES" ],
+            [ 37, "MOVE_SWAGGER" ],
+            [ 43, "MOVE_PLAY_ROUGH" ],
+            [ 48, "MOVE_BODY_SLAM" ],
+            [ 56, "MOVE_GIGA_IMPACT" ]
         ],
         "by_tm": [
             "TM03",
@@ -96,7 +98,6 @@
             "MOVE_MUD_SLAP",
             "MOVE_FURY_CUTTER",
             "MOVE_ROLLOUT",
-            "MOVE_SNORE",
             "MOVE_LAST_RESORT",
             "MOVE_KNOCK_OFF",
             "MOVE_SUCKER_PUNCH",

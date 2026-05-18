@@ -34,21 +34,23 @@
     "icon_palette": 2,
     "learnset": {
         "by_level": [
-            [ 1, "MOVE_MUD_SPORT" ],
+            [ 1, "MOVE_LEER" ],
             [ 1, "MOVE_BUBBLE" ],
             [ 5, "MOVE_VICE_GRIP" ],
-            [ 9, "MOVE_LEER" ],
-            [ 11, "MOVE_HARDEN" ],
-            [ 15, "MOVE_BUBBLE_BEAM" ],
-            [ 19, "MOVE_MUD_SHOT" ],
-            [ 21, "MOVE_METAL_CLAW" ],
-            [ 25, "MOVE_STOMP" ],
-            [ 29, "MOVE_PROTECT" ],
-            [ 31, "MOVE_GUILLOTINE" ],
-            [ 35, "MOVE_SLAM" ],
-            [ 39, "MOVE_BRINE" ],
-            [ 41, "MOVE_CRABHAMMER" ],
-            [ 45, "MOVE_FLAIL" ]
+            [ 9, "MOVE_HARDEN" ],
+            [ 14, "MOVE_MUD_SHOT" ],
+            [ 18, "MOVE_CLAMP" ],
+            [ 22, "MOVE_METAL_CLAW" ],
+            [ 25, "MOVE_SLAM" ],
+            
+            [ 28, "MOVE_X_SCISSOR" ],
+            [ 30, "MOVE_DIG" ],
+            [ 34, "MOVE_CRABHAMMER" ],
+            [ 37, "MOVE_KNOCK_OFF" ],
+            [ 41, "MOVE_HAMMER_ARM" ],
+            [ 44, "MOVE_TICKLE" ],
+            [ 49, "MOVE_FLAIL" ],
+            [ 56, "MOVE_GUILLOTINE" ]
         ],
         "by_tm": [
             "TM03",
@@ -93,20 +95,15 @@
             "MOVE_FURY_CUTTER",
             "MOVE_ICY_WIND",
             "MOVE_SUPERPOWER",
-            "MOVE_SNORE",
             "MOVE_ANCIENT_POWER",
-            "MOVE_IRON_DEFENSE",
             "MOVE_KNOCK_OFF"
         ],
         "egg_moves": [
             "MOVE_DIG",
             "MOVE_HAZE",
-            "MOVE_AMNESIA",
             "MOVE_FLAIL",
             "MOVE_SLAM",
             "MOVE_KNOCK_OFF",
-            "MOVE_SWORDS_DANCE",
-            "MOVE_TICKLE",
             "MOVE_ANCIENT_POWER"
         ]
     },

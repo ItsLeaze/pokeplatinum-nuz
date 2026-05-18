@@ -1,10 +1,10 @@
 {
     "base_stats": {
         "hp": 55,
-        "attack": 68,
+        "attack": 70,
         "defense": 64,
         "speed": 31,
-        "special_attack": 45,
+        "special_attack": 50,
         "special_defense": 55
     },
     "types": [ "TYPE_GRASS", "TYPE_GRASS" ],
@@ -35,17 +35,21 @@
     "learnset": {
         "by_level": [
             [ 1, "MOVE_TACKLE" ],
-            [ 5, "MOVE_WITHDRAW" ],
-            [ 9, "MOVE_ABSORB" ],
+            [ 1, "MOVE_WITHDRAW" ],
+            [ 5, "MOVE_MEGA_DRAIN" ],
+            [ 10, "MOVE_BITE" ],
             [ 13, "MOVE_RAZOR_LEAF" ],
-            [ 17, "MOVE_CURSE" ],
-            [ 21, "MOVE_BITE" ],
-            [ 25, "MOVE_MEGA_DRAIN" ],
-            [ 29, "MOVE_LEECH_SEED" ],
-            [ 33, "MOVE_SYNTHESIS" ],
-            [ 37, "MOVE_CRUNCH" ],
-            [ 41, "MOVE_GIGA_DRAIN" ],
-            [ 45, "MOVE_LEAF_STORM" ]
+            [ 15, "MOVE_WORRY_SEED" ],
+            [ 20, "MOVE_BULLDOZE" ],
+            [ 22, "MOVE_BULLET_SEED" ],
+            [ 24, "MOVE_CRUNCH" ],
+            [ 27, "MOVE_SEED_BOMB" ],
+            [ 31, "MOVE_EARTHQUAKE" ],
+            [ 35, "MOVE_GIGA_DRAIN" ],
+            [ 39, "MOVE_LEAF_STORM" ],
+            [ 42, "MOVE_THRASH" ],
+            [ 47, "MOVE_SYNTHESIS" ],
+            [ 50, "MOVE_DOUBLE_EDGE" ]
         ],
         "by_tm": [
             "TM06",
@@ -85,21 +89,16 @@
         "by_tutor": [
             "MOVE_MUD_SLAP",
             "MOVE_SUPERPOWER",
-            "MOVE_SNORE",
-            "MOVE_SYNTHESIS",
             "MOVE_EARTH_POWER",
             "MOVE_SEED_BOMB"
         ],
         "egg_moves": [
             "MOVE_WORRY_SEED",
-            "MOVE_GROWTH",
-            "MOVE_TICKLE",
             "MOVE_BODY_SLAM",
             "MOVE_DOUBLE_EDGE",
             "MOVE_SAND_TOMB",
             "MOVE_SEED_BOMB",
             "MOVE_THRASH",
-            "MOVE_AMNESIA",
             "MOVE_SUPERPOWER"
         ]
     },

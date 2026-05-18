@@ -40,13 +40,19 @@
             [ 7, "MOVE_FOCUS_ENERGY" ],
             [ 10, "MOVE_BITE" ],
             [ 13, "MOVE_PURSUIT" ],
-            [ 16, "MOVE_HYPER_FANG" ],
-            [ 19, "MOVE_SUCKER_PUNCH" ],
-            [ 22, "MOVE_CRUNCH" ],
-            [ 25, "MOVE_ASSURANCE" ],
-            [ 28, "MOVE_SUPER_FANG" ],
-            [ 31, "MOVE_DOUBLE_EDGE" ],
-            [ 34, "MOVE_ENDEAVOR" ]
+            [ 16, "MOVE_SUPER_FANG" ],
+
+            [ 21, "MOVE_HYPER_FANG" ],
+            [ 24, "MOVE_ME_FIRST" ],
+            [ 26, "MOVE_ASSURANCE" ],
+            [ 29, "MOVE_FIRE_FANG" ],
+            [ 32, "MOVE_CRUNCH" ],
+            [ 34, "MOVE_ZEN_HEADBUTT" ],
+            [ 38, "MOVE_THUNDER_FANG" ],
+            [ 41, "MOVE_FACADE" ],
+            [ 43, "MOVE_SCARY_FACE" ],
+            [ 46, "MOVE_ICE_FANG" ],
+            [ 50, "MOVE_DOUBLE_EDGE" ]
         ],
         "by_tm": [
             "TM06",
@@ -88,7 +94,6 @@
         "by_tutor": [
             "MOVE_MUD_SLAP",
             "MOVE_ICY_WIND",
-            "MOVE_SNORE",
             "MOVE_ENDEAVOR",
             "MOVE_ZEN_HEADBUTT",
             "MOVE_LAST_RESORT",
@@ -100,12 +105,8 @@
             "MOVE_FLAME_WHEEL",
             "MOVE_FURY_SWIPES",
             "MOVE_BITE",
-            "MOVE_COUNTER",
             "MOVE_REVERSAL",
-            "MOVE_UPROAR",
-            "MOVE_SWAGGER",
-            "MOVE_LAST_RESORT",
-            "MOVE_ME_FIRST"
+            "MOVE_LAST_RESORT"
         ]
     },
     "evolutions": [

@@ -38,14 +38,19 @@
             [ 1, "MOVE_WATER_GUN" ],
             [ 6, "MOVE_SUPERSONIC" ],
             [ 11, "MOVE_WING_ATTACK" ],
-            [ 16, "MOVE_MIST" ],
-            [ 19, "MOVE_WATER_PULSE" ],
-            [ 24, "MOVE_QUICK_ATTACK" ],
-            [ 29, "MOVE_ROOST" ],
-            [ 34, "MOVE_PURSUIT" ],
-            [ 37, "MOVE_AGILITY" ],
-            [ 42, "MOVE_AERIAL_ACE" ],
-            [ 47, "MOVE_AIR_SLASH" ]
+            [ 14, "MOVE_MIST" ],
+            [ 17, "MOVE_AQUA_RING" ],
+            [ 20, "MOVE_QUICK_ATTACK" ],
+            [ 24, "MOVE_WATER_PULSE" ],
+            [ 27, "MOVE_AIR_CUTTER" ],
+            [ 30, "MOVE_AGILITY" ],
+
+            [ 35, "MOVE_FLING" ],
+            [ 39, "MOVE_TWISTER" ],
+            [ 43, "MOVE_AIR_SLASH" ],
+            [ 48, "MOVE_WEATHER_BALL" ],
+            [ 52, "MOVE_KNOCK_OFF" ],
+            [ 58, "MOVE_HYDRO_PUMP" ]
         ],
         "by_tm": [
             "TM03",
@@ -84,21 +89,16 @@
             "MOVE_MUD_SLAP",
             "MOVE_ICY_WIND",
             "MOVE_OMINOUS_WIND",
-            "MOVE_SNORE",
             "MOVE_AIR_CUTTER",
             "MOVE_TWISTER",
-            "MOVE_KNOCK_OFF",
-            "MOVE_SWIFT",
-            "MOVE_UPROAR"
+            "MOVE_SWIFT"
         ],
         "egg_moves": [
             "MOVE_MIST",
             "MOVE_TWISTER",
             "MOVE_AGILITY",
             "MOVE_GUST",
-            "MOVE_WATER_SPORT",
-            "MOVE_AQUA_RING",
-            "MOVE_KNOCK_OFF"
+            "MOVE_AQUA_RING"
         ]
     },
     "evolutions": [

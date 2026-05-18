@@ -34,20 +34,29 @@
     "icon_palette": 2,
     "learnset": {
         "by_level": [
-            [ 1, "MOVE_COVET" ],
             [ 1, "MOVE_SCRATCH" ],
             [ 1, "MOVE_LEER" ],
-            [ 1, "MOVE_LICK" ],
             [ 1, "MOVE_FAKE_TEARS" ],
-            [ 8, "MOVE_FURY_SWIPES" ],
-            [ 15, "MOVE_FAINT_ATTACK" ],
-            [ 22, "MOVE_SWEET_SCENT" ],
-            [ 29, "MOVE_SLASH" ],
-            [ 38, "MOVE_SCARY_FACE" ],
+            [ 5, "MOVE_LICK" ],
+            [ 10, "MOVE_FURY_SWIPES" ],
+            [ 13, "MOVE_YAWN" ],
+            [ 16, "MOVE_FAINT_ATTACK" ],
+            [ 18, "MOVE_SWEET_SCENT" ],
+            [ 21, "MOVE_SLASH" ],
+            [ 25, "MOVE_SNORE" ],
+            [ 28, "MOVE_PLAY_ROUGH" ],
+            
+            [ 30, "MOVE_SCARY_FACE" ],
+            [ 33, "MOVE_CRUNCH" ],
+            [ 37, "MOVE_METAL_CLAW" ],
+            [ 42, "MOVE_CROSS_CHOP" ],
             [ 47, "MOVE_REST" ],
-            [ 49, "MOVE_SNORE" ],
-            [ 58, "MOVE_THRASH" ],
-            [ 67, "MOVE_HAMMER_ARM" ]
+            [ 53, "MOVE_SNORE" ],
+            [ 59, "MOVE_THRASH" ],
+            [ 63, "MOVE_PAYBACK" ],
+            [ 67, "MOVE_EARTHQUAKE" ],
+            [ 73, "MOVE_HAMMER_ARM" ],
+            [ 80, "MOVE_DOUBLE_EDGE" ]
         ],
         "by_tm": [
             "TM01",
@@ -102,12 +111,10 @@
             "MOVE_FIRE_PUNCH",
             "MOVE_SUPERPOWER",
             "MOVE_ICE_PUNCH",
-            "MOVE_SNORE",
             "MOVE_GUNK_SHOT",
             "MOVE_SEED_BOMB",
             "MOVE_LAST_RESORT",
-            "MOVE_SWIFT",
-            "MOVE_UPROAR"
+            "MOVE_SWIFT"
         ]
     },
     "evolutions": [  ],

@@ -1,7 +1,7 @@
 {
     "base_stats": {
         "hp": 70,
-        "attack": 65,
+        "attack": 75,
         "defense": 60,
         "speed": 90,
         "special_attack": 90,
@@ -35,23 +35,23 @@
     "learnset": {
         "by_level": [
             [ 1, "MOVE_SILVER_WIND" ],
-            [ 1, "MOVE_TACKLE" ],
-            [ 1, "MOVE_DISABLE" ],
             [ 1, "MOVE_FORESIGHT" ],
-            [ 1, "MOVE_SUPERSONIC" ],
             [ 5, "MOVE_SUPERSONIC" ],
-            [ 11, "MOVE_CONFUSION" ],
-            [ 13, "MOVE_POISON_POWDER" ],
-            [ 17, "MOVE_LEECH_LIFE" ],
-            [ 23, "MOVE_STUN_SPORE" ],
+            [ 9, "MOVE_CONFUSION" ],
+            [ 11, "MOVE_POISON_POWDER" ],
+            [ 13, "MOVE_POISON_FANG" ],
+            [ 16, "MOVE_LEECH_LIFE" ],
+            [ 20, "MOVE_SIGNAL_BEAM" ],
+            [ 23, "MOVE_GIGA_DRAIN" ],
             [ 25, "MOVE_PSYBEAM" ],
-            [ 29, "MOVE_SLEEP_POWDER" ],
-            [ 31, "MOVE_GUST" ],
-            [ 37, "MOVE_SIGNAL_BEAM" ],
-            [ 41, "MOVE_ZEN_HEADBUTT" ],
-            [ 47, "MOVE_POISON_FANG" ],
-            [ 55, "MOVE_PSYCHIC" ],
-            [ 59, "MOVE_BUG_BUZZ" ]
+            [ 27, "MOVE_SLEEP_POWDER" ],
+            [ 30, "MOVE_SLUDGE_BOMB" ],
+            [ 33, "MOVE_MOONBLAST" ],
+            [ 35, "MOVE_BUG_BUZZ" ],
+            [ 38, "MOVE_ENERGY_BALL" ],
+            [ 42, "MOVE_TOXIC" ],
+            [ 45, "MOVE_PSYCHIC" ],
+            [ 50, "MOVE_DISABLE" ]
         ],
         "by_tm": [
             "TM06",

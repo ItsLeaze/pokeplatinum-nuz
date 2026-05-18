@@ -1,7 +1,7 @@
 {
     "base_stats": {
         "hp": 70,
-        "attack": 40,
+        "attack": 50,
         "defense": 50,
         "speed": 25,
         "special_attack": 55,
@@ -34,19 +34,23 @@
     "icon_palette": 2,
     "learnset": {
         "by_level": [
-            [ 1, "MOVE_DEFENSE_CURL" ],
-            [ 1, "MOVE_POWDER_SNOW" ],
             [ 1, "MOVE_GROWL" ],
             [ 1, "MOVE_WATER_GUN" ],
-            [ 7, "MOVE_ENCORE" ],
-            [ 13, "MOVE_ICE_BALL" ],
-            [ 19, "MOVE_BODY_SLAM" ],
+            [ 1, "MOVE_DEFENSE_CURL" ],
+            [ 5, "MOVE_POWDER_SNOW" ],
+            [ 11, "MOVE_ROLLOUT" ],
+            [ 15, "MOVE_ICE_BALL" ],
+            [ 17, "MOVE_BODY_SLAM" ],
+            [ 19, "MOVE_YAWN" ],
+
             [ 25, "MOVE_AURORA_BEAM" ],
             [ 31, "MOVE_HAIL" ],
             [ 37, "MOVE_REST" ],
             [ 37, "MOVE_SNORE" ],
             [ 43, "MOVE_BLIZZARD" ],
-            [ 49, "MOVE_SHEER_COLD" ]
+            [ 49, "MOVE_SHEER_COLD" ],
+
+            [ 63, "MOVE_ENCORE" ]
         ],
         "by_tm": [
             "TM03",
@@ -86,17 +90,11 @@
             "MOVE_ICY_WIND",
             "MOVE_ROLLOUT",
             "MOVE_AQUA_TAIL",
-            "MOVE_SNORE",
             "MOVE_SIGNAL_BEAM"
         ],
         "egg_moves": [
-            "MOVE_WATER_SPORT",
-            "MOVE_STOCKPILE",
-            "MOVE_SWALLOW",
-            "MOVE_SPIT_UP",
             "MOVE_YAWN",
             "MOVE_ROCK_SLIDE",
-            "MOVE_CURSE",
             "MOVE_FISSURE",
             "MOVE_SIGNAL_BEAM"
         ]

@@ -1,10 +1,10 @@
 {
     "base_stats": {
         "hp": 20,
-        "attack": 10,
+        "attack": 30,
         "defense": 55,
         "speed": 80,
-        "special_attack": 15,
+        "special_attack": 50,
         "special_defense": 20
     },
     "types": [ "TYPE_WATER", "TYPE_WATER" ],
@@ -35,8 +35,11 @@
     "learnset": {
         "by_level": [
             [ 1, "MOVE_SPLASH" ],
-            [ 15, "MOVE_TACKLE" ],
-            [ 30, "MOVE_FLAIL" ]
+            [ 1, "MOVE_TACKLE" ],
+            [ 10, "MOVE_FLAIL" ],
+            [ 20, "MOVE_WHIRLPOOL" ],
+            [ 30, "MOVE_BOUNCE" ],
+            [ 40, "MOVE_HYDRO_PUMP" ]
         ],
         "by_tm": [  ],
         "by_tutor": [ "MOVE_BOUNCE" ]

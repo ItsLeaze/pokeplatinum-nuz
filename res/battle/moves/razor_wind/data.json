@@ -2,7 +2,7 @@
     "name": "Razor Wind",
     "class": "CLASS_SPECIAL",
     "type": "TYPE_NORMAL",
-    "power": 80,
+    "power": 100,
     "accuracy": 100,
     "pp": 10,
     "effect": {

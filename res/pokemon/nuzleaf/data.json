@@ -34,17 +34,26 @@
     "icon_palette": 1,
     "learnset": {
         "by_level": [
-            [ 1, "MOVE_RAZOR_LEAF" ],
-            [ 1, "MOVE_POUND" ],
+            [ 1, "MOVE_BIDE" ],
             [ 3, "MOVE_HARDEN" ],
-            [ 7, "MOVE_GROWTH" ],
-            [ 13, "MOVE_NATURE_POWER" ],
-            [ 19, "MOVE_FAKE_OUT" ],
-            [ 25, "MOVE_TORMENT" ],
-            [ 31, "MOVE_FAINT_ATTACK" ],
-            [ 37, "MOVE_RAZOR_WIND" ],
-            [ 43, "MOVE_SWAGGER" ],
-            [ 49, "MOVE_EXTRASENSORY" ]
+            [ 9, "MOVE_ROLLOUT" ],
+            [ 12, "MOVE_MEGA_DRAIN" ],
+            [ 16, "MOVE_NATURE_POWER" ],
+
+            [ 18, "MOVE_FAKE_OUT" ],
+            [ 21, "MOVE_RAZOR_LEAF" ],
+            [ 23, "MOVE_FAINT_ATTACK" ],
+            [ 26, "MOVE_WORRY_SEED" ],
+            [ 29, "MOVE_GIGA_DRAIN" ],
+            [ 32, "MOVE_RAZOR_WIND" ],
+            [ 35, "MOVE_NIGHT_SLASH" ],
+            [ 39, "MOVE_BRICK_BREAK" ],
+            [ 41, "MOVE_EXTRASENSORY" ],
+            [ 44, "MOVE_SWAGGER" ],
+            [ 47, "MOVE_LEECH_SEED" ],
+            [ 50, "MOVE_LEAF_BLADE" ],
+            [ 54, "MOVE_TORMENT" ],
+            [ 60, "MOVE_SUCKER_PUNCH" ]
         ],
         "by_tm": [
             "TM06",
@@ -93,9 +102,7 @@
             "MOVE_MUD_SLAP",
             "MOVE_FURY_CUTTER",
             "MOVE_ROLLOUT",
-            "MOVE_SNORE",
             "MOVE_SPITE",
-            "MOVE_SYNTHESIS",
             "MOVE_SEED_BOMB",
             "MOVE_SWIFT"
         ]

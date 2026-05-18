@@ -162,7 +162,7 @@ FloaromaTown_ClownCorrectAnswer:
     FadeScreen 6, 1, 1, 0
     WaitFadeScreen
     GetChosenBriefcaseSpecies VAR_0x8000
-    GivePokemon VAR_0x8000, 15, ITEM_NONE, VAR_RESULT
+    GivePokemon VAR_0x8000, 10, ITEM_NONE, VAR_RESULT
     GoToIfEq VAR_RESULT TRUE SetKantoStarterAcquired
     ReleaseAll
     End

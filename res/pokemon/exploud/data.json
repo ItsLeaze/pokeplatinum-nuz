@@ -34,26 +34,25 @@
     "icon_palette": 2,
     "learnset": {
         "by_level": [
-            [ 1, "MOVE_ICE_FANG" ],
-            [ 1, "MOVE_FIRE_FANG" ],
-            [ 1, "MOVE_THUNDER_FANG" ],
             [ 1, "MOVE_POUND" ],
-            [ 1, "MOVE_UPROAR" ],
-            [ 1, "MOVE_ASTONISH" ],
-            [ 1, "MOVE_HOWL" ],
             [ 5, "MOVE_UPROAR" ],
-            [ 11, "MOVE_ASTONISH" ],
-            [ 15, "MOVE_HOWL" ],
-            [ 20, "MOVE_BITE" ],
-            [ 23, "MOVE_SUPERSONIC" ],
-            [ 29, "MOVE_STOMP" ],
-            [ 37, "MOVE_SCREECH" ],
-            [ 40, "MOVE_CRUNCH" ],
-            [ 45, "MOVE_ROAR" ],
-            [ 55, "MOVE_REST" ],
-            [ 55, "MOVE_SLEEP_TALK" ],
-            [ 63, "MOVE_HYPER_VOICE" ],
-            [ 71, "MOVE_HYPER_BEAM" ]
+            [ 9, "MOVE_ASTONISH" ],
+            [ 12, "MOVE_SUPERSONIC" ],
+            [ 15, "MOVE_EXTRASENSORY" ],
+            [ 18, "MOVE_ASTONISH" ],
+
+            [ 20, "MOVE_HYPER_VOICE" ],
+            [ 23, "MOVE_BITE" ],
+            [ 25, "MOVE_SCREECH" ],
+            [ 28, "MOVE_TAUNT" ],
+
+            [ 30, "MOVE_CRUNCH" ],
+            [ 34, "MOVE_ROAR" ],
+            [ 37, "MOVE_OUTRAGE" ],
+            [ 42, "MOVE_ICY_WIND" ],
+            [ 46, "MOVE_SWAGGER" ],
+            [ 50, "MOVE_HAMMER_ARM" ],
+            [ 56, "MOVE_HYPER_BEAM" ]
         ],
         "by_tm": [
             "TM03",
@@ -107,7 +106,6 @@
             "MOVE_THUNDER_PUNCH",
             "MOVE_FIRE_PUNCH",
             "MOVE_ICE_PUNCH",
-            "MOVE_SNORE",
             "MOVE_OUTRAGE",
             "MOVE_ZEN_HEADBUTT",
             "MOVE_UPROAR"

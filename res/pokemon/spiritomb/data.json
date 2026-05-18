@@ -36,17 +36,18 @@
         "by_level": [
             [ 1, "MOVE_CURSE" ],
             [ 1, "MOVE_PURSUIT" ],
-            [ 1, "MOVE_CONFUSE_RAY" ],
-            [ 1, "MOVE_SPITE" ],
-            [ 1, "MOVE_SHADOW_SNEAK" ],
-            [ 7, "MOVE_FAINT_ATTACK" ],
-            [ 13, "MOVE_HYPNOSIS" ],
-            [ 19, "MOVE_DREAM_EATER" ],
-            [ 25, "MOVE_OMINOUS_WIND" ],
-            [ 31, "MOVE_SUCKER_PUNCH" ],
-            [ 37, "MOVE_NASTY_PLOT" ],
-            [ 43, "MOVE_MEMENTO" ],
-            [ 49, "MOVE_DARK_PULSE" ]
+            [ 5, "MOVE_MEMENTO" ],
+            [ 13, "MOVE_FAINT_ATTACK" ],
+            [ 18, "MOVE_CONFUSE_RAY" ],
+            [ 21, "MOVE_SPITE" ],
+            [ 27, "MOVE_SHADOW_SNEAK" ],
+            [ 35, "MOVE_OMINOUS_WIND" ],
+            [ 42, "MOVE_HYPNOSIS" ],
+            [ 42, "MOVE_DREAM_EATER" ],
+            [ 49, "MOVE_SUCKER_PUNCH" ],
+            [ 56, "MOVE_SHADOW_BALL" ],
+            [ 63, "MOVE_DARK_PULSE" ],
+            [ 70, "MOVE_WILL_O_WISP" ]
         ],
         "by_tm": [
             "TM03",
@@ -90,11 +91,8 @@
         "by_tutor": [
             "MOVE_ICY_WIND",
             "MOVE_OMINOUS_WIND",
-            "MOVE_SNORE",
             "MOVE_SPITE",
-            "MOVE_TRICK",
-            "MOVE_SUCKER_PUNCH",
-            "MOVE_UPROAR"
+            "MOVE_SUCKER_PUNCH"
         ],
         "egg_moves": [
             "MOVE_DESTINY_BOND",

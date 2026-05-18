@@ -35,19 +35,24 @@
     "learnset": {
         "by_level": [
             [ 1, "MOVE_NIGHT_SLASH" ],
-            [ 1, "MOVE_TACKLE" ],
             [ 1, "MOVE_LEER" ],
             [ 1, "MOVE_HORN_ATTACK" ],
             [ 1, "MOVE_ENDURE" ],
             [ 7, "MOVE_FURY_ATTACK" ],
             [ 13, "MOVE_AERIAL_ACE" ],
             [ 19, "MOVE_BRICK_BREAK" ],
-            [ 25, "MOVE_COUNTER" ],
-            [ 31, "MOVE_TAKE_DOWN" ],
-            [ 37, "MOVE_CLOSE_COMBAT" ],
-            [ 43, "MOVE_REVERSAL" ],
-            [ 49, "MOVE_FEINT" ],
-            [ 55, "MOVE_MEGAHORN" ]
+            [ 25, "MOVE_PIN_MISSILE" ],
+            [ 28, "MOVE_TAKE_DOWN" ],
+            [ 33, "MOVE_BULLET_SEED" ],
+            [ 35, "MOVE_REVENGE" ],
+            [ 38, "MOVE_ROCK_BLAST" ],
+            [ 43, "MOVE_MEGAHORN" ],
+            [ 47, "MOVE_FEINT" ],
+            [ 51, "MOVE_CLOSE_COMBAT" ],
+            [ 56, "MOVE_DOUBLE_EDGE" ],
+            [ 62, "MOVE_EARTHQUAKE" ],
+            [ 68, "MOVE_REVERSAL" ],
+            [ 74, "MOVE_AGILITY" ]
         ],
         "by_tm": [
             "TM01",
@@ -101,7 +106,6 @@
             "MOVE_BIDE",
             "MOVE_FLAIL",
             "MOVE_FALSE_SWIPE",
-            "MOVE_REVENGE",
             "MOVE_PURSUIT",
             "MOVE_DOUBLE_EDGE"
         ]

@@ -3,7 +3,7 @@
     "class": "CLASS_SPECIAL",
     "type": "TYPE_NORMAL",
     "power": 150,
-    "accuracy": 100,
+    "accuracy": 95,
     "pp": 1,
     "effect": {
         "type": "BATTLE_EFFECT_RECHARGE_AFTER",

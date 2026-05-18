@@ -41,12 +41,14 @@
             [ 11, "MOVE_MILK_DRINK" ],
             [ 15, "MOVE_BIDE" ],
             [ 19, "MOVE_ROLLOUT" ],
-            [ 24, "MOVE_BODY_SLAM" ],
-            [ 29, "MOVE_ZEN_HEADBUTT" ],
-            [ 35, "MOVE_CAPTIVATE" ],
-            [ 41, "MOVE_GYRO_BALL" ],
-            [ 48, "MOVE_HEAL_BELL" ],
-            [ 55, "MOVE_WAKE_UP_SLAP" ]
+            [ 23, "MOVE_BODY_SLAM" ],
+            [ 26, "MOVE_ZEN_HEADBUTT" ],
+            [ 30, "MOVE_BULLDOZE" ],
+            [ 33, "MOVE_WAKE_UP_SLAP" ],
+            [ 36, "MOVE_GYRO_BALL" ],
+            [ 39, "MOVE_HEAL_BELL" ],
+            [ 44, "MOVE_DOUBLE_EDGE" ],
+            [ 50, "MOVE_HAMMER_ARM" ]
         ],
         "by_tm": [
             "TM01",
@@ -102,7 +104,6 @@
             "MOVE_FIRE_PUNCH",
             "MOVE_ICE_PUNCH",
             "MOVE_IRON_HEAD",
-            "MOVE_SNORE",
             "MOVE_HELPING_HAND",
             "MOVE_ZEN_HEADBUTT"
         ],
@@ -116,8 +117,6 @@
             "MOVE_HELPING_HAND",
             "MOVE_SLEEP_TALK",
             "MOVE_DIZZY_PUNCH",
-            "MOVE_HAMMER_ARM",
-            "MOVE_DOUBLE_EDGE",
             "MOVE_PUNISHMENT"
         ]
     },

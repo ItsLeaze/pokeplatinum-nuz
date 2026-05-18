@@ -35,18 +35,19 @@
     "learnset": {
         "by_level": [
             [ 1, "MOVE_TACKLE" ],
-            [ 10, "MOVE_PROTECT" ],
-            [ 15, "MOVE_BUG_BITE" ],
-            [ 20, "MOVE_HIDDEN_POWER" ],
-            [ 23, "MOVE_CONFUSION" ],
-            [ 26, "MOVE_RAZOR_LEAF" ],
-            [ 29, "MOVE_GROWTH" ],
-            [ 32, "MOVE_PSYBEAM" ],
-            [ 35, "MOVE_CAPTIVATE" ],
-            [ 38, "MOVE_FLAIL" ],
-            [ 41, "MOVE_ATTRACT" ],
-            [ 44, "MOVE_PSYCHIC" ],
-            [ 47, "MOVE_LEAF_STORM" ]
+            [ 5, "MOVE_BUG_BITE" ],
+            [ 10, "MOVE_HIDDEN_POWER" ],
+            [ 15, "MOVE_MEGA_DRAIN" ],
+            [ 20, "MOVE_MAGICAL_LEAF" ],
+            [ 22, "MOVE_SILVER_WIND" ],
+            [ 24, "MOVE_PROTECT" ],
+            [ 25, "MOVE_CONFUSION" ],
+            [ 27, "MOVE_BUG_BUZZ" ],
+            [ 30, "MOVE_GIGA_DRAIN" ],
+            [ 34, "MOVE_ATTRACT" ],
+            [ 38, "MOVE_LEAF_STORM" ],
+            [ 46, "MOVE_PSYCHIC" ],
+            [ 54, "MOVE_GROWTH" ]
         ],
         "by_tm": [
             "TM06",
@@ -84,13 +85,10 @@
             "TM90"
         ],
         "by_tutor": [
-            "MOVE_SNORE",
             "MOVE_ENDEAVOR",
-            "MOVE_SYNTHESIS",
             "MOVE_SIGNAL_BEAM",
             "MOVE_SEED_BOMB",
-            "MOVE_SUCKER_PUNCH",
-            "MOVE_UPROAR"
+            "MOVE_SUCKER_PUNCH"
         ]
     },
     "evolutions": [  ],

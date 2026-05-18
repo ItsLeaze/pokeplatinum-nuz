@@ -34,10 +34,30 @@
     "icon_palette": 0,
     "learnset": {
         "by_level": [
-            [ 1, "MOVE_SING" ],
-            [ 1, "MOVE_DISABLE" ],
+            [ 1, "MOVE_SWEET_KISS" ],
             [ 1, "MOVE_DEFENSE_CURL" ],
-            [ 1, "MOVE_DOUBLE_SLAP" ]
+            [ 5, "MOVE_POUND" ],
+            [ 9, "MOVE_SING" ],
+
+            [ 10, "MOVE_ROLLOUT" ],
+            [ 13, "MOVE_COPYCAT" ],
+            [ 16, "MOVE_DISARMING_VOICE" ],
+            [ 18, "MOVE_DOUBLE_SLAP" ],
+
+            [ 20, "MOVE_BODY_SLAM" ],
+            [ 24, "MOVE_COPYCAT" ],
+            [ 27, "MOVE_WAKE_UP_SLAP" ],
+            [ 30, "MOVE_PLAY_ROUGH" ],
+            [ 33, "MOVE_DISABLE" ],
+            [ 37, "MOVE_GYRO_BALL" ],
+            [ 40, "MOVE_HYPER_VOICE" ],
+            [ 43, "MOVE_DAZZLING_GLEAM" ],
+            [ 49, "MOVE_GRAVITY" ],
+            [ 54, "MOVE_DOUBLE_EDGE" ],
+            [ 57, "MOVE_GRASS_KNOT" ],
+            [ 63, "MOVE_THUNDER" ],
+            [ 67, "MOVE_BLIZZARD" ],
+            [ 73, "MOVE_MOONBLAST" ]
         ],
         "by_tm": [
             "TM01",
@@ -99,12 +119,10 @@
             "MOVE_THUNDER_PUNCH",
             "MOVE_FIRE_PUNCH",
             "MOVE_ICE_PUNCH",
-            "MOVE_SNORE",
             "MOVE_HELPING_HAND",
             "MOVE_ENDEAVOR",
             "MOVE_LAST_RESORT",
-            "MOVE_BOUNCE",
-            "MOVE_KNOCK_OFF"
+            "MOVE_BOUNCE"
         ]
     },
     "evolutions": [  ],

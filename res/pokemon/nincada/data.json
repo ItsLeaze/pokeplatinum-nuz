@@ -1,7 +1,7 @@
 {
     "base_stats": {
-        "hp": 31,
-        "attack": 45,
+        "hp": 35,
+        "attack": 55,
         "defense": 90,
         "speed": 40,
         "special_attack": 30,
@@ -36,14 +36,18 @@
         "by_level": [
             [ 1, "MOVE_SCRATCH" ],
             [ 1, "MOVE_HARDEN" ],
-            [ 5, "MOVE_LEECH_LIFE" ],
-            [ 9, "MOVE_SAND_ATTACK" ],
-            [ 14, "MOVE_FURY_SWIPES" ],
+            [ 5, "MOVE_FURY_CUTTER" ],
+            [ 8, "MOVE_FURY_SWIPES" ],
+            [ 10, "MOVE_BUG_BITE" ],
+            [ 13, "MOVE_SAND_ATTACK" ],
+            [ 16, "MOVE_FALSE_SWIPE" ],
             [ 19, "MOVE_MIND_READER" ],
-            [ 25, "MOVE_FALSE_SWIPE" ],
-            [ 31, "MOVE_MUD_SLAP" ],
-            [ 38, "MOVE_METAL_CLAW" ],
-            [ 45, "MOVE_DIG" ]
+            [ 22, "MOVE_LEECH_LIFE" ],
+            [ 26, "MOVE_MUD_SLAP" ],
+            [ 30, "MOVE_METAL_CLAW" ],
+            [ 34, "MOVE_DIG" ],
+            [ 37, "MOVE_X_SCISSOR" ],
+            [ 40, "MOVE_NIGHT_SLASH" ]
         ],
         "by_tm": [
             "TM06",
@@ -75,7 +79,6 @@
         "by_tutor": [
             "MOVE_MUD_SLAP",
             "MOVE_FURY_CUTTER",
-            "MOVE_SNORE",
             "MOVE_SPITE"
         ],
         "egg_moves": [

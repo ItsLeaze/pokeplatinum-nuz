@@ -35,17 +35,23 @@
     "learnset": {
         "by_level": [
             [ 1, "MOVE_TACKLE" ],
-            [ 5, "MOVE_GROWL" ],
-            [ 9, "MOVE_DEFENSE_CURL" ],
-            [ 13, "MOVE_ROLLOUT" ],
-            [ 17, "MOVE_HEADBUTT" ],
+            [ 1, "MOVE_GROWL" ],
+            [ 5, "MOVE_DEFENSE_CURL" ],
+            [ 10, "MOVE_ROLLOUT" ],
+            [ 14, "MOVE_HEADBUTT" ],
+            
+            [ 18, "MOVE_YAWN" ],
             [ 21, "MOVE_HYPER_FANG" ],
-            [ 25, "MOVE_YAWN" ],
-            [ 29, "MOVE_AMNESIA" ],
-            [ 33, "MOVE_TAKE_DOWN" ],
-            [ 37, "MOVE_SUPER_FANG" ],
-            [ 41, "MOVE_SUPERPOWER" ],
-            [ 45, "MOVE_CURSE" ]
+            [ 24, "MOVE_DIVE" ],
+            [ 27, "MOVE_FLING" ],
+            [ 29, "MOVE_AQUA_TAIL" ],
+            [ 31, "MOVE_IRON_TAIL" ],
+            [ 35, "MOVE_SUPER_FANG" ],
+            [ 38, "MOVE_TAKE_DOWN" ],
+            [ 42, "MOVE_AMNESIA" ],
+            [ 44, "MOVE_SUPERPOWER" ],
+            [ 48, "MOVE_CURSE" ],
+            [ 56, "MOVE_GIGA_IMPACT" ]
         ],
         "by_tm": [
             "TM06",
@@ -91,13 +97,11 @@
             "MOVE_ROLLOUT",
             "MOVE_SUPERPOWER",
             "MOVE_AQUA_TAIL",
-            "MOVE_SNORE",
             "MOVE_LAST_RESORT",
             "MOVE_SWIFT"
         ],
         "egg_moves": [
             "MOVE_QUICK_ATTACK",
-            "MOVE_WATER_SPORT",
             "MOVE_DOUBLE_EDGE",
             "MOVE_FURY_SWIPES",
             "MOVE_DEFENSE_CURL",

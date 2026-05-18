@@ -34,11 +34,25 @@
     "icon_palette": 0,
     "learnset": {
         "by_level": [
-            [ 1, "MOVE_FAINT_ATTACK" ],
-            [ 1, "MOVE_WHIRLWIND" ],
-            [ 1, "MOVE_NASTY_PLOT" ],
-            [ 1, "MOVE_RAZOR_LEAF" ],
-            [ 49, "MOVE_LEAF_STORM" ]
+            [ 1, "MOVE_BIDE" ],
+            [ 3, "MOVE_HARDEN" ],
+            [ 9, "MOVE_ROLLOUT" ],
+            [ 12, "MOVE_MEGA_DRAIN" ],
+            [ 16, "MOVE_NATURE_POWER" ],
+
+            [ 18, "MOVE_FAKE_OUT" ],
+            [ 21, "MOVE_RAZOR_LEAF" ],
+            [ 23, "MOVE_FAINT_ATTACK" ],
+            [ 26, "MOVE_WORRY_SEED" ],
+            [ 29, "MOVE_GIGA_DRAIN" ],
+            [ 32, "MOVE_RAZOR_WIND" ],
+            [ 37, "MOVE_NIGHT_SLASH" ],
+            [ 44, "MOVE_EXTRASENSORY" ],
+            [ 47, "MOVE_SWAGGER" ],
+            [ 50, "MOVE_LEAF_BLADE" ],
+            [ 56, "MOVE_TORMENT" ],
+            [ 62, "MOVE_SUCKER_PUNCH" ],
+            [ 70, "MOVE_LEAF_STORM" ]
         ],
         "by_tm": [
             "TM06",
@@ -95,10 +109,8 @@
             "MOVE_ICY_WIND",
             "MOVE_ROLLOUT",
             "MOVE_OMINOUS_WIND",
-            "MOVE_SNORE",
             "MOVE_SPITE",
             "MOVE_AIR_CUTTER",
-            "MOVE_SYNTHESIS",
             "MOVE_TWISTER",
             "MOVE_SEED_BOMB",
             "MOVE_BOUNCE",

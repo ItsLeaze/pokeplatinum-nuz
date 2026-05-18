@@ -27,24 +27,27 @@
     "base_friendship": 70,
     "exp_rate": "EXP_RATE_MEDIUM_FAST",
     "egg_groups": [ "EGG_GROUP_FLYING", "EGG_GROUP_FLYING" ],
-    "abilities": [ "ABILITY_KEEN_EYE", "ABILITY_NONE" ],
+    "abilities": [ "ABILITY_SNIPER", "ABILITY_NONE" ],
     "safari_flee_rate": 0,
     "body_color": "MON_COLOR_BROWN",
     "flip_sprite": false,
     "icon_palette": 0,
     "learnset": {
         "by_level": [
-            [ 1, "MOVE_PECK" ],
             [ 1, "MOVE_GROWL" ],
+            [ 1, "MOVE_PECK" ],
             [ 5, "MOVE_LEER" ],
             [ 9, "MOVE_FURY_ATTACK" ],
             [ 13, "MOVE_PURSUIT" ],
-            [ 17, "MOVE_AERIAL_ACE" ],
-            [ 21, "MOVE_MIRROR_MOVE" ],
-            [ 25, "MOVE_AGILITY" ],
-            [ 29, "MOVE_ASSURANCE" ],
-            [ 33, "MOVE_ROOST" ],
-            [ 37, "MOVE_DRILL_PECK" ]
+            [ 16, "MOVE_PLUCK" ],
+
+            [ 21, "MOVE_DRILL_PECK" ],
+            [ 24, "MOVE_ASSURANCE" ],
+            [ 27, "MOVE_TAKE_DOWN" ],
+            [ 29, "MOVE_MIRROR_MOVE" ],
+            [ 32, "MOVE_FOCUS_ENERGY" ],
+            [ 36, "MOVE_ROOST" ],
+            [ 40, "MOVE_SKY_ATTACK" ]
         ],
         "by_tm": [
             "TM06",
@@ -77,7 +80,6 @@
         "by_tutor": [
             "MOVE_MUD_SLAP",
             "MOVE_OMINOUS_WIND",
-            "MOVE_SNORE",
             "MOVE_AIR_CUTTER",
             "MOVE_TWISTER",
             "MOVE_HEAT_WAVE",
@@ -91,8 +93,7 @@
             "MOVE_TRI_ATTACK",
             "MOVE_ASTONISH",
             "MOVE_SKY_ATTACK",
-            "MOVE_WHIRLWIND",
-            "MOVE_UPROAR"
+            "MOVE_WHIRLWIND"
         ]
     },
     "evolutions": [

@@ -36,16 +36,22 @@
         "by_level": [
             [ 1, "MOVE_SCRATCH" ],
             [ 1, "MOVE_HARDEN" ],
-            [ 7, "MOVE_MUD_SPORT" ],
-            [ 13, "MOVE_WATER_GUN" ],
-            [ 19, "MOVE_METAL_CLAW" ],
-            [ 25, "MOVE_PROTECT" ],
-            [ 31, "MOVE_ANCIENT_POWER" ],
-            [ 37, "MOVE_FURY_CUTTER" ],
-            [ 43, "MOVE_SLASH" ],
-            [ 49, "MOVE_ROCK_BLAST" ],
-            [ 55, "MOVE_CRUSH_CLAW" ],
-            [ 61, "MOVE_X_SCISSOR" ]
+            [ 7, "MOVE_FURY_CUTTER" ],
+            [ 10, "MOVE_WATER_GUN" ],
+            [ 13, "MOVE_ROCK_TOMB" ],
+            [ 15, "MOVE_METAL_CLAW" ],
+            [ 18, "MOVE_SLASH" ],
+            [ 21, "MOVE_ANCIENT_POWER" ],
+            [ 23, "MOVE_WATER_PULSE" ],
+            [ 26, "MOVE_AERIAL_ACE" ],
+            [ 29, "MOVE_ROCK_SLIDE" ],
+            [ 32, "MOVE_CRUSH_CLAW" ],
+            [ 34, "MOVE_X_SCISSOR" ],
+            [ 37, "MOVE_CROSS_POISON" ],
+            [ 40, "MOVE_ROCK_BLAST" ],
+            [ 44, "MOVE_STONE_EDGE" ],
+            [ 50, "MOVE_IRON_TAIL" ],
+            [ 55, "MOVE_EARTHQUAKE" ]
         ],
         "by_tm": [
             "TM03",
@@ -83,16 +89,9 @@
         "by_tutor": [
             "MOVE_MUD_SLAP",
             "MOVE_FURY_CUTTER",
-            "MOVE_SNORE",
-            "MOVE_ANCIENT_POWER",
-            "MOVE_EARTH_POWER",
-            "MOVE_IRON_DEFENSE",
-            "MOVE_KNOCK_OFF"
+            "MOVE_ANCIENT_POWER"
         ],
         "egg_moves": [
-            "MOVE_RAPID_SPIN",
-            "MOVE_KNOCK_OFF",
-            "MOVE_SWORDS_DANCE",
             "MOVE_ROCK_SLIDE",
             "MOVE_SCREECH",
             "MOVE_SAND_ATTACK",

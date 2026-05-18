@@ -1,10 +1,10 @@
 {
     "base_stats": {
         "hp": 80,
-        "attack": 105,
+        "attack": 80,
         "defense": 65,
         "speed": 120,
-        "special_attack": 80,
+        "special_attack": 105,
         "special_defense": 85
     },
     "types": [ "TYPE_GRASS", "TYPE_DRAGON" ],
@@ -34,22 +34,26 @@
     "icon_palette": 1,
     "learnset": {
         "by_level": [
-            [ 1, "MOVE_NIGHT_SLASH" ],
             [ 1, "MOVE_POUND" ],
             [ 1, "MOVE_LEER" ],
-            [ 1, "MOVE_ABSORB" ],
-            [ 1, "MOVE_QUICK_ATTACK" ],
-            [ 6, "MOVE_ABSORB" ],
-            [ 11, "MOVE_QUICK_ATTACK" ],
-            [ 16, "MOVE_X_SCISSOR" ],
-            [ 17, "MOVE_PURSUIT" ],
-            [ 23, "MOVE_SCREECH" ],
-            [ 29, "MOVE_LEAF_BLADE" ],
-            [ 35, "MOVE_AGILITY" ],
-            [ 43, "MOVE_SLAM" ],
-            [ 51, "MOVE_DETECT" ],
-            [ 59, "MOVE_FALSE_SWIPE" ],
-            [ 67, "MOVE_LEAF_STORM" ]
+            [ 5, "MOVE_ABSORB" ],
+            [ 8, "MOVE_QUICK_ATTACK" ],
+            [ 13, "MOVE_PURSUIT" ],
+            [ 16, "MOVE_MEGA_DRAIN" ],
+            [ 19, "MOVE_AGILITY" ],
+            [ 21, "MOVE_ABSORB" ],
+            [ 24, "MOVE_DRAGON_BREATH" ],
+            [ 27, "MOVE_MUD_SLAP" ],
+            [ 30, "MOVE_ENDEAVOR" ],
+            [ 33, "MOVE_GIGA_DRAIN" ],
+            [ 36, "MOVE_DRAGON_PULSE" ],
+            [ 39, "MOVE_ENERGY_BALL" ],
+            [ 43, "MOVE_X_SCISSOR" ],
+            [ 47, "MOVE_LEAF_STORM" ],
+            [ 54, "MOVE_WORRY_SEED" ],
+            [ 60, "MOVE_EARTHQUAKE" ],
+            [ 65, "MOVE_HYPER_BEAM" ],
+            [ 70, "MOVE_SOLAR_BEAM" ]
         ],
         "by_tm": [
             "TM01",
@@ -104,10 +108,8 @@
             "MOVE_MUD_SLAP",
             "MOVE_FURY_CUTTER",
             "MOVE_THUNDER_PUNCH",
-            "MOVE_SNORE",
             "MOVE_ENDEAVOR",
             "MOVE_OUTRAGE",
-            "MOVE_SYNTHESIS",
             "MOVE_SEED_BOMB",
             "MOVE_SWIFT"
         ]

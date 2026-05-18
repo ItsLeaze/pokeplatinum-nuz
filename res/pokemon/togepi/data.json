@@ -35,18 +35,23 @@
     "learnset": {
         "by_level": [
             [ 1, "MOVE_GROWL" ],
-            [ 1, "MOVE_CHARM" ],
-            [ 6, "MOVE_METRONOME" ],
-            [ 10, "MOVE_SWEET_KISS" ],
-            [ 15, "MOVE_YAWN" ],
-            [ 19, "MOVE_ENCORE" ],
-            [ 24, "MOVE_FOLLOW_ME" ],
-            [ 28, "MOVE_WISH" ],
-            [ 33, "MOVE_ANCIENT_POWER" ],
-            [ 37, "MOVE_SAFEGUARD" ],
-            [ 42, "MOVE_BATON_PASS" ],
-            [ 46, "MOVE_DOUBLE_EDGE" ],
-            [ 51, "MOVE_LAST_RESORT" ]
+            [ 1, "MOVE_METRONOME" ],
+            [ 8, "MOVE_SWEET_KISS" ],
+            [ 13, "MOVE_YAWN" ],
+            [ 16, "MOVE_DISARMING_VOICE" ],
+            [ 19, "MOVE_FOLLOW_ME" ],
+            [ 22, "MOVE_ANCIENT_POWER" ],
+
+            [ 25, "MOVE_SAFEGUARD" ],
+            [ 28, "MOVE_DAZZLING_GLEAM" ],
+            [ 31, "MOVE_LAST_RESORT" ],
+            [ 35, "MOVE_PSYCHO_SHIFT" ],
+            [ 41, "MOVE_EXTRASENSORY" ],
+
+            [ 49, "MOVE_DOUBLE_EDGE" ],
+            [ 55, "MOVE_AURA_SPHERE" ],
+            [ 63, "MOVE_MOONBLAST" ],
+            [ 70, "MOVE_WISH" ]
         ],
         "by_tm": [
             "TM03",
@@ -88,15 +93,11 @@
         "by_tutor": [
             "MOVE_MUD_SLAP",
             "MOVE_ROLLOUT",
-            "MOVE_SNORE",
-            "MOVE_ENDEAVOR",
             "MOVE_ANCIENT_POWER",
             "MOVE_SIGNAL_BEAM",
             "MOVE_ZEN_HEADBUTT",
             "MOVE_LAST_RESORT",
-            "MOVE_TRICK",
-            "MOVE_SWIFT",
-            "MOVE_UPROAR"
+            "MOVE_SWIFT"
         ],
         "egg_moves": [
             "MOVE_PRESENT",
@@ -104,9 +105,6 @@
             "MOVE_PECK",
             "MOVE_FORESIGHT",
             "MOVE_FUTURE_SIGHT",
-            "MOVE_SUBSTITUTE",
-            "MOVE_PSYCH_UP",
-            "MOVE_NASTY_PLOT",
             "MOVE_PSYCHO_SHIFT",
             "MOVE_LUCKY_CHANT"
         ]

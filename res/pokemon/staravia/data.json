@@ -36,16 +36,23 @@
         "by_level": [
             [ 1, "MOVE_TACKLE" ],
             [ 1, "MOVE_GROWL" ],
-            [ 1, "MOVE_QUICK_ATTACK" ],
             [ 5, "MOVE_QUICK_ATTACK" ],
             [ 9, "MOVE_WING_ATTACK" ],
-            [ 13, "MOVE_DOUBLE_TEAM" ],
-            [ 18, "MOVE_ENDEAVOR" ],
-            [ 23, "MOVE_WHIRLWIND" ],
+            [ 12, "MOVE_DOUBLE_TEAM" ],
+            
+            [ 14, "MOVE_PLUCK" ],
+            [ 16, "MOVE_FURY_ATTACK" ],
+            [ 20, "MOVE_ASTONISH" ],
+            [ 24, "MOVE_PURSUIT" ],
             [ 28, "MOVE_AERIAL_ACE" ],
-            [ 33, "MOVE_TAKE_DOWN" ],
-            [ 38, "MOVE_AGILITY" ],
-            [ 43, "MOVE_BRAVE_BIRD" ]
+            [ 31, "MOVE_TAKE_DOWN" ],
+
+            [ 37, "MOVE_STEEL_WING" ],
+            [ 42, "MOVE_AGILITY" ],
+            [ 47, "MOVE_ENDURE" ],
+            [ 53, "MOVE_FACADE" ],
+            [ 60, "MOVE_BRAVE_BIRD" ],
+            [ 72, "MOVE_DOUBLE_EDGE" ]
         ],
         "by_tm": [
             "TM06",
@@ -78,9 +85,7 @@
         "by_tutor": [
             "MOVE_MUD_SLAP",
             "MOVE_OMINOUS_WIND",
-            "MOVE_SNORE",
             "MOVE_AIR_CUTTER",
-            "MOVE_ENDEAVOR",
             "MOVE_TWISTER",
             "MOVE_HEAT_WAVE",
             "MOVE_SWIFT"

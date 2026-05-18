@@ -1,10 +1,10 @@
 {
     "base_stats": {
         "hp": 70,
-        "attack": 20,
+        "attack": 30,
         "defense": 50,
         "speed": 40,
-        "special_attack": 20,
+        "special_attack": 50,
         "special_defense": 50
     },
     "types": [ "TYPE_WATER", "TYPE_FAIRY" ],
@@ -35,16 +35,23 @@
     "learnset": {
         "by_level": [
             [ 1, "MOVE_TACKLE" ],
-            [ 2, "MOVE_DEFENSE_CURL" ],
-            [ 7, "MOVE_TAIL_WHIP" ],
-            [ 10, "MOVE_WATER_GUN" ],
-            [ 15, "MOVE_ROLLOUT" ],
-            [ 18, "MOVE_BUBBLE_BEAM" ],
-            [ 23, "MOVE_AQUA_RING" ],
-            [ 27, "MOVE_DOUBLE_EDGE" ],
-            [ 32, "MOVE_RAIN_DANCE" ],
-            [ 37, "MOVE_AQUA_TAIL" ],
-            [ 42, "MOVE_HYDRO_PUMP" ]
+            [ 1, "MOVE_DEFENSE_CURL" ],
+            [ 1, "MOVE_TAIL_WHIP" ],
+            [ 5, "MOVE_BUBBLE" ],
+            [ 8, "MOVE_ROLLOUT" ],
+            [ 11, "MOVE_AQUA_RING" ],
+            [ 14, "MOVE_AQUA_JET" ],
+            [ 17, "MOVE_BUBBLE_BEAM" ],
+            [ 20, "MOVE_HELPING_HAND" ],
+            [ 23, "MOVE_SLAM" ],
+            [ 25, "MOVE_PLAY_ROUGH" ],
+            [ 30, "MOVE_FAKE_TEARS" ],
+            [ 33, "MOVE_SEISMIC_TOSS" ],
+            [ 37, "MOVE_RAIN_DANCE" ],
+            [ 42, "MOVE_DOUBLE_EDGE" ],
+            [ 45, "MOVE_IRON_TAIL" ],
+            [ 50, "MOVE_HYDRO_PUMP" ],
+            [ 55, "MOVE_BLIZZARD" ]
         ],
         "by_tm": [
             "TM01",
@@ -87,18 +94,12 @@
             "MOVE_SUPERPOWER",
             "MOVE_ICE_PUNCH",
             "MOVE_AQUA_TAIL",
-            "MOVE_SNORE",
             "MOVE_HELPING_HAND",
-            "MOVE_KNOCK_OFF",
             "MOVE_SWIFT"
         ],
         "egg_moves": [
-            "MOVE_LIGHT_SCREEN",
             "MOVE_PRESENT",
-            "MOVE_AMNESIA",
             "MOVE_FUTURE_SIGHT",
-            "MOVE_BELLY_DRUM",
-            "MOVE_PERISH_SONG",
             "MOVE_SUPERSONIC",
             "MOVE_SUBSTITUTE",
             "MOVE_AQUA_JET",

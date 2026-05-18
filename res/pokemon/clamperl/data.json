@@ -34,10 +34,13 @@
     "icon_palette": 0,
     "learnset": {
         "by_level": [
-            [ 1, "MOVE_CLAMP" ],
             [ 1, "MOVE_WATER_GUN" ],
             [ 1, "MOVE_WHIRLPOOL" ],
-            [ 1, "MOVE_IRON_DEFENSE" ]
+            [ 1, "MOVE_CLAMP" ],
+            [ 10, "MOVE_AQUA_RING" ],
+            [ 20, "MOVE_CONFUSE_RAY" ],
+            [ 30, "MOVE_WATER_PULSE" ],
+            [ 40, "MOVE_DIVE" ]
         ],
         "by_tm": [
             "TM03",
@@ -67,16 +70,12 @@
         ],
         "by_tutor": [
             "MOVE_DIVE",
-            "MOVE_ICY_WIND",
-            "MOVE_SNORE",
-            "MOVE_IRON_DEFENSE"
+            "MOVE_ICY_WIND"
         ],
         "egg_moves": [
             "MOVE_REFRESH",
-            "MOVE_MUD_SPORT",
             "MOVE_BODY_SLAM",
             "MOVE_SUPERSONIC",
-            "MOVE_BARRIER",
             "MOVE_CONFUSE_RAY",
             "MOVE_AQUA_RING"
         ]

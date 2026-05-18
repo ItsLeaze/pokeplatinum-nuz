@@ -36,18 +36,23 @@
         "by_level": [
             [ 1, "MOVE_TACKLE" ],
             [ 1, "MOVE_ODOR_SLEUTH" ],
-            [ 4, "MOVE_MUD_SPORT" ],
-            [ 8, "MOVE_POWDER_SNOW" ],
-            [ 13, "MOVE_MUD_SLAP" ],
-            [ 16, "MOVE_ENDURE" ],
-            [ 20, "MOVE_MUD_BOMB" ],
-            [ 25, "MOVE_ICY_WIND" ],
-            [ 28, "MOVE_ICE_SHARD" ],
-            [ 32, "MOVE_TAKE_DOWN" ],
-            [ 37, "MOVE_EARTHQUAKE" ],
-            [ 40, "MOVE_MIST" ],
-            [ 44, "MOVE_BLIZZARD" ],
-            [ 49, "MOVE_AMNESIA" ]
+            [ 8, "MOVE_ENDURE" ],
+            [ 13, "MOVE_POWDER_SNOW" ],
+            [ 17, "MOVE_MUD_SLAP" ],
+            [ 21, "MOVE_ICY_WIND" ],
+
+            [ 26, "MOVE_TAKE_DOWN" ],
+            [ 30, "MOVE_ICE_SHARD" ],
+            [ 35, "MOVE_BULLDOZE" ],
+            [ 38, "MOVE_ANCIENT_POWER" ],
+
+            [ 40, "MOVE_BLIZZARD" ],
+            [ 43, "MOVE_EARTHQUAKE" ],
+            [ 45, "MOVE_ICICLE_SPEAR" ],
+            [ 50, "MOVE_MIST" ],
+            [ 53, "MOVE_AVALANCE" ],
+            [ 58, "MOVE_THRASH" ],
+            [ 63, "MOVE_STONE_EDGE" ]
         ],
         "by_tm": [
             "TM05",
@@ -86,8 +91,6 @@
             "MOVE_MUD_SLAP",
             "MOVE_ICY_WIND",
             "MOVE_SUPERPOWER",
-            "MOVE_SNORE",
-            "MOVE_ENDEAVOR",
             "MOVE_ANCIENT_POWER",
             "MOVE_EARTH_POWER"
         ],
@@ -100,8 +103,7 @@
             "MOVE_MUD_SHOT",
             "MOVE_ICICLE_SPEAR",
             "MOVE_DOUBLE_EDGE",
-            "MOVE_FISSURE",
-            "MOVE_CURSE"
+            "MOVE_FISSURE"
         ]
     },
     "evolutions": [

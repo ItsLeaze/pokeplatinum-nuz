@@ -34,23 +34,26 @@
     "icon_palette": 2,
     "learnset": {
         "by_level": [
-            [ 1, "MOVE_SKY_ATTACK" ],
             [ 1, "MOVE_TACKLE" ],
             [ 1, "MOVE_GROWL" ],
             [ 1, "MOVE_FORESIGHT" ],
-            [ 1, "MOVE_HYPNOSIS" ],
-            [ 5, "MOVE_HYPNOSIS" ],
-            [ 9, "MOVE_PECK" ],
-            [ 13, "MOVE_UPROAR" ],
-            [ 17, "MOVE_REFLECT" ],
-            [ 22, "MOVE_CONFUSION" ],
-            [ 27, "MOVE_TAKE_DOWN" ],
-            [ 32, "MOVE_AIR_SLASH" ],
-            [ 37, "MOVE_ZEN_HEADBUTT" ],
-            [ 42, "MOVE_EXTRASENSORY" ],
-            [ 47, "MOVE_PSYCHO_SHIFT" ],
-            [ 52, "MOVE_ROOST" ],
-            [ 57, "MOVE_DREAM_EATER" ]
+            [ 5, "MOVE_PECK" ],
+            [ 10, "MOVE_HYPNOSIS" ],
+            [ 13, "MOVE_CONFUSION" ],
+            [ 16, "MOVE_NIGHT_SHADE" ],
+            [ 19, "MOVE_UPROAR" ],
+            [ 22, "MOVE_TWISTER" ],
+            [ 25, "MOVE_AIR_SLASH" ],
+
+            [ 28, "MOVE_EXTRASENSORY" ],
+            [ 30, "MOVE_OMINOUS_WIND" ],
+            [ 33, "MOVE_PSYCHO_SHIFT" ],
+            [ 37, "MOVE_DREAM_EATER" ],
+            [ 41, "MOVE_MOONBLAST" ],
+            [ 44, "MOVE_REFLECT" ],
+            [ 48, "MOVE_PSYCHIC" ],
+            [ 53, "MOVE_AGILITY" ],
+            [ 57, "MOVE_SHADOW_BALL" ]
         ],
         "by_tm": [
             "TM06",
@@ -95,8 +98,7 @@
             "MOVE_ZEN_HEADBUTT",
             "MOVE_TWISTER",
             "MOVE_HEAT_WAVE",
-            "MOVE_SWIFT",
-            "MOVE_UPROAR"
+            "MOVE_SWIFT"
         ]
     },
     "evolutions": [  ],

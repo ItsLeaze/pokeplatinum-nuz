@@ -1,7 +1,7 @@
 {
     "base_stats": {
         "hp": 60,
-        "attack": 62,
+        "attack": 65,
         "defense": 63,
         "speed": 60,
         "special_attack": 80,
@@ -36,20 +36,25 @@
         "by_level": [
             [ 1, "MOVE_TACKLE" ],
             [ 1, "MOVE_GROWL" ],
-            [ 1, "MOVE_LEECH_SEED" ],
-            [ 3, "MOVE_GROWL" ],
-            [ 7, "MOVE_LEECH_SEED" ],
-            [ 9, "MOVE_VINE_WHIP" ],
-            [ 13, "MOVE_POISON_POWDER" ],
-            [ 13, "MOVE_SLEEP_POWDER" ],
+            [ 5, "MOVE_VINE_WHIP" ],
+            [ 9, "MOVE_POISON_POWDER" ],
+            [ 12, "MOVE_SLEEP_POWDER" ],
             [ 15, "MOVE_TAKE_DOWN" ],
-            [ 20, "MOVE_RAZOR_LEAF" ],
-            [ 23, "MOVE_SWEET_SCENT" ],
-            [ 28, "MOVE_GROWTH" ],
+            [ 16, "MOVE_ACID" ],
+            [ 18, "MOVE_INGRAIN" ],
+            [ 20, "MOVE_MAGICAL_LEAF" ],
+            [ 22, "MOVE_SWEET_SCENT" ],
+            [ 25, "MOVE_BULLDOZE" ],
+            [ 28, "MOVE_WORRY_SEED" ],
             [ 31, "MOVE_DOUBLE_EDGE" ],
-            [ 36, "MOVE_WORRY_SEED" ],
-            [ 39, "MOVE_SYNTHESIS" ],
-            [ 44, "MOVE_SOLAR_BEAM" ]
+            [ 33, "MOVE_SLUDGE_BOMB" ],
+            [ 36, "MOVE_NATURE_POWER" ],
+            [ 40, "MOVE_ENERGY_BALL" ],
+            [ 43, "MOVE_SUNNY_DAY" ],
+            [ 46, "MOVE_SOLAR_BEAM" ],
+            [ 50, "MOVE_NATURAL_GIFT" ],
+            [ 53, "MOVE_EARTH_POWER" ],
+            [ 60, "MOVE_PETAL_DANCE" ]
         ],
         "by_tm": [
             "TM06",
@@ -84,10 +89,7 @@
         "by_tutor": [
             "MOVE_MUD_SLAP",
             "MOVE_FURY_CUTTER",
-            "MOVE_SNORE",
-            "MOVE_SYNTHESIS",
-            "MOVE_SEED_BOMB",
-            "MOVE_KNOCK_OFF"
+            "MOVE_SEED_BOMB"
         ]
     },
     "evolutions": [

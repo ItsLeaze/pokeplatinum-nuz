@@ -1,10 +1,10 @@
 {
     "base_stats": {
         "hp": 60,
-        "attack": 62,
+        "attack": 65,
         "defense": 80,
         "speed": 60,
-        "special_attack": 63,
+        "special_attack": 70,
         "special_defense": 80
     },
     "types": [ "TYPE_GRASS", "TYPE_FAIRY" ],
@@ -36,20 +36,23 @@
         "by_level": [
             [ 1, "MOVE_TACKLE" ],
             [ 1, "MOVE_GROWL" ],
-            [ 1, "MOVE_RAZOR_LEAF" ],
-            [ 1, "MOVE_POISON_POWDER" ],
-            [ 6, "MOVE_RAZOR_LEAF" ],
-            [ 9, "MOVE_POISON_POWDER" ],
-            [ 12, "MOVE_SYNTHESIS" ],
+            [ 5, "MOVE_RAZOR_LEAF" ],
+            [ 8, "MOVE_POISON_POWDER" ],
+            [ 11, "MOVE_SWEET_SCENT" ],
+            [ 14, "MOVE_DISARMING_VOICE" ],
+            [ 16, "MOVE_MAGICAL_LEAF" ],
             [ 18, "MOVE_REFLECT" ],
-            [ 22, "MOVE_MAGICAL_LEAF" ],
-            [ 26, "MOVE_NATURAL_GIFT" ],
-            [ 32, "MOVE_SWEET_SCENT" ],
-            [ 36, "MOVE_LIGHT_SCREEN" ],
-            [ 40, "MOVE_BODY_SLAM" ],
-            [ 46, "MOVE_SAFEGUARD" ],
-            [ 50, "MOVE_AROMATHERAPY" ],
-            [ 54, "MOVE_SOLAR_BEAM" ]
+            [ 21, "MOVE_BODY_SLAM" ],
+            [ 23, "MOVE_ANCIENT_POWER" ],
+            [ 26, "MOVE_LIGHT_SCREEN" ],
+            [ 28, "MOVE_NATURAL_GIFT" ],
+            [ 31, "MOVE_SAFEGUARD" ],
+            [ 35, "MOVE_DAZZLING_GLEAM" ],
+            [ 39, "MOVE_ENERGY_BALL" ],
+            [ 44, "MOVE_AROMATHERAPY" ],
+            [ 47, "MOVE_WRING_OUT" ],
+            [ 53, "MOVE_SOLAR_BEAM" ],
+            [ 59, "MOVE_EARTH_POWER" ]
         ],
         "by_tm": [
             "TM06",
@@ -87,9 +90,7 @@
         "by_tutor": [
             "MOVE_MUD_SLAP",
             "MOVE_FURY_CUTTER",
-            "MOVE_SNORE",
             "MOVE_ANCIENT_POWER",
-            "MOVE_SYNTHESIS",
             "MOVE_SEED_BOMB"
         ]
     },

@@ -4,7 +4,7 @@
         "attack": 95,
         "defense": 180,
         "speed": 70,
-        "special_attack": 85,
+        "special_attack": 95,
         "special_defense": 60
     },
     "types": [ "TYPE_WATER", "TYPE_ICE" ],
@@ -34,13 +34,24 @@
     "icon_palette": 2,
     "learnset": {
         "by_level": [
-            [ 1, "MOVE_TOXIC_SPIKES" ],
-            [ 1, "MOVE_WITHDRAW" ],
-            [ 1, "MOVE_SUPERSONIC" ],
-            [ 1, "MOVE_AURORA_BEAM" ],
-            [ 1, "MOVE_PROTECT" ],
-            [ 28, "MOVE_SPIKES" ],
-            [ 40, "MOVE_SPIKE_CANNON" ]
+            [ 1, "MOVE_TACKLE" ],
+            [ 4, "MOVE_WITHDRAW" ],
+            [ 8, "MOVE_SUPERSONIC" ],
+            [ 13, "MOVE_LICK" ],
+            [ 16, "MOVE_WHIRLPOOL" ],
+            [ 19, "MOVE_CLAMP" ],
+            [ 23, "MOVE_ICE_SHARD" ],
+            [ 27, "MOVE_BRINE" ],
+            [ 30, "MOVE_MUD_SHOT" ],
+            [ 33, "MOVE_BUBBLE_BEAM" ],
+            [ 37, "MOVE_AURORA_BEAM" ],
+            [ 41, "MOVE_ICICLE_SPEAR" ],
+            [ 44, "MOVE_ICE_BEAM" ],
+            [ 47, "MOVE_RAPID_SPIN" ],
+            [ 50, "MOVE_AVALANCHE" ],
+            [ 54, "MOVE_ROCK_BLAST" ],
+            [ 59, "MOVE_HYDRO_PUMP" ],
+            [ 65, "MOVE_SPIKE_CANNON" ]
         ],
         "by_tm": [
             "TM03",
@@ -77,9 +88,7 @@
         "by_tutor": [
             "MOVE_DIVE",
             "MOVE_ICY_WIND",
-            "MOVE_SNORE",
             "MOVE_SIGNAL_BEAM",
-            "MOVE_IRON_DEFENSE",
             "MOVE_SWIFT"
         ]
     },

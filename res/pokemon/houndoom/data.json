@@ -34,23 +34,26 @@
     "icon_palette": 0,
     "learnset": {
         "by_level": [
-            [ 1, "MOVE_THUNDER_FANG" ],
             [ 1, "MOVE_LEER" ],
             [ 1, "MOVE_EMBER" ],
-            [ 1, "MOVE_HOWL" ],
-            [ 1, "MOVE_SMOG" ],
-            [ 4, "MOVE_HOWL" ],
-            [ 9, "MOVE_SMOG" ],
-            [ 14, "MOVE_ROAR" ],
-            [ 17, "MOVE_BITE" ],
-            [ 22, "MOVE_ODOR_SLEUTH" ],
-            [ 28, "MOVE_BEAT_UP" ],
-            [ 32, "MOVE_FIRE_FANG" ],
-            [ 38, "MOVE_FAINT_ATTACK" ],
-            [ 44, "MOVE_EMBARGO" ],
-            [ 48, "MOVE_FLAMETHROWER" ],
-            [ 54, "MOVE_CRUNCH" ],
-            [ 60, "MOVE_NASTY_PLOT" ]
+            [ 8, "MOVE_SMOG" ],
+            [ 11, "MOVE_BITE" ],
+            [ 13, "MOVE_ODOR_SLEUTH" ],
+            [ 16, "MOVE_FIRE_SPIN" ],
+            [ 18, "MOVE_BEAT_UP" ],
+            [ 21, "MOVE_ROAR" ],
+            [ 24, "MOVE_FIRE_FANG" ],
+            [ 27, "MOVE_THUNDER_FANG" ],
+            
+            [ 30, "MOVE_CRUNCH" ],
+            [ 33, "MOVE_EMBARGO" ],
+            [ 37, "MOVE_FLAMETHROWER" ],
+            [ 40, "MOVE_DARK_PULSE" ],
+            [ 44, "MOVE_SWAGGER" ],
+            [ 49, "MOVE_SLUDGE_BOMB" ],
+            [ 54, "MOVE_SHADOW_BALL" ],
+            [ 60, "MOVE_FIRE_BLAST" ],
+            [ 67, "MOVE_WILL_O_WISP" ]
         ],
         "by_tm": [
             "TM05",
@@ -94,12 +97,10 @@
         ],
         "by_tutor": [
             "MOVE_MUD_SLAP",
-            "MOVE_SNORE",
             "MOVE_SPITE",
             "MOVE_HEAT_WAVE",
             "MOVE_SUCKER_PUNCH",
-            "MOVE_SWIFT",
-            "MOVE_UPROAR"
+            "MOVE_SWIFT"
         ]
     },
     "evolutions": [  ],

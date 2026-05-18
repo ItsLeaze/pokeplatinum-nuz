@@ -34,20 +34,20 @@
     "icon_palette": 0,
     "learnset": {
         "by_level": [
-            [ 1, "MOVE_CROSS_POISON" ],
             [ 1, "MOVE_SCRATCH" ],
-            [ 1, "MOVE_STUN_SPORE" ],
-            [ 1, "MOVE_POISON_POWDER" ],
-            [ 1, "MOVE_LEECH_LIFE" ],
-            [ 6, "MOVE_STUN_SPORE" ],
-            [ 6, "MOVE_POISON_POWDER" ],
-            [ 11, "MOVE_LEECH_LIFE" ],
-            [ 17, "MOVE_SPORE" ],
-            [ 22, "MOVE_SLASH" ],
-            [ 30, "MOVE_GROWTH" ],
-            [ 39, "MOVE_GIGA_DRAIN" ],
-            [ 47, "MOVE_AROMATHERAPY" ],
-            [ 55, "MOVE_X_SCISSOR" ]
+            [ 5, "MOVE_MEGA_DRAIN" ],
+            [ 10, "MOVE_STUN_SPORE" ],
+            [ 10, "MOVE_POISON_POWDER" ],
+            [ 16, "MOVE_LEECH_LIFE" ],
+            [ 18, "MOVE_SLASH" ],
+            [ 22, "MOVE_BULLET_SEED" ],
+            [ 24, "MOVE_GIGA_DRAIN" ],
+            [ 26, "MOVE_SPORE" ],
+            [ 28, "MOVE_DIG" ],
+            [ 30, "MOVE_CROSS_POISON" ],
+            [ 33, "MOVE_GROWTH" ],
+            [ 38, "MOVE_X_SCISSOR" ],
+            [ 43, "MOVE_AROMATHERAPY" ]
         ],
         "by_tm": [
             "TM06",
@@ -88,7 +88,6 @@
         ],
         "by_tutor": [
             "MOVE_FURY_CUTTER",
-            "MOVE_SNORE",
             "MOVE_SYNTHESIS",
             "MOVE_SEED_BOMB",
             "MOVE_KNOCK_OFF"

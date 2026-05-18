@@ -1,10 +1,10 @@
 {
     "base_stats": {
         "hp": 65,
-        "attack": 50,
+        "attack": 35,
         "defense": 50,
         "speed": 95,
-        "special_attack": 125,
+        "special_attack": 115,
         "special_defense": 95
     },
     "types": [ "TYPE_ICE", "TYPE_PSYCHIC" ],
@@ -35,22 +35,24 @@
     "learnset": {
         "by_level": [
             [ 1, "MOVE_POUND" ],
-            [ 1, "MOVE_LICK" ],
-            [ 1, "MOVE_LOVELY_KISS" ],
-            [ 1, "MOVE_POWDER_SNOW" ],
-            [ 5, "MOVE_LICK" ],
-            [ 8, "MOVE_LOVELY_KISS" ],
+            [ 5, "MOVE_SWEET_KISS" ],
+            [ 8, "MOVE_LICK" ],
             [ 11, "MOVE_POWDER_SNOW" ],
-            [ 15, "MOVE_DOUBLE_SLAP" ],
-            [ 18, "MOVE_ICE_PUNCH" ],
-            [ 21, "MOVE_MEAN_LOOK" ],
-            [ 25, "MOVE_FAKE_TEARS" ],
-            [ 28, "MOVE_WAKE_UP_SLAP" ],
-            [ 33, "MOVE_AVALANCHE" ],
-            [ 39, "MOVE_BODY_SLAM" ],
-            [ 44, "MOVE_WRING_OUT" ],
-            [ 49, "MOVE_PERISH_SONG" ],
-            [ 55, "MOVE_BLIZZARD" ]
+            [ 15, "MOVE_CONFUSION" ],
+            [ 18, "MOVE_SING" ],
+            [ 22, "MOVE_FAKE_TEARS" ],
+            [ 25, "MOVE_AURORA_BEAM" ],
+            [ 28, "MOVE_FAKE_OUT" ],
+            
+            [ 30, "MOVE_WISH" ],
+            [ 34, "MOVE_PSYCHIC" ],
+            [ 37, "MOVE_WRING_OUT" ],
+            [ 40, "MOVE_ICE_BEAM" ],
+            [ 44, "MOVE_SHADOW_BALL" ],
+            [ 49, "MOVE_HAIL" ],
+            [ 54, "MOVE_ENERGY_BALL" ],
+            [ 60, "MOVE_BLIZZARD" ],
+            [ 67, "MOVE_DREAM_EATER" ]
         ],
         "by_tm": [
             "TM01",
@@ -104,11 +106,9 @@
             "MOVE_MUD_SLAP",
             "MOVE_ICY_WIND",
             "MOVE_ICE_PUNCH",
-            "MOVE_SNORE",
             "MOVE_HELPING_HAND",
             "MOVE_SIGNAL_BEAM",
-            "MOVE_ZEN_HEADBUTT",
-            "MOVE_TRICK"
+            "MOVE_ZEN_HEADBUTT"
         ]
     },
     "evolutions": [  ],

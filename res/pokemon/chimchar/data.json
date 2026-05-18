@@ -1,10 +1,10 @@
 {
     "base_stats": {
         "hp": 44,
-        "attack": 58,
+        "attack": 60,
         "defense": 44,
         "speed": 61,
-        "special_attack": 58,
+        "special_attack": 60,
         "special_defense": 44
     },
     "types": [ "TYPE_FIRE", "TYPE_FIRE" ],
@@ -36,16 +36,16 @@
         "by_level": [
             [ 1, "MOVE_SCRATCH" ],
             [ 1, "MOVE_LEER" ],
-            [ 7, "MOVE_EMBER" ],
-            [ 9, "MOVE_TAUNT" ],
-            [ 15, "MOVE_FURY_SWIPES" ],
-            [ 17, "MOVE_FLAME_WHEEL" ],
-            [ 23, "MOVE_NASTY_PLOT" ],
-            [ 25, "MOVE_TORMENT" ],
-            [ 31, "MOVE_FACADE" ],
-            [ 33, "MOVE_FIRE_SPIN" ],
-            [ 39, "MOVE_SLACK_OFF" ],
-            [ 41, "MOVE_FLAMETHROWER" ]
+            [ 5, "MOVE_EMBER" ],
+            [ 12, "MOVE_FURY_SWIPES" ],
+            [ 15, "MOVE_FLAME_WHEEL" ],
+            [ 19, "MOVE_FIRE_SPIN" ],
+            [ 24, "MOVE_TORMENT" ],
+            [ 29, "MOVE_FLAMETHROWER" ],
+            [ 35, "MOVE_TAUNT" ],
+            [ 39, "MOVE_FACADE" ],
+            [ 45, "MOVE_WILL_O_WISP" ],
+            [ 54, "MOVE_SLACK_OFF" ]
         ],
         "by_tm": [
             "TM01",
@@ -93,24 +93,20 @@
             "MOVE_ROLLOUT",
             "MOVE_THUNDER_PUNCH",
             "MOVE_FIRE_PUNCH",
-            "MOVE_SNORE",
             "MOVE_HELPING_HAND",
             "MOVE_ENDEAVOR",
             "MOVE_VACUUM_WAVE",
             "MOVE_GUNK_SHOT",
             "MOVE_HEAT_WAVE",
-            "MOVE_SWIFT",
-            "MOVE_UPROAR"
+            "MOVE_SWIFT"
         ],
         "egg_moves": [
             "MOVE_FIRE_PUNCH",
             "MOVE_THUNDER_PUNCH",
             "MOVE_DOUBLE_KICK",
-            "MOVE_ENCORE",
             "MOVE_HEAT_WAVE",
             "MOVE_FOCUS_ENERGY",
             "MOVE_HELPING_HAND",
-            "MOVE_FAKE_OUT",
             "MOVE_BLAZE_KICK",
             "MOVE_COUNTER"
         ]

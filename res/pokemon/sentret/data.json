@@ -40,14 +40,20 @@
             [ 7, "MOVE_QUICK_ATTACK" ],
             [ 13, "MOVE_FURY_SWIPES" ],
             [ 16, "MOVE_HELPING_HAND" ],
-            [ 19, "MOVE_FOLLOW_ME" ],
-            [ 25, "MOVE_SLAM" ],
-            [ 28, "MOVE_REST" ],
-            [ 31, "MOVE_SUCKER_PUNCH" ],
-            [ 36, "MOVE_AMNESIA" ],
-            [ 39, "MOVE_BATON_PASS" ],
-            [ 42, "MOVE_ME_FIRST" ],
-            [ 47, "MOVE_HYPER_VOICE" ]
+            [ 18, "MOVE_FOLLOW_ME" ],
+            [ 20, "MOVE_BODY_SLAM" ],
+            [ 22, "MOVE_KNOCK_OFF" ],
+            [ 24, "MOVE_ME_FIRST" ],
+            [ 26, "MOVE_SUCKER_PUNCH" ],
+            [ 28, "MOVE_DOUBLE_EDGE" ],
+            [ 30, "MOVE_REST" ],
+            [ 33, "MOVE_FLING" ],
+            [ 35, "MOVE_GIGA_IMPACT" ],
+            [ 38, "MOVE_IRON_TAIL" ],
+            [ 40, "MOVE_ENDURE" ],
+            [ 45, "MOVE_DIG" ],
+            [ 49, "MOVE_REVERSAL" ],
+            [ 55, "MOVE_FACADE" ]
         ],
         "by_tm": [
             "TM01",
@@ -96,13 +102,10 @@
             "MOVE_FIRE_PUNCH",
             "MOVE_ICE_PUNCH",
             "MOVE_AQUA_TAIL",
-            "MOVE_SNORE",
             "MOVE_HELPING_HAND",
             "MOVE_LAST_RESORT",
-            "MOVE_KNOCK_OFF",
             "MOVE_SUCKER_PUNCH",
-            "MOVE_SWIFT",
-            "MOVE_UPROAR"
+            "MOVE_SWIFT"
         ],
         "egg_moves": [
             "MOVE_DOUBLE_EDGE",
@@ -110,12 +113,8 @@
             "MOVE_SLASH",
             "MOVE_FOCUS_ENERGY",
             "MOVE_REVERSAL",
-            "MOVE_SUBSTITUTE",
-            "MOVE_TRICK",
             "MOVE_ASSIST",
-            "MOVE_LAST_RESORT",
-            "MOVE_CHARM",
-            "MOVE_COVET"
+            "MOVE_LAST_RESORT"
         ]
     },
     "evolutions": [

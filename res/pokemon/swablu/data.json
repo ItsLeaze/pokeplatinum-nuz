@@ -1,10 +1,10 @@
 {
     "base_stats": {
         "hp": 45,
-        "attack": 40,
+        "attack": 60,
         "defense": 60,
         "speed": 50,
-        "special_attack": 40,
+        "special_attack": 60,
         "special_defense": 75
     },
     "types": [ "TYPE_FAIRY", "TYPE_FLYING" ],
@@ -34,19 +34,25 @@
     "icon_palette": 0,
     "learnset": {
         "by_level": [
-            [ 1, "MOVE_PECK" ],
             [ 1, "MOVE_GROWL" ],
+            [ 1, "MOVE_PECK" ],
             [ 5, "MOVE_ASTONISH" ],
-            [ 9, "MOVE_SING" ],
-            [ 13, "MOVE_FURY_ATTACK" ],
+            [ 10, "MOVE_DISARMING_VOICE" ],
+            [ 15, "MOVE_SING" ],
             [ 18, "MOVE_SAFEGUARD" ],
-            [ 23, "MOVE_MIST" ],
-            [ 28, "MOVE_TAKE_DOWN" ],
-            [ 32, "MOVE_NATURAL_GIFT" ],
-            [ 36, "MOVE_MIRROR_MOVE" ],
-            [ 40, "MOVE_REFRESH" ],
-            [ 45, "MOVE_DRAGON_PULSE" ],
-            [ 50, "MOVE_PERISH_SONG" ]
+            [ 21, "MOVE_GUST" ],
+            [ 25, "MOVE_MIST" ],
+            [ 28, "MOVE_DRAGON_BREATH" ],
+            [ 31, "MOVE_NATURAL_GIFT" ],
+            [ 34, "MOVE_DAZZLING_GLEAM" ],
+            [ 37, "MOVE_AERIAL_ACE" ],
+            [ 39, "MOVE_MIRROR_MOVE" ],
+
+            [ 42, "MOVE_REFRESH" ],
+            [ 46, "MOVE_HYPER_VOICE" ],
+            [ 50, "MOVE_MOONBLAST" ],
+            [ 55, "MOVE_HAZE" ],
+            [ 60, "MOVE_SKY_ATTACK" ]
         ],
         "by_tm": [
             "TM06",
@@ -83,20 +89,16 @@
         "by_tutor": [
             "MOVE_MUD_SLAP",
             "MOVE_OMINOUS_WIND",
-            "MOVE_SNORE",
             "MOVE_AIR_CUTTER",
             "MOVE_OUTRAGE",
             "MOVE_TWISTER",
             "MOVE_HEAT_WAVE",
-            "MOVE_SWIFT",
-            "MOVE_UPROAR"
+            "MOVE_SWIFT"
         ],
         "egg_moves": [
             "MOVE_AGILITY",
             "MOVE_HAZE",
             "MOVE_PURSUIT",
-            "MOVE_RAGE",
-            "MOVE_FEATHER_DANCE",
             "MOVE_DRAGON_RUSH"
         ]
     },

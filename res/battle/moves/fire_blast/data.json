@@ -2,7 +2,7 @@
     "name": "Fire Blast",
     "class": "CLASS_SPECIAL",
     "type": "TYPE_FIRE",
-    "power": 110,
+    "power": 120,
     "accuracy": 85,
     "pp": 5,
     "effect": {

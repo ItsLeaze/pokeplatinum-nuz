@@ -37,17 +37,21 @@
             [ 1, "MOVE_TACKLE" ],
             [ 3, "MOVE_LEER" ],
             [ 7, "MOVE_ASTONISH" ],
-            [ 10, "MOVE_HYPNOSIS" ],
+            [ 10, "MOVE_SAND_ATTACK" ],
             [ 13, "MOVE_STOMP" ],
-            [ 16, "MOVE_SAND_ATTACK" ],
+            [ 16, "MOVE_HYPNOSIS" ],
             [ 21, "MOVE_TAKE_DOWN" ],
             [ 23, "MOVE_CONFUSE_RAY" ],
-            [ 27, "MOVE_CALM_MIND" ],
-            [ 33, "MOVE_ROLE_PLAY" ],
-            [ 38, "MOVE_ZEN_HEADBUTT" ],
-            [ 43, "MOVE_IMPRISON" ],
-            [ 49, "MOVE_CAPTIVATE" ],
-            [ 53, "MOVE_ME_FIRST" ]
+            [ 25, "MOVE_ZEN_HEADBUTT" ],
+            [ 27, "MOVE_DOUBLE_KICK" ],
+            [ 30, "MOVE_DREAM_EATER" ],
+            [ 33, "MOVE_IMPRISON" ],
+            [ 37, "MOVE_MEGAHORN" ],
+            [ 42, "MOVE_SWAGGER" ],
+            [ 47, "MOVE_ROLE_PLAY" ],
+            [ 53, "MOVE_ME_FIRST" ],
+            [ 55, "MOVE_DOUBLE_EDGE" ],
+            [ 60, "MOVE_PSYCHO_BOOST" ]
         ],
         "by_tm": [
             "TM04",
@@ -93,24 +97,19 @@
         ],
         "by_tutor": [
             "MOVE_MUD_SLAP",
-            "MOVE_SNORE",
             "MOVE_SPITE",
             "MOVE_SIGNAL_BEAM",
             "MOVE_ZEN_HEADBUTT",
             "MOVE_LAST_RESORT",
             "MOVE_BOUNCE",
             "MOVE_SUCKER_PUNCH",
-            "MOVE_SWIFT",
-            "MOVE_UPROAR"
+            "MOVE_SWIFT"
         ],
         "egg_moves": [
             "MOVE_SPITE",
-            "MOVE_DISABLE",
             "MOVE_BITE",
             "MOVE_SWAGGER",
-            "MOVE_PSYCH_UP",
             "MOVE_EXTRASENSORY",
-            "MOVE_THRASH",
             "MOVE_DOUBLE_KICK",
             "MOVE_ZEN_HEADBUTT"
         ]

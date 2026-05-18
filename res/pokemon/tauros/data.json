@@ -35,18 +35,25 @@
     "learnset": {
         "by_level": [
             [ 1, "MOVE_TACKLE" ],
-            [ 3, "MOVE_TAIL_WHIP" ],
-            [ 5, "MOVE_RAGE" ],
-            [ 8, "MOVE_HORN_ATTACK" ],
-            [ 11, "MOVE_SCARY_FACE" ],
-            [ 15, "MOVE_PURSUIT" ],
-            [ 19, "MOVE_REST" ],
-            [ 24, "MOVE_PAYBACK" ],
+            [ 5, "MOVE_TAIL_WHIP" ],
+            [ 13, "MOVE_SCARY_FACE" ],
+            [ 17, "MOVE_HORN_ATTACK" ],
+            [ 23, "MOVE_PURSUIT" ],
             [ 29, "MOVE_ZEN_HEADBUTT" ],
-            [ 35, "MOVE_TAKE_DOWN" ],
+            [ 34, "MOVE_BULLDOZE" ],
+            [ 37, "MOVE_TAKE_DOWN" ],
             [ 41, "MOVE_SWAGGER" ],
+            [ 44, "MOVE_PAYBACK" ],
             [ 48, "MOVE_THRASH" ],
-            [ 55, "MOVE_GIGA_IMPACT" ]
+            [ 52, "MOVE_MEGAHORN" ],
+            [ 55, "MOVE_REVENGE" ],
+            [ 59, "MOVE_IRON_HEAD" ],
+            [ 63, "MOVE_EARTHQUAKE" ],
+            [ 66, "MOVE_CLOSE_COMBAT" ],
+            [ 69, "MOVE_OUTRAGE" ],
+            [ 73, "MOVE_DOUBLE_EDGE" ],
+            [ 76, "MOVE_REST" ],
+            [ 80, "MOVE_GIGA_IMPACT" ]
         ],
         "by_tm": [
             "TM03",
@@ -93,13 +100,10 @@
         "by_tutor": [
             "MOVE_ICY_WIND",
             "MOVE_IRON_HEAD",
-            "MOVE_SNORE",
             "MOVE_SPITE",
             "MOVE_HELPING_HAND",
-            "MOVE_ENDEAVOR",
             "MOVE_OUTRAGE",
-            "MOVE_ZEN_HEADBUTT",
-            "MOVE_UPROAR"
+            "MOVE_ZEN_HEADBUTT"
         ]
     },
     "evolutions": [  ],

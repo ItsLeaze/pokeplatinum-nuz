@@ -3,16 +3,16 @@
         "SPECIES_CHERUBI",
         "SPECIES_COMBEE",
         "SPECIES_EKANS",
-        "SPECIES_WURMPLE",
+        "SPECIES_PACHIRISU",
         "SPECIES_WEEDLE",
         "SPECIES_BURMY"
     ],
     "uncommon": [
-        "SPECIES_PACHIRISU",
         "SPECIES_ILLUMISE",
         "SPECIES_VOLBEAT",
         "SPECIES_SHROOMISH",
         "SPECIES_AIPOM",
+        "SPECIES_TEDDIURSA",
         "SPECIES_EXEGGCUTE"
     ],
     "rare": [

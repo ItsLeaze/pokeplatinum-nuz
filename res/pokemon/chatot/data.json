@@ -34,18 +34,21 @@
     "icon_palette": 0,
     "learnset": {
         "by_level": [
+            [ 1, "MOVE_GROWL" ],
             [ 1, "MOVE_PECK" ],
-            [ 5, "MOVE_GROWL" ],
-            [ 9, "MOVE_MIRROR_MOVE" ],
-            [ 13, "MOVE_SING" ],
-            [ 17, "MOVE_FURY_ATTACK" ],
-            [ 21, "MOVE_CHATTER" ],
-            [ 25, "MOVE_TAUNT" ],
-            [ 29, "MOVE_MIMIC" ],
-            [ 33, "MOVE_ROOST" ],
-            [ 37, "MOVE_UPROAR" ],
-            [ 41, "MOVE_FEATHER_DANCE" ],
-            [ 45, "MOVE_HYPER_VOICE" ]
+            [ 5, "MOVE_MIRROR_MOVE" ],
+            [ 11, "MOVE_SING" ],
+            [ 13, "MOVE_CHATTER" ],
+            [ 16, "MOVE_FURY_ATTACK" ],
+            [ 19, "MOVE_MIMIC" ],
+            [ 22, "MOVE_UPROAR" ],
+            [ 25, "MOVE_AGILITY" ],
+            [ 27, "MOVE_AIR_CUTTER" ],
+            [ 30, "MOVE_SWAGGER" ],
+            [ 33, "MOVE_HYPER_VOICE" ],
+            [ 37, "MOVE_ROOST" ],
+            [ 41, "MOVE_DOUBLE_TEAM" ],
+            [ 44, "MOVE_TAUNT" ]
         ],
         "by_tm": [
             "TM06",
@@ -80,7 +83,6 @@
         "by_tutor": [
             "MOVE_MUD_SLAP",
             "MOVE_OMINOUS_WIND",
-            "MOVE_SNORE",
             "MOVE_AIR_CUTTER",
             "MOVE_TWISTER",
             "MOVE_HEAT_WAVE",
@@ -88,10 +90,8 @@
             "MOVE_UPROAR"
         ],
         "egg_moves": [
-            "MOVE_ENCORE",
             "MOVE_NIGHT_SHADE",
             "MOVE_AGILITY",
-            "MOVE_NASTY_PLOT",
             "MOVE_SUPERSONIC"
         ]
     },

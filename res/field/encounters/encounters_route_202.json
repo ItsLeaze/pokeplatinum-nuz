@@ -7,7 +7,7 @@
         },
         {
             "level": 5,
-            "species": "SPECIES_STARLY"
+            "species": "SPECIES_RATTATA"
         },
         {
             "level": 5,
@@ -27,11 +27,11 @@
         },
         {
             "level": 5,
-            "species": "SPECIES_FEAROW"
+            "species": "SPECIES_SPEAROW"
         },
         {
             "level": 5,
-            "species": "SPECIES_FEAROW"
+            "species": "SPECIES_SPEAROW"
         },
         {
             "level": 5,
@@ -63,10 +63,10 @@
         "SPECIES_ZIGZAGOON"
     ],
     "radar": [
-        "SPECIES_SENTRET",
-        "SPECIES_SENTRET",
-        "SPECIES_SENTRET",
-        "SPECIES_SENTRET"
+        "SPECIES_ZIGZAGOON",
+        "SPECIES_ZIGZAGOON",
+        "SPECIES_ZIGZAGOON",
+        "SPECIES_ZIGZAGOON"
     ],
     "rate_form0": 0,
     "rate_form1": 0,

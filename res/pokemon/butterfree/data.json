@@ -3,7 +3,7 @@
         "hp": 60,
         "attack": 45,
         "defense": 50,
-        "speed": 70,
+        "speed": 80,
         "special_attack": 90,
         "special_defense": 80
     },
@@ -35,19 +35,21 @@
     "learnset": {
         "by_level": [
             [ 1, "MOVE_CONFUSION" ],
-            [ 10, "MOVE_CONFUSION" ],
+            [ 10, "MOVE_SILVER_WIND" ],
             [ 12, "MOVE_POISON_POWDER" ],
-            [ 12, "MOVE_STUN_SPORE" ],
-            [ 12, "MOVE_SLEEP_POWDER" ],
-            [ 16, "MOVE_GUST" ],
-            [ 18, "MOVE_SUPERSONIC" ],
-            [ 22, "MOVE_WHIRLWIND" ],
-            [ 24, "MOVE_PSYBEAM" ],
-            [ 28, "MOVE_SILVER_WIND" ],
-            [ 30, "MOVE_TAILWIND" ],
-            [ 34, "MOVE_SAFEGUARD" ],
-            [ 36, "MOVE_CAPTIVATE" ],
-            [ 40, "MOVE_BUG_BUZZ" ]
+            [ 14, "MOVE_GUST" ],
+            [ 16, "MOVE_STUN_SPORE" ],
+            [ 18, "MOVE_CONFUSION" ],
+            [ 20, "MOVE_SLEEP_POWDER" ],
+            [ 22, "MOVE_AIR_CUTTER" ],
+            [ 24, "MOVE_SIGNAL_BEAM" ],
+            [ 26, "MOVE_WHIRLWIND" ],
+            [ 28, "MOVE_ACID" ],
+            [ 30, "MOVE_PSYBEAM" ],
+            [ 33, "MOVE_SAFEGUARD" ],
+            [ 35, "MOVE_BUG_BUZZ" ],
+            [ 38, "MOVE_PSYCHIC" ],
+            [ 42, "MOVE_AEROBLAST" ]
         ],
         "by_tm": [
             "TM06",
@@ -89,7 +91,6 @@
         ],
         "by_tutor": [
             "MOVE_OMINOUS_WIND",
-            "MOVE_SNORE",
             "MOVE_AIR_CUTTER",
             "MOVE_SIGNAL_BEAM",
             "MOVE_TWISTER",

@@ -1,11 +1,11 @@
 {
     "base_stats": {
-        "hp": 90,
+        "hp": 70,
         "attack": 115,
-        "defense": 60,
+        "defense": 70,
         "speed": 55,
-        "special_attack": 60,
-        "special_defense": 80
+        "special_attack": 115,
+        "special_defense": 70
     },
     "types": [ "TYPE_GRASS", "TYPE_DARK" ],
     "catch_rate": 60,
@@ -34,25 +34,26 @@
     "icon_palette": 1,
     "learnset": {
         "by_level": [
-            [ 1, "MOVE_REVENGE" ],
-            [ 1, "MOVE_POISON_STING" ],
             [ 1, "MOVE_LEER" ],
-            [ 1, "MOVE_ABSORB" ],
-            [ 1, "MOVE_GROWTH" ],
-            [ 5, "MOVE_ABSORB" ],
-            [ 9, "MOVE_GROWTH" ],
-            [ 13, "MOVE_LEECH_SEED" ],
-            [ 17, "MOVE_SAND_ATTACK" ],
-            [ 21, "MOVE_PIN_MISSILE" ],
-            [ 25, "MOVE_INGRAIN" ],
-            [ 29, "MOVE_FAINT_ATTACK" ],
-            [ 35, "MOVE_SPIKES" ],
-            [ 41, "MOVE_SUCKER_PUNCH" ],
-            [ 47, "MOVE_PAYBACK" ],
-            [ 53, "MOVE_NEEDLE_ARM" ],
-            [ 59, "MOVE_COTTON_SPORE" ],
-            [ 65, "MOVE_SANDSTORM" ],
-            [ 71, "MOVE_DESTINY_BOND" ]
+            [ 1, "MOVE_POISON_STING" ],
+            [ 8, "MOVE_SAND_ATTACK" ],
+            [ 13, "MOVE_COTTON_SPORE" ],
+            [ 16, "MOVE_INGRAIN" ],
+            [ 19, "MOVE_FAINT_ATTACK" ],
+            [ 23, "MOVE_SANDSTORM" ],
+            [ 26, "MOVE_ABSORB" ],
+            
+            [ 30, "MOVE_NEEDLE_ARM" ],
+            [ 33, "MOVE_PAYBACK" ],
+            [ 36, "MOVE_POISON_JAB" ],
+            [ 38, "MOVE_ENERGY_BALL" ],
+            [ 41, "MOVE_DRAIN_PUNCH" ],
+            [ 44, "MOVE_DARK_PULSE" ],
+            [ 47, "MOVE_PIN_MISSILE" ],
+            [ 50, "MOVE_SUCKER_PUNCH" ],
+            [ 54, "MOVE_LEECH_SEED" ],
+            [ 59, "MOVE_BULLET_SEED" ],
+            [ 67, "MOVE_SPIKES" ]
         ],
         "by_tm": [
             "TM01",
@@ -99,9 +100,7 @@
             "MOVE_FURY_CUTTER",
             "MOVE_THUNDER_PUNCH",
             "MOVE_SUPERPOWER",
-            "MOVE_SNORE",
             "MOVE_SPITE",
-            "MOVE_SYNTHESIS",
             "MOVE_SEED_BOMB",
             "MOVE_SUCKER_PUNCH"
         ]

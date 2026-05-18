@@ -36,16 +36,24 @@
         "by_level": [
             [ 1, "MOVE_TACKLE" ],
             [ 1, "MOVE_GROWL" ],
-            [ 6, "MOVE_MUD_SLAP" ],
+            [ 5, "MOVE_MUD_SLAP" ],
             [ 10, "MOVE_WATER_GUN" ],
             [ 15, "MOVE_BIDE" ],
-            [ 19, "MOVE_FORESIGHT" ],
-            [ 24, "MOVE_MUD_SPORT" ],
-            [ 28, "MOVE_TAKE_DOWN" ],
-            [ 33, "MOVE_WHIRLPOOL" ],
-            [ 37, "MOVE_PROTECT" ],
-            [ 42, "MOVE_HYDRO_PUMP" ],
-            [ 46, "MOVE_ENDEAVOR" ]
+
+            [ 17, "MOVE_MUD_SHOT" ],
+            [ 19, "MOVE_ROLLOUT" ],
+            [ 21, "MOVE_ICE_BALL" ],
+            [ 24, "MOVE_MUD_BOMB" ],
+            [ 27, "MOVE_TAKE_DOWN" ],
+            [ 30, "MOVE_MUDDY_WATER" ],
+            [ 33, "MOVE_BULLDOZE" ],
+
+            [ 36, "MOVE_ROCK_TOMB" ],
+            [ 44, "MOVE_ENDEAVOR" ],
+            [ 48, "MOVE_HAMMER_ARM" ],
+            [ 54, "MOVE_STONE_EDGE" ],
+            [ 57, "MOVE_AVALANCHE" ],
+            [ 60, "MOVE_GIGA_IMPACT" ]
         ],
         "by_tm": [
             "TM03",
@@ -85,19 +93,13 @@
             "MOVE_ROLLOUT",
             "MOVE_SUPERPOWER",
             "MOVE_AQUA_TAIL",
-            "MOVE_SNORE",
             "MOVE_ENDEAVOR",
-            "MOVE_ANCIENT_POWER",
-            "MOVE_EARTH_POWER"
+            "MOVE_ANCIENT_POWER"
         ],
         "egg_moves": [
             "MOVE_REFRESH",
-            "MOVE_UPROAR",
-            "MOVE_CURSE",
             "MOVE_STOMP",
             "MOVE_ICE_BALL",
-            "MOVE_MIRROR_COAT",
-            "MOVE_COUNTER",
             "MOVE_ANCIENT_POWER",
             "MOVE_WHIRLPOOL",
             "MOVE_BITE",

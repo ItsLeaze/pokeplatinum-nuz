@@ -1,9 +1,9 @@
 {
     "base_stats": {
         "hp": 45,
-        "attack": 70,
+        "attack": 55,
         "defense": 45,
-        "speed": 75,
+        "speed": 85,
         "special_attack": 70,
         "special_defense": 45
     },
@@ -34,7 +34,24 @@
     "icon_palette": 0,
     "learnset": {
         "by_level": [
-            [ 1, "MOVE_PRESENT" ]
+            [ 1, "MOVE_PECK" ],
+            [ 1, "MOVE_PRESENT" ],
+            [ 5, "MOVE_ICY_WIND" ],
+            [ 8, "MOVE_FAKE_OUT" ],
+            [ 12, "MOVE_ICE_SHARD" ],
+            [ 14, "MOVE_ICE_BALL" ],
+            [ 16, "MOVE_HELPING_HAND" ],
+
+            [ 18, "MOVE_FLING" ],
+            [ 20, "MOVE_FUTURE_SIGHT" ],
+            [ 22, "MOVE_DRILL_PECK" ],
+            [ 25, "MOVE_AURORA_BEAM" ],
+            [ 28, "MOVE_MEMENTO" ],
+            [ 31, "MOVE_RAPID_SPIN" ],
+            [ 35, "MOVE_BOUNCE" ],
+            [ 39, "MOVE_ICE_BEAM" ],
+            [ 43, "MOVE_SWIFT" ],
+            [ 47, "MOVE_BLIZZARD" ]
         ],
         "by_tm": [
             "TM01",
@@ -84,7 +101,6 @@
             "MOVE_QUICK_ATTACK",
             "MOVE_FUTURE_SIGHT",
             "MOVE_SPLASH",
-            "MOVE_RAPID_SPIN",
             "MOVE_ICE_BALL",
             "MOVE_ICE_SHARD",
             "MOVE_ICE_PUNCH"

@@ -35,16 +35,15 @@
     "learnset": {
         "by_level": [
             [ 1, "MOVE_SCRATCH" ],
-            [ 1, "MOVE_HARDEN" ],
-            [ 5, "MOVE_LEECH_LIFE" ],
+            [ 1, "MOVE_FURY_SWIPES" ],
             [ 9, "MOVE_SAND_ATTACK" ],
-            [ 14, "MOVE_FURY_SWIPES" ],
             [ 19, "MOVE_MIND_READER" ],
+            [ 23, "MOVE_BUG_BITE" ],
             [ 25, "MOVE_SPITE" ],
-            [ 31, "MOVE_CONFUSE_RAY" ],
+            [ 30, "MOVE_LEECH_LIFE" ],
+            [ 33, "MOVE_CONFUSE_RAY" ],
             [ 38, "MOVE_SHADOW_SNEAK" ],
-            [ 45, "MOVE_GRUDGE" ],
-            [ 52, "MOVE_HEAL_BLOCK" ],
+            [ 44, "MOVE_NIGHT_SLASH" ],
             [ 59, "MOVE_SHADOW_BALL" ]
         ],
         "by_tm": [
@@ -83,9 +82,7 @@
         "by_tutor": [
             "MOVE_MUD_SLAP",
             "MOVE_FURY_CUTTER",
-            "MOVE_SNORE",
             "MOVE_SPITE",
-            "MOVE_TRICK",
             "MOVE_SUCKER_PUNCH"
         ]
     },

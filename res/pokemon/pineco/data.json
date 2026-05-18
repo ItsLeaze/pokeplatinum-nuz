@@ -35,7 +35,6 @@
     "learnset": {
         "by_level": [
             [ 1, "MOVE_TACKLE" ],
-            [ 1, "MOVE_PROTECT" ],
             [ 6, "MOVE_SELFDESTRUCT" ],
             [ 9, "MOVE_BUG_BITE" ],
             [ 12, "MOVE_TAKE_DOWN" ],

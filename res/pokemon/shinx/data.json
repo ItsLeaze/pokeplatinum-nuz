@@ -36,15 +36,23 @@
         "by_level": [
             [ 1, "MOVE_TACKLE" ],
             [ 5, "MOVE_LEER" ],
-            [ 9, "MOVE_CHARGE" ],
-            [ 13, "MOVE_SPARK" ],
-            [ 17, "MOVE_BITE" ],
-            [ 21, "MOVE_ROAR" ],
+            [ 8, "MOVE_ROAR" ],
+            [ 11, "MOVE_SPARK" ],
+
+            [ 16, "MOVE_BITE" ],
+            [ 18, "MOVE_THUNDER_WAVE" ],
+            [ 22, "MOVE_TAKE_DOWN" ],
             [ 25, "MOVE_SWAGGER" ],
-            [ 29, "MOVE_THUNDER_FANG" ],
-            [ 33, "MOVE_CRUNCH" ],
-            [ 37, "MOVE_SCARY_FACE" ],
-            [ 41, "MOVE_DISCHARGE" ]
+            [ 28, "MOVE_DOUBLE_KICK" ],
+
+            [ 30, "MOVE_SCARY_FACE" ],
+            [ 34, "MOVE_THUNDER_FANG" ],
+            [ 37, "MOVE_NIGHT_SLASH" ],
+            [ 43, "MOVE_DISCHARGE" ],
+            [ 49, "MOVE_FIRE_FANG" ],
+            [ 54, "MOVE_ICE_FANG" ],
+            [ 60, "MOVE_CRUNCH" ],
+            [ 72, "MOVE_VOLT_TACKLE" ]
         ],
         "by_tm": [
             "TM05",
@@ -79,7 +87,6 @@
         "by_tutor": [
             "MOVE_MUD_SLAP",
             "MOVE_FURY_CUTTER",
-            "MOVE_SNORE",
             "MOVE_SIGNAL_BEAM",
             "MOVE_MAGNET_RISE",
             "MOVE_SWIFT"
@@ -89,7 +96,6 @@
             "MOVE_FIRE_FANG",
             "MOVE_THUNDER_FANG",
             "MOVE_QUICK_ATTACK",
-            "MOVE_HOWL",
             "MOVE_TAKE_DOWN"
         ]
     },

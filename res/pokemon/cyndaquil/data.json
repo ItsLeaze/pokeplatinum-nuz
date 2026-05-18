@@ -36,17 +36,21 @@
         "by_level": [
             [ 1, "MOVE_TACKLE" ],
             [ 1, "MOVE_LEER" ],
-            [ 4, "MOVE_SMOKE_SCREEN" ],
-            [ 10, "MOVE_EMBER" ],
-            [ 13, "MOVE_QUICK_ATTACK" ],
-            [ 19, "MOVE_FLAME_WHEEL" ],
-            [ 22, "MOVE_DEFENSE_CURL" ],
-            [ 28, "MOVE_SWIFT" ],
-            [ 31, "MOVE_LAVA_PLUME" ],
-            [ 37, "MOVE_FLAMETHROWER" ],
-            [ 40, "MOVE_ROLLOUT" ],
-            [ 46, "MOVE_DOUBLE_EDGE" ],
-            [ 49, "MOVE_ERUPTION" ]
+            [ 5, "MOVE_EMBER" ],
+            [ 8, "MOVE_SMOKE_SCREEN" ],
+            [ 11, "MOVE_QUICK_ATTACK" ],
+
+            [ 15, "MOVE_DEFENSE_CURL" ],
+            [ 17, "MOVE_ROLLOUT" ],
+            [ 20, "MOVE_SWIFT" ],
+            [ 25, "MOVE_DIG" ],
+            [ 30, "MOVE_DOUBLE_EDGE" ],
+
+            [ 35, "MOVE_REVERSAL" ],
+            [ 40, "MOVE_GYRO_BALL" ],
+            [ 45, "MOVE_FIRE_BLAST" ],
+            [ 55, "MOVE_FOCUS_BLAST" ],
+            [ 60, "MOVE_ERUPTION" ]
         ],
         "by_tm": [
             "TM06",
@@ -77,7 +81,6 @@
         "by_tutor": [
             "MOVE_MUD_SLAP",
             "MOVE_ROLLOUT",
-            "MOVE_SNORE",
             "MOVE_HEAT_WAVE",
             "MOVE_SWIFT"
         ],
@@ -87,8 +90,6 @@
             "MOVE_REVERSAL",
             "MOVE_THRASH",
             "MOVE_FORESIGHT",
-            "MOVE_COVET",
-            "MOVE_HOWL",
             "MOVE_CRUSH_CLAW",
             "MOVE_DOUBLE_EDGE",
             "MOVE_DOUBLE_KICK",

@@ -34,9 +34,10 @@
     "icon_palette": 1,
     "learnset": {
         "by_level": [
-            [ 1, "MOVE_POISON_STING" ],
             [ 1, "MOVE_STRING_SHOT" ],
-            [ 15, "MOVE_BUG_BITE" ]
+            [ 1, "MOVE_POISON_STING" ],
+            [ 5, "MOVE_POISON_POWDER" ],
+            [ 10, "MOVE_BUG_BITE" ]
         ],
         "by_tm": [  ],
         "by_tutor": [  ]

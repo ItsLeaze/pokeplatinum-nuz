@@ -4,7 +4,7 @@
     "type": "TYPE_GRASS",
     "power": 0,
     "accuracy": 100,
-    "pp": 10,
+    "pp": 3,
     "effect": {
         "type": "BATTLE_EFFECT_STATUS_LEECH_SEED",
         "chance": 0

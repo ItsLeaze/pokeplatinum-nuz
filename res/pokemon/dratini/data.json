@@ -34,19 +34,24 @@
     "icon_palette": 0,
     "learnset": {
         "by_level": [
-            [ 1, "MOVE_WRAP" ],
             [ 1, "MOVE_LEER" ],
-            [ 5, "MOVE_THUNDER_WAVE" ],
-            [ 11, "MOVE_TWISTER" ],
-            [ 15, "MOVE_DRAGON_RAGE" ],
-            [ 21, "MOVE_SLAM" ],
-            [ 25, "MOVE_AGILITY" ],
-            [ 31, "MOVE_AQUA_TAIL" ],
-            [ 35, "MOVE_DRAGON_RUSH" ],
-            [ 41, "MOVE_SAFEGUARD" ],
-            [ 45, "MOVE_DRAGON_DANCE" ],
-            [ 51, "MOVE_OUTRAGE" ],
-            [ 55, "MOVE_HYPER_BEAM" ]
+            [ 1, "MOVE_WRAP" ],
+            [ 5, "MOVE_TWISTER" ],
+            [ 10, "MOVE_THUNDER_WAVE" ],
+            [ 16, "MOVE_SLAM" ],
+            [ 21, "MOVE_AGILITY" ],
+            [ 25, "MOVE_AQUA_JET" ],
+            [ 28, "MOVE_SAFEGUARD" ],
+
+            [ 36, "MOVE_DRAGON_BREATH" ],
+            [ 39, "MOVE_HAZE" ],
+            [ 42, "MOVE_MIST" ],
+            [ 48, "MOVE_DRAGON_PULSE" ],
+            [ 54, "MOVE_IRON_TAIL" ],
+            
+            [ 60, "MOVE_HYPER_BEAM" ],
+            [ 66, "MOVE_EXTREME_SPEED" ],
+            [ 76, "MOVE_OUTRAGE" ]
         ],
         "by_tm": [
             "TM03",
@@ -87,18 +92,15 @@
         "by_tutor": [
             "MOVE_ICY_WIND",
             "MOVE_AQUA_TAIL",
-            "MOVE_SNORE",
             "MOVE_OUTRAGE",
             "MOVE_TWISTER",
             "MOVE_SWIFT"
         ],
         "egg_moves": [
-            "MOVE_LIGHT_SCREEN",
             "MOVE_MIST",
             "MOVE_HAZE",
             "MOVE_SUPERSONIC",
             "MOVE_DRAGON_BREATH",
-            "MOVE_DRAGON_DANCE",
             "MOVE_DRAGON_RUSH"
         ]
     },

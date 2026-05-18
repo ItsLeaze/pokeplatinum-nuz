@@ -4,7 +4,7 @@
     "type": "TYPE_GRASS",
     "power": 0,
     "accuracy": 0,
-    "pp": 3,
+    "pp": 1,
     "effect": {
         "type": "BATTLE_EFFECT_CURE_PARTY_STATUS",
         "chance": 0

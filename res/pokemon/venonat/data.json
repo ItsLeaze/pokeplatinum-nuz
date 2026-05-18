@@ -35,19 +35,21 @@
     "learnset": {
         "by_level": [
             [ 1, "MOVE_TACKLE" ],
-            [ 1, "MOVE_DISABLE" ],
             [ 1, "MOVE_FORESIGHT" ],
             [ 5, "MOVE_SUPERSONIC" ],
-            [ 11, "MOVE_CONFUSION" ],
-            [ 13, "MOVE_POISON_POWDER" ],
-            [ 17, "MOVE_LEECH_LIFE" ],
-            [ 23, "MOVE_STUN_SPORE" ],
-            [ 25, "MOVE_PSYBEAM" ],
-            [ 29, "MOVE_SLEEP_POWDER" ],
-            [ 35, "MOVE_SIGNAL_BEAM" ],
-            [ 37, "MOVE_ZEN_HEADBUTT" ],
-            [ 41, "MOVE_POISON_FANG" ],
-            [ 47, "MOVE_PSYCHIC" ]
+            [ 9, "MOVE_CONFUSION" ],
+            [ 11, "MOVE_POISON_POWDER" ],
+            [ 13, "MOVE_POISON_FANG" ],
+            [ 16, "MOVE_LEECH_LIFE" ],
+            [ 21, "MOVE_STUN_SPORE" ],
+            [ 23, "MOVE_PSYBEAM" ],
+            [ 25, "MOVE_SLEEP_POWDER" ],
+            [ 28, "MOVE_SIGNAL_BEAM" ],
+            [ 30, "MOVE_ZEN_HEADBUTT" ],
+            [ 40, "MOVE_GIGA_DRAIN" ],
+            [ 36, "MOVE_PSYCHIC" ],
+            [ 40, "MOVE_TOXIC" ],
+            [ 44, "MOVE_DISABLE" ]
         ],
         "by_tm": [
             "TM06",

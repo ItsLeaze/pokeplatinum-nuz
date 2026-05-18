@@ -34,20 +34,23 @@
     "icon_palette": 1,
     "learnset": {
         "by_level": [
-            [ 1, "MOVE_COMET_PUNCH" ],
             [ 1, "MOVE_LEER" ],
-            [ 7, "MOVE_FAKE_OUT" ],
-            [ 10, "MOVE_TAIL_WHIP" ],
-            [ 13, "MOVE_BITE" ],
-            [ 19, "MOVE_MEGA_PUNCH" ],
-            [ 22, "MOVE_RAGE" ],
-            [ 25, "MOVE_DIZZY_PUNCH" ],
-            [ 31, "MOVE_CRUNCH" ],
-            [ 34, "MOVE_ENDURE" ],
-            [ 37, "MOVE_OUTRAGE" ],
-            [ 43, "MOVE_DOUBLE_HIT" ],
+            [ 5, "MOVE_TAIL_WHIP" ],
+            [ 11, "MOVE_BITE" ],
+            [ 23, "MOVE_DIZZY_PUNCH" ],
+            [ 25, "MOVE_ENDURE" ],
+            [ 27, "MOVE_DOUBLE_HIT" ],
+            [ 30, "MOVE_BULLDOZE" ],
+            [ 32, "MOVE_DRAIN_PUNCH" ],
+            [ 35, "MOVE_CRUNCH" ],
+            [ 38, "MOVE_MEGA_PUNCH" ],
+            [ 42, "MOVE_FAKE_OUT" ],
             [ 46, "MOVE_SUCKER_PUNCH" ],
-            [ 49, "MOVE_REVERSAL" ]
+            [ 51, "MOVE_HAMMER_ARM" ],
+            [ 67, "MOVE_REVERSAL" ],
+            [ 70, "MOVE_DOUBLE_EDGE" ],
+            [ 75, "MOVE_OUTRAGE" ],
+            [ 80, "MOVE_LAST_RESORT" ]
         ],
         "by_tm": [
             "TM01",
@@ -111,25 +114,17 @@
             "MOVE_FIRE_PUNCH",
             "MOVE_ICE_PUNCH",
             "MOVE_AQUA_TAIL",
-            "MOVE_SNORE",
             "MOVE_SPITE",
             "MOVE_HELPING_HAND",
-            "MOVE_ENDEAVOR",
             "MOVE_OUTRAGE",
-            "MOVE_SUCKER_PUNCH",
-            "MOVE_UPROAR"
+            "MOVE_SUCKER_PUNCH"
         ],
         "egg_moves": [
             "MOVE_STOMP",
             "MOVE_FORESIGHT",
             "MOVE_FOCUS_ENERGY",
             "MOVE_SAFEGUARD",
-            "MOVE_DISABLE",
-            "MOVE_COUNTER",
             "MOVE_CRUSH_CLAW",
-            "MOVE_SUBSTITUTE",
-            "MOVE_DOUBLE_EDGE",
-            "MOVE_ENDEAVOR",
             "MOVE_HAMMER_ARM"
         ]
     },

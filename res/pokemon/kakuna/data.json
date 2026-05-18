@@ -34,11 +34,12 @@
     "icon_palette": 2,
     "learnset": {
         "by_level": [
-            [ 1, "MOVE_HARDEN" ],
-            [ 7, "MOVE_HARDEN" ]
+            [ 1, "MOVE_POISON_STING" ],
+            [ 14, "MOVE_HARDEN" ],
+            [ 16, "MOVE_BIDE" ]
         ],
         "by_tm": [  ],
-        "by_tutor": [ "MOVE_IRON_DEFENSE" ]
+        "by_tutor": [  ]
     },
     "evolutions": [
         [

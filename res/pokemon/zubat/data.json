@@ -4,7 +4,7 @@
         "attack": 45,
         "defense": 35,
         "speed": 55,
-        "special_attack": 30,
+        "special_attack": 35,
         "special_defense": 40
     },
     "types": [ "TYPE_POISON", "TYPE_FLYING" ],
@@ -34,17 +34,25 @@
     "icon_palette": 2,
     "learnset": {
         "by_level": [
-            [ 1, "MOVE_LEECH_LIFE" ],
+            [ 1, "MOVE_ASTONISH" ],
             [ 5, "MOVE_SUPERSONIC" ],
-            [ 9, "MOVE_ASTONISH" ],
-            [ 13, "MOVE_BITE" ],
-            [ 17, "MOVE_WING_ATTACK" ],
-            [ 21, "MOVE_CONFUSE_RAY" ],
-            [ 25, "MOVE_AIR_CUTTER" ],
-            [ 29, "MOVE_MEAN_LOOK" ],
-            [ 33, "MOVE_POISON_FANG" ],
-            [ 37, "MOVE_HAZE" ],
-            [ 41, "MOVE_AIR_SLASH" ]
+            [ 8, "MOVE_WING_ATTACK" ],
+            [ 11, "MOVE_BITE" ],
+            [ 13, "MOVE_CONFUSE_RAY" ],
+            [ 16, "MOVE_LEECH_LIFE" ],
+            [ 18, "MOVE_AIR_CUTTER" ],
+            [ 20, "MOVE_POISON_FANG" ],
+
+            [ 24, "MOVE_AIR_SLASH" ],
+            [ 27, "MOVE_HAZE" ],
+            [ 30, "MOVE_ZEN_HEADBUTT" ],
+            [ 34, "MOVE_GIGA_DRAIN" ],
+            [ 37, "MOVE_AERIAL_ACE" ],
+
+            [ 41, "MOVE_CRUNCH" ],
+            [ 45, "MOVE_HEAT_WAVE" ],
+            [ 49, "MOVE_SLUDGE_BOMB" ],
+            [ 55, "MOVE_SKY_ATTACK" ]
         ],
         "by_tm": [
             "TM06",
@@ -83,13 +91,11 @@
         ],
         "by_tutor": [
             "MOVE_OMINOUS_WIND",
-            "MOVE_SNORE",
             "MOVE_AIR_CUTTER",
             "MOVE_ZEN_HEADBUTT",
             "MOVE_TWISTER",
             "MOVE_HEAT_WAVE",
-            "MOVE_SWIFT",
-            "MOVE_UPROAR"
+            "MOVE_SWIFT"
         ],
         "egg_moves": [
             "MOVE_QUICK_ATTACK",
@@ -97,8 +103,6 @@
             "MOVE_FAINT_ATTACK",
             "MOVE_GUST",
             "MOVE_WHIRLWIND",
-            "MOVE_CURSE",
-            "MOVE_NASTY_PLOT",
             "MOVE_HYPNOSIS",
             "MOVE_ZEN_HEADBUTT",
             "MOVE_BRAVE_BIRD"

@@ -1,10 +1,10 @@
 {
     "base_stats": {
         "hp": 44,
-        "attack": 48,
+        "attack": 50,
         "defense": 65,
         "speed": 43,
-        "special_attack": 50,
+        "special_attack": 55,
         "special_defense": 64
     },
     "types": [ "TYPE_WATER", "TYPE_WATER" ],
@@ -35,19 +35,22 @@
     "learnset": {
         "by_level": [
             [ 1, "MOVE_TACKLE" ],
-            [ 4, "MOVE_TAIL_WHIP" ],
-            [ 7, "MOVE_BUBBLE" ],
+            [ 1, "MOVE_TAIL_WHIP" ],
+            [ 5, "MOVE_BUBBLE" ],
             [ 10, "MOVE_WITHDRAW" ],
-            [ 13, "MOVE_WATER_GUN" ],
-            [ 16, "MOVE_BITE" ],
-            [ 19, "MOVE_RAPID_SPIN" ],
-            [ 22, "MOVE_PROTECT" ],
-            [ 25, "MOVE_WATER_PULSE" ],
-            [ 28, "MOVE_AQUA_TAIL" ],
+            [ 13, "MOVE_BITE" ],
+            [ 17, "MOVE_RAIN_DANCE" ],
+            [ 20, "MOVE_WATER_PULSE" ],
+            [ 23, "MOVE_ICY_WIND" ],
+            [ 25, "MOVE_YAWN" ],
+            [ 28, "MOVE_HAZE" ],
             [ 31, "MOVE_SKULL_BASH" ],
-            [ 34, "MOVE_IRON_DEFENSE" ],
-            [ 37, "MOVE_RAIN_DANCE" ],
-            [ 40, "MOVE_HYDRO_PUMP" ]
+            [ 35, "MOVE_HYDRO_PUMP" ],
+            [ 38, "MOVE_AQUA_RING" ],
+            [ 40, "MOVE_AURA_SPHERE" ],
+            [ 44, "MOVE_AQUA_JET" ],
+            [ 48, "MOVE_ICE_BEAM" ],
+            [ 53, "MOVE_REFRESH" ]
         ],
         "by_tm": [
             "TM01",
@@ -91,21 +94,15 @@
             "MOVE_ROLLOUT",
             "MOVE_ICE_PUNCH",
             "MOVE_AQUA_TAIL",
-            "MOVE_SNORE",
-            "MOVE_ZEN_HEADBUTT",
-            "MOVE_IRON_DEFENSE"
+            "MOVE_ZEN_HEADBUTT"
         ],
         "egg_moves": [
-            "MOVE_MIRROR_COAT",
             "MOVE_HAZE",
             "MOVE_MIST",
             "MOVE_FORESIGHT",
             "MOVE_FLAIL",
-            "MOVE_REFRESH",
             "MOVE_MUD_SPORT",
-            "MOVE_YAWN",
             "MOVE_MUDDY_WATER",
-            "MOVE_FAKE_OUT",
             "MOVE_AQUA_RING",
             "MOVE_AQUA_JET"
         ]

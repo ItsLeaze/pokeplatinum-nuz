@@ -1,7 +1,7 @@
 {
     "base_stats": {
         "hp": 64,
-        "attack": 66,
+        "attack": 70,
         "defense": 68,
         "speed": 50,
         "special_attack": 81,
@@ -34,21 +34,26 @@
     "icon_palette": 2,
     "learnset": {
         "by_level": [
-            [ 1, "MOVE_TACKLE" ],
+            [ 1, "MOVE_POUND" ],
             [ 1, "MOVE_GROWL" ],
-            [ 4, "MOVE_GROWL" ],
-            [ 8, "MOVE_BUBBLE" ],
-            [ 11, "MOVE_WATER_SPORT" ],
-            [ 15, "MOVE_PECK" ],
+            [ 5, "MOVE_BUBBLE" ],
+            [ 10, "MOVE_PECK" ],
+            [ 14, "MOVE_BIDE" ],
             [ 16, "MOVE_METAL_CLAW" ],
             [ 19, "MOVE_BUBBLE_BEAM" ],
-            [ 24, "MOVE_BIDE" ],
-            [ 28, "MOVE_FURY_ATTACK" ],
-            [ 33, "MOVE_BRINE" ],
-            [ 37, "MOVE_WHIRLPOOL" ],
-            [ 42, "MOVE_MIST" ],
-            [ 46, "MOVE_DRILL_PECK" ],
-            [ 51, "MOVE_HYDRO_PUMP" ]
+            [ 21, "MOVE_BRINE" ],
+            [ 24, "MOVE_PLUCK" ],
+            [ 27, "MOVE_WHIRLPOOL" ],
+            [ 30, "MOVE_MIST" ],
+            [ 33, "MOVE_AQUA_JET" ],
+            [ 37, "MOVE_YAWN" ],
+            [ 39, "MOVE_DRILL_PECK" ],
+            [ 42, "MOVE_AQUA_RING" ],
+            [ 45, "MOVE_ICY_WIND" ],
+            [ 48, "MOVE_GRASS_KNOT" ],
+            [ 50, "MOVE_HYDRO_PUMP" ],
+            [ 54, "MOVE_ICE_BEAM" ],
+            [ 59, "MOVE_FLASH_CANNON" ]
         ],
         "by_tm": [
             "TM03",
@@ -92,8 +97,6 @@
         "by_tutor": [
             "MOVE_DIVE",
             "MOVE_MUD_SLAP",
-            "MOVE_ICY_WIND",
-            "MOVE_SNORE",
             "MOVE_SIGNAL_BEAM"
         ]
     },

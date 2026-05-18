@@ -11,11 +11,11 @@
         },
         {
             "level": 4,
-            "species": "SPECIES_ODDISH"
+            "species": "SPECIES_SENTRET"
         },
         {
             "level": 4,
-            "species": "SPECIES_ODDISH"
+            "species": "SPECIES_SENTRET"
         },
         {
             "level": 4,
@@ -35,7 +35,11 @@
         },
         {
             "level": 4,
-            "species": "SPECIES_YANMA"
+            "species": "SPECIES_ODDISH"
+        },
+        {
+            "level": 4,
+            "species": "SPECIES_ODDISH"
         },
         {
             "level": 4,
@@ -43,30 +47,26 @@
         },
         {
             "level": 4,
-            "species": "SPECIES_LOTAD"
-        },
-        {
-            "level": 4,
-            "species": "SPECIES_LOTAD"
+            "species": "SPECIES_YANMA"
         }
     ],
     "swarms": [
-        "SPECIES_ODDISH",
-        "SPECIES_ODDISH"
+        "SPECIES_SENTRET",
+        "SPECIES_SENTRET"
     ],
     "day": [
-        "SPECIES_ODDISH",
-        "SPECIES_ODDISH"
+        "SPECIES_SENTRET",
+        "SPECIES_SENTRET"
     ],
     "night": [
-        "SPECIES_ODDISH",
-        "SPECIES_ODDISH"
+        "SPECIES_SENTRET",
+        "SPECIES_SENTRET"
     ],
     "radar": [
-        "SPECIES_ODDISH",
-        "SPECIES_ODDISH",
-        "SPECIES_ODDISH",
-        "SPECIES_ODDISH"
+        "SPECIES_SENTRET",
+        "SPECIES_SENTRET",
+        "SPECIES_SENTRET",
+        "SPECIES_SENTRET"
     ],
     "rate_form0": 0,
     "rate_form1": 0,
@@ -75,24 +75,24 @@
     "rate_form4": 0,
     "unown_table": 0,
     "ruby": [
-        "SPECIES_ODDISH",
-        "SPECIES_ODDISH"
+        "SPECIES_SENTRET",
+        "SPECIES_SENTRET"
     ],
     "sapphire": [
-        "SPECIES_ODDISH",
-        "SPECIES_ODDISH"
+        "SPECIES_SENTRET",
+        "SPECIES_SENTRET"
     ],
     "emerald": [
-        "SPECIES_ODDISH",
-        "SPECIES_ODDISH"
+        "SPECIES_SENTRET",
+        "SPECIES_SENTRET"
     ],
     "firered": [
-        "SPECIES_ODDISH",
-        "SPECIES_ODDISH"
+        "SPECIES_SENTRET",
+        "SPECIES_SENTRET"
     ],
     "leafgreen": [
-        "SPECIES_ODDISH",
-        "SPECIES_ODDISH"
+        "SPECIES_SENTRET",
+        "SPECIES_SENTRET"
     ],
     "surf_rate": 10,
     "surf_encounters": [

@@ -1,7 +1,7 @@
 {
     "base_stats": {
         "hp": 40,
-        "attack": 55,
+        "attack": 70,
         "defense": 30,
         "speed": 85,
         "special_attack": 30,
@@ -39,11 +39,17 @@
             [ 4, "MOVE_FOCUS_ENERGY" ],
             [ 8, "MOVE_QUICK_ATTACK" ],
             [ 13, "MOVE_WING_ATTACK" ],
-            [ 19, "MOVE_DOUBLE_TEAM" ],
-            [ 26, "MOVE_ENDEAVOR" ],
-            [ 34, "MOVE_AERIAL_ACE" ],
-            [ 43, "MOVE_AGILITY" ],
-            [ 53, "MOVE_AIR_SLASH" ]
+            [ 16, "MOVE_DOUBLE_TEAM" ],
+            [ 20, "MOVE_ENDURE" ],
+            [ 23, "MOVE_AERIAL_ACE" ],
+            [ 27, "MOVE_AGILITY" ],
+
+            [ 37, "MOVE_STEEL_WING" ],
+            [ 41, "MOVE_BRAVE_BIRD" ],
+            [ 45, "MOVE_HEAT_WAVE" ],
+            [ 49, "MOVE_FACADE" ],
+            [ 55, "MOVE_SKY_ATTACK" ],
+            [ 60, "MOVE_EXTREME_SPEED" ]
         ],
         "by_tm": [
             "TM06",
@@ -76,9 +82,7 @@
         "by_tutor": [
             "MOVE_MUD_SLAP",
             "MOVE_OMINOUS_WIND",
-            "MOVE_SNORE",
             "MOVE_AIR_CUTTER",
-            "MOVE_ENDEAVOR",
             "MOVE_TWISTER",
             "MOVE_HEAT_WAVE",
             "MOVE_SWIFT"
@@ -86,9 +90,7 @@
         "egg_moves": [
             "MOVE_PURSUIT",
             "MOVE_SUPERSONIC",
-            "MOVE_REFRESH",
             "MOVE_MIRROR_MOVE",
-            "MOVE_RAGE",
             "MOVE_SKY_ATTACK",
             "MOVE_WHIRLWIND",
             "MOVE_BRAVE_BIRD"
